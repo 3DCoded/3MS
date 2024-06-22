@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://3dcoded.github.io/3ms/</loc>
+         <lastmod>2024-06-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3ms/getstarted/</loc>
+         <lastmod>2024-06-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3ms/setup/bom/</loc>
+         <lastmod>2024-06-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3ms/setup/configuration/</loc>
+         <lastmod>2024-06-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3ms/setup/tableofcontents/</loc>
+         <lastmod>2024-06-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
