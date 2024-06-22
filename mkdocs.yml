@@ -33,7 +33,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 nav:
-  - index.md
+  - Home: index.md
   # - getstarted.md
   - Setup:
     - setup/tableofcontents.md
