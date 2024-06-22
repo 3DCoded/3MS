@@ -7,6 +7,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 theme:
   features:
       - navigation.expand
@@ -32,6 +34,8 @@ theme:
         name: Switch to light mode
 nav:
   - index.md
-  - getstarted.md
+  # - getstarted.md
   - Setup:
     - setup/tableofcontents.md
+    - setup/bom.md
+    - setup/configuration.md

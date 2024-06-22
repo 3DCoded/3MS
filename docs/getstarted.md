@@ -4,8 +4,21 @@ Follow this guide to get started with the 3MS.
 
 ## BOM
 
-Number of filament units: <input type="number" min="2" value="2" id="num" />
+<script src="../assets/js/main.js"></script>
 
-| Item Name | Quantity | Price | Link |
-| - | - | - | - |
-| MK8 Metal Extruder | <p id="num"></p> | 
+<form>
+Number of filament units: <input type="number" min="2" value="2" id="num" />
+<br />
+Board: <select id="board">
+    <option value="arduino_nano">Arduino Nano</option>
+    <option value="fysetc_spyder">FYSETC Spyder</option>
+</select>
+</form>
+
+
+
+[Update Table][1]
+[1]:javascript:updateTable()
+
+[Download Configuration JSON][2]
+[2]:javascript:downloadJSON()
