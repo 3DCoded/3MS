@@ -9,6 +9,7 @@ The easiest way to get a configuration for your 3MS is to download a premade one
 - [Arduino Nano](https://github.com/3DCoded/3MS/blob/main/premade_configs/arduino_nano/steppers.cfg)
 - [BTT SKR 1.4](https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_1.4/steppers.cfg)
 - [BTT Skr Pico](https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_pico/steppers.cfg)
+- [BTT Skr Mini E3 V2.0]((https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_mini_e3_v2.0/steppers.cfg)
 - [FYSETC Spyder](https://github.com/3DCoded/3MS/blob/main/premade_configs/fysetc_spyder/steppers.cfg)
 
 If you are using a different controller, read on.
