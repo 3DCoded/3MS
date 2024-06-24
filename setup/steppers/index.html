@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://3dcoded.github.io/3ms/setup/tableofcontents/">
+        <link rel="canonical" href="https://3dcoded.github.io/3ms/setup/steppers/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../configuration/">
       
-      
-        <link rel="next" href="../bom/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Table of Contents - 3MS</title>
+        <title>Stepper Setup - 3MS</title>
       
     
     
@@ -74,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#table-of-contents" class="md-skip">
+        <a href="#stepper-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Table of Contents
+              Stepper Setup
             
           </span>
         </div>
@@ -290,19 +288,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../tableofcontents/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -311,7 +300,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -359,6 +347,94 @@
 
               
             
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Stepper Setup
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Stepper Setup
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#is-the-motor-spinning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is the motor spinning?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-the-motor-spinning-backwards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is the motor spinning backwards?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-far-does-the-filament-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      How far does the filament move?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -386,6 +462,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#is-the-motor-spinning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is the motor spinning?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-the-motor-spinning-backwards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is the motor spinning backwards?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-far-does-the-filament-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      How far does the filament move?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -399,11 +510,36 @@
                   
 
 
-<h1 id="table-of-contents">Table of Contents</h1>
+<h1 id="stepper-setup">Stepper Setup</h1>
+<p>Follow this guide to calibrate each of the stepper motors.</p>
+<h2 id="is-the-motor-spinning">Is the motor spinning?</h2>
+<p>Run this command for each of your filament units, replacing <code>T0</code> with <code>T1</code>, <code>T2</code>, etc.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">G100 </span><span class="k">T</span><span class="m">0</span><span class="w"> </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">4500</span>
+</code></pre></div>
+<p>If the motor spins, skip to the next step. If not, check your wiring first. If your wiring is fine, go to <code>3ms/steppers.cfg</code>. Locate the section named <code>[manual_stepper 3ms0]</code>, replacing <code>0</code> with the <code>T</code> number of the motor not spinning. In front of the <code>enable_pin</code>, add, an <code>!</code>. If there already is one, remove it. Example:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">3ms/steppers.cfg</span><pre><span></span><code><span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!arduino: PD7</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">3ms/steppers.cfg</span><pre><span></span><code><span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">arduino: PD7</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="is-the-motor-spinning-backwards">Is the motor spinning backwards?</h2>
+<p>Preload each of the filament units with a piece of scrap filament by pushing the lever to release the tension, inserting filament, then releasing the lever to restore tension. Next, run this command for each of your filament units, replacing <code>T0</code> with <code>T1</code>, <code>T2</code>, etc.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">G100 </span><span class="k">T</span><span class="m">0</span><span class="w"> </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">4500</span>
+</code></pre></div>
+<p>Note which way the filament moves. If it moves forwards, away from the PTFE coupler, skip to the last step. If it moves backwards, you have two choices:</p>
 <ul>
-<li><a href="../bom/">BOM</a></li>
-<li><a href="../configuration/">Configuration</a></li>
+<li>Switch the motor's wires</li>
+<li>Invert the pin in the configuration</li>
 </ul>
+<p>To invert the pin in the configuration, locate the configuration section for the filament unit spinning backwards, and invert the <code>dir_pin</code>. See the previous section for how to invert the pin.</p>
+<h2 id="how-far-does-the-filament-move">How far does the filament move?</h2>
 
 
 
