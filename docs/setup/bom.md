@@ -12,6 +12,9 @@ Choose one of the following Controller BOMs for whatever controller you want:
 
     **Max filament units: 4**
 
+    !!! warning
+        This option is the most easy to mess up with slightly incorrect wiring. This option is recommended only for advanced users.
+
     Use this option if you have most of the parts already.
 
     | Name | Price | Quantity | Link | Notes |

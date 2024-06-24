@@ -2,6 +2,17 @@
 
 Follow this guide to create your 3MS configuration.
 
+## Premade Configurations
+
+The easiest way to get a configuration for your 3MS is to download a premade one. Premade configurations are available for the following controllers:
+
+- [Arduino Nano](https://github.com/3DCoded/3MS/blob/main/premade_configs/arduino_nano/steppers.cfg)
+- [BTT SKR 1.4](https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_1.4/steppers.cfg)
+- [BTT Skr Pico](https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_pico/steppers.cfg)
+- [FYSETC Spyder](https://github.com/3DCoded/3MS/blob/main/premade_configs/fysetc_spyder/steppers.cfg)
+
+If you are using a different controller, read on.
+
 ## Controller Configuration
 
 First, find a configuration that works with your control board. Klipper official configurations: [Github](https://github.com/Klipper3d/klipper/tree/master/config)

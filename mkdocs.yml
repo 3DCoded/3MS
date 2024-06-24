@@ -39,3 +39,4 @@ nav:
     - setup/tableofcontents.md
     - setup/bom.md
     - setup/configuration.md
+    - setup/steppers.md
