@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../../assets/css/badges.css">
+
 # Configuration
 
 Follow this guide to create your 3MS configuration.
@@ -6,13 +8,12 @@ Follow this guide to create your 3MS configuration.
 
 The easiest way to get a configuration for your 3MS is to download a premade one. Premade configurations are available for the following controllers:
 
-- [Arduino Nano](https://github.com/3DCoded/3MS/blob/main/premade_configs/arduino_nano/steppers.cfg)
 - [BTT SKR 1.4](https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_1.4/steppers.cfg)
 - [BTT Skr Pico](https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_pico/steppers.cfg)
-- [BTT Skr Mini E3 V2.0](https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_mini_e3_v2.0/steppers.cfg)
+- [BTT Skr Mini E3 V2.0](https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_mini_e3_v2.0/steppers.cfg) <span class="my-setup"></span>
 - [FYSETC Spyder](https://github.com/3DCoded/3MS/blob/main/premade_configs/fysetc_spyder/steppers.cfg)
 
-If you are using a different controller, read on.
+If your controller is in the list above, use that configuration and skip the rest of this guide. If you are using a different controller, read on.
 
 ## Controller Configuration
 

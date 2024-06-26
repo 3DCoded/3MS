@@ -22,7 +22,7 @@
     
     
       
-        <title>BOM - 3MS</title>
+        <title>Bom - 3MS</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BOM
+              Bom
             
           </span>
         </div>
@@ -253,6 +253,26 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../instructions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Master Instructions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -265,10 +285,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -279,8 +299,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Setup
           </label>
@@ -327,7 +347,7 @@
           
   
   <span class="md-ellipsis">
-    BOM
+    Bom
   </span>
   
 
@@ -338,7 +358,7 @@
         
   
   <span class="md-ellipsis">
-    BOM
+    Bom
   </span>
   
 
@@ -372,6 +392,15 @@
   <a href="#controller-boms" class="md-nav__link">
     <span class="md-ellipsis">
       Controller BOMs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filament-unit-boms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filament Unit BOMs
     </span>
   </a>
   
@@ -479,6 +508,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#filament-unit-boms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filament Unit BOMs
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -494,20 +532,16 @@
                   
 
 
+<p><link rel="stylesheet" href="../../assets/css/badges.css"></p>
 <h1 id="bom">BOM</h1>
 <h2 id="number-of-filament-units">Number of filament units</h2>
 <p>First, choose the number of filament units you want. Each filament unit lets you print with an additional filament. Two filament units are the minimum. You can add or remove filament units after building, but the BOM and configuration will vary based on how many filament units you want.</p>
 <h2 id="controller-boms">Controller BOMs</h2>
 <p>Choose one of the following Controller BOMs for whatever controller you want:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Arduino Nano (more DIY)</label><label for="__tabbed_1_2">SKR Pico</label><label for="__tabbed_1_3">FYSETC Spyder</label><label for="__tabbed_1_4">BTT SKR 1.4 Turbo</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">BTT SKR Mini E3 V2 <span class="my-setup"></span></label><label for="__tabbed_1_2">SKR Pico</label><label for="__tabbed_1_3">FYSETC Spyder</label><label for="__tabbed_1_4">BTT SKR 1.4 Turbo</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><strong>Max filament units: 4</strong></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This option is the most easy to mess up with slightly incorrect wiring. This option is recommended only for advanced users.</p>
-</div>
-<p>Use this option if you have most of the parts already.</p>
 <table>
 <thead>
 <tr>
@@ -520,46 +554,25 @@
 </thead>
 <tbody>
 <tr>
-<td>Arduino Nano</td>
-<td>$19.99</td>
+<td>SKR Mini E3 V2</td>
+<td>$34.99</td>
 <td>1</td>
-<td><a href="https://a.co/d/j3M9krH">Amazon</a></td>
-<td>Comes with three Arduinos but you only need one</td>
-</tr>
-<tr>
-<td>A4988 Stepper Driver</td>
-<td>$2.04 each</td>
-<td># of filament units</td>
-<td><a href="https://a.co/d/7o0BVyp">Amazon</a></td>
-<td>Comes in a five pack</td>
-</tr>
-<tr>
-<td>Stepper Driver Board</td>
-<td>$2.66 each</td>
-<td># of filament units</td>
-<td><a href="https://a.co/d/04qlgmSF">Amazon</a></td>
-<td>Comes in a three pack</td>
-</tr>
-<tr>
-<td>Breadboard</td>
-<td>$8.99</td>
-<td>1</td>
-<td><a href="https://a.co/d/bBy0lHe">Amazon</a></td>
-<td>Comes with six but you only need one</td>
+<td><a href="https://a.co/d/0hgHU9JX">Amazon</a></td>
+<td></td>
 </tr>
 <tr>
 <td>Duponts</td>
 <td>$9.99</td>
 <td>1</td>
 <td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
-<td></td>
+<td>These wires are only sufficient to run steppers, not heaters</td>
 </tr>
 <tr>
 <td>12V PSU</td>
 <td>$7.39</td>
 <td>1</td>
 <td><a href="https://a.co/d/gLC1eli">Amazon</a></td>
-<td></td>
+<td>This PSU is only sufficient to run steppers, not heaters</td>
 </tr>
 </tbody>
 </table>
@@ -684,6 +697,42 @@
 </div>
 </div>
 </div>
+<h2 id="filament-unit-boms">Filament Unit BOMs</h2>
+<p>For each filament unit, purchase this BOM:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Quantity</th>
+<th>Price</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NEMA17 Stepper Motor</td>
+<td>1</td>
+<td>$9.99</td>
+<td><a href="https://a.co/d/06Lsa1qI">Amazon</a></td>
+<td>You can use a pancake stepper if you want, but it will have less torque</td>
+</tr>
+<tr>
+<td>MK8 Metal Extruder</td>
+<td>1</td>
+<td>$9.99</td>
+<td><a href="https://a.co/d/0gJ1ghKj">Amazon</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Capricorn PTFE Tubing</td>
+<td>1</td>
+<td>$11.49</td>
+<td><a href="https://a.co/d/0dLLBGzJ">Amazon</a></td>
+<td>You likely won't need this for every unit, as this is usually too long for only one unit</td>
+</tr>
+</tbody>
+</table>
 
 
 

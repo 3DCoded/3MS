@@ -1,0 +1,21 @@
+.my-setup {
+    background-color: blue;
+    padding: 8px;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+.my-setup::after {
+    content: "My Setup";
+}
+
+.tested {
+    background-color: green;
+    padding: 8px;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+.tested {
+    content: "Tested";
+}

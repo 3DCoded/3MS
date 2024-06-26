@@ -34,7 +34,7 @@ theme:
         name: Switch to light mode
 nav:
   - Home: index.md
-  # - getstarted.md
+  - instructions.md
   - Setup:
     - setup/tableofcontents.md
     - setup/bom.md
