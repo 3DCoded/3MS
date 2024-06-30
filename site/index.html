@@ -12,7 +12,7 @@
       
       
       
-        <link rel="next" href="instructions/">
+        <link rel="next" href="howto/">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -330,11 +330,31 @@
   
   
     <li class="md-nav__item">
+      <a href="howto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Use This Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="instructions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Master Instructions
+    Instructions
   </span>
   
 
@@ -359,10 +379,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -373,8 +393,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Setup
           </label>
@@ -412,7 +432,7 @@
         
   
   <span class="md-ellipsis">
-    Bom
+    BOM
   </span>
   
 
@@ -574,11 +594,21 @@
 <p>Here is a example step by step of what goes on during a single 3MS toolchange from T0 to T1:</p>
 <ol>
 <li>Tip shaping and filament unload is performed by the slicer</li>
-<li>The 3MS unloads T0 100mm at 4500mm/min (75mm/s)</li>
-<li>The 3MS loads T1 105mm at 4500mm/min</li>
+<li>The 3MS unloads T0 175mm at 4500mm/min (75mm/s)</li>
+<li>The 3MS loads T1 200mm at 4500mm/min</li>
 <li>The 3MS motors are turned off</li>
 <li>The printer loads the filament to the nozzle</li>
 </ol>
+<!-- 
+??? "How it works (detailed)"
+    1. Tip shaping and filament unload is performed by the slicer
+    2. The T0 command is called
+    3. T0 calls Toolchange T=0
+    5. If the previous extruder is not -1 (no previous extruder), an unload is performed via G100
+    6. CHECK_FSENSOR is called to verify the filament unloaded successfully
+    7. A load is performed via G100
+    8. CHECK_FSENSOR is called to verify the filament loaded successfully -->
+
 <h2 id="what-about-the-3dchameleon">What about the 3DChameleon?</h2>
 <p>I recently created a klipper plugin for the 3DChameleon after purchasing a unit. I'm sure my Chameleon could have worked if I had tuned it further, but after several months with only partial success, I gave up. I am still open to pull requests for <strong><a href="https://github.com/3dcoded/3dchameleon-klipper">3dchameleon-klipper</a></strong>, but I won't be able to test it myself anymore.</p>
 

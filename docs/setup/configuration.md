@@ -8,10 +8,13 @@ Follow this guide to create your 3MS configuration.
 
 The easiest way to get a configuration for your 3MS is to download a premade one. Premade configurations are available for the following controllers:
 
-- [BTT SKR 1.4](https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_1.4/steppers.cfg)
-- [BTT Skr Pico](https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_pico/steppers.cfg)
-- [BTT Skr Mini E3 V2.0](https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_mini_e3_v2.0/steppers.cfg) <span class="my-setup"></span>
-- [FYSETC Spyder](https://github.com/3DCoded/3MS/blob/main/premade_configs/fysetc_spyder/steppers.cfg)
+!!! info
+    At this time, the only fully supported controller is the SKR Mini E3 V2.0
+
+- <span class="untested">[BTT SKR 1.4](https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_1.4/steppers.cfg)</span>
+- <span class="untested">[BTT Skr Pico](https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_pico/steppers.cfg)</span>
+- <span class="my-setup">[BTT Skr Mini E3 V2.0](https://github.com/3DCoded/3MS/blob/main/premade_configs/btt_skr_mini_e3_v2.0/steppers.cfg)</span>
+- <span class="untested">[FYSETC Spyder](https://github.com/3DCoded/3MS/blob/main/premade_configs/fysetc_spyder/steppers.cfg)</span>
 
 If your controller is in the list above, use that configuration and skip the rest of this guide. If you are using a different controller, read on.
 

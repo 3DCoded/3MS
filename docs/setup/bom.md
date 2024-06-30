@@ -10,7 +10,10 @@ First, choose the number of filament units you want. Each filament unit lets you
 
 Choose one of the following Controller BOMs for whatever controller you want:
 
-=== "BTT SKR Mini E3 V2 <span class="my-setup"></span>"
+!!! info
+    At this time, the only fully supported controller is the SKR Mini E3 V2.0
+
+=== "<span class="my-setup">BTT SKR Mini E3 V2</span>"
 
     **Max filament units: 4**
 
@@ -20,7 +23,7 @@ Choose one of the following Controller BOMs for whatever controller you want:
     Duponts | $9.99 | 1 | [Amazon](https://a.co/d/6QwGxhH) | These wires are only sufficient to run steppers, not heaters |
     | 12V PSU | $7.39 | 1 | [Amazon](https://a.co/d/gLC1eli) | This PSU is only sufficient to run steppers, not heaters |
 
-=== "SKR Pico"
+=== "<span class="untested">SKR Pico</span>"
 
     **Max filament units: 4**
 
@@ -30,7 +33,7 @@ Choose one of the following Controller BOMs for whatever controller you want:
     Duponts | $9.99 | 1 | [Amazon](https://a.co/d/6QwGxhH) | These wires are only sufficient to run steppers, not heaters |
     | 12V PSU | $7.39 | 1 | [Amazon](https://a.co/d/gLC1eli) | This PSU is only sufficient to run steppers, not heaters |
 
-=== "FYSETC Spyder"
+=== "<span class="untested">FYSETC Spyder</span>"
 
     **Max filament units: 8**
 
@@ -41,7 +44,7 @@ Choose one of the following Controller BOMs for whatever controller you want:
     Duponts | $9.99 | 1 | [Amazon](https://a.co/d/6QwGxhH) | These wires are only sufficient to run steppers, not heaters |
     | 12V PSU | $7.39 | 1 | [Amazon](https://a.co/d/gLC1eli) | This PSU is only sufficient to run steppers, not heaters |
 
-=== "BTT SKR 1.4 Turbo"
+=== "<span class="untested">BTT SKR 1.4 Turbo</span>"
 
     **Max filament units: 5**
 

@@ -29,10 +29,19 @@ With that said, there are a few reasons why you might **not** want to/be able to
 Here is a example step by step of what goes on during a single 3MS toolchange from T0 to T1:
 
 1. Tip shaping and filament unload is performed by the slicer
-2. The 3MS unloads T0 100mm at 4500mm/min (75mm/s)
-3. The 3MS loads T1 105mm at 4500mm/min
+2. The 3MS unloads T0 175mm at 4500mm/min (75mm/s)
+3. The 3MS loads T1 200mm at 4500mm/min
 4. The 3MS motors are turned off
 5. The printer loads the filament to the nozzle
+<!-- 
+??? "How it works (detailed)"
+    1. Tip shaping and filament unload is performed by the slicer
+    2. The T0 command is called
+    3. T0 calls Toolchange T=0
+    5. If the previous extruder is not -1 (no previous extruder), an unload is performed via G100
+    6. CHECK_FSENSOR is called to verify the filament unloaded successfully
+    7. A load is performed via G100
+    8. CHECK_FSENSOR is called to verify the filament loaded successfully -->
 
 ## What about the 3DChameleon?
 
