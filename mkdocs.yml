@@ -36,6 +36,7 @@ nav:
   - Home: index.md
   - howto.md
   - instructions.md
+  - macros.md
   - Setup:
     - setup/tableofcontents.md
     - BOM: setup/bom.md
