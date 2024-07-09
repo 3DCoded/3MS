@@ -7,10 +7,10 @@ assignees: ''
 
 ---
 
-**Controller Information: **
+**Controller Information:**
 - Controller Name
  - Pinout
  - Generic Klipper config
 
-**Important information: **
+**Important information:**
 Any important information specific to the requested controller or Klipper config
