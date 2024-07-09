@@ -1,5 +1,6 @@
 site_name: 3MS
 site_url: https://3dcoded.github.io/3ms
+repo_url: https://github.com/3dcoded/3ms
 plugins:
   - search
   - autolinks 
@@ -7,6 +8,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
   - pymdownx.tabbed:
       alternate_style: true
 theme:
@@ -34,11 +36,12 @@ theme:
         name: Switch to light mode
 nav:
   - Home: index.md
-  - howto.md
   - instructions.md
   - macros.md
   - Setup:
-    - setup/tableofcontents.md
     - BOM: setup/bom.md
     - setup/configuration.md
     - setup/steppers.md
+    - setup/slicer.md
+  - Experimental:
+    - Toolchanges without Tip Shaping or Filament Cutter: experimental/notip.md

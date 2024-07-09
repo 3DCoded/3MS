@@ -147,8 +147,18 @@ In your `printer.cfg`, add:
 
 ## 4. Stepper motor setup
 
+Follow [Stepper Setup](steppers.md) to setup and calibrate each of your filament units.
+
 ## 5. Slicer setup
+
+Follow [Slicer Setup](slicer.md) to setup your slicer for the 3MS.
 
 ## 6. First print
 
+!!! info
+    This section is a work in progress.
+
 ## 7. Troubleshooting
+
+!!! info
+    This section is a work in progress (collecting possible failures). If you experienced a failure with the 3MS, please submit it as an issue on Github.

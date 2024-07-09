@@ -3,13 +3,15 @@
 ## MMMS Settings
 
 ### MMMS_SETTINGS
-Loads the default settings for MMMS.
+Stores the settings settings for the 3MS.
 
 **Default Settings**
 
 ```
 variable_load_distance: 210
 variable_unload_distance: 200
+variable_load_speed: 4500
+vairable_unload_speed: 4500
 variable_num_tools: 2
 ```
 
@@ -20,32 +22,32 @@ MMMS_SETTINGS
 ```
 
 ### SET_MMMS_SETTINGS
-Sets the configuration for MMMS. Allows **temporary** customization of load and unload distances, and the number of tools.
+Sets the configuration for the 3MS. Allows **temporary** customization of load and unload distances and speeds
 
 **Example Usage**
 
 ```
-SET_MMMS_SETTINGS LOAD_DISTANCE=210 UNLOAD_DISTANCE=200 NUM_TOOLS=2
+SET_MMMS_SETTINGS LOAD_DISTANCE=210 UNLOAD_DISTANCE=200 LOAD_SPEED=3500 UNLOAD_SPEED=5500
 ```
 
 ## Filament Handling
 
 ### MMMS_UNLOAD
-Unloads filament by a specified distance. If no distance is specified, it uses the default unload distance from `MMMS_SETTINGS`.
+Unloads filament by a specified distance and speed. If no distance/speed is specified, it uses the default unload distance/speed from `MMMS_SETTINGS`.
 
 **Example Usage**
 
 ```
-MMMS_UNLOAD DISTANCE=200
+MMMS_UNLOAD DISTANCE=200 SPEED=5500
 ```
 
 ### MMMS_LOAD
-Loads filament by a specified distance. If no distance is specified, it uses the default load distance from `MMMS_SETTINGS`.
+Loads filament by a specified distance and speed. If no distance/speed is specified, it uses the default load distance/speed from `MMMS_SETTINGS`.
 
 **Example Usage**
 
 ```
-MMMS_LOAD DISTANCE=210
+MMMS_LOAD DISTANCE=210 SPEED=3500
 ```
 
 ### CHECK_FSENSOR
