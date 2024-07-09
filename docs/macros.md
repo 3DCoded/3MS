@@ -62,7 +62,7 @@ CHECK_FSENSOR V=1
 ## Tool Sync
 
 ### SET_TOOL_SYNC
-Sets the sync state of a tool. Syncs or desyncs the specified tool.
+Sets the sync state of a tool. Syncs or desyncs the specified tool to/from the extruder.
 
 **Example Usage**
 
@@ -71,7 +71,7 @@ SET_TOOL_SYNC TOOL=0 SYNC=1
 ```
 
 ### SYNC_TOOL
-Syncs the specified tool and desyncs all other tools.
+Syncs the specified tool and desyncs all other tools to/from the extruder.
 
 **Example Usage**
 
@@ -80,7 +80,7 @@ SYNC_TOOL TOOL=0
 ```
 
 ### DESYNC_TOOL
-Desyncs the specified tool.
+Desyncs the specified tool from the extruder.
 
 **Example Usage**
 
