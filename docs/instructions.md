@@ -30,30 +30,9 @@ Before starting the instructions, a basic understanding of how the 3MS works is 
 
 The number of filaments you will be able to print with is equal to the number of filament units you have. For example, two filament units will let you print with two colors. It is important to note that one filament unit will NOT let you print in multimaterial.
 
-## 0.5. Choosing your controller
-
-!!! info
-    At this time, the only fully supported controller is the SKR Mini E3 V2.0
-
-There are many controller options for the 3MS. For each, there are two main deciding factors:
-
-- How many filament units does it support?
-- How much does it cost?
-
-Here is a simple table comparing these two factors across all supported controllers:
-
-| Name | Max Filament Units | Base cost (no filament units) | Cost per filament unit |
-| - | - | - | - |
-| SKR Mini E3 V2 | 4 | $52.40 | $20.00 |
-| SKR Pico | 4 | $53.40 | $20.00 |
-| FYSETC Spyder | 8 | $59.40 | $22.04 |
-| SKR 1.4 Turbo | 5 | $83.40 | $20.00 |
-
-After you have chosen your controller, proceed to step 1.
-
 ## 1. Getting a BOM
 
-After you have chosen the controller you want to use, go to [BOM](bom.md) to view the bill of materials for your controller and the number of filament units you want. Example BOM for the <span class="my-setup">SKR Mini E3 V2</span> and two filament units:
+Go to [BOM](bom.md) to view the bill of materials for the number of filament units you want. Example BOM for two filament units:
 
 | Name | Price | Quantity | Link | Notes |
 | - | - | - | - | - |
@@ -68,7 +47,7 @@ Duponts | $9.99 | 1 | [Amazon](https://a.co/d/6QwGxhH) | These wires are only su
 
 An optional board enclosure for the SKR Mini E3 is available [here](https://www.printables.com/model/459809-bigtreetech-skr-mini-e3-v3-enclosure).
 
-Additionaly, an optional univeral mount for the MK8 extruder using M3 bolts is available [here](assets/stls/mk8m3.stl). If you use this mount, bolt it to your printer's frame/enclosure before continuing. 
+Additionaly, an optional univeral mount for the MK8 extruder using M3 bolts is available [here](assets/stls/mk8m3.stl).
 
 Next, assemble the MK8 extruders onto the NEMA17 motors using the provided instructions that came with them. If you use the mount above, make sure it is in between the MK8 and NEMA17. 
 
@@ -99,6 +78,8 @@ Finally, plug the SKR into your Klipper host with the blue cable that came with 
 
 ## 3. Configuring your 3MS
 
+### 3.1. Flash Klipper Firmware
+
 After assembling your 3MS, the next step is to configure it. First, make sure it is plugged into your Klipper Host. Run in your terminal:
 
 ```sh
@@ -106,15 +87,14 @@ cd ~/klipper
 make menuconfig
 ```
 
-In the menuconfig, configure it to your controller. Exmaple for the <span class="my-setup">SKR Mini E3 V2</span>:
-
-Chip Type: STM32F103
-
-Bootloader Offset: 28KiB bootloader
-
-Communication Interface: USB
-
-GPIO pins to set at startup: `!PA14`
+In the menuconfig, configure it to your controller. Instructions are included at the top of `3ms/steppers.cfg` for future reference. A copy of it is provided here:
+```cfg
+# This file contains common pin mappings for the BIGTREETECH SKR mini
+# E3 v2.0. To use this config, the firmware should be compiled for the
+# STM32F103 with a "28KiB bootloader" and USB communication. Also,
+# select "Enable extra low-level configuration options" and configure
+# "GPIO pins to set at micro-controller startup" to "!PA14".
+```
 
 Run in your terminal:
 
@@ -138,7 +118,32 @@ Example output:
 /dev/serial/by-id/usb-Prusa_Research__prusa3d.com__Original_Prusa_i3_MK3_xxx-if00
 ```
 
-In this case, the first line is our 3MS, and the second line is our 3D printer. Now that we know the path to the 3MS, copy it.
+In this case, the first line is the 3MS, and the second line is the 3D printer. Now that you know the path to the 3MS, copy it.
+
+### 3.2. Install 3MS Configuration
+
+Next, clone the 3MS repository:
+
+```sh
+cd ~
+git clone https://github.com/3DCoded/3MS
+```
+
+As of now, `[update_manager]` using Moonraker is not supported. To install the 3MS config, use:
+
+```sh
+mkdir -p ~/printer_data/config/3ms
+mkdir -p ~/printer_data/config/3ms/controllers
+ln -f main.cfg ~/printer_data/config/3ms/main.cfg
+ln -f macros.cfg ~/printer_data/config/3ms/macros.cfg
+ln -f ./controllers/* ~/printer_data/config/3ms/controllers/*
+```
+
+In your `printer.cfg`, add:
+
+```cfg title="printer.cfg"
+[include 3ms/main.cfg]
+```
 
 ## 4. Stepper motor setup
 
