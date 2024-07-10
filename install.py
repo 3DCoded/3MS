@@ -10,7 +10,16 @@ variables.cfg
 KlipperScreen.conf
 '''.strip().splitlines()
 
+optional_files = '''
+settings.cfg
+variables.cfg
+'''.strip().splitlines()
+
 install_folders = '''
+controllers
+'''.strip().splitlines()
+
+optional_folders = '''
 controllers
 '''.strip().splitlines()
 
@@ -34,10 +43,23 @@ def install():
         if os.path.exists(to_path):
             os.remove(to_path)
         os.link(from_path, to_path)
+    for file in optional_files:
+        from_path = from_dir / file
+        to_path = to_dir / file
+        print(f'Installing file {file} to {to_path}')
+        if os.path.exists(to_path):
+            continue
     for folder in install_folders:
         from_path = from_dir / folder
         to_path = to_dir / folder
         print(f'Installing folder {folder} to {to_path}')
+        shutil.copytree(from_path, to_path, copy_function=copy, dirs_exist_ok=True)
+    for folder in optional_folders:
+        from_path = from_dir / folder
+        to_path = to_dir / folder
+        print(f'Installing folder {folder} to {to_path}')
+        if os.path.exists(to_path):
+            continue
         shutil.copytree(from_path, to_path, copy_function=copy, dirs_exist_ok=True)
 
 if __name__ == '__main__':
