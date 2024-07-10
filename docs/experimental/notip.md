@@ -7,4 +7,8 @@ Because the 3MS is synchronized to the printer's extruder, it can potentially to
 
 ## Speed Benefits
 
+| Print Job | Original Time | New Time | New Time Relative To Original Time | Speed Boost |
+| - | - | - | - | - |
+| Dual Color 3DBenchy | 2h45m | 1h25m | 51.5% | 1.95x |
+
 ## Slicer Setup

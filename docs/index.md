@@ -59,9 +59,11 @@ Here is a example step by step of what goes on during a single 3MS toolchange fr
 1. Tip shaping and filament unload is performed by the slicer
 2. The 3MS unloads T0 200mm at 4500mm/min (75mm/s)
 3. The 3MS desyncs T0 from the extruder
-4. The 3MS syncs T1 with the extruder
-3. The 3MS loads T1 210mm at 4500mm/min
-5. The printer loads the filament to the nozzle
+4. The 3MS checks if the filament was successfully unloaded
+5. The 3MS syncs T1 with the extruder
+6. The 3MS loads T1 210mm at 4500mm/min
+7. The 3MS checks if the filament was successfully loaded
+8. The printer loads the filament to the nozzle
 
 Think of the 3MS as an extension to your current extruder's length. It allows for switching filaments, but while printing allows for all the benefits of your printer's extruder.
 
