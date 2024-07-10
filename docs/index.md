@@ -12,22 +12,29 @@ The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial *
 
 ## Sample Prints
 
-![](samplesheep.jpeg){: style="height: 300px"}
+???+ "Sample Prints"
+    === "Sheep" 
+        ![](samplesheep.jpeg){: style="height: 300px"}
 
-Model: [Sheep by Cipis](https://www.printables.com/model/838872-sheep-multi-material-remix)
+        Model: [Sheep by Cipis](https://www.printables.com/model/838872-sheep-multi-material-remix)
+    === "Calendar"
+        ![](samplecalendar.jpeg){: style="width: 300px"}
 
----
+        Model: [Monolith Cryptic Calendar by Sevro](https://www.printables.com/model/698341-monolith-cryptic-calendar)
+    === "Voron Cube"
+        ![](samplevoron.jpeg){: style="height: 300px"}
 
+        Model: Voron Cube (bundled with OrcaSlicer), painted by me in OrcaSlicer
 
-![](samplecalendar.jpeg){: style="width: 300px"}
+## Photos
 
-Model: [Monolith Cryptic Calendar by Sevro](https://www.printables.com/model/698341-monolith-cryptic-calendar)
-
----
-
-![](samplevoron.jpeg){: style="height: 300px"}
-
-Model: Voron Cube (bundled with OrcaSlicer), painted by me
+???+ "Photos"
+    === "Full Printer"
+        ![](IMG_0318.jpeg)
+    === "3MS"
+        ![](IMG_0320.jpeg)
+    === "Y Splitter"
+        ![](IMG_0321.jpeg)
 
 ## Why 3MS?
 
