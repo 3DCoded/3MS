@@ -127,6 +127,7 @@ Next, clone the 3MS repository:
 ```sh
 cd ~
 git clone https://github.com/3DCoded/3MS
+cd 3MS
 ```
 
 As of now, `[update_manager]` using Moonraker is not supported. To install the 3MS config, use:
