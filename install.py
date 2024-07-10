@@ -4,9 +4,7 @@ import shutil
 
 install_files = '''
 main.cfg
-settings.cfg
 macros.cfg
-variables.cfg
 KlipperScreen.conf
 '''.strip().splitlines()
 
@@ -16,7 +14,6 @@ variables.cfg
 '''.strip().splitlines()
 
 install_folders = '''
-controllers
 '''.strip().splitlines()
 
 optional_folders = '''
