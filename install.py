@@ -20,6 +20,8 @@ print(f'Installing from {from_dir} to {to_dir}')
 
 def copy(src, dst):
     os.makedirs(os.path.dirname(dst), exist_ok=True)
+    if os.path.exists(dst):
+        os.remove(dst)
     os.link(src, dst)
 
 def install():
@@ -28,6 +30,8 @@ def install():
         from_path = from_dir / file
         to_path = to_dir / file
         print(f'Installing file {file} to {to_path}')
+        if os.path.exists(dst):
+            os.remove(dst)
         os.link(from_path, to_path)
     for folder in install_folders:
         from_path = from_dir / folder
