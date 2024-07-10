@@ -148,8 +148,10 @@ In your `moonraker.conf`, add:
 [update_manager mmms]
 type: git_repo
 path: ~/3MS
-origin: https://github.com/3DCoded/3MS
-install_script: ~/3MS/install.sh
+origin: https://github.com/3DCoded/3MS.git
+primary_branch: main
+is_system_service: False
+install_script: install.sh
 ```
 
 ## 4. Stepper motor setup
