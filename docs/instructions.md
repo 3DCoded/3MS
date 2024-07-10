@@ -8,13 +8,13 @@ Due to the modularity of the 3MS, there are many ways to set it up. This guide a
 
 The basic steps this guide will follow are:
 
-1. Getting a BOM
-2. Assembling your 3MS
-3. Configuring your 3MS
-4. Stepper motor setup
-5. Slicer setup
-6. First print
-7. Troubleshooting
+1. [Getting a BOM](#1-getting-a-bom)
+2. [Assembling your 3MS](#2-assembling-your-3ms)
+3. [Configuring your 3MS](#3-configuring-your-3ms)
+4. [Stepper motor setup](#4-stepper-motor-setup)
+5. [Slicer setup](#5-slicer-setup)
+6. [First print](#6-first-print)
+7. [Troubleshooting](#7-troubleshooting)
 
 ## 0. Explanations
 
