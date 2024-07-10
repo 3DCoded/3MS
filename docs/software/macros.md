@@ -12,6 +12,7 @@ variable_load_distance: 210
 variable_unload_distance: 200
 variable_load_speed: 4500
 vairable_unload_speed: 4500
+variable_fsensor_delay: 2000
 variable_num_tools: 2
 ```
 
@@ -27,7 +28,7 @@ Sets the configuration for the 3MS. Allows **temporary** customization of load a
 **Example Usage**
 
 ```
-SET_MMMS_SETTINGS LOAD_DISTANCE=210 UNLOAD_DISTANCE=200 LOAD_SPEED=3500 UNLOAD_SPEED=5500
+SET_MMMS_SETTINGS LOAD_DISTANCE=210 UNLOAD_DISTANCE=200 LOAD_SPEED=3500 UNLOAD_SPEED=5500 FSENSOR_DELAY=2500
 ```
 
 ## Filament Handling
