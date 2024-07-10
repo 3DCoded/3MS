@@ -63,6 +63,8 @@ Here is a example step by step of what goes on during a single 3MS toolchange fr
 3. The 3MS loads T1 210mm at 4500mm/min
 5. The printer loads the filament to the nozzle
 
+Think of the 3MS as an extension to your current extruder's length. It allows for switching filaments, but while printing allows for all the benefits of your printer's extruder.
+
 The 3MS's motors work together with your printer's extruder. This way, there won't be any additional resistance from pulling the filament through a disabled extruder. Also, unloads and loads to/from the printer's extruder are fully synchronized with the 3MS. This allows for even faster toolchanges!
 
 ## Get Started
