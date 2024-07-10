@@ -31,7 +31,7 @@ def install():
         to_path = to_dir / file
         print(f'Installing file {file} to {to_path}')
         if os.path.exists(to_path):
-            os.remove(dst)
+            os.remove(to_path)
         os.link(from_path, to_path)
     for folder in install_folders:
         from_path = from_dir / folder
