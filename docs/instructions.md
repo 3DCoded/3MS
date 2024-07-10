@@ -130,20 +130,26 @@ git clone https://github.com/3DCoded/3MS
 cd 3MS
 ```
 
-As of now, `[update_manager]` using Moonraker is not supported. To install the 3MS config, use:
+To install the 3MS config, use:
 
 ```sh
-mkdir -p ~/printer_data/config/3ms
-mkdir -p ~/printer_data/config/3ms/controllers
-ln -f main.cfg ~/printer_data/config/3ms/main.cfg
-ln -f macros.cfg ~/printer_data/config/3ms/macros.cfg
-ln -f ./controllers/* ~/printer_data/config/3ms/controllers/*
+python3 install.py
 ```
 
 In your `printer.cfg`, add:
 
 ```cfg title="printer.cfg"
 [include 3ms/main.cfg]
+```
+
+In your `moonraker.conf`, add:
+```cfg title="moonraker.conf"
+# 3MS Update Manager
+[update_manager mmms]
+type: git_repo
+path: ~/3MS
+origin: https://github.com/3DCoded/3MS
+install_script: ~/3MS/install.sh
 ```
 
 ## 4. Stepper motor setup
