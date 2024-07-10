@@ -45,114 +45,12 @@ Duponts | $9.99 | 1 | [Amazon](https://a.co/d/6QwGxhH) | These wires are only su
 
 ## 2. Assembling your 3MS
 
-An optional board enclosure for the SKR Mini E3 is available [here](https://www.printables.com/model/459809-bigtreetech-skr-mini-e3-v3-enclosure).
-
-Additionaly, an optional univeral mount for the MK8 extruder using M3 bolts is available [here](assets/stls/mk8m3.stl).
-
-Next, assemble the MK8 extruders onto the NEMA17 motors using the provided instructions that came with them. If you use the mount above, make sure it is in between the MK8 and NEMA17. 
-
-After that, route the wires from the NEMA17 to the controller board. Follow this table to determine which port to plug the motors into:
-
-| Filament Unit # | Motor Port |
-| - | - |
-| 0 | XM |
-| 1 | YM |
-| 2 | ZAM or ZBM |
-| 3 | E0M |
-
-Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)
-
-1. Plug the red wire into the positive terminal of the screw termianls
-2. Plug the black wire into the negative terminal of the screw terminals
-3. Following this image, choose either the DCIN or POWER input
-![](skrminie3v2pins.jpg)
-4. Route the two wires inside closest to your chosen input
-5. Using the markings on the board, plug the red wire into the positive terminal on the SKR
-6. Using the markings on the board, plug the black wire into the negative terminal on the SKR
-7. Verify all connections
-8. Plug the PSU screw terminals into the PSU wire
-
-If the SKR lights up, you wired it correctly!
-
-Finally, plug the SKR into your Klipper host with the blue cable that came with it.
+Follow [Assembly](assembly.md) to assemble your 3MS.
 
 ## 3. Configuring your 3MS
 
-### 3.1. Flash Klipper Firmware
-
-After assembling your 3MS, the next step is to configure it. First, make sure it is plugged into your Klipper Host. Run in your terminal:
-
-```sh
-cd ~/klipper
-make menuconfig
-```
-
-In the menuconfig, configure it to your controller. Instructions are included at the top of `3ms/steppers.cfg` for future reference. A copy of it is provided here:
-```cfg
-# This file contains common pin mappings for the BIGTREETECH SKR mini
-# E3 v2.0. To use this config, the firmware should be compiled for the
-# STM32F103 with a "28KiB bootloader" and USB communication. Also,
-# select "Enable extra low-level configuration options" and configure
-# "GPIO pins to set at micro-controller startup" to "!PA14".
-```
-
-Run in your terminal:
-
-```sh
-make clean
-make
-```
-
-The `klipper.bin` file, located in `~/klipper/out/klipper.bin` needs to be copied to a MicroSD card and renamed to `firmware.bin` (case-sensitive). Next, unplug the 3MS board from the PSU and your Klipper Host and insert the SD Card. Next, plug in the PSU, THEN the Klipper Host to the 3MS board. The firmware is now flashed.
-
-In the terminal, run:
-
-``` sh
-ls /dev/serial/by-id/*
-```
-
-Example output:
-
-``` sh
-/dev/serial/by-id/usb-Klipper_stm32f103xe_33FFD1054746333809650557-if00
-/dev/serial/by-id/usb-Prusa_Research__prusa3d.com__Original_Prusa_i3_MK3_xxx-if00
-```
-
-In this case, the first line is the 3MS, and the second line is the 3D printer. Now that you know the path to the 3MS, copy it.
-
-### 3.2. Install 3MS Configuration
-
-Next, clone the 3MS repository:
-
-```sh
-cd ~
-git clone https://github.com/3DCoded/3MS
-cd 3MS
-```
-
-To install the 3MS config, use:
-
-```sh
-python3 install.py
-```
-
-In your `printer.cfg`, add:
-
-```cfg title="printer.cfg"
-[include 3ms/main.cfg]
-```
-
-In your `moonraker.conf`, add:
-```cfg title="moonraker.conf"
-# 3MS Update Manager
-[update_manager mmms]
-type: git_repo
-path: ~/3MS
-origin: https://github.com/3DCoded/3MS.git
-primary_branch: main
-is_system_service: False
-install_script: install.sh
-```
+1. Install Klipper firmware onto the MCU by following [Firmware](firmware.md).
+2. Follow [Installation](install.md) to install the 3MS configuration 
 
 ## 4. Stepper motor setup
 

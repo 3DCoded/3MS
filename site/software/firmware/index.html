@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://3dcoded.github.io/3ms/setup/configuration/">
+        <link rel="canonical" href="https://3dcoded.github.io/3ms/software/firmware/">
       
       
-        <link rel="prev" href="../bom/">
+        <link rel="prev" href="../macros/">
       
       
-        <link rel="next" href="../steppers/">
+        <link rel="next" href="../install/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Configuration - 3MS</title>
+        <title>Firmware - 3MS</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuration" class="md-skip">
+        <a href="#firmware" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuration
+              Firmware
             
           </span>
         </div>
@@ -299,16 +299,103 @@
   
   
   
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../macros/" class="md-nav__link">
+      <a href="../../setup/bom/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Macros
+    BOM
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/steppers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stepper Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/slicer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Slicer Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -336,7 +423,7 @@
             
   
   <span class="md-ellipsis">
-    Setup
+    Software
   </span>
   
 
@@ -346,7 +433,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Setup
+            Software
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -357,11 +444,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../bom/" class="md-nav__link">
+      <a href="../configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    BOM
+    Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Macros
   </span>
   
 
@@ -391,7 +499,7 @@
           
   
   <span class="md-ellipsis">
-    Configuration
+    Firmware
   </span>
   
 
@@ -402,7 +510,7 @@
         
   
   <span class="md-ellipsis">
-    Configuration
+    Firmware
   </span>
   
 
@@ -424,44 +532,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#premade-configurations" class="md-nav__link">
+  <a href="#create-firmwarebin" class="md-nav__link">
     <span class="md-ellipsis">
-      Premade Configurations
+      Create firmware.bin
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#controller-configuration" class="md-nav__link">
+  <a href="#install-firmwarebin" class="md-nav__link">
     <span class="md-ellipsis">
-      Controller Configuration
+      Install firmware.bin
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3ms-configuration" class="md-nav__link">
+  <a href="#get-mcu-id" class="md-nav__link">
     <span class="md-ellipsis">
-      3MS Configuration
+      Get MCU ID
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="3MS Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#only-motors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Only Motors
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -481,11 +574,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../steppers/" class="md-nav__link">
+      <a href="../install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Stepper Setup
+    Installation
   </span>
   
 
@@ -502,11 +595,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../slicer/" class="md-nav__link">
+      <a href="../klipperscreen/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Slicer Setup
+    KlipperScreen
   </span>
   
 
@@ -546,7 +639,7 @@
             
   
   <span class="md-ellipsis">
-    Experimental
+    Hardware
   </span>
   
 
@@ -555,6 +648,71 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Hardware
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/assembly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Assembly Instructions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Experimental
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Experimental
           </label>
@@ -615,44 +773,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#premade-configurations" class="md-nav__link">
+  <a href="#create-firmwarebin" class="md-nav__link">
     <span class="md-ellipsis">
-      Premade Configurations
+      Create firmware.bin
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#controller-configuration" class="md-nav__link">
+  <a href="#install-firmwarebin" class="md-nav__link">
     <span class="md-ellipsis">
-      Controller Configuration
+      Install firmware.bin
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3ms-configuration" class="md-nav__link">
+  <a href="#get-mcu-id" class="md-nav__link">
     <span class="md-ellipsis">
-      3MS Configuration
+      Get MCU ID
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="3MS Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#only-motors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Only Motors
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -674,59 +817,38 @@
   
 
 
-<h1 id="configuration">Configuration</h1>
-<p>Follow this guide to create your 3MS configuration.</p>
-<h2 id="premade-configurations">Premade Configurations</h2>
-<p>The easiest way to get a configuration for your 3MS is to download a premade one. Premade configurations are available for the following controller(s):</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>At this time, the only fully supported controller is the SKR Mini E3 V2.0</p>
-</div>
-<ul>
-<li><a href="https://github.com/3DCoded/3MS/blob/main/controllers/btt_skr_mini_e3_v2/steppers.cfg">BTT Skr Mini E3 V2.0</a></li>
-</ul>
-<p>If your controller is in the list above, use that configuration and skip the rest of this guide. If you are using a different controller, read on.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The rest of this page is under development and may contain INCORRECT INFORMATION. Do not follow the rest of this guide. If you want support for a different controller, please open an issue on Github.</p>
-</div>
-<h2 id="controller-configuration">Controller Configuration</h2>
-<p>First, find a configuration that works with your control board. Klipper official configurations: <a href="https://github.com/Klipper3d/klipper/tree/master/config">Github</a></p>
-<h2 id="3ms-configuration">3MS Configuration</h2>
-<p>After you have downloaded your controller configuration, create a new folder in the same folder as your <code>printer.cfg</code>. Name it <code>3ms</code>. Inside it, copy and paste your controller configuration. In this example, an <strong>SKR Pico</strong> configuration will be used.</p>
-<h3 id="only-motors">Only Motors</h3>
-<p>First, remove all parts of the configuration not about motors/extruders. Example:</p>
-<details>
-<summary>Before/After</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/skr-pico.cfg</span><pre><span></span><code><span class="c1"># This file contains common pin mappings for the BIGTREETECH SKR Pico V1.0</span>
-<span class="c1"># To use this config, the firmware should be compiled for the RP2040 with</span>
-<span class="c1"># USB communication.</span>
-
-<span class="c1"># The &quot;make flash&quot; command does not work on the SKR Pico V1.0. Instead,</span>
-<span class="c1"># after running &quot;make&quot;, copy the generated &quot;out/klipper.uf2&quot; file</span>
-<span class="c1"># to the mass storage device in RP2040 boot mode</span>
-
-<span class="c1"># See docs/Config_Reference.md for a description of parameters.</span>
+<h1 id="firmware">Firmware</h1>
+<p>Follow this guide to install Klipper firmware onto your 3MS MCU. This guide is a modified version of the <a href="https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller">Klipper Documentation</a>.</p>
+<h2 id="create-firmwarebin">Create firmware.bin</h2>
+<p>Make sure your 3MS MCU is plugged into your Klipper Host. Run in your terminal:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/klipper
+make<span class="w"> </span>menuconfig
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/generic-bigtreetech-skr-pico-v1.0.cfg</span><pre><span></span><code><span class="c1"># This file contains common pin mappings for the BIGTREETECH SKR Pico V1.0</span>
-<span class="c1"># To use this config, the firmware should be compiled for the RP2040 with</span>
-<span class="c1"># USB communication.</span>
-
-<span class="c1"># The &quot;make flash&quot; command does not work on the SKR Pico V1.0. Instead,</span>
-<span class="c1"># after running &quot;make&quot;, copy the generated &quot;out/klipper.uf2&quot; file</span>
-<span class="c1"># to the mass storage device in RP2040 boot mode</span>
-
-<span class="c1"># See docs/Config_Reference.md for a description of parameters.</span>
+<p>In the menuconfig, configure it to your MCU. Instructions are included at the top of <code>3ms/controllers/xxx/steppers.cfg</code> for future reference. A copy of it is provided here:
+<div class="highlight"><pre><span></span><code><span class="c1"># This file contains common pin mappings for the BIGTREETECH SKR mini</span>
+<span class="c1"># E3 v2.0. To use this config, the firmware should be compiled for the</span>
+<span class="c1"># STM32F103 with a &quot;28KiB bootloader&quot; and USB communication. Also,</span>
+<span class="c1"># select &quot;Enable extra low-level configuration options&quot; and configure</span>
+<span class="c1"># &quot;GPIO pins to set at micro-controller startup&quot; to &quot;!PA14&quot;.</span>
+</code></pre></div></p>
+<p>Run in your terminal:</p>
+<div class="highlight"><pre><span></span><code>make<span class="w"> </span>clean
+make
 </code></pre></div>
-</div>
-</div>
-</div>
-</details>
+<p>The <code>klipper.bin</code> file, located in <code>~/klipper/out/klipper.bin</code> needs to be copied to a MicroSD card and renamed to <code>firmware.bin</code> (case-sensitive). </p>
+<h2 id="install-firmwarebin">Install firmware.bin</h2>
+<p>Next, unplug the 3MS board from the PSU and your Klipper Host and insert the SD Card. Next, plug in the PSU, THEN the Klipper Host to the 3MS board. The firmware is now flashed.</p>
+<h2 id="get-mcu-id">Get MCU ID</h2>
+<p>In the terminal, run:</p>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>/dev/serial/by-id/
+</code></pre></div>
+<p>Example output:</p>
+<div class="highlight"><pre><span></span><code>usb-Klipper_stm32f103xe_33FFD1054746333809650557-if00
+usb-Prusa_Research__prusa3d.com__Original_Prusa_i3_MK3_xxx-if00
+</code></pre></div>
+<p>In this case, the first line is the 3MS, and the second line is the 3D printer. Now that you know the id of the 3MS MCU, copy it and save it to a file:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;&lt;your-mcu-id&gt;&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>mcu.txt<span class="w"> </span>
+</code></pre></div>
 
 
 

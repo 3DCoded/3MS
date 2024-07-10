@@ -1,0 +1,40 @@
+# Assembly Instructions
+
+Follow this guide to assemble your 3MS.
+
+## Printed Parts
+
+An optional board enclosure for the SKR Mini E3 is available [here](https://www.printables.com/model/459809-bigtreetech-skr-mini-e3-v3-enclosure).
+
+Additionaly, an optional univeral mount for the MK8 extruder using M3 bolts is available [here](../assets/stls/mk8m3.stl). Note that this requires 2-4 M3 bolts and a place to screw the bolts into.
+
+## MK8 Assembly
+
+Next, assemble the MK8 extruders onto the NEMA17 motors using the provided instructions that came with them. If you use the mount provided above, make sure it is in between the MK8 and NEMA17. 
+
+## Wiring
+
+After that, route the wires from the NEMA17 to the controller board. Follow this table to determine which port to plug the motors into:
+
+| Filament Unit # | Motor Port |
+| - | - |
+| 0 | XM |
+| 1 | YM |
+| 2 | ZAM or ZBM |
+| 3 | E0M |
+
+Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)
+
+1. Plug the red wire into the positive terminal of the screw termianls
+2. Plug the black wire into the negative terminal of the screw terminals
+3. Following this image, choose either the DCIN or POWER input
+![](skrminie3v2pins.jpg)
+4. Route the two wires inside closest to your chosen input
+5. Using the markings on the board, plug the red wire into the positive terminal on the SKR
+6. Using the markings on the board, plug the black wire into the negative terminal on the SKR
+7. Verify all connections
+8. Plug the PSU screw terminals into the PSU wire
+
+If the SKR lights up, you wired it correctly!
+
+Finally, plug the SKR into your Klipper host with the blue cable that came with it.

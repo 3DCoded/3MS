@@ -1,9 +1,9 @@
 # Macros
 
-## MMMS Settings
+## 3MS Settings
 
 ### MMMS_SETTINGS
-Stores the settings settings for the 3MS.
+Stores the settings for the 3MS.
 
 **Default Settings**
 
