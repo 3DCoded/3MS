@@ -7,6 +7,9 @@ The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial *
 - Prusa MMU1
 - Bambu AMS
 
+!!! info
+    This documentation is still under construction. If you have any questions not answered by the documentation, please open an issue on Github.
+
 ## Sample Prints
 
 ![](samplesheep.jpeg){: style="height: 300px"}

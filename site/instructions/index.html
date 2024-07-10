@@ -959,17 +959,22 @@ make
 <p>Next, clone the 3MS repository:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~
 git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCoded/3MS
+<span class="nb">cd</span><span class="w"> </span>3MS
 </code></pre></div>
-<p>As of now, <code>[update_manager]</code> using Moonraker is not supported. To install the 3MS config, use:</p>
-<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/printer_data/config/3ms
-mkdir<span class="w"> </span>-p<span class="w"> </span>~/printer_data/config/3ms/controllers
-ln<span class="w"> </span>-f<span class="w"> </span>main.cfg<span class="w"> </span>~/printer_data/config/3ms/main.cfg
-ln<span class="w"> </span>-f<span class="w"> </span>macros.cfg<span class="w"> </span>~/printer_data/config/3ms/macros.cfg
-ln<span class="w"> </span>-f<span class="w"> </span>./controllers/*<span class="w"> </span>~/printer_data/config/3ms/controllers/*
+<p>To install the 3MS config, use:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>install.py
 </code></pre></div>
 <p>In your <code>printer.cfg</code>, add:</p>
 <div class="highlight"><span class="filename">printer.cfg</span><pre><span></span><code><span class="k">[include 3ms/main.cfg]</span>
 </code></pre></div>
+<p>In your <code>moonraker.conf</code>, add:
+<div class="highlight"><span class="filename">moonraker.conf</span><pre><span></span><code><span class="c1"># 3MS Update Manager</span>
+<span class="k">[update_manager mmms]</span>
+<span class="na">type</span><span class="o">:</span><span class="w"> </span><span class="s">git_repo</span>
+<span class="na">path</span><span class="o">:</span><span class="w"> </span><span class="s">~/3MS</span>
+<span class="na">origin</span><span class="o">:</span><span class="w"> </span><span class="s">https://github.com/3DCoded/3MS</span>
+<span class="na">install_script</span><span class="o">:</span><span class="w"> </span><span class="s">~/3MS/install.sh</span>
+</code></pre></div></p>
 <h2 id="4-stepper-motor-setup">4. Stepper motor setup</h2>
 <p>Follow <a href="../setup/steppers/">Stepper Setup</a> to setup and calibrate each of your filament units.</p>
 <h2 id="5-slicer-setup">5. Slicer setup</h2>
