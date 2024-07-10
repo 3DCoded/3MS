@@ -1,9 +1,10 @@
-import os
+timport os
 from pathlib import Path
 import shutil
 
 install_files = '''
 main.cfg
+settings.cfg
 macros.cfg
 variables.cfg
 KlipperScreen.conf
