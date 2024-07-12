@@ -1,4 +1,4 @@
-# Stepper Setup
+# Stepper Motors
 
 Follow this guide to calibrate each of the stepper motors. Each of these steps should be repeated for each of your filament units, replacing `TOOL=0` with `TOOL=1`, and so on. Also replacing `3ms0` with `3ms1`, and so on.
 
@@ -14,7 +14,7 @@ SYNC_TOOL TOOL=0
 G1 E50 F4500
 ```
 
-If the motor spins, skip to the next step. If not, check your wiring first. If your wiring is fine, go to `3ms/steppers.cfg`. Locate the section named `[extruder_stepper 3ms0]`, replacing `0` with the `TOOL` number of the motor not spinning. In front of the `enable_pin`, add, an `!`. If there already is one, remove it. Example:
+If the motor spins, skip to the next step. If not, check your wiring first. If your wiring is fine, go to `3ms/steppers.cfg`. Locate the section named `[extruder_stepper 3ms0]`. In front of the `enable_pin`, add, an `!`. If there already is one, remove it. Example:
 
 === "Before"
     ``` cfg title="3ms/steppers.cfg"
@@ -79,3 +79,6 @@ Calculate the new rotation distance: `new_rotation_distance = <rotation_distance
 Round this result to three or four decimal places. Decrease it by 0.005 (this is so that if this result is slightly off, the 3MS filament unit will skip, instead of the printer's extruder stripping the filament during a print). 
 
 Set the new `rotation_distance` in your config. Save it and restart Klipper.
+
+!!! info
+    If you use the same stepper motor brand and model for each of your filament units, you likely only have to do this step for one stepper, then copy over the rotation_distance to all the others.

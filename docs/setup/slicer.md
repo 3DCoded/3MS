@@ -15,7 +15,7 @@ In OrcaSlicer, press the filament plus button until there are as many filaments 
 In your Klipper `PRINT_START` macro, add the following right before your purge line:
 
 ```cfg
-MMMS_START INITIAL_EXTRUDER={params.INITIAL_EXTRUDER}
+MMMS_START INITIAL_TOOL={params.INITIAL_EXTRUDER}
 ```
 
 In your `PRINT_END` macro, add the following before the cooldown command is called:
@@ -34,7 +34,8 @@ INITIAL_EXTRUDER=[initial_extruder]
 
 ![](slicer2.png)
 
-This is the last non-optional part of slicer setup.
+!!! info
+    This is the last required part of slicer setup.
 
 ## Optional: klipper_estimator
 

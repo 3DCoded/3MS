@@ -43,6 +43,15 @@ is_system_service: False
 install_script: install.sh
 ```
 
+!!! warning
+    When updating via Moonraker, the following files will be overwritten:
+        
+    - `main.cfg`
+    - `macros.cfg`
+    - `KlipperScreen.conf`
+    
+    If you have any changes in these files, they will be lost when updating.
+
 ## Configure MCU ID
 
 Finally, to configure the MCU ID you saved from [Firmware](firmware.md), run in your terminal:
@@ -63,5 +72,5 @@ Example:
 === "After"
     ```cfg title="3ms/controllers/xxx/steppers.cfg"
     [mcu 3ms]
-    serial: /dev/serial/by-id//dev/serial/by-id/usb-Klipper_stm32f103xe_33FFD1054746333809650557-if00
+    serial: /dev/serial/by-id/usb-Klipper_stm32f103xe_33FFD1054746333809650557-if00
     ```
