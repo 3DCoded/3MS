@@ -29,7 +29,7 @@ def copy(src, dst):
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     if os.path.exists(dst):
         os.remove(dst)
-    os.link(src, dst)
+    shutil.copy2(src, dst)
 
 def install():
     os.makedirs(to_dir, exist_ok=True)
@@ -39,7 +39,7 @@ def install():
         print(f'Installing file {file} to {to_path}')
         if os.path.exists(to_path):
             os.remove(to_path)
-        os.link(from_path, to_path)
+        shutil.copy2(from_path, to_path)
     for file in optional_files:
         from_path = from_dir / file
         to_path = to_dir / file
