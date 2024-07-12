@@ -2,62 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://3dcoded.github.io/3ms/</loc>
-         <lastmod>2024-07-10</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3ms/instructions/</loc>
-         <lastmod>2024-07-10</lastmod>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3ms/configuration/</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3ms/configuration/install/</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3ms/configuration/klipperscreen/</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3ms/configuration/macros/</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3ms/configuration/steppers/</loc>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3ms/experimental/notip/</loc>
-         <lastmod>2024-07-10</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/hardware/assembly/</loc>
-         <lastmod>2024-07-10</lastmod>
+         <loc>https://3dcoded.github.io/3ms/setup/assembly/</loc>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3ms/setup/bom/</loc>
-         <lastmod>2024-07-10</lastmod>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3ms/setup/firmware/</loc>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3ms/setup/slicer/</loc>
-         <lastmod>2024-07-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/steppers/</loc>
-         <lastmod>2024-07-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/software/configuration/</loc>
-         <lastmod>2024-07-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/software/firmware/</loc>
-         <lastmod>2024-07-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/software/install/</loc>
-         <lastmod>2024-07-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/software/klipperscreen/</loc>
-         <lastmod>2024-07-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/software/macros/</loc>
-         <lastmod>2024-07-10</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

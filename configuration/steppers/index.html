@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://3dcoded.github.io/3ms/software/install/">
+        <link rel="canonical" href="https://3dcoded.github.io/3ms/configuration/steppers/">
       
       
-        <link rel="prev" href="../firmware/">
+        <link rel="prev" href="../install/">
       
       
-        <link rel="next" href="../klipperscreen/">
+        <link rel="next" href="../macros/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Installation - 3MS</title>
+        <title>Stepper Motors - 3MS</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation" class="md-skip">
+        <a href="#stepper-motors" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              Stepper Motors
             
           </span>
         </div>
@@ -301,6 +301,16 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -358,11 +368,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../setup/steppers/" class="md-nav__link">
+      <a href="../../setup/assembly/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Stepper Setup
+    Assembly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/firmware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
   </span>
   
 
@@ -410,6 +441,20 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
@@ -419,43 +464,32 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Software
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Software
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../configuration/" class="md-nav__link">
-        
   
   <span class="md-ellipsis">
     Configuration
   </span>
   
 
-      </a>
-    </li>
-  
-
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
             
               
@@ -465,32 +499,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../macros/" class="md-nav__link">
+      <a href="../install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Macros
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../firmware/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Firmware
+    Installation
   </span>
   
 
@@ -520,7 +533,7 @@
           
   
   <span class="md-ellipsis">
-    Installation
+    Stepper Motors
   </span>
   
 
@@ -531,7 +544,7 @@
         
   
   <span class="md-ellipsis">
-    Installation
+    Stepper Motors
   </span>
   
 
@@ -553,45 +566,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#clone-repository" class="md-nav__link">
+  <a href="#is-the-motor-spinning" class="md-nav__link">
     <span class="md-ellipsis">
-      Clone Repository
+      Is the motor spinning?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-script" class="md-nav__link">
+  <a href="#is-the-motor-spinning-backwards" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Script
+      Is the motor spinning backwards?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#printercfg" class="md-nav__link">
+  <a href="#how-far-does-the-filament-move" class="md-nav__link">
     <span class="md-ellipsis">
-      printer.cfg
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#moonraker-update-manager" class="md-nav__link">
-    <span class="md-ellipsis">
-      Moonraker Update Manager
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-mcu-id" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure MCU ID
+      How far does the filament move?
     </span>
   </a>
   
@@ -601,6 +596,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Macros
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -642,6 +658,10 @@
   
     
     
+      
+        
+      
+    
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -657,7 +677,7 @@
             
   
   <span class="md-ellipsis">
-    Hardware
+    Experimental
   </span>
   
 
@@ -666,71 +686,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Hardware
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../hardware/assembly/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Assembly Instructions
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Experimental
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Experimental
           </label>
@@ -791,45 +746,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#clone-repository" class="md-nav__link">
+  <a href="#is-the-motor-spinning" class="md-nav__link">
     <span class="md-ellipsis">
-      Clone Repository
+      Is the motor spinning?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-script" class="md-nav__link">
+  <a href="#is-the-motor-spinning-backwards" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Script
+      Is the motor spinning backwards?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#printercfg" class="md-nav__link">
+  <a href="#how-far-does-the-filament-move" class="md-nav__link">
     <span class="md-ellipsis">
-      printer.cfg
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#moonraker-update-manager" class="md-nav__link">
-    <span class="md-ellipsis">
-      Moonraker Update Manager
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-mcu-id" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure MCU ID
+      How far does the filament move?
     </span>
   </a>
   
@@ -853,52 +790,67 @@
   
 
 
-<h1 id="installation">Installation</h1>
-<p>Follow this guide to install the 3MS configuration and macros.</p>
-<h2 id="clone-repository">Clone Repository</h2>
-<p>First, clone the 3MS repository:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~
-git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCoded/3MS
-<span class="nb">cd</span><span class="w"> </span>3MS
+<h1 id="stepper-motors">Stepper Motors</h1>
+<p>Follow this guide to calibrate each of the stepper motors. Each of these steps should be repeated for each of your filament units, replacing <code>TOOL=0</code> with <code>TOOL=1</code>, and so on. Also replacing <code>3ms0</code> with <code>3ms1</code>, and so on.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If your stepper motor shakes erratically while running any of these commands, your wiring may be incorrect.</p>
+</div>
+<h2 id="is-the-motor-spinning">Is the motor spinning?</h2>
+<p>Run this command:</p>
+<div class="highlight"><pre><span></span><code>SYNC_TOOL TOOL=0
+<span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">4500</span>
 </code></pre></div>
-<h2 id="install-script">Install Script</h2>
-<p>Run the install script:</p>
-<div class="highlight"><pre><span></span><code>sh<span class="w"> </span>install.sh
-</code></pre></div>
-<h2 id="printercfg">printer.cfg</h2>
-<p>In your <code>printer.cfg</code>, add:</p>
-<div class="highlight"><span class="filename">printer.cfg</span><pre><span></span><code><span class="k">[include 3ms/main.cfg]</span>
-</code></pre></div>
-<h2 id="moonraker-update-manager">Moonraker Update Manager</h2>
-<p>To enable updates for the 3MS, add the following to your <code>moonraker.conf</code>:</p>
-<div class="highlight"><span class="filename">moonraker.conf</span><pre><span></span><code><span class="c1"># 3MS Update Manager</span>
-<span class="k">[update_manager mmms]</span>
-<span class="na">type</span><span class="o">:</span><span class="w"> </span><span class="s">git_repo</span>
-<span class="na">path</span><span class="o">:</span><span class="w"> </span><span class="s">~/3MS</span>
-<span class="na">origin</span><span class="o">:</span><span class="w"> </span><span class="s">https://github.com/3DCoded/3MS.git</span>
-<span class="na">primary_branch</span><span class="o">:</span><span class="w"> </span><span class="s">main</span>
-<span class="na">is_system_service</span><span class="o">:</span><span class="w"> </span><span class="s">False</span>
-<span class="na">install_script</span><span class="o">:</span><span class="w"> </span><span class="s">install.sh</span>
-</code></pre></div>
-<h2 id="configure-mcu-id">Configure MCU ID</h2>
-<p>Finally, to configure the MCU ID you saved from <a href="../firmware/">Firmware</a>, run in your terminal:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cat<span class="w"> </span>mcu.txt
-</code></pre></div>
-<p>Copy the path that is output. Now, in your <code>3ms/controllers/xxx/steppers.cfg</code>, in the <code>[mcu 3ms]</code> section (towards the bottom), set the MCU ID.</p>
-<p>Example:</p>
+<p>If the motor spins, skip to the next step. If not, check your wiring first. If your wiring is fine, go to <code>3ms/steppers.cfg</code>. Locate the section named <code>[extruder_stepper 3ms0]</code>. In front of the <code>enable_pin</code>, add, an <code>!</code>. If there already is one, remove it. Example:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/controllers/xxx/steppers.cfg</span><pre><span></span><code><span class="k">[mcu 3ms]</span>
-<span class="na">serial</span><span class="o">:</span><span class="w"> </span><span class="s">/dev/serial/by-id/&lt;your-mcu-id&gt;</span>
+<div class="highlight"><span class="filename">3ms/steppers.cfg</span><pre><span></span><code><span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!arduino: PD7</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/controllers/xxx/steppers.cfg</span><pre><span></span><code><span class="k">[mcu 3ms]</span>
-<span class="na">serial</span><span class="o">:</span><span class="w"> </span><span class="s">/dev/serial/by-id//dev/serial/by-id/usb-Klipper_stm32f103xe_33FFD1054746333809650557-if00</span>
+<div class="highlight"><span class="filename">3ms/steppers.cfg</span><pre><span></span><code><span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">arduino: PD7</span>
 </code></pre></div>
 </div>
 </div>
+</div>
+<h2 id="is-the-motor-spinning-backwards">Is the motor spinning backwards?</h2>
+<p>Preload each of the filament units with a piece of scrap filament by pushing the lever to release the tension, inserting filament, then releasing the lever to restore tension. Next, run this command:</p>
+<div class="highlight"><pre><span></span><code>SYNC_TOOL TOOL=0
+<span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">4500</span>
+</code></pre></div>
+<p>Note which way the filament moves. If it moves forwards, away from the PTFE coupler, skip to the last step. If it moves backwards, you have two choices:</p>
+<ul>
+<li>Switch the motor's wires</li>
+<li>Invert the pin in the configuration</li>
+</ul>
+<p>To invert the pin in the configuration, locate the configuration section for the filament unit spinning backwards, and invert the <code>dir_pin</code>. See the previous section for how to invert the pin.</p>
+<h2 id="how-far-does-the-filament-move">How far does the filament move?</h2>
+<p>This section is a modified version of the <a href="https://www.klipper3d.org/Rotation_Distance.html#calibrating-rotation_distance-on-extruders">Klipper Docs</a></p>
+<p>Preload each of the filament units with a piece of scrap filament at least 200mm long by pushing the lever to release the tension, inserting filament, then releasing the lever to restore tension.</p>
+<p>Use a ruler and a marker to place a mark 70mm from the inlet of the filament unit. Use calipers to measure the actual distance. Write it down, as it will be referred to as <code>&lt;initial_mark_distance&gt;</code>.</p>
+<p>Next, run this command:</p>
+<div class="highlight"><pre><span></span><code>SYNC_TOOL TOOL=0
+<span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">1500</span>
+</code></pre></div>
+<p>Use calipers to measure the new distance between the inlet of the filament unit and the mark. Write it down, as it will be referred to as <code>&lt;next_mark_distance&gt;</code>. </p>
+<p>Calculate <code>&lt;actual_extrude_distance&gt; = &lt;initial_mark_distance&gt; - &lt;next_mark_distance&gt;</code></p>
+<p>In the <code>steppers.cfg</code> file (located in <code>3ms/controllers/xxx/steppers.cfg</code>), locate the configuration section for the current extruder. Example:</p>
+<div class="highlight"><span class="filename">3ms/controllers/btt_skr_mini_e3_v2/steppers.cfg</span><pre><span></span><code><span class="k">[extruder_stepper 3ms0]</span>
+<span class="na">extruder</span><span class="o">:</span><span class="w"> </span><span class="s">extruder</span>
+<span class="na">step_pin</span><span class="o">:</span><span class="w"> </span><span class="s">3ms: PB13</span>
+<span class="na">dir_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!3ms: PB12</span>
+<span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!3ms: PB14</span>
+<span class="na">microsteps</span><span class="o">:</span><span class="w"> </span><span class="s">16</span>
+<span class="na">rotation_distance</span><span class="o">:</span><span class="w"> </span><span class="s">32.8450</span>
+</code></pre></div>
+<p>Note the <code>rotation_distance</code> (last line). In this case, it is <code>32.8450</code>.</p>
+<p>Calculate the new rotation distance: <code>new_rotation_distance = &lt;rotation_distance&gt; * &lt;actual_extrude_distance&gt; / 50</code>. </p>
+<p>Round this result to three or four decimal places. Decrease it by 0.005 (this is so that if this result is slightly off, the 3MS filament unit will skip, instead of the printer's extruder stripping the filament during a print). </p>
+<p>Set the new <code>rotation_distance</code> in your config. Save it and restart Klipper.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If you use the same stepper motor brand and model for each of your filament units, you likely only have to do this step for one stepper, then copy over the rotation_distance to all the others.</p>
 </div>
 
 
@@ -946,7 +898,7 @@ git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCod
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.instant", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.expand", "navigation.instant", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://3dcoded.github.io/3ms/software/klipperscreen/">
+        <link rel="canonical" href="https://3dcoded.github.io/3ms/configuration/install/">
       
       
-        <link rel="prev" href="../install/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../hardware/assembly/">
+        <link rel="next" href="../steppers/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>KlipperScreen - 3MS</title>
+        <title>Installation - 3MS</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#klipperscreen" class="md-skip">
+        <a href="#installation" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              KlipperScreen
+              Installation
             
           </span>
         </div>
@@ -301,6 +301,16 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -358,11 +368,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../setup/steppers/" class="md-nav__link">
+      <a href="../../setup/assembly/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Stepper Setup
+    Assembly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/firmware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
   </span>
   
 
@@ -410,6 +441,20 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
@@ -419,23 +464,139 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
-    Software
+    Configuration
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Software
+            Configuration
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clone-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone Repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#printercfg" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.cfg
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moonraker-update-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moonraker Update Manager
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-mcu-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure MCU ID
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
             
               
                 
@@ -444,11 +605,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../configuration/" class="md-nav__link">
+      <a href="../steppers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Configuration
+    Stepper Motors
   </span>
   
 
@@ -486,58 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../firmware/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Firmware
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../install/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Installation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="../klipperscreen/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -546,7 +656,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -566,6 +675,10 @@
   
   
     
+    
+      
+        
+      
     
     
     
@@ -582,7 +695,7 @@
             
   
   <span class="md-ellipsis">
-    Hardware
+    Experimental
   </span>
   
 
@@ -591,71 +704,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Hardware
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../hardware/assembly/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Assembly Instructions
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Experimental
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Experimental
           </label>
@@ -709,6 +757,59 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clone-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone Repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#printercfg" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.cfg
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moonraker-update-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moonraker Update Manager
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-mcu-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure MCU ID
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -725,11 +826,63 @@
   
 
 
-<h1 id="klipperscreen">KlipperScreen</h1>
-<p><img alt="" src="../../assets/images/klipperscreen.png" /></p>
-<p>The 3MS supports a KlipperScreen menu. To install it, add the following to your <code>KlipperScreen.conf</code> (located in the same folder as your <code>printer.cfg</code>):</p>
-<div class="highlight"><span class="filename">KlipperScreen.conf</span><pre><span></span><code><span class="k">[include 3ms/KlipperScreen.conf]</span>
+<h1 id="installation">Installation</h1>
+<p>Follow this guide to install the 3MS configuration and macros.</p>
+<h2 id="clone-repository">Clone Repository</h2>
+<p>First, clone the 3MS repository:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCoded/3MS
+<span class="nb">cd</span><span class="w"> </span>3MS
 </code></pre></div>
+<h2 id="install-script">Install Script</h2>
+<p>Run the install script:</p>
+<div class="highlight"><pre><span></span><code>sh<span class="w"> </span>install.sh
+</code></pre></div>
+<h2 id="printercfg">printer.cfg</h2>
+<p>In your <code>printer.cfg</code>, add:</p>
+<div class="highlight"><span class="filename">printer.cfg</span><pre><span></span><code><span class="k">[include 3ms/main.cfg]</span>
+</code></pre></div>
+<h2 id="moonraker-update-manager">Moonraker Update Manager</h2>
+<p>To enable updates for the 3MS, add the following to your <code>moonraker.conf</code>:</p>
+<div class="highlight"><span class="filename">moonraker.conf</span><pre><span></span><code><span class="c1"># 3MS Update Manager</span>
+<span class="k">[update_manager mmms]</span>
+<span class="na">type</span><span class="o">:</span><span class="w"> </span><span class="s">git_repo</span>
+<span class="na">path</span><span class="o">:</span><span class="w"> </span><span class="s">~/3MS</span>
+<span class="na">origin</span><span class="o">:</span><span class="w"> </span><span class="s">https://github.com/3DCoded/3MS.git</span>
+<span class="na">primary_branch</span><span class="o">:</span><span class="w"> </span><span class="s">main</span>
+<span class="na">is_system_service</span><span class="o">:</span><span class="w"> </span><span class="s">False</span>
+<span class="na">install_script</span><span class="o">:</span><span class="w"> </span><span class="s">install.sh</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When updating via Moonraker, the following files will be overwritten:</p>
+<ul>
+<li><code>main.cfg</code></li>
+<li><code>macros.cfg</code></li>
+<li><code>KlipperScreen.conf</code></li>
+</ul>
+<p>If you have any changes in these files, they will be lost when updating.</p>
+</div>
+<h2 id="configure-mcu-id">Configure MCU ID</h2>
+<p>Finally, to configure the MCU ID you saved from <a href="../../setup/firmware/">Firmware</a>, run in your terminal:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cat<span class="w"> </span>mcu.txt
+</code></pre></div>
+<p>Copy the path that is output. Now, in your <code>3ms/controllers/xxx/steppers.cfg</code>, in the <code>[mcu 3ms]</code> section (towards the bottom), set the MCU ID.</p>
+<p>Example:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">3ms/controllers/xxx/steppers.cfg</span><pre><span></span><code><span class="k">[mcu 3ms]</span>
+<span class="na">serial</span><span class="o">:</span><span class="w"> </span><span class="s">/dev/serial/by-id/&lt;your-mcu-id&gt;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">3ms/controllers/xxx/steppers.cfg</span><pre><span></span><code><span class="k">[mcu 3ms]</span>
+<span class="na">serial</span><span class="o">:</span><span class="w"> </span><span class="s">/dev/serial/by-id/usb-Klipper_stm32f103xe_33FFD1054746333809650557-if00</span>
+</code></pre></div>
+</div>
+</div>
+</div>
 
 
 
@@ -776,7 +929,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.instant", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.expand", "navigation.instant", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

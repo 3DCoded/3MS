@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://3dcoded.github.io/3ms/setup/steppers/">
+        <link rel="canonical" href="https://3dcoded.github.io/3ms/setup/assembly/">
       
       
         <link rel="prev" href="../bom/">
       
       
-        <link rel="next" href="../slicer/">
+        <link rel="next" href="../firmware/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Stepper Setup - 3MS</title>
+        <title>Assembly - 3MS</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#stepper-setup" class="md-skip">
+        <a href="#assembly" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Stepper Setup
+              Assembly
             
           </span>
         </div>
@@ -303,6 +303,16 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
@@ -371,7 +381,7 @@
           
   
   <span class="md-ellipsis">
-    Stepper Setup
+    Assembly
   </span>
   
 
@@ -382,7 +392,7 @@
         
   
   <span class="md-ellipsis">
-    Stepper Setup
+    Assembly
   </span>
   
 
@@ -404,27 +414,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#is-the-motor-spinning" class="md-nav__link">
+  <a href="#printed-parts" class="md-nav__link">
     <span class="md-ellipsis">
-      Is the motor spinning?
+      Printed Parts
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#is-the-motor-spinning-backwards" class="md-nav__link">
+  <a href="#mk8-assembly" class="md-nav__link">
     <span class="md-ellipsis">
-      Is the motor spinning backwards?
+      MK8 Assembly
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-far-does-the-filament-move" class="md-nav__link">
+  <a href="#wiring" class="md-nav__link">
     <span class="md-ellipsis">
-      How far does the filament move?
+      Wiring
     </span>
   </a>
   
@@ -434,6 +444,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../firmware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -475,6 +506,20 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -486,64 +531,32 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Software
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Software
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../configuration/" class="md-nav__link ">
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../software/configuration/" class="md-nav__link">
-        
   
   <span class="md-ellipsis">
     Configuration
   </span>
   
 
-      </a>
-    </li>
-  
-
-              
+            </a>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../software/macros/" class="md-nav__link">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-  
-  <span class="md-ellipsis">
-    Macros
-  </span>
-  
-
-      </a>
-    </li>
-  
-
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
             
               
@@ -553,28 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../software/firmware/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Firmware
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../software/install/" class="md-nav__link">
+      <a href="../../configuration/install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -595,7 +587,49 @@
   
   
     <li class="md-nav__item">
-      <a href="../../software/klipperscreen/" class="md-nav__link">
+      <a href="../../configuration/steppers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stepper Motors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/macros/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Macros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/klipperscreen/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -624,6 +658,10 @@
   
     
     
+      
+        
+      
+    
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -639,7 +677,7 @@
             
   
   <span class="md-ellipsis">
-    Hardware
+    Experimental
   </span>
   
 
@@ -648,71 +686,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Hardware
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../hardware/assembly/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Assembly Instructions
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Experimental
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Experimental
           </label>
@@ -773,27 +746,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#is-the-motor-spinning" class="md-nav__link">
+  <a href="#printed-parts" class="md-nav__link">
     <span class="md-ellipsis">
-      Is the motor spinning?
+      Printed Parts
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#is-the-motor-spinning-backwards" class="md-nav__link">
+  <a href="#mk8-assembly" class="md-nav__link">
     <span class="md-ellipsis">
-      Is the motor spinning backwards?
+      MK8 Assembly
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-far-does-the-filament-move" class="md-nav__link">
+  <a href="#wiring" class="md-nav__link">
     <span class="md-ellipsis">
-      How far does the filament move?
+      Wiring
     </span>
   </a>
   
@@ -817,64 +790,72 @@
   
 
 
-<h1 id="stepper-setup">Stepper Setup</h1>
-<p>Follow this guide to calibrate each of the stepper motors. Each of these steps should be repeated for each of your filament units, replacing <code>TOOL=0</code> with <code>TOOL=1</code>, and so on. Also replacing <code>3ms0</code> with <code>3ms1</code>, and so on.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>If your stepper motor shakes erratically while running any of these commands, your wiring may be incorrect.</p>
+<h1 id="assembly">Assembly</h1>
+<p>Follow this guide to assemble your 3MS.</p>
+<h2 id="printed-parts">Printed Parts</h2>
+<p>An optional board enclosure for the SKR Mini E3 is available <a href="https://www.printables.com/model/459809-bigtreetech-skr-mini-e3-v3-enclosure">here</a>.</p>
+<p>Additionaly, an optional univeral mount for the MK8 extruder using M3 bolts is available <a href="../../assets/stls/mk8m3.stl">here</a>. Note that this requires 2-4 M3 bolts and a place to screw the bolts into.</p>
+<p>Finally, you will need to print enough of <a href="https://www.printables.com/model/541678-bambu-ams-no-catch-y-splitter-pc4-m10">these</a> Y splitters for the filament.</p>
+<h2 id="mk8-assembly">MK8 Assembly</h2>
+<p>Next, assemble the MK8 extruders onto the NEMA17 motors using the provided instructions that came with them. If you use the mount provided above, make sure it is in between the MK8 and NEMA17. </p>
+<h2 id="wiring">Wiring</h2>
+<p>After that, route the wires from the NEMA17 to the controller board. Follow this table to determine which port to plug the motors into:</p>
+<table>
+<thead>
+<tr>
+<th>Filament Unit #</th>
+<th>Motor Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>XM</td>
+</tr>
+<tr>
+<td>1</td>
+<td>YM</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ZAM or ZBM</td>
+</tr>
+<tr>
+<td>3</td>
+<td>E0M</td>
+</tr>
+</tbody>
+</table>
+<p>Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)</p>
+<ol>
+<li>Plug the red wire into the positive terminal of the screw termianls</li>
+<li>
+<p>Plug the black wire into the negative terminal of the screw terminals</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>These dupont cables are too thin to run much more than the stepper motors. If you run a heater or other power-intensive device off of the SKR board, the duponts and/or PSU can melt/catch fire. To reduce the risk of this, you can double up on the duponts or get thicker wires.</p>
 </div>
-<h2 id="is-the-motor-spinning">Is the motor spinning?</h2>
-<p>Run this command:</p>
-<div class="highlight"><pre><span></span><code>SYNC_TOOL TOOL=0
-<span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">4500</span>
-</code></pre></div>
-<p>If the motor spins, skip to the next step. If not, check your wiring first. If your wiring is fine, go to <code>3ms/steppers.cfg</code>. Locate the section named <code>[extruder_stepper 3ms0]</code>, replacing <code>0</code> with the <code>TOOL</code> number of the motor not spinning. In front of the <code>enable_pin</code>, add, an <code>!</code>. If there already is one, remove it. Example:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/steppers.cfg</span><pre><span></span><code><span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!arduino: PD7</span>
-</code></pre></div>
+</li>
+<li>
+<p>Following this image, choose either the DCIN or POWER input
+<img alt="" src="../../assets/images/skrminie3v2pins.jpg" /></p>
+</li>
+<li>Route the two wires inside closest to your chosen input</li>
+<li>Using the markings on the board, plug the red wire into the positive terminal on the SKR</li>
+<li>Using the markings on the board, plug the black wire into the negative terminal on the SKR</li>
+<li>
+<p>Verify all connections</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the wires are plugged into the wrong place, or swapped polarities, your SKR, Stepper motors, and/or PSU can be badly damaged.</p>
 </div>
-<div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/steppers.cfg</span><pre><span></span><code><span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">arduino: PD7</span>
-</code></pre></div>
-</div>
-</div>
-</div>
-<h2 id="is-the-motor-spinning-backwards">Is the motor spinning backwards?</h2>
-<p>Preload each of the filament units with a piece of scrap filament by pushing the lever to release the tension, inserting filament, then releasing the lever to restore tension. Next, run this command:</p>
-<div class="highlight"><pre><span></span><code>SYNC_TOOL TOOL=0
-<span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">4500</span>
-</code></pre></div>
-<p>Note which way the filament moves. If it moves forwards, away from the PTFE coupler, skip to the last step. If it moves backwards, you have two choices:</p>
-<ul>
-<li>Switch the motor's wires</li>
-<li>Invert the pin in the configuration</li>
-</ul>
-<p>To invert the pin in the configuration, locate the configuration section for the filament unit spinning backwards, and invert the <code>dir_pin</code>. See the previous section for how to invert the pin.</p>
-<h2 id="how-far-does-the-filament-move">How far does the filament move?</h2>
-<p>This section is a modified version of the <a href="https://www.klipper3d.org/Rotation_Distance.html#calibrating-rotation_distance-on-extruders">Klipper Docs</a></p>
-<p>Preload each of the filament units with a piece of scrap filament at least 200mm long by pushing the lever to release the tension, inserting filament, then releasing the lever to restore tension.</p>
-<p>Use a ruler and a marker to place a mark 70mm from the inlet of the filament unit. Use calipers to measure the actual distance. Write it down, as it will be referred to as <code>&lt;initial_mark_distance&gt;</code>.</p>
-<p>Next, run this command:</p>
-<div class="highlight"><pre><span></span><code>SYNC_TOOL TOOL=0
-<span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">1500</span>
-</code></pre></div>
-<p>Use calipers to measure the new distance between the inlet of the filament unit and the mark. Write it down, as it will be referred to as <code>&lt;next_mark_distance&gt;</code>. </p>
-<p>Calculate <code>&lt;actual_extrude_distance&gt; = &lt;initial_mark_distance&gt; - &lt;next_mark_distance&gt;</code></p>
-<p>In the <code>steppers.cfg</code> file (located in <code>3ms/controllers/xxx/steppers.cfg</code>), locate the configuration section for the current extruder. Example:</p>
-<div class="highlight"><span class="filename">3ms/controllers/btt_skr_mini_e3_v2/steppers.cfg</span><pre><span></span><code><span class="k">[extruder_stepper 3ms0]</span>
-<span class="na">extruder</span><span class="o">:</span><span class="w"> </span><span class="s">extruder</span>
-<span class="na">step_pin</span><span class="o">:</span><span class="w"> </span><span class="s">3ms: PB13</span>
-<span class="na">dir_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!3ms: PB12</span>
-<span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!3ms: PB14</span>
-<span class="na">microsteps</span><span class="o">:</span><span class="w"> </span><span class="s">16</span>
-<span class="na">rotation_distance</span><span class="o">:</span><span class="w"> </span><span class="s">32.8450</span>
-</code></pre></div>
-<p>Note the <code>rotation_distance</code> (last line). In this case, it is <code>32.8450</code>.</p>
-<p>Calculate the new rotation distance: <code>new_rotation_distance = &lt;rotation_distance&gt; * &lt;actual_extrude_distance&gt; / 50</code>. </p>
-<p>Round this result to three or four decimal places. Decrease it by 0.005 (this is so that if this result is slightly off, the 3MS filament unit will skip, instead of the printer's extruder stripping the filament during a print). </p>
-<p>Set the new <code>rotation_distance</code> in your config. Save it and restart Klipper.</p>
+</li>
+<li>
+<p>Plug the PSU screw terminals into the PSU wire</p>
+</li>
+</ol>
+<p>If the SKR lights up, you wired it correctly!</p>
+<p>Finally, plug the SKR into your Klipper host with the blue cable that came with it.</p>
 
 
 
@@ -921,7 +902,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.instant", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.expand", "navigation.instant", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
