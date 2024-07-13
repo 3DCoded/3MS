@@ -629,9 +629,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#set_mmms_settings" class="md-nav__link">
+  <a href="#set_3ms_settings" class="md-nav__link">
     <span class="md-ellipsis">
-      SET_MMMS_SETTINGS
+      SET_3MS_SETTINGS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_3ms_settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET_3MS_SETTINGS
     </span>
   </a>
   
@@ -1054,9 +1063,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#set_mmms_settings" class="md-nav__link">
+  <a href="#set_3ms_settings" class="md-nav__link">
     <span class="md-ellipsis">
-      SET_MMMS_SETTINGS
+      SET_3MS_SETTINGS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_3ms_settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET_3MS_SETTINGS
     </span>
   </a>
   
@@ -1277,11 +1295,16 @@ variable_num_tools: 2
 <p><strong>Example Usage</strong></p>
 <div class="highlight"><pre><span></span><code>MMMS_SETTINGS
 </code></pre></div>
-<h3 id="set_mmms_settings">SET_MMMS_SETTINGS</h3>
+<h3 id="set_3ms_settings">SET_3MS_SETTINGS</h3>
 <p>Sets the configuration for the 3MS. Allows <strong>temporary</strong> customization of load and unload distances and speeds</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>SET_MMMS_SETTINGS LOAD_DISTANCE=210 UNLOAD_DISTANCE=200 LOAD_SPEED=3500 UNLOAD_SPEED=5500 FSENSOR_DELAY=2500
+<div class="highlight"><pre><span></span><code>SET_3MS_SETTINGS LOAD_DISTANCE=210 UNLOAD_DISTANCE=200 LOAD_SPEED=3500 UNLOAD_SPEED=5500 FSENSOR_DELAY=2500
 </code></pre></div>
+<h3 id="get_3ms_settings">GET_3MS_SETTINGS</h3>
+<p>Dispalys the configuration for the 3MS. </p>
+<p><strong>Example Usage</strong>
+<div class="highlight"><pre><span></span><code>GET_3MS_SETTINGS
+</code></pre></div></p>
 <h2 id="filament-handling">Filament Handling</h2>
 <h3 id="mmms_unload">MMMS_UNLOAD</h3>
 <p>Unloads filament by a specified distance and speed. If no distance/speed is specified, it uses the default unload distance/speed from <code>MMMS_SETTINGS</code>.</p>
