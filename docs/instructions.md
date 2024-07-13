@@ -15,6 +15,7 @@ The basic steps this guide will follow are:
 5. [Slicer setup](#5-slicer-setup)
 6. [First print](#6-first-print)
 7. [Troubleshooting](#7-troubleshooting)
+8. [Updating](#8-updating)
 
 ## 0. Explanations
 
@@ -62,10 +63,36 @@ Follow [Slicer Setup](slicer.md) to setup your slicer for the 3MS.
 
 ## 6. First print
 
-!!! info
-    This section is a work in progress.
+Follow [First Print](firstprint.md) to create your first multimaterial print with the 3MS.
 
 ## 7. Troubleshooting
 
+Check [Troubleshooting](troubleshooting/index.md) to find guides to troubleshoot your 3MS.
+
+## 8. Updating
+
+To update the 3MS configuration, go to the Update Manager in Mainsail/Fluidd and refresh the updates. 
+
+![](updating1.png)
+
+Next, find the "mmms" entry in the list. If there is an "Update" button next to it, click it and begin updating. 
+
+After updating, in your terminal, run:
+
+```sh
+sh ~/3MS/install.sh
+```
+
+This will install the new 3MS configuration. Next, restart Klipper:
+
 !!! info
-    This section is a work in progress (collecting possible failures). If you experienced a failure with the 3MS, please submit it as an issue on Github.
+    It is important to restart the Klipper **service**, and not just run the `RESTART` command.
+
+Either run this command in your terminal or restart from Mainsail/Fluidd:
+
+=== "Terminal"
+    ```sh
+    sudo service klipper restart
+    ```
+=== "Mainsail/Fluidd"
+    ![](updating2.png)
