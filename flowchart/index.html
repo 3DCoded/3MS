@@ -8,28 +8,26 @@
       
       
       
-        <link rel="canonical" href="https://3dcoded.github.io/3ms/setup/bom/">
+        <link rel="canonical" href="https://3dcoded.github.io/3ms/flowchart/">
       
       
-        <link rel="prev" href="../../instructions/">
+        <link rel="prev" href="../experimental/notip/">
       
       
-        <link rel="next" href="../assembly/">
       
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
-        <title>BOM - 3MS</title>
+        <title>Toolchange Flowchart - 3MS</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bom" class="md-skip">
+        <a href="#toolchange-flowchart" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="3MS" class="md-header__button md-logo" aria-label="3MS" data-md-component="logo">
+    <a href=".." title="3MS" class="md-header__button md-logo" aria-label="3MS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -110,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BOM
+              Toolchange Flowchart
             
           </span>
         </div>
@@ -230,7 +228,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="3MS" class="md-nav__button md-logo" aria-label="3MS" data-md-component="logo">
+    <a href=".." title="3MS" class="md-nav__button md-logo" aria-label="3MS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -260,7 +258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -280,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../instructions/" class="md-nav__link">
+      <a href="../instructions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -297,10 +295,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -317,11 +313,13 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -335,7 +333,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Setup
@@ -346,30 +344,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    BOM
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../setup/bom/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -378,53 +356,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#number-of-filament-units" class="md-nav__link">
-    <span class="md-ellipsis">
-      Number of filament units
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#controller-boms" class="md-nav__link">
-    <span class="md-ellipsis">
-      Controller BOMs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#filament-unit-boms" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filament Unit BOMs
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -437,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../assembly/" class="md-nav__link">
+      <a href="../setup/assembly/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -458,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../firmware/" class="md-nav__link">
+      <a href="../setup/firmware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -479,7 +410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slicer/" class="md-nav__link">
+      <a href="../setup/slicer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -500,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../firstprint/" class="md-nav__link">
+      <a href="../setup/firstprint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -556,7 +487,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../configuration/" class="md-nav__link ">
+            <a href="../configuration/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -589,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configuration/install/" class="md-nav__link">
+      <a href="../configuration/install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -610,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configuration/steppers/" class="md-nav__link">
+      <a href="../configuration/steppers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -631,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configuration/macros/" class="md-nav__link">
+      <a href="../configuration/macros/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -652,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configuration/klipperscreen/" class="md-nav__link">
+      <a href="../configuration/klipperscreen/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -702,7 +633,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../troubleshooting/" class="md-nav__link ">
+            <a href="../troubleshooting/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -735,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/skipping/" class="md-nav__link">
+      <a href="../troubleshooting/skipping/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -804,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../experimental/notip/" class="md-nav__link">
+      <a href="../experimental/notip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -829,10 +760,19 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../flowchart/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -841,6 +781,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -865,41 +806,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#number-of-filament-units" class="md-nav__link">
-    <span class="md-ellipsis">
-      Number of filament units
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#controller-boms" class="md-nav__link">
-    <span class="md-ellipsis">
-      Controller BOMs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#filament-unit-boms" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filament Unit BOMs
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -916,92 +822,23 @@
   
 
 
-<h1 id="bom">BOM</h1>
-<h2 id="number-of-filament-units">Number of filament units</h2>
-<p>First, choose the number of filament units you want. Each filament unit lets you print with an additional filament. Two filament units are the minimum. You can add or remove filament units after building, but the BOM and configuration will vary based on how many filament units you want.</p>
-<h2 id="controller-boms">Controller BOMs</h2>
-<p>Choose one of the following Controller BOMs for whatever controller you want:</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>At this time, the only fully supported controller is the SKR Mini E3 V2.0</p>
-</div>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">BTT SKR Mini E3 V2</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><strong>Max filament units: 4</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Price</th>
-<th>Quantity</th>
-<th>Link</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SKR Mini E3 V2</td>
-<td>$34.99</td>
-<td>1</td>
-<td><a href="https://a.co/d/0hgHU9JX">Amazon</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Duponts</td>
-<td>$9.99</td>
-<td>1</td>
-<td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
-<td>These wires are only sufficient to run steppers, not heaters</td>
-</tr>
-<tr>
-<td>12V PSU</td>
-<td>$7.39</td>
-<td>1</td>
-<td><a href="https://a.co/d/gLC1eli">Amazon</a></td>
-<td>This PSU is only sufficient to run steppers, not heaters</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<h2 id="filament-unit-boms">Filament Unit BOMs</h2>
-<p>For each filament unit, purchase this BOM:</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Quantity</th>
-<th>Price</th>
-<th>Link</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>NEMA17 Stepper Motor</td>
-<td>1</td>
-<td>$9.99</td>
-<td><a href="https://a.co/d/06Lsa1qI">Amazon</a></td>
-<td>You can use a pancake stepper if you want, but it will have less torque</td>
-</tr>
-<tr>
-<td>MK8 Metal Extruder</td>
-<td>1</td>
-<td>$9.99</td>
-<td><a href="https://a.co/d/0gJ1ghKj">Amazon</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Capricorn PTFE Tubing</td>
-<td>1</td>
-<td>$11.49</td>
-<td><a href="https://a.co/d/0dLLBGzJ">Amazon</a></td>
-<td>You likely won't need this for every unit, as this is usually too long for only one unit</td>
-</tr>
-</tbody>
-</table>
+<h1 id="toolchange-flowchart">Toolchange Flowchart</h1>
+<p>This flowchart assumes a <code>fsensor_delay</code> of 2000ms.</p>
+<pre class="mermaid"><code>graph TD
+  A[T1] --&gt; B[Toolchange T=1];
+  B[Toolchange T=1] --&gt; C{Same tool?};
+  C --&gt; |No| D{Previous filament loaded?};
+  C --&gt; |Yes| E{Do nothing};
+  D --&gt; |Yes| F[MMMS_UNLOAD];
+  F --&gt; G[DESYNC_TOOL TOOL=0];
+  G --&gt; H[G4 P2000];
+  H --&gt; I[CHECK_FSENSOR V=0];
+  D --&gt; |No| J[SYNC_TOOL TOOL=1];
+  I --&gt; J;
+  J --&gt; K[MMMS_LOAD];
+  K --&gt; L[G4 P2000];
+  L --&gt; M[CHECK_FSENSOR V=1];
+  M --&gt; N[Save new previous extruder]</code></pre>
 
 
 
@@ -1048,10 +885,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.expand", "navigation.instant", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.expand", "navigation.instant", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>
