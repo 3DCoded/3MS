@@ -46,7 +46,7 @@ def install():
         print(f'Installing file {file} to {to_path}')
         if os.path.exists(to_path):
             continue
-	shutil.copy2(from_path, to_path)
+        shutil.copy2(from_path, to_path)
     for folder in install_folders:
         from_path = from_dir / folder
         to_path = to_dir / folder
