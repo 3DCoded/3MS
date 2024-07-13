@@ -22,13 +22,21 @@ variable_num_tools: 2
 MMMS_SETTINGS
 ```
 
-### SET_MMMS_SETTINGS
+### SET_3MS_SETTINGS
 Sets the configuration for the 3MS. Allows **temporary** customization of load and unload distances and speeds
 
 **Example Usage**
 
 ```
-SET_MMMS_SETTINGS LOAD_DISTANCE=210 UNLOAD_DISTANCE=200 LOAD_SPEED=3500 UNLOAD_SPEED=5500 FSENSOR_DELAY=2500
+SET_3MS_SETTINGS LOAD_DISTANCE=210 UNLOAD_DISTANCE=200 LOAD_SPEED=3500 UNLOAD_SPEED=5500 FSENSOR_DELAY=2500
+```
+
+### GET_3MS_SETTINGS
+Dispalys the configuration for the 3MS. 
+
+**Example Usage**
+```
+GET_3MS_SETTINGS
 ```
 
 ## Filament Handling
