@@ -6,9 +6,13 @@ Follow this guide to begin your first multimaterial print. There are two main wa
 
 This method allows you to turn any model, even if it's not designed for multimaterial printing, into a multimaterial print. First, import your model into the slicer. In this case, a 3DBenchy will be used.
 
+++command+i++ OR ++ctrl+i++
+
 ![](firstprint1.png)
 
 Next, select the model and click multimaterial painting at the top.
+
+++n++
 
 ![](firstprint2.png)
 
@@ -18,11 +22,15 @@ Once you're in this menu, you can choose any tool, tool size, and filament. Now,
 
 Finally, hit slice and your model is ready to print!
 
+++command+r++ OR ++ctrl+r++
+
 ![](firstprint4.png)
 
 ## Method 2: Multimaterial Model
 
 This method allows you to turn parts of a model to different materials. For this tutorial, this [T-rex by Cipis](https://www.printables.com/model/5481-t-rex-multi-material) will be used. First, import your model into the slicer. If prompted while opening to treat the model as multiple parts, select "Yes".
+
+++command+i++ OR ++ctrl+i++
 
 ![](firstprint5.png)
 
@@ -31,6 +39,9 @@ Next, go to object settings and change the different parts of the model to diffe
 ![](firstprint6.png)
 
 Finally, hit slice and your model is ready to print!
+
+++command+r++ OR ++ctrl+r++
+
 
 ![](firstprint7.png)
 

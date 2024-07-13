@@ -7,7 +7,12 @@ plugins:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.keys
   - pymdownx.tasklist:
       custom_checkbox: true
   - attr_list
@@ -57,3 +62,4 @@ nav:
     - troubleshooting/skipping.md
   - Experimental:
     - Toolchanges without Tip Shaping or Filament Cutter: experimental/notip.md
+  - flowchart.md

@@ -11,6 +11,7 @@ Because the 3MS is synchronized to the printer's extruder, it can potentially to
     - [X] Toolchanges without tip shaping
     - [X] Print start/end routines without tip shaping
     - [X] Small prints without tip shaping (up to 5 toolchanges)
+    - [ ] Medium prints without tip shaping (over 50 toolchanges)
     - [ ] Long prints without tip shaping (over 100 toolchanges)
     - [ ] Common materials:
         - [X] PLA
