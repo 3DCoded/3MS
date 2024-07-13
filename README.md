@@ -16,6 +16,7 @@ Documentation is available [here](https://3dcoded.github.io/3MS)
 ## Sample Prints
 
 <img src="https://github.com/3DCoded/3MS/blob/docs/docs/assets/images/sampleprints/samplesheep.jpeg?raw=true" width="200">
+
 Model: [Sheep by Cipis](https://www.printables.com/model/838872-sheep-multi-material-remix)
 
 ---
