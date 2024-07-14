@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://3dcoded.github.io/3ms/experimental/notip/">
       
       
-        <link rel="prev" href="../../troubleshooting/skipping/">
+        <link rel="prev" href="../../troubleshooting/underextrusion/">
       
       
         <link rel="next" href="../../flowchart/">
@@ -475,6 +475,8 @@
       
         
       
+        
+      
     
     
     
@@ -564,6 +566,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../configuration/fsensor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filament Sensor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../configuration/macros/" class="md-nav__link">
         
   
@@ -621,6 +644,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -673,6 +700,48 @@
   
   <span class="md-ellipsis">
     Motor Skipping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/falsealarm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filament Sensor False Alarm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/underextrusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Underextrusion
   </span>
   
 
@@ -977,7 +1046,7 @@
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Toolchanges without tip shaping</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Print start/end routines without tip shaping</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Small prints without tip shaping (up to 5 toolchanges)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Medium prints without tip shaping (over 50 toolchanges)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Medium prints without tip shaping (over 50 toolchanges)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Long prints without tip shaping (over 100 toolchanges)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Common materials:<ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> PLA</li>
@@ -1009,8 +1078,8 @@
 </tbody>
 </table>
 <h2 id="configuration">Configuration</h2>
-<p>In your <code>3ms/settings.cfg</code>, chagne the <code>unload_distance</code> and <code>load_distance</code> to be equal. Next, add the distance from your extruder to your hotend to both.</p>
-<p>Example (assuming extruder-to-hotend distance is 65mm):</p>
+<p>In your <code>3ms/settings.cfg</code>, chagne the <code>unload_distance</code> and <code>load_distance</code> to be equal.</p>
+<p>Example:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1019,8 +1088,8 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/settings.cfg</span><pre><span></span><code><span class="na">variable_unload_distance</span><span class="o">:</span><span class="w"> </span><span class="s">265</span>
-<span class="na">variable_load_distance</span><span class="o">:</span><span class="w"> </span><span class="s">265</span>
+<div class="highlight"><span class="filename">3ms/settings.cfg</span><pre><span></span><code><span class="na">variable_unload_distance</span><span class="o">:</span><span class="w"> </span><span class="s">200</span>
+<span class="na">variable_load_distance</span><span class="o">:</span><span class="w"> </span><span class="s">200</span>
 </code></pre></div>
 </div>
 </div>

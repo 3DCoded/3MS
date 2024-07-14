@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://3dcoded.github.io/3ms/instructions/">
+        <link rel="canonical" href="https://3dcoded.github.io/3ms/troubleshooting/falsealarm/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../skipping/">
       
       
-        <link rel="next" href="../setup/bom/">
+        <link rel="next" href="../underextrusion/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
-        <title>Instructions - 3MS</title>
+        <title>Filament Sensor False Alarm - 3MS</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#master-instructions" class="md-skip">
+        <a href="#filament-sensor-false-alarm" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="3MS" class="md-header__button md-logo" aria-label="3MS" data-md-component="logo">
+    <a href="../.." title="3MS" class="md-header__button md-logo" aria-label="3MS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Instructions
+              Filament Sensor False Alarm
             
           </span>
         </div>
@@ -230,7 +230,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="3MS" class="md-nav__button md-logo" aria-label="3MS" data-md-component="logo">
+    <a href="../.." title="3MS" class="md-nav__button md-logo" aria-label="3MS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -260,7 +260,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -277,30 +277,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Instructions
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../instructions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -309,116 +289,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#basic-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Steps
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#0-explanations" class="md-nav__link">
-    <span class="md-ellipsis">
-      0. Explanations
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-getting-a-bom" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Getting a BOM
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-assembling-your-3ms" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Assembling your 3MS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-configuring-your-3ms" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Configuring your 3MS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-stepper-motor-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Stepper motor setup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-slicer-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Slicer setup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-first-print" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. First print
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Troubleshooting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-updating" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Updating
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -479,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup/bom/" class="md-nav__link">
+      <a href="../../setup/bom/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -500,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup/assembly/" class="md-nav__link">
+      <a href="../../setup/assembly/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -521,7 +391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup/firmware/" class="md-nav__link">
+      <a href="../../setup/firmware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -542,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup/slicer/" class="md-nav__link">
+      <a href="../../setup/slicer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -563,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup/firstprint/" class="md-nav__link">
+      <a href="../../setup/firstprint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,7 +491,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../configuration/" class="md-nav__link ">
+            <a href="../../configuration/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -654,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../configuration/install/" class="md-nav__link">
+      <a href="../../configuration/install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -675,7 +545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../configuration/steppers/" class="md-nav__link">
+      <a href="../../configuration/steppers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -696,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../configuration/fsensor/" class="md-nav__link">
+      <a href="../../configuration/fsensor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -717,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../configuration/macros/" class="md-nav__link">
+      <a href="../../configuration/macros/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -738,7 +608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../configuration/klipperscreen/" class="md-nav__link">
+      <a href="../../configuration/klipperscreen/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -763,6 +633,8 @@
       
   
   
+    
+  
   
   
     
@@ -781,18 +653,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../troubleshooting/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -809,7 +679,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Troubleshooting
@@ -825,7 +695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/skipping/" class="md-nav__link">
+      <a href="../skipping/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -843,10 +713,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../troubleshooting/falsealarm/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Filament Sensor False Alarm
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -855,6 +745,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fsensor_delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      fsensor_delay
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -867,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/underextrusion/" class="md-nav__link">
+      <a href="../underextrusion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -936,7 +855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../experimental/notip/" class="md-nav__link">
+      <a href="../../experimental/notip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -964,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../flowchart/" class="md-nav__link">
+      <a href="../../flowchart/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1004,90 +923,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basic-steps" class="md-nav__link">
+  <a href="#fsensor_delay" class="md-nav__link">
     <span class="md-ellipsis">
-      Basic Steps
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#0-explanations" class="md-nav__link">
-    <span class="md-ellipsis">
-      0. Explanations
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-getting-a-bom" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Getting a BOM
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-assembling-your-3ms" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Assembling your 3MS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-configuring-your-3ms" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Configuring your 3MS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-stepper-motor-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Stepper motor setup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-slicer-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Slicer setup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-first-print" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. First print
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Troubleshooting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-updating" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Updating
+      fsensor_delay
     </span>
   </a>
   
@@ -1111,128 +949,19 @@
   
 
 
-<p><link rel="stylesheet" href="../assets/css/badges.css"></p>
-<h1 id="master-instructions">Master Instructions</h1>
-<p>Due to the modularity of the 3MS, there are many ways to set it up. This guide attempts to encompass all supported ways of setting up the 3MS.</p>
-<h2 id="basic-steps">Basic Steps</h2>
-<p>The basic steps this guide will follow are:</p>
-<ol>
-<li><a href="#1-getting-a-bom">Getting a BOM</a></li>
-<li><a href="#2-assembling-your-3ms">Assembling your 3MS</a></li>
-<li><a href="#3-configuring-your-3ms">Configuring your 3MS</a></li>
-<li><a href="#4-stepper-motor-setup">Stepper motor setup</a></li>
-<li><a href="#5-slicer-setup">Slicer setup</a></li>
-<li><a href="#6-first-print">First print</a></li>
-<li><a href="#7-troubleshooting">Troubleshooting</a></li>
-<li><a href="#8-updating">Updating</a></li>
-</ol>
-<h2 id="0-explanations">0. Explanations</h2>
-<p>Before starting the instructions, a basic understanding of how the 3MS works is recommended. There are two types of components in the 3MS:</p>
-<ul>
-<li>
-<p>Controller</p>
-<p>This controls the stepper motors</p>
-</li>
-<li>
-<p>Filament Units</p>
-<p>This moves the filament</p>
-</li>
-</ul>
-<p>The number of filaments you will be able to print with is equal to the number of filament units you have. For example, two filament units will let you print with two colors. It is important to note that one filament unit will NOT let you print in multimaterial.</p>
-<h2 id="1-getting-a-bom">1. Getting a BOM</h2>
-<p>Go to <a href="../setup/bom/">BOM</a> to view the bill of materials for the number of filament units you want. Example BOM for two filament units:</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Price</th>
-<th>Quantity</th>
-<th>Link</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SKR Mini E3 V2</td>
-<td>$34.99</td>
-<td>1</td>
-<td><a href="https://a.co/d/0hgHU9JX">Amazon</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Duponts</td>
-<td>$9.99</td>
-<td>1</td>
-<td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
-<td>These wires are only sufficient to run steppers, not heaters</td>
-</tr>
-<tr>
-<td>12V PSU</td>
-<td>$7.39</td>
-<td>1</td>
-<td><a href="https://a.co/d/gLC1eli">Amazon</a></td>
-<td>This PSU is only sufficient to run steppers, not heaters</td>
-</tr>
-<tr>
-<td>NEMA17 Stepper Motor</td>
-<td>$9.99</td>
-<td>2</td>
-<td><a href="https://a.co/d/06Lsa1qI">Amazon</a></td>
-<td>You can use a pancake stepper if you want, but it will have less torque</td>
-</tr>
-<tr>
-<td>MK8 Metal Extruder</td>
-<td>$9.99</td>
-<td>2</td>
-<td><a href="https://a.co/d/0gJ1ghKj">Amazon</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Capricorn PTFE Tubing</td>
-<td>$11.49</td>
-<td>1</td>
-<td><a href="https://a.co/d/0dLLBGzJ">Amazon</a></td>
-<td>You likely won't need this for every unit, as this is usually too long for only one unit</td>
-</tr>
-</tbody>
-</table>
-<h2 id="2-assembling-your-3ms">2. Assembling your 3MS</h2>
-<p>Follow <a href="../setup/assembly/">Assembly</a> to assemble your 3MS.</p>
-<h2 id="3-configuring-your-3ms">3. Configuring your 3MS</h2>
-<ol>
-<li>Install Klipper firmware onto the MCU by following <a href="../setup/firmware/">Firmware</a>.</li>
-<li>Follow <a href="../configuration/install/">Installation</a> to install the 3MS configuration.</li>
-<li>Follow <a href="../configuration/fsensor/">Filament Sensor</a> to setup your filament sensor with the 3MS.</li>
-</ol>
-<h2 id="4-stepper-motor-setup">4. Stepper motor setup</h2>
-<p>Follow <a href="../configuration/steppers/">Stepper Setup</a> to setup and calibrate each of your filament units.</p>
-<h2 id="5-slicer-setup">5. Slicer setup</h2>
-<p>Follow <a href="../setup/slicer/">Slicer Setup</a> to setup your slicer for the 3MS.</p>
-<h2 id="6-first-print">6. First print</h2>
-<p>Follow <a href="../setup/firstprint/">First Print</a> to create your first multimaterial print with the 3MS.</p>
-<h2 id="7-troubleshooting">7. Troubleshooting</h2>
-<p>Check <a href="../troubleshooting/">Troubleshooting</a> to find guides to troubleshoot your 3MS.</p>
-<h2 id="8-updating">8. Updating</h2>
-<p>To update the 3MS configuration, go to the Update Manager in Mainsail/Fluidd and refresh the updates. </p>
-<p><img alt="" src="../assets/images/updating/updating1.png" /></p>
-<p>Next, find the "mmms" entry in the list. If there is an "Update" button next to it, click it and begin updating. </p>
-<p>After updating, in your terminal, run:</p>
-<div class="highlight"><pre><span></span><code>sh<span class="w"> </span>~/3MS/install.sh
-</code></pre></div>
-<p>This will install the new 3MS configuration. Next, restart Klipper:</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>It is important to restart the Klipper <strong>service</strong>, and not just run the <code>RESTART</code> command.</p>
-</div>
-<p>Either run this command in your terminal or restart from Mainsail/Fluidd:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Terminal</label><label for="__tabbed_1_2">Mainsail/Fluidd</label></div>
+<h1 id="filament-sensor-false-alarm">Filament Sensor False Alarm</h1>
+<p>If during toolchanges, a failed toolchange false alarm occurs (print pauses even though toolchange was successful), follow this troubleshooting guide to fix it.</p>
+<h2 id="fsensor_delay">fsensor_delay</h2>
+<p>The main culprit for this issue is likely your <code>fsensor_delay</code> in <code>3ms/settings.cfg</code> is too short. Short values will cause more false alarms, and long values will cause less. Generally, the default 2000ms is good for most setups, but if you are having false alarms, you will have to increase it. Example:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>service<span class="w"> </span>klipper<span class="w"> </span>restart
+<div class="highlight"><span class="filename">3ms/settings.cfg</span><pre><span></span><code><span class="na">fsensor_delay</span><span class="o">:</span><span class="w"> </span><span class="s">2000</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p><img alt="" src="../assets/images/updating/updating2.png" /></p>
+<div class="highlight"><span class="filename">3ms/settings.cfg</span><pre><span></span><code><span class="na">fsensor_delay</span><span class="o">:</span><span class="w"> </span><span class="s">3000</span>
+</code></pre></div>
 </div>
 </div>
 </div>
@@ -1282,10 +1011,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.expand", "navigation.instant", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.expand", "navigation.instant", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>
