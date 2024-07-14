@@ -55,11 +55,14 @@ nav:
     - configuration/index.md
     - configuration/install.md
     - configuration/steppers.md
+    - configuration/fsensor.md
     - configuration/macros.md
     - configuration/klipperscreen.md
   - Troubleshooting:
     - troubleshooting/index.md
     - troubleshooting/skipping.md
+    - troubleshooting/falsealarm.md
+    - troubleshooting/underextrusion.md
   - Experimental:
     - Toolchanges without Tip Shaping or Filament Cutter: experimental/notip.md
   - flowchart.md

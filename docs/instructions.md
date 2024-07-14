@@ -51,7 +51,8 @@ Follow [Assembly](assembly.md) to assemble your 3MS.
 ## 3. Configuring your 3MS
 
 1. Install Klipper firmware onto the MCU by following [Firmware](firmware.md).
-2. Follow [Installation](install.md) to install the 3MS configuration 
+2. Follow [Installation](install.md) to install the 3MS configuration.
+3. Follow [Filament Sensor](fsensor.md) to setup your filament sensor with the 3MS.
 
 ## 4. Stepper motor setup
 

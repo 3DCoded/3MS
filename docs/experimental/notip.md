@@ -26,9 +26,9 @@ Because the 3MS is synchronized to the printer's extruder, it can potentially to
 
 ## Configuration
 
-In your `3ms/settings.cfg`, chagne the `unload_distance` and `load_distance` to be equal. Next, add the distance from your extruder to your hotend to both.
+In your `3ms/settings.cfg`, chagne the `unload_distance` and `load_distance` to be equal.
 
-Example (assuming extruder-to-hotend distance is 65mm):
+Example:
 
 === "Before"
     ```cfg title="3ms/settings.cfg"
@@ -37,8 +37,8 @@ Example (assuming extruder-to-hotend distance is 65mm):
     ```
 === "After"
     ```cfg title="3ms/settings.cfg"
-    variable_unload_distance: 265
-    variable_load_distance: 265
+    variable_unload_distance: 200
+    variable_load_distance: 200
     ```
 
 !!! info

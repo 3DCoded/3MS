@@ -51,6 +51,7 @@ Here are a few reasons:
 With that said, there are a few reasons why you might **not** want to/be able to use the 3MS:
 
 - Klipper firmware is a requirement, so Marlin and RRF setups are a no go
+- A filament sensor is required, so if you don't have one/don't plan to get one, the 3MS won't work with your setup
 
 ## How it works
 
