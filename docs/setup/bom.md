@@ -4,6 +4,10 @@
 
 First, choose the number of filament units you want. Each filament unit lets you print with an additional filament. Two filament units are the minimum. You can add or remove filament units after building, but the BOM and configuration will vary based on how many filament units you want.
 
+## Spare Stepper Plugs
+
+If your printer's mainboard has spare stepper ports, you can use them to control 3MS steppers. You can open an issue on Github (there's a template) to get a configuration made for your specific setup.
+
 ## Controller BOMs
 
 Choose one of the following Controller BOMs for whatever controller you want:
