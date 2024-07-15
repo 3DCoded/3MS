@@ -14,6 +14,7 @@ variable_load_speed: 4500
 vairable_unload_speed: 4500
 variable_fsensor_delay: 2000
 variable_num_tools: 2
+variable_step_size: 99
 ```
 
 **Example Usage**
