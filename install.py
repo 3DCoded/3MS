@@ -3,12 +3,12 @@ from pathlib import Path
 import shutil
 
 install_files = '''
-main.cfg
 macros.cfg
 KlipperScreen.conf
 '''.strip().splitlines()
 
 optional_files = '''
+main.cfg
 settings.cfg
 variables.cfg
 '''.strip().splitlines()
