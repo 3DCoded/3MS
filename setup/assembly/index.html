@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://3dcoded.github.io/3ms/setup/assembly/">
       
       
-        <link rel="prev" href="../bom/">
+        <link rel="prev" href="../controllers/bttoctopusmain/">
       
       
         <link rel="next" href="../firmware/">
@@ -314,6 +314,8 @@
       
         
       
+        
+      
     
     
     
@@ -358,6 +360,113 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../controllers/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Controllers
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Controllers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../controllers/skrminie3v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BTT SKR Mini E3 V2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../controllers/bttoctopusmain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BTT Octopus (main MCU)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -994,63 +1103,11 @@
 <h2 id="mk8-assembly">MK8 Assembly</h2>
 <p>Next, assemble the MK8 extruders onto the NEMA17 motors using the provided instructions that came with them. If you use the mount provided above, make sure it is in between the MK8 and NEMA17. </p>
 <h2 id="wiring">Wiring</h2>
-<p>After that, route the wires from the NEMA17 to the controller board. Follow this table to determine which port to plug the motors into:</p>
-<table>
-<thead>
-<tr>
-<th>Filament Unit #</th>
-<th>Motor Port</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>XM</td>
-</tr>
-<tr>
-<td>1</td>
-<td>YM</td>
-</tr>
-<tr>
-<td>2</td>
-<td>ZAM or ZBM</td>
-</tr>
-<tr>
-<td>3</td>
-<td>E0M</td>
-</tr>
-</tbody>
-</table>
-<p>Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)</p>
-<ol>
-<li>Plug the red wire into the positive terminal of the screw termianls</li>
-<li>
-<p>Plug the black wire into the negative terminal of the screw terminals</p>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>These dupont cables are too thin to run much more than the stepper motors. If you run a heater or other power-intensive device off of the SKR board, the duponts and/or PSU can melt/catch fire. To reduce the risk of this, you can double up on the duponts or get thicker wires.</p>
-</div>
-</li>
-<li>
-<p>Following this image, choose either the DCIN or POWER input
-<img alt="" src="../../assets/images/skrminie3v2pins.jpg" /></p>
-</li>
-<li>Route the two wires inside closest to your chosen input</li>
-<li>Using the markings on the board, plug the red wire into the positive terminal on the SKR</li>
-<li>Using the markings on the board, plug the black wire into the negative terminal on the SKR</li>
-<li>
-<p>Verify all connections</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>If the wires are plugged into the wrong place, or swapped polarities, your SKR, Stepper motors, and/or PSU can be badly damaged.</p>
-</div>
-</li>
-<li>
-<p>Plug the PSU screw terminals into the PSU wire</p>
-</li>
-</ol>
-<p>If the SKR lights up, you wired it correctly!</p>
-<p>Finally, plug the SKR into your Klipper host with the blue cable that came with it.</p>
+<p>Follow one of the following guides based on your controller:</p>
+<ul>
+<li><a href="../controllers/skrminie3v2/#wiring">SKR Mini E3 V2</a></li>
+<li><a href="../controllers/bttoctopusmain/#wiring">BTT Octopus (main MCU)</a></li>
+</ul>
 
 
 

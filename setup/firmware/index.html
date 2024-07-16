@@ -314,6 +314,8 @@
       
         
       
+        
+      
     
     
     
@@ -358,6 +360,113 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../controllers/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Controllers
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Controllers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../controllers/skrminie3v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BTT SKR Mini E3 V2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../controllers/bttoctopusmain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BTT Octopus (main MCU)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -987,18 +1096,25 @@
 
 <h1 id="firmware">Firmware</h1>
 <p>Follow this guide to install Klipper firmware onto your 3MS MCU. This guide is a modified version of the <a href="https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller">Klipper Documentation</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The following controller(s) can skip this guide:</p>
+<ul>
+<li>BTT Octopus (main MCU)</li>
+</ul>
+</div>
 <h2 id="create-firmwarebin">Create firmware.bin</h2>
 <p>Make sure your 3MS MCU is plugged into your Klipper Host. Run in your terminal:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/klipper
 make<span class="w"> </span>menuconfig
 </code></pre></div>
-<p>In the menuconfig, configure it to your MCU. Instructions are included at the top of <code>3ms/controllers/xxx/steppers.cfg</code> for future reference. A copy of it is provided here:
+<p>In the menuconfig, configure it to your MCU. Instructions are included at the top of <code>3ms/controllers/xxx/steppers.cfg</code> for future reference. A copy of it is provided here:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># This file contains common pin mappings for the BIGTREETECH SKR mini</span>
 <span class="c1"># E3 v2.0. To use this config, the firmware should be compiled for the</span>
 <span class="c1"># STM32F103 with a &quot;28KiB bootloader&quot; and USB communication. Also,</span>
 <span class="c1"># select &quot;Enable extra low-level configuration options&quot; and configure</span>
 <span class="c1"># &quot;GPIO pins to set at micro-controller startup&quot; to &quot;!PA14&quot;.</span>
-</code></pre></div></p>
+</code></pre></div>
 <p>Run in your terminal:</p>
 <div class="highlight"><pre><span></span><code>make<span class="w"> </span>clean
 make

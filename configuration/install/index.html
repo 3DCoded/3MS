@@ -312,6 +312,8 @@
       
         
       
+        
+      
     
     
     
@@ -358,6 +360,113 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../setup/controllers/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Controllers
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Controllers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/controllers/skrminie3v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BTT SKR Mini E3 V2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/controllers/bttoctopusmain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BTT Octopus (main MCU)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -600,6 +709,15 @@
   <a href="#moonraker-update-manager" class="md-nav__link">
     <span class="md-ellipsis">
       Moonraker Update Manager
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controller
     </span>
   </a>
   
@@ -995,6 +1113,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controller
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configure-mcu-id" class="md-nav__link">
     <span class="md-ellipsis">
       Configure MCU ID
@@ -1052,12 +1179,31 @@ git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCod
 <p class="admonition-title">Warning</p>
 <p>When updating via Moonraker, the following files will be overwritten:</p>
 <ul>
-<li><code>main.cfg</code></li>
 <li><code>macros.cfg</code></li>
 <li><code>KlipperScreen.conf</code></li>
 </ul>
 <p>If you have any changes in these files, they will be lost when updating.</p>
 </div>
+<h2 id="controller">Controller</h2>
+<p>In <code>3ms/main.cfg</code>, edit the <code>[include ./controllers/xxx/steppers.cfg]</code> line, replacing <code>xxx</code> with the config name of your controller:</p>
+<table>
+<thead>
+<tr>
+<th>Controller Name</th>
+<th>Config Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SKR Mini E3 V2</td>
+<td><code>btt_skr_mini_e3_v2</code></td>
+</tr>
+<tr>
+<td>BTT Octopus (main MCU)</td>
+<td><code>btt_octopus_main</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="configure-mcu-id">Configure MCU ID</h2>
 <p>Finally, to configure the MCU ID you saved from <a href="../../setup/firmware/">Firmware</a>, run in your terminal:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cat<span class="w"> </span>mcu.txt

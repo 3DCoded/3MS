@@ -14,7 +14,7 @@
         <link rel="prev" href="../../instructions/">
       
       
-        <link rel="next" href="../assembly/">
+        <link rel="next" href="../controllers/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -314,6 +314,8 @@
       
         
       
+        
+      
     
     
     
@@ -404,15 +406,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#spare-stepper-plugs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spare Stepper Plugs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#controller-boms" class="md-nav__link">
     <span class="md-ellipsis">
       Controller BOMs
@@ -433,6 +426,113 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../controllers/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Controllers
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Controllers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../controllers/skrminie3v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BTT SKR Mini E3 V2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../controllers/bttoctopusmain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BTT Octopus (main MCU)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -959,15 +1059,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#spare-stepper-plugs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spare Stepper Plugs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#controller-boms" class="md-nav__link">
     <span class="md-ellipsis">
       Controller BOMs
@@ -1006,55 +1097,12 @@
 <h1 id="bom">BOM</h1>
 <h2 id="number-of-filament-units">Number of filament units</h2>
 <p>First, choose the number of filament units you want. Each filament unit lets you print with an additional filament. Two filament units are the minimum. You can add or remove filament units after building, but the BOM and configuration will vary based on how many filament units you want.</p>
-<h2 id="spare-stepper-plugs">Spare Stepper Plugs</h2>
-<p>If your printer's mainboard has spare stepper ports, you can use them to control 3MS steppers. You can open an issue on Github (there's a template) to get a configuration made for your specific setup.</p>
 <h2 id="controller-boms">Controller BOMs</h2>
-<p>Choose one of the following Controller BOMs for whatever controller you want:</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>At this time, the only fully supported controller is the SKR Mini E3 V2.0</p>
-</div>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">BTT SKR Mini E3 V2</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><strong>Max filament units: 4</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Price</th>
-<th>Quantity</th>
-<th>Link</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SKR Mini E3 V2</td>
-<td>$34.99</td>
-<td>1</td>
-<td><a href="https://a.co/d/0hgHU9JX">Amazon</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Duponts</td>
-<td>$9.99</td>
-<td>1</td>
-<td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
-<td>These wires are only sufficient to run steppers, not heaters</td>
-</tr>
-<tr>
-<td>12V PSU</td>
-<td>$7.39</td>
-<td>1</td>
-<td><a href="https://a.co/d/gLC1eli">Amazon</a></td>
-<td>This PSU is only sufficient to run steppers, not heaters</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
+<p>Choose the BOM for your chosen controller from the list below:</p>
+<ul>
+<li><a href="../controllers/skrminie3v2/#bom">BTT SKR Mini E3 V2</a></li>
+<li><a href="../controllers/bttoctopusmain/#bom">BTT Octopus (main MCU)</a></li>
+</ul>
 <h2 id="filament-unit-boms">Filament Unit BOMs</h2>
 <p>For each filament unit, purchase this BOM:</p>
 <table>
