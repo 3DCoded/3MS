@@ -18,11 +18,11 @@ If the motor spins, skip to the next step. If not, check your wiring first. If y
 
 === "Before"
     ``` cfg title="3ms/steppers.cfg"
-    enable_pin: !arduino: PD7
+    enable_pin: !3ms: PD7
     ```
 === "After"
     ``` cfg title="3ms/steppers.cfg"
-    enable_pin: arduino: PD7
+    enable_pin: 3ms: PD7
     ```
 
 ## Is the motor spinning backwards?

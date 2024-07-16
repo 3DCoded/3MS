@@ -46,11 +46,19 @@ install_script: install.sh
 !!! warning
     When updating via Moonraker, the following files will be overwritten:
         
-    - `main.cfg`
     - `macros.cfg`
     - `KlipperScreen.conf`
     
     If you have any changes in these files, they will be lost when updating.
+
+## Controller
+
+In `3ms/main.cfg`, edit the `[include ./controllers/xxx/steppers.cfg]` line, replacing `xxx` with the config name of your controller:
+
+| Controller Name | Config Name |
+| - | - |
+| SKR Mini E3 V2 | `btt_skr_mini_e3_v2` |
+| BTT Octopus (main MCU) | `btt_octopus_main` |
 
 ## Configure MCU ID
 

@@ -2,6 +2,11 @@
 
 Follow this guide to install Klipper firmware onto your 3MS MCU. This guide is a modified version of the [Klipper Documentation](https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller).
 
+!!! info
+    The following controller(s) can skip this guide:
+    
+    - BTT Octopus (main MCU)
+
 ## Create firmware.bin
 
 Make sure your 3MS MCU is plugged into your Klipper Host. Run in your terminal:
@@ -12,6 +17,7 @@ make menuconfig
 ```
 
 In the menuconfig, configure it to your MCU. Instructions are included at the top of `3ms/controllers/xxx/steppers.cfg` for future reference. A copy of it is provided here:
+
 ```cfg
 # This file contains common pin mappings for the BIGTREETECH SKR mini
 # E3 v2.0. To use this config, the firmware should be compiled for the

@@ -47,6 +47,10 @@ nav:
   - instructions.md
   - Setup:
     - BOM: setup/bom.md
+    - Controllers:
+      - setup/controllers/index.md
+      - setup/controllers/skrminie3v2.md
+      - setup/controllers/bttoctopusmain.md
     - setup/assembly.md
     - setup/firmware.md
     - setup/slicer.md

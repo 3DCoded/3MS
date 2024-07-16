@@ -31,9 +31,13 @@ Before starting the instructions, a basic understanding of how the 3MS works is 
 
 The number of filaments you will be able to print with is equal to the number of filament units you have. For example, two filament units will let you print with two colors. It is important to note that one filament unit will NOT let you print in multimaterial.
 
+## 0.5. Choosing a Controller
+
+Choose one of the controllers from [Controllers](setup/controllers/index.md) before continuing.
+
 ## 1. Getting a BOM
 
-Go to [BOM](bom.md) to view the bill of materials for the number of filament units you want. Example BOM for two filament units:
+Go to [BOM](bom.md) to view the bill of materials for the number of filament units you want. Example BOM for two filament units and a SKR Mini E3 V2:
 
 | Name | Price | Quantity | Link | Notes |
 | - | - | - | - | - |
