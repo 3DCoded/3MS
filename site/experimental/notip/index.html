@@ -970,6 +970,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#should-tip-shaping-be-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      Should Tip Shaping be Used?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configuration" class="md-nav__link">
     <span class="md-ellipsis">
       Configuration
@@ -987,15 +996,6 @@
   
     <nav class="md-nav" aria-label="Slicer Setup">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#disable-printer-ramming" class="md-nav__link">
-    <span class="md-ellipsis">
-      Disable Printer Ramming
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#disable-filament-ramming" class="md-nav__link">
@@ -1083,6 +1083,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#should-tip-shaping-be-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      Should Tip Shaping be Used?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configuration" class="md-nav__link">
     <span class="md-ellipsis">
       Configuration
@@ -1100,15 +1109,6 @@
   
     <nav class="md-nav" aria-label="Slicer Setup">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#disable-printer-ramming" class="md-nav__link">
-    <span class="md-ellipsis">
-      Disable Printer Ramming
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#disable-filament-ramming" class="md-nav__link">
@@ -1150,16 +1150,21 @@
 </div>
 <details open="open">
 <summary>Development Status</summary>
-<p>So far, the following have been tested:</p>
+<p>So far, the following work without tip shaping:</p>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Toolchanges without tip shaping</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Print start/end routines without tip shaping</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Small prints without tip shaping (up to 5 toolchanges)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Medium prints without tip shaping (over 50 toolchanges)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Long prints without tip shaping (over 100 toolchanges)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Common materials:<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> PLA</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> PETG</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Long prints without tip shaping (over 100 toolchanges)</li>
+<li>Common materials:<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> PLA<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> PLA+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> High Speed PLA</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Silk PLA</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> PETG (untested)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> TPU (not tested even with tip shaping)</li>
 </ul>
 </li>
@@ -1186,6 +1191,13 @@
 </tr>
 </tbody>
 </table>
+<h2 id="should-tip-shaping-be-used">Should Tip Shaping be Used?</h2>
+<p>Check if your filament is in this list:</p>
+<ul>
+<li>Silk PLA</li>
+<li>Matte PLA</li>
+</ul>
+<p>If one of your filament was in that list, it will most likely need tip shaping. However, if another of your filaments was not in that list, it won't need tip shaping.</p>
 <h2 id="configuration">Configuration</h2>
 <p>In your <code>3ms/settings.cfg</code>, chagne the <code>unload_distance</code> and <code>load_distance</code> to be equal.</p>
 <p>Example:</p>
@@ -1203,34 +1215,8 @@
 </div>
 </div>
 </div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>It is also recommended to increase your unload speed slightly and increase your load speed significantly to help with reliability without tip shaping.</p>
-<p>Example:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Before</label><label for="__tabbed_2_2">After</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/settings.cfg</span><pre><span></span><code><span class="na">variable_unload_speed</span><span class="o">:</span><span class="w"> </span><span class="s">4500</span>
-<span class="na">variable_load_speed</span><span class="o">:</span><span class="w"> </span><span class="s">4500</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/settings.cfg</span><pre><span></span><code><span class="na">variable_unload_speed</span><span class="o">:</span><span class="w"> </span><span class="s">6000</span>
-<span class="na">variable_load_speed</span><span class="o">:</span><span class="w"> </span><span class="s">7500</span>
-</code></pre></div>
-</div>
-</div>
-</div>
-</div>
 <h2 id="slicer-setup">Slicer Setup</h2>
 <p>Setup your slicer for no tip shaping as follows.</p>
-<h3 id="disable-printer-ramming">Disable Printer Ramming</h3>
-<p>First, disable printer ramming by going to <code>Printer Settings</code> -&gt; <code>Multimaterial</code> -&gt; <code>Single extruder multimaterial parameters</code>:</p>
-<p><img alt="" src="../../assets/images/slicer/slicer4.png" /></p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Don't change  <code>Filament parking position</code> and <code>Extra loading distance</code>.</p>
-</div>
 <h3 id="disable-filament-ramming">Disable Filament Ramming</h3>
 <p>Disable filament ramming in <code>Filament Settings</code> -&gt; <code>Multimaterial</code> -&gt; <code>Toolchange parameters with single extruder MM printers</code>:</p>
 <p><img alt="" src="../../assets/images/slicer/slicer5.png" />

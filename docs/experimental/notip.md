@@ -6,16 +6,19 @@ Because the 3MS is synchronized to the printer's extruder, it can potentially to
     This page, and the features mentioned on it, are in develpment
 
 ???+ "Development Status"
-    So far, the following have been tested:
+    So far, the following work without tip shaping:
     
     - [X] Toolchanges without tip shaping
     - [X] Print start/end routines without tip shaping
     - [X] Small prints without tip shaping (up to 5 toolchanges)
     - [X] Medium prints without tip shaping (over 50 toolchanges)
-    - [ ] Long prints without tip shaping (over 100 toolchanges)
-    - [ ] Common materials:
+    - [X] Long prints without tip shaping (over 100 toolchanges)
+    - Common materials:
         - [X] PLA
-        - [ ] PETG
+            - [X] PLA+
+            - [X] High Speed PLA
+            - [ ] Silk PLA
+        - [ ] PETG (untested)
         - [ ] TPU (not tested even with tip shaping)
 
 ## Speed Benefits
@@ -23,6 +26,15 @@ Because the 3MS is synchronized to the printer's extruder, it can potentially to
 | Print Job | Original Time | New Time | New Time Relative To Original Time | Speed Boost |
 | - | - | - | - | - |
 | Dual Color 3DBenchy | 2h45m | 1h25m | 51.5% | 1.95x |
+
+## Should Tip Shaping be Used?
+
+Check if your filament is in this list:
+
+- Silk PLA
+- Matte PLA
+
+If one of your filament was in that list, it will most likely need tip shaping. However, if another of your filaments was not in that list, it won't need tip shaping.
 
 ## Configuration
 
@@ -41,34 +53,9 @@ Example:
     variable_load_distance: 200
     ```
 
-!!! info
-    It is also recommended to increase your unload speed slightly and increase your load speed significantly to help with reliability without tip shaping.
-
-    Example:
-
-    === "Before"
-        ```cfg title="3ms/settings.cfg"
-        variable_unload_speed: 4500
-        variable_load_speed: 4500
-        ```
-    === "After"
-        ```cfg title="3ms/settings.cfg"
-        variable_unload_speed: 6000
-        variable_load_speed: 7500
-        ```
-
 ## Slicer Setup
 
 Setup your slicer for no tip shaping as follows.
-
-### Disable Printer Ramming
-
-First, disable printer ramming by going to `Printer Settings` -> `Multimaterial` -> `Single extruder multimaterial parameters`:
-
-![](slicer4.png)
-
-!!! info
-    Don't change  `Filament parking position` and `Extra loading distance`.
 
 ### Disable Filament Ramming
 
