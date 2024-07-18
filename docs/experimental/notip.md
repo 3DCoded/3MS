@@ -18,7 +18,7 @@ Because the 3MS is synchronized to the printer's extruder, it can potentially to
             - [X] PLA+
             - [X] High Speed PLA
             - [ ] Silk PLA
-        - [ ] PETG (untested)
+        - [X] PETG
         - [ ] TPU (not tested even with tip shaping)
 
 ## Speed Benefits
@@ -35,23 +35,6 @@ Check if your filament is in this list:
 - Matte PLA
 
 If one of your filament was in that list, it will most likely need tip shaping. However, if another of your filaments was not in that list, it won't need tip shaping.
-
-## Configuration
-
-In your `3ms/settings.cfg`, chagne the `unload_distance` and `load_distance` to be equal.
-
-Example:
-
-=== "Before"
-    ```cfg title="3ms/settings.cfg"
-    variable_unload_distance: 200
-    variable_load_distance: 210
-    ```
-=== "After"
-    ```cfg title="3ms/settings.cfg"
-    variable_unload_distance: 200
-    variable_load_distance: 200
-    ```
 
 ## Slicer Setup
 

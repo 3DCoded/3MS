@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://3dcoded.github.io/3ms/experimental/notip/">
       
       
-        <link rel="prev" href="../../troubleshooting/underextrusion/">
+        <link rel="prev" href="../../troubleshooting/failedloadunload/">
       
       
         <link rel="next" href="../../flowchart/">
@@ -757,6 +757,8 @@
       
         
       
+        
+      
     
     
     
@@ -851,6 +853,27 @@
   
   <span class="md-ellipsis">
     Underextrusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/failedloadunload/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Failed Load/Unload
   </span>
   
 
@@ -979,15 +1002,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#slicer-setup" class="md-nav__link">
     <span class="md-ellipsis">
       Slicer Setup
@@ -1092,15 +1106,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#slicer-setup" class="md-nav__link">
     <span class="md-ellipsis">
       Slicer Setup
@@ -1164,7 +1169,7 @@
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Silk PLA</li>
 </ul>
 </li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> PETG (untested)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> PETG</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> TPU (not tested even with tip shaping)</li>
 </ul>
 </li>
@@ -1198,23 +1203,6 @@
 <li>Matte PLA</li>
 </ul>
 <p>If one of your filament was in that list, it will most likely need tip shaping. However, if another of your filaments was not in that list, it won't need tip shaping.</p>
-<h2 id="configuration">Configuration</h2>
-<p>In your <code>3ms/settings.cfg</code>, chagne the <code>unload_distance</code> and <code>load_distance</code> to be equal.</p>
-<p>Example:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/settings.cfg</span><pre><span></span><code><span class="na">variable_unload_distance</span><span class="o">:</span><span class="w"> </span><span class="s">200</span>
-<span class="na">variable_load_distance</span><span class="o">:</span><span class="w"> </span><span class="s">210</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/settings.cfg</span><pre><span></span><code><span class="na">variable_unload_distance</span><span class="o">:</span><span class="w"> </span><span class="s">200</span>
-<span class="na">variable_load_distance</span><span class="o">:</span><span class="w"> </span><span class="s">200</span>
-</code></pre></div>
-</div>
-</div>
-</div>
 <h2 id="slicer-setup">Slicer Setup</h2>
 <p>Setup your slicer for no tip shaping as follows.</p>
 <h3 id="disable-filament-ramming">Disable Filament Ramming</h3>

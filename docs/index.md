@@ -25,6 +25,16 @@ The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial *
         ![](samplevoron.jpeg){: style="height: 300px"}
 
         Model: Voron Cube (bundled with OrcaSlicer), painted by me in OrcaSlicer
+    === "T-Rex"
+        ![](sampletrex.jpeg){: style="width: 300px"}
+
+        Printed at 50% scale
+
+        Model: [T-rex by Cipis](https://www.printables.com/model/5481-t-rex-multi-material)
+    === "Lizard"
+        ![](samplelizard.jpeg){: style="width: 300px"}
+
+        Model: [Striped lizard with pupils by EngMike](https://www.printables.com/model/236193-striped-lizard-multi-material-with-pupils)
 
 ## Photos
 
