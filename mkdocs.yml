@@ -62,6 +62,9 @@ nav:
     - configuration/fsensor.md
     - configuration/macros.md
     - configuration/klipperscreen.md
+  - Guides:
+    - guides/materials.md
+    - guides/tipshaping.md
   - Troubleshooting:
     - troubleshooting/index.md
     - troubleshooting/skipping.md
@@ -70,4 +73,5 @@ nav:
     - troubleshooting/failedloadunload.md
   - Experimental:
     - Toolchanges without Tip Shaping or Filament Cutter: experimental/notip.md
+    - TPU with Dual Drive 3MS Extruder: experimental/dualdrivetpu.md
   - flowchart.md

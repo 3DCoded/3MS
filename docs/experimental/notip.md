@@ -19,7 +19,7 @@ Because the 3MS is synchronized to the printer's extruder, it can potentially to
             - [X] High Speed PLA
             - [ ] Silk PLA
         - [X] PETG
-        - [ ] TPU (not tested even with tip shaping)
+        - [ ] TPU (see [Dual Drive 3MS Extruders for TPU](dualdrivetpu.md))
 
 ## Speed Benefits
 

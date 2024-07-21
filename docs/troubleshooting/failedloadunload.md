@@ -1,6 +1,6 @@
 # Failed Load/Unload
 
-If your printer is paused and displaying `Failed Load` or `Failed Unload`, follow this troubleshooting guide to diagnose the problem and fix it.
+If your printer is paused and displaying `Please load` or `Please unload`, follow this troubleshooting guide to diagnose the problem and fix it.
 
 ## False Alarm
 
@@ -8,7 +8,7 @@ First, see [False Alarm](falsealarm.md) to ensure your filament sensor is proper
 
 ## Failed Unload
 
-When your printer displays a `Failed Unload` message, pay attention to the `Tx` number it shows. For example, if it displays the message `Failed Unload T0`, it failed to unload the filament at T0. Follow these steps to recover the toolchange:
+When your printer displays a `Please unload` message, pay attention to the `Tx` number it shows. For example, if it displays the message `Please unload T0`, it failed to unload the filament at T0. Follow these steps to recover the toolchange:
 
 1. Detach the PTFE tube from the inlet of your printer's extruder (you may need to push down the lever on the 3MS extruder for that tool while doing this).
 2. Manually pull the filament out of the printer's extruder.
@@ -36,7 +36,7 @@ Next, diagnose the problem based on these possible scenarios:
 
 ## Failed Load
 
-When your printer displays a `Failed Load` message, pay attention to the `Tx` number it shows. For example, if it displays the message `Failed Load T1`, it failed to load the filament at T1. Follow these steps to recover the toolchange:
+When your printer displays a `Please load` message, pay attention to the `Tx` number it shows. For example, if it displays the message `Please load T1`, it failed to load the filament at T1. Follow these steps to recover the toolchange:
 
 1. Manually push the filament all the way to the inlet of your printer's extruder.
 
