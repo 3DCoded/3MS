@@ -1,6 +1,6 @@
 # Toolchanges Without Tip Shaping or Filament Cutter!
 
-Because the 3MS is synchronized to the printer's extruder, it can potentially toolchange without any tip shaping or filament cutter. So far, the only testing has been done outside of prints. 
+Because the 3MS is synchronized to the printer's extruder, it can potentially toolchange without any tip shaping or filament cutter.
 
 !!! info
     This page, and the features mentioned on it, are in develpment
@@ -23,18 +23,12 @@ Because the 3MS is synchronized to the printer's extruder, it can potentially to
 
 ## Speed Benefits
 
-| Print Job | Original Time | New Time | New Time Relative To Original Time | Speed Boost |
-| - | - | - | - | - |
-| Dual Color 3DBenchy | 2h45m | 1h25m | 51.5% | 1.95x |
+!!! info
+    This section is under construction.
 
 ## Should Tip Shaping be Used?
 
-Check if your filament is in this list:
-
-- Silk PLA
-- Matte PLA
-
-If one of your filament was in that list, it will most likely need tip shaping. However, if another of your filaments was not in that list, it won't need tip shaping.
+See [Materials](materials.md) for information on whether or not tip shaping should be used for your filaments.
 
 ## Slicer Setup
 
