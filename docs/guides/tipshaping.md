@@ -30,4 +30,4 @@ You may also be able to use the experimental [No Tip Shaping](notip.md).
 
 ## Hook of Death
 
-If you filament tip can't unload out of your extruder and forms a hook shape, you may need to replace the PTFE tube between your printer's extruder and hotend.
+If you filament tip can't unload out of your extruder and forms a hook shape, you may need to replace the PTFE tube between your printer's extruder and hotend. You may also want to follow the recommendations for [Blobby tips](#blobby-tips).

@@ -7,6 +7,7 @@ name = "pypi"
 mkdocs = "*"
 mkdocs-material = "*"
 mkdocs-autolinks-plugin = "*"
+mkdocs-glightbox = "*"
 
 [dev-packages]
 
