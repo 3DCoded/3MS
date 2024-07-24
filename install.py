@@ -11,13 +11,17 @@ optional_files = '''
 main.cfg
 settings.cfg
 variables.cfg
+controllers/btt_skr_mini_e3_v2/steppers.cfg
+controllers/btt_octopus_main/steppers.cfg
+controllers/einsy_rambo_with_skr_mini/steppers.cfg
+controllers/einsy_rambo_with_skr_mini/xy-motors.cfg
+controllers/einsy_rambo_with_skr_mini/ze-motors.cfg
 '''.strip().splitlines()
 
 install_folders = '''
 '''.strip().splitlines()
 
 optional_folders = '''
-controllers
 '''.strip().splitlines()
 
 from_dir = Path(os.path.dirname(__file__))
