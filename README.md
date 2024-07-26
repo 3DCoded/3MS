@@ -8,6 +8,13 @@ Documentation is available [here](https://3dcoded.github.io/3MS)
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
+## More Projects
+
+If you like this project, don't forget to give it a star! Also, check out my other projects:
+
+- [DynamicMacros](https://github.com/3dcoded/DynamicMacros), never restart Klipper again for simple macros
+- [KlipperMaintenance](https://github.com/3DCoded/KlipperMaintenance), maintenance reminders for Klipper
+
 ## Inspiration
 
 - Prusa MMU1
