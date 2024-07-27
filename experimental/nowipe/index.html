@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://3dcoded.github.io/3ms/configuration/fsensor/">
+        <link rel="canonical" href="https://3dcoded.github.io/3ms/experimental/nowipe/">
       
       
-        <link rel="prev" href="../steppers/">
+        <link rel="prev" href="../dualdrivetpu/">
       
       
-        <link rel="next" href="../macros/">
+        <link rel="next" href="../../flowchart/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Filament Sensor - 3MS</title>
+        <title>No Wipe Tower - 3MS</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#filament-sensor" class="md-skip">
+        <a href="#filament-purging-without-wipe-tower" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Filament Sensor
+              No Wipe Tower
             
           </span>
         </div>
@@ -576,8 +576,6 @@
       
   
   
-    
-  
   
   
     
@@ -600,16 +598,18 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../configuration/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -626,7 +626,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Configuration
@@ -642,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install/" class="md-nav__link">
+      <a href="../../configuration/install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -663,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../steppers/" class="md-nav__link">
+      <a href="../../configuration/steppers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -681,30 +681,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Filament Sensor
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../configuration/fsensor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -713,44 +693,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#location-of-sensor" class="md-nav__link">
-    <span class="md-ellipsis">
-      Location of Sensor
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -763,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../macros/" class="md-nav__link">
+      <a href="../../configuration/macros/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -784,7 +726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../klipperscreen/" class="md-nav__link">
+      <a href="../../configuration/klipperscreen/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1053,8 +995,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1067,13 +1011,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1087,7 +1029,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Experimental
@@ -1101,7 +1043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../experimental/notip/" class="md-nav__link">
+      <a href="../notip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1122,7 +1064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../experimental/dualdrivetpu/" class="md-nav__link">
+      <a href="../dualdrivetpu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1140,10 +1082,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../experimental/nowipe/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    No Wipe Tower
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1152,6 +1114,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Routine
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1211,18 +1211,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#location-of-sensor" class="md-nav__link">
+  <a href="#settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Location of Sensor
+      Settings
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
+  <a href="#routine" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration
+      Routine
     </span>
   </a>
   
@@ -1246,28 +1246,49 @@
   
 
 
-<h1 id="filament-sensor">Filament Sensor</h1>
-<p>Follow this guide to configure your filament sensor with the 3MS. </p>
-<h2 id="location-of-sensor">Location of Sensor</h2>
-<p>The filament sensor should be right before the extruder, and after the Y splitter. Other locations, such as between the hotend and extruder, have not been tested.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The 3MS has only been tested with a <code>filament_switch_sensor</code>, and not with a <code>filament_motion_sensor</code></p>
+<h1 id="filament-purging-without-wipe-tower">Filament Purging without Wipe Tower</h1>
+<p>For printers with a dedicated purge bucket or similar system, wipe towers may not be necessary.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This page, and the features mentioned on it, are in develpment</p>
 </div>
-<h2 id="configuration">Configuration</h2>
-<p>To configure your filament sensor with the 3MS, open <code>3ms/settings.cfg</code> and change the following (assuming your filament sensor is named "runout_sensor"):</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/settings.cfg</span><pre><span></span><code><span class="na">fsensor_name</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;fsensor&quot;</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/settings.cfg</span><pre><span></span><code><span class="na">fsensor_name</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;runout_sensor&quot;</span>
-</code></pre></div>
-</div>
-</div>
-</div>
+<details open="open">
+<summary>Development Status</summary>
+<p>So far, the following have been tested:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>SET_PURGE_SETTINGS</code> functionality</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>GET_PURGE_SETTINGS</code> functionality</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>PURGE</code> routine<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Only purge if enabled</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Properly run <code>start_macro</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Properly run <code>end_macro</code></li>
+</ul>
+</li>
+</ul>
+</details>
+<p>The macros mentioned on this page are available in the <code>nowipetower</code> branch.</p>
+<h2 id="settings">Settings</h2>
+<p>A new <code>PURGE_SETTINGS</code> macro contains the following settings:</p>
+<ul>
+<li><code>enable</code> 0 is disabled, and 1 is enabled</li>
+<li><code>purge_x</code> X-cooridnate of purge bucket</li>
+<li><code>purge_y</code> Y-corodinate of purge bucket</li>
+<li><code>move_speed</code> Speed, in mm/min to move to/from purge bucket</li>
+<li><code>extrude_speed</code> Speed, in mm/min (multiply by 0.04 for mm^3/s) to purge filament</li>
+<li><code>start_macro</code> Macro to run before purging</li>
+<li><code>end_macro</code> Macro to run after purging</li>
+</ul>
+<h2 id="routine">Routine</h2>
+<p>The new <code>PURGE</code> macro runs the purge routine as follows:</p>
+<ol>
+<li>If <code>enable</code> == 1, continue</li>
+<li>Save current toolhead position</li>
+<li>Run <code>start_macro</code></li>
+<li>Move to <code>purge_x</code> and <code>purge_y</code> at <code>move_speed</code></li>
+<li>Purge provided <code>purge_amount</code> at <code>extrude_speed</code></li>
+<li>Run <code>end_macro</code></li>
+<li>Return to saved toolhead position</li>
+</ol>
 
 
 
