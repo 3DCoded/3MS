@@ -1125,6 +1125,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#unloadload-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unload/Load Speed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temperature
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1271,6 +1289,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#unloadload-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unload/Load Speed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temperature
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1335,6 +1371,17 @@
 <p>Disable filament ramming in <code>Filament Settings</code> -&gt; <code>Multimaterial</code> -&gt; <code>Toolchange parameters with single extruder MM printers</code>:</p>
 <p><a class="glightbox" href="../../assets/images/slicer/slicer5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicer5.png" /></a>
 <a class="glightbox" href="../../assets/images/slicer/slicer6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicer6.png" /></a></p>
+<h3 id="unloadload-speed">Unload/Load Speed</h3>
+<p>Next, change the <code>Unloading speed at start</code> and <code>Unloading speed</code> to 300 (faster is better here). Next, change the <code>Loading speed at start</code> and <code>Loading speed</code> to 300 and 100, respectively.</p>
+<details class="info" open="open">
+<summary>What this does</summary>
+<p>The main idea behind toolchanges without tip shaping relies on the filament being unloaded too fast to form a blob. Setting the <code>Unloading speed</code> settings allows this. Next, loading the filament back can be generally optomized by increasing the <code>Loading speed</code> settings.</p>
+</details>
+<p><a class="glightbox" href="../../assets/images/slicer/slicer7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicer7.png" /></a></p>
+<h3 id="temperature">Temperature</h3>
+<p>If your filament has very long strings on the end of them after unloading without tip shaping (longer than 2cm), decrease your filament temperature. </p>
+<p>If your filament tip has a nearly flat tip, increase your filament temperature.</p>
+<p>The ideal filament tip has a pointy end and a small string (less than 5mm). When in doubt, it is recommended to aim for a slightly stringy tip over a flat tip.</p>
 
 
 
