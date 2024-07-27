@@ -11,6 +11,7 @@ optional_files = '''
 main.cfg
 settings.cfg
 variables.cfg
+purge.cfg
 '''.strip().splitlines()
 
 install_folders = '''
