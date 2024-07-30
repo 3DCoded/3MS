@@ -28,6 +28,29 @@ In your `printer.cfg`, add:
 [include 3ms/main.cfg]
 ```
 
+## DynamicMacros
+
+The 3MS configuration depends on [DynamicMacros](https://github.com/3dcoded/DynamicMacros). If you haven't installed it already, follow the instructions [here](https://3dcoded.github.io/DynamicMacros/setup/) to do so.
+
+Remove the following line from your `3ms/main.cfg` if it exists:
+
+```cfg title="3ms/main.cfg"
+[include ./macros.cfg]
+```
+
+Add `3ms/macros.cfg` to your `[dynamicmacros]` config section. Example:
+
+=== "Before"
+    ```cfg
+    [dynamicmacros]
+    configs: macros.cfg,othermacros.cfg
+    ```
+=== "After"
+    ```cfg
+    [dynamicmacros]
+    configs: macros.cfg,othermacros.cfg,3ms/macros.cfg
+    ```
+
 ## Moonraker Update Manager
 
 To enable updates for the 3MS, add the following to your `moonraker.conf`:
