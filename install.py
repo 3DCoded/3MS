@@ -5,6 +5,7 @@ import shutil
 install_files = '''
 macros.cfg
 KlipperScreen.conf
+cutter.cfg
 '''.strip().splitlines()
 
 optional_files = '''
@@ -14,13 +15,13 @@ variables.cfg
 '''.strip().splitlines()
 
 install_folders = '''
-'''.strip().splitlines()
-
-optional_folders = '''
 controllers
 controllers/btt_skr_mini_e3_v2
 controllers/btt_octopus_main
 controllers/einsy_rambo_with_skr_mini
+'''.strip().splitlines()
+
+optional_folders = '''
 '''.strip().splitlines()
 
 from_dir = Path(os.path.dirname(__file__))
