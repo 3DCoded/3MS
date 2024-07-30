@@ -715,6 +715,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#dynamicmacros" class="md-nav__link">
+    <span class="md-ellipsis">
+      DynamicMacros
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#moonraker-update-manager" class="md-nav__link">
     <span class="md-ellipsis">
       Moonraker Update Manager
@@ -1179,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../experimental/nowipe/" class="md-nav__link">
+      <a href="../../experimental/nowipe.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1274,6 +1283,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#dynamicmacros" class="md-nav__link">
+    <span class="md-ellipsis">
+      DynamicMacros
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#moonraker-update-manager" class="md-nav__link">
     <span class="md-ellipsis">
       Moonraker Update Manager
@@ -1334,6 +1352,26 @@ git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCod
 <p>In your <code>printer.cfg</code>, add:</p>
 <div class="highlight"><span class="filename">printer.cfg</span><pre><span></span><code><span class="k">[include 3ms/main.cfg]</span>
 </code></pre></div>
+<h2 id="dynamicmacros">DynamicMacros</h2>
+<p>The 3MS configuration depends on <a href="https://github.com/3dcoded/DynamicMacros">DynamicMacros</a>. If you haven't installed it already, follow the instructions <a href="https://3dcoded.github.io/DynamicMacros/setup/">here</a> to do so.</p>
+<p>Remove the following line from your <code>3ms/main.cfg</code> if it exists:</p>
+<div class="highlight"><span class="filename">3ms/main.cfg</span><pre><span></span><code><span class="k">[include ./macros.cfg]</span>
+</code></pre></div>
+<p>Add <code>3ms/macros.cfg</code> to your <code>[dynamicmacros]</code> config section. Example:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">[dynamicmacros]</span>
+<span class="na">configs</span><span class="o">:</span><span class="w"> </span><span class="s">macros.cfg,othermacros.cfg</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">[dynamicmacros]</span>
+<span class="na">configs</span><span class="o">:</span><span class="w"> </span><span class="s">macros.cfg,othermacros.cfg,3ms/macros.cfg</span>
+</code></pre></div>
+</div>
+</div>
+</div>
 <h2 id="moonraker-update-manager">Moonraker Update Manager</h2>
 <p>To enable updates for the 3MS, add the following to your <code>moonraker.conf</code>:</p>
 <div class="highlight"><span class="filename">moonraker.conf</span><pre><span></span><code><span class="c1"># 3MS Update Manager</span>
@@ -1380,7 +1418,7 @@ git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCod
 </code></pre></div>
 <p>Copy the path that is output. Now, in your <code>3ms/controllers/xxx/steppers.cfg</code>, in the <code>[mcu 3ms]</code> section (towards the bottom), set the MCU ID.</p>
 <p>Example:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Before</label><label for="__tabbed_2_2">After</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><span class="filename">3ms/controllers/xxx/steppers.cfg</span><pre><span></span><code><span class="k">[mcu 3ms]</span>
