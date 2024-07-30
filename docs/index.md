@@ -56,12 +56,22 @@ Here are a few reasons:
 - Thorough documentation to help setup, optomize, and troubleshoot
 - No slicer custom toolchange G-Code needed
 - Easily expandable to any number of filaments (currently up to four)
+- Automatically retry failed toolchanges
 - In development: [Toolchanges Without Tip Shaping or Filament Cutter!](notip.md)
 
 With that said, there are a few reasons why you might **not** want to/be able to use the 3MS:
 
 - Klipper firmware is a requirement, so Marlin and RRF setups are a no go
 - A filament sensor is required, so if you don't have one/don't plan to get one, the 3MS won't work with your setup
+
+## Requirements
+
+To use the 3MS, your setup has to meet the following requirements:
+
+- Run Klipper firmware
+- Have SSH (PuTTY) access (99.9% of Klipper installations have this, and if you don't you really should setup SSH)
+- Have one spare USB port
+- Have an adapter to install a PTFE tube to the inlet of your printer's extruder.
 
 ## How it works
 
