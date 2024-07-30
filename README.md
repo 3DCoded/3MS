@@ -2,6 +2,10 @@
 
 The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial **S**ystem
 
+## Branch
+
+This experimental branch holds the necessary code for toolchanges without tip shaping.
+
 ## Documentation
 
 Documentation is available [here](https://3dcoded.github.io/3MS)
