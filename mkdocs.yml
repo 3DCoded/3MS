@@ -34,6 +34,10 @@ markdown_extensions:
   - attr_list
   - pymdownx.tabbed:
       alternate_style: true
+extra:
+  analytics:
+    provider: google
+    property: G-ERRF9DWVTD
 theme:
   features:
       - navigation.indexes
