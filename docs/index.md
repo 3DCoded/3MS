@@ -96,6 +96,8 @@ The 3MS's motors work together with your printer's extruder. This way, there won
 
 To get started with the 3MS, see the [Master Instructions](instructions.md).
 
+[Get Started :material-format-list-numbered:](instructions.md){ .md-button }
+
 ## What about the 3DChameleon?
 
 I recently created a klipper plugin for the 3DChameleon after purchasing a unit. I'm sure my Chameleon could have worked if I had tuned it further, but after several months with only partial success, I gave up. I am still open to pull requests for **[3dchameleon-klipper](https://github.com/3dcoded/3dchameleon-klipper)** and will do my best to respond to issues there, but I won't be able to test it myself anymore.

@@ -1,6 +1,13 @@
+---
+status: deprecated
+---
+
 # Filament Cutter
 
 Filament cutters completely remove the hassle of tip shaping and can allow for even faster toolchanges.
+
+!!! info "Inactive"
+    The goal of the 3MS is to be as simple as possible. Adding a filament cutter adds another layer of complexity. For now, it is recommended to either use [Tip Shaping](tipshaping.md) or try out the [No Tip Shaping](notip.md) feature. See [Materials](materials.md) for which feature you should use for each of your materials.
 
 !!! info
     This page, and the features mentioned on it, are in develpment
