@@ -8,6 +8,7 @@ mkdocs = "*"
 mkdocs-material = "*"
 mkdocs-autolinks-plugin = "*"
 mkdocs-glightbox = "*"
+mkdocs-print-site-plugin = "*"
 
 [dev-packages]
 

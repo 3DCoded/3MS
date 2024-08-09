@@ -4,6 +4,8 @@ repo_url: https://github.com/3dcoded/3ms
 plugins:
   - search
   - autolinks 
+  - print-site:
+      path_to_pdf: export.pdf
   - glightbox:
       touchNavigation: true
       loop: false
@@ -52,6 +54,7 @@ extra:
     deprecated: Deprecated
 theme:
   logo: assets/logo.png
+  custom_dir: docs/overrides
   features:
       - navigation.indexes
       - navigation.expand
