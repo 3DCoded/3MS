@@ -2,6 +2,8 @@
 
 The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial **S**ystem
 
+<img src="./assets/logo.png" alt="drawing" width="200"/>
+
 ## Inspiration
 
 - Prusa MMU1

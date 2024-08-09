@@ -51,6 +51,7 @@ extra:
     updated: Recently updated
     deprecated: Deprecated
 theme:
+  logo: assets/logo.png
   features:
       - navigation.indexes
       - navigation.expand
