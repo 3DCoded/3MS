@@ -1,0 +1,2882 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://3dcoded.github.io/3ms/print_page/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>Print Site - 3MS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings1.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings2.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings3.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings4.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings5.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings6.css">
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("/3ms/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-ERRF9DWVTD"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-ERRF9DWVTD",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-ERRF9DWVTD",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
+        })
+        </script>
+        </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="3MS" class="md-header__button md-logo" aria-label="3MS" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            3MS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Print Site
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/3dcoded/3ms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="3MS" class="md-nav__button md-logo" aria-label="3MS" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    3MS
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/3dcoded/3ms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../instructions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instructions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/bom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BOM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../setup/controllers/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Controllers
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Controllers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/controllers/skrminie3v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BTT SKR Mini E3 V2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/controllers/bttoctopusmain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BTT Octopus (main MCU)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/assembly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Assembly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/firmware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/slicer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Slicer Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/firstprint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Print
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../configuration/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/steppers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stepper Motors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/fsensor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filament Sensor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/macros/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Macros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/klipperscreen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KlipperScreen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/materials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/tipshaping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tip Shaping Guidelines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../troubleshooting/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Troubleshooting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/skipping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Motor Skipping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/falsealarm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filament Sensor False Alarm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/underextrusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Underextrusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/failedloadunload/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Failed Load/Unload
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Experimental
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Experimental
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experimental/notip/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Toolchanges without Tip Shaping or Filament Cutter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experimental/dualdrivetpu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TPU with Dual Drive 3MS Extruder
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--updated" title="Recently updated">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experimental/cutter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filament Cutter
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--deprecated" title="Deprecated">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flowchart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Toolchange Flowchart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Home
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Instructions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      I. Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I. Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-bom" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. BOM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Assembly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Firmware
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-slicer" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Slicer Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-firstprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. First Print
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      II. Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II. Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-steppers" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Stepper Motors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-fsensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Filament Sensor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Macros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-klipperscreen" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. KlipperScreen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-guides" class="md-nav__link">
+    <span class="md-ellipsis">
+      III. Guides
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="III. Guides">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guides-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Materials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guides-tipshaping" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Tip Shaping Guidelines
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      IV. Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IV. Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Troubleshooting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-skipping" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Motor Skipping
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-falsealarm" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Filament Sensor False Alarm
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-underextrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Underextrusion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-failedloadunload" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Failed Load/Unload
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-experimental" class="md-nav__link">
+    <span class="md-ellipsis">
+      V. Experimental
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="V. Experimental">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#experimental-notip" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. Toolchanges without Tip Shaping or Filament Cutter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experimental-dualdrivetpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. TPU with Dual Drive 3MS Extruder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experimental-cutter" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. Filament Cutter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. Toolchange Flowchart
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+
+
+
+
+
+                  
+
+
+<div id="print-site-page" class="print-site-enumerate-headings print-site-enumerate-figures">
+        <section class="print-page">
+            <div id="print-page-toc" data-toc-depth="3">
+                <nav role='navigation' class='print-page-toc-nav'>
+                <h1 class='print-page-toc-title'>Table of Contents</h1>
+                </nav>
+            </div>
+        </section>
+        <section class="print-page" id="index"><h1 id="index-welcome-to-the-3ms-documentation">Welcome to the 3MS Documentation</h1>
+<p>The 3MS is short for MMMS, which stands for <strong>M</strong>odular <strong>M</strong>ulti <strong>M</strong>aterial <strong>S</strong>ystem</p>
+<p><img src="../assets/logo.png" alt="drawing" width="200"/></p>
+<h2 id="index-inspiration">Inspiration</h2>
+<ul>
+<li>Prusa MMU1</li>
+<li>Bambu AMS</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This documentation is still under construction. If you have any questions not answered by the documentation, please open an issue on Github.</p>
+</div>
+<h2 id="index-sample-prints">Sample Prints</h2>
+<details open="open">
+<summary>Sample Prints</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="index-__tabbed_1_1" name="index-__tabbed_1" type="radio" /><input id="index-__tabbed_1_2" name="index-__tabbed_1" type="radio" /><input id="index-__tabbed_1_3" name="index-__tabbed_1" type="radio" /><input id="index-__tabbed_1_4" name="index-__tabbed_1" type="radio" /><input id="index-__tabbed_1_5" name="index-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="index-__tabbed_1_1">Sheep</label><label for="index-__tabbed_1_2">Calendar</label><label for="index-__tabbed_1_3">Voron Cube</label><label for="index-__tabbed_1_4">T-Rex</label><label for="index-__tabbed_1_5">Lizard</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="" src="../assets/images/sampleprints/samplesheep.jpeg" style="height: 300px" /></p>
+<p>Model: <a href="https://www.printables.com/model/838872-sheep-multi-material-remix">Sheep by Cipis</a></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="../assets/images/sampleprints/samplecalendar.jpeg" style="width: 300px" /></p>
+<p>Model: <a href="https://www.printables.com/model/698341-monolith-cryptic-calendar">Monolith Cryptic Calendar by Sevro</a></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="../assets/images/sampleprints/samplevoron.jpeg" style="height: 300px" /></p>
+<p>Model: Voron Cube (bundled with OrcaSlicer), painted by me in OrcaSlicer</p>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="../assets/images/sampleprints/sampletrex.jpeg" style="width: 300px" /></p>
+<p>Printed at 50% scale</p>
+<p>Model: <a href="https://www.printables.com/model/5481-t-rex-multi-material">T-rex by Cipis</a></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="../assets/images/sampleprints/samplelizard.jpeg" style="width: 300px" /></p>
+<p>Model: <a href="https://www.printables.com/model/236193-striped-lizard-multi-material-with-pupils">Striped lizard with pupils by EngMike</a></p>
+</div>
+</div>
+</div>
+</details>
+<h2 id="index-photos">Photos</h2>
+<details open="open">
+<summary>Photos</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="index-__tabbed_2_1" name="index-__tabbed_2" type="radio" /><input id="index-__tabbed_2_2" name="index-__tabbed_2" type="radio" /><input id="index-__tabbed_2_3" name="index-__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="index-__tabbed_2_1">Full Printer</label><label for="index-__tabbed_2_2">3MS</label><label for="index-__tabbed_2_3">Y Splitter</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="" src="../assets/images/photos/IMG_0318.jpeg" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="../assets/images/photos/IMG_0320.jpeg" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="../assets/images/photos/IMG_0321.jpeg" /></p>
+</div>
+</div>
+</div>
+</details>
+<h2 id="index-why-3ms">Why 3MS?</h2>
+<p>Why use the 3MS when there are many other multi-material systems? </p>
+<p>Here are a few reasons:</p>
+<ul>
+<li>Extremely simple design increases reliability</li>
+<li>Thorough documentation to help setup, optomize, and troubleshoot</li>
+<li>No slicer custom toolchange G-Code needed</li>
+<li>Easily expandable to any number of filaments (currently up to four)</li>
+<li>Automatically retry failed toolchanges</li>
+<li>In development: <a href="#experimental-notip">Toolchanges Without Tip Shaping or Filament Cutter!</a></li>
+</ul>
+<p>With that said, there are a few reasons why you might <strong>not</strong> want to/be able to use the 3MS:</p>
+<ul>
+<li>Klipper firmware is a requirement, so Marlin and RRF setups are a no go</li>
+<li>A filament sensor is required, so if you don't have one/don't plan to get one, the 3MS won't work with your setup</li>
+</ul>
+<h2 id="index-requirements">Requirements</h2>
+<p>To use the 3MS, your setup has to meet the following requirements:</p>
+<ul>
+<li>Run Klipper firmware</li>
+<li>Have SSH (PuTTY) access (99.9% of Klipper installations have this, and if you don't you really should setup SSH)</li>
+<li>Have one spare USB port</li>
+<li>Have an adapter to install a PTFE tube to the inlet of your printer's extruder.</li>
+</ul>
+<h2 id="index-how-it-works">How it works</h2>
+<p>Here is a example step by step of what goes on during a single 3MS toolchange from T0 to T1:</p>
+<ol>
+<li>Tip shaping and filament unload is performed by the slicer</li>
+<li>The 3MS unloads T0 200mm at 4500mm/min (75mm/s)</li>
+<li>The 3MS desyncs T0 from the extruder</li>
+<li>The 3MS checks if the filament was successfully unloaded</li>
+<li>The 3MS syncs T1 with the extruder</li>
+<li>The 3MS loads T1 210mm at 4500mm/min</li>
+<li>The 3MS checks if the filament was successfully loaded</li>
+<li>The printer loads the filament to the nozzle</li>
+</ol>
+<p>For more detail about the Tx command, see <a href="#flowchart">Flowchart</a>.</p>
+<p>Think of the 3MS as an extension to your current extruder's length. It allows for switching filaments, but while printing allows for all the benefits of your printer's extruder.</p>
+<p>The 3MS's motors work together with your printer's extruder. This way, there won't be any additional resistance from pulling the filament through a disabled extruder. Also, unloads and loads to/from the printer's extruder are fully synchronized with the 3MS. This allows for even faster toolchanges!</p>
+<h2 id="index-get-started">Get Started</h2>
+<p>To get started with the 3MS, see the <a href="#instructions">Master Instructions</a>.</p>
+<p><a class="md-button" href="#instructions">Get Started <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 13v-2h14v2H7m0 6v-2h14v2H7M7 7V5h14v2H7M3 8V5H2V4h2v4H3m-1 9v-1h3v4H2v-1h2v-.5H3v-1h1V17H2m2.25-7a.75.75 0 0 1 .75.75c0 .2-.08.39-.21.52L3.12 13H5v1H2v-.92L4 11H2v-1h2.25Z"/></svg></span></a></p>
+<h2 id="index-what-about-the-3dchameleon">What about the 3DChameleon?</h2>
+<p>I recently created a klipper plugin for the 3DChameleon after purchasing a unit. I'm sure my Chameleon could have worked if I had tuned it further, but after several months with only partial success, I gave up. I am still open to pull requests for <strong><a href="https://github.com/3dcoded/3dchameleon-klipper">3dchameleon-klipper</a></strong> and will do my best to respond to issues there, but I won't be able to test it myself anymore.</p></section><section class="print-page" id="instructions"><p><link rel="stylesheet" href="../assets/css/badges.css"></p>
+<h1 id="instructions-master-instructions">Master Instructions</h1>
+<p>Due to the modularity of the 3MS, there are many ways to set it up. This guide attempts to encompass all supported ways of setting up the 3MS.</p>
+<h2 id="instructions-basic-steps">Basic Steps</h2>
+<p>The basic steps this guide will follow are:</p>
+<ol>
+<li><a href="#instructions-1-getting-a-bom">Getting a BOM</a></li>
+<li><a href="#instructions-2-assembling-your-3ms">Assembling your 3MS</a></li>
+<li><a href="#instructions-3-configuring-your-3ms">Configuring your 3MS</a></li>
+<li><a href="#instructions-4-stepper-motor-setup">Stepper motor setup</a></li>
+<li><a href="#instructions-5-slicer-setup">Slicer setup</a></li>
+<li><a href="#instructions-6-first-print">First print</a></li>
+<li><a href="#instructions-7-troubleshooting">Troubleshooting</a></li>
+<li><a href="#instructions-8-updating">Updating</a></li>
+</ol>
+<h2 id="instructions-0-explanations">0. Explanations</h2>
+<p>Before starting the instructions, a basic understanding of how the 3MS works is recommended. There are two types of components in the 3MS:</p>
+<ul>
+<li>
+<p>Controller</p>
+<p>This controls the stepper motors</p>
+</li>
+<li>
+<p>Filament Units</p>
+<p>This moves the filament</p>
+</li>
+</ul>
+<p>The number of filaments you will be able to print with is equal to the number of filament units you have. For example, two filament units will let you print with two colors. It is important to note that one filament unit will NOT let you print in multimaterial.</p>
+<h2 id="instructions-05-choosing-a-controller">0.5. Choosing a Controller</h2>
+<p>Choose one of the controllers from <a href="#setup-controllers">Controllers</a> before continuing.</p>
+<h2 id="instructions-1-getting-a-bom">1. Getting a BOM</h2>
+<p>Go to <a href="#setup-bom">BOM</a> to view the bill of materials for the number of filament units you want. Example BOM for two filament units and a SKR Mini E3 V2:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SKR Mini E3 V2</td>
+<td>$34.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/0hgHU9JX">Amazon</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Duponts</td>
+<td>$9.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
+<td>These wires are only sufficient to run steppers, not heaters</td>
+</tr>
+<tr>
+<td>12V PSU</td>
+<td>$7.39</td>
+<td>1</td>
+<td><a href="https://a.co/d/gLC1eli">Amazon</a></td>
+<td>This PSU is only sufficient to run steppers, not heaters</td>
+</tr>
+<tr>
+<td>NEMA17 Stepper Motor</td>
+<td>$9.99</td>
+<td>2</td>
+<td><a href="https://a.co/d/06Lsa1qI">Amazon</a></td>
+<td>You can use a pancake stepper if you want, but it will have less torque</td>
+</tr>
+<tr>
+<td>MK8 Metal Extruder</td>
+<td>$9.99</td>
+<td>2</td>
+<td><a href="https://a.co/d/0gJ1ghKj">Amazon</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Capricorn PTFE Tubing</td>
+<td>$11.49</td>
+<td>1</td>
+<td><a href="https://a.co/d/0dLLBGzJ">Amazon</a></td>
+<td>You likely won't need this for every unit, as this is usually too long for only one unit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="instructions-2-assembling-your-3ms">2. Assembling your 3MS</h2>
+<p>Follow <a href="#setup-assembly">Assembly</a> to assemble your 3MS.</p>
+<h2 id="instructions-3-configuring-your-3ms">3. Configuring your 3MS</h2>
+<ol>
+<li>Install Klipper firmware onto the MCU by following <a href="#setup-firmware">Firmware</a>.</li>
+<li>Install <a href="https://github.com/3dcoded/DynamicMacros">DynamicMacros</a>, following instructions from <a href="https://3dcoded.github.io/DynamicMacros/setup/">here</a>.</li>
+<li>Follow <a href="#configuration-install">Installation</a> to install the 3MS configuration.</li>
+<li>Follow <a href="#configuration-fsensor">Filament Sensor</a> to setup your filament sensor with the 3MS.</li>
+</ol>
+<h2 id="instructions-4-stepper-motor-setup">4. Stepper motor setup</h2>
+<p>Follow <a href="#configuration-steppers">Stepper Setup</a> to setup and calibrate each of your filament units.</p>
+<h2 id="instructions-5-slicer-setup">5. Slicer setup</h2>
+<p>Follow <a href="#setup-slicer">Slicer Setup</a> to setup your slicer for the 3MS.</p>
+<h2 id="instructions-6-first-print">6. First print</h2>
+<p>Follow <a href="#setup-firstprint">First Print</a> to create your first multimaterial print with the 3MS.</p>
+<h2 id="instructions-7-troubleshooting">7. Troubleshooting</h2>
+<p>Check <a href="#troubleshooting">Troubleshooting</a> to find guides to troubleshoot your 3MS.</p>
+<h2 id="instructions-8-updating">8. Updating</h2>
+<p>To update the 3MS configuration, go to the Update Manager in Mainsail/Fluidd and refresh the updates. </p>
+<p><img alt="" src="../assets/images/updating/updating1.png" /></p>
+<p>Next, find the "mmms" entry in the list. If there is an "Update" button next to it, click it and begin updating. </p>
+<p>After updating, in your terminal, run:</p>
+<div class="highlight"><pre><span></span><code>sh<span class="w"> </span>~/3MS/install.sh
+</code></pre></div>
+<p>This will install the new 3MS configuration. Next, restart Klipper:</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>It is important to restart the Klipper <strong>service</strong>, and not just run the <code>RESTART</code> command.</p>
+</div>
+<p>Either run this command in your terminal or restart from Mainsail/Fluidd:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="instructions-__tabbed_1_1" name="instructions-__tabbed_1" type="radio" /><input id="instructions-__tabbed_1_2" name="instructions-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="instructions-__tabbed_1_1">Terminal</label><label for="instructions-__tabbed_1_2">Mainsail/Fluidd</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>service<span class="w"> </span>klipper<span class="w"> </span>restart
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="../assets/images/updating/updating2.png" /></p>
+</div>
+</div>
+</div></section>
+                        <h1 class='nav-section-title' id='section-setup'>
+                            Setup <a class='headerlink' href='#section-setup' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="setup-bom"><h1 id="setup-bom-bom">BOM</h1>
+<h2 id="setup-bom-number-of-filament-units">Number of filament units</h2>
+<p>First, choose the number of filament units you want. Each filament unit lets you print with an additional filament. Two filament units are the minimum. You can add or remove filament units after building, but the BOM and configuration will vary based on how many filament units you want.</p>
+<h2 id="setup-bom-controller-boms">Controller BOMs</h2>
+<p>Choose the BOM for your chosen controller from the list below:</p>
+<ul>
+<li><a href="#setup-controllers-skrminie3v2-bom">BTT SKR Mini E3 V2</a></li>
+<li><a href="#setup-controllers-bttoctopusmain-bom">BTT Octopus (main MCU)</a></li>
+</ul>
+<h2 id="setup-bom-filament-unit-boms">Filament Unit BOMs</h2>
+<p>For each filament unit, purchase this BOM:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Quantity</th>
+<th>Price</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NEMA17 Stepper Motor</td>
+<td>1</td>
+<td>$9.99</td>
+<td><a href="https://a.co/d/06Lsa1qI">Amazon</a></td>
+<td>You can use a pancake stepper if you want, but it will have less torque</td>
+</tr>
+<tr>
+<td>MK8 Metal Extruder</td>
+<td>1</td>
+<td>$9.99</td>
+<td><a href="https://a.co/d/0gJ1ghKj">Amazon</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Capricorn PTFE Tubing</td>
+<td>1</td>
+<td>$11.49</td>
+<td><a href="https://a.co/d/0dLLBGzJ">Amazon</a></td>
+<td>You likely won't need this for every unit, as this is usually too long for only one unit</td>
+</tr>
+</tbody>
+</table></section>
+                        <h2 class='nav-section-title' id='section-controllers'>
+                            Controllers <a class='headerlink' href='#section-controllers' title='Permanent link'>↵</a>
+                        </h2>
+                        <section class="print-page" id="setup-controllers"><h1 id="setup-controllers-controllers">Controllers</h1>
+<p>Follow this guide to determine which controller to use in your 3MS.</p>
+<h2 id="setup-controllers-options">Options</h2>
+<p>The 3MS works on multiple different controllers. </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If your printer's mainboard has spare stepper ports, you can use them to control 3MS steppers. You can open an issue on Github (there's a template) to get a configuration made for your specific setup. Any controllers listed with "(main MCU)" use those spare stepper plugs.</p>
+</div>
+<p>Choose one of the following supported controllers (a checkmark indicates it is fully tested):</p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-skrminie3v2">SKR Mini E3 V2.0 (4 colors)</a></p>
+<div class="admonition success">
+<p class="admonition-title">Fully Tested</p>
+</div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-bttoctopusmain">BTT Octopus (main MCU) (4 colors)</a></p>
+<div class="admonition warning">
+<p class="admonition-title">Untested</p>
+</div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-einsyrambo-skrminie3v2">Einsy RAMBo (main MCU) with SKR Mini E3 V2.0 (3ms MCU)</a></p>
+<div class="admonition danger">
+<p class="admonition-title">Expert modification, in development</p>
+</div>
+</li>
+</ul></section><section class="print-page" id="setup-controllers-skrminie3v2"><h1 id="setup-controllers-skrminie3v2-btt-skr-mini-e3-v2">BTT SKR Mini E3 V2</h1>
+<p><strong>Max filament units: 4</strong></p>
+<p><strong>MCU Name: <code>3ms</code></strong></p>
+<h2 id="setup-controllers-skrminie3v2-bom">BOM</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SKR Mini E3 V2</td>
+<td>$34.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/0hgHU9JX">Amazon</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Duponts</td>
+<td>$9.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
+<td>These wires are only sufficient to run steppers, not heaters</td>
+</tr>
+<tr>
+<td>12V PSU</td>
+<td>$7.39</td>
+<td>1</td>
+<td><a href="https://a.co/d/gLC1eli">Amazon</a></td>
+<td>This PSU is only sufficient to run steppers, not heaters</td>
+</tr>
+</tbody>
+</table>
+<h2 id="setup-controllers-skrminie3v2-wiring">Wiring</h2>
+<p>Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:</p>
+<table>
+<thead>
+<tr>
+<th>Filament Unit #</th>
+<th>Motor Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>XM</td>
+</tr>
+<tr>
+<td>1</td>
+<td>YM</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ZAM or ZBM</td>
+</tr>
+<tr>
+<td>3</td>
+<td>E0M</td>
+</tr>
+</tbody>
+</table>
+<p>Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)</p>
+<ol>
+<li>Plug the red wire into the positive terminal of the screw termianls</li>
+<li>
+<p>Plug the black wire into the negative terminal of the screw terminals</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>These dupont cables are too thin to run much more than the stepper motors. If you run a heater or other power-intensive device off of the SKR board, the duponts and/or PSU can melt/catch fire. To reduce the risk of this, you can double up on the duponts or get thicker wires.</p>
+</div>
+</li>
+<li>
+<p>Following this image, choose either the DCIN or POWER input
+<img alt="" src="../assets/images/skrminie3v2pins.jpg" /></p>
+</li>
+<li>Route the two wires inside closest to your chosen input</li>
+<li>Using the markings on the board, plug the red wire into the positive terminal on the SKR</li>
+<li>Using the markings on the board, plug the black wire into the negative terminal on the SKR</li>
+<li>
+<p>Verify all connections</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the wires are plugged into the wrong place, or swapped polarities, your SKR, Stepper motors, and/or PSU can be badly damaged.</p>
+</div>
+</li>
+<li>
+<p>Plug the PSU screw terminals into the PSU wire</p>
+</li>
+</ol>
+<p>If the SKR lights up, you wired it correctly!</p>
+<p>Finally, plug the SKR into your Klipper host with the blue cable that came with it.</p></section><section class="print-page" id="setup-controllers-bttoctopusmain"><h1 id="setup-controllers-bttoctopusmain-btt-octopus-main-mcu">BTT Octopus (main MCU)</h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This configuration may not work with the BTT Octopus Pro.</p>
+</div>
+<p><strong>Max filament units: 4</strong></p>
+<p><strong>MCU Name: <code>main</code></strong></p>
+<h2 id="setup-controllers-bttoctopusmain-main-mcu">main MCU</h2>
+<p>This configuration is a <code>main MCU</code> configuration, meaning that your printer should already be running off a BTT Octopus and you don't need to purchase one.</p>
+<h2 id="setup-controllers-bttoctopusmain-bom">BOM</h2>
+<p>Per filament unit:</p>
+<p><a href="https://a.co/d/01KA3Y1">1x TMC2209</a> ($7 each)</p>
+<h2 id="setup-controllers-bttoctopusmain-wiring">Wiring</h2>
+<p>Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:</p>
+<table>
+<thead>
+<tr>
+<th>Filament Unit #</th>
+<th>Motor Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>MOTOR7</td>
+</tr>
+<tr>
+<td>1</td>
+<td>MOTOR6</td>
+</tr>
+<tr>
+<td>2</td>
+<td>MOTOR5</td>
+</tr>
+<tr>
+<td>3</td>
+<td>MOTOR4</td>
+</tr>
+</tbody>
+</table></section><h1 class='nav-section-title-end'>Ended: Controllers</h1><section class="print-page" id="setup-assembly"><h1 id="setup-assembly-assembly">Assembly</h1>
+<p>Follow this guide to assemble your 3MS.</p>
+<h2 id="setup-assembly-printed-parts">Printed Parts</h2>
+<p>An optional board enclosure for the SKR Mini E3 is available <a href="https://www.printables.com/model/459809-bigtreetech-skr-mini-e3-v3-enclosure">here</a>.</p>
+<p>Additionaly, an optional univeral mount for the MK8 extruder using M3 bolts is available <a href="../assets/stls/mk8m3.stl">here</a>. Note that this requires 2-4 M3 bolts and a place to screw the bolts into.</p>
+<p>Finally, you will need to print enough of <a href="https://www.printables.com/model/541678-bambu-ams-no-catch-y-splitter-pc4-m10">these</a> Y splitters for the filament.</p>
+<h2 id="setup-assembly-mk8-assembly">MK8 Assembly</h2>
+<p>Next, assemble the MK8 extruders onto the NEMA17 motors using the provided instructions that came with them. If you use the mount provided above, make sure it is in between the MK8 and NEMA17. </p>
+<h2 id="setup-assembly-wiring">Wiring</h2>
+<p>Follow one of the following guides based on your controller:</p>
+<ul>
+<li><a href="#setup-controllers-skrminie3v2-wiring">SKR Mini E3 V2</a></li>
+<li><a href="#setup-controllers-bttoctopusmain-wiring">BTT Octopus (main MCU)</a></li>
+</ul></section><section class="print-page" id="setup-firmware"><h1 id="setup-firmware-firmware">Firmware</h1>
+<p>Follow this guide to install Klipper firmware onto your 3MS MCU. This guide is a modified version of the <a href="https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller">Klipper Documentation</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The following controller(s) can skip this guide:</p>
+<ul>
+<li>BTT Octopus (main MCU)</li>
+</ul>
+</div>
+<h2 id="setup-firmware-create-firmwarebin">Create firmware.bin</h2>
+<p>Make sure your 3MS MCU is plugged into your Klipper Host. Run in your terminal:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/klipper
+make<span class="w"> </span>menuconfig
+</code></pre></div>
+<p>In the menuconfig, configure it to your MCU. Instructions are included at the top of <code>3ms/controllers/xxx/steppers.cfg</code> for future reference. A copy of it is provided here:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># This file contains common pin mappings for the BIGTREETECH SKR mini</span>
+<span class="c1"># E3 v2.0. To use this config, the firmware should be compiled for the</span>
+<span class="c1"># STM32F103 with a &quot;28KiB bootloader&quot; and USB communication. Also,</span>
+<span class="c1"># select &quot;Enable extra low-level configuration options&quot; and configure</span>
+<span class="c1"># &quot;GPIO pins to set at micro-controller startup&quot; to &quot;!PA14&quot;.</span>
+</code></pre></div>
+<p>Run in your terminal:</p>
+<div class="highlight"><pre><span></span><code>make<span class="w"> </span>clean
+make
+</code></pre></div>
+<p>The <code>klipper.bin</code> file, located in <code>~/klipper/out/klipper.bin</code> needs to be copied to a MicroSD card and renamed to <code>firmware.bin</code> (case-sensitive). </p>
+<h2 id="setup-firmware-install-firmwarebin">Install firmware.bin</h2>
+<p>Next, unplug the 3MS board from the PSU and your Klipper Host and insert the SD Card. Next, plug in the PSU, THEN the Klipper Host to the 3MS board. The firmware is now flashed.</p>
+<h2 id="setup-firmware-get-mcu-id">Get MCU ID</h2>
+<p>In the terminal, run:</p>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>/dev/serial/by-id/
+</code></pre></div>
+<p>Example output:</p>
+<div class="highlight"><pre><span></span><code>usb-Klipper_stm32f103xe_33FFD1054746333809650557-if00
+usb-Prusa_Research__prusa3d.com__Original_Prusa_i3_MK3_xxx-if00
+</code></pre></div>
+<p>In this case, the first line is the 3MS, and the second line is the 3D printer. Now that you know the id of the 3MS MCU, copy it and save it to a file:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;&lt;your-mcu-id&gt;&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>mcu.txt<span class="w"> </span>
+</code></pre></div></section><section class="print-page" id="setup-slicer"><h1 id="setup-slicer-slicer-setup">Slicer Setup</h1>
+<p>Follow this guide to setup the 3MS with your slicer. OrcaSlicer will be used in this guide, but these same settings (with different names) can be applied to PrusaSlicer and SuperSlicer.</p>
+<h2 id="setup-slicer-number-of-filament-units">Number of Filament Units</h2>
+<p>Set the number of filaments in your slicer to the number of filament units in your 3MS. </p>
+<p><img alt="" src="../assets/images/slicer/slicer1.png" /></p>
+<p>In OrcaSlicer, press the filament plus button until there are as many filaments displayed as you have filament units.</p>
+<h2 id="setup-slicer-klipper-startend-g-code">Klipper Start/End G-Code</h2>
+<p>In your Klipper <code>PRINT_START</code> macro, add the following right before your purge line:</p>
+<div class="highlight"><pre><span></span><code><span class="na">MMMS_START INITIAL_TOOL</span><span class="o">=</span><span class="s">{params.INITIAL_EXTRUDER}</span>
+</code></pre></div>
+<p>In your <code>PRINT_END</code> macro, add the following before the cooldown command is called:</p>
+<div class="highlight"><pre><span></span><code><span class="na">MMMS_END</span>
+</code></pre></div>
+<h2 id="setup-slicer-slicer-start-g-code">Slicer Start G-Code</h2>
+<p>In your slicer's Start G-Code, add the following parameter to your <code>PRINT_START</code>:</p>
+<div class="highlight"><pre><span></span><code>INITIAL_EXTRUDER=[initial_extruder]
+</code></pre></div>
+<p><img alt="" src="../assets/images/slicer/slicer2.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This is the last required part of slicer setup.</p>
+</div>
+<h2 id="setup-slicer-optional-klipper_estimator">Optional: klipper_estimator</h2>
+<p>If you use <a href="https://github.com/Annex-Engineering/klipper_estimator">klipper_estimator</a> and want the toolchange represented in the time estimate, time your toolchange, then change your Change filament G-Code:</p>
+<p><img alt="" src="../assets/images/slicer/slicer3.png" /></p></section><section class="print-page" id="setup-firstprint"><h1 id="setup-firstprint-first-print">First Print</h1>
+<p>Follow this guide to begin your first multimaterial print. There are two main ways to prepare a model for multimaterial painting. </p>
+<h2 id="setup-firstprint-method-1-multimaterial-painting">Method 1: Multimaterial Painting</h2>
+<p>This method allows you to turn any model, even if it's not designed for multimaterial printing, into a multimaterial print. First, import your model into the slicer. In this case, a 3DBenchy will be used.</p>
+<p><span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-i">I</kbd></span> OR <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-i">I</kbd></span></p>
+<p><img alt="" src="../assets/images/firstprint/firstprint1.png" /></p>
+<p>Next, select the model and click multimaterial painting at the top.</p>
+<p><span class="keys"><kbd class="key-n">N</kbd></span></p>
+<p><img alt="" src="../assets/images/firstprint/firstprint2.png" /></p>
+<p>Once you're in this menu, you can choose any tool, tool size, and filament. Now, just drag over the model to apply the selected tool to the model. In this case, the hull of the 3DBenchy will be set to filament two using the fill tool.</p>
+<p><img alt="" src="../assets/images/firstprint/firstprint3.png" /></p>
+<p>Finally, hit slice and your model is ready to print!</p>
+<p><span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-r">R</kbd></span> OR <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span></p>
+<p><img alt="" src="../assets/images/firstprint/firstprint4.png" /></p>
+<h2 id="setup-firstprint-method-2-multimaterial-model">Method 2: Multimaterial Model</h2>
+<p>This method allows you to turn parts of a model to different materials. For this tutorial, this <a href="https://www.printables.com/model/5481-t-rex-multi-material">T-rex by Cipis</a> will be used. First, import your model into the slicer. If prompted while opening to treat the model as multiple parts, select "Yes".</p>
+<p><span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-i">I</kbd></span> OR <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-i">I</kbd></span></p>
+<p><img alt="" src="../assets/images/firstprint/firstprint5.png" /></p>
+<p>Next, go to object settings and change the different parts of the model to different colors.</p>
+<p><img alt="" src="../assets/images/firstprint/firstprint6.png" /></p>
+<p>Finally, hit slice and your model is ready to print!</p>
+<p><span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-r">R</kbd></span> OR <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span></p>
+<p><img alt="" src="../assets/images/firstprint/firstprint7.png" /></p>
+<h2 id="setup-firstprint-wipe-tower-position">Wipe Tower Position</h2>
+<p>In the examples, you may have noticed that the wipe tower is far from the model. The travel time between the model and wipe tower adds up, and moving the tower closer can help reduce print time.</p>
+<p>In the "Prepare" view, click and drag the wipe tower as close to the object as you can without colliding.</p>
+<p><img alt="" src="../assets/images/firstprint/firstprint8.png" /></p>
+<p>If you have a camera on your 3D printer, you may want to put the wipe tower "behind" the part from your camera's perspective.</p></section><h1 class='nav-section-title-end'>Ended: Setup</h1>
+                        <h1 class='nav-section-title' id='section-configuration'>
+                            Configuration <a class='headerlink' href='#section-configuration' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="configuration"><h1 id="configuration-configuration">Configuration</h1>
+<p>This guide covers the configuration structure and options of the 3MS.</p>
+<h2 id="configuration-maincfg">main.cfg</h2>
+<p><code>main.cfg</code> is located in <code>3ms/main.cfg</code>. It contains the following:</p>
+<ul>
+<li><code>[save_variables]</code> configuration section. This section sets the location where variables about the previous tool will be saved. </li>
+<li><code>[include]</code> sections. These reference other configuration files covered in this guide. The included configurations are:<ul>
+<li><code>settings.cfg</code></li>
+<li><code>macros.cfg</code></li>
+<li><code>controllers/xxx/steppers.cfg</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="configuration-settingscfg">settings.cfg</h2>
+<p><code>settings.cfg</code> contains the settings the 3MS uses during toolchanges in <code>macros.cfg</code>. Further information is <a href="#configuration-macros-3ms-settings">here</a>.</p>
+<h2 id="configuration-macroscfg">macros.cfg</h2>
+<p><code>macros.cfg</code> contains the macros the 3MS uses during toolchanges. Further information is <a href="#configuration-macros-filament-handling">here</a>.</p>
+<h2 id="configuration-controllersxxxstepperscfg">controllers/xxx/steppers.cfg</h2>
+<p><code>steppers.cfg</code> contains the MCU configuration for the 3MS. It contains the following:</p>
+<ul>
+<li><code>[extruder_stepper 3msx]</code> This contains the pin mappings for the motor assigned to 3MS tool x.</li>
+<li><code>[tmc2209 extruder_stepper 3msx]</code> This contains the pin mappings for the TMC2209 controlling the motor assigned to 3MS tool x.</li>
+<li><code>[mcu 3ms]</code> This contains the serial path to the 3MS MCU.</li>
+<li>Other sections: These are configuration sections specific to the MCU and should not be modified.</li>
+</ul>
+<h2 id="configuration-klipperscreenconf">KlipperScreen.conf</h2>
+<p>This contains the <a href="https://klipperscreen.readthedocs.io/en/latest/">KlipperScreen</a> 3MS menu configuration. For more information, see <a href="#configuration-klipperscreen">KlipperScreen</a>.</p></section><section class="print-page" id="configuration-install"><h1 id="configuration-install-installation">Installation</h1>
+<p>Follow this guide to install the 3MS configuration and macros.</p>
+<h2 id="configuration-install-clone-repository">Clone Repository</h2>
+<p>First, clone the 3MS repository:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCoded/3MS
+<span class="nb">cd</span><span class="w"> </span>3MS
+</code></pre></div>
+<h2 id="configuration-install-install-script">Install Script</h2>
+<p>Run the install script:</p>
+<div class="highlight"><pre><span></span><code>sh<span class="w"> </span>install.sh
+</code></pre></div>
+<h2 id="configuration-install-printercfg">printer.cfg</h2>
+<p>In your <code>printer.cfg</code>, add:</p>
+<div class="highlight"><span class="filename">printer.cfg</span><pre><span></span><code><span class="k">[include 3ms/main.cfg]</span>
+</code></pre></div>
+<h2 id="configuration-install-dynamicmacros">DynamicMacros</h2>
+<p>The 3MS configuration depends on <a href="https://github.com/3dcoded/DynamicMacros">DynamicMacros</a>. If you haven't installed it already, follow the instructions <a href="https://3dcoded.github.io/DynamicMacros/setup/">here</a> to do so.</p>
+<p>Remove the following line from your <code>3ms/main.cfg</code> if it exists:</p>
+<div class="highlight"><span class="filename">3ms/main.cfg</span><pre><span></span><code><span class="k">[include ./macros.cfg]</span>
+</code></pre></div>
+<p>Add <code>3ms/macros.cfg</code> to your <code>[dynamicmacros]</code> config section. Example:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="configuration-install-__tabbed_1_1" name="configuration-install-__tabbed_1" type="radio" /><input id="configuration-install-__tabbed_1_2" name="configuration-install-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="configuration-install-__tabbed_1_1">Before</label><label for="configuration-install-__tabbed_1_2">After</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">[dynamicmacros]</span>
+<span class="na">configs</span><span class="o">:</span><span class="w"> </span><span class="s">macros.cfg,othermacros.cfg</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">[dynamicmacros]</span>
+<span class="na">configs</span><span class="o">:</span><span class="w"> </span><span class="s">macros.cfg,othermacros.cfg,3ms/macros.cfg</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="configuration-install-moonraker-update-manager">Moonraker Update Manager</h2>
+<p>To enable updates for the 3MS, add the following to your <code>moonraker.conf</code>:</p>
+<div class="highlight"><span class="filename">moonraker.conf</span><pre><span></span><code><span class="c1"># 3MS Update Manager</span>
+<span class="k">[update_manager mmms]</span>
+<span class="na">type</span><span class="o">:</span><span class="w"> </span><span class="s">git_repo</span>
+<span class="na">path</span><span class="o">:</span><span class="w"> </span><span class="s">~/3MS</span>
+<span class="na">origin</span><span class="o">:</span><span class="w"> </span><span class="s">https://github.com/3DCoded/3MS.git</span>
+<span class="na">primary_branch</span><span class="o">:</span><span class="w"> </span><span class="s">main</span>
+<span class="na">is_system_service</span><span class="o">:</span><span class="w"> </span><span class="s">False</span>
+<span class="na">install_script</span><span class="o">:</span><span class="w"> </span><span class="s">install.sh</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When updating via Moonraker, the following files will be overwritten:</p>
+<ul>
+<li><code>macros.cfg</code></li>
+<li><code>KlipperScreen.conf</code></li>
+</ul>
+<p>If you have any changes in these files, they will be lost when updating.</p>
+</div>
+<h2 id="configuration-install-controller">Controller</h2>
+<p>In <code>3ms/main.cfg</code>, edit the <code>[include ./controllers/xxx/steppers.cfg]</code> line, replacing <code>xxx</code> with the config name of your controller:</p>
+<table>
+<thead>
+<tr>
+<th>Controller Name</th>
+<th>Config Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SKR Mini E3 V2</td>
+<td><code>btt_skr_mini_e3_v2</code></td>
+</tr>
+<tr>
+<td>BTT Octopus (main MCU)</td>
+<td><code>btt_octopus_main</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="configuration-install-configure-mcu-id">Configure MCU ID</h2>
+<p>Finally, to configure the MCU ID you saved from <a href="#setup-firmware">Firmware</a>, run in your terminal:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cat<span class="w"> </span>mcu.txt
+</code></pre></div>
+<p>Copy the path that is output. Now, in your <code>3ms/controllers/xxx/steppers.cfg</code>, in the <code>[mcu 3ms]</code> section (towards the bottom), set the MCU ID.</p>
+<p>Example:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="configuration-install-__tabbed_2_1" name="configuration-install-__tabbed_2" type="radio" /><input id="configuration-install-__tabbed_2_2" name="configuration-install-__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="configuration-install-__tabbed_2_1">Before</label><label for="configuration-install-__tabbed_2_2">After</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">3ms/controllers/xxx/steppers.cfg</span><pre><span></span><code><span class="k">[mcu 3ms]</span>
+<span class="na">serial</span><span class="o">:</span><span class="w"> </span><span class="s">/dev/serial/by-id/&lt;your-mcu-id&gt;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">3ms/controllers/xxx/steppers.cfg</span><pre><span></span><code><span class="k">[mcu 3ms]</span>
+<span class="na">serial</span><span class="o">:</span><span class="w"> </span><span class="s">/dev/serial/by-id/usb-Klipper_stm32f103xe_33FFD1054746333809650557-if00</span>
+</code></pre></div>
+</div>
+</div>
+</div></section><section class="print-page" id="configuration-steppers"><h1 id="configuration-steppers-stepper-motors">Stepper Motors</h1>
+<p>Follow this guide to calibrate each of the stepper motors. Each of these steps should be repeated for each of your filament units, replacing <code>TOOL=0</code> with <code>TOOL=1</code>, and so on. Also replacing <code>3ms0</code> with <code>3ms1</code>, and so on.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If your stepper motor shakes erratically while running any of these commands, your wiring may be incorrect.</p>
+</div>
+<h2 id="configuration-steppers-is-the-motor-spinning">Is the motor spinning?</h2>
+<p>Run this command:</p>
+<div class="highlight"><pre><span></span><code>SYNC_TOOL TOOL=0
+<span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">4500</span>
+</code></pre></div>
+<p>If the motor spins, skip to the next step. If not, check your wiring first. If your wiring is fine, go to <code>3ms/steppers.cfg</code>. Locate the section named <code>[extruder_stepper 3ms0]</code>. In front of the <code>enable_pin</code>, add, an <code>!</code>. If there already is one, remove it. Example:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="configuration-steppers-__tabbed_1_1" name="configuration-steppers-__tabbed_1" type="radio" /><input id="configuration-steppers-__tabbed_1_2" name="configuration-steppers-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="configuration-steppers-__tabbed_1_1">Before</label><label for="configuration-steppers-__tabbed_1_2">After</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">3ms/steppers.cfg</span><pre><span></span><code><span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!3ms: PD7</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">3ms/steppers.cfg</span><pre><span></span><code><span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">3ms: PD7</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="configuration-steppers-is-the-motor-spinning-backwards">Is the motor spinning backwards?</h2>
+<p>Preload each of the filament units with a piece of scrap filament by pushing the lever to release the tension, inserting filament, then releasing the lever to restore tension. Next, run this command:</p>
+<div class="highlight"><pre><span></span><code>SYNC_TOOL TOOL=0
+<span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">4500</span>
+</code></pre></div>
+<p>Note which way the filament moves. If it moves forwards, away from the PTFE coupler, skip to the last step. If it moves backwards, you have two choices:</p>
+<ul>
+<li>Switch the motor's wires</li>
+<li>Invert the pin in the configuration</li>
+</ul>
+<p>To invert the pin in the configuration, locate the configuration section for the filament unit spinning backwards, and invert the <code>dir_pin</code>. See the previous section for how to invert the pin.</p>
+<h2 id="configuration-steppers-how-far-does-the-filament-move">How far does the filament move?</h2>
+<p>This section is a modified version of the <a href="https://www.klipper3d.org/Rotation_Distance.html#calibrating-rotation_distance-on-extruders">Klipper Docs</a></p>
+<p>Preload each of the filament units with a piece of scrap filament at least 200mm long by pushing the lever to release the tension, inserting filament, then releasing the lever to restore tension.</p>
+<p>Use a ruler and a marker to place a mark 70mm from the inlet of the filament unit. Use calipers to measure the actual distance. Write it down, as it will be referred to as <code>&lt;initial_mark_distance&gt;</code>.</p>
+<p>Next, run this command:</p>
+<div class="highlight"><pre><span></span><code>SYNC_TOOL TOOL=0
+<span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">1500</span>
+</code></pre></div>
+<p>Use calipers to measure the new distance between the inlet of the filament unit and the mark. Write it down, as it will be referred to as <code>&lt;next_mark_distance&gt;</code>. </p>
+<p>Calculate <code>&lt;actual_extrude_distance&gt; = &lt;initial_mark_distance&gt; - &lt;next_mark_distance&gt;</code></p>
+<p>In the <code>steppers.cfg</code> file (located in <code>3ms/controllers/xxx/steppers.cfg</code>), locate the configuration section for the current extruder. Example:</p>
+<div class="highlight"><span class="filename">3ms/controllers/btt_skr_mini_e3_v2/steppers.cfg</span><pre><span></span><code><span class="k">[extruder_stepper 3ms0]</span>
+<span class="na">extruder</span><span class="o">:</span><span class="w"> </span><span class="s">extruder</span>
+<span class="na">step_pin</span><span class="o">:</span><span class="w"> </span><span class="s">3ms: PB13</span>
+<span class="na">dir_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!3ms: PB12</span>
+<span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!3ms: PB14</span>
+<span class="na">microsteps</span><span class="o">:</span><span class="w"> </span><span class="s">16</span>
+<span class="na">rotation_distance</span><span class="o">:</span><span class="w"> </span><span class="s">32.8450</span>
+</code></pre></div>
+<p>Note the <code>rotation_distance</code> (last line). In this case, it is <code>32.8450</code>.</p>
+<p>Calculate the new rotation distance: <code>new_rotation_distance = &lt;rotation_distance&gt; * &lt;actual_extrude_distance&gt; / 50</code>. </p>
+<p>Round this result to three or four decimal places. Decrease it by 0.005 (this is so that if this result is slightly off, the 3MS filament unit will skip, instead of the printer's extruder stripping the filament during a print). </p>
+<p>Set the new <code>rotation_distance</code> in your config. Save it and restart Klipper.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If you use the same stepper motor brand and model for each of your filament units, you likely only have to do this step for one stepper, then copy over the rotation_distance to all the others.</p>
+</div></section><section class="print-page" id="configuration-fsensor"><h1 id="configuration-fsensor-filament-sensor">Filament Sensor</h1>
+<p>Follow this guide to configure your filament sensor with the 3MS. </p>
+<h2 id="configuration-fsensor-location-of-sensor">Location of Sensor</h2>
+<p>The filament sensor should be right before the extruder, and after the Y splitter. Other locations, such as between the hotend and extruder, have not been tested.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The 3MS has only been tested with a <code>filament_switch_sensor</code>, and not with a <code>filament_motion_sensor</code></p>
+</div>
+<h2 id="configuration-fsensor-configuration">Configuration</h2>
+<p>To configure your filament sensor with the 3MS, open <code>3ms/settings.cfg</code> and change the following (assuming your filament sensor is named "runout_sensor"):</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="configuration-fsensor-__tabbed_1_1" name="configuration-fsensor-__tabbed_1" type="radio" /><input id="configuration-fsensor-__tabbed_1_2" name="configuration-fsensor-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="configuration-fsensor-__tabbed_1_1">Before</label><label for="configuration-fsensor-__tabbed_1_2">After</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">3ms/settings.cfg</span><pre><span></span><code><span class="na">fsensor_name</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;fsensor&quot;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">3ms/settings.cfg</span><pre><span></span><code><span class="na">fsensor_name</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;runout_sensor&quot;</span>
+</code></pre></div>
+</div>
+</div>
+</div></section><section class="print-page" id="configuration-macros"><h1 id="configuration-macros-macros">Macros</h1>
+<h2 id="configuration-macros-3ms-settings">3MS Settings</h2>
+<h3 id="configuration-macros-mmms_settings">MMMS_SETTINGS</h3>
+<p>Stores the settings for the 3MS.</p>
+<p><strong>Default Settings</strong></p>
+<div class="highlight"><pre><span></span><code>variable_load_distance: 210
+variable_unload_distance: 200
+variable_load_speed: 4500
+vairable_unload_speed: 4500
+variable_fsensor_delay: 2000
+variable_num_tools: 2
+variable_step_size: 99
+variable_retry_dist: 50
+variable_retry_speed: 900
+</code></pre></div>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>MMMS_SETTINGS
+</code></pre></div>
+<h3 id="configuration-macros-set_3ms_settings">SET_3MS_SETTINGS</h3>
+<p>Sets the configuration for the 3MS. Allows <strong>temporary</strong> customization of load and unload distances and speeds</p>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>SET_3MS_SETTINGS LOAD_DISTANCE=210 UNLOAD_DISTANCE=200 LOAD_SPEED=3500 UNLOAD_SPEED=5500 FSENSOR_DELAY=2500
+</code></pre></div>
+<h3 id="configuration-macros-get_3ms_settings">GET_3MS_SETTINGS</h3>
+<p>Dispalys the configuration for the 3MS. </p>
+<p><strong>Example Usage</strong>
+<div class="highlight"><pre><span></span><code>GET_3MS_SETTINGS
+</code></pre></div></p>
+<h2 id="configuration-macros-filament-handling">Filament Handling</h2>
+<h3 id="configuration-macros-mmms_unload">MMMS_UNLOAD</h3>
+<p>Unloads filament by a specified distance and speed. If no distance/speed is specified, it uses the default unload distance/speed from <code>MMMS_SETTINGS</code>.</p>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>MMMS_UNLOAD DISTANCE=200 SPEED=5500
+</code></pre></div>
+<h3 id="configuration-macros-mmms_load">MMMS_LOAD</h3>
+<p>Loads filament by a specified distance and speed. If no distance/speed is specified, it uses the default load distance/speed from <code>MMMS_SETTINGS</code>.</p>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>MMMS_LOAD DISTANCE=210 SPEED=3500
+</code></pre></div>
+<h3 id="configuration-macros-check_fsensor">CHECK_FSENSOR</h3>
+<p>Checks the filament sensor state. Pauses the print if the sensor state does not match the expected value.</p>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>CHECK_FSENSOR V=1
+</code></pre></div>
+<h2 id="configuration-macros-tool-sync">Tool Sync</h2>
+<h3 id="configuration-macros-set_tool_sync">SET_TOOL_SYNC</h3>
+<p>Sets the sync state of a tool. Syncs or desyncs the specified tool to/from the extruder.</p>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>SET_TOOL_SYNC TOOL=0 SYNC=1
+</code></pre></div>
+<h3 id="configuration-macros-sync_tool">SYNC_TOOL</h3>
+<p>Syncs the specified tool and desyncs all other tools to/from the extruder.</p>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>SYNC_TOOL TOOL=0
+</code></pre></div>
+<h3 id="configuration-macros-desync_tool">DESYNC_TOOL</h3>
+<p>Desyncs the specified tool from the extruder.</p>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>DESYNC_TOOL TOOL=0
+</code></pre></div>
+<h3 id="configuration-macros-clear_tool">CLEAR_TOOL</h3>
+<p>Clears the current tool selection by setting it to -1.</p>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>CLEAR_TOOL
+</code></pre></div>
+<h3 id="configuration-macros-desync_all_tools">DESYNC_ALL_TOOLS</h3>
+<p>Desyncs all configured tools.</p>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>DESYNC_ALL_TOOLS
+</code></pre></div>
+<h2 id="configuration-macros-print-start-and-end">Print Start and End</h2>
+<h3 id="configuration-macros-mmms_start">MMMS_START</h3>
+<p>Starts the print by checking the filament sensor. If filament is detected, the print is paused and the user is notified. Regardless of the filament sensor state, the initial tool is loaded.</p>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>MMMS_START INITIAL_TOOL=0
+</code></pre></div>
+<h3 id="configuration-macros-mmms_end">MMMS_END</h3>
+<p>Ends the print by unloading the current tool. If filament is detected after unloading, the user is notified.</p>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>MMMS_END
+</code></pre></div>
+<h2 id="configuration-macros-tool-change">Tool Change</h2>
+<h3 id="configuration-macros-t0">T0</h3>
+<p>Changes to tool 0.</p>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>T0
+</code></pre></div>
+<h3 id="configuration-macros-t1">T1</h3>
+<p>Changes to tool 1.</p>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>T1
+</code></pre></div>
+<h3 id="configuration-macros-tx">Tx</h3>
+<p>Changes to a specified tool. Replace <code>x</code> with the tool number.</p>
+<p><strong>Example Usage</strong></p>
+<div class="highlight"><pre><span></span><code>T2
+T3
+</code></pre></div></section><section class="print-page" id="configuration-klipperscreen"><h1 id="configuration-klipperscreen-klipperscreen">KlipperScreen</h1>
+<p><img alt="" src="../assets/images/klipperscreen.png" /></p>
+<p>The 3MS supports a KlipperScreen menu. To install it, add the following to your <code>KlipperScreen.conf</code> (located in the same folder as your <code>printer.cfg</code>):</p>
+<div class="highlight"><span class="filename">KlipperScreen.conf</span><pre><span></span><code><span class="k">[include 3ms/KlipperScreen.conf]</span>
+</code></pre></div></section><h1 class='nav-section-title-end'>Ended: Configuration</h1>
+                        <h1 class='nav-section-title' id='section-guides'>
+                            Guides <a class='headerlink' href='#section-guides' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="guides-materials"><h1 id="guides-materials-materials">Materials</h1>
+<p>Follow this guide to determine if your filament will work with the 3MS.</p>
+<h2 id="guides-materials-materials-table">Materials Table</h2>
+<p>This table contains which filaments work in single mode and/or multimaterial mode with the 3MS.</p>
+<table>
+<thead>
+<tr>
+<th>Filament</th>
+<th>Single Mode</th>
+<th>Multimaterial Mode</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#guides-materials-pla">PLA</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#guides-materials-pla">PLA+</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#guides-materials-silkmatte-pla">Silk PLA</a></td>
+<td>Yes</td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#guides-materials-silkmatte-pla">Matte PLA</a></td>
+<td>Yes</td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#guides-materials-petg">PETG</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#guides-materials-tpu">TPU</a></td>
+<td>Untested</td>
+<td>No</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="guides-materials-pla">PLA(+)</h2>
+<p>PLA/PLA+/PLA Pro, etc. filaments are very easy to print in multimaterial with the 3MS. They also support the experimental <a href="#experimental-notip">No Tip Shaping</a> feature.</p>
+<h2 id="guides-materials-silkmatte-pla">Silk/Matte PLA</h2>
+<p>Silk/Matte PLA filaments are slightly more difficult to print with or without the 3MS. They generally require tip shaping to work with the 3MS in multimaterial mode.</p>
+<h2 id="guides-materials-petg">PETG</h2>
+<p>PETG filaments are easy to print in multimaterial with the 3MS. They will likely require tip shaping. Suggested settings options are provided below. Ideal settings for your setup will likely include a combination of the options.</p>
+<details>
+<summary>Tip Shaping</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="guides-materials-__tabbed_1_1" name="guides-materials-__tabbed_1" type="radio" /><input id="guides-materials-__tabbed_1_2" name="guides-materials-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="guides-materials-__tabbed_1_1">Option 1</label><label for="guides-materials-__tabbed_1_2">Option 2</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Setting Name</th>
+<th>Setting Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nozzle Temperature</td>
+<td>250ºC</td>
+</tr>
+<tr>
+<td>Loading speed at the start</td>
+<td>19mm/s</td>
+</tr>
+<tr>
+<td>Loading speed</td>
+<td>14mm/s</td>
+</tr>
+<tr>
+<td>Unloading speed at start</td>
+<td>200mm/s</td>
+</tr>
+<tr>
+<td>Unloading speed</td>
+<td>90mm/s</td>
+</tr>
+<tr>
+<td>Delay after unloading</td>
+<td>4s</td>
+</tr>
+<tr>
+<td># Cooling moves</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Speed of first cooling move</td>
+<td>1mm/s</td>
+</tr>
+<tr>
+<td>Speed of last cooling move</td>
+<td>20mm/s</td>
+</tr>
+<tr>
+<td>Ramming settings</td>
+<td><img alt="" data-gallery="petg" src="../assets/images/materials/petg1.0.png" /></td>
+</tr>
+<tr>
+<td>Source: <a href="https://forum.prusa3d.com/forum/postid/382759/">Prusa Forums</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Setting Name</th>
+<th>Setting Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nozzle Temperature</td>
+<td>250ºC</td>
+</tr>
+<tr>
+<td>Loading speed at the start</td>
+<td>15mm/s</td>
+</tr>
+<tr>
+<td>Loading speed</td>
+<td>14mm/s</td>
+</tr>
+<tr>
+<td>Unloading speed at start</td>
+<td>120mm/s</td>
+</tr>
+<tr>
+<td>Unloading speed</td>
+<td>20mm/s</td>
+</tr>
+<tr>
+<td>Delay after unloading</td>
+<td>0s</td>
+</tr>
+<tr>
+<td># Cooling moves</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Speed of first cooling move</td>
+<td>1mm/s</td>
+</tr>
+<tr>
+<td>Speed of last cooling move</td>
+<td>15mm/s</td>
+</tr>
+<tr>
+<td>Ramming settings</td>
+<td><img alt="" data-gallery="petg" src="../assets/images/materials/petg2.0.png" /></td>
+</tr>
+<tr>
+<td>Source: <a href="https://forum.prusa3d.com/forum/postid/124370/">Prusa Forums</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</details>
+<h2 id="guides-materials-tpu">TPU</h2>
+<p>TPU filaments are very difficult to print with or without the 3MS. If your printer can reliably print TPU, you can likely use it with the 3MS in single mode. To use it in multimaterial mode and/or improve reliability, see the experimental <a href="#experimental-dualdrivetpu">Dual Drive 3MS Extruders for TPU</a> feature.</p></section><section class="print-page" id="guides-tipshaping"><h1 id="guides-tipshaping-tip-shaping-guidelines">Tip Shaping Guidelines</h1>
+<p>Follow this guide to get faster and more reliable toolchanges with your 3MS.</p>
+<h2 id="guides-tipshaping-does-my-filament-need-tip-shaping">Does My Filament Need Tip Shaping?</h2>
+<p>If your filament is in this list, then it likely won't need tip shaping, and you can try out the experimental <a href="#experimental-notip">No Tip Shaping</a>:</p>
+<ul>
+<li>PLA (not Silk, Matte, or glitter variants)</li>
+<li>PLA+ (including PLA Pro, Tough PLA)</li>
+<li>PETG</li>
+</ul>
+<p>If you filament wasn't in that list, continue reading this page.</p>
+<h2 id="guides-tipshaping-blobby-tips">Blobby Tips</h2>
+<p>If your filament tip has a thicker tip after unloading, you can do two things:</p>
+<ol>
+<li>Print hotter</li>
+<li>Decrease cooling moves</li>
+</ol>
+<h2 id="guides-tipshaping-stringy-tips">Stringy Tips</h2>
+<p>If your filament tip has a stringy tip after unloading, you can do two things:</p>
+<ol>
+<li>Print colder</li>
+<li>Increase cooling moves</li>
+</ol>
+<p>You may also be able to use the experimental <a href="#experimental-notip">No Tip Shaping</a>.</p>
+<h2 id="guides-tipshaping-hook-of-death">Hook of Death</h2>
+<p>If you filament tip can't unload out of your extruder and forms a hook shape, you may need to replace the PTFE tube between your printer's extruder and hotend. You may also want to follow the recommendations for <a href="#guides-tipshaping-blobby-tips">Blobby tips</a>.</p></section><h1 class='nav-section-title-end'>Ended: Guides</h1>
+                        <h1 class='nav-section-title' id='section-troubleshooting'>
+                            Troubleshooting <a class='headerlink' href='#section-troubleshooting' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="troubleshooting"><h1 id="troubleshooting-troubleshooting">Troubleshooting</h1>
+<p>If you are having trouble getting your 3MS to work properly, check if the problem you're facing is in this list:</p>
+<ul>
+<li><a href="#troubleshooting-skipping">Motor Skipping</a></li>
+<li><a href="#troubleshooting-falsealarm">Filament Sensor False Alarm</a></li>
+<li><a href="#troubleshooting-underextrusion">Underextrusion</a></li>
+<li><a href="#troubleshooting-failedloadunload">Failed Load/Unload</a></li>
+</ul>
+<p>If it is not in this list, please open an issue on Github.</p></section><section class="print-page" id="troubleshooting-skipping"><h1 id="troubleshooting-skipping-motor-skipping">Motor Skipping</h1>
+<p>If any of your extruder motors are skipping while using the 3MS, follow this troubleshooting guide to diagnose the issue and fix it.</p>
+<h2 id="troubleshooting-skipping-printers-extruder">Printer's Extruder</h2>
+<p>First, check if your printer's extruder is properly extruding. To check this, detach the PTFE tube from the inlet of your extruder, and manually load filament, using Klipper's controls for loading filament. If your printer's extruder is having trouble extruding plastic, you may have one of the following:</p>
+<ul>
+<li><a href="https://all3dp.com/2/3d-printer-nozzle-cleaning-the-easiest-way-to-do-it/">Nozzle clog</a></li>
+<li><a href="https://all3dp.com/2/3d-printer-heat-creep/">Heat creep jam</a></li>
+</ul>
+<h2 id="troubleshooting-skipping-3ms-extruder">3MS Extruder</h2>
+<p>If the printer's extruder is working properly, and you're still having skipping, check the filament tips. If the tip has a long string on it, or has a thick blob at the end, your filament tips may be to blame. If you have stringy tips, decrease your nozzle temperature while printing. If you have blobby tips, increase your nozzle temperature while printing. Alternatively, you can purchase <a href="https://a.co/d/7o45tW5">PTFE tubes with a larger ID</a> to allow for less precise tips.</p></section><section class="print-page" id="troubleshooting-falsealarm"><h1 id="troubleshooting-falsealarm-filament-sensor-false-alarm">Filament Sensor False Alarm</h1>
+<p>If during toolchanges, a failed toolchange false alarm occurs (print pauses even though toolchange was successful), follow this troubleshooting guide to fix it.</p>
+<h2 id="troubleshooting-falsealarm-fsensor_delay">fsensor_delay</h2>
+<p>The main culprit for this issue is likely your <code>fsensor_delay</code> in <code>3ms/settings.cfg</code> is too short. Short values will cause more false alarms, and long values will cause less. Generally, the default 2000ms is good for most setups, but if you are having false alarms, you will have to increase it. Example:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="troubleshooting-falsealarm-__tabbed_1_1" name="troubleshooting-falsealarm-__tabbed_1" type="radio" /><input id="troubleshooting-falsealarm-__tabbed_1_2" name="troubleshooting-falsealarm-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="troubleshooting-falsealarm-__tabbed_1_1">Before</label><label for="troubleshooting-falsealarm-__tabbed_1_2">After</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">3ms/settings.cfg</span><pre><span></span><code><span class="na">fsensor_delay</span><span class="o">:</span><span class="w"> </span><span class="s">2000</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">3ms/settings.cfg</span><pre><span></span><code><span class="na">fsensor_delay</span><span class="o">:</span><span class="w"> </span><span class="s">3000</span>
+</code></pre></div>
+</div>
+</div>
+</div></section><section class="print-page" id="troubleshooting-underextrusion"><h1 id="troubleshooting-underextrusion-underextrusion">Underextrusion</h1>
+<p>If your prints start to have gaps in the walls, you are likely experiencing underextrusion. Follow this troubleshooting guide to diagnose the issue and fix it.</p>
+<h2 id="troubleshooting-underextrusion-extruderhotend-issues">Extruder/Hotend Issues</h2>
+<p>First, try the solutions in <a href="https://all3dp.com/2/under-extrusion-3d-printing-all-you-need-to-know/">this</a> article in case there are any issues with your printer's extruder/hotend.</p>
+<h2 id="troubleshooting-underextrusion-3ms-rotation_distance">3MS rotation_distance</h2>
+<p>If your extruder and hotend are working fine, the next likely cause of underextrusion is your 3MS rotation_distance is too high. There are two likely causes and solutions, based on where in the print the underextrusion occurs:</p>
+<ul>
+<li>
+<p>Whole print - 3MS motors working backwards from the extruder or not working at all</p>
+<p>Follow the wiring section of <a href="#setup-assembly-wiring">Assembly</a>.</p>
+<p>Follow the first two steps of <a href="#configuration-steppers">Stepper Setup</a>.</p>
+</li>
+<li>
+<p>Partially through print - 3MS motors not turning enough</p>
+<p>Follow the last step of <a href="#configuration-steppers-how-far-does-the-filament-move">Stepper Setup</a>.</p>
+</li>
+</ul></section><section class="print-page" id="troubleshooting-failedloadunload"><h1 id="troubleshooting-failedloadunload-failed-loadunload">Failed Load/Unload</h1>
+<p>If your printer is paused and displaying <code>Please load</code> or <code>Please unload</code>, follow this troubleshooting guide to diagnose the problem and fix it.</p>
+<h2 id="troubleshooting-failedloadunload-false-alarm">False Alarm</h2>
+<p>First, see <a href="#troubleshooting-falsealarm">False Alarm</a> to ensure your filament sensor is properly configured and is being properly read by the 3MS macros.</p>
+<h2 id="troubleshooting-failedloadunload-failed-unload">Failed Unload</h2>
+<p>When your printer displays a <code>Please unload</code> message, pay attention to the <code>Tx</code> number it shows. For example, if it displays the message <code>Please unload T0</code>, it failed to unload the filament at T0. Follow these steps to recover the toolchange:</p>
+<ol>
+<li>Detach the PTFE tube from the inlet of your printer's extruder (you may need to push down the lever on the 3MS extruder for that tool while doing this).</li>
+<li>
+<p>Manually pull the filament out of the printer's extruder.</p>
+<p>If it is stuck, try one of the following:</p>
+<ul>
+<li>Reload the filament until it is extruding out of the nozzle, then unload the filament quickly while pulling firmly.</li>
+<li>Open your printer's extruder assembly, pull the filament through, and cut off the tip.</li>
+</ul>
+<p>Also, see <a href="#troubleshooting-skipping">Skipping</a></p>
+</li>
+<li>
+<p>Next, manually pull the filament all the way to where the filament is usually parked between toolchanges (before the Y-splitter).</p>
+</li>
+<li>Manually load the next filament. Check the console for a message like <code>T0 -&gt; T1</code> indicating which filament is next (in this case T1). It shoudl be loaded to the entry of the printer's extruder gears.</li>
+<li>Resume your print.</li>
+</ol>
+<p>Next, diagnose the problem based on these possible scenarios:</p>
+<ul>
+<li>
+<p>Filament never unloaded out of printer's extruder</p>
+<p>This is a sign of poor tip shaping. The quick fix for this is to increase print temperatures. Also, see <a href="#troubleshooting-skipping">Skipping</a>.</p>
+</li>
+<li>
+<p>Filament unloaded out of printer's extruder, but stopped before filament sensor</p>
+<p>This is a sign of your filament sensor causing excess friction on the filament, or your 3MS extruder tension too loose. For the 3MS tension too lose, simply rotate the tensioning screw on the 3MS extruder clockwise a couple rotations.</p>
+</li>
+</ul>
+<h2 id="troubleshooting-failedloadunload-failed-load">Failed Load</h2>
+<p>When your printer displays a <code>Please load</code> message, pay attention to the <code>Tx</code> number it shows. For example, if it displays the message <code>Please load T1</code>, it failed to load the filament at T1. Follow these steps to recover the toolchange:</p>
+<ol>
+<li>
+<p>Manually push the filament all the way to the inlet of your printer's extruder.</p>
+<p>If your filament isn't able to load, the previous tool may not have completely unloaded. See <a href="#troubleshooting-failedloadunload-failed-unload">Failed Unload</a> for more information.</p>
+</li>
+<li>
+<p>Resume your print.</p>
+</li>
+</ol>
+<p>Next, diagnose the problem based on these possible scenarios:</p>
+<ul>
+<li>
+<p>Previous filament didn't unload enough</p>
+<p>Increase your <code>unload_distance</code> in <code>MMMS_SETTINGS</code> (<code>3ms/settings.py</code>). You can test different values by using <code>SET_MMMS_SETTINGS</code> at runtime. Example:</p>
+<div class="highlight"><pre><span></span><code>SET_MMMS_SETTINGS UNLOAD_DISTANCE=210
+</code></pre></div>
+</li>
+<li>
+<p>Filament didn't load enough</p>
+<p>Increase your <code>load_distance</code> in <code>MMMS_SETTINGS</code> (<code>3ms/settings.py</code>). You can test different values by using <code>SET_MMMS_SETTINGS</code> at runtime. Example:</p>
+<div class="highlight"><pre><span></span><code>SET_MMMS_SETTINGS LOAD_DISTANCE=220
+</code></pre></div>
+</li>
+</ul></section><h1 class='nav-section-title-end'>Ended: Troubleshooting</h1>
+                        <h1 class='nav-section-title' id='section-experimental'>
+                            Experimental <a class='headerlink' href='#section-experimental' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="experimental-notip"><h1 id="experimental-notip-toolchanges-without-tip-shaping-or-filament-cutter">Toolchanges Without Tip Shaping or Filament Cutter!</h1>
+<p>Because the 3MS is synchronized to the printer's extruder, it can potentially toolchange without any tip shaping or filament cutter.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This page, and the features mentioned on it, are in develpment</p>
+</div>
+<details open="open">
+<summary>Development Status</summary>
+<p>So far, the following work without tip shaping:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Toolchanges without tip shaping</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Print start/end routines without tip shaping</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Small prints without tip shaping (up to 5 toolchanges)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Medium prints without tip shaping (over 50 toolchanges)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Long prints without tip shaping (over 100 toolchanges)</li>
+<li>Common materials:<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> PLA<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> PLA+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> High Speed PLA</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Silk PLA</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> PETG</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> TPU (see <a href="#experimental-dualdrivetpu">Dual Drive 3MS Extruders for TPU</a>)</li>
+</ul>
+</li>
+</ul>
+</details>
+<h2 id="experimental-notip-speed-benefits">Speed Benefits</h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This section is under construction.</p>
+</div>
+<h2 id="experimental-notip-should-tip-shaping-be-used">Should Tip Shaping be Used?</h2>
+<p>See <a href="#guides-materials">Materials</a> for information on whether or not tip shaping should be used for your filaments.</p>
+<h2 id="experimental-notip-slicer-setup">Slicer Setup</h2>
+<p>Setup your slicer for no tip shaping as follows.</p>
+<h3 id="experimental-notip-disable-filament-ramming">Disable Filament Ramming</h3>
+<p>Disable filament ramming in <code>Filament Settings</code> -&gt; <code>Multimaterial</code> -&gt; <code>Toolchange parameters with single extruder MM printers</code>:</p>
+<p><img alt="" src="../assets/images/slicer/slicer5.png" />
+<img alt="" src="../assets/images/slicer/slicer6.png" /></p>
+<h3 id="experimental-notip-unloadload-speed">Unload/Load Speed</h3>
+<p>Next, change the <code>Unloading speed at start</code> and <code>Unloading speed</code> to 300 (faster is better here). Next, change the <code>Loading speed at start</code> and <code>Loading speed</code> to 300 and 100, respectively.</p>
+<details class="info" open="open">
+<summary>What this does</summary>
+<p>The main idea behind toolchanges without tip shaping relies on the filament being unloaded too fast to form a blob. Setting the <code>Unloading speed</code> settings allows this. Next, loading the filament back can be generally optomized by increasing the <code>Loading speed</code> settings.</p>
+</details>
+<p><img alt="" src="../assets/images/slicer/slicer7.png" /></p>
+<h3 id="experimental-notip-temperature">Temperature</h3>
+<p>If your filament has very long strings on the end of them after unloading without tip shaping (longer than 2cm), decrease your filament temperature. </p>
+<p>If your filament tip has a nearly flat tip, increase your filament temperature.</p>
+<p>The ideal filament tip has a pointy end and a small string (less than 5mm). When in doubt, it is recommended to aim for a slightly stringy tip over a flat tip.</p></section><section class="print-page" id="experimental-dualdrivetpu"><h1 id="experimental-dualdrivetpu-dual-drive-3ms-extruders-for-tpu">Dual Drive 3MS Extruders for TPU</h1>
+<p>The 3MS's existing single-drive extruders are prone to tangling with TPU during toolchanges. Dual drive 3MS extruders may fix this issue and allow for multimaterial printing with TPU.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This page, and the features mentioned on it, are in develpment</p>
+</div>
+<p>The extruder used in this modification can be found on Amazon <a href="https://a.co/d/dbw7Wor">here</a>.</p>
+<h2 id="experimental-dualdrivetpu-benefits">Benefits</h2>
+<p>Current testing shows the following benefits:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Increased reliability with ridgid filaments</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Easier initial filament loading</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Less filament grinding</li>
+</ul>
+<p>Reliability with TPU hasn't been tested yet.</p></section><section class="print-page" id="experimental-cutter"><h1 id="experimental-cutter-filament-cutter">Filament Cutter</h1>
+<p>Filament cutters completely remove the hassle of tip shaping and can allow for even faster toolchanges.</p>
+<div class="admonition info">
+<p class="admonition-title">Inactive</p>
+<p>The goal of the 3MS is to be as simple as possible. Adding a filament cutter adds another layer of complexity. For now, it is recommended to either use <a href="#guides-tipshaping">Tip Shaping</a> or try out the <a href="#experimental-notip">No Tip Shaping</a> feature. See <a href="#guides-materials">Materials</a> for which feature you should use for each of your materials.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This page, and the features mentioned on it, are in develpment</p>
+</div>
+<details open="open">
+<summary>Development Status</summary>
+<p>So far, the following have been tested:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Custom universal filament cutter design</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Klipper Configuration</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Print tests<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 10 Toolchanges</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 50 Toolchanges</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 100 Toolchanges</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Speed tests<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 20 second toolchanges</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 15 second toolchanges</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 10 second toolchanges</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> less than 10 second toolchanges</li>
+</ul>
+</li>
+</ul>
+</details>
+<h2 id="experimental-cutter-bom">BOM</h2>
+<p>The 3MC (3MS filament cutter) uses a high torque servo and a custom filament cutter design to cut filament quickly and reliably. </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20kg servo</td>
+<td>$15.98</td>
+<td><a href="https://a.co/d/9UK4VHX">Amazon</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Metal servo horns</td>
+<td>$9.69</td>
+<td><a href="https://a.co/d/6uUCaya">Amazon</a></td>
+<td></td>
+</tr>
+<tr>
+<td>4x M3x8-20</td>
+<td>$8.99</td>
+<td><a href="https://a.co/d/fezi1O2">Amazon</a></td>
+<td>You probably already have these</td>
+</tr>
+</tbody>
+</table>
+<p>Print the printed parts from <a href="#experimental-cutter">here</a> (link coming soon).</p></section><h1 class='nav-section-title-end'>Ended: Experimental</h1><section class="print-page" id="flowchart"><h1 id="flowchart-toolchange-flowchart">Toolchange Flowchart</h1>
+<p>This flowchart assumes a <code>fsensor_delay</code> of 2000ms.</p>
+<pre class="mermaid"><code>graph TD
+  A[T1] --&gt; B[Toolchange T=1];
+  B[Toolchange T=1] --&gt; C{Same tool?};
+  C --&gt; |No| D{Previous filament loaded?};
+  C --&gt; |Yes| E{Do nothing};
+  D --&gt; |Yes| F[MMMS_UNLOAD];
+  F --&gt; G[DESYNC_TOOL TOOL=0];
+  G --&gt; H[G4 P2000];
+  H --&gt; I[CHECK_FSENSOR V=0];
+  D --&gt; |No| J[SYNC_TOOL TOOL=1];
+  I --&gt; J;
+  J --&gt; K[MMMS_LOAD];
+  K --&gt; L[G4 P2000];
+  L --&gt; M[CHECK_FSENSOR V=1];
+  M --&gt; N[Save new previous extruder]</code></pre></section></div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "/3ms/", "features": ["navigation.indexes", "navigation.expand", "navigation.instant", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+    
+  </body>
+</html>
