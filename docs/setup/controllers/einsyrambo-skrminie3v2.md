@@ -3,9 +3,6 @@
 !!! danger
     This guide is an expert guide only
 
-!!! warning
-    This guide is under construction
-
 !!! info
     This modification is designed for the Prusa MK3/S/S+, and depends on [this](https://github.com/dz0ny/klipper-prusa-mk3s) Klipper configuration.
 
@@ -14,9 +11,6 @@
 When printing fast, the TMC2130's on the Einsy RAMBo can get quite loud. The TMC2209's on the SKR Mini are much quieter and support denser microstepping.
 
 ## BOM
-
-!!! info
-    This section is under construction.
 
 | Name | Price | Quantity | Link | Notes |
 | - | - | - | - | - |
