@@ -408,6 +408,8 @@
       
         
       
+        
+      
     
     
     
@@ -481,6 +483,27 @@
   
   <span class="md-ellipsis">
     BTT Octopus (main MCU)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/controllers/einsyrambo-skrminie3v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Einsy RAMBo (main MCU) with SKR Mini E3 V2
   </span>
   
 
@@ -1945,7 +1968,100 @@
 <td>MOTOR4</td>
 </tr>
 </tbody>
-</table></section><h1 class='nav-section-title-end'>Ended: Controllers</h1><section class="print-page" id="setup-assembly"><h1 id="setup-assembly-assembly">Assembly</h1>
+</table></section><section class="print-page" id="setup-controllers-einsyrambo-skrminie3v2"><h1 id="setup-controllers-einsyrambo-skrminie3v2-einsy-rambo-main-mcu-with-skr-mini-e3-v2">Einsy RAMBo (main MCU) with SKR Mini E3 V2</h1>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>This guide is an expert guide only</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This modification is designed for the Prusa MK3/S/S+, and depends on <a href="https://github.com/dz0ny/klipper-prusa-mk3s">this</a> Klipper configuration.</p>
+</div>
+<h2 id="setup-controllers-einsyrambo-skrminie3v2-why">Why?</h2>
+<p>When printing fast, the TMC2130's on the Einsy RAMBo can get quite loud. The TMC2209's on the SKR Mini are much quieter and support denser microstepping.</p>
+<h2 id="setup-controllers-einsyrambo-skrminie3v2-bom">BOM</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PSU -&gt; Einsy Cable</td>
+<td>$7.99</td>
+<td>1</td>
+<td><a href="https://www.partsbuilt.com/cable-psu-to-einsy-for-prusa-mk3-3s-3s-prusa-compatible/">PartsBuilt3D</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Stepperonline NEMA17</td>
+<td>$9.99 each</td>
+<td><a href="https://a.co/d/el99D6X">Amazon</a></td>
+<td>2</td>
+<td>Replaces current XY motors</td>
+</tr>
+</tbody>
+</table>
+<h2 id="setup-controllers-einsyrambo-skrminie3v2-wiring">Wiring</h2>
+<p>First, unplug the 3MS steppers from the SKR Mini, and the XY steppers from the Einsy RAMBo. The motors will need to be switched due to different connector types between boards.</p>
+<p>This table outlines the major wiring of this modification.</p>
+<table>
+<thead>
+<tr>
+<th>Einsy RAMBo</th>
+<th>SKR Mini E3 V2</th>
+<th>Motor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PSU+</td>
+<td>POWER+</td>
+<td></td>
+</tr>
+<tr>
+<td>PSU-</td>
+<td>POWER-</td>
+<td></td>
+</tr>
+<tr>
+<td>XM</td>
+<td></td>
+<td>3ms0</td>
+</tr>
+<tr>
+<td>YM</td>
+<td></td>
+<td>3ms1</td>
+</tr>
+<tr>
+<td></td>
+<td>XM</td>
+<td>X</td>
+</tr>
+<tr>
+<td></td>
+<td>YM</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+<h2 id="setup-controllers-einsyrambo-skrminie3v2-configuration">Configuration</h2>
+<p>In your <code>printer.cfg</code>, comment out these lines:</p>
+<div class="highlight"><span class="filename">printer.cfg</span><pre><span></span><code><span class="c1">#[include klipper-prusa-mk3s/mk3s/steppers.cfg]</span>
+<span class="c1">#[include klipper-prusa-mk3s/mk3s/tmc2130.cfg]</span>
+</code></pre></div>
+<p>Next, copy the contents of <code>3ms/controllers/einsy_rambo_with_skr_mini/xy-motors.cfg</code> and <code>ze-motors.cfg</code> to <code>klipper-prusa-mk3s/skr/xy.cfg</code>, and <code>klipper-prusa-mk3s/mk3s/ze.cfg</code>, respectively.</p>
+<p>Add the following new lines:</p>
+<div class="highlight"><span class="filename">printer.cfg</span><pre><span></span><code><span class="k">[include klipper-prusa-mk3s/skr/xy.cfg]</span>
+<span class="k">[include klipper-prusa-mk3s/mk3s/ze.cfg]</span>
+</code></pre></div>
+<p>Restart Klipper.</p></section><h1 class='nav-section-title-end'>Ended: Controllers</h1><section class="print-page" id="setup-assembly"><h1 id="setup-assembly-assembly">Assembly</h1>
 <p>Follow this guide to assemble your 3MS.</p>
 <h2 id="setup-assembly-printed-parts">Printed Parts</h2>
 <p>An optional board enclosure for the SKR Mini E3 is available <a href="https://www.printables.com/model/459809-bigtreetech-skr-mini-e3-v3-enclosure">here</a>.</p>
@@ -1958,6 +2074,7 @@
 <ul>
 <li><a href="#setup-controllers-skrminie3v2-wiring">SKR Mini E3 V2</a></li>
 <li><a href="#setup-controllers-bttoctopusmain-wiring">BTT Octopus (main MCU)</a></li>
+<li><a href="#setup-controllers-einsyrambo-skrminie3v2">Einsy RAMBo (main MCU) with SKR Mini E3 V2</a></li>
 </ul></section><section class="print-page" id="setup-firmware"><h1 id="setup-firmware-firmware">Firmware</h1>
 <p>Follow this guide to install Klipper firmware onto your 3MS MCU. This guide is a modified version of the <a href="https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller">Klipper Documentation</a>.</p>
 <div class="admonition info">
