@@ -1042,10 +1042,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -1083,27 +1079,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../experimental/notip/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Toolchanges without Tip Shaping or Filament Cutter
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../experimental/dualdrivetpu/" class="md-nav__link">
         
   
@@ -1115,35 +1090,6 @@
   
   
     <span class="md-status md-status--updated" title="Recently updated">
-    </span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../experimental/cutter/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Filament Cutter
-  </span>
-  
-    
-  
-  
-    <span class="md-status md-status--deprecated" title="Deprecated">
     </span>
   
 
@@ -1457,27 +1403,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#experimental-notip" class="md-nav__link">
-    <span class="md-ellipsis">
-      21. Toolchanges without Tip Shaping or Filament Cutter
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#experimental-dualdrivetpu" class="md-nav__link">
     <span class="md-ellipsis">
-      22. TPU with Dual Drive 3MS Extruder
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#experimental-cutter" class="md-nav__link">
-    <span class="md-ellipsis">
-      23. Filament Cutter
+      21. TPU with Dual Drive 3MS Extruder
     </span>
   </a>
   
@@ -1491,7 +1419,7 @@
         <li class="md-nav__item">
   <a href="#flowchart" class="md-nav__link">
     <span class="md-ellipsis">
-      24. Toolchange Flowchart
+      22. Toolchange Flowchart
     </span>
   </a>
   
@@ -1593,7 +1521,7 @@
 <li>No slicer custom toolchange G-Code needed</li>
 <li>Easily expandable to any number of filaments (currently up to four)</li>
 <li>Automatically retry failed toolchanges</li>
-<li>In development: <a href="#experimental-notip">Toolchanges Without Tip Shaping or Filament Cutter!</a></li>
+<li>In development: <a href="#guides-notip">Toolchanges Without Tip Shaping or Filament Cutter!</a></li>
 </ul>
 <p>With that said, there are a few reasons why you might <strong>not</strong> want to/be able to use the 3MS:</p>
 <ul>
@@ -2529,7 +2457,7 @@ T3
 </tbody>
 </table>
 <h2 id="guides-materials-pla">PLA(+)</h2>
-<p>PLA/PLA+/PLA Pro, etc. filaments are very easy to print in multimaterial with the 3MS. They also support the experimental <a href="#experimental-notip">No Tip Shaping</a> feature.</p>
+<p>PLA/PLA+/PLA Pro, etc. filaments are very easy to print in multimaterial with the 3MS. They also support the <a href="#guides-notip">No Tip Shaping</a> feature.</p>
 <h2 id="guides-materials-silkmatte-pla">Silk/Matte PLA</h2>
 <p>Silk/Matte PLA filaments are slightly more difficult to print with or without the 3MS. They generally require tip shaping to work with the 3MS in multimaterial mode.</p>
 <h2 id="guides-materials-petg">PETG</h2>
@@ -2657,7 +2585,7 @@ T3
 <p>TPU filaments are very difficult to print with or without the 3MS. If your printer can reliably print TPU, you can likely use it with the 3MS in single mode. To use it in multimaterial mode and/or improve reliability, see the experimental <a href="#experimental-dualdrivetpu">Dual Drive 3MS Extruders for TPU</a> feature.</p></section><section class="print-page" id="guides-tipshaping"><h1 id="guides-tipshaping-tip-shaping-guidelines">Tip Shaping Guidelines</h1>
 <p>Follow this guide to get faster and more reliable toolchanges with your 3MS.</p>
 <h2 id="guides-tipshaping-does-my-filament-need-tip-shaping">Does My Filament Need Tip Shaping?</h2>
-<p>If your filament is in this list, then it likely won't need tip shaping, and you can try out the experimental <a href="#experimental-notip">No Tip Shaping</a>:</p>
+<p>If your filament is in this list, then it likely won't need tip shaping, and you can use the <a href="#guides-notip">No Tip Shaping</a> feature:</p>
 <ul>
 <li>PLA (not Silk, Matte, or glitter variants)</li>
 <li>PLA+ (including PLA Pro, Tough PLA)</li>
@@ -2676,7 +2604,7 @@ T3
 <li>Print colder</li>
 <li>Increase cooling moves</li>
 </ol>
-<p>You may also be able to use the experimental <a href="#experimental-notip">No Tip Shaping</a>.</p>
+<p>You may also be able to use the <a href="#guides-notip">No Tip Shaping</a> feature.</p>
 <h2 id="guides-tipshaping-hook-of-death">Hook of Death</h2>
 <p>If you filament tip can't unload out of your extruder and forms a hook shape, you may need to replace the PTFE tube between your printer's extruder and hotend. You may also want to follow the recommendations for <a href="#guides-tipshaping-blobby-tips">Blobby tips</a>.</p></section><h1 class='nav-section-title-end'>Ended: Guides</h1>
                         <h1 class='nav-section-title' id='section-troubleshooting'>
@@ -2698,8 +2626,10 @@ T3
 <li><a href="https://all3dp.com/2/3d-printer-nozzle-cleaning-the-easiest-way-to-do-it/">Nozzle clog</a></li>
 <li><a href="https://all3dp.com/2/3d-printer-heat-creep/">Heat creep jam</a></li>
 </ul>
+<p>You can also slightly <strong>decrease</strong> the 3MS's <code>rotation_distance</code>.</p>
 <h2 id="troubleshooting-skipping-3ms-extruder">3MS Extruder</h2>
-<p>If the printer's extruder is working properly, and you're still having skipping, check the filament tips. If the tip has a long string on it, or has a thick blob at the end, your filament tips may be to blame. If you have stringy tips, decrease your nozzle temperature while printing. If you have blobby tips, increase your nozzle temperature while printing. Alternatively, you can purchase <a href="https://a.co/d/7o45tW5">PTFE tubes with a larger ID</a> to allow for less precise tips.</p></section><section class="print-page" id="troubleshooting-falsealarm"><h1 id="troubleshooting-falsealarm-filament-sensor-false-alarm">Filament Sensor False Alarm</h1>
+<p>If the printer's extruder is working properly, and you're still having skipping, check the filament tips. If the tip has a long string on it, or has a thick blob at the end, your filament tips may be to blame. If you have stringy tips, decrease your nozzle temperature while printing. If you have blobby tips, increase your nozzle temperature while printing. Alternatively, you can purchase <a href="https://a.co/d/7o45tW5">PTFE tubes with a larger ID</a> to allow for less precise tips.</p>
+<p>You can also slightly <strong>increase</strong> the 3MS's <code>rotation_distance</code>.</p></section><section class="print-page" id="troubleshooting-falsealarm"><h1 id="troubleshooting-falsealarm-filament-sensor-false-alarm">Filament Sensor False Alarm</h1>
 <p>If during toolchanges, a failed toolchange false alarm occurs (print pauses even though toolchange was successful), follow this troubleshooting guide to fix it.</p>
 <h2 id="troubleshooting-falsealarm-fsensor_delay">fsensor_delay</h2>
 <p>The main culprit for this issue is likely your <code>fsensor_delay</code> in <code>3ms/settings.cfg</code> is too short. Short values will cause more false alarms, and long values will cause less. Generally, the default 2000ms is good for most setups, but if you are having false alarms, you will have to increase it. Example:</p>
@@ -2793,58 +2723,7 @@ T3
                         <h1 class='nav-section-title' id='section-experimental'>
                             Experimental <a class='headerlink' href='#section-experimental' title='Permanent link'>↵</a>
                         </h1>
-                        <section class="print-page" id="experimental-notip"><h1 id="experimental-notip-toolchanges-without-tip-shaping-or-filament-cutter">Toolchanges Without Tip Shaping or Filament Cutter!</h1>
-<p>Because the 3MS is synchronized to the printer's extruder, it can potentially toolchange without any tip shaping or filament cutter.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>This page, and the features mentioned on it, are in develpment</p>
-</div>
-<details open="open">
-<summary>Development Status</summary>
-<p>So far, the following work without tip shaping:</p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Toolchanges without tip shaping</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Print start/end routines without tip shaping</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Small prints without tip shaping (up to 5 toolchanges)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Medium prints without tip shaping (over 50 toolchanges)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Long prints without tip shaping (over 100 toolchanges)</li>
-<li>Common materials:<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> PLA<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> PLA+</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> High Speed PLA</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Silk PLA</li>
-</ul>
-</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> PETG</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> TPU (see <a href="#experimental-dualdrivetpu">Dual Drive 3MS Extruders for TPU</a>)</li>
-</ul>
-</li>
-</ul>
-</details>
-<h2 id="experimental-notip-speed-benefits">Speed Benefits</h2>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>This section is under construction.</p>
-</div>
-<h2 id="experimental-notip-should-tip-shaping-be-used">Should Tip Shaping be Used?</h2>
-<p>See <a href="#guides-materials">Materials</a> for information on whether or not tip shaping should be used for your filaments.</p>
-<h2 id="experimental-notip-slicer-setup">Slicer Setup</h2>
-<p>Setup your slicer for no tip shaping as follows.</p>
-<h3 id="experimental-notip-disable-filament-ramming">Disable Filament Ramming</h3>
-<p>Disable filament ramming in <code>Filament Settings</code> -&gt; <code>Multimaterial</code> -&gt; <code>Toolchange parameters with single extruder MM printers</code>:</p>
-<p><img alt="" src="../assets/images/slicer/slicer5.png" />
-<img alt="" src="../assets/images/slicer/slicer6.png" /></p>
-<h3 id="experimental-notip-unloadload-speed">Unload/Load Speed</h3>
-<p>Next, change the <code>Unloading speed at start</code> and <code>Unloading speed</code> to 300 (faster is better here). Next, change the <code>Loading speed at start</code> and <code>Loading speed</code> to 300 and 100, respectively.</p>
-<details class="info" open="open">
-<summary>What this does</summary>
-<p>The main idea behind toolchanges without tip shaping relies on the filament being unloaded too fast to form a blob. Setting the <code>Unloading speed</code> settings allows this. Next, loading the filament back can be generally optomized by increasing the <code>Loading speed</code> settings.</p>
-</details>
-<p><img alt="" src="../assets/images/slicer/slicer7.png" /></p>
-<h3 id="experimental-notip-temperature">Temperature</h3>
-<p>If your filament has very long strings on the end of them after unloading without tip shaping (longer than 2cm), decrease your filament temperature. </p>
-<p>If your filament tip has a nearly flat tip, increase your filament temperature.</p>
-<p>The ideal filament tip has a pointy end and a small string (less than 5mm). When in doubt, it is recommended to aim for a slightly stringy tip over a flat tip.</p></section><section class="print-page" id="experimental-dualdrivetpu"><h1 id="experimental-dualdrivetpu-dual-drive-3ms-extruders-for-tpu">Dual Drive 3MS Extruders for TPU</h1>
+                        <section class="print-page" id="experimental-dualdrivetpu"><h1 id="experimental-dualdrivetpu-dual-drive-3ms-extruders-for-tpu">Dual Drive 3MS Extruders for TPU</h1>
 <p>The 3MS's existing single-drive extruders are prone to tangling with TPU during toolchanges. Dual drive 3MS extruders may fix this issue and allow for multimaterial printing with TPU.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -2858,70 +2737,7 @@ T3
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Easier initial filament loading</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Less filament grinding</li>
 </ul>
-<p>Reliability with TPU hasn't been tested yet.</p></section><section class="print-page" id="experimental-cutter"><h1 id="experimental-cutter-filament-cutter">Filament Cutter</h1>
-<p>Filament cutters completely remove the hassle of tip shaping and can allow for even faster toolchanges.</p>
-<div class="admonition info">
-<p class="admonition-title">Inactive</p>
-<p>The goal of the 3MS is to be as simple as possible. Adding a filament cutter adds another layer of complexity. For now, it is recommended to either use <a href="#guides-tipshaping">Tip Shaping</a> or try out the <a href="#experimental-notip">No Tip Shaping</a> feature. See <a href="#guides-materials">Materials</a> for which feature you should use for each of your materials.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>This page, and the features mentioned on it, are in develpment</p>
-</div>
-<details open="open">
-<summary>Development Status</summary>
-<p>So far, the following have been tested:</p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Custom universal filament cutter design</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Klipper Configuration</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Print tests<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 10 Toolchanges</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 50 Toolchanges</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 100 Toolchanges</li>
-</ul>
-</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Speed tests<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 20 second toolchanges</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 15 second toolchanges</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 10 second toolchanges</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> less than 10 second toolchanges</li>
-</ul>
-</li>
-</ul>
-</details>
-<h2 id="experimental-cutter-bom">BOM</h2>
-<p>The 3MC (3MS filament cutter) uses a high torque servo and a custom filament cutter design to cut filament quickly and reliably. </p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Price</th>
-<th>Link</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>20kg servo</td>
-<td>$15.98</td>
-<td><a href="https://a.co/d/9UK4VHX">Amazon</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Metal servo horns</td>
-<td>$9.69</td>
-<td><a href="https://a.co/d/6uUCaya">Amazon</a></td>
-<td></td>
-</tr>
-<tr>
-<td>4x M3x8-20</td>
-<td>$8.99</td>
-<td><a href="https://a.co/d/fezi1O2">Amazon</a></td>
-<td>You probably already have these</td>
-</tr>
-</tbody>
-</table>
-<p>Print the printed parts from <a href="#experimental-cutter">here</a> (link coming soon).</p></section><h1 class='nav-section-title-end'>Ended: Experimental</h1><section class="print-page" id="flowchart"><h1 id="flowchart-toolchange-flowchart">Toolchange Flowchart</h1>
+<p>Reliability with TPU hasn't been tested yet.</p></section><h1 class='nav-section-title-end'>Ended: Experimental</h1><section class="print-page" id="flowchart"><h1 id="flowchart-toolchange-flowchart">Toolchange Flowchart</h1>
 <p>This flowchart assumes a <code>fsensor_delay</code> of 2000ms.</p>
 <pre class="mermaid"><code>graph TD
   A[T1] --&gt; B[Toolchange T=1];
@@ -2965,6 +2781,8 @@ T3
       
         <footer class="md-footer">
   
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
@@ -2987,7 +2805,7 @@ T3
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/3ms/", "features": ["navigation.indexes", "navigation.expand", "navigation.instant", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "/3ms/", "features": ["navigation.indexes", "navigation.footer", "navigation.expand", "navigation.instant", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
