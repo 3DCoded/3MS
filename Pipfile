@@ -9,6 +9,7 @@ mkdocs-material = "*"
 mkdocs-autolinks-plugin = "*"
 mkdocs-glightbox = "*"
 mkdocs-print-site-plugin = "*"
+mkdocs-git-revision-date-localized-plugin = "*"
 
 [dev-packages]
 

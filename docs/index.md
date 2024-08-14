@@ -59,7 +59,7 @@ Here are a few reasons:
 - No slicer custom toolchange G-Code needed
 - Easily expandable to any number of filaments (currently up to four)
 - Automatically retry failed toolchanges
-- In development: [Toolchanges Without Tip Shaping or Filament Cutter!](notip.md)
+- [Toolchanges Without Tip Shaping or Filament Cutter!](notip.md)
 
 With that said, there are a few reasons why you might **not** want to/be able to use the 3MS:
 

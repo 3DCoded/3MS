@@ -1,30 +1,6 @@
 # Toolchanges Without Tip Shaping or Filament Cutter!
 
-Because the 3MS is synchronized to the printer's extruder, it can potentially toolchange without any tip shaping or filament cutter.
-
-!!! info
-    This page, and the features mentioned on it, are in develpment
-
-???+ "Development Status"
-    So far, the following work without tip shaping:
-    
-    - [X] Toolchanges without tip shaping
-    - [X] Print start/end routines without tip shaping
-    - [X] Small prints without tip shaping (up to 5 toolchanges)
-    - [X] Medium prints without tip shaping (over 50 toolchanges)
-    - [X] Long prints without tip shaping (over 100 toolchanges)
-    - Common materials:
-        - [X] PLA
-            - [X] PLA+
-            - [X] High Speed PLA
-            - [ ] Silk PLA
-        - [ ] PETG
-        - [ ] TPU (see [Dual Drive 3MS Extruders for TPU](dualdrivetpu.md))
-
-## Speed Benefits
-
-!!! info
-    This section is under construction.
+Because the 3MS is synchronized to the printer's extruder, it can perform toolchanges without any tip shaping or filament cutter.
 
 ## Should Tip Shaping be Used?
 

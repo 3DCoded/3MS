@@ -17,7 +17,7 @@ This table contains which filaments work in single mode and/or multimaterial mod
 
 ## PLA(+)
 
-PLA/PLA+/PLA Pro, etc. filaments are very easy to print in multimaterial with the 3MS. They also support the experimental [No Tip Shaping](notip.md) feature.
+PLA/PLA+/PLA Pro, etc. filaments are very easy to print in multimaterial with the 3MS. They also support the [No Tip Shaping](notip.md) feature.
 
 ## Silk/Matte PLA
 

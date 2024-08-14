@@ -3,7 +3,9 @@ site_url: https://3dcoded.github.io/3ms
 repo_url: https://github.com/3dcoded/3ms
 plugins:
   - search
-  - autolinks 
+  - autolinks
+  - git-revision-date-localized:
+      enable_creation_date: true
   - print-site:
       path_to_pdf: export.pdf
   - glightbox:
@@ -57,6 +59,7 @@ theme:
   custom_dir: docs/overrides
   features:
       - navigation.indexes
+      - navigation.footer
       - navigation.expand
       - navigation.instant
       - navigation.instant.prefetch
@@ -110,7 +113,5 @@ nav:
     - troubleshooting/underextrusion.md
     - troubleshooting/failedloadunload.md
   - Experimental:
-    - Toolchanges without Tip Shaping or Filament Cutter: experimental/notip.md
     - TPU with Dual Drive 3MS Extruder: experimental/dualdrivetpu.md
-    - Filament Cutter: experimental/cutter.md
   - flowchart.md

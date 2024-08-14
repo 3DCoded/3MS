@@ -9,6 +9,10 @@ First, check if your printer's extruder is properly extruding. To check this, de
 - [Nozzle clog](https://all3dp.com/2/3d-printer-nozzle-cleaning-the-easiest-way-to-do-it/)
 - [Heat creep jam](https://all3dp.com/2/3d-printer-heat-creep/)
 
+You can also slightly **decrease** the 3MS's `rotation_distance`.
+
 ## 3MS Extruder
 
 If the printer's extruder is working properly, and you're still having skipping, check the filament tips. If the tip has a long string on it, or has a thick blob at the end, your filament tips may be to blame. If you have stringy tips, decrease your nozzle temperature while printing. If you have blobby tips, increase your nozzle temperature while printing. Alternatively, you can purchase [PTFE tubes with a larger ID](https://a.co/d/7o45tW5) to allow for less precise tips.
+
+You can also slightly **increase** the 3MS's `rotation_distance`.
