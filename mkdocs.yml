@@ -41,6 +41,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -84,6 +85,7 @@ theme:
         name: Switch to light mode
 nav:
   - Home: index.md
+  - compare.md
   - instructions.md
   - Setup:
     - BOM: setup/bom.md
@@ -115,3 +117,5 @@ nav:
   - Experimental:
     - TPU with Dual Drive 3MS Extruder: experimental/dualdrivetpu.md
   - flowchart.md
+extra_css:
+  - stylesheets/extra.css
