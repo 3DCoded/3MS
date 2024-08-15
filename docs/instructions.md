@@ -1,7 +1,3 @@
----
-comments: true
----
-
 <link rel="stylesheet" href="../assets/css/badges.css">
 
 # Master Instructions
