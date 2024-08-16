@@ -21,6 +21,7 @@ controllers
 controllers/btt_skr_mini_e3_v2
 controllers/btt_octopus_main
 controllers/einsy_rambo_with_skr_mini
+controllers/zonestar_zm384_main
 '''.strip().splitlines()
 
 from_dir = Path(os.path.dirname(__file__))
