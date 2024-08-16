@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://3dcoded.github.io/3ms/setup/controllers/zm384main/">
       
       
+        <link rel="prev" href="../einsyrambo-skrminie3v2/">
+      
+      
+        <link rel="next" href="../minirambo/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -348,8 +352,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -368,13 +374,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -388,7 +392,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Setup
@@ -420,6 +424,8 @@
                 
   
   
+    
+  
   
   
     
@@ -435,16 +441,18 @@
       
         
       
+        
+      
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
         
           
           
@@ -466,7 +474,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
             Controllers
@@ -529,6 +537,106 @@
   
   <span class="md-ellipsis">
     Einsy RAMBo (main MCU) with SKR Mini E3 V2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Zonestar ZM384 (main MCU)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Zonestar ZM384 (main MCU)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-mcu" class="md-nav__link">
+    <span class="md-ellipsis">
+      main MCU
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wiring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wiring
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../minirambo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mini RAMBo
   </span>
   
 
@@ -825,6 +933,8 @@
       
         
       
+        
+      
     
     
     
@@ -888,6 +998,27 @@
   
   <span class="md-ellipsis">
     Tip Shaping Guidelines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/notip/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Toolchanges Without Tip Shaping or Filament Cutter!
   </span>
   
 
@@ -1189,15 +1320,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional Setup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#wiring" class="md-nav__link">
     <span class="md-ellipsis">
       Wiring
@@ -1243,8 +1365,6 @@
 <p><strong>MCU Name: <code>main</code></strong></p>
 <h2 id="main-mcu">main MCU</h2>
 <p>This configuration is a <code>main MCU</code> configuration, meaning that your printer should already be running off a ZM384 and you don't need to purchase one.</p>
-<h2 id="additional-setup">Additional Setup</h2>
-<p>Ensure that E0 is the only extruder going directly to the hotend. Then, print out Y splitters (on the <a href="../../assembly/">Assembly</a> page) to combine E1, E2, and E3 into the main extruder. (E1, E2, and E3 will now be referred to as T0, T1, and T2, respectively.)</p>
 <h2 id="wiring">Wiring</h2>
 <p>Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:</p>
 <table>
@@ -1328,6 +1448,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../einsyrambo-skrminie3v2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Einsy RAMBo (main MCU) with SKR Mini E3 V2">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Einsy RAMBo (main MCU) with SKR Mini E3 V2
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../minirambo/" class="md-footer__link md-footer__link--next" aria-label="Next: Mini RAMBo">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Mini RAMBo
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
