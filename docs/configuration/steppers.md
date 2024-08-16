@@ -1,3 +1,5 @@
+<script src="../../static/js/steppers.js"></script>
+
 # Stepper Motors
 
 Follow this guide to calibrate each of the stepper motors. Each of these steps should be repeated for each of your filament units, replacing `TOOL=0` with `TOOL=1`, and so on. Also replacing `3ms0` with `3ms1`, and so on.
@@ -77,6 +79,12 @@ Note the `rotation_distance` (last line). In this case, it is `32.8450`.
 Calculate the new rotation distance: `new_rotation_distance = <rotation_distance> * <actual_extrude_distance> / 50`. 
 
 Round this result to three or four decimal places. Decrease it by 0.005 (this is so that if this result is slightly off, the 3MS filament unit will skip, instead of the printer's extruder stripping the filament during a print). 
+
+Previous `rotation_distance`: <input id="prevRotDist" type="number" min="0" />
+
+New `rotation_distance`: <span id="result"></span>
+
+[Compute](javascript:compute_rotation_distance()){.md-button}
 
 Set the new `rotation_distance` in your config. Save it and restart Klipper.
 
