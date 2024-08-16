@@ -729,7 +729,7 @@
         
   
   <span class="md-ellipsis">
-    Stepper Motors
+    Steppers
   </span>
   
 
@@ -1292,7 +1292,7 @@
           <li class="md-nav__item">
   <a href="#configuration-steppers" class="md-nav__link">
     <span class="md-ellipsis">
-      11. Stepper Motors
+      11. Steppers
     </span>
   </a>
   
@@ -1791,6 +1791,7 @@
 <ul>
 <li><a href="#setup-controllers-skrminie3v2-bom">BTT SKR Mini E3 V2</a></li>
 <li><a href="#setup-controllers-bttoctopusmain-bom">BTT Octopus (main MCU)</a></li>
+<li><a href="#setup-controllers-zm384main">Zonestar ZM384 (main MCU)</a></li>
 </ul>
 <h2 id="setup-bom-filament-unit-boms">Filament Unit BOMs</h2>
 <p>For each filament unit, purchase this BOM:</p>
@@ -2314,7 +2315,9 @@ git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCod
 </code></pre></div>
 </div>
 </div>
-</div></section><section class="print-page" id="configuration-steppers"><h1 id="configuration-steppers-stepper-motors">Stepper Motors</h1>
+</div></section><section class="print-page" id="configuration-steppers"><script src="../../static/js/steppers.js"></script>
+
+<h1 id="configuration-steppers-stepper-motors">Stepper Motors</h1>
 <p>Follow this guide to calibrate each of the stepper motors. Each of these steps should be repeated for each of your filament units, replacing <code>TOOL=0</code> with <code>TOOL=1</code>, and so on. Also replacing <code>3ms0</code> with <code>3ms1</code>, and so on.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -2371,6 +2374,9 @@ git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCod
 <p>Note the <code>rotation_distance</code> (last line). In this case, it is <code>32.8450</code>.</p>
 <p>Calculate the new rotation distance: <code>new_rotation_distance = &lt;rotation_distance&gt; * &lt;actual_extrude_distance&gt; / 50</code>. </p>
 <p>Round this result to three or four decimal places. Decrease it by 0.005 (this is so that if this result is slightly off, the 3MS filament unit will skip, instead of the printer's extruder stripping the filament during a print). </p>
+<p>Previous <code>rotation_distance</code>: <input id="configuration-steppers-prevRotDist" type="number" min="0" /></p>
+<p>New <code>rotation_distance</code>: <span id="result"></span></p>
+<p><a class="md-button" href="#configuration-steppers-javascript:compute_rotation_distance()">Compute</a></p>
 <p>Set the new <code>rotation_distance</code> in your config. Save it and restart Klipper.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
