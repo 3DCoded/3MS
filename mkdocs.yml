@@ -6,8 +6,6 @@ plugins:
   - autolinks
   - git-revision-date-localized:
       enable_creation_date: true
-  - print-site:
-      path_to_pdf: export.pdf
   - glightbox:
       touchNavigation: true
       loop: false
@@ -24,6 +22,8 @@ plugins:
       background: white
       shadow: true
       manual: false
+  - print-site:
+      path_to_pdf: export.pdf
 markdown_extensions:
   - pymdownx.critic
   - pymdownx.caret
@@ -94,6 +94,8 @@ nav:
       - setup/controllers/skrminie3v2.md
       - setup/controllers/bttoctopusmain.md
       - setup/controllers/einsyrambo-skrminie3v2.md
+      - setup/controllers/zm384main.md
+      - setup/controllers/minirambo.md
     - setup/assembly.md
     - setup/firmware.md
     - setup/slicer.md
@@ -108,6 +110,7 @@ nav:
   - Guides:
     - guides/materials.md
     - guides/tipshaping.md
+    - guides/notip.md
   - Troubleshooting:
     - troubleshooting/index.md
     - troubleshooting/skipping.md

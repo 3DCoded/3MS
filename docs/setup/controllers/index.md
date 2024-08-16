@@ -15,10 +15,18 @@ Choose one of the following supported controllers (a checkmark indicates it is f
 
     !!! success "Fully Tested"
 
-- [ ] [BTT Octopus (main MCU) (4 colors)](bttoctopusmain.md)
+- [X] [Einsy RAMBo (main MCU) with SKR Mini E3 V2.0 (3ms MCU)](einsyrambo-skrminie3v2.md)
+
+    !!! danger "Expert modification"
+
+- [ ] [Zonestar ZM384 (main MCU) (4 colors)](zm384main.md)
 
     !!! warning "Untested"
 
-- [ ] [Einsy RAMBo (main MCU) with SKR Mini E3 V2.0 (3ms MCU)](einsyrambo-skrminie3v2.md)
+- [ ] [Mini RAMBo (4 colors)](minirambo.md)
 
-    !!! danger "Expert modification, in development"
+    !!! warning "Untested"
+
+- [ ] [BTT Octopus (main MCU) (4 colors)](bttoctopusmain.md)
+
+    !!! warning "Untested"
