@@ -1368,9 +1368,6 @@
 <p>Note the <code>rotation_distance</code> (last line). In this case, it is <code>32.8450</code>.</p>
 <p>Calculate the new rotation distance: <code>new_rotation_distance = &lt;rotation_distance&gt; * &lt;actual_extrude_distance&gt; / 50</code>. </p>
 <p>Round this result to three or four decimal places. Decrease it by 0.005 (this is so that if this result is slightly off, the 3MS filament unit will skip, instead of the printer's extruder stripping the filament during a print). </p>
-<p>Previous <code>rotation_distance</code>: <input id="prevRotDist" type="number" min="0" /></p>
-<p>New <code>rotation_distance</code>: <span id="result"></span></p>
-<p><a class="md-button" href="javascript:compute_rotation_distance()">Compute</a></p>
 <p>Set the new <code>rotation_distance</code> in your config. Save it and restart Klipper.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
