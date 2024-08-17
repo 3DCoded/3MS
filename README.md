@@ -2,6 +2,9 @@
 
 The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial **S**ystem
 
+<img src="logo.png" alt="drawing" width="200"/>
+
+
 ## Branch
 
 This experimental branch holds the necessary code for purging without a wipe tower.
