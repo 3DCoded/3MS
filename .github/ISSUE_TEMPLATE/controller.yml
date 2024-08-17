@@ -34,4 +34,4 @@ body:
       description: Is there anything else we should know about this controller/setup?
       placeholder: Using a 24V power supply instead of 12V
     validations:
-      required: true
+      required: false
