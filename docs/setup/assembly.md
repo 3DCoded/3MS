@@ -21,3 +21,5 @@ Follow one of the following guides based on your controller:
 - [SKR Mini E3 V2](skrminie3v2.md#wiring)
 - [BTT Octopus (main MCU)](bttoctopusmain.md#wiring)
 - [Einsy RAMBo (main MCU) with SKR Mini E3 V2](einsyrambo-skrminie3v2.md)
+- [Zonestar ZM384 (main MCU)](zm384main.md)
+- [Mini RAMBo](minirambo.md)

@@ -43,4 +43,4 @@ Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means tha
 
 If the RAMBo lights up, you wired it correctly!
 
-Finally, plug the RAMBo into your Klipper host with the blue cable that came with it.
+Finally, plug the RAMBo into your Klipper host with the cable that came with it.
