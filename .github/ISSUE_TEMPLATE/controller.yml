@@ -1,0 +1,37 @@
+name: Controller Request
+description: Request support for a specific Klipper MCU.
+title: "[MCU]: "
+labels: ["controller"]
+assignees:
+  - 3dcoded
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the following fields.
+  - type: dropdown
+    id: what-type
+    attributes:
+      label: What kind of controller is this?
+      description: Choose one.
+      options:
+        - extra MCU (MCU used specifically for the 3MS)
+        - main MCU (using spare stepper ports on existing MCU)
+    validations:
+      required: true
+  - type: textarea
+    id: what-controller
+    attributes:
+      label: Controller name
+      description: Name of the controller requested
+      placeholder: SKR Mini E3 V2.0
+    validations:
+      required: true
+  - type: textarea
+    id: what-info
+    attributes:
+      label: More information
+      description: Is there anything else we should know about this controller/setup?
+      placeholder: Using a 24V power supply instead of 12V
+    validations:
+      required: true

@@ -1,0 +1,19 @@
+name: Feature Request
+description: Suggest an improvement.
+title: "[FR]: "
+labels: ["enhancement"]
+assignees:
+  - 3dcoded
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
+  - type: textarea
+    id: what-feature
+    attributes:
+      label: What feature do you want to see?
+      description: Tell us about your feature request. The more detailed, the better.
+      placeholder: It would be nice if...
+    validations:
+      required: true

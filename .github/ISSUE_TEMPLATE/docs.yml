@@ -1,0 +1,32 @@
+name: Documentation
+description: Suggest an improvement to the documentation.
+title: "[DOCS]: "
+labels: ["documentation"]
+assignees:
+  - 3dcoded
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this documentation issue!
+  - type: checkboxes
+    id: what-type
+    attributes:
+      label: What kind of documentation issue is this?
+      description: Choose as many as apply.
+      options:
+        - label: Typo
+        - label: Incorrect information
+        - label: Unclear information
+        - label: Missing information
+        - label: Contradictory information
+    validations:
+      required: true
+  - type: textarea
+    id: what-docs
+    attributes:
+      label: How do you think the documentation should be improved?
+      description: Tell us about your idea.
+      placeholder: It would be nice if...
+    validations:
+      required: true
