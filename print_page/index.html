@@ -2183,6 +2183,56 @@
 <p><strong>MCU Name: <code>main</code></strong></p>
 <h2 id="setup-controllers-zm384main-main-mcu">main MCU</h2>
 <p>This configuration is a <code>main MCU</code> configuration, meaning that your printer should already be running off a ZM384 and you don't need to purchase one.</p>
+<h2 id="setup-controllers-zm384main-configuration">Configuration</h2>
+<p>In your <code>3ms/macros.cfg</code>, edit the following section:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="setup-controllers-zm384main-__tabbed_1_1" name="setup-controllers-zm384main-__tabbed_1" type="radio" /><input id="setup-controllers-zm384main-__tabbed_1_2" name="setup-controllers-zm384main-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="setup-controllers-zm384main-__tabbed_1_1">Before</label><label for="setup-controllers-zm384main-__tabbed_1_2">After</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">macros.cfg</span><pre><span></span><code><span class="c1"># Set the sync of provided TOOL to SYNC with extruder</span>
+<span class="c1">### --- Comment if using the 3MS instead of your printer&#39;s extruder --- ###</span>
+<span class="k">[gcode_macro SET_TOOL_SYNC]</span>
+<span class="na">gcode</span><span class="o">:</span>
+<span class="w">    </span><span class="na">{% set tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">params.TOOL|int %}</span>
+<span class="w">    </span><span class="na">{% set sync</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">params.SYNC|int %}</span>
+<span class="w">    </span><span class="na">{% set motion_queue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;extruder&quot; if sync == 1 else &quot;&quot; %}</span>
+<span class="w">    </span><span class="na">SYNC_EXTRUDER_MOTION EXTRUDER</span><span class="o">=</span><span class="s">3ms{ tool } MOTION_QUEUE={ motion_queue }</span>
+<span class="c1">### --- Comment if using the 3MS instead of your printer&#39;s extruder --- ###</span>
+<span class="c1"># [gcode_macro SET_TOOL_SYNC]</span>
+<span class="c1"># gcode:</span>
+<span class="c1">#   {% set tool = params.TOOL|int %}</span>
+<span class="c1">#   {% set sync = params.SYNC|int %}</span>
+<span class="c1">#   {% set ext_name = &quot;3ms&quot;+(tool|str) %}</span>
+<span class="c1">#   {% if tool == 0 %}</span>
+<span class="c1">#     {% set ext_name = &quot;extruder&quot; %}</span>
+<span class="c1">#   {% endif %}</span>
+<span class="c1">#   {% set motion_queue = &quot;extruder&quot; if sync == 1 else &quot;&quot; %}</span>
+<span class="c1">#   SYNC_EXTRUDER_MOTION EXTRUDER={ext_name} MOTION_QUEUE={ motion_queue }</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">macros.cfg</span><pre><span></span><code><span class="c1"># Set the sync of provided TOOL to SYNC with extruder</span>
+<span class="c1">### --- Comment if using the 3MS instead of your printer&#39;s extruder --- ###</span>
+<span class="c1"># [gcode_macro SET_TOOL_SYNC]</span>
+<span class="c1"># gcode:</span>
+<span class="c1">#   {% set tool = params.TOOL|int %}</span>
+<span class="c1">#   {% set sync = params.SYNC|int %}</span>
+<span class="c1">#   {% set motion_queue = &quot;extruder&quot; if sync == 1 else &quot;&quot; %}</span>
+<span class="c1">#   SYNC_EXTRUDER_MOTION EXTRUDER=3ms{ tool } MOTION_QUEUE={ motion_queue }</span>
+<span class="c1">### --- Comment if using the 3MS instead of your printer&#39;s extruder --- ###</span>
+<span class="k">[gcode_macro SET_TOOL_SYNC]</span>
+<span class="na">gcode</span><span class="o">:</span>
+<span class="w">  </span><span class="na">{% set tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">params.TOOL|int %}</span>
+<span class="w">  </span><span class="na">{% set sync</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">params.SYNC|int %}</span>
+<span class="w">  </span><span class="na">{% set ext_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;3ms&quot;+(tool|str) %}</span>
+<span class="w">  </span><span class="na">{% if tool</span><span class="w"> </span><span class="o">=</span><span class="s">= 0 %}</span>
+<span class="w">    </span><span class="na">{% set ext_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;extruder&quot; %}</span>
+<span class="w">  </span><span class="na">{% endif %}</span>
+<span class="w">  </span><span class="na">{% set motion_queue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;extruder&quot; if sync == 1 else &quot;&quot; %}</span>
+<span class="w">  </span><span class="na">SYNC_EXTRUDER_MOTION EXTRUDER</span><span class="o">=</span><span class="s">{ext_name} MOTION_QUEUE={ motion_queue }</span>
+</code></pre></div>
+</div>
+</div>
+</div>
 <h2 id="setup-controllers-zm384main-wiring">Wiring</h2>
 <p>Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:</p>
 <table>
@@ -2195,15 +2245,19 @@
 <tbody>
 <tr>
 <td>0</td>
-<td>E3</td>
+<td>E0</td>
 </tr>
 <tr>
 <td>1</td>
-<td>E2</td>
+<td>E1</td>
 </tr>
 <tr>
 <td>2</td>
-<td>E1</td>
+<td>E2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>E3</td>
 </tr>
 </tbody>
 </table></section><section class="print-page" id="setup-controllers-minirambo"><h1 id="setup-controllers-minirambo-mini-rambo">Mini RAMBo</h1>
@@ -2299,7 +2353,7 @@
 </li>
 </ol>
 <p>If the RAMBo lights up, you wired it correctly!</p>
-<p>Finally, plug the RAMBo into your Klipper host with the blue cable that came with it.</p></section><h1 class='nav-section-title-end'>Ended: Controllers</h1><section class="print-page" id="setup-assembly"><h1 id="setup-assembly-assembly">Assembly</h1>
+<p>Finally, plug the RAMBo into your Klipper host with the cable that came with it.</p></section><h1 class='nav-section-title-end'>Ended: Controllers</h1><section class="print-page" id="setup-assembly"><h1 id="setup-assembly-assembly">Assembly</h1>
 <p>Follow this guide to assemble your 3MS.</p>
 <h2 id="setup-assembly-printed-parts">Printed Parts</h2>
 <p>An optional board enclosure for the SKR Mini E3 is available <a href="https://www.printables.com/model/459809-bigtreetech-skr-mini-e3-v3-enclosure">here</a>.</p>
@@ -2313,6 +2367,8 @@
 <li><a href="#setup-controllers-skrminie3v2-wiring">SKR Mini E3 V2</a></li>
 <li><a href="#setup-controllers-bttoctopusmain-wiring">BTT Octopus (main MCU)</a></li>
 <li><a href="#setup-controllers-einsyrambo-skrminie3v2">Einsy RAMBo (main MCU) with SKR Mini E3 V2</a></li>
+<li><a href="#setup-controllers-zm384main">Zonestar ZM384 (main MCU)</a></li>
+<li><a href="#setup-controllers-minirambo">Mini RAMBo</a></li>
 </ul></section><section class="print-page" id="setup-firmware"><h1 id="setup-firmware-firmware">Firmware</h1>
 <p>Follow this guide to install Klipper firmware onto your 3MS MCU. This guide is a modified version of the <a href="https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller">Klipper Documentation</a>.</p>
 <div class="admonition info">
