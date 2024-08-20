@@ -52,7 +52,7 @@ Not sure if you want to use the 3MS? Check this comparison between four common m
 
     :material-minus-box:{.minus} Price ($300)
 
--   ERCF __An expandable MMU for Klipper-based 3D-printers__
+-   ERCF v2 __An expandable MMU for Klipper-based 3D-printers__
 
     ---
 
