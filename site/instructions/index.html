@@ -17,7 +17,7 @@
         <link rel="next" href="../setup/bom/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../assets/logo.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
     
     
@@ -1323,14 +1323,6 @@
     TPU with Dual Drive 3MS Extruder
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--updated" title="Recently updated">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -1542,11 +1534,12 @@
 <ul>
 <li>
 <p>Controller</p>
-<p>This controls the stepper motors</p>
+<p>This controls the 3MS stepper motors. This is usually an extra 3D printer mainboard purchased specifically for the 3MS. If your existing 3D printer mainboard has spare stepper ports, you can use them for the 3MS. </p>
+<p>The available configurations are specific to either an external mainboard setup, or utilizing spare stepper ports on your existing mainboard. If you are utilizing spare stepper ports, the name of the config will include "(main MCU)"</p>
 </li>
 <li>
 <p>Filament Units</p>
-<p>This moves the filament</p>
+<p>These moves the filament. These are standard MK8 extruders (used on Ender 3's). You can use different extruders for the filament units, as long as you can mount them securely and they can attach to a PTFE tube. MK8 extruders are used as the default due to their low cost. </p>
 </li>
 </ul>
 <p>The number of filaments you will be able to print with is equal to the number of filament units you have. For example, two filament units will let you print with two colors. It is important to note that one filament unit will NOT let you print in multimaterial.</p>
@@ -1638,18 +1631,9 @@
 <p class="admonition-title">Info</p>
 <p>It is important to restart the Klipper <strong>service</strong>, and not just run the <code>RESTART</code> command.</p>
 </div>
-<p>Either run this command in your terminal or restart from Mainsail/Fluidd:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Terminal</label><label for="__tabbed_1_2">Mainsail/Fluidd</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<p>Run this command in your terminal:</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>service<span class="w"> </span>klipper<span class="w"> </span>restart
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<p><a class="glightbox" href="../assets/images/updating/updating2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/updating/updating2.png" /></a></p>
-</div>
-</div>
-</div>
 
 
 
@@ -1672,7 +1656,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 15, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 20, 2024</span>
   </span>
 
     
