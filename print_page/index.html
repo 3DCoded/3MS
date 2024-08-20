@@ -13,7 +13,7 @@
       
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../assets/logo.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
     
     
@@ -1177,14 +1177,6 @@
     TPU with Dual Drive 3MS Extruder
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--updated" title="Recently updated">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -1697,7 +1689,7 @@
 <p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/></svg></span> Price ($300)</p>
 </li>
 <li>
-<p>ERCF <strong>An expandable MMU for Klipper-based 3D-printers</strong></p>
+<p>ERCF v2 <strong>An expandable MMU for Klipper-based 3D-printers</strong></p>
 <hr />
 <p><a class="glightbox" href="../assets/images/compare/ercf.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/compare/ercf.jpg" /></a></p>
 <hr />
@@ -1750,11 +1742,12 @@
 <ul>
 <li>
 <p>Controller</p>
-<p>This controls the stepper motors</p>
+<p>This controls the 3MS stepper motors. This is usually an extra 3D printer mainboard purchased specifically for the 3MS. If your existing 3D printer mainboard has spare stepper ports, you can use them for the 3MS. </p>
+<p>The available configurations are specific to either an external mainboard setup, or utilizing spare stepper ports on your existing mainboard. If you are utilizing spare stepper ports, the name of the config will include "(main MCU)"</p>
 </li>
 <li>
 <p>Filament Units</p>
-<p>This moves the filament</p>
+<p>These moves the filament. These are standard MK8 extruders (used on Ender 3's). You can use different extruders for the filament units, as long as you can mount them securely and they can attach to a PTFE tube. MK8 extruders are used as the default due to their low cost. </p>
 </li>
 </ul>
 <p>The number of filaments you will be able to print with is equal to the number of filament units you have. For example, two filament units will let you print with two colors. It is important to note that one filament unit will NOT let you print in multimaterial.</p>
@@ -1846,18 +1839,9 @@
 <p class="admonition-title">Info</p>
 <p>It is important to restart the Klipper <strong>service</strong>, and not just run the <code>RESTART</code> command.</p>
 </div>
-<p>Either run this command in your terminal or restart from Mainsail/Fluidd:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="instructions-__tabbed_1_1" name="instructions-__tabbed_1" type="radio" /><input id="instructions-__tabbed_1_2" name="instructions-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="instructions-__tabbed_1_1">Terminal</label><label for="instructions-__tabbed_1_2">Mainsail/Fluidd</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<p>Run this command in your terminal:</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>service<span class="w"> </span>klipper<span class="w"> </span>restart
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<p><a class="glightbox" href="../assets/images/updating/updating2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/updating/updating2.png" /></a></p>
-</div>
-</div>
-</div></section>
+</code></pre></div></section>
                         <h1 class='nav-section-title' id='section-setup'>
                             Setup <a class='headerlink' href='#section-setup' title='Permanent link'>↵</a>
                         </h1>
@@ -2358,7 +2342,8 @@
 <h2 id="setup-assembly-printed-parts">Printed Parts</h2>
 <p>An optional board enclosure for the SKR Mini E3 is available <a href="https://www.printables.com/model/459809-bigtreetech-skr-mini-e3-v3-enclosure">here</a>.</p>
 <p>Additionaly, an optional univeral mount for the MK8 extruder using M3 bolts is available <a href="../assets/stls/mk8m3.stl">here</a>. Note that this requires 2-4 M3 bolts and a place to screw the bolts into.</p>
-<p>Finally, you will need to print enough of <a href="https://www.printables.com/model/541678-bambu-ams-no-catch-y-splitter-pc4-m10">these</a> Y splitters for the filament.</p>
+<p><del>Finally, you will need to print enough of <a href="https://www.printables.com/model/541678-bambu-ams-no-catch-y-splitter-pc4-m10">these</a> Y splitters for the filament.</del></p>
+<p>The Y-splitter available <a href="https://www.printables.com/model/122982-mini-splitter-v2-for-mmu21s-mod-pc4-01-fitting-ver">here</a> is now recommended.</p>
 <h2 id="setup-assembly-mk8-assembly">MK8 Assembly</h2>
 <p>Next, assemble the MK8 extruders onto the NEMA17 motors using the provided instructions that came with them. If you use the mount provided above, make sure it is in between the MK8 and NEMA17. </p>
 <h2 id="setup-assembly-wiring">Wiring</h2>
@@ -3133,7 +3118,12 @@ T3
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Easier initial filament loading</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Less filament grinding</li>
 </ul>
-<p>Reliability with TPU hasn't been tested yet.</p></section><h1 class='nav-section-title-end'>Ended: Experimental</h1><section class="print-page" id="flowchart"><h1 id="flowchart-toolchange-flowchart">Toolchange Flowchart</h1>
+<h2 id="experimental-dualdrivetpu-tpu-testing">TPU Testing</h2>
+<p>Current testing with TPU (a check indicates it works):</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Single material TPU prints loaded via the 3MS</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Multimaterial TPU prints</li>
+</ul></section><h1 class='nav-section-title-end'>Ended: Experimental</h1><section class="print-page" id="flowchart"><h1 id="flowchart-toolchange-flowchart">Toolchange Flowchart</h1>
 <p>This flowchart assumes a <code>fsensor_delay</code> of 2000ms.</p>
 <pre class="mermaid"><code>graph TD
   A[T1] --&gt; B[Toolchange T=1];
