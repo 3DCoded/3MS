@@ -8,7 +8,9 @@ An optional board enclosure for the SKR Mini E3 is available [here](https://www.
 
 Additionaly, an optional univeral mount for the MK8 extruder using M3 bolts is available [here](../assets/stls/mk8m3.stl). Note that this requires 2-4 M3 bolts and a place to screw the bolts into.
 
-Finally, you will need to print enough of [these](https://www.printables.com/model/541678-bambu-ams-no-catch-y-splitter-pc4-m10) Y splitters for the filament.
+~~Finally, you will need to print enough of [these](https://www.printables.com/model/541678-bambu-ams-no-catch-y-splitter-pc4-m10) Y splitters for the filament.~~
+
+The Y-splitter available [here](https://www.printables.com/model/122982-mini-splitter-v2-for-mmu21s-mod-pc4-01-fitting-ver) is now recommended.
 
 ## MK8 Assembly
 

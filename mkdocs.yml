@@ -57,6 +57,7 @@ extra:
     deprecated: Deprecated
 theme:
   logo: assets/logo.png
+  favicon: assets/logo.png
   custom_dir: docs/overrides
   features:
       - navigation.indexes
