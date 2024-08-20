@@ -96,11 +96,8 @@ This will install the new 3MS configuration. Next, restart Klipper:
 !!! info
     It is important to restart the Klipper **service**, and not just run the `RESTART` command.
 
-Either run this command in your terminal or restart from Mainsail/Fluidd:
+Run this command in your terminal:
 
-=== "Terminal"
-    ```sh
-    sudo service klipper restart
-    ```
-=== "Mainsail/Fluidd"
-    ![](updating2.png)
+```sh
+sudo service klipper restart
+```
