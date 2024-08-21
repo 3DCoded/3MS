@@ -112,6 +112,10 @@ nav:
     - guides/materials.md
     - guides/tipshaping.md
     - guides/notip.md
+  - Contributing:
+    - contributing/index.md
+    - contributing/devsetup.md
+    - contributing/supportcontrollers.md
   - Troubleshooting:
     - troubleshooting/index.md
     - troubleshooting/skipping.md
