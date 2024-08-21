@@ -51,7 +51,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/experimental/cutter/</loc>
+         <loc>https://3dcoded.github.io/3ms/contributing/</loc>
+         <lastmod>2024-08-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3ms/contributing/devsetup/</loc>
+         <lastmod>2024-08-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3ms/contributing/supportcontrollers/</loc>
          <lastmod>2024-08-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
