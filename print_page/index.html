@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
     
     
       
@@ -1766,7 +1766,7 @@
 <p>Here are a few reasons:</p>
 <ul>
 <li>Extremely simple design increases reliability</li>
-<li>Thorough documentation to help setup, optomize, and troubleshoot</li>
+<li>Thorough documentation to help setup, optimize, and troubleshoot</li>
 <li>No slicer custom toolchange G-Code needed</li>
 <li>Easily expandable to any number of filaments (currently up to four)</li>
 <li>Automatically retry failed toolchanges</li>
@@ -2151,7 +2151,7 @@
 </table>
 <p>Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)</p>
 <ol>
-<li>Plug the red wire into the positive terminal of the screw termianls</li>
+<li>Plug the red wire into the positive terminal of the screw terminals</li>
 <li>
 <p>Plug the black wire into the negative terminal of the screw terminals</p>
 <div class="admonition danger">
@@ -2460,7 +2460,7 @@
 </table>
 <p>Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)</p>
 <ol>
-<li>Plug the red wire into the positive terminal of the screw termianls</li>
+<li>Plug the red wire into the positive terminal of the screw terminals</li>
 <li>
 <p>Plug the black wire into the negative terminal of the screw terminals</p>
 <div class="admonition danger">
@@ -2489,7 +2489,7 @@
 <p>Follow this guide to assemble your 3MS.</p>
 <h2 id="setup-assembly-printed-parts">Printed Parts</h2>
 <p>An optional board enclosure for the SKR Mini E3 is available <a href="https://www.printables.com/model/459809-bigtreetech-skr-mini-e3-v3-enclosure">here</a>.</p>
-<p>Additionaly, an optional univeral mount for the MK8 extruder using M3 bolts is available <a href="../assets/stls/mk8m3.stl">here</a>. Note that this requires 2-4 M3 bolts and a place to screw the bolts into.</p>
+<p>Additionally, an optional universal mount for the MK8 extruder using M3 bolts is available <a href="../assets/stls/mk8m3.stl">here</a>. Note that this requires 2-4 M3 bolts and a place to screw the bolts into.</p>
 <p><del>Finally, you will need to print enough of <a href="https://www.printables.com/model/541678-bambu-ams-no-catch-y-splitter-pc4-m10">these</a> Y splitters for the filament.</del></p>
 <p>The Y-splitter available <a href="https://www.printables.com/model/122982-mini-splitter-v2-for-mmu21s-mod-pc4-01-fitting-ver">here</a> is now recommended.</p>
 <h2 id="setup-assembly-mk8-assembly">MK8 Assembly</h2>
@@ -2843,7 +2843,7 @@ variable_retry_speed: 900
 <div class="highlight"><pre><span></span><code>SET_3MS_SETTINGS LOAD_DISTANCE=210 UNLOAD_DISTANCE=200 LOAD_SPEED=3500 UNLOAD_SPEED=5500 FSENSOR_DELAY=2500
 </code></pre></div>
 <h3 id="configuration-macros-get_3ms_settings">GET_3MS_SETTINGS</h3>
-<p>Dispalys the configuration for the 3MS. </p>
+<p>Displays the configuration for the 3MS. </p>
 <p><strong>Example Usage</strong>
 <div class="highlight"><pre><span></span><code>GET_3MS_SETTINGS
 </code></pre></div></p>
@@ -3140,7 +3140,7 @@ T3
 <p>Next, change the <code>Unloading speed at start</code> and <code>Unloading speed</code> to 300 (faster is better here). Next, change the <code>Loading speed at start</code> and <code>Loading speed</code> to 300 and 100, respectively.</p>
 <details class="info" open="open">
 <summary>What this does</summary>
-<p>The main idea behind toolchanges without tip shaping relies on the filament being unloaded too fast to form a blob. Setting the <code>Unloading speed</code> settings allows this. Next, loading the filament back can be generally optomized by increasing the <code>Loading speed</code> settings.</p>
+<p>The main idea behind toolchanges without tip shaping relies on the filament being unloaded too fast to form a blob. Setting the <code>Unloading speed</code> settings allows this. Next, loading the filament back can be generally optimized by increasing the <code>Loading speed</code> settings.</p>
 </details>
 <p><a class="glightbox" href="../assets/images/slicer/slicer7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/slicer/slicer7.png" /></a></p>
 <h3 id="guides-notip-temperature">Temperature</h3>
@@ -3193,7 +3193,7 @@ pipenv<span class="w"> </span>shell
 <p>If the controller meets the aforementioned requirements, you can proceed with adding support for it.</p>
 <p>The following example will be for a SKR Mini E3 V2.0 controller.</p>
 <h3 id="contributing-supportcontrollers-removing-extra-config-sections">Removing Extra Config Sections</h3>
-<p>First, remove any section of the original configuration that ins't a stepper motor configuration, or a TMCxxxx section. If the controller is a main MCU, remove the <code>[mcu]</code> section too. In both cases, the <code>[extruder]</code> section is kept. Keep any <code>[static_digital_output]</code> or <code>[board_pins]</code> sections. If there are any <code>[board_pins]</code> sections, add the <code>mcu: 3ms</code> line to its configuration.</p>
+<p>First, remove any section of the original configuration that isn't a stepper motor configuration, or a TMCxxxx section. If the controller is a main MCU, remove the <code>[mcu]</code> section too. In both cases, the <code>[extruder]</code> section is kept. Keep any <code>[static_digital_output]</code> or <code>[board_pins]</code> sections. If there are any <code>[board_pins]</code> sections, add the <code>mcu: 3ms</code> line to its configuration.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="contributing-supportcontrollers-__tabbed_1_1" name="contributing-supportcontrollers-__tabbed_1" type="radio" /><input id="contributing-supportcontrollers-__tabbed_1_2" name="contributing-supportcontrollers-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="contributing-supportcontrollers-__tabbed_1_1">Before</label><label for="contributing-supportcontrollers-__tabbed_1_2">After</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3908,7 +3908,7 @@ pipenv<span class="w"> </span>shell
 <li>
 <p>Next, manually pull the filament all the way to where the filament is usually parked between toolchanges (before the Y-splitter).</p>
 </li>
-<li>Manually load the next filament. Check the console for a message like <code>T0 -&gt; T1</code> indicating which filament is next (in this case T1). It shoudl be loaded to the entry of the printer's extruder gears.</li>
+<li>Manually load the next filament. Check the console for a message like <code>T0 -&gt; T1</code> indicating which filament is next (in this case T1). It should be loaded to the entry of the printer's extruder gears.</li>
 <li>Resume your print.</li>
 </ol>
 <p>Next, diagnose the problem based on these possible scenarios:</p>
@@ -3955,13 +3955,13 @@ pipenv<span class="w"> </span>shell
 <p>The 3MS's existing single-drive extruders are prone to tangling with TPU during toolchanges. Dual drive 3MS extruders may fix this issue and allow for multimaterial printing with TPU.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>This page, and the features mentioned on it, are in develpment</p>
+<p>This page, and the features mentioned on it, are in development</p>
 </div>
 <p>The extruder used in this modification can be found on Amazon <a href="https://a.co/d/dbw7Wor">here</a>.</p>
 <h2 id="experimental-dualdrivetpu-benefits">Benefits</h2>
 <p>Current testing shows the following benefits:</p>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Increased reliability with ridgid filaments</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Increased reliability with rigid filaments</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Easier initial filament loading</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Less filament grinding</li>
 </ul>
@@ -4041,7 +4041,7 @@ pipenv<span class="w"> </span>shell
     <script id="__config" type="application/json">{"base": "/3ms/", "features": ["navigation.indexes", "navigation.footer", "navigation.expand", "navigation.instant", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../assets/javascripts/bundle.471ce7a9.min.js"></script>
       
         <script src="../js/print-site.js"></script>
       
