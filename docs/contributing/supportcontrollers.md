@@ -21,7 +21,7 @@ The following example will be for a SKR Mini E3 V2.0 controller.
 
 ### Removing Extra Config Sections
 
-First, remove any section of the original configuration that ins't a stepper motor configuration, or a TMCxxxx section. If the controller is a main MCU, remove the `[mcu]` section too. In both cases, the `[extruder]` section is kept. Keep any `[static_digital_output]` or `[board_pins]` sections. If there are any `[board_pins]` sections, add the `mcu: 3ms` line to its configuration.
+First, remove any section of the original configuration that isn't a stepper motor configuration, or a TMCxxxx section. If the controller is a main MCU, remove the `[mcu]` section too. In both cases, the `[extruder]` section is kept. Keep any `[static_digital_output]` or `[board_pins]` sections. If there are any `[board_pins]` sections, add the `mcu: 3ms` line to its configuration.
 
 === "Before"
     ```cfg

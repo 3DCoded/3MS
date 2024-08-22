@@ -3,6 +3,12 @@ site_url: https://3dcoded.github.io/3ms
 repo_url: https://github.com/3dcoded/3ms
 plugins:
   - search
+  # - spellcheck:
+  #     backends:
+  #     - symspellpy
+  #     - codespell
+  #     ignore_code: yes
+  #     known_words: known_words.txt
   - autolinks
   - git-revision-date-localized:
       enable_creation_date: true

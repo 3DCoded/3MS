@@ -3,7 +3,7 @@
 The 3MS's existing single-drive extruders are prone to tangling with TPU during toolchanges. Dual drive 3MS extruders may fix this issue and allow for multimaterial printing with TPU.
 
 !!! info
-    This page, and the features mentioned on it, are in develpment
+    This page, and the features mentioned on it, are in development
 
 The extruder used in this modification can be found on Amazon [here](https://a.co/d/dbw7Wor).
 
@@ -11,7 +11,7 @@ The extruder used in this modification can be found on Amazon [here](https://a.c
 
 Current testing shows the following benefits:
 
-- [X] Increased reliability with ridgid filaments
+- [X] Increased reliability with rigid filaments
 - [X] Easier initial filament loading
 - [X] Less filament grinding
 

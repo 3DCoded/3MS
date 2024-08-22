@@ -55,7 +55,7 @@ Why use the 3MS when there are many other multi-material systems?
 Here are a few reasons:
 
 - Extremely simple design increases reliability
-- Thorough documentation to help setup, optomize, and troubleshoot
+- Thorough documentation to help setup, optimize, and troubleshoot
 - No slicer custom toolchange G-Code needed
 - Easily expandable to any number of filaments (currently up to four)
 - Automatically retry failed toolchanges

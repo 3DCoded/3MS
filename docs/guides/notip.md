@@ -22,7 +22,7 @@ Disable filament ramming in `Filament Settings` -> `Multimaterial` -> `Toolchang
 Next, change the `Unloading speed at start` and `Unloading speed` to 300 (faster is better here). Next, change the `Loading speed at start` and `Loading speed` to 300 and 100, respectively.
 
 ???+ info "What this does"
-    The main idea behind toolchanges without tip shaping relies on the filament being unloaded too fast to form a blob. Setting the `Unloading speed` settings allows this. Next, loading the filament back can be generally optomized by increasing the `Loading speed` settings.
+    The main idea behind toolchanges without tip shaping relies on the filament being unloaded too fast to form a blob. Setting the `Unloading speed` settings allows this. Next, loading the filament back can be generally optimized by increasing the `Loading speed` settings.
 
 ![](slicer7.png)
 

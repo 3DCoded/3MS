@@ -25,7 +25,7 @@ Route the wires from the NEMA17's to the controller board. Follow this table to 
 
 Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)
 
-1. Plug the red wire into the positive terminal of the screw termianls
+1. Plug the red wire into the positive terminal of the screw terminals
 2. Plug the black wire into the negative terminal of the screw terminals
 
     !!! danger

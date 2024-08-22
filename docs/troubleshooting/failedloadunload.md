@@ -21,7 +21,7 @@ When your printer displays a `Please unload` message, pay attention to the `Tx` 
     Also, see [Skipping](skipping.md)
 
 3. Next, manually pull the filament all the way to where the filament is usually parked between toolchanges (before the Y-splitter).
-4. Manually load the next filament. Check the console for a message like `T0 -> T1` indicating which filament is next (in this case T1). It shoudl be loaded to the entry of the printer's extruder gears.
+4. Manually load the next filament. Check the console for a message like `T0 -> T1` indicating which filament is next (in this case T1). It should be loaded to the entry of the printer's extruder gears.
 5. Resume your print.
 
 Next, diagnose the problem based on these possible scenarios:

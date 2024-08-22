@@ -10,6 +10,9 @@ mkdocs-autolinks-plugin = "*"
 mkdocs-glightbox = "*"
 mkdocs-print-site-plugin = "*"
 mkdocs-git-revision-date-localized-plugin = "*"
+mkdocs-spellcheck = "*"
+codespell = "*"
+symspellpy = "*"
 
 [dev-packages]
 

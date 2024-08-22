@@ -35,7 +35,7 @@ SET_3MS_SETTINGS LOAD_DISTANCE=210 UNLOAD_DISTANCE=200 LOAD_SPEED=3500 UNLOAD_SP
 ```
 
 ### GET_3MS_SETTINGS
-Dispalys the configuration for the 3MS. 
+Displays the configuration for the 3MS. 
 
 **Example Usage**
 ```
