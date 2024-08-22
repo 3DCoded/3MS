@@ -2495,6 +2495,10 @@
 <h2 id="setup-assembly-mk8-assembly">MK8 Assembly</h2>
 <p>Next, assemble the MK8 extruders onto the NEMA17 motors using the provided instructions that came with them. If you use the mount provided above, make sure it is in between the MK8 and NEMA17. </p>
 <h2 id="setup-assembly-wiring">Wiring</h2>
+<div class="admonition note">
+<p class="admonition-title">Note for Certain Printers</p>
+<p>If your printer has Klipper running internally (not on an external computer), the controller (if not a main MCU config) is plugged into a USB port on the printer itself.</p>
+</div>
 <p>Follow one of the following guides based on your controller:</p>
 <ul>
 <li><a href="#setup-controllers-skrminie3v2-wiring">SKR Mini E3 V2</a></li>
@@ -2509,6 +2513,7 @@
 <p>The following controller(s) can skip this guide:</p>
 <ul>
 <li>BTT Octopus (main MCU)</li>
+<li>Zonestar ZM384 (main MCU)</li>
 </ul>
 </div>
 <h2 id="setup-firmware-create-firmwarebin">Create firmware.bin</h2>
