@@ -1,6 +1,7 @@
+import argparse
 import os
-from pathlib import Path
 import shutil
+from pathlib import Path
 
 install_files = '''
 macros.cfg
@@ -22,12 +23,11 @@ controllers/btt_skr_mini_e3_v2
 controllers/btt_octopus_main
 controllers/einsy_rambo_with_skr_mini
 controllers/zonestar_zm384_main
+controllers/mini_rambo
 '''.strip().splitlines()
 
 from_dir = Path(os.path.dirname(__file__))
 to_dir = Path.home() / 'printer_data' / 'config' / '3ms'
-
-print(f'Installing from {from_dir} to {to_dir}')
 
 def copy(src, dst):
     os.makedirs(os.path.dirname(dst), exist_ok=True)
@@ -65,5 +65,10 @@ def install():
         shutil.copytree(from_path, to_path, copy_function=copy, dirs_exist_ok=True)
 
 if __name__ == '__main__':
-    install()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--path', nargs='?', const=str(to_dir), type=str, default=str(to_dir))
+    args = parser.parse_args()
+    to_dir = Path(args.path)
+    print(f'Installing from {from_dir} to {to_dir}')
+    # install()
     print('Successfully Installed 3MS')
