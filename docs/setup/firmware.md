@@ -6,6 +6,7 @@ Follow this guide to install Klipper firmware onto your 3MS MCU. This guide is a
     The following controller(s) can skip this guide:
     
     - BTT Octopus (main MCU)
+    - Zonestar ZM384 (main MCU)
 
 ## Create firmware.bin
 
