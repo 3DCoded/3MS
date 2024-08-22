@@ -18,6 +18,9 @@ Next, assemble the MK8 extruders onto the NEMA17 motors using the provided instr
 
 ## Wiring
 
+!!! note "Note for Certain Printers"
+    If your printer has Klipper running internally (not on an external computer), the controller (if not a main MCU config) is plugged into a USB port on the printer itself.
+
 Follow one of the following guides based on your controller:
 
 - [SKR Mini E3 V2](skrminie3v2.md#wiring)
