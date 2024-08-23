@@ -18,7 +18,7 @@ cd 3MS
     If you are setting up the 3MS on a Creality K1 Series printer (K1, K1C, K1 Max), use the following install script instead:
 
     ```sh
-    python3 install.py --path /usr/data/printer_data/config
+    python3 install.py --path /usr/data/printer_data/config/3ms
     ```
 
 Run the install script:
