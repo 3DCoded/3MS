@@ -362,6 +362,8 @@
       
         
       
+        
+      
     
     
     
@@ -673,6 +675,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/klipperscreen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KlipperScreen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -691,8 +714,6 @@
       
         
           
-        
-      
         
       
         
@@ -818,27 +839,6 @@
   
   <span class="md-ellipsis">
     Macros
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../configuration/klipperscreen/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    KlipperScreen
   </span>
   
 
@@ -1423,6 +1423,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#setup-klipperscreen" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. KlipperScreen
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1441,7 +1450,7 @@
           <li class="md-nav__item">
   <a href="#configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      9. Configuration
+      10. Configuration
     </span>
   </a>
   
@@ -1450,7 +1459,7 @@
           <li class="md-nav__item">
   <a href="#configuration-install" class="md-nav__link">
     <span class="md-ellipsis">
-      10. Installation
+      11. Installation
     </span>
   </a>
   
@@ -1459,7 +1468,7 @@
           <li class="md-nav__item">
   <a href="#configuration-steppers" class="md-nav__link">
     <span class="md-ellipsis">
-      11. Steppers
+      12. Steppers
     </span>
   </a>
   
@@ -1468,7 +1477,7 @@
           <li class="md-nav__item">
   <a href="#configuration-fsensor" class="md-nav__link">
     <span class="md-ellipsis">
-      12. Filament Sensor
+      13. Filament Sensor
     </span>
   </a>
   
@@ -1477,16 +1486,7 @@
           <li class="md-nav__item">
   <a href="#configuration-macros" class="md-nav__link">
     <span class="md-ellipsis">
-      13. Macros
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuration-klipperscreen" class="md-nav__link">
-    <span class="md-ellipsis">
-      14. KlipperScreen
+      14. Macros
     </span>
   </a>
   
@@ -2596,7 +2596,30 @@ usb-Prusa_Research__prusa3d.com__Original_Prusa_i3_MK3_xxx-if00
 <p>In the examples, you may have noticed that the wipe tower is far from the model. The travel time between the model and wipe tower adds up, and moving the tower closer can help reduce print time.</p>
 <p>In the "Prepare" view, click and drag the wipe tower as close to the object as you can without colliding.</p>
 <p><a class="glightbox" href="../assets/images/firstprint/firstprint8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/firstprint/firstprint8.png" /></a></p>
-<p>If you have a camera on your 3D printer, you may want to put the wipe tower "behind" the part from your camera's perspective.</p></section><h1 class='nav-section-title-end'>Ended: Setup</h1>
+<p>If you have a camera on your 3D printer, you may want to put the wipe tower "behind" the part from your camera's perspective.</p></section><section class="print-page" id="setup-klipperscreen"><h1 id="setup-klipperscreen-klipperscreen">KlipperScreen</h1>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This feature is still in an alpha state.</p>
+</div>
+<p><a class="glightbox" href="../assets/images/klipperscreen/ks_home.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/klipperscreen/ks_home.png" /></a>
+<a class="glightbox" href="../assets/images/klipperscreen/ks_main.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/klipperscreen/ks_main.png" /></a>
+<a class="glightbox" href="../assets/images/klipperscreen/ks_settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/klipperscreen/ks_settings.png" /></a></p>
+<hr />
+<p>The 3MS has a <a href="https://github.com/3DCoded/KlipperScreen-3MS">custom fork of KlipperScreen</a> you can use to control your 3MS.</p>
+<h2 id="setup-klipperscreen-install">Install</h2>
+<p>To install the 3MS KlipperScreen, first install KlipperScreen following instructions <a href="https://klipperscreen.readthedocs.io/en/latest/Installation/">here</a>. Then, run in your terminal:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~
+mv<span class="w"> </span>KlipperScreen<span class="w"> </span>KlipperScreen.old
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCoded/KlipperScreen-3MS<span class="w"> </span>KlipperScreen
+<span class="nb">cd</span><span class="w"> </span>~/KlipperScreen
+./KlipperScreen/scripts/KlipperScreen-install.sh
+</code></pre></div>
+<p>In your <code>KlipperScreen.conf</code>, add the following:</p>
+<div class="highlight"><span class="filename">KlipperScreen.conf</span><pre><span></span><code><span class="k">[3ms]</span>
+<span class="na">tools</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;num-tools&gt;</span>
+</code></pre></div>
+<p>replacing <code>&lt;num-tools&gt;</code> with the number of filament units your 3MS has.</p>
+<p>Restart KlipperScreen.</p></section><h1 class='nav-section-title-end'>Ended: Setup</h1>
                         <h1 class='nav-section-title' id='section-configuration'>
                             Configuration <a class='headerlink' href='#section-configuration' title='Permanent link'>↵</a>
                         </h1>
@@ -2626,7 +2649,7 @@ usb-Prusa_Research__prusa3d.com__Original_Prusa_i3_MK3_xxx-if00
 <li>Other sections: These are configuration sections specific to the MCU and should not be modified.</li>
 </ul>
 <h2 id="configuration-klipperscreenconf">KlipperScreen.conf</h2>
-<p>This contains the <a href="https://klipperscreen.readthedocs.io/en/latest/">KlipperScreen</a> 3MS menu configuration. For more information, see <a href="#configuration-klipperscreen">KlipperScreen</a>.</p></section><section class="print-page" id="configuration-install"><h1 id="configuration-install-installation">Installation</h1>
+<p>This contains the <a href="https://klipperscreen.readthedocs.io/en/latest/">KlipperScreen</a> 3MS menu configuration. For more information, see <a href="#setup-klipperscreen">KlipperScreen</a>.</p></section><section class="print-page" id="configuration-install"><h1 id="configuration-install-installation">Installation</h1>
 <p>Follow this guide to install the 3MS configuration and macros.</p>
 <h2 id="configuration-install-clone-repository">Clone Repository</h2>
 <p>First, clone the 3MS repository:</p>
@@ -2916,10 +2939,6 @@ variable_retry_speed: 900
 <p><strong>Example Usage</strong></p>
 <div class="highlight"><pre><span></span><code>T2
 T3
-</code></pre></div></section><section class="print-page" id="configuration-klipperscreen"><h1 id="configuration-klipperscreen-klipperscreen">KlipperScreen</h1>
-<p><a class="glightbox" href="../assets/images/klipperscreen.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/klipperscreen.png" /></a></p>
-<p>The 3MS supports a KlipperScreen menu. To install it, add the following to your <code>KlipperScreen.conf</code> (located in the same folder as your <code>printer.cfg</code>):</p>
-<div class="highlight"><span class="filename">KlipperScreen.conf</span><pre><span></span><code><span class="k">[include 3ms/KlipperScreen.conf]</span>
 </code></pre></div></section><h1 class='nav-section-title-end'>Ended: Configuration</h1>
                         <h1 class='nav-section-title' id='section-guides'>
                             Guides <a class='headerlink' href='#section-guides' title='Permanent link'>↵</a>
