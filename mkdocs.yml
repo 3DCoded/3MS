@@ -107,13 +107,13 @@ nav:
     - setup/firmware.md
     - setup/slicer.md
     - setup/firstprint.md
+    - setup/klipperscreen.md
   - Configuration:
     - configuration/index.md
     - configuration/install.md
     - configuration/steppers.md
     - configuration/fsensor.md
     - configuration/macros.md
-    - configuration/klipperscreen.md
   - Guides:
     - guides/materials.md
     - guides/tipshaping.md
