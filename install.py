@@ -6,18 +6,21 @@ from pathlib import Path
 install_files = '''
 macros.cfg
 KlipperScreen.conf
+endless/macros.cfg
 '''.strip().splitlines()
 
 optional_files = '''
 main.cfg
 settings.cfg
 variables.cfg
+endless/settings.cfg
 '''.strip().splitlines()
 
 install_folders = '''
 '''.strip().splitlines()
 
 optional_folders = '''
+endless
 controllers
 controllers/btt_skr_mini_e3_v2
 controllers/btt_octopus_main
