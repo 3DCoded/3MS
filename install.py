@@ -5,7 +5,6 @@ from pathlib import Path
 
 install_files = '''
 macros.cfg
-KlipperScreen.conf
 '''.strip().splitlines()
 
 optional_files = '''
