@@ -5,7 +5,6 @@ from pathlib import Path
 
 install_files = '''
 macros.cfg
-KlipperScreen.conf
 endless/macros.cfg
 '''.strip().splitlines()
 
@@ -46,6 +45,7 @@ def install():
         print(f'Installing file {file} to {to_path}')
         if os.path.exists(to_path):
             os.remove(to_path)
+        os.makedirs(os.path.dirname(to_path), exist_ok=True)
         shutil.copy2(from_path, to_path)
     for file in optional_files:
         from_path = from_dir / file
@@ -73,5 +73,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     to_dir = Path(args.path)
     print(f'Installing from {from_dir} to {to_dir}')
-    # install()
+    install()
     print('Successfully Installed 3MS')
