@@ -38,6 +38,10 @@ markdown_extensions:
   - pymdownx.tilde
   - admonition
   - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      auto_title: false
+      linenums: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -130,6 +134,7 @@ nav:
     - troubleshooting/failedloadunload.md
   - Experimental:
     - TPU with Dual Drive 3MS Extruder: experimental/dualdrivetpu.md
+    - Endless Spool: experimental/endless.md
   - flowchart.md
 extra_css:
   - stylesheets/extra.css
