@@ -5,7 +5,6 @@ from pathlib import Path
 
 install_files = '''
 macros.cfg
-KlipperScreen.conf
 '''.strip().splitlines()
 
 optional_files = '''
@@ -70,5 +69,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     to_dir = Path(args.path)
     print(f'Installing from {from_dir} to {to_dir}')
-    # install()
+    install()
     print('Successfully Installed 3MS')
