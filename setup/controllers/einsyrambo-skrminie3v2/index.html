@@ -1322,6 +1322,8 @@
       
         
       
+        
+      
     
     
     
@@ -1364,6 +1366,27 @@
   
   <span class="md-ellipsis">
     TPU with Dual Drive 3MS Extruder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../experimental/endless/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Endless Spool
   </span>
   
 
@@ -1579,14 +1602,16 @@
 </table>
 <h2 id="configuration">Configuration</h2>
 <p>In your <code>printer.cfg</code>, comment out these lines:</p>
-<div class="highlight"><span class="filename">printer.cfg</span><pre><span></span><code><span class="c1">#[include klipper-prusa-mk3s/mk3s/steppers.cfg]</span>
-<span class="c1">#[include klipper-prusa-mk3s/mk3s/tmc2130.cfg]</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">printer.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1">#[include klipper-prusa-mk3s/mk3s/steppers.cfg]</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="c1">#[include klipper-prusa-mk3s/mk3s/tmc2130.cfg]</span>
+</code></pre></div></td></tr></table></div>
 <p>Next, copy the contents of <code>3ms/controllers/einsy_rambo_with_skr_mini/xy-motors.cfg</code> and <code>ze-motors.cfg</code> to <code>klipper-prusa-mk3s/skr/xy.cfg</code>, and <code>klipper-prusa-mk3s/mk3s/ze.cfg</code>, respectively.</p>
 <p>Add the following new lines:</p>
-<div class="highlight"><span class="filename">printer.cfg</span><pre><span></span><code><span class="k">[include klipper-prusa-mk3s/skr/xy.cfg]</span>
-<span class="k">[include klipper-prusa-mk3s/mk3s/ze.cfg]</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">printer.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">[include klipper-prusa-mk3s/skr/xy.cfg]</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">[include klipper-prusa-mk3s/mk3s/ze.cfg]</span>
+</code></pre></div></td></tr></table></div>
 <p>Restart Klipper.</p>
 
 

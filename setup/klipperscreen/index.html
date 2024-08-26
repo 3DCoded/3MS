@@ -1295,6 +1295,8 @@
       
         
       
+        
+      
     
     
     
@@ -1337,6 +1339,27 @@
   
   <span class="md-ellipsis">
     TPU with Dual Drive 3MS Extruder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experimental/endless/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Endless Spool
   </span>
   
 
@@ -1452,16 +1475,21 @@
 <p>The 3MS has a <a href="https://github.com/3DCoded/KlipperScreen-3MS">custom fork of KlipperScreen</a> you can use to control your 3MS.</p>
 <h2 id="install">Install</h2>
 <p>To install the 3MS KlipperScreen, first install KlipperScreen following instructions <a href="https://klipperscreen.readthedocs.io/en/latest/Installation/">here</a>. Then, run in your terminal:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~
-mv<span class="w"> </span>KlipperScreen<span class="w"> </span>KlipperScreen.old
-git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCoded/KlipperScreen-3MS<span class="w"> </span>KlipperScreen
-<span class="nb">cd</span><span class="w"> </span>~/KlipperScreen
-./KlipperScreen/scripts/KlipperScreen-install.sh
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>~
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>mv<span class="w"> </span>KlipperScreen<span class="w"> </span>KlipperScreen.old
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCoded/KlipperScreen-3MS<span class="w"> </span>KlipperScreen
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="nb">cd</span><span class="w"> </span>~/KlipperScreen
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>./KlipperScreen/scripts/KlipperScreen-install.sh
+</code></pre></div></td></tr></table></div>
 <p>In your <code>KlipperScreen.conf</code>, add the following:</p>
-<div class="highlight"><span class="filename">KlipperScreen.conf</span><pre><span></span><code><span class="k">[3ms]</span>
-<span class="na">tools</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;num-tools&gt;</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">KlipperScreen.conf</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">[3ms]</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="na">tools</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;num-tools&gt;</span>
+</code></pre></div></td></tr></table></div>
 <p>replacing <code>&lt;num-tools&gt;</code> with the number of filament units your 3MS has.</p>
 <p>Restart KlipperScreen.</p>
 

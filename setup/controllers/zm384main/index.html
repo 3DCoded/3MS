@@ -1313,6 +1313,8 @@
       
         
       
+        
+      
     
     
     
@@ -1355,6 +1357,27 @@
   
   <span class="md-ellipsis">
     TPU with Dual Drive 3MS Extruder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../experimental/endless/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Endless Spool
   </span>
   
 
@@ -1486,48 +1509,84 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">macros.cfg</span><pre><span></span><code><span class="c1"># Set the sync of provided TOOL to SYNC with extruder</span>
-<span class="c1">### --- Comment if using the 3MS instead of your printer&#39;s extruder --- ###</span>
-<span class="k">[gcode_macro SET_TOOL_SYNC]</span>
-<span class="na">gcode</span><span class="o">:</span>
-<span class="w">    </span><span class="na">{% set tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">params.TOOL|int %}</span>
-<span class="w">    </span><span class="na">{% set sync</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">params.SYNC|int %}</span>
-<span class="w">    </span><span class="na">{% set motion_queue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;extruder&quot; if sync == 1 else &quot;&quot; %}</span>
-<span class="w">    </span><span class="na">SYNC_EXTRUDER_MOTION EXTRUDER</span><span class="o">=</span><span class="s">3ms{ tool } MOTION_QUEUE={ motion_queue }</span>
-<span class="c1">### --- Comment if using the 3MS instead of your printer&#39;s extruder --- ###</span>
-<span class="c1"># [gcode_macro SET_TOOL_SYNC]</span>
-<span class="c1"># gcode:</span>
-<span class="c1">#   {% set tool = params.TOOL|int %}</span>
-<span class="c1">#   {% set sync = params.SYNC|int %}</span>
-<span class="c1">#   {% set ext_name = &quot;3ms&quot;+(tool|str) %}</span>
-<span class="c1">#   {% if tool == 0 %}</span>
-<span class="c1">#     {% set ext_name = &quot;extruder&quot; %}</span>
-<span class="c1">#   {% endif %}</span>
-<span class="c1">#   {% set motion_queue = &quot;extruder&quot; if sync == 1 else &quot;&quot; %}</span>
-<span class="c1">#   SYNC_EXTRUDER_MOTION EXTRUDER={ext_name} MOTION_QUEUE={ motion_queue }</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">macros.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Set the sync of provided TOOL to SYNC with extruder</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="c1">### --- Comment if using the 3MS instead of your printer&#39;s extruder --- ###</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">[gcode_macro SET_TOOL_SYNC]</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="na">gcode</span><span class="o">:</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="na">{% set tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">params.TOOL|int %}</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="na">{% set sync</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">params.SYNC|int %}</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="na">{% set motion_queue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;extruder&quot; if sync == 1 else &quot;&quot; %}</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="na">SYNC_EXTRUDER_MOTION EXTRUDER</span><span class="o">=</span><span class="s">3ms{ tool } MOTION_QUEUE={ motion_queue }</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="c1">### --- Comment if using the 3MS instead of your printer&#39;s extruder --- ###</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="c1"># [gcode_macro SET_TOOL_SYNC]</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="c1"># gcode:</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="c1">#   {% set tool = params.TOOL|int %}</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="c1">#   {% set sync = params.SYNC|int %}</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="c1">#   {% set ext_name = &quot;3ms&quot;+(tool|str) %}</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="c1">#   {% if tool == 0 %}</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="c1">#     {% set ext_name = &quot;extruder&quot; %}</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="c1">#   {% endif %}</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="c1">#   {% set motion_queue = &quot;extruder&quot; if sync == 1 else &quot;&quot; %}</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="c1">#   SYNC_EXTRUDER_MOTION EXTRUDER={ext_name} MOTION_QUEUE={ motion_queue }</span>
+</code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">macros.cfg</span><pre><span></span><code><span class="c1"># Set the sync of provided TOOL to SYNC with extruder</span>
-<span class="c1">### --- Comment if using the 3MS instead of your printer&#39;s extruder --- ###</span>
-<span class="c1"># [gcode_macro SET_TOOL_SYNC]</span>
-<span class="c1"># gcode:</span>
-<span class="c1">#   {% set tool = params.TOOL|int %}</span>
-<span class="c1">#   {% set sync = params.SYNC|int %}</span>
-<span class="c1">#   {% set motion_queue = &quot;extruder&quot; if sync == 1 else &quot;&quot; %}</span>
-<span class="c1">#   SYNC_EXTRUDER_MOTION EXTRUDER=3ms{ tool } MOTION_QUEUE={ motion_queue }</span>
-<span class="c1">### --- Comment if using the 3MS instead of your printer&#39;s extruder --- ###</span>
-<span class="k">[gcode_macro SET_TOOL_SYNC]</span>
-<span class="na">gcode</span><span class="o">:</span>
-<span class="w">  </span><span class="na">{% set tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">params.TOOL|int %}</span>
-<span class="w">  </span><span class="na">{% set sync</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">params.SYNC|int %}</span>
-<span class="w">  </span><span class="na">{% set ext_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;3ms&quot;+(tool|str) %}</span>
-<span class="w">  </span><span class="na">{% if tool</span><span class="w"> </span><span class="o">=</span><span class="s">= 0 %}</span>
-<span class="w">    </span><span class="na">{% set ext_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;extruder&quot; %}</span>
-<span class="w">  </span><span class="na">{% endif %}</span>
-<span class="w">  </span><span class="na">{% set motion_queue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;extruder&quot; if sync == 1 else &quot;&quot; %}</span>
-<span class="w">  </span><span class="na">SYNC_EXTRUDER_MOTION EXTRUDER</span><span class="o">=</span><span class="s">{ext_name} MOTION_QUEUE={ motion_queue }</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">macros.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span>
+<span class="normal"><a href="#__codelineno-1-17">17</a></span>
+<span class="normal"><a href="#__codelineno-1-18">18</a></span>
+<span class="normal"><a href="#__codelineno-1-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># Set the sync of provided TOOL to SYNC with extruder</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1">### --- Comment if using the 3MS instead of your printer&#39;s extruder --- ###</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="c1"># [gcode_macro SET_TOOL_SYNC]</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c1"># gcode:</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="c1">#   {% set tool = params.TOOL|int %}</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="c1">#   {% set sync = params.SYNC|int %}</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="c1">#   {% set motion_queue = &quot;extruder&quot; if sync == 1 else &quot;&quot; %}</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="c1">#   SYNC_EXTRUDER_MOTION EXTRUDER=3ms{ tool } MOTION_QUEUE={ motion_queue }</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="c1">### --- Comment if using the 3MS instead of your printer&#39;s extruder --- ###</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="k">[gcode_macro SET_TOOL_SYNC]</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="na">gcode</span><span class="o">:</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">  </span><span class="na">{% set tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">params.TOOL|int %}</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">  </span><span class="na">{% set sync</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">params.SYNC|int %}</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">  </span><span class="na">{% set ext_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;3ms&quot;+(tool|str) %}</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">  </span><span class="na">{% if tool</span><span class="w"> </span><span class="o">=</span><span class="s">= 0 %}</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">    </span><span class="na">{% set ext_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;extruder&quot; %}</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">  </span><span class="na">{% endif %}</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">  </span><span class="na">{% set motion_queue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;extruder&quot; if sync == 1 else &quot;&quot; %}</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="w">  </span><span class="na">SYNC_EXTRUDER_MOTION EXTRUDER</span><span class="o">=</span><span class="s">{ext_name} MOTION_QUEUE={ motion_queue }</span>
+</code></pre></div></td></tr></table></div>
 </div>
 </div>
 </div>

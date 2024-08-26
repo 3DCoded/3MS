@@ -1505,6 +1505,8 @@
       
         
       
+        
+      
     
     
     
@@ -1547,6 +1549,27 @@
   
   <span class="md-ellipsis">
     TPU with Dual Drive 3MS Extruder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experimental/endless/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Endless Spool
   </span>
   
 
@@ -1865,99 +1888,108 @@
 <h3 id="mmms_settings">MMMS_SETTINGS</h3>
 <p>Stores the settings for the 3MS.</p>
 <p><strong>Default Settings</strong></p>
-<div class="highlight"><pre><span></span><code>variable_load_distance: 210
-variable_unload_distance: 200
-variable_load_speed: 4500
-vairable_unload_speed: 4500
-variable_fsensor_delay: 2000
-variable_num_tools: 2
-variable_step_size: 99
-variable_retry_dist: 50
-variable_retry_speed: 900
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span>
+<span class="normal"><a href="#__codelineno-0-8">8</a></span>
+<span class="normal"><a href="#__codelineno-0-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>variable_load_distance: 210
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>variable_unload_distance: 200
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>variable_load_speed: 4500
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>vairable_unload_speed: 4500
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>variable_fsensor_delay: 2000
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>variable_num_tools: 2
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>variable_step_size: 99
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>variable_retry_dist: 50
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>variable_retry_speed: 900
+</code></pre></div></td></tr></table></div>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>MMMS_SETTINGS
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>MMMS_SETTINGS
+</code></pre></div></td></tr></table></div>
 <h3 id="set_3ms_settings">SET_3MS_SETTINGS</h3>
 <p>Sets the configuration for the 3MS. Allows <strong>temporary</strong> customization of load and unload distances and speeds</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>SET_3MS_SETTINGS LOAD_DISTANCE=210 UNLOAD_DISTANCE=200 LOAD_SPEED=3500 UNLOAD_SPEED=5500 FSENSOR_DELAY=2500
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>SET_3MS_SETTINGS LOAD_DISTANCE=210 UNLOAD_DISTANCE=200 LOAD_SPEED=3500 UNLOAD_SPEED=5500 FSENSOR_DELAY=2500
+</code></pre></div></td></tr></table></div>
 <h3 id="get_3ms_settings">GET_3MS_SETTINGS</h3>
 <p>Displays the configuration for the 3MS. </p>
 <p><strong>Example Usage</strong>
-<div class="highlight"><pre><span></span><code>GET_3MS_SETTINGS
-</code></pre></div></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>GET_3MS_SETTINGS
+</code></pre></div></td></tr></table></div></p>
 <h2 id="filament-handling">Filament Handling</h2>
 <h3 id="mmms_unload">MMMS_UNLOAD</h3>
 <p>Unloads filament by a specified distance and speed. If no distance/speed is specified, it uses the default unload distance/speed from <code>MMMS_SETTINGS</code>.</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>MMMS_UNLOAD DISTANCE=200 SPEED=5500
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>MMMS_UNLOAD DISTANCE=200 SPEED=5500
+</code></pre></div></td></tr></table></div>
 <h3 id="mmms_load">MMMS_LOAD</h3>
 <p>Loads filament by a specified distance and speed. If no distance/speed is specified, it uses the default load distance/speed from <code>MMMS_SETTINGS</code>.</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>MMMS_LOAD DISTANCE=210 SPEED=3500
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>MMMS_LOAD DISTANCE=210 SPEED=3500
+</code></pre></div></td></tr></table></div>
 <h3 id="check_fsensor">CHECK_FSENSOR</h3>
 <p>Checks the filament sensor state. Pauses the print if the sensor state does not match the expected value.</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>CHECK_FSENSOR V=1
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>CHECK_FSENSOR V=1
+</code></pre></div></td></tr></table></div>
 <h2 id="tool-sync">Tool Sync</h2>
 <h3 id="set_tool_sync">SET_TOOL_SYNC</h3>
 <p>Sets the sync state of a tool. Syncs or desyncs the specified tool to/from the extruder.</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>SET_TOOL_SYNC TOOL=0 SYNC=1
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>SET_TOOL_SYNC TOOL=0 SYNC=1
+</code></pre></div></td></tr></table></div>
 <h3 id="sync_tool">SYNC_TOOL</h3>
 <p>Syncs the specified tool and desyncs all other tools to/from the extruder.</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>SYNC_TOOL TOOL=0
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>SYNC_TOOL TOOL=0
+</code></pre></div></td></tr></table></div>
 <h3 id="desync_tool">DESYNC_TOOL</h3>
 <p>Desyncs the specified tool from the extruder.</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>DESYNC_TOOL TOOL=0
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>DESYNC_TOOL TOOL=0
+</code></pre></div></td></tr></table></div>
 <h3 id="clear_tool">CLEAR_TOOL</h3>
 <p>Clears the current tool selection by setting it to -1.</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>CLEAR_TOOL
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a>CLEAR_TOOL
+</code></pre></div></td></tr></table></div>
 <h3 id="desync_all_tools">DESYNC_ALL_TOOLS</h3>
 <p>Desyncs all configured tools.</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>DESYNC_ALL_TOOLS
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a>DESYNC_ALL_TOOLS
+</code></pre></div></td></tr></table></div>
 <h2 id="print-start-and-end">Print Start and End</h2>
 <h3 id="mmms_start">MMMS_START</h3>
 <p>Starts the print by checking the filament sensor. If filament is detected, the print is paused and the user is notified. Regardless of the filament sensor state, the initial tool is loaded.</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>MMMS_START INITIAL_TOOL=0
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a>MMMS_START INITIAL_TOOL=0
+</code></pre></div></td></tr></table></div>
 <h3 id="mmms_end">MMMS_END</h3>
 <p>Ends the print by unloading the current tool. If filament is detected after unloading, the user is notified.</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>MMMS_END
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a>MMMS_END
+</code></pre></div></td></tr></table></div>
 <h2 id="tool-change">Tool Change</h2>
 <h3 id="t0">T0</h3>
 <p>Changes to tool 0.</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>T0
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a>T0
+</code></pre></div></td></tr></table></div>
 <h3 id="t1">T1</h3>
 <p>Changes to tool 1.</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>T1
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a>T1
+</code></pre></div></td></tr></table></div>
 <h3 id="tx">Tx</h3>
 <p>Changes to a specified tool. Replace <code>x</code> with the tool number.</p>
 <p><strong>Example Usage</strong></p>
-<div class="highlight"><pre><span></span><code>T2
-T3
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
+<span class="normal"><a href="#__codelineno-16-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a>T2
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a>T3
+</code></pre></div></td></tr></table></div>
 
 
 

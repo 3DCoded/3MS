@@ -1313,6 +1313,8 @@
       
         
       
+        
+      
     
     
     
@@ -1355,6 +1357,27 @@
   
   <span class="md-ellipsis">
     TPU with Dual Drive 3MS Extruder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experimental/endless/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Endless Spool
   </span>
   
 
@@ -1488,34 +1511,41 @@
 </div>
 <h2 id="create-firmwarebin">Create firmware.bin</h2>
 <p>Make sure your 3MS MCU is plugged into your Klipper Host. Run in your terminal:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/klipper
-make<span class="w"> </span>menuconfig
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>~/klipper
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>make<span class="w"> </span>menuconfig
+</code></pre></div></td></tr></table></div>
 <p>In the menuconfig, configure it to your MCU. Instructions are included at the top of <code>3ms/controllers/xxx/steppers.cfg</code> for future reference. A copy of it is provided here:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># This file contains common pin mappings for the BIGTREETECH SKR mini</span>
-<span class="c1"># E3 v2.0. To use this config, the firmware should be compiled for the</span>
-<span class="c1"># STM32F103 with a &quot;28KiB bootloader&quot; and USB communication. Also,</span>
-<span class="c1"># select &quot;Enable extra low-level configuration options&quot; and configure</span>
-<span class="c1"># &quot;GPIO pins to set at micro-controller startup&quot; to &quot;!PA14&quot;.</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># This file contains common pin mappings for the BIGTREETECH SKR mini</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1"># E3 v2.0. To use this config, the firmware should be compiled for the</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="c1"># STM32F103 with a &quot;28KiB bootloader&quot; and USB communication. Also,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c1"># select &quot;Enable extra low-level configuration options&quot; and configure</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="c1"># &quot;GPIO pins to set at micro-controller startup&quot; to &quot;!PA14&quot;.</span>
+</code></pre></div></td></tr></table></div>
 <p>Run in your terminal:</p>
-<div class="highlight"><pre><span></span><code>make<span class="w"> </span>clean
-make
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>make<span class="w"> </span>clean
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>make
+</code></pre></div></td></tr></table></div>
 <p>The <code>klipper.bin</code> file, located in <code>~/klipper/out/klipper.bin</code> needs to be copied to a MicroSD card and renamed to <code>firmware.bin</code> (case-sensitive). </p>
 <h2 id="install-firmwarebin">Install firmware.bin</h2>
 <p>Next, unplug the 3MS board from the PSU and your Klipper Host and insert the SD Card. Next, plug in the PSU, THEN the Klipper Host to the 3MS board. The firmware is now flashed.</p>
 <h2 id="get-mcu-id">Get MCU ID</h2>
 <p>In the terminal, run:</p>
-<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>/dev/serial/by-id/
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>ls<span class="w"> </span>/dev/serial/by-id/
+</code></pre></div></td></tr></table></div>
 <p>Example output:</p>
-<div class="highlight"><pre><span></span><code>usb-Klipper_stm32f103xe_33FFD1054746333809650557-if00
-usb-Prusa_Research__prusa3d.com__Original_Prusa_i3_MK3_xxx-if00
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>usb-Klipper_stm32f103xe_33FFD1054746333809650557-if00
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>usb-Prusa_Research__prusa3d.com__Original_Prusa_i3_MK3_xxx-if00
+</code></pre></div></td></tr></table></div>
 <p>In this case, the first line is the 3MS, and the second line is the 3D printer. Now that you know the id of the 3MS MCU, copy it and save it to a file:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;&lt;your-mcu-id&gt;&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>mcu.txt<span class="w"> </span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;&lt;your-mcu-id&gt;&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>mcu.txt<span class="w"> </span>
+</code></pre></div></td></tr></table></div>
 
 
 

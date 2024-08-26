@@ -1313,6 +1313,8 @@
       
         
       
+        
+      
     
     
     
@@ -1355,6 +1357,27 @@
   
   <span class="md-ellipsis">
     TPU with Dual Drive 3MS Extruder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experimental/endless/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Endless Spool
   </span>
   
 
@@ -1486,27 +1509,29 @@
 </div>
 <h2 id="is-the-motor-spinning">Is the motor spinning?</h2>
 <p>Run this command:</p>
-<div class="highlight"><pre><span></span><code>SYNC_TOOL TOOL=0
-<span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">4500</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>SYNC_TOOL TOOL=0
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">4500</span>
+</code></pre></div></td></tr></table></div>
 <p>If the motor spins, skip to the next step. If not, check your wiring first. If your wiring is fine, go to <code>3ms/steppers.cfg</code>. Locate the section named <code>[extruder_stepper 3ms0]</code>. In front of the <code>enable_pin</code>, add, an <code>!</code>. If there already is one, remove it. Example:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/steppers.cfg</span><pre><span></span><code><span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!3ms: PD7</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/steppers.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!3ms: PD7</span>
+</code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">3ms/steppers.cfg</span><pre><span></span><code><span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">3ms: PD7</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/steppers.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">3ms: PD7</span>
+</code></pre></div></td></tr></table></div>
 </div>
 </div>
 </div>
 <h2 id="is-the-motor-spinning-backwards">Is the motor spinning backwards?</h2>
 <p>Preload each of the filament units with a piece of scrap filament by pushing the lever to release the tension, inserting filament, then releasing the lever to restore tension. Next, run this command:</p>
-<div class="highlight"><pre><span></span><code>SYNC_TOOL TOOL=0
-<span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">4500</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>SYNC_TOOL TOOL=0
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">4500</span>
+</code></pre></div></td></tr></table></div>
 <p>Note which way the filament moves. If it moves forwards, away from the PTFE coupler, skip to the last step. If it moves backwards, you have two choices:</p>
 <ul>
 <li>Switch the motor's wires</li>
@@ -1518,20 +1543,27 @@
 <p>Preload each of the filament units with a piece of scrap filament at least 200mm long by pushing the lever to release the tension, inserting filament, then releasing the lever to restore tension.</p>
 <p>Use a ruler and a marker to place a mark 70mm from the inlet of the filament unit. Use calipers to measure the actual distance. Write it down, as it will be referred to as <code>&lt;initial_mark_distance&gt;</code>.</p>
 <p>Next, run this command:</p>
-<div class="highlight"><pre><span></span><code>SYNC_TOOL TOOL=0
-<span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">1500</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>SYNC_TOOL TOOL=0
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nb">G1 </span><span class="k">E</span><span class="m">50</span><span class="w"> </span><span class="k">F</span><span class="m">1500</span>
+</code></pre></div></td></tr></table></div>
 <p>Use calipers to measure the new distance between the inlet of the filament unit and the mark. Write it down, as it will be referred to as <code>&lt;next_mark_distance&gt;</code>. </p>
 <p>Calculate <code>&lt;actual_extrude_distance&gt; = &lt;initial_mark_distance&gt; - &lt;next_mark_distance&gt;</code></p>
 <p>In the <code>steppers.cfg</code> file (located in <code>3ms/controllers/xxx/steppers.cfg</code>), locate the configuration section for the current extruder. Example:</p>
-<div class="highlight"><span class="filename">3ms/controllers/btt_skr_mini_e3_v2/steppers.cfg</span><pre><span></span><code><span class="k">[extruder_stepper 3ms0]</span>
-<span class="na">extruder</span><span class="o">:</span><span class="w"> </span><span class="s">extruder</span>
-<span class="na">step_pin</span><span class="o">:</span><span class="w"> </span><span class="s">3ms: PB13</span>
-<span class="na">dir_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!3ms: PB12</span>
-<span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!3ms: PB14</span>
-<span class="na">microsteps</span><span class="o">:</span><span class="w"> </span><span class="s">16</span>
-<span class="na">rotation_distance</span><span class="o">:</span><span class="w"> </span><span class="s">32.8450</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/controllers/btt_skr_mini_e3_v2/steppers.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span>
+<span class="normal"><a href="#__codelineno-5-5">5</a></span>
+<span class="normal"><a href="#__codelineno-5-6">6</a></span>
+<span class="normal"><a href="#__codelineno-5-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">[extruder_stepper 3ms0]</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="na">extruder</span><span class="o">:</span><span class="w"> </span><span class="s">extruder</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="na">step_pin</span><span class="o">:</span><span class="w"> </span><span class="s">3ms: PB13</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="na">dir_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!3ms: PB12</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="na">enable_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!3ms: PB14</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="na">microsteps</span><span class="o">:</span><span class="w"> </span><span class="s">16</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="na">rotation_distance</span><span class="o">:</span><span class="w"> </span><span class="s">32.8450</span>
+</code></pre></div></td></tr></table></div>
 <p>Note the <code>rotation_distance</code> (last line). In this case, it is <code>32.8450</code>.</p>
 <p>Calculate the new rotation distance: <code>new_rotation_distance = &lt;rotation_distance&gt; * &lt;actual_extrude_distance&gt; / 50</code>. </p>
 <p>Round this result to three or four decimal places. Decrease it by 0.005 (this is so that if this result is slightly off, the 3MS filament unit will skip, instead of the printer's extruder stripping the filament during a print). </p>
