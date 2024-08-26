@@ -1322,6 +1322,8 @@
       
         
       
+        
+      
     
     
     
@@ -1364,6 +1366,27 @@
   
   <span class="md-ellipsis">
     TPU with Dual Drive 3MS Extruder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experimental/endless/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Endless Spool
   </span>
   
 
@@ -1502,15 +1525,15 @@
 <p>In OrcaSlicer, press the filament plus button until there are as many filaments displayed as you have filament units.</p>
 <h2 id="klipper-startend-g-code">Klipper Start/End G-Code</h2>
 <p>In your Klipper <code>PRINT_START</code> macro, add the following right before your purge line:</p>
-<div class="highlight"><pre><span></span><code><span class="na">MMMS_START INITIAL_TOOL</span><span class="o">=</span><span class="s">{params.INITIAL_EXTRUDER}</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="na">MMMS_START INITIAL_TOOL</span><span class="o">=</span><span class="s">{params.INITIAL_EXTRUDER}</span>
+</code></pre></div></td></tr></table></div>
 <p>In your <code>PRINT_END</code> macro, add the following before the cooldown command is called:</p>
-<div class="highlight"><pre><span></span><code><span class="na">MMMS_END</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="na">MMMS_END</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="slicer-start-g-code">Slicer Start G-Code</h2>
 <p>In your slicer's Start G-Code, add the following parameter to your <code>PRINT_START</code>:</p>
-<div class="highlight"><pre><span></span><code>INITIAL_EXTRUDER=[initial_extruder]
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>INITIAL_EXTRUDER=[initial_extruder]
+</code></pre></div></td></tr></table></div>
 <p><a class="glightbox" href="../../assets/images/slicer/slicer2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicer2.png" /></a></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
