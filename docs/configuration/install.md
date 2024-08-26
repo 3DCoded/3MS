@@ -91,6 +91,7 @@ In `3ms/main.cfg`, edit the `[include ./controllers/xxx/steppers.cfg]` line, rep
 | BTT Octopus (main MCU) | `btt_octopus_main` |
 | Zonestar ZM384 (main MCU) | `zonestar_zm384_main` |
 | Mini RAMBo | `mini_rambo` |
+<!-- | Geetech A30T | `gtm32_103_v1` | -->
 
 ## Configure MCU ID
 

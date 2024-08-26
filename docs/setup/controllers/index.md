@@ -30,3 +30,7 @@ Choose one of the following supported controllers (a checkmark indicates it is f
 - [ ] [BTT Octopus (main MCU) (4 colors)](bttoctopusmain.md)
 
     !!! warning "Untested"
+
+- [ ] [Geetech A30T](geetech-a30t.md)
+
+    !!! warning "In development"

@@ -19,6 +19,9 @@ make menuconfig
 
 In the menuconfig, configure it to your MCU. Instructions are included at the top of `3ms/controllers/xxx/steppers.cfg` for future reference. A copy of it is provided here:
 
+!!! info "Geetech A30T"
+    If you're using a Geetech A30T controller, follow the flashing instructions [here](geetech-a30t.md#firmware).
+
 ```cfg
 # This file contains common pin mappings for the BIGTREETECH SKR mini
 # E3 v2.0. To use this config, the firmware should be compiled for the
