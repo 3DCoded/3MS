@@ -28,4 +28,4 @@ Follow one of the following guides based on your controller:
 - [Einsy RAMBo (main MCU) with SKR Mini E3 V2](einsyrambo-skrminie3v2.md)
 - [Zonestar ZM384 (main MCU)](zm384main.md)
 - [Mini RAMBo](minirambo.md)
-<!-- - [Geetech A30T](geetech-a30t.md) -->
+- [Geetech A30T](geetech-a30t.md)
