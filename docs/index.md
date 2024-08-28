@@ -56,12 +56,12 @@ Why use the 3MS when there are many other multi-material systems?
 
 Here are a few reasons:
 
-- Extremely simple design increases reliability
-- Thorough documentation to help setup, optimize, and troubleshoot
-- No slicer custom toolchange G-Code needed
-- Easily expandable to any number of filaments (currently up to four)
-- Automatically retry failed toolchanges
-- [Toolchanges Without Tip Shaping or Filament Cutter!](notip.md)
+- **Simplified Design**: Minimal mechanical complexity for increased reliability.
+- **Comprehensive Documentation**: Step-by-step guides to ensure smooth setup and operation.
+- **Slicer-Agnostic**: No need for custom toolchange G-Code in your slicer.
+- **Scalable**: Easily expand the system to handle up to four filaments, with future potential for more.
+- **Auto-Retries**: Automatic retries on failed tool changes to reduce downtime.
+- **No Filament Cutter Needed**: Achieve clean tool changes without the need for tip shaping or filament cutters.
 
 With that said, there are a few reasons why you might **not** want to/be able to use the 3MS:
 
@@ -81,14 +81,14 @@ To use the 3MS, your setup has to meet the following requirements:
 
 Here is a example step by step of what goes on during a single 3MS toolchange from T0 to T1:
 
-1. Tip shaping and filament unload is performed by the slicer
-2. The 3MS unloads T0 200mm at 4500mm/min (75mm/s)
-3. The 3MS desyncs T0 from the extruder
-4. The 3MS checks if the filament was successfully unloaded
-5. The 3MS syncs T1 with the extruder
-6. The 3MS loads T1 210mm at 4500mm/min
-7. The 3MS checks if the filament was successfully loaded
-8. The printer loads the filament to the nozzle
+1. The slicer performs tip shaping and filament unloading.
+2. 3MS unloads T0 by 200mm at 4500mm/min (75mm/s).
+3. T0 is desynced from the extruder.
+4. Filament unloading is verified.
+5. T1 is synced with the extruder.
+6. 3MS loads T1 by 210mm at 4500mm/min.
+7. Filament loading is verified.
+8. The printer loads the filament to the nozzle.
 
 For more detail about the Tx command, see [Flowchart](flowchart.md).
 
