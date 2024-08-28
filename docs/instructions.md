@@ -1,3 +1,7 @@
+---
+icon: octicons/list-ordered-24
+---
+
 <link rel="stylesheet" href="../assets/css/badges.css">
 
 # Master Instructions

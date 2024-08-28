@@ -1,3 +1,7 @@
+---
+icon: material/tools
+---
+
 # Assembly
 
 Follow this guide to assemble your 3MS.

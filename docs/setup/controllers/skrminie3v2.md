@@ -1,3 +1,7 @@
+---
+icon: material/check
+---
+
 # BTT SKR Mini E3 V2
 
 **Max filament units: 4**

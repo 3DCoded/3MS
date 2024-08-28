@@ -1,3 +1,7 @@
+---
+icon: material/party-popper
+---
+
 # First Print
 
 Follow this guide to begin your first multimaterial print. There are two main ways to prepare a model for multimaterial painting. 

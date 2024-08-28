@@ -1,3 +1,7 @@
+---
+icon: fontawesome/solid/mobile-screen
+---
+
 # KlipperScreen
 
 !!! info

@@ -1,3 +1,7 @@
+---
+icon: material/table
+---
+
 # BOM
 
 ## Number of filament units

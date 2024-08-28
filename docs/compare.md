@@ -1,3 +1,7 @@
+---
+icon: material/select-compare
+---
+
 # Comparison of Multimaterial Systems
 
 Not sure if you want to use the 3MS? Check this comparison between four common multimaterial systems.

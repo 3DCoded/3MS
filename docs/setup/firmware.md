@@ -1,3 +1,7 @@
+---
+icon: octicons/terminal-24
+---
+
 # Firmware
 
 Follow this guide to install Klipper firmware onto your 3MS MCU. This guide is a modified version of the [Klipper Documentation](https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller).

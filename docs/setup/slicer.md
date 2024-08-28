@@ -1,3 +1,7 @@
+---
+icon: octicons/list-ordered-24
+---
+
 # Slicer Setup
 
 Follow this guide to setup the 3MS with your slicer. OrcaSlicer will be used in this guide, but these same settings (with different names) can be applied to PrusaSlicer and SuperSlicer.

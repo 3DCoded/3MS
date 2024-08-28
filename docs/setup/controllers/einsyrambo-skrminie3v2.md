@@ -1,3 +1,7 @@
+---
+icon: material/check
+---
+
 # Einsy RAMBo (main MCU) with SKR Mini E3 V2
 
 !!! danger
