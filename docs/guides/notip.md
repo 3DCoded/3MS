@@ -1,3 +1,7 @@
+---
+icon: material/fast-forward
+---
+
 # Toolchanges Without Tip Shaping or Filament Cutter!
 
 Because the 3MS is synchronized to the printer's extruder, it can perform toolchanges without any tip shaping or filament cutter.

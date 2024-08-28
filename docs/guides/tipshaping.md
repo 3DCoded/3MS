@@ -1,3 +1,7 @@
+---
+icon: octicons/list-unordered-24
+---
+
 # Tip Shaping Guidelines
 
 Follow this guide to get faster and more reliable toolchanges with your 3MS.

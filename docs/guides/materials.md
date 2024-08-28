@@ -1,3 +1,7 @@
+---
+icon: material/table
+---
+
 # Materials
 
 Follow this guide to determine if your filament will work with the 3MS.

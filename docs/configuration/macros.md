@@ -1,3 +1,7 @@
+---
+icon: octicons/file-code-24
+---
+
 # Macros
 
 ## 3MS Settings

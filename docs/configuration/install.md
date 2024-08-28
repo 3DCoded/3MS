@@ -1,3 +1,7 @@
+---
+icon: material/download
+---
+
 # Installation
 
 Follow this guide to install the 3MS configuration and macros.

@@ -1,3 +1,7 @@
+---
+icon: material/rotate-right
+---
+
 <script src="../../static/js/steppers.js"></script>
 
 # Stepper Motors
