@@ -1852,12 +1852,12 @@
 <p>Why use the 3MS when there are many other multi-material systems? </p>
 <p>Here are a few reasons:</p>
 <ul>
-<li>Extremely simple design increases reliability</li>
-<li>Thorough documentation to help setup, optimize, and troubleshoot</li>
-<li>No slicer custom toolchange G-Code needed</li>
-<li>Easily expandable to any number of filaments (currently up to four)</li>
-<li>Automatically retry failed toolchanges</li>
-<li><a href="#guides-notip">Toolchanges Without Tip Shaping or Filament Cutter!</a></li>
+<li><strong>Simplified Design</strong>: Minimal mechanical complexity for increased reliability.</li>
+<li><strong>Comprehensive Documentation</strong>: Step-by-step guides to ensure smooth setup and operation.</li>
+<li><strong>Slicer-Agnostic</strong>: No need for custom toolchange G-Code in your slicer.</li>
+<li><strong>Scalable</strong>: Easily expand the system to handle up to four filaments, with future potential for more.</li>
+<li><strong>Auto-Retries</strong>: Automatic retries on failed tool changes to reduce downtime.</li>
+<li><strong>No Filament Cutter Needed</strong>: Achieve clean tool changes without the need for tip shaping or filament cutters.</li>
 </ul>
 <p>With that said, there are a few reasons why you might <strong>not</strong> want to/be able to use the 3MS:</p>
 <ul>
@@ -1875,14 +1875,14 @@
 <h2 id="index-how-it-works">How it works</h2>
 <p>Here is a example step by step of what goes on during a single 3MS toolchange from T0 to T1:</p>
 <ol>
-<li>Tip shaping and filament unload is performed by the slicer</li>
-<li>The 3MS unloads T0 200mm at 4500mm/min (75mm/s)</li>
-<li>The 3MS desyncs T0 from the extruder</li>
-<li>The 3MS checks if the filament was successfully unloaded</li>
-<li>The 3MS syncs T1 with the extruder</li>
-<li>The 3MS loads T1 210mm at 4500mm/min</li>
-<li>The 3MS checks if the filament was successfully loaded</li>
-<li>The printer loads the filament to the nozzle</li>
+<li>The slicer performs tip shaping and filament unloading.</li>
+<li>3MS unloads T0 by 200mm at 4500mm/min (75mm/s).</li>
+<li>T0 is desynced from the extruder.</li>
+<li>Filament unloading is verified.</li>
+<li>T1 is synced with the extruder.</li>
+<li>3MS loads T1 by 210mm at 4500mm/min.</li>
+<li>Filament loading is verified.</li>
+<li>The printer loads the filament to the nozzle.</li>
 </ol>
 <p>For more detail about the Tx command, see <a href="#flowchart">Flowchart</a>.</p>
 <p>Think of the 3MS as an extension to your current extruder's length. It allows for switching filaments, but while printing allows for all the benefits of your printer's extruder.</p>
