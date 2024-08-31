@@ -1,3 +1,7 @@
+---
+icon: octicons/cpu-24
+---
+
 # Controller Support
 
 Follow this guide to add support for a new 3MS controller.

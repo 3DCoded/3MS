@@ -1,3 +1,7 @@
+---
+icon: octicons/git-merge-24
+---
+
 # Contributing
 
 If you want to contribute to the 3MS project, follow the instructions below.

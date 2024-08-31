@@ -1,3 +1,7 @@
+---
+icon: material/lightning-bolt
+---
+
 # Troubleshooting
 
 If you are having trouble getting your 3MS to work properly, check if the problem you're facing is in this list:

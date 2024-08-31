@@ -1,3 +1,7 @@
+---
+icon: octicons/terminal-24
+---
+
 # Development Setup
 
 Follow this guide to setup your system for development with the 3MS. 
