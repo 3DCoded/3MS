@@ -19,6 +19,10 @@ Choose one of the following supported controllers (a checkmark indicates it is f
 
     !!! danger "Expert modification"
 
+- [ ] [SKR Pico (4 colors)][skrpico.md]
+
+    !!! warning "Untested"
+
 - [ ] [Zonestar ZM384 (main MCU) (4 colors)](zm384main.md)
 
     !!! warning "Untested"

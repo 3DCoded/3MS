@@ -92,6 +92,7 @@ In `3ms/main.cfg`, edit the `[include ./controllers/xxx/steppers.cfg]` line, rep
 | Controller Name | Config Name |
 | - | - |
 | SKR Mini E3 V2 | `btt_skr_mini_e3_v2` |
+| SKR Pico | `btt_skr_pico` |
 | BTT Octopus (main MCU) | `btt_octopus_main` |
 | Zonestar ZM384 (main MCU) | `zonestar_zm384_main` |
 | Mini RAMBo | `mini_rambo` |

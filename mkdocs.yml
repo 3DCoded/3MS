@@ -103,6 +103,7 @@ nav:
     - Controllers:
       - setup/controllers/index.md
       - setup/controllers/skrminie3v2.md
+      - setup/controllers/skrpico.md
       - setup/controllers/bttoctopusmain.md
       - setup/controllers/einsyrambo-skrminie3v2.md
       - setup/controllers/zm384main.md
