@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Motor Skipping
 
 If any of your extruder motors are skipping while using the 3MS, follow this troubleshooting guide to diagnose the issue and fix it.

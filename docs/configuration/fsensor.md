@@ -1,5 +1,6 @@
 ---
 icon: material/exclamation-thick
+comments: true
 ---
 
 # Filament Sensor

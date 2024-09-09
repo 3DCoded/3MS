@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Endless Spool
 
 This feature is based off of [Happy Hare](https://github.com/moggieuk/Happy-Hare) firmware.

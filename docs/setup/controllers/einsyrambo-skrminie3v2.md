@@ -1,5 +1,6 @@
 ---
 icon: material/check
+comments: true
 ---
 
 # Einsy RAMBo (main MCU) with SKR Mini E3 V2

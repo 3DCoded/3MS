@@ -1,5 +1,6 @@
 ---
 icon: octicons/git-merge-24
+comments: true
 ---
 
 # Contributing

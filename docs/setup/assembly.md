@@ -1,5 +1,6 @@
 ---
 icon: material/tools
+comments: true
 ---
 
 # Assembly

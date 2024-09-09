@@ -1,5 +1,6 @@
 ---
 icon: octicons/list-unordered-24
+comments: true
 ---
 
 # Tip Shaping Guidelines

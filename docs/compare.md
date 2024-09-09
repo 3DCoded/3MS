@@ -1,5 +1,6 @@
 ---
 icon: material/select-compare
+comments: true
 ---
 
 # Comparison of Multimaterial Systems

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Filament Sensor False Alarm
 
 If during toolchanges, a failed toolchange false alarm occurs (print pauses even though toolchange was successful), follow this troubleshooting guide to fix it.

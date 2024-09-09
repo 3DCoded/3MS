@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Toolchange Flowchart
 
 This flowchart assumes a `fsensor_delay` of 2000ms.

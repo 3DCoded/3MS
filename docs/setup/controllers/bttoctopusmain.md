@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # BTT Octopus (main MCU)
 
 !!! warning

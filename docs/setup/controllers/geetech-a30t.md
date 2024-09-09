@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Geetech A30T
 
 **Contributed by [@ImChrono](https://github.com/ImChrono)**

@@ -1,5 +1,6 @@
 ---
 icon: material/lightning-bolt
+comments: true
 ---
 
 # Troubleshooting

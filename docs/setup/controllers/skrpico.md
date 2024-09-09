@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # BTT SKR Pico
 
 **Max filament units: 4**

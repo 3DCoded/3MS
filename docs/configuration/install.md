@@ -1,5 +1,6 @@
 ---
 icon: material/download
+comments: true
 ---
 
 # Installation

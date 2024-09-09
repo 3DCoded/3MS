@@ -1,5 +1,6 @@
 ---
 icon: octicons/file-code-24
+comments: true
 ---
 
 # Macros

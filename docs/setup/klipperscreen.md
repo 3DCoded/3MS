@@ -1,5 +1,6 @@
 ---
 icon: fontawesome/solid/mobile-screen
+comments: true
 ---
 
 # KlipperScreen

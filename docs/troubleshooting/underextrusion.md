@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Underextrusion
 
 If your prints start to have gaps in the walls, you are likely experiencing underextrusion. Follow this troubleshooting guide to diagnose the issue and fix it.

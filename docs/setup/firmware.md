@@ -1,5 +1,6 @@
 ---
 icon: octicons/terminal-24
+comments: true
 ---
 
 # Firmware
@@ -21,18 +22,10 @@ cd ~/klipper
 make menuconfig
 ```
 
-In the menuconfig, configure it to your MCU. Instructions are included at the top of `3ms/controllers/xxx/steppers.cfg` for future reference. A copy of it is provided here:
+In the menuconfig, configure it to your MCU. Instructions are included at the top of `3ms/controllers/xxx/steppers.cfg`.
 
 !!! info "Geetech A30T"
     If you're using a Geetech A30T controller, follow the flashing instructions [here](geetech-a30t.md#firmware).
-
-```cfg
-# This file contains common pin mappings for the BIGTREETECH SKR mini
-# E3 v2.0. To use this config, the firmware should be compiled for the
-# STM32F103 with a "28KiB bootloader" and USB communication. Also,
-# select "Enable extra low-level configuration options" and configure
-# "GPIO pins to set at micro-controller startup" to "!PA14".
-```
 
 Run in your terminal:
 

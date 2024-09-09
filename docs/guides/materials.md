@@ -1,5 +1,6 @@
 ---
 icon: material/table
+comments: true
 ---
 
 # Materials

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Configuration
 
 This guide covers the configuration structure and options of the 3MS.

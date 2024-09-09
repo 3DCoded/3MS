@@ -1,5 +1,6 @@
 ---
 icon: octicons/cpu-24
+comments: true
 ---
 
 # Controller Support

@@ -1,5 +1,6 @@
 ---
 icon: octicons/terminal-24
+comments: true
 ---
 
 # Development Setup

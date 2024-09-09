@@ -1,5 +1,6 @@
 ---
 icon: material/check
+comments: true
 ---
 
 # BTT SKR Mini E3 V2

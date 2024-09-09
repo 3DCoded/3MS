@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Failed Load/Unload
 
 If your printer is paused and displaying `Please load` or `Please unload`, follow this troubleshooting guide to diagnose the problem and fix it.
@@ -16,7 +20,7 @@ When your printer displays a `Please unload` message, pay attention to the `Tx` 
     If it is stuck, try one of the following:
 
     - Reload the filament until it is extruding out of the nozzle, then unload the filament quickly while pulling firmly.
-    - Open your printer's extruder assembly, pull the filament through, and cut off the tip.
+    - Open  your printer's extruder assembly, pull the filament through, and cut off the tip.
 
     Also, see [Skipping](skipping.md)
 

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Zonestar ZM384 (main MCU)
 
 **Max filament units: 3**

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Controllers
 
 Follow this guide to determine which controller to use in your 3MS.
