@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://3dcoded.github.io/3ms/hidden/hidden-assembly/">
+        <link rel="canonical" href="https://3dcoded.github.io/3ms/experimental/stamping/">
       
       
+        <link rel="prev" href="../endless/">
+      
+      
+        <link rel="next" href="../../flowchart/">
       
       
       <link rel="icon" href="../../assets/logo.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Assembly - 3MS</title>
+        <title>Stamping - 3MS</title>
       
     
     
@@ -107,7 +111,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#assembly" class="md-skip">
+        <a href="#stamping-improving-no-tip-shaping" class="md-skip">
           Skip to content
         </a>
       
@@ -142,7 +146,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Assembly
+              Stamping
             
           </span>
         </div>
@@ -1325,8 +1329,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1339,13 +1345,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -1359,7 +1363,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Experimental
@@ -1373,7 +1377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../experimental/dualdrivetpu/" class="md-nav__link">
+      <a href="../dualdrivetpu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1394,7 +1398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../experimental/endless/" class="md-nav__link">
+      <a href="../endless/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1412,10 +1416,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../experimental/stamping/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Stamping
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1424,6 +1448,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#slicer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slicer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Slicer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printer-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Printer Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filament-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filament Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tuning
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1483,18 +1569,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-connecting-the-power-cables" class="md-nav__link">
+  <a href="#slicer" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1 Connecting the Power Cables
+      Slicer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Slicer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printer-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Printer Settings
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#filament-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filament Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#step-2-connecting-the-stepper-motors" class="md-nav__link">
+  <a href="#tuning" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2 Connecting the Stepper Motors
+      Tuning
     </span>
   </a>
   
@@ -1532,28 +1642,34 @@
   
 
 
-<h1 id="assembly">Assembly</h1>
-<h3 id="step-1-connecting-the-power-cables"><strong>Step 1</strong> Connecting the Power Cables</h3>
-<p>Choose <strong>one</strong> of the wiring options below.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Option 1 (DCIN)</label><label for="__tabbed_1_2">Option 2 (POWER)</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><a class="glightbox" href="../../assets/images/assembly/skrminie3v2assembly1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/assembly/skrminie3v2assembly1.png" /></a></p>
+<h1 id="stamping-improving-no-tip-shaping">Stamping (Improving No Tip Shaping)</h1>
+<p>Currently the <a href="../../guides/notip/">No Tip Shaping</a> feature works with most standard PLA's. However, when printing too hot, or using any filament other than standard PLA, the No Tip Shaping feature can result in tips with long strings (&gt;2cm). This feature attempts to reduce strings without using tip shaping.</p>
+<div class="admonition example">
+<p class="admonition-title">Experimental</p>
+<p>The features on this page are experimental.</p>
 </div>
-<div class="tabbed-block">
-<p><a class="glightbox" href="../../assets/images/assembly/skrminie3v2assembly2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/assembly/skrminie3v2assembly2.png" /></a></p>
+<h2 id="slicer">Slicer</h2>
+<div class="admonition info">
+<p class="admonition-title">Compatibility</p>
+<p>This feature works on the  <strong>latest</strong> OrcaSlicer Nightly build</p>
 </div>
-</div>
-</div>
-<p><img alt="🔴" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f534.svg" title=":red_circle:" /> Attach the <strong>positive</strong> cable from the PSU to the <em>positive</em>* port on the mainboard</p>
-<p><img alt="🔵" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f535.svg" title=":blue_circle:" /> Attach the <strong>negative</strong> cable from the PSU to the <strong>negative</strong> port on the mainboard</p>
-<hr />
-<h3 id="step-2-connecting-the-stepper-motors"><strong>Step 2</strong> Connecting the Stepper Motors</h3>
-<p><a class="glightbox" href="../../assets/images/assembly/skrminie3v2assembly3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/assembly/skrminie3v2assembly3.png" /></a></p>
-<p><img alt="🔴" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f534.svg" title=":red_circle:" /> Plug in the stepper for the first 3MS extruder (T0)</p>
-<p><img alt="🟢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f7e2.svg" title=":green_circle:" /> Plug in the stepper for the second 3MS extruder (T1)</p>
-<p><img alt="🟣" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f7e3.svg" title=":purple_circle:" /> If applicable, plug in the stepper for the third 3MS extruder (T2)</p>
-<p><img alt="🔵" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f535.svg" title=":blue_circle:" /> If applicable, plug in the stepper for the fourth 3MS extruder (T3)</p>
+<h3 id="printer-settings">Printer Settings</h3>
+<p>To use the stamping feature, first navigate to <code>Printer Settings</code> -&gt; <code>Multimaterial</code> -&gt; <code>Single extruder multimaterial parameters</code>. Locate the <code>Cooling Tube Position</code> and <code>Cooling Tube Length</code> settings.</p>
+<p><a class="glightbox" href="../../assets/images/slicer/slicerstamping.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicerstamping.png" /></a></p>
+<p>For my printer, the parameters are <code>15</code> and <code>11</code>, respectively. Next, calculate:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>Cooling Tube Position + (Cooling Tube Length / 2)
+</code></pre></div></td></tr></table></div>
+<p>For my printer, this is:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>15 + (11/2) = 20.5mm
+</code></pre></div></td></tr></table></div>
+<h3 id="filament-settings">Filament Settings</h3>
+<p>After that, navigate to <code>Filament Settings</code> -&gt; <code>Multimaterial</code> -&gt; <code>Toolchange parameters with single extruder MM printers</code>.</p>
+<p>Set the <code>Stamping loading speed</code> to <code>100</code>. Set the <code>Stamping distance measured from the center of the cooling tube</code> to the value you previously calculated (for my printer, this is <code>20.5</code>).</p>
+<p><a class="glightbox" href="../../assets/images/slicer/slicerstamping2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicerstamping2.png" /></a></p>
+<h2 id="tuning">Tuning</h2>
+<p>Now, do a multimaterial test print. This should be a short print, just long enough to do a few toolchanges for each of your loaded filaments.</p>
+<p>After the print is done, press down on the lever for each of the 3MS extruders, and pull out the filament. Examine the tip. If the tip has a long string (&gt;2cm), reduce the <code>Stamping loading speed</code> value. If the tip has a small blob on the end, decrease the <code>Stamping distance measured from the center of the cooling tube</code>.</p>
+<p>Your goal is to get filament tips with short strings (&lt;2cm) as fast as possible. Repeat this tuning procedure to find the highest value for the <code>Stamping loading speed</code> that yields clean tips reliably for your printer.</p>
 
 
 
@@ -1613,6 +1729,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../endless/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Endless Spool">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Endless Spool
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../flowchart/" class="md-footer__link md-footer__link--next" aria-label="Next: Toolchange Flowchart">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Toolchange Flowchart
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">

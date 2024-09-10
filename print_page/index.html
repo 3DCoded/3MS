@@ -1331,6 +1331,8 @@
       
         
       
+        
+      
     
     
     
@@ -1394,6 +1396,27 @@
   
   <span class="md-ellipsis">
     Endless Spool
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experimental/stamping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stamping
   </span>
   
 
@@ -1782,6 +1805,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experimental-stamping" class="md-nav__link">
+    <span class="md-ellipsis">
+      28. Stamping
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1790,7 +1822,7 @@
         <li class="md-nav__item">
   <a href="#flowchart" class="md-nav__link">
     <span class="md-ellipsis">
-      28. Toolchange Flowchart
+      29. Toolchange Flowchart
     </span>
   </a>
   
@@ -5085,7 +5117,34 @@
 <p>Change your filament sensors' <code>runout_gcode</code> to:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-endless-__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="na">ENDLESS_RUNOUT T</span><span class="o">=</span><span class="s">0</span>
 </code></pre></div></td></tr></table></div>
-<p>For the filament sensor associated with T1, change the code from <code>T=0</code> to <code>T=1</code>, and so on.</p></section><h1 class='nav-section-title-end'>Ended: Experimental</h1><section class="print-page" id="flowchart"><h1 id="flowchart-toolchange-flowchart">Toolchange Flowchart</h1>
+<p>For the filament sensor associated with T1, change the code from <code>T=0</code> to <code>T=1</code>, and so on.</p></section><section class="print-page" id="experimental-stamping"><h1 id="experimental-stamping-stamping-improving-no-tip-shaping">Stamping (Improving No Tip Shaping)</h1>
+<p>Currently the <a href="#guides-notip">No Tip Shaping</a> feature works with most standard PLA's. However, when printing too hot, or using any filament other than standard PLA, the No Tip Shaping feature can result in tips with long strings (&gt;2cm). This feature attempts to reduce strings without using tip shaping.</p>
+<div class="admonition example">
+<p class="admonition-title">Experimental</p>
+<p>The features on this page are experimental.</p>
+</div>
+<h2 id="experimental-stamping-slicer">Slicer</h2>
+<div class="admonition info">
+<p class="admonition-title">Compatibility</p>
+<p>This feature works on the  <strong>latest</strong> OrcaSlicer Nightly build</p>
+</div>
+<h3 id="experimental-stamping-printer-settings">Printer Settings</h3>
+<p>To use the stamping feature, first navigate to <code>Printer Settings</code> -&gt; <code>Multimaterial</code> -&gt; <code>Single extruder multimaterial parameters</code>. Locate the <code>Cooling Tube Position</code> and <code>Cooling Tube Length</code> settings.</p>
+<p><a class="glightbox" href="../assets/images/slicer/slicerstamping.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/slicer/slicerstamping.png" /></a></p>
+<p>For my printer, the parameters are <code>15</code> and <code>11</code>, respectively. Next, calculate:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-stamping-__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>Cooling Tube Position + (Cooling Tube Length / 2)
+</code></pre></div></td></tr></table></div>
+<p>For my printer, this is:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-stamping-__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>15 + (11/2) = 20.5mm
+</code></pre></div></td></tr></table></div>
+<h3 id="experimental-stamping-filament-settings">Filament Settings</h3>
+<p>After that, navigate to <code>Filament Settings</code> -&gt; <code>Multimaterial</code> -&gt; <code>Toolchange parameters with single extruder MM printers</code>.</p>
+<p>Set the <code>Stamping loading speed</code> to <code>100</code>. Set the <code>Stamping distance measured from the center of the cooling tube</code> to the value you previously calculated (for my printer, this is <code>20.5</code>).</p>
+<p><a class="glightbox" href="../assets/images/slicer/slicerstamping2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/slicer/slicerstamping2.png" /></a></p>
+<h2 id="experimental-stamping-tuning">Tuning</h2>
+<p>Now, do a multimaterial test print. This should be a short print, just long enough to do a few toolchanges for each of your loaded filaments.</p>
+<p>After the print is done, press down on the lever for each of the 3MS extruders, and pull out the filament. Examine the tip. If the tip has a long string (&gt;2cm), reduce the <code>Stamping loading speed</code> value. If the tip has a small blob on the end, decrease the <code>Stamping distance measured from the center of the cooling tube</code>.</p>
+<p>Your goal is to get filament tips with short strings (&lt;2cm) as fast as possible. Repeat this tuning procedure to find the highest value for the <code>Stamping loading speed</code> that yields clean tips reliably for your printer.</p></section><h1 class='nav-section-title-end'>Ended: Experimental</h1><section class="print-page" id="flowchart"><h1 id="flowchart-toolchange-flowchart">Toolchange Flowchart</h1>
 <p>This flowchart assumes a <code>fsensor_delay</code> of 2000ms.</p>
 <pre class="mermaid"><code>graph TD
   A[T1] --&gt; B[Toolchange T=1];
