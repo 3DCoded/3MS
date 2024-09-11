@@ -45,10 +45,13 @@ To setup endless spool, first choose which filaments can be used as backups for 
 
 In this case, since T0 and T1 are backups for each other, they can be considered in the same "group" and assigned a group number. In this case, `1` will be used. Since T2 doesn't have a backup, it will be its own group. In this case, `2` will be used.
 
+If your printer has a filament sensor before each of the 3MS's filament units, set the `single` setting to `0`. If your printer has only one filamnet sensor before its main extruder, set the `single` setting to `1`.
+
 Edit your `3ms/endless/settings.cfg`:
 
-```cfg title="3ms/endless/settings.cfg" hl_lines="2 3 5"
+```cfg title="3ms/endless/settings.cfg" hl_lines="2-4 6"
 [gcode_macro ENDLESS_SETTINGS]
+single: 1 # <-- Set to 0 if you have a filament sensor before each of your 3MS extruders. Set to 1 if you have one filament sensor right before your printer's extruder.
 variable_t0: 1
 variable_t1: 1
 ### --- Uncomment below for more than two tools --- ###
