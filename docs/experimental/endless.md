@@ -7,7 +7,19 @@ comments: true
 This feature is based off of [Happy Hare](https://github.com/moggieuk/Happy-Hare) firmware.
 
 !!! info
-    The features on this page are still in development.
+    The features on this page are experimental.
+
+## Requirements
+
+To use endless spool, your printer must have *one* of the following:
+
+- A filament sensor before your printer's extruder
+
+OR
+
+- A filament sensor before each of the 3MS's extruders
+
+The endless spool feature (currently) also only works when printing single-color models.
 
 ## Install
 
@@ -61,10 +73,18 @@ gcode:
     RESPOND MSG=""
 ```
 
-Change your filament sensors' `runout_gcode` to:
+If you have multiple filament sensors, change your filament sensors' `runout_gcode` to:
 
 ```cfg
 ENDLESS_RUNOUT T=0
 ```
 
 For the filament sensor associated with T1, change the code from `T=0` to `T=1`, and so on.
+
+---
+
+If you have one filament sensor, change your filament sensor's `runout_gcode` to:
+
+```cfg
+ENDLESS_RUNOUT
+```
