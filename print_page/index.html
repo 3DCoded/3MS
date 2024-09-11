@@ -5056,8 +5056,18 @@
 <p>This feature is based off of <a href="https://github.com/moggieuk/Happy-Hare">Happy Hare</a> firmware.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>The features on this page are still in development.</p>
+<p>The features on this page are experimental.</p>
 </div>
+<h2 id="experimental-endless-requirements">Requirements</h2>
+<p>To use endless spool, your printer must have <em>one</em> of the following:</p>
+<ul>
+<li>A filament sensor before your printer's extruder</li>
+</ul>
+<p>OR</p>
+<ul>
+<li>A filament sensor before each of the 3MS's extruders</li>
+</ul>
+<p>The endless spool feature (currently) also only works when printing single-color models.</p>
 <h2 id="experimental-endless-install">Install</h2>
 <p>To install the endless spool feature, run in your terminal:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-endless-__codelineno-0-1">1</a></span>
@@ -5117,10 +5127,14 @@
 <a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="na">gcode</span><span class="o">:</span>
 <a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">    </span><span class="na">RESPOND MSG</span><span class="o">=</span><span class="s">&quot;&quot;</span>
 </code></pre></div></td></tr></table></div>
-<p>Change your filament sensors' <code>runout_gcode</code> to:</p>
+<p>If you have multiple filament sensors, change your filament sensors' <code>runout_gcode</code> to:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-endless-__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="na">ENDLESS_RUNOUT T</span><span class="o">=</span><span class="s">0</span>
 </code></pre></div></td></tr></table></div>
-<p>For the filament sensor associated with T1, change the code from <code>T=0</code> to <code>T=1</code>, and so on.</p></section><section class="print-page" id="experimental-stamping"><h1 id="experimental-stamping-stamping-improving-no-tip-shaping">Stamping (Improving No Tip Shaping)</h1>
+<p>For the filament sensor associated with T1, change the code from <code>T=0</code> to <code>T=1</code>, and so on.</p>
+<hr />
+<p>If you have one filament sensor, change your filament sensor's <code>runout_gcode</code> to:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-endless-__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="na">ENDLESS_RUNOUT</span>
+</code></pre></div></td></tr></table></div></section><section class="print-page" id="experimental-stamping"><h1 id="experimental-stamping-stamping-improving-no-tip-shaping">Stamping (Improving No Tip Shaping)</h1>
 <p>Currently the <a href="#guides-notip">No Tip Shaping</a> feature works with most standard PLA's. However, when printing too hot, or using any filament other than standard PLA, the No Tip Shaping feature can result in tips with long strings (&gt;2cm). This feature attempts to reduce strings without using tip shaping.</p>
 <div class="admonition example">
 <p class="admonition-title">Experimental</p>
