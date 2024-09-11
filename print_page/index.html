@@ -5097,6 +5097,7 @@
 <li>T2 (PETG) -&gt; PAUSE</li>
 </ul>
 <p>In this case, since T0 and T1 are backups for each other, they can be considered in the same "group" and assigned a group number. In this case, <code>1</code> will be used. Since T2 doesn't have a backup, it will be its own group. In this case, <code>2</code> will be used.</p>
+<p>If your printer has a filament sensor before each of the 3MS's filament units, set the <code>single</code> setting to <code>0</code>. If your printer has only one filamnet sensor before its main extruder, set the <code>single</code> setting to <code>1</code>.</p>
 <p>Edit your <code>3ms/endless/settings.cfg</code>:</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/endless/settings.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-endless-__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#experimental-endless-__codelineno-2-2">2</a></span>
@@ -5105,14 +5106,16 @@
 <span class="normal"><a href="#experimental-endless-__codelineno-2-5">5</a></span>
 <span class="normal"><a href="#experimental-endless-__codelineno-2-6">6</a></span>
 <span class="normal"><a href="#experimental-endless-__codelineno-2-7">7</a></span>
-<span class="normal"><a href="#experimental-endless-__codelineno-2-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">[gcode_macro ENDLESS_SETTINGS]</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="hll"><span class="na">variable_t0</span><span class="o">:</span><span class="w"> </span><span class="s">1</span>
-</span><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="hll"><span class="na">variable_t1</span><span class="o">:</span><span class="w"> </span><span class="s">1</span>
-</span><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c1">### --- Uncomment below for more than two tools --- ###</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="hll"><span class="na">variable_t2</span><span class="o">:</span><span class="w"> </span><span class="s">2</span>
-</span><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="c1"># variable_t3: -1</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="na">gcode</span><span class="o">:</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">    </span><span class="na">RESPOND MSG</span><span class="o">=</span><span class="s">&quot;&quot;</span>
+<span class="normal"><a href="#experimental-endless-__codelineno-2-8">8</a></span>
+<span class="normal"><a href="#experimental-endless-__codelineno-2-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">[gcode_macro ENDLESS_SETTINGS]</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="hll"><span class="na">single</span><span class="o">:</span><span class="w"> </span><span class="s">1</span><span class="w"> </span><span class="c1"># &lt;-- Set to 0 if you have a filament sensor before each of your 3MS extruders. Set to 1 if you have one filament sensor right before your printer&#39;s extruder.</span>
+</span><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="hll"><span class="na">variable_t0</span><span class="o">:</span><span class="w"> </span><span class="s">1</span>
+</span><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="hll"><span class="na">variable_t1</span><span class="o">:</span><span class="w"> </span><span class="s">1</span>
+</span><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="c1">### --- Uncomment below for more than two tools --- ###</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="hll"><span class="na">variable_t2</span><span class="o">:</span><span class="w"> </span><span class="s">2</span>
+</span><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="c1"># variable_t3: -1</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="na">gcode</span><span class="o">:</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">    </span><span class="na">RESPOND MSG</span><span class="o">=</span><span class="s">&quot;&quot;</span>
 </code></pre></div></td></tr></table></div>
 <p>Change your filament sensors' <code>runout_gcode</code> to:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-endless-__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="na">ENDLESS_RUNOUT T</span><span class="o">=</span><span class="s">0</span>
