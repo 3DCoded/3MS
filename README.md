@@ -11,6 +11,13 @@ Documentation is available [here](https://3dcoded.github.io/3MS)
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
+## Support
+
+If you want to support the 3MS project, click the link below. Anything you give goes directly into the development of the 3MS and my other projects. Thank you!
+
+[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/3dcoded)
+
+
 ## More Projects
 
 If you like this project, don't forget to give it a star! Also, check out my other projects:
