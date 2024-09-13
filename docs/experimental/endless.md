@@ -15,9 +15,13 @@ To use endless spool, your printer must have *one* of the following:
 
 - A filament sensor before your printer's extruder
 
+    !!! success "Recommended"
+
 OR
 
 - A filament sensor before each of the 3MS's extruders
+
+    !!! warning "Untested and deprecated"
 
 The endless spool feature (currently) also only works when printing single-color models.
 
