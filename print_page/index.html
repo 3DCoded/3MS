@@ -5137,6 +5137,7 @@
 <a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="na">gcode</span><span class="o">:</span>
 <a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">    </span><span class="na">RESPOND MSG</span><span class="o">=</span><span class="s">&quot;&quot;</span>
 </code></pre></div></td></tr></table></div>
+<h2 id="experimental-endless-filament-sensors">Filament Sensors</h2>
 <p>If you have multiple filament sensors, change your filament sensors' <code>runout_gcode</code> to:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-endless-__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="na">ENDLESS_RUNOUT T</span><span class="o">=</span><span class="s">0</span>
 </code></pre></div></td></tr></table></div>
@@ -5144,7 +5145,15 @@
 <hr />
 <p>If you have one filament sensor, change your filament sensor's <code>runout_gcode</code> to:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-endless-__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="na">ENDLESS_RUNOUT</span>
-</code></pre></div></td></tr></table></div></section><section class="print-page" id="experimental-stamping"><h1 id="experimental-stamping-stamping-improving-no-tip-shaping">Stamping (Improving No Tip Shaping)</h1>
+</code></pre></div></td></tr></table></div>
+<h2 id="experimental-endless-print_start">PRINT_START</h2>
+<p>In your slicer's print start GCode, add the following parameter to your <code>PRINT_START</code> macro:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-endless-__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>NUM_TOOLCHANGES=[total_toolchanges]
+</code></pre></div></td></tr></table></div>
+<p>Next, in your <code>PRINT_START</code> macro, add the following line <strong>before</strong> your <code>MMMS_START</code> call:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-endless-__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>ENDLESS_START NUM_TOOLCHANGES={params.NUM_TOOLCHANGES}
+</code></pre></div></td></tr></table></div>
+<p>This will ensure that Endless Spool is only enabled for single-color prints.</p></section><section class="print-page" id="experimental-stamping"><h1 id="experimental-stamping-stamping-improving-no-tip-shaping">Stamping (Improving No Tip Shaping)</h1>
 <p>Currently the <a href="#guides-notip">No Tip Shaping</a> feature works with most standard PLA's. However, when printing too hot, or using any filament other than standard PLA, the No Tip Shaping feature can result in tips with long strings (&gt;2cm). This feature attempts to reduce strings without using tip shaping.</p>
 <div class="admonition example">
 <p class="admonition-title">Experimental</p>
