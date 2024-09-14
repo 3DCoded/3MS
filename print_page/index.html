@@ -3081,59 +3081,69 @@
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCoded/3MS
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nb">cd</span><span class="w"> </span>3MS
 </code></pre></div></td></tr></table></div>
+<div class="admonition failure">
+<p class="admonition-title">Storage</p>
+<p>If the <code>git clone</code> command fails due to lack of storage on your system, run the following set of commands instead:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#configuration-install-__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#configuration-install-__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>~
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>main<span class="w"> </span>--single-branch<span class="w"> </span>https://github.com/3DCoded/3MS
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="nb">cd</span><span class="w"> </span>3MS
+</code></pre></div></td></tr></table></div>
+</div>
 <h2 id="configuration-install-install-script">Install Script</h2>
 <div class="admonition info">
 <p class="admonition-title">K1 Series</p>
 <p>If you are setting up the 3MS on a Creality K1 Series printer (K1, K1C, K1 Max), use the following install script instead:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>python3<span class="w"> </span>install.py<span class="w"> </span>--path<span class="w"> </span>/usr/data/printer_data/config/3ms
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>python3<span class="w"> </span>install.py<span class="w"> </span>--path<span class="w"> </span>/usr/data/printer_data/config/3ms
 </code></pre></div></td></tr></table></div>
 </div>
 <p>Run the install script:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>sh<span class="w"> </span>install.sh
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sh<span class="w"> </span>install.sh
 </code></pre></div></td></tr></table></div>
 <h2 id="configuration-install-printercfg">printer.cfg</h2>
 <p>In your <code>printer.cfg</code>, add:</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">printer.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">[include 3ms/main.cfg]</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">printer.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">[include 3ms/main.cfg]</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="configuration-install-dynamicmacros">DynamicMacros</h2>
 <p>The 3MS configuration depends on <a href="https://github.com/3dcoded/DynamicMacros">DynamicMacros</a>. If you haven't installed it already, follow the instructions <a href="https://3dcoded.github.io/DynamicMacros/setup/">here</a> to do so.</p>
 <p>Remove the following line from your <code>3ms/main.cfg</code> if it exists:</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/main.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">[include ./macros.cfg]</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/main.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">[include ./macros.cfg]</span>
 </code></pre></div></td></tr></table></div>
 <p>Add <code>3ms/macros.cfg</code> to your <code>[dynamicmacros]</code> config section. Example:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="configuration-install-__tabbed_1_1" name="configuration-install-__tabbed_1" type="radio" /><input id="configuration-install-__tabbed_1_2" name="configuration-install-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="configuration-install-__tabbed_1_1">Before</label><label for="configuration-install-__tabbed_1_2">After</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#configuration-install-__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">[dynamicmacros]</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="na">configs</span><span class="o">:</span><span class="w"> </span><span class="s">macros.cfg,othermacros.cfg</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#configuration-install-__codelineno-6-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="k">[dynamicmacros]</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="na">configs</span><span class="o">:</span><span class="w"> </span><span class="s">macros.cfg,othermacros.cfg</span>
 </code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-6-1">1</a></span>
-<span class="normal"><a href="#configuration-install-__codelineno-6-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="k">[dynamicmacros]</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="na">configs</span><span class="o">:</span><span class="w"> </span><span class="s">macros.cfg,othermacros.cfg,3ms/macros.cfg</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#configuration-install-__codelineno-7-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="k">[dynamicmacros]</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="na">configs</span><span class="o">:</span><span class="w"> </span><span class="s">macros.cfg,othermacros.cfg,3ms/macros.cfg</span>
 </code></pre></div></td></tr></table></div>
 </div>
 </div>
 </div>
 <h2 id="configuration-install-moonraker-update-manager">Moonraker Update Manager</h2>
 <p>To enable updates for the 3MS, add the following to your <code>moonraker.conf</code>:</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">moonraker.conf</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-7-1">1</a></span>
-<span class="normal"><a href="#configuration-install-__codelineno-7-2">2</a></span>
-<span class="normal"><a href="#configuration-install-__codelineno-7-3">3</a></span>
-<span class="normal"><a href="#configuration-install-__codelineno-7-4">4</a></span>
-<span class="normal"><a href="#configuration-install-__codelineno-7-5">5</a></span>
-<span class="normal"><a href="#configuration-install-__codelineno-7-6">6</a></span>
-<span class="normal"><a href="#configuration-install-__codelineno-7-7">7</a></span>
-<span class="normal"><a href="#configuration-install-__codelineno-7-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1"># 3MS Update Manager</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="k">[update_manager mmms]</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="na">type</span><span class="o">:</span><span class="w"> </span><span class="s">git_repo</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="na">path</span><span class="o">:</span><span class="w"> </span><span class="s">~/3MS</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="na">origin</span><span class="o">:</span><span class="w"> </span><span class="s">https://github.com/3DCoded/3MS.git</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="na">primary_branch</span><span class="o">:</span><span class="w"> </span><span class="s">main</span>
-<a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="na">is_system_service</span><span class="o">:</span><span class="w"> </span><span class="s">False</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="na">install_script</span><span class="o">:</span><span class="w"> </span><span class="s">install.sh</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">moonraker.conf</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#configuration-install-__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#configuration-install-__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#configuration-install-__codelineno-8-4">4</a></span>
+<span class="normal"><a href="#configuration-install-__codelineno-8-5">5</a></span>
+<span class="normal"><a href="#configuration-install-__codelineno-8-6">6</a></span>
+<span class="normal"><a href="#configuration-install-__codelineno-8-7">7</a></span>
+<span class="normal"><a href="#configuration-install-__codelineno-8-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="c1"># 3MS Update Manager</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="k">[update_manager mmms]</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="na">type</span><span class="o">:</span><span class="w"> </span><span class="s">git_repo</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="na">path</span><span class="o">:</span><span class="w"> </span><span class="s">~/3MS</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="na">origin</span><span class="o">:</span><span class="w"> </span><span class="s">https://github.com/3DCoded/3MS.git</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="na">primary_branch</span><span class="o">:</span><span class="w"> </span><span class="s">main</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="na">is_system_service</span><span class="o">:</span><span class="w"> </span><span class="s">False</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="na">install_script</span><span class="o">:</span><span class="w"> </span><span class="s">install.sh</span>
 </code></pre></div></td></tr></table></div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -3182,22 +3192,22 @@
 </table>
 <h2 id="configuration-install-configure-mcu-id">Configure MCU ID</h2>
 <p>Finally, to configure the MCU ID you saved from <a href="#setup-firmware">Firmware</a>, run in your terminal:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cat<span class="w"> </span>mcu.txt
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cat<span class="w"> </span>mcu.txt
 </code></pre></div></td></tr></table></div>
 <p>Copy the path that is output. Now, in your <code>3ms/controllers/xxx/steppers.cfg</code>, in the <code>[mcu 3ms]</code> section (towards the bottom), set the MCU ID.</p>
 <p>Example:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="configuration-install-__tabbed_2_1" name="configuration-install-__tabbed_2" type="radio" /><input id="configuration-install-__tabbed_2_2" name="configuration-install-__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="configuration-install-__tabbed_2_1">Before</label><label for="configuration-install-__tabbed_2_2">After</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/controllers/xxx/steppers.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-9-1">1</a></span>
-<span class="normal"><a href="#configuration-install-__codelineno-9-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">[mcu 3ms]</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="na">serial</span><span class="o">:</span><span class="w"> </span><span class="s">/dev/serial/by-id/&lt;your-mcu-id&gt;</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/controllers/xxx/steppers.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#configuration-install-__codelineno-10-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">[mcu 3ms]</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="na">serial</span><span class="o">:</span><span class="w"> </span><span class="s">/dev/serial/by-id/&lt;your-mcu-id&gt;</span>
 </code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/controllers/xxx/steppers.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-10-1">1</a></span>
-<span class="normal"><a href="#configuration-install-__codelineno-10-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">[mcu 3ms]</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="na">serial</span><span class="o">:</span><span class="w"> </span><span class="s">/dev/serial/by-id/usb-Klipper_stm32f103xe_33FFD1054746333809650557-if00</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/controllers/xxx/steppers.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#configuration-install-__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#configuration-install-__codelineno-11-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="k">[mcu 3ms]</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="na">serial</span><span class="o">:</span><span class="w"> </span><span class="s">/dev/serial/by-id/usb-Klipper_stm32f103xe_33FFD1054746333809650557-if00</span>
 </code></pre></div></td></tr></table></div>
 </div>
 </div>
