@@ -77,6 +77,8 @@ gcode:
     RESPOND MSG=""
 ```
 
+## Filament Sensors
+
 If you have multiple filament sensors, change your filament sensors' `runout_gcode` to:
 
 ```cfg
@@ -92,3 +94,19 @@ If you have one filament sensor, change your filament sensor's `runout_gcode` to
 ```cfg
 ENDLESS_RUNOUT
 ```
+
+## PRINT_START
+
+In your slicer's print start GCode, add the following parameter to your `PRINT_START` macro:
+
+```
+NUM_TOOLCHANGES=[total_toolchanges]
+```
+
+Next, in your `PRINT_START` macro, add the following line **before** your `MMMS_START` call:
+
+```
+ENDLESS_START NUM_TOOLCHANGES={params.NUM_TOOLCHANGES}
+```
+
+This will ensure that Endless Spool is only enabled for single-color prints.
