@@ -17,6 +17,15 @@ git clone https://github.com/3DCoded/3MS
 cd 3MS
 ```
 
+!!! failure "Storage"
+    If the `git clone` command fails due to lack of storage on your system, run the following set of commands instead:
+
+    ```sh
+    cd ~
+    git clone -b main --single-branch https://github.com/3DCoded/3MS
+    cd 3MS
+    ```
+
 ## Install Script
 
 !!! info "K1 Series"
