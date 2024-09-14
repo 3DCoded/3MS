@@ -15,10 +15,10 @@ This table contains which filaments work in single mode and/or multimaterial mod
 | - | - | - | - |
 | [PLA](#pla) | Yes | Yes | |
 | [PLA+](#pla) | Yes | Yes | |
-| [Silk PLA](#silkmatte-pla) | Yes | No | |
-| [Matte PLA](#silkmatte-pla) | Yes | No | |
+| [Silk PLA](#silkmatte-pla) | Yes | Yes | |
+| [Matte PLA](#silkmatte-pla) | Yes | Yes | |
 | [PETG](#petg) | Yes | Yes | |
-| [TPU](#tpu) | Untested | No | |
+| [TPU](#tpu) | Yes | Untested | |
 
 ## PLA(+)
 
