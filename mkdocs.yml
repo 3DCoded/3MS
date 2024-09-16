@@ -114,6 +114,7 @@ nav:
     - setup/slicer.md
     - setup/firstprint.md
     - setup/klipperscreen.md
+    - setup/k1.md
   - Configuration:
     - configuration/index.md
     - configuration/install.md

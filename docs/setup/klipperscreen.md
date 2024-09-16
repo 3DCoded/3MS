@@ -28,13 +28,4 @@ cd ~/KlipperScreen
 ./KlipperScreen/scripts/KlipperScreen-install.sh
 ```
 
-In your `KlipperScreen.conf`, add the following:
-
-```cfg title="KlipperScreen.conf"
-[3ms]
-tools: <num-tools>
-```
-
-replacing `<num-tools>` with the number of filament units your 3MS has.
-
 Restart KlipperScreen.
