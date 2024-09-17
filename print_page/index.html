@@ -1980,7 +1980,7 @@
 <li>The printer loads the filament to the nozzle.</li>
 </ol>
 <p>For more detail about the Tx command, see <a href="#flowchart">Flowchart</a>.</p>
-<p>Think of the 3MS as an extension to your current extruder's length. It allows for switching filaments, but while printing allows for all the benefits of your printer's extruder.</p>
+<p>Think of the 3MS as an extension to your current extruder's length. It allows for switching filaments without compromising any of the benefits of your printer's extruder.</p>
 <p>The 3MS's motors work together with your printer's extruder. This way, there won't be any additional resistance from pulling the filament through a disabled extruder. Also, unloads and loads to/from the printer's extruder are fully synchronized with the 3MS. This allows for even faster toolchanges!</p>
 <h2 id="index-get-started">Get Started</h2>
 <p>To get started with the 3MS, see the <a href="#instructions">Master Instructions</a>.</p>
@@ -2047,9 +2047,6 @@
 <hr />
 <p><strong>Cons:</strong></p>
 <p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/></svg></span> Compatibility (only Klipper)</p>
-<hr />
-<p><strong>Other:</strong></p>
-<p><span class="twemoji info"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14c0 .53-.21 1.04-.59 1.41-.37.38-.88.59-1.41.59H5c-.53 0-1.04-.21-1.41-.59C3.21 20.04 3 19.53 3 19V5c0-1.11.89-2 2-2m8 6V7h-2v2h2m0 8v-6h-2v6h2Z"/></svg></span> Maximum of 4 filaments</p>
 </li>
 </ul>
 </div></section><section class="print-page" id="instructions"><p><link rel="stylesheet" href="../assets/css/badges.css"></p>
@@ -2077,7 +2074,7 @@
 </li>
 <li>
 <p>Filament Units</p>
-<p>These moves the filament. These are standard MK8 extruders (used on Ender 3's). You can use different extruders for the filament units, as long as you can mount them securely and they can attach to a PTFE tube. MK8 extruders are used as the default due to their low cost. </p>
+<p>These move the filament. These are standard MK8 extruders (used on Ender 3's). You can use different extruders for the filament units, as long as you can mount them securely and they can attach to a PTFE tube. MK8 extruders are used as the default due to their low cost. </p>
 </li>
 </ul>
 <p>The number of filaments you will be able to print with is equal to the number of filament units you have. For example, two filament units will let you print with two colors. It is important to note that one filament unit will NOT let you print in multimaterial.</p>
