@@ -15,6 +15,7 @@ Choose the BOM for your chosen controller from the list below:
 
 - [BTT SKR Mini E3 V2](skrminie3v2.md#bom)
 - [BTT SKR Pico](skrpico.md#bom)
+- [BTT MMB](bttmmb.md#bom)
 - [BTT Octopus (main MCU)](bttoctopusmain.md#bom)
 - [Zonestar ZM384 (main MCU)](zm384main.md)
 - [Mini RAMBo](minirambo.md)

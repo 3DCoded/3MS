@@ -27,6 +27,10 @@ Choose one of the following supported controllers (a checkmark indicates it is f
 
     !!! warning "Untested"
 
+- [ ] [BTT MMB (4 colors)](bttmmb.md)
+
+    !!! warning "Untested"
+
 - [ ] [Zonestar ZM384 (main MCU) (4 colors)](zm384main.md)
 
     !!! warning "Untested"
