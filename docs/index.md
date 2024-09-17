@@ -92,7 +92,7 @@ Here is a example step by step of what goes on during a single 3MS toolchange fr
 
 For more detail about the Tx command, see [Flowchart](flowchart.md).
 
-Think of the 3MS as an extension to your current extruder's length. It allows for switching filaments, but while printing allows for all the benefits of your printer's extruder.
+Think of the 3MS as an extension to your current extruder's length. It allows for switching filaments without compromising any of the benefits of your printer's extruder.
 
 The 3MS's motors work together with your printer's extruder. This way, there won't be any additional resistance from pulling the filament through a disabled extruder. Also, unloads and loads to/from the printer's extruder are fully synchronized with the 3MS. This allows for even faster toolchanges!
 

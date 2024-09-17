@@ -109,10 +109,4 @@ Not sure if you want to use the 3MS? Check this comparison between four common m
 
     :material-minus-box:{.minus} Compatibility (only Klipper)
 
-    ---
-
-    **Other:**
-
-    :material-information-box:{.info} Maximum of 4 filaments
-
 </div>
