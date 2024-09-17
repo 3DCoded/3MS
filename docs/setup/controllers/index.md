@@ -23,7 +23,7 @@ Choose one of the following supported controllers (a checkmark indicates it is f
 
     !!! danger "Expert modification"
 
-- [ ] [SKR Pico (4 colors)][skrpico.md]
+- [ ] [SKR Pico (4 colors)](skrpico.md)
 
     !!! warning "Untested"
 
