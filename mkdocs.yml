@@ -140,7 +140,7 @@ nav:
   - Experimental:
     - TPU with Dual Drive 3MS Extruder: experimental/dualdrivetpu.md
     - Endless Spool: experimental/endless.md
-    - Stamping: experimental/stamping.md
+    - Speed Limiting for TPU: experimental/speedlimit.md
   - flowchart.md
 extra_css:
   - stylesheets/extra.css
