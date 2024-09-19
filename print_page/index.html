@@ -992,6 +992,8 @@
       
         
       
+        
+      
     
     
     
@@ -1082,6 +1084,27 @@
   
   <span class="md-ellipsis">
     Toolchanges Without Tip Shaping or Filament Cutter!
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/3dchameleon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3DChameleon to 3MS Conversion
   </span>
   
 
@@ -1725,6 +1748,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#guides-3dchameleon" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. 3DChameleon to 3MS Conversion
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1743,7 +1775,7 @@
           <li class="md-nav__item">
   <a href="#contributing" class="md-nav__link">
     <span class="md-ellipsis">
-      19. Contributing
+      20. Contributing
     </span>
   </a>
   
@@ -1752,7 +1784,7 @@
           <li class="md-nav__item">
   <a href="#contributing-devsetup" class="md-nav__link">
     <span class="md-ellipsis">
-      20. Development Setup
+      21. Development Setup
     </span>
   </a>
   
@@ -1761,7 +1793,7 @@
           <li class="md-nav__item">
   <a href="#contributing-supportcontrollers" class="md-nav__link">
     <span class="md-ellipsis">
-      21. Controller Support
+      22. Controller Support
     </span>
   </a>
   
@@ -1785,7 +1817,7 @@
           <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
-      22. Troubleshooting
+      23. Troubleshooting
     </span>
   </a>
   
@@ -1794,7 +1826,7 @@
           <li class="md-nav__item">
   <a href="#troubleshooting-skipping" class="md-nav__link">
     <span class="md-ellipsis">
-      23. Motor Skipping
+      24. Motor Skipping
     </span>
   </a>
   
@@ -1803,7 +1835,7 @@
           <li class="md-nav__item">
   <a href="#troubleshooting-falsealarm" class="md-nav__link">
     <span class="md-ellipsis">
-      24. Filament Sensor False Alarm
+      25. Filament Sensor False Alarm
     </span>
   </a>
   
@@ -1812,7 +1844,7 @@
           <li class="md-nav__item">
   <a href="#troubleshooting-underextrusion" class="md-nav__link">
     <span class="md-ellipsis">
-      25. Underextrusion
+      26. Underextrusion
     </span>
   </a>
   
@@ -1821,7 +1853,7 @@
           <li class="md-nav__item">
   <a href="#troubleshooting-failedloadunload" class="md-nav__link">
     <span class="md-ellipsis">
-      26. Failed Load/Unload
+      27. Failed Load/Unload
     </span>
   </a>
   
@@ -1845,7 +1877,7 @@
           <li class="md-nav__item">
   <a href="#experimental-dualdrivetpu" class="md-nav__link">
     <span class="md-ellipsis">
-      27. TPU with Dual Drive 3MS Extruder
+      28. TPU with Dual Drive 3MS Extruder
     </span>
   </a>
   
@@ -1854,7 +1886,7 @@
           <li class="md-nav__item">
   <a href="#experimental-endless" class="md-nav__link">
     <span class="md-ellipsis">
-      28. Endless Spool
+      29. Endless Spool
     </span>
   </a>
   
@@ -1863,7 +1895,7 @@
           <li class="md-nav__item">
   <a href="#experimental-stamping" class="md-nav__link">
     <span class="md-ellipsis">
-      29. Stamping
+      30. Stamping
     </span>
   </a>
   
@@ -1877,7 +1909,7 @@
         <li class="md-nav__item">
   <a href="#flowchart" class="md-nav__link">
     <span class="md-ellipsis">
-      30. Toolchange Flowchart
+      31. Toolchange Flowchart
     </span>
   </a>
   
@@ -3838,7 +3870,58 @@
 <h3 id="guides-notip-temperature">Temperature</h3>
 <p>If your filament has very long strings on the end of them after unloading without tip shaping (longer than 2cm), decrease your filament temperature. </p>
 <p>If your filament tip has a nearly flat tip, increase your filament temperature.</p>
-<p>The ideal filament tip has a pointy end and a small string (less than 5mm). When in doubt, it is recommended to aim for a slightly stringy tip over a flat tip.</p></section><h1 class='nav-section-title-end'>Ended: Guides</h1>
+<p>The ideal filament tip has a pointy end and a small string (less than 5mm). When in doubt, it is recommended to aim for a slightly stringy tip over a flat tip.</p></section><section class="print-page" id="guides-3dchameleon"><h1 id="guides-3dchameleon-3dchameleon-to-3ms-conversion">3DChameleon to 3MS Conversion</h1>
+<p>Follow this guide to convert a 3DChameleon to a 3MS.</p>
+<h2 id="guides-3dchameleon-bom">BOM</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SKR Mini E3 V2</td>
+<td>$34.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/0hgHU9JX">Amazon</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Duponts</td>
+<td>$9.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
+<td>These wires are only sufficient to run steppers, not heaters</td>
+</tr>
+<tr>
+<td>12V PSU</td>
+<td>$7.39</td>
+<td>1</td>
+<td><a href="https://a.co/d/gLC1eli">Amazon</a></td>
+<td>This PSU is only sufficient to run steppers, not heaters</td>
+</tr>
+<tr>
+<td>MK8 Metal Extruder</td>
+<td>2</td>
+<td>$9.99</td>
+<td><a href="https://a.co/d/0gJ1ghKj">Amazon</a></td>
+<td>Alternatively, you can use <a href="https://a.co/d/dbw7Wor">this</a> Dual-drive MK8 based extruder</td>
+</tr>
+</tbody>
+</table>
+<p>The final cost of this upgrade is around $70.</p>
+<h2 id="guides-3dchameleon-instructions">Instructions</h2>
+<ol>
+<li>Release the eight bolts on the 3DChameleon unit to remove the two NEMA17 stepper motors.</li>
+<li>Unplug the NEMA17's from the 3DChameleon electronics board</li>
+<li>Remove the PTFE tubes from the 3DChameleon unit and the Y-splitter</li>
+</ol>
+<p>Next, follow the <a href="#instructions">Master Instructions</a> except for the BOM section.</p></section><h1 class='nav-section-title-end'>Ended: Guides</h1>
                         <h1 class='nav-section-title' id='section-contributing'>
                             Contributing <a class='headerlink' href='#section-contributing' title='Permanent link'>↵</a>
                         </h1>
