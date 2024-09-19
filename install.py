@@ -5,6 +5,7 @@ from pathlib import Path
 
 install_files = '''
 macros.cfg
+speedlimit.cfg
 '''.strip().splitlines()
 
 optional_files = '''
