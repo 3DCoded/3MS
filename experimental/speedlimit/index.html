@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://3dcoded.github.io/3ms/experimental/stamping/">
+        <link rel="canonical" href="https://3dcoded.github.io/3ms/experimental/speedlimit/">
       
       
         <link rel="prev" href="../endless/">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Stamping - 3MS</title>
+        <title>Speed Limiting for TPU - 3MS</title>
       
     
     
@@ -111,7 +111,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#stamping-improving-no-tip-shaping" class="md-skip">
+        <a href="#speed-limiting-for-tpu" class="md-skip">
           Skip to content
         </a>
       
@@ -146,7 +146,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Stamping
+              Speed Limiting for TPU
             
           </span>
         </div>
@@ -1501,7 +1501,7 @@
           
   
   <span class="md-ellipsis">
-    Stamping
+    Speed Limiting for TPU
   </span>
   
 
@@ -1512,7 +1512,7 @@
         
   
   <span class="md-ellipsis">
-    Stamping
+    Speed Limiting for TPU
   </span>
   
 
@@ -1534,42 +1534,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#slicer" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Slicer
+      Installation
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Slicer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#printer-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Printer Settings
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#filament-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filament Settings
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tuning" class="md-nav__link">
+  <a href="#configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      Tuning
+      Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
     </span>
   </a>
   
@@ -1638,42 +1623,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#slicer" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Slicer
+      Installation
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Slicer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#printer-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Printer Settings
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#filament-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filament Settings
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tuning" class="md-nav__link">
+  <a href="#configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      Tuning
+      Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
     </span>
   </a>
   
@@ -1711,34 +1681,48 @@
   
 
 
-<h1 id="stamping-improving-no-tip-shaping">Stamping (Improving No Tip Shaping)</h1>
-<p>Currently the <a href="../../guides/notip/">No Tip Shaping</a> feature works with most standard PLA's. However, when printing too hot, or using any filament other than standard PLA, the No Tip Shaping feature can result in tips with long strings (&gt;2cm). This feature attempts to reduce strings without using tip shaping.</p>
-<div class="admonition example">
-<p class="admonition-title">Experimental</p>
-<p>The features on this page are experimental.</p>
-</div>
-<h2 id="slicer">Slicer</h2>
+<h1 id="speed-limiting-for-tpu">Speed Limiting for TPU</h1>
+<p>TPU filament has a tendency to buckle when extruded at high speeds. This feature attempts to slow down the 3MS extruders during toolchanges only when TPU is involved in the toolchange.</p>
 <div class="admonition info">
-<p class="admonition-title">Compatibility</p>
-<p>This feature works on the  <strong>latest</strong> OrcaSlicer Nightly build</p>
+<p class="admonition-title">Info</p>
+<p>This page, and the features mentioned on it, are in development</p>
 </div>
-<h3 id="printer-settings">Printer Settings</h3>
-<p>To use the stamping feature, first navigate to <code>Printer Settings</code> -&gt; <code>Multimaterial</code> -&gt; <code>Single extruder multimaterial parameters</code>. Locate the <code>Cooling Tube Position</code> and <code>Cooling Tube Length</code> settings.</p>
-<p><a class="glightbox" href="../../assets/images/slicer/slicerstamping.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicerstamping.png" /></a></p>
-<p>For my printer, the parameters are <code>15</code> and <code>11</code>, respectively. Next, calculate:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>Cooling Tube Position + (Cooling Tube Length / 2)
+<h2 id="installation">Installation</h2>
+<p>To install the speed limiting feature, run in your terminal:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>~/3MS
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>git<span class="w"> </span>fetch
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>git<span class="w"> </span>checkout<span class="w"> </span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>git<span class="w"> </span>pull<span class="w"> </span>limited-speed
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>sh<span class="w"> </span>install.sh
 </code></pre></div></td></tr></table></div>
-<p>For my printer, this is:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>15 + (11/2) = 20.5mm
-</code></pre></div></td></tr></table></div>
-<h3 id="filament-settings">Filament Settings</h3>
-<p>After that, navigate to <code>Filament Settings</code> -&gt; <code>Multimaterial</code> -&gt; <code>Toolchange parameters with single extruder MM printers</code>.</p>
-<p>Set the <code>Stamping loading speed</code> to <code>100</code>. Set the <code>Stamping distance measured from the center of the cooling tube</code> to the value you previously calculated (for my printer, this is <code>20.5</code>).</p>
-<p><a class="glightbox" href="../../assets/images/slicer/slicerstamping2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicerstamping2.png" /></a></p>
-<h2 id="tuning">Tuning</h2>
-<p>Now, do a multimaterial test print. This should be a short print, just long enough to do a few toolchanges for each of your loaded filaments.</p>
-<p>After the print is done, press down on the lever for each of the 3MS extruders, and pull out the filament. Examine the tip. If the tip has a long string (&gt;2cm), reduce the <code>Stamping loading speed</code> value. If the tip has a small blob on the end, decrease the <code>Stamping distance measured from the center of the cooling tube</code>.</p>
-<p>Your goal is to get filament tips with short strings (&lt;2cm) as fast as possible. Repeat this tuning procedure to find the highest value for the <code>Stamping loading speed</code> that yields clean tips reliably for your printer.</p>
+<p>Restart Klipper.</p>
+<h2 id="configuration">Configuration</h2>
+<p>Update your <code>3ms/main.cfg</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/main.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span>
+<span class="normal"><a href="#__codelineno-1-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">[save_variables]</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="na">filename</span><span class="o">:</span><span class="w"> </span><span class="s">~/printer_data/config/3ms/variables.cfg</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="k">[include ./settings.cfg]</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="k">[include ./controllers/btt_skr_mini_e3_v2/steppers.cfg]</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="k">[dynamicmacros 3ms]</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="hll"><span class="na">configs</span><span class="o">:</span><span class="w"> </span><span class="s">3ms/macros.cfg, 3ms/speedlimit.cfg</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="usage">Usage</h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This section is under construction</p>
+</div>
 
 
 
@@ -1761,7 +1745,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 9, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 19, 2024</span>
   </span>
 
     
@@ -1771,7 +1755,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 9, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 19, 2024</span>
   </span>
 
     
@@ -1784,6 +1768,60 @@
 
 
 
+
+  <h2 id="__comments">Comments</h2>
+  <!-- Insert generated snippet here -->
+  <script src="https://giscus.app/client.js"
+        data-repo="3dcoded/3MS"
+        data-repo-id="R_kgDOMLCLLA"
+        data-category="Comments"
+        data-category-id="DIC_kwDOMLCLLM4Ciatc"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+</script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
 
