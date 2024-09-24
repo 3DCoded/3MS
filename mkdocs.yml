@@ -126,6 +126,7 @@ nav:
     - guides/materials.md
     - guides/tipshaping.md
     - guides/notip.md
+    - guides/bypass.md
     - guides/3dchameleon.md
   - Contributing:
     - contributing/index.md

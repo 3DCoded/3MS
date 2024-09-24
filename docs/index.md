@@ -50,6 +50,15 @@ The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial *
     === "Y Splitter"
         ![](IMG_0321.jpeg)
 
+## Videos
+
+???+ "West3D Video Series"
+    Thank you to Allen Rowand from [West3D](https://west3d.com/) for making this ongoing series on the 3MS.
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XfjHtymdHao?si=cHG1jreb8FfjpWaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/o4Fvtdl-XjM?si=16Prr2Djn4XP0n6q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Why 3MS?
 
 Why use the 3MS when there are many other multi-material systems? 
