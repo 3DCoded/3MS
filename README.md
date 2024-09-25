@@ -2,6 +2,14 @@
 
 The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial **S**ystem
 
+![GitHub Repo stars](https://img.shields.io/github/stars/3dcoded/3MS)
+![GitHub forks](https://img.shields.io/github/forks/3dcoded/3MS)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/3dcoded/3MS)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/3dcoded/3MS)
+![GitHub contributors](https://img.shields.io/github/contributors/3dcoded/3MS)
+![GitHub License](https://img.shields.io/github/license/3dcoded/3MS)
+
+
 <img src="logo.png" alt="drawing" width="200"/>
 
 
@@ -84,3 +92,6 @@ The 3MS's motors work together with your printer's extruder. This way, there won
 
 I recently created a klipper plugin for the 3DChameleon after purchasing a unit. I'm sure my Chameleon could have worked if I had tuned it further, but after several months with only partial success, I gave up. I am still open to pull requests for **[3dchameleon-klipper](https://github.com/3dcoded/3dchameleon-klipper)** and will do my best to respond to issues there, but I won't be able to test it myself anymore.
 
+## Stats
+
+![Alt](https://repobeats.axiom.co/api/embed/d670d6f2eae5970f20cf34f40eb933c446089e6a.svg "Repobeats analytics image")
