@@ -21,28 +21,29 @@ Choose one of the following supported controllers (a checkmark indicates it is f
 
 - [X] [Einsy RAMBo (main MCU) with SKR Mini E3 V2.0 (3ms MCU)](einsyrambo-skrminie3v2.md)
 
-    !!! danger "Expert modification"
+    !!! success "Fully Tested"
+    !!! warning "Expert modification"
 
 - [ ] [SKR Pico (4 colors)](skrpico.md)
 
-    !!! warning "Untested"
+    !!! info "Testers Wanted"
 
 - [ ] [BTT MMB (4 colors)](bttmmb.md)
 
-    !!! warning "Untested"
+    !!! info "Testers Wanted"
 
 - [ ] [Zonestar ZM384 (main MCU) (4 colors)](zm384main.md)
 
-    !!! warning "Untested"
+    !!! info "Testers Wanted"
 
 - [ ] [Mini RAMBo (4 colors)](minirambo.md)
 
-    !!! warning "Untested"
+    !!! info "Testers Wanted"
 
 - [ ] [BTT Octopus (main MCU) (4 colors)](bttoctopusmain.md)
 
-    !!! warning "Untested"
+    !!! info "Testers Wanted"
 
 - [ ] [Geetech A30T](geetech-a30t.md)
 
-    !!! warning "In development"
+    !!! info "Testers Wanted"
