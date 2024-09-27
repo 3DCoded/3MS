@@ -19,7 +19,7 @@ Choose the BOM for your chosen controller from the list below:
 - [BTT Octopus (main MCU)](bttoctopusmain.md#bom)
 - [Zonestar ZM384 (main MCU)](zm384main.md)
 - [Mini RAMBo](minirambo.md)
-- [Geeteech A30T](geetech-a30t.md#bom)
+- [Geetech A30T](geetech-a30t.md#bom)
 
 ## Filament Unit BOMs
 

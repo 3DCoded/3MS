@@ -1,13 +1,11 @@
 ---
 comments: true
+icon: simple/circle
 ---
 
 # Endless Spool
 
 This feature is based off of [Happy Hare](https://github.com/moggieuk/Happy-Hare) firmware.
-
-!!! info
-    The features on this page are experimental.
 
 ## Requirements
 
@@ -27,17 +25,7 @@ The endless spool feature (currently) also only works when printing single-color
 
 ## Install
 
-To install the endless spool feature, run in your terminal:
-
-```sh
-cd ~/3MS
-git fetch
-git checkout endless-spool
-git pull
-sh install.sh
-```
-
-Update your `3ms/main.cfg`:
+To install the endlss spool, update your `3ms/main.cfg`:
 
 ```cfg title="3ms/main.cfg" hl_lines="5 9"
 [save_variables]
@@ -61,7 +49,7 @@ To setup endless spool, first choose which filaments can be used as backups for 
 
 In this case, since T0 and T1 are backups for each other, they can be considered in the same "group" and assigned a group number. In this case, `1` will be used. Since T2 doesn't have a backup, it will be its own group. In this case, `2` will be used.
 
-If your printer has a filament sensor before each of the 3MS's filament units, set the `single` setting to `0`. If your printer has only one filamnet sensor before its main extruder, set the `single` setting to `1`.
+If your printer has a filament sensor before each of the 3MS's filament units, set the `single` setting to `0`. If your printer has only one filament sensor before its main extruder, set the `single` setting to `1`.
 
 Edit your `3ms/endless/settings.cfg`:
 
@@ -94,6 +82,36 @@ If you have one filament sensor, change your filament sensor's `runout_gcode` to
 ```cfg
 ENDLESS_RUNOUT
 ```
+
+## Custom GCode
+
+To define custom filament runout functionality, you can define the `FILAMENT_RUNOUT` macro. Example:
+
+```cfg
+[gcode_macro FILAMENT_RUNOUT]
+gcode:
+    RESPOND MSG="Filament runout T{params.T}!!!"
+```
+
+## GCodes
+
+To edit the Endless Spool state mid-print, run the `SET_ENDLESS_SETTINGS` command. Examples:
+
+```gcode
+; Set T0 and T1 as backups for each other, and T2 as standalone
+SET_ENDLESS_SETTINGS T0=1 T1=1 T2=2
+
+; Set T0 as standalone, and T1 and T2 as backups for each other
+SET_ENDLESS_SETTINGS T0=-1 T1=1 T2=1
+
+; Disable endless spool
+SET_ENDLESS_SETTINGS ENABLED=0
+
+; Enable endless spool
+SET_ENDLESS_SETTINGS ENABLED=1
+```
+
+To view the Endless Spool settings, run the `GET_ENDLESS_SETTINGS` command.
 
 ## PRINT_START
 

@@ -127,6 +127,7 @@ nav:
     - guides/tipshaping.md
     - guides/notip.md
     - guides/bypass.md
+    - guides/endless.md
     - guides/3dchameleon.md
   - Contributing:
     - contributing/index.md
@@ -140,7 +141,6 @@ nav:
     - troubleshooting/failedloadunload.md
   - Experimental:
     - TPU with Dual Drive 3MS Extruder: experimental/dualdrivetpu.md
-    - Endless Spool: experimental/endless.md
     - Speed Limiting for TPU: experimental/speedlimit.md
   - flowchart.md
 extra_css:
