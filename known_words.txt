@@ -42,3 +42,9 @@ voron
 ender
 bambu
 sevro
+geetech
+pico
+pvilbig
+addon
+desynced
+rowand
