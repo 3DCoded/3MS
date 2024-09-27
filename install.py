@@ -5,18 +5,21 @@ from pathlib import Path
 
 install_files = '''
 macros.cfg
+endless/macros.cfg
 '''.strip().splitlines()
 
 optional_files = '''
 main.cfg
 settings.cfg
 variables.cfg
+endless/settings.cfg
 '''.strip().splitlines()
 
 install_folders = '''
 '''.strip().splitlines()
 
 optional_folders = '''
+endless
 controllers
 controllers/btt_skr_mini_e3_v2
 controllers/btt_octopus_main
@@ -44,6 +47,7 @@ def install():
         print(f'Installing file {file} to {to_path}')
         if os.path.exists(to_path):
             os.remove(to_path)
+        os.makedirs(os.path.dirname(to_path), exist_ok=True)
         shutil.copy2(from_path, to_path)
     for file in optional_files:
         from_path = from_dir / file
