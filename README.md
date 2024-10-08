@@ -69,7 +69,7 @@ Here are a few reasons:
 - Thorough documentation to help setup, optomize, and troubleshoot
 - No slicer custom toolchange G-Code needed
 - Easily expandable to any number of filaments (currently up to four)
-- In development: [Toolchanges Without Tip Shaping or Filament Cutter!](https://3dcoded.github.io/3MS/experimental/notip)
+- [Toolchanges Without Tip Shaping or Filament Cutter!](https://3dcoded.github.io/3MS/guides/notip)
 
 With that said, there are a few reasons why you might **not** want to/be able to use the 3MS:
 
