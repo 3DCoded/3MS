@@ -7,11 +7,20 @@ comments: true
 
 Follow this guide to install the 3MS configuration and macros.
 
+!!! info
+    All SSH commands are run on the Klipper Host (usually a Raspberry Pi) and are labeled like the following:
+    ```sh title="SSH"
+    echo Hello World
+    ```
+    Notice the "SSH" at the top of the code block.
+    ---
+    All references to a mainboard usually refer to the 3MS board. If you are using a `(main MCU)` configuration, references to a mainboard refer to your printer's existing mainboard.
+
 ## Clone Repository
 
 First, clone the 3MS repository:
 
-```sh
+```sh title="SSH"
 cd ~
 git clone https://github.com/3DCoded/3MS
 cd 3MS
@@ -20,7 +29,7 @@ cd 3MS
 !!! failure "Storage"
     If the `git clone` command fails due to lack of storage on your system, run the following set of commands instead:
 
-    ```sh
+    ```sh title="SSH"
     cd ~
     git clone -b main --single-branch https://github.com/3DCoded/3MS
     cd 3MS
@@ -31,19 +40,19 @@ cd 3MS
 !!! info "K1 Series"
     If you are setting up the 3MS on a Creality K1 Series printer (K1, K1C, K1 Max), use the following install script instead:
 
-    ```sh
+    ```sh title="SSH"
     python3 install.py --path /usr/data/printer_data/config/3ms
     ```
 
 Run the install script:
 
-```sh
+```sh title="SSH"
 sh install.sh
 ```
 
 ## printer.cfg
 
-In your `printer.cfg`, add:
+In the Klipper web interface (e.g. Mainsail/Fluidd/OctoPrint), open `printer.cfg` and add:
 
 ```cfg title="printer.cfg"
 [include 3ms/main.cfg]
@@ -74,7 +83,7 @@ Add `3ms/macros.cfg` to your `[dynamicmacros]` config section. Example:
 
 ## Moonraker Update Manager
 
-To enable updates for the 3MS, add the following to your `moonraker.conf`:
+To enable updates for the 3MS, add the following to your `moonraker.conf` (in the same folder as your `printer.cfg`):
 
 ```cfg title="moonraker.conf"
 # 3MS Update Manager
@@ -92,6 +101,7 @@ install_script: install.sh
         
     - `macros.cfg`
     - `KlipperScreen.conf`
+    - `endless/macros.cfg`
     
     If you have any changes in these files, they will be lost when updating.
 
@@ -113,7 +123,7 @@ In `3ms/main.cfg`, edit the `[include ./controllers/xxx/steppers.cfg]` line, rep
 
 Finally, to configure the MCU ID you saved from [Firmware](firmware.md), run in your terminal:
 
-```sh
+```sh title="SSH"
 cd ~ && cat mcu.txt
 ```
 
