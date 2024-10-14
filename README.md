@@ -42,9 +42,9 @@ If you like this project, don't forget to give it a star! Also, check out my oth
 
 If you like this project, don't forget to star it!
 
-<img src="https://github.com/3DCoded/3MS/blob/docs/docs/assets/images/sampleprints/samplesheep.jpeg?raw=true" width="200">
+<img src="https://github.com/3DCoded/3MS/blob/docs/docs/assets/images/sampleprints/sampletrex.jpeg?raw=true" width="200">
 
-Model: [Sheep by Cipis](https://www.printables.com/model/838872-sheep-multi-material-remix)
+Model: [T-rex by Cipis](https://www.printables.com/model/5481-t-rex-multi-material)
 
 ---
 
@@ -65,11 +65,13 @@ Why use the 3MS when there are many other multi-material systems?
 
 Here are a few reasons:
 
-- Extremely simple design increases reliability
-- Thorough documentation to help setup, optomize, and troubleshoot
-- No slicer custom toolchange G-Code needed
-- Easily expandable to any number of filaments (currently up to four)
-- [Toolchanges Without Tip Shaping or Filament Cutter!](https://3dcoded.github.io/3MS/guides/notip)
+- **Simplified Design**: Minimal mechanical complexity for increased reliability.
+- **Comprehensive Documentation**: Step-by-step guides to ensure smooth setup and operation.
+- **Slicer-Agnostic**: No need for custom toolchange G-Code in your slicer.
+- **Scalable**: Easily expand the system to handle any number of filaments.
+- **Auto-Retries**: Automatic retries on failed tool changes to reduce downtime.
+- **No Filament Cutter Needed**: Achieve clean tool changes without the need for filament cutters.
+- **In Development: Rapid Tip Shaping**: Achieve even faster tool changes!
 
 With that said, there are a few reasons why you might **not** want to/be able to use the 3MS:
 
