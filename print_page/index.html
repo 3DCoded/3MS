@@ -1378,7 +1378,7 @@
         
   
   <span class="md-ellipsis">
-    Filament Sensor False Alarm
+    Filament Sensor False Alarm/Extra Pauses
   </span>
   
 
@@ -1880,7 +1880,7 @@
           <li class="md-nav__item">
   <a href="#troubleshooting-falsealarm" class="md-nav__link">
     <span class="md-ellipsis">
-      27. Filament Sensor False Alarm
+      27. Filament Sensor False Alarm/Extra Pauses
     </span>
   </a>
   
@@ -5423,7 +5423,7 @@ Notice the "SSH" at the top of the code block.</p>
 <p>If you are having trouble getting your 3MS to work properly, check if the problem you're facing is in this list:</p>
 <ul>
 <li><a href="#troubleshooting-skipping">Motor Skipping</a></li>
-<li><a href="#troubleshooting-falsealarm">Filament Sensor False Alarm</a></li>
+<li><a href="#troubleshooting-falsealarm">Filament Sensor False Alarm or Extra Pauses</a></li>
 <li><a href="#troubleshooting-underextrusion">Underextrusion</a></li>
 <li><a href="#troubleshooting-failedloadunload">Failed Load/Unload</a></li>
 </ul>
@@ -5438,18 +5438,21 @@ Notice the "SSH" at the top of the code block.</p>
 <p>You can also slightly <strong>decrease</strong> the 3MS's <code>rotation_distance</code>.</p>
 <h2 id="troubleshooting-skipping-3ms-extruder">3MS Extruder</h2>
 <p>If the printer's extruder is working properly, and you're still having skipping, check the filament tips. If the tip has a long string on it, or has a thick blob at the end, your filament tips may be to blame. If you have stringy tips, decrease your nozzle temperature while printing. If you have blobby tips, increase your nozzle temperature while printing. Alternatively, you can purchase <a href="https://a.co/d/7o45tW5">PTFE tubes with a larger ID</a> to allow for less precise tips.</p>
-<p>You can also slightly <strong>increase</strong> the 3MS's <code>rotation_distance</code>.</p></section><section class="print-page" id="troubleshooting-falsealarm"><h1 id="troubleshooting-falsealarm-filament-sensor-false-alarm">Filament Sensor False Alarm</h1>
+<p>You can also slightly <strong>increase</strong> the 3MS's <code>rotation_distance</code>.</p></section><section class="print-page" id="troubleshooting-falsealarm"><h1 id="troubleshooting-falsealarm-filament-sensor-false-alarmextra-pauses">Filament Sensor False Alarm/Extra Pauses</h1>
 <p>If during toolchanges, a failed toolchange false alarm occurs (print pauses even though toolchange was successful), follow this troubleshooting guide to fix it.</p>
 <h2 id="troubleshooting-falsealarm-fsensor_delay">fsensor_delay</h2>
-<p>The main culprit for this issue is likely your <code>fsensor_delay</code> in <code>3ms/settings.cfg</code> is too short. Short values will cause more false alarms, and long values will cause less. Generally, the default 2000ms is good for most setups, but if you are having false alarms, you will have to increase it. Example:</p>
+<p>The main culprit for this issue is likely your <code>fsensor_delay</code> in <code>3ms/settings.cfg</code> is too short. Short values will cause more false alarms, and long values will cause less. Generally, the default 2000ms is good for most setups, but if you are having false alarms, you will have to increase it. To set it, use the <code>SET_MMMS_SETTINGS</code> command:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Klipper Console</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#troubleshooting-falsealarm-__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>SET_MMMS_SETTINGS FSENSOR_DELAY=3000
+</code></pre></div></td></tr></table></div>
+<p>To save it permanently:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="troubleshooting-falsealarm-__tabbed_1_1" name="troubleshooting-falsealarm-__tabbed_1" type="radio" /><input id="troubleshooting-falsealarm-__tabbed_1_2" name="troubleshooting-falsealarm-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="troubleshooting-falsealarm-__tabbed_1_1">Before</label><label for="troubleshooting-falsealarm-__tabbed_1_2">After</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/settings.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#troubleshooting-falsealarm-__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="na">fsensor_delay</span><span class="o">:</span><span class="w"> </span><span class="s">2000</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/settings.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#troubleshooting-falsealarm-__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="na">fsensor_delay</span><span class="o">:</span><span class="w"> </span><span class="s">2000</span>
 </code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/settings.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#troubleshooting-falsealarm-__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="na">fsensor_delay</span><span class="o">:</span><span class="w"> </span><span class="s">3000</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/settings.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#troubleshooting-falsealarm-__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="na">fsensor_delay</span><span class="o">:</span><span class="w"> </span><span class="s">3000</span>
 </code></pre></div></td></tr></table></div>
 </div>
 </div>
