@@ -68,9 +68,10 @@ Here are a few reasons:
 - **Simplified Design**: Minimal mechanical complexity for increased reliability.
 - **Comprehensive Documentation**: Step-by-step guides to ensure smooth setup and operation.
 - **Slicer-Agnostic**: No need for custom toolchange G-Code in your slicer.
-- **Scalable**: Easily expand the system to handle up to four filaments, with future potential for more.
+- **Scalable**: Easily expand the system to handle any number of filaments.
 - **Auto-Retries**: Automatic retries on failed tool changes to reduce downtime.
-- **No Filament Cutter Needed**: Achieve clean tool changes without the need for tip shaping or filament cutters.
+- **No Filament Cutter Needed**: Achieve clean tool changes without the need for filament cutters.
+- **In Development: Rapid Tip Shaping**: Achieve even faster tool changes!
 
 With that said, there are a few reasons why you might **not** want to/be able to use the 3MS:
 
