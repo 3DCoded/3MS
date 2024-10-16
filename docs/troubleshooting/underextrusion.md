@@ -1,4 +1,5 @@
 ---
+icon: fontawesome/solid/less-than
 comments: true
 ---
 

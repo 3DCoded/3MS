@@ -101,7 +101,7 @@ Not sure if you want to use the 3MS? Check this comparison between four common m
 
     :material-plus-box:{.plus} Modular Design
 
-    :material-plus-box:{.plus} Price ($100)
+    :material-plus-box:{.plus} Price (~$140)
 
     ---
 

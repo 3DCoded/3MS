@@ -140,6 +140,7 @@ nav:
     - troubleshooting/underextrusion.md
     - troubleshooting/failedloadunload.md
   - Experimental:
+    - experimental/index.md
     - TPU with Dual Drive 3MS Extruder: experimental/dualdrivetpu.md
     - Speed Limiting for TPU: experimental/speedlimit.md
   - flowchart.md
