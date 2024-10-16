@@ -68,19 +68,6 @@ Remove the following line from your `3ms/main.cfg` if it exists:
 [include ./macros.cfg]
 ```
 
-Add `3ms/macros.cfg` to your `[dynamicmacros]` config section. Example:
-
-=== "Before"
-    ```cfg
-    [dynamicmacros]
-    configs: macros.cfg,othermacros.cfg
-    ```
-=== "After"
-    ```cfg
-    [dynamicmacros]
-    configs: macros.cfg,othermacros.cfg,3ms/macros.cfg
-    ```
-
 ## Moonraker Update Manager
 
 To enable updates for the 3MS, add the following to your `moonraker.conf` (in the same folder as your `printer.cfg`):
@@ -104,6 +91,18 @@ install_script: install.sh
     - `endless/macros.cfg`
     
     If you have any changes in these files, they will be lost when updating.
+
+## Purge Line
+
+If you use [KAMP](https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging) for purging, set your `tip_distance` setting in `KAMP_Settings.cfg` to your filament parking position (this is the distance between your filament sensor and your nozzle).
+
+If you use any other method of purging, add this line to your Start G-Code / `PRINT_START` macro right before your purge line, and after your `MMMS_START`:
+
+```
+G1 E100 F900
+```
+
+Replace `E100` with `E`+parking position
 
 ## Controller
 

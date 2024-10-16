@@ -61,7 +61,7 @@ The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial *
 
 ## Why 3MS?
 
-Why use the 3MS when there are many other multi-material systems? 
+Why use the 3MS when there are many other multi-material systems?
 
 Here are a few reasons:
 
