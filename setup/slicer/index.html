@@ -811,6 +811,57 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#multimaterial-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multimaterial Parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multimaterial Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cooling-tube" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cooling Tube
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parking-position" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parking Position
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra-loading-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra loading distance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#optional-klipper_estimator" class="md-nav__link">
     <span class="md-ellipsis">
       Optional: klipper_estimator
@@ -1688,6 +1739,57 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#multimaterial-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multimaterial Parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multimaterial Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cooling-tube" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cooling Tube
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parking-position" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parking Position
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra-loading-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra loading distance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#optional-klipper_estimator" class="md-nav__link">
     <span class="md-ellipsis">
       Optional: klipper_estimator
@@ -1746,10 +1848,31 @@
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>INITIAL_EXTRUDER=[initial_extruder]
 </code></pre></div></td></tr></table></div>
 <p><a class="glightbox" href="../../assets/images/slicer/slicer2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicer2.png" /></a></p>
+<h2 id="multimaterial-parameters">Multimaterial Parameters</h2>
+<p>The last required step of setting up your slicer for the 3MS is setting the multimaterial parameters. </p>
+<p>Navigate to <code>Printer Settings</code> -&gt; <code>Multimaterial</code>. Check off the <code>Single Extruder Multi Material</code> checkbox.</p>
+<h3 id="cooling-tube">Cooling Tube</h3>
+<p>The first two <code>Single extruder multi-material parameters</code> are hotend-specific.</p>
+<p>The cooling tube refers to the length of PTFE tube in your hotend. For most hotends, this is usually in the heat sink.</p>
+<p>Its position is measured as the distance from the <strong>bottom</strong> of the cooling tube to the <strong>tip</strong> of the nozzle.</p>
+<p>Set those two parameters in your slicer.</p>
+<h3 id="parking-position">Parking Position</h3>
+<p>The third parameter is extruder/printhead-specific.</p>
+<p>The <code>Filament parking position</code> refers to the position where the filament is just above the extruder gears. During color swaps, the filament is unloaded to this position before the 3MS takes over. At the end of the toolchange, the next filament is in this same position.</p>
+<p>Its position is measured as its distance to the <strong>tip</strong> of the nozzle.</p>
+<h3 id="extra-loading-distance">Extra loading distance</h3>
+<p>This parameter refers to the extra distance the filament is loaded after a color swap is complete. This is usually a negative number.</p>
+<p>When a color swap is performed, the nozzle stays in the same place while the 3MS switches colors. This section will refer to this position as the "Swap position".</p>
+<p>If you notice blobs forming around the swap positions, <strong>decrease</strong> the <code>Extra loading distance</code> (set it to a <strong>negative</strong> number <strong>further</strong> from zero).</p>
+<p>If you notice gaps around the swap positions, <strong>increase</strong> the <code>Extra loading distance</code> (set it to a <strong>negative</strong> number <strong>closer</strong> to zero).</p>
+<h3 id="example-settings">Example Settings</h3>
+<p>Example settings are shown below for a Prusa MK3S+ with a Mosquito hotend.</p>
+<p><a class="glightbox" href="../../assets/images/slicer/slicer8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicer8.png" /></a></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>This is the last required part of slicer setup.</p>
 </div>
+<hr />
 <h2 id="optional-klipper_estimator">Optional: klipper_estimator</h2>
 <p>If you use <a href="https://github.com/Annex-Engineering/klipper_estimator">klipper_estimator</a> and want the toolchange represented in the time estimate, time your toolchange, then change your Change filament G-Code:</p>
 <p><a class="glightbox" href="../../assets/images/slicer/slicer3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicer3.png" /></a></p>
