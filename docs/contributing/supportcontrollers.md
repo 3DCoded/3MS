@@ -593,9 +593,31 @@ The following example will be for a SKR Mini E3 V2.0 controller.
 
 ### Final Important Details
 
-Change the `[mcu]` section (if present) to `[mcu 3ms]`. Add a `3ms: ` prefix to all pin names (if not a main MCU config). Any `!` or `^` should go **before** the `3ms: ` prefix. Remove the `filament_diameter` and `nozzle_diameter` options from the former `[extruder]` section. Remove all homing/endstop-related sections from the stepper configurations. Append a `extruder: extruder` option to all `[extruder_stepper]` sections.
+1. Remove all homing/endstop-related parameters from the stepper configuration sections. Example:
 
-1. Prefix all pin names **IN ALL SECTIONS** (not just motors) with `3ms: `. Example:
+    === "Before"
+        ```cfg
+        [extruder_stepper 3ms0]
+        ...
+        endstop_pin: ^PC0
+        position_endstop: 0
+        position_max: 235
+        homing_speed: 50
+        ```
+    === "After"
+        ```cfg
+        [extruder_stepper 3ms0]
+        ...
+        # Endstop/homing parameters removed
+        ```
+
+2. Add the following line to all `extruder_stepper` sections:
+
+    ```cfg
+    extruder: extruder
+    ```
+
+3. Prefix all pin names **IN ALL SECTIONS** (not just motors) with `3ms: `. Any `!` or `^` should go **before** the `3ms: ` prefix. Example:
 
     === "Before"
         ```cfg
@@ -615,6 +637,7 @@ Change the `[mcu]` section (if present) to `[mcu 3ms]`. Add a `3ms: ` prefix to 
         microsteps: 16
         rotation_distance: 40
         ```
+
 ??? "Full Configuration Before/After"
     === "Before"
         ```cfg
