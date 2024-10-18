@@ -57,5 +57,5 @@ The printer will adjust movement accordingly. If both axes are used, define both
 ### Modifying Settings
 To change values temporarily, use the `SET_CUTTER_SETTINGS` macro. this can be usefull during troubleshooting and testing
 
-```gcode
+```gcode```
 SET_CUTTER_SETTINGS PARKING_X=290 PUSHING_SPEED=1700
