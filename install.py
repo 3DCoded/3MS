@@ -6,6 +6,7 @@ from pathlib import Path
 install_files = '''
 macros.cfg
 endless/macros.cfg
+cutter/macros.cfg
 '''.strip().splitlines()
 
 optional_files = '''
@@ -13,6 +14,7 @@ main.cfg
 settings.cfg
 variables.cfg
 endless/settings.cfg
+cutter/settings.cfg
 '''.strip().splitlines()
 
 install_folders = '''
@@ -20,6 +22,7 @@ install_folders = '''
 
 optional_folders = '''
 endless
+cutter
 controllers
 controllers/btt_skr_mini_e3_v2
 controllers/btt_octopus_main
