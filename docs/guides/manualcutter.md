@@ -5,7 +5,7 @@ icon: material/content-cut
 
 # Manual filament cutter
 
-This guide explains how to integrate a filament cutter with the 3MS system, allowing automatic cutting during the filament swap.
+This guide explains how to integrate a filament cutter with the 3MS system, allowing automatic cutting during the filament swap. This negates the need for tip shaping, makinng color swaps much faster and more reliable.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -50,12 +50,13 @@ Edit your `3ms/cutter/settings.cfg`:
 | `pushing_speed`             | 1600 mm/min    | Speed to push the blade                |
 | `retries`                   | 2              | Number of repetions                    |
 
-**Note**:  
-- If X or Y is set to `-1`, it indicates that the toolhead moves along one axis to reach the parking position.
-The printer will adjust movement accordingly. If both axes are used, define both positions.
+!!! note 
+    If X or Y is set to `-1`, it indicates that the toolhead moves along one axis to reach the parking position.
+    The printer will adjust movement accordingly. If both axes are used, define both positions.
 
 ### Modifying Settings
 To change values temporarily, use the `SET_CUTTER_SETTINGS` macro. this can be usefull during troubleshooting and testing
 
-```gcode```
+```gcode
 SET_CUTTER_SETTINGS PARKING_X=290 PUSHING_SPEED=1700
+```
