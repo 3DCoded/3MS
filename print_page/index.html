@@ -3971,7 +3971,7 @@ Notice the "SSH" at the top of the code block.</p>
 <p>If your filament has very long strings on the end of them after unloading without tip shaping (longer than 2cm), decrease your filament temperature. </p>
 <p>If your filament tip has a nearly flat tip, increase your filament temperature.</p>
 <p>The ideal filament tip has a pointy end and a small string (less than 5mm). When in doubt, it is recommended to aim for a slightly stringy tip over a flat tip.</p></section><section class="print-page" id="guides-manualcutter"><h1 id="guides-manualcutter-manual-filament-cutter">Manual filament cutter</h1>
-<p>This guide explains how to integrate a filament cutter with the 3MS system, allowing automatic cutting during the filament swap.</p>
+<p>This guide explains how to integrate a filament cutter with the 3MS system, allowing automatic cutting during the filament swap. This negates the need for tip shaping, makinng color swaps much faster and more reliable.</p>
 <h2 id="guides-manualcutter-table-of-contents">Table of Contents</h2>
 <ul>
 <li><a href="#guides-manualcutter-installation">Installation</a></li>
@@ -4061,13 +4061,15 @@ Notice the "SSH" at the top of the code block.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Note</strong>:<br />
-- If X or Y is set to <code>-1</code>, it indicates that the toolhead moves along one axis to reach the parking position.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If X or Y is set to <code>-1</code>, it indicates that the toolhead moves along one axis to reach the parking position.
 The printer will adjust movement accordingly. If both axes are used, define both positions.</p>
+</div>
 <h3 id="guides-manualcutter-modifying-settings">Modifying Settings</h3>
 <p>To change values temporarily, use the <code>SET_CUTTER_SETTINGS</code> macro. this can be usefull during troubleshooting and testing</p>
-<p><code>gcode</code>
-SET_CUTTER_SETTINGS PARKING_X=290 PUSHING_SPEED=1700</p></section><section class="print-page" id="guides-bypass"><h1 id="guides-bypass-3ms-bypass">3MS Bypass</h1>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#guides-manualcutter-__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>SET_CUTTER_SETTINGS PARKING_X=290 PUSHING_SPEED=1700
+</code></pre></div></td></tr></table></div></section><section class="print-page" id="guides-bypass"><h1 id="guides-bypass-3ms-bypass">3MS Bypass</h1>
 <p>Follow this guide to allow manually loading a spool to your printer, and bypassing the 3MS system.</p>
 <h2 id="guides-bypass-klipper-macros">Klipper Macros</h2>
 <p>Replace the <code>MMMS_START</code> line in your <code>PRINT_START</code> macro with:</p>
