@@ -7,6 +7,7 @@ install_files = '''
 macros.cfg
 endless/macros.cfg
 cutter/macros.cfg
+form_tip/macros.cfg
 '''.strip().splitlines()
 
 optional_files = '''
@@ -15,6 +16,7 @@ settings.cfg
 variables.cfg
 endless/settings.cfg
 cutter/settings.cfg
+form_tip/settings.cfg
 '''.strip().splitlines()
 
 install_folders = '''
