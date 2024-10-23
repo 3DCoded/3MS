@@ -122,3 +122,34 @@ LOAD_FILAMENT
 ## Examples
 
 !!! info "TODO show pictures of filament tips when a specific settings is altered"
+
+## Slicer Setup
+
+Follow these steps to setup your slicer for rapid tip shaping. 
+
+1. **Disable filament ramming**
+
+    Nagivate to `Printer Settings` -> `Multimaterial` and uncheck the `Enable filament ramming` checkbox.
+
+    ![](slicer9.png)
+
+2. **Filament Settings**
+
+    Repeat the following steps for each of your filaments.
+
+    Navigate to `Filament Settings` -> `Multimaterial`, and disable all multimaterial settings.
+
+    ![](slicer5.png)
+    ![](slicer6.png)
+
+3. **Filament G-Code**
+
+    Change your filament start G-code to the following, inserting your tuned values:
+
+    ```
+    SET_TIP_SETTINGS PUSH_DISTANCE= PUSH_SPEED= INITIAL_RETRACT_SPEED= COOLING_SPEED= FINAL_SPEED=
+    ```
+
+    Add this G-Code to your filament settings in `Advanced`:
+
+    ![](slicer10.png)

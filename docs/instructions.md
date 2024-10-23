@@ -106,3 +106,9 @@ Run this command in your terminal:
 ```sh
 sudo service klipper restart
 ```
+
+## 9. Tuning and Optimizations
+
+After your 3MS is installed, it's time to tune and optimize it.
+
+The best starting place for this is in the [Materials Reference](materials.md).
