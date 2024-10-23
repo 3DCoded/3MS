@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://3dcoded.github.io/3ms/experimental/rapidtip/">
       
       
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../dualdrivetpu/">
       
       
       <link rel="icon" href="../../assets/logo.png">
@@ -1479,6 +1483,8 @@
       
   
   
+    
+  
   
   
     
@@ -1492,16 +1498,16 @@
       
         
       
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           
@@ -1525,13 +1531,110 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Experimental
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Rapid Tip Shaping
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Rapid Tip Shaping
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confiugration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Confiugration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tip-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tip Tuning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
               
             
               
@@ -1700,32 +1803,76 @@
 <h1 id="rapid-tip-shaping">Rapid Tip Shaping</h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The rapid tip shaping feature is under construction. This page is not complete yet.</p>
+<p>The rapid tip shaping feature is currently experimental. This page is not complete yet.</p>
 </div>
 <p>Rapid tip shaping allows for faster tip shaping and easier tuning of tip shaping.</p>
 <h2 id="installation">Installation</h2>
-<div class="admonition info">
-<p class="admonition-title">TODO</p>
-</div>
+<p>Update your <code>3ms/main.cfg</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/main.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">[save_variables]</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="na">filename</span><span class="o">:</span><span class="w"> </span><span class="s">~/printer_data/config/3ms/variables.cfg</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">[include ./settings.cfg]</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="k">[include ./endless/settings.cfg]</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="c1">#[include ./cutter/settings.cfg]</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="hll"><span class="k">[include ./form_tip/settings.cfg]</span>
+</span><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="k">[include ./controllers/btt_skr_mini_e3_v2/steppers.cfg]</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="k">[dynamicmacros 3ms]</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="hll"><span class="na">configs</span><span class="o">:</span><span class="w"> </span><span class="s">3ms/macros.cfg, 3ms/endless/macros.cfg, 3ms/form_tip/macros.cfg</span><span class="w"> </span><span class="c1">#, 3ms/cutter/macros.cfg</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Note the addition of <code>3ms/form_tip/macros.cfg</code> in the <code>[dynamicmacros]</code> config section.</p>
 <h2 id="confiugration">Confiugration</h2>
-<div class="admonition info">
-<p class="admonition-title">TODO</p>
-</div>
+<p>The "cooling tube" refers to the length of PTFE found in your printer's hotend. This is usually in the heatsink of your hotend. </p>
+<p>You want to measure (or Google) three things:</p>
+<ol>
+<li>The distance from the bottom of the cooling tube to the tip of the nozzle</li>
+<li>The length of the cooling tube</li>
+<li>The distance from the top of the cooling tube to your extruder</li>
+</ol>
+<p>Update your <code>3ms/form_tip/settings.cfg</code> with these settings:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/form_tip/settings.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">[gcode_macro FORM_TIP_SETTINGS]</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1"># Edit these settings for your printer</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="hll"><span class="na">variable_cooling_tube_pos</span><span class="o">:</span><span class="w"> </span><span class="s">15</span><span class="w"> </span><span class="c1"># &lt;-- This is the distance from the bottom of the cooling tube to the tip of the nozzle</span>
+</span><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="hll"><span class="na">variable_cooling_tube_length</span><span class="o">:</span><span class="w"> </span><span class="s">11</span><span class="w"> </span><span class="c1"># &lt;-- This is the length of the cooling tube</span>
+</span><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="hll"><span class="na">variable_final_retract</span><span class="o">:</span><span class="w"> </span><span class="s">49</span><span class="w"> </span><span class="c1"># &lt;-- This is the distance from the top of the cooling tube to the extruder gears</span>
+</span></code></pre></div></td></tr></table></div>
+<p>The "parking position" refers to the location the toolhead will be at during a color swap (not on the wip tower). Ideally, this would be a purge bucket, but this can be anywhere <strong>not</strong> on the bed. </p>
+<p>Update your settings:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/form_tip/settings.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="na">variable_park_x</span><span class="o">:</span><span class="w"> </span><span class="s">125</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="na">variable_park_y</span><span class="o">:</span><span class="w"> </span><span class="s">205</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="na">variable_park_speed</span><span class="o">:</span><span class="w"> </span><span class="s">50</span><span class="w"> </span><span class="c1"># mm/s</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="tip-tuning">Tip Tuning</h2>
 <p>A standard tip tuning routine would look like this:</p>
 <ol>
 <li>
 <p>Load T0 to the nozzle</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>SYNC_TOOL TOOL=0
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>MMMS_LOAD
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>LOAD_FILAMENT
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>SYNC_TOOL TOOL=0
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>MMMS_LOAD
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>LOAD_FILAMENT
 </code></pre></div></td></tr></table></div>
 </li>
 <li>
 <p>Run tip shaping:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>FORM_TIP
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>FORM_TIP
 </code></pre></div></td></tr></table></div>
 </li>
 <li>
@@ -1733,7 +1880,7 @@
 </li>
 <li>
 <p>Load the filament back to the nozzle for further tuning:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>LOAD_FILAMENT
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>LOAD_FILAMENT
 </code></pre></div></td></tr></table></div>
 </li>
 </ol>
@@ -1765,13 +1912,13 @@
 </li>
 </ul>
 <p>When you get a good tip, change to T1, repeat, T2, etc:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>MMMS_UNLOAD
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>SYNC_TOOL TOOL=1
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a>MMMS_LOAD
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a>LOAD_FILAMENT
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#__codelineno-6-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>MMMS_UNLOAD
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>SYNC_TOOL TOOL=1
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a>MMMS_LOAD
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a>LOAD_FILAMENT
 </code></pre></div></td></tr></table></div>
 <h2 id="examples">Examples</h2>
 <div class="admonition info">
@@ -1890,6 +2037,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Experimental">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Experimental
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../dualdrivetpu/" class="md-footer__link md-footer__link--next" aria-label="Next: TPU with Dual Drive 3MS Extruder">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                TPU with Dual Drive 3MS Extruder
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">

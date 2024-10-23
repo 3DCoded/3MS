@@ -1489,6 +1489,8 @@
       
         
       
+        
+      
     
     
     
@@ -1529,6 +1531,27 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experimental/rapidtip/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rapid Tip Shaping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1989,9 +2012,18 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#experimental-rapidtip" class="md-nav__link">
+    <span class="md-ellipsis">
+      32. Rapid Tip Shaping
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#experimental-dualdrivetpu" class="md-nav__link">
     <span class="md-ellipsis">
-      32. TPU with Dual Drive 3MS Extruder
+      33. TPU with Dual Drive 3MS Extruder
     </span>
   </a>
   
@@ -2000,7 +2032,7 @@
           <li class="md-nav__item">
   <a href="#experimental-speedlimit" class="md-nav__link">
     <span class="md-ellipsis">
-      33. Speed Limiting for TPU
+      34. Speed Limiting for TPU
     </span>
   </a>
   
@@ -2014,7 +2046,7 @@
         <li class="md-nav__item">
   <a href="#flowchart" class="md-nav__link">
     <span class="md-ellipsis">
-      34. Toolchange Flowchart
+      35. Toolchange Flowchart
     </span>
   </a>
   
@@ -5955,7 +5987,130 @@ The printer will adjust movement accordingly. If both axes are used, define both
                         <h1 class='nav-section-title' id='section-experimental'>
                             Experimental <a class='headerlink' href='#section-experimental' title='Permanent link'>↵</a>
                         </h1>
-                        <section class="print-page" id="experimental"><h1 id="experimental-experimental">Experimental</h1></section><section class="print-page" id="experimental-dualdrivetpu"><h1 id="experimental-dualdrivetpu-dual-drive-3ms-extruders-for-tpu">Dual Drive 3MS Extruders for TPU</h1>
+                        <section class="print-page" id="experimental"><h1 id="experimental-experimental">Experimental</h1></section><section class="print-page" id="experimental-rapidtip"><h1 id="experimental-rapidtip-rapid-tip-shaping">Rapid Tip Shaping</h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The rapid tip shaping feature is currently experimental. This page is not complete yet.</p>
+</div>
+<p>Rapid tip shaping allows for faster tip shaping and easier tuning of tip shaping.</p>
+<h2 id="experimental-rapidtip-installation">Installation</h2>
+<p>Update your <code>3ms/main.cfg</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/main.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-rapidtip-__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">[save_variables]</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="na">filename</span><span class="o">:</span><span class="w"> </span><span class="s">~/printer_data/config/3ms/variables.cfg</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">[include ./settings.cfg]</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="k">[include ./endless/settings.cfg]</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="c1">#[include ./cutter/settings.cfg]</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="hll"><span class="k">[include ./form_tip/settings.cfg]</span>
+</span><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="k">[include ./controllers/btt_skr_mini_e3_v2/steppers.cfg]</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="k">[dynamicmacros 3ms]</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="hll"><span class="na">configs</span><span class="o">:</span><span class="w"> </span><span class="s">3ms/macros.cfg, 3ms/endless/macros.cfg, 3ms/form_tip/macros.cfg</span><span class="w"> </span><span class="c1">#, 3ms/cutter/macros.cfg</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Note the addition of <code>3ms/form_tip/macros.cfg</code> in the <code>[dynamicmacros]</code> config section.</p>
+<h2 id="experimental-rapidtip-confiugration">Confiugration</h2>
+<p>The "cooling tube" refers to the length of PTFE found in your printer's hotend. This is usually in the heatsink of your hotend. </p>
+<p>You want to measure (or Google) three things:</p>
+<ol>
+<li>The distance from the bottom of the cooling tube to the tip of the nozzle</li>
+<li>The length of the cooling tube</li>
+<li>The distance from the top of the cooling tube to your extruder</li>
+</ol>
+<p>Update your <code>3ms/form_tip/settings.cfg</code> with these settings:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/form_tip/settings.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-rapidtip-__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">[gcode_macro FORM_TIP_SETTINGS]</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1"># Edit these settings for your printer</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="hll"><span class="na">variable_cooling_tube_pos</span><span class="o">:</span><span class="w"> </span><span class="s">15</span><span class="w"> </span><span class="c1"># &lt;-- This is the distance from the bottom of the cooling tube to the tip of the nozzle</span>
+</span><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="hll"><span class="na">variable_cooling_tube_length</span><span class="o">:</span><span class="w"> </span><span class="s">11</span><span class="w"> </span><span class="c1"># &lt;-- This is the length of the cooling tube</span>
+</span><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="hll"><span class="na">variable_final_retract</span><span class="o">:</span><span class="w"> </span><span class="s">49</span><span class="w"> </span><span class="c1"># &lt;-- This is the distance from the top of the cooling tube to the extruder gears</span>
+</span></code></pre></div></td></tr></table></div>
+<p>The "parking position" refers to the location the toolhead will be at during a color swap (not on the wip tower). Ideally, this would be a purge bucket, but this can be anywhere <strong>not</strong> on the bed. </p>
+<p>Update your settings:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">3ms/form_tip/settings.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-rapidtip-__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="na">variable_park_x</span><span class="o">:</span><span class="w"> </span><span class="s">125</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="na">variable_park_y</span><span class="o">:</span><span class="w"> </span><span class="s">205</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="na">variable_park_speed</span><span class="o">:</span><span class="w"> </span><span class="s">50</span><span class="w"> </span><span class="c1"># mm/s</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="experimental-rapidtip-tip-tuning">Tip Tuning</h2>
+<p>A standard tip tuning routine would look like this:</p>
+<ol>
+<li>
+<p>Load T0 to the nozzle</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-rapidtip-__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>SYNC_TOOL TOOL=0
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>MMMS_LOAD
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>LOAD_FILAMENT
+</code></pre></div></td></tr></table></div>
+</li>
+<li>
+<p>Run tip shaping:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-rapidtip-__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>FORM_TIP
+</code></pre></div></td></tr></table></div>
+</li>
+<li>
+<p>Check your filament tip</p>
+</li>
+<li>
+<p>Load the filament back to the nozzle for further tuning:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-rapidtip-__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>LOAD_FILAMENT
+</code></pre></div></td></tr></table></div>
+</li>
+</ol>
+<p>Steps 2-4 are repeated until your filament tip comes out looking like one of these:</p>
+<div class="admonition info">
+<p class="admonition-title">TODO Picture</p>
+</div>
+<p>You can alter step 2 to get better tips, changing any of the following settings:</p>
+<ul>
+<li>
+<p><code>PUSH_DISTANCE</code></p>
+<p>This changes how much filament is pushed out initially. Generally, you don't need to change this.</p>
+</li>
+<li>
+<p><code>PUSH_SPEED</code></p>
+<p>This changes how fast the filament is pushed out initially. Increasing this generally creates a sharper filament tip. However, if this is too high, your printer's hotend may not be able to melt the filament quickly enough and result in your extruder skipping steps.</p>
+</li>
+<li>
+<p><code>INITIAL_RETRACT_SPEED</code></p>
+<p>This changes how fast the filament tip is retracted to the cooling tube. If this is too low, your filament tip may have a large string on the end. If this is too high, a small piece of filament may be left in your nozzle.</p>
+</li>
+<li>
+<p><code>COOLING_SPEED</code></p>
+<p>This changes how fast the filament tip is retracted through the cooling tube. If this is too high, your filament tip may come out still molten.</p>
+</li>
+<li>
+<p><code>FINAL_SPEED</code></p>
+<p>This changes how fast the filament tip is retracted from the top of the cooling tube to outside the extruder. Generally, you can increase this until your printer's extruder starts skipping.</p>
+</li>
+</ul>
+<p>When you get a good tip, change to T1, repeat, T2, etc:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-rapidtip-__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#experimental-rapidtip-__codelineno-6-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>MMMS_UNLOAD
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>SYNC_TOOL TOOL=1
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a>MMMS_LOAD
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a>LOAD_FILAMENT
+</code></pre></div></td></tr></table></div>
+<h2 id="experimental-rapidtip-examples">Examples</h2>
+<div class="admonition info">
+<p class="admonition-title">TODO show pictures of filament tips when a specific settings is altered</p>
+</div></section><section class="print-page" id="experimental-dualdrivetpu"><h1 id="experimental-dualdrivetpu-dual-drive-3ms-extruders-for-tpu">Dual Drive 3MS Extruders for TPU</h1>
 <p>The 3MS's existing single-drive extruders are prone to tangling with TPU during toolchanges. Dual drive 3MS extruders may fix this issue and allow for multimaterial printing with TPU.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
