@@ -5,17 +5,59 @@ comments: true
 # Rapid Tip Shaping
 
 !!! warning
-    The rapid tip shaping feature is under construction. This page is not complete yet.
+    The rapid tip shaping feature is currently experimental. This page is not complete yet.
 
 Rapid tip shaping allows for faster tip shaping and easier tuning of tip shaping.
 
 ## Installation
 
-!!! info "TODO"
+Update your `3ms/main.cfg`:
+
+```cfg title="3ms/main.cfg" hl_lines="7 11"
+[save_variables]
+filename: ~/printer_data/config/3ms/variables.cfg
+
+[include ./settings.cfg]
+[include ./endless/settings.cfg]
+#[include ./cutter/settings.cfg]
+[include ./form_tip/settings.cfg]
+[include ./controllers/btt_skr_mini_e3_v2/steppers.cfg]
+
+[dynamicmacros 3ms]
+configs: 3ms/macros.cfg, 3ms/endless/macros.cfg, 3ms/form_tip/macros.cfg #, 3ms/cutter/macros.cfg
+```
+
+Note the addition of `3ms/form_tip/macros.cfg` in the `[dynamicmacros]` config section.
 
 ## Confiugration
 
-!!! info "TODO"
+The "cooling tube" refers to the length of PTFE found in your printer's hotend. This is usually in the heatsink of your hotend. 
+
+You want to measure (or Google) three things:
+
+1. The distance from the bottom of the cooling tube to the tip of the nozzle
+2. The length of the cooling tube
+3. The distance from the top of the cooling tube to your extruder
+
+Update your `3ms/form_tip/settings.cfg` with these settings:
+
+```cfg title="3ms/form_tip/settings.cfg" hl_lines="3-5"
+[gcode_macro FORM_TIP_SETTINGS]
+# Edit these settings for your printer
+variable_cooling_tube_pos: 15 # <-- This is the distance from the bottom of the cooling tube to the tip of the nozzle
+variable_cooling_tube_length: 11 # <-- This is the length of the cooling tube
+variable_final_retract: 49 # <-- This is the distance from the top of the cooling tube to the extruder gears
+```
+
+The "parking position" refers to the location the toolhead will be at during a color swap (not on the wip tower). Ideally, this would be a purge bucket, but this can be anywhere **not** on the bed. 
+
+Update your settings:
+
+```cfg title="3ms/form_tip/settings.cfg"
+variable_park_x: 125
+variable_park_y: 205
+variable_park_speed: 50 # mm/s
+```
 
 ## Tip Tuning
 
