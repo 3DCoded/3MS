@@ -2369,7 +2369,10 @@
 </div>
 <p>Run this command in your terminal:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#instructions-__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo<span class="w"> </span>service<span class="w"> </span>klipper<span class="w"> </span>restart
-</code></pre></div></td></tr></table></div></section>
+</code></pre></div></td></tr></table></div>
+<h2 id="instructions-9-tuning-and-optimizations">9. Tuning and Optimizations</h2>
+<p>After your 3MS is installed, it's time to tune and optimize it.</p>
+<p>The best starting place for this is in the <a href="#guides-materials">Materials Reference</a>.</p></section>
                         <h1 class='nav-section-title' id='section-setup'>
                             Setup <a class='headerlink' href='#section-setup' title='Permanent link'>↵</a>
                         </h1>
@@ -6110,7 +6113,31 @@ The printer will adjust movement accordingly. If both axes are used, define both
 <h2 id="experimental-rapidtip-examples">Examples</h2>
 <div class="admonition info">
 <p class="admonition-title">TODO show pictures of filament tips when a specific settings is altered</p>
-</div></section><section class="print-page" id="experimental-dualdrivetpu"><h1 id="experimental-dualdrivetpu-dual-drive-3ms-extruders-for-tpu">Dual Drive 3MS Extruders for TPU</h1>
+</div>
+<h2 id="experimental-rapidtip-slicer-setup">Slicer Setup</h2>
+<p>Follow these steps to setup your slicer for rapid tip shaping. </p>
+<ol>
+<li>
+<p><strong>Disable filament ramming</strong></p>
+<p>Nagivate to <code>Printer Settings</code> -&gt; <code>Multimaterial</code> and uncheck the <code>Enable filament ramming</code> checkbox.</p>
+<p><a class="glightbox" href="../assets/images/slicer/slicer9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/slicer/slicer9.png" /></a></p>
+</li>
+<li>
+<p><strong>Filament Settings</strong></p>
+<p>Repeat the following steps for each of your filaments.</p>
+<p>Navigate to <code>Filament Settings</code> -&gt; <code>Multimaterial</code>, and disable all multimaterial settings.</p>
+<p><a class="glightbox" href="../assets/images/slicer/slicer5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/slicer/slicer5.png" /></a>
+<a class="glightbox" href="../assets/images/slicer/slicer6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/slicer/slicer6.png" /></a></p>
+</li>
+<li>
+<p><strong>Filament G-Code</strong></p>
+<p>Change your filament start G-code to the following, inserting your tuned values:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#experimental-rapidtip-__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>SET_TIP_SETTINGS PUSH_DISTANCE= PUSH_SPEED= INITIAL_RETRACT_SPEED= COOLING_SPEED= FINAL_SPEED=
+</code></pre></div></td></tr></table></div>
+<p>Add this G-Code to your filament settings in <code>Advanced</code>:</p>
+<p><a class="glightbox" href="../assets/images/slicer/slicer10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/slicer/slicer10.png" /></a></p>
+</li>
+</ol></section><section class="print-page" id="experimental-dualdrivetpu"><h1 id="experimental-dualdrivetpu-dual-drive-3ms-extruders-for-tpu">Dual Drive 3MS Extruders for TPU</h1>
 <p>The 3MS's existing single-drive extruders are prone to tangling with TPU during toolchanges. Dual drive 3MS extruders may fix this issue and allow for multimaterial printing with TPU.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>

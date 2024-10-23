@@ -1628,6 +1628,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#slicer-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slicer Setup
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1763,6 +1772,15 @@
   <a href="#examples" class="md-nav__link">
     <span class="md-ellipsis">
       Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slicer-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slicer Setup
     </span>
   </a>
   
@@ -1924,6 +1942,30 @@
 <div class="admonition info">
 <p class="admonition-title">TODO show pictures of filament tips when a specific settings is altered</p>
 </div>
+<h2 id="slicer-setup">Slicer Setup</h2>
+<p>Follow these steps to setup your slicer for rapid tip shaping. </p>
+<ol>
+<li>
+<p><strong>Disable filament ramming</strong></p>
+<p>Nagivate to <code>Printer Settings</code> -&gt; <code>Multimaterial</code> and uncheck the <code>Enable filament ramming</code> checkbox.</p>
+<p><a class="glightbox" href="../../assets/images/slicer/slicer9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicer9.png" /></a></p>
+</li>
+<li>
+<p><strong>Filament Settings</strong></p>
+<p>Repeat the following steps for each of your filaments.</p>
+<p>Navigate to <code>Filament Settings</code> -&gt; <code>Multimaterial</code>, and disable all multimaterial settings.</p>
+<p><a class="glightbox" href="../../assets/images/slicer/slicer5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicer5.png" /></a>
+<a class="glightbox" href="../../assets/images/slicer/slicer6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicer6.png" /></a></p>
+</li>
+<li>
+<p><strong>Filament G-Code</strong></p>
+<p>Change your filament start G-code to the following, inserting your tuned values:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>SET_TIP_SETTINGS PUSH_DISTANCE= PUSH_SPEED= INITIAL_RETRACT_SPEED= COOLING_SPEED= FINAL_SPEED=
+</code></pre></div></td></tr></table></div>
+<p>Add this G-Code to your filament settings in <code>Advanced</code>:</p>
+<p><a class="glightbox" href="../../assets/images/slicer/slicer10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/slicer/slicer10.png" /></a></p>
+</li>
+</ol>
 
 
 
@@ -1946,7 +1988,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 20, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 23, 2024</span>
   </span>
 
     
