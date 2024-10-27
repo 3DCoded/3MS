@@ -25,7 +25,7 @@ cd ~
 mv KlipperScreen KlipperScreen.old
 git clone https://github.com/3DCoded/KlipperScreen-3MS KlipperScreen
 cd ~/KlipperScreen
-./KlipperScreen/scripts/KlipperScreen-install.sh
+./scripts/KlipperScreen-install.sh
 ```
 
 Restart KlipperScreen.
