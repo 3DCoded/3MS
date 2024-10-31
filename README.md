@@ -12,6 +12,14 @@ The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial *
 
 <img src="logo.png" alt="drawing" width="200"/>
 
+## Happy Hare Migration
+
+In the next few weeks to months, the 3MS will be migrated to run on [Happy Hare](https://github.com/moggieuk/Happy-Hare) firmware. This will add many new features and make the 3MS more relaible. 
+
+Here are a couple things to keep in mind to make the transition from the current software to Happy Hare as smooth as possible:
+
+- New users should use the [BTT MMU Board](https://3dcoded.github.io/3MS/setup/controllers/bttmmb/) setup, as this is natively supported by Happy Hare.
+- Existing 3MS mainboards configurations will be converted to be compatible with Happy Hare, but the MMU board is still recommended.
 
 ## Documentation
 
