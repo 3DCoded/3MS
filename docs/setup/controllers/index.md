@@ -15,6 +15,12 @@ The 3MS works on multiple different controllers.
 
 Choose one of the following supported controllers (a checked box indicates it is fully tested, and an empty box indicates testers wanted):
 
+- [X] [BTT MMB (4 colors)](bttmmb.md)
+
+    !!! success "Recommended"
+
+---
+
 - [X] [SKR Mini E3 V2.0 (4 colors)](skrminie3v2.md)
 - [X] [Einsy RAMBo (main MCU) with SKR Mini E3 V2.0 (3ms MCU)](einsyrambo-skrminie3v2.md)
 
@@ -22,7 +28,6 @@ Choose one of the following supported controllers (a checked box indicates it is
     
 - [X] [Geetech A30T](geetech-a30t.md)
 - [ ] [SKR Pico (4 colors)](skrpico.md)
-- [ ] [BTT MMB (4 colors)](bttmmb.md)
 - [ ] [Zonestar ZM384 (main MCU) (4 colors)](zm384main.md)
 - [ ] [Mini RAMBo (4 colors)](minirambo.md)
 - [ ] [BTT Octopus (main MCU) (4 colors)](bttoctopusmain.md)
