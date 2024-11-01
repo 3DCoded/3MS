@@ -13,6 +13,7 @@ mkdocs-git-revision-date-localized-plugin = "*"
 mkdocs-spellcheck = "*"
 codespell = "*"
 symspellpy = "*"
+termynal = "*"
 
 [dev-packages]
 

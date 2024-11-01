@@ -3,6 +3,7 @@ site_url: https://3dcoded.github.io/3ms
 repo_url: https://github.com/3dcoded/3ms
 plugins:
   - search
+  - termynal
   # - spellcheck:
   #     backends:
   #     - symspellpy
@@ -146,5 +147,6 @@ nav:
     - TPU with Dual Drive 3MS Extruder: experimental/dualdrivetpu.md
     - Speed Limiting for TPU: experimental/speedlimit.md
   - flowchart.md
+
 extra_css:
   - stylesheets/extra.css
