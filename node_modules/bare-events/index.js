@@ -330,3 +330,7 @@ exports.forward = function forward (from, to, names, opts = {}) {
       }
     })
 }
+
+exports.listenerCount = function listenerCount (emitter, name) {
+  return emitter.listenerCount(name)
+}

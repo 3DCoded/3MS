@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "puppeteer": "^23.0.2"
+    "proxy-agent": "^6.4.0",
+    "puppeteer": "^23.6.1"
   }
 }

@@ -4,7 +4,7 @@
  * The module can be accessed using:
  *
  * ```js
- * const tls = require('node:tls');
+ * import tls from 'node:tls';
  * ```
  * @see [source](https://github.com/nodejs/node/blob/v22.x/lib/tls.js)
  */
@@ -843,6 +843,7 @@ declare module "tls" {
         ciphers?: string | undefined;
         /**
          * Name of an OpenSSL engine which can provide the client certificate.
+         * @deprecated
          */
         clientCertEngine?: string | undefined;
         /**
@@ -885,12 +886,14 @@ declare module "tls" {
         /**
          * Name of an OpenSSL engine to get private key from. Should be used
          * together with privateKeyIdentifier.
+         * @deprecated
          */
         privateKeyEngine?: string | undefined;
         /**
          * Identifier of a private key managed by an OpenSSL engine. Should be
          * used together with privateKeyEngine. Should not be set together with
          * key, because both options define a private key in different ways.
+         * @deprecated
          */
         privateKeyIdentifier?: string | undefined;
         /**
@@ -1000,8 +1003,8 @@ declare module "tls" {
      * The following illustrates a simple echo server:
      *
      * ```js
-     * const tls = require('node:tls');
-     * const fs = require('node:fs');
+     * import tls from 'node:tls';
+     * import fs from 'node:fs';
      *
      * const options = {
      *   key: fs.readFileSync('server-key.pem'),
@@ -1046,8 +1049,8 @@ declare module "tls" {
      *
      * ```js
      * // Assumes an echo server that is listening on port 8000.
-     * const tls = require('node:tls');
-     * const fs = require('node:fs');
+     * import tls from 'node:tls';
+     * import fs from 'node:fs';
      *
      * const options = {
      *   // Necessary only if the server requires client certificate authentication.
