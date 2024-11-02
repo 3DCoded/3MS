@@ -36,12 +36,37 @@ Each configuration folder uses the following naming scheme:
 ### Setting Up Other Controllers
 
 1. **Configuration Folder:** To configure a 3MS controller that Happy Hare doesn't natively support, open the corresponding folder for the controller's name (e.g. `MMU_0_3_btt_skr_pico`).
-2. **Copy Files:** In the configuration folder, there are two files:
+2. **Locate Files:** In the configuration folder, there are two files:
 
-- `mmu.cfg`
-- `mmu_hardware.cfg`
+    - `mmu.cfg`
+    - `mmu_hardware.cfg`
 
-Copy those two files into your `mmu/base` folder, replacing the two existing files. 
+3. Copy the `mmu.cfg` file into your `mmu/base` configuration folder, replacing the existing file.
+4. Open the controller's `mmu_hardware.cfg` and copy its contents.
+5. In your `mmu/base/mmu_hardware.cfg` file, replace the `GEAR` section with the text you copied.
+
+    The `GEAR` section starts with:
+    ```
+    # FILAMENT DRIVE GEAR STEPPER(S)  --------------------------------------------------------------------------------------
+    #  ██████╗ ███████╗ █████╗ ██████╗ 
+    # ██╔════╝ ██╔════╝██╔══██╗██╔══██╗
+    # ██║  ███╗█████╗  ███████║██████╔╝
+    # ██║   ██║██╔══╝  ██╔══██║██╔══██╗
+    # ╚██████╔╝███████╗██║  ██║██║  ██║
+    #  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
+    ```
+
+    and ends right **before**:
+    ```
+    # SERVOS ---------------------------------------------------------------------------------------------------------------
+    # ███████╗███████╗██████╗ ██╗   ██╗ ██████╗ ███████╗
+    # ██╔════╝██╔════╝██╔══██╗██║   ██║██╔═══██╗██╔════╝
+    # ███████╗█████╗  ██████╔╝██║   ██║██║   ██║███████╗
+    # ╚════██║██╔══╝  ██╔══██╗╚██╗ ██╔╝██║   ██║╚════██║
+    # ███████║███████╗██║  ██║ ╚████╔╝ ╚██████╔╝███████║
+    # ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝   ╚═════╝ ╚══════╝
+    ```
+
 
 Your 3MS is now configured with Happy Hare.
 
