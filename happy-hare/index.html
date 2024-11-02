@@ -1664,13 +1664,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-controllers" class="md-nav__link">
+  <a href="#configuring-other-controllers" class="md-nav__link">
     <span class="md-ellipsis">
-      Other Controllers
+      Configuring Other Controllers
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Other Controllers">
+    <nav class="md-nav" aria-label="Configuring Other Controllers">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1692,9 +1692,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#configuring-other-controllers" class="md-nav__link">
+  <a href="#setting-up-other-controllers" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuring Other Controllers
+      Setting Up Other Controllers
     </span>
   </a>
   
@@ -1741,43 +1741,45 @@
 <p>Follow this guide to install Happy Hare firmware and set it up with your 3MS. </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>This guide will go through the bare minimum setup required to set up a functional 3MS. It is <strong>highly</strong> recommended that you read the official Happy Hare documentation available <a href="https://github.com/moggieuk/Happy-Hare/wiki">here</a>.</p>
+<p>This guide will go through the bare minimum setup required to set up a functional 3MS. It is <strong>highly</strong> recommended that you read the <a href="https://github.com/moggieuk/Happy-Hare/wiki">official Happy Hare documentation</a>.</p>
 </div>
 <h2 id="installation">Installation</h2>
-<p>First, follow the Happy Hare installation instructions available <a href="https://github.com/moggieuk/Happy-Hare/wiki/Installation">here</a>. In the installation wizard, select <strong><code>3MS</code></strong> as the MMU type.</p>
-<p>If you are using one of the Happy Hare supported controllers, Happy Hare will automatically set up the hardware configuration for you.</p>
-<h2 id="other-controllers">Other Controllers</h2>
+<p>First, follow the Happy Hare installation instructions available <a href="https://github.com/moggieuk/Happy-Hare/wiki/Installation">here</a>. When prompted in the installation wizard, select <strong><code>3MS</code></strong> as the MMU type.</p>
+<p>If you are using one of the natively supported controllers, Happy Hare will automatically set up the hardware configuration for you.</p>
+<h2 id="configuring-other-controllers">Configuring Other Controllers</h2>
 <p>If you are using another controller, you can use one of the 3MS controller configurations available <a href="https://github.com/3DCoded/3MS/tree/main/happy-hare/configurations">here</a>. </p>
 <h3 id="naming-scheme">Naming Scheme</h3>
-<p>The naming scheme of the configurations is as follows:</p>
+<p>Each configuration folder uses the following naming scheme:</p>
 <ol>
-<li>The first words are the MCU name. If it is <code>MMU</code>, this is an external mainboard. If it is <code>MAIN</code>, it is using your printer's existing mainboard.</li>
-<li>The numbers are the tool numbers. If this is your first MMU controller board, look for one that starts with <code>0</code>. If this is an additional MMU controller board (you are adding to an existing 3MS), the first number should be one more than the last number of your previous controller. This allows for stacking 3MS controllers.</li>
-<li>The last part of the name is the name of the mainboard itself.</li>
+<li><strong>MCU name:</strong><ul>
+<li><strong><code>MMU</code></strong>: external mainboard</li>
+<li><strong><code>MAIN</code></strong>: your printer's existing mainboard</li>
+</ul>
+</li>
+<li><strong>Tool numbers:</strong> The first number should be <code>0</code> for a new setup, or be one higher than your previous controller's last tool number if adding to an existing 3MS.</li>
+<li><strong>Mainboard name:</strong> Specifies the controller model, e.g. <code>btt_skr_pico</code>.</li>
 </ol>
 <h3 id="examples">Examples</h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>MMU_0_3_btt_skr_pico
-</code></pre></div></td></tr></table></div>
-<p>This is an external SKR Pico controlling four tools numbered <code>0</code> to <code>3</code>.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>MMU_0_6_gtm32_103_v1
-</code></pre></div></td></tr></table></div>
-<p>This is an external GTM32 103 V1 controlling seven tools numbered <code>0</code> to <code>6</code>.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>MAIN_0_3_btt_octopus
-</code></pre></div></td></tr></table></div>
-<p>This is an internal BTT Octopus controlling four tools numbered <code>0</code> to <code>3</code>.</p>
-<h3 id="configuring-other-controllers">Configuring Other Controllers</h3>
-<p>To configure a 3MS controller that Happy Hare doesn't natively support, open the corresponding folder for the controller's name. In this example, <code>MMU_0_3_btt_skr_pico</code> will be used.</p>
-<p>In the <code>MMU_0_3_btt_skr_pico</code> folder, there are two files:</p>
-<ul>
-<li><code>mmu.cfg</code></li>
+<p><code>MMU_0_3_btt_skr_pico</code>: External SKR Pico controlling four tools numbered <code>0</code> to <code>3</code>.</p>
+<p><code>MMU_0_6_gtm32_103_v1</code>: External GTM32 103 V1 controlling seven tools numbered <code>0</code> to <code>6</code>.</p>
+<p><code>MAIN_0_3_btt_octopus</code>: Internal BTT Octopus controlling four tools numbered <code>0</code> to <code>3</code>.</p>
+<h3 id="setting-up-other-controllers">Setting Up Other Controllers</h3>
+<ol>
+<li><strong>Configuration Folder:</strong> To configure a 3MS controller that Happy Hare doesn't natively support, open the corresponding folder for the controller's name (e.g. <code>MMU_0_3_btt_skr_pico</code>).</li>
+<li>
+<p><strong>Copy Files:</strong> In the configuration folder, there are two files:</p>
+</li>
+<li>
+<p><code>mmu.cfg</code></p>
+</li>
 <li><code>mmu_hardware.cfg</code></li>
-</ul>
+</ol>
 <p>Copy those two files into your <code>mmu/base</code> folder, replacing the two existing files. </p>
 <p>Your 3MS is now configured with Happy Hare.</p>
 <hr />
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>To finish setting up the 3MS and your printer, you will can follow Happy Hare's documentation available <a href="https://github.com/moggieuk/Happy-Hare/wiki">here</a>.</p>
+<p>To finish setting up the 3MS and your printer, you can follow <a href="https://github.com/moggieuk/Happy-Hare/wiki">Happy Hare's official documentation</a>.</p>
 </div>
 
 
