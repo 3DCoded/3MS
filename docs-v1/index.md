@@ -89,7 +89,18 @@ To use the 3MS, your setup has to meet the following requirements:
 
 ## How it works
 
-!!! info "TODO"
+Here is a example step by step of what goes on during a single 3MS toolchange from T0 to T1:
+
+1. The slicer performs tip shaping and filament unloading.
+2. 3MS unloads T0 by 200mm at 4500mm/min (75mm/s).
+3. T0 is desynced from the extruder.
+4. Filament unloading is verified.
+5. T1 is synced with the extruder.
+6. 3MS loads T1 by 210mm at 4500mm/min.
+7. Filament loading is verified.
+8. The printer loads the filament to the nozzle.
+
+For more detail about the Tx command, see [Flowchart](flowchart.md).
 
 Think of the 3MS as an extension to your current extruder's length. It allows for switching filaments without compromising any of the benefits of your printer's extruder.
 
@@ -103,6 +114,6 @@ To get started with the 3MS, see the [Master Instructions](instructions.md).
 
 ## What about the 3DChameleon?
 
-Several months ago, I created a klipper plugin for the 3DChameleon after purchasing a unit. While my Chameleon may have worked if I had tuned it further, I gave up after half a year with only partial success. I am still open to pull requests for **[3dchameleon-klipper](https://github.com/3dcoded/3dchameleon-klipper)**, but I won't be able to test it myself anymore.
+I recently created a klipper plugin for the 3DChameleon after purchasing a unit. I'm sure my Chameleon could have worked if I had tuned it further, but after several months with only partial success, I gave up. I am still open to pull requests for **[3dchameleon-klipper](https://github.com/3dcoded/3dchameleon-klipper)** and will do my best to respond to issues there, but I won't be able to test it myself anymore.
 
-If you are having reliability issues with the 3DChameleon, see [3DChameleon Conversion](3dchameleon.md).
+If you are having reliability issues with the 3DChameleon, see [3DChameleon Conversion](3dchameleon.md)

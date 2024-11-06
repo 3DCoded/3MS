@@ -4,7 +4,7 @@ repo_url: https://github.com/3dcoded/3ms
 docs_dir: docs-v1
 plugins:
   - search
-  - termynal
+  - macros
   # - spellcheck:
   #     backends:
   #     - symspellpy
