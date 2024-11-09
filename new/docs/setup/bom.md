@@ -9,7 +9,16 @@ comments: true
 
 First, choose the number of filament units you want. Each filament unit lets you print with an additional filament. Two filament units are the minimum. You can add or remove filament units after building, but the BOM and configuration will vary based on how many filament units you want.
 
-## Controller BOMs
+## BOM Generator
+
+<form action="">
+Number!!! <input type="number" />
+<input type="submit" />
+</form>
+
+## Manual BOM
+
+### Controller BOMs
 
 Choose the BOM for your chosen controller from the list below:
 
@@ -21,7 +30,7 @@ Choose the BOM for your chosen controller from the list below:
 - [Mini RAMBo](minirambo.md)
 - [Geetech A30T](geetech-a30t.md#bom)
 
-## Filament Unit BOMs
+### Filament Unit BOMs
 
 For each filament unit, purchase this BOM:
 

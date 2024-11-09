@@ -16,11 +16,6 @@ The basic steps this guide will follow are:
 1. [Getting a BOM](#1-getting-a-bom)
 2. [Assembling your 3MS](#2-assembling-your-3ms)
 3. [Configuring your 3MS](#3-configuring-your-3ms)
-4. [Stepper motor setup](#4-stepper-motor-setup)
-5. [Slicer setup](#5-slicer-setup)
-6. [First print](#6-first-print)
-7. [Troubleshooting](#7-troubleshooting)
-8. [Updating](#8-updating)
 
 ## 0. Explanations
 
@@ -61,54 +56,5 @@ Follow [Assembly](assembly.md) to assemble your 3MS.
 
 ## 3. Configuring your 3MS
 
-1. Install Klipper firmware onto the MCU by following [Firmware](firmware.md).
-2. Install [DynamicMacros](https://github.com/3dcoded/DynamicMacros), following instructions from [here](https://3dcoded.github.io/DynamicMacros/setup/).
-3. Follow [Installation](install.md) to install the 3MS configuration.
-4. Follow [Filament Sensor](fsensor.md) to setup your filament sensor with the 3MS.
+Set up Happy Hare firmware following [this guide](happy-hare.md).
 
-## 4. Stepper motor setup
-
-Follow [Stepper Setup](steppers.md) to setup and calibrate each of your filament units.
-
-## 5. Slicer setup
-
-Follow [Slicer Setup](slicer.md) to setup your slicer for the 3MS.
-
-## 6. First print
-
-Follow [First Print](firstprint.md) to create your first multimaterial print with the 3MS.
-
-## 7. Troubleshooting
-
-Check [Troubleshooting](troubleshooting/index.md) to find guides to troubleshoot your 3MS.
-
-## 8. Updating
-
-To update the 3MS configuration, go to the Update Manager in Mainsail/Fluidd and refresh the updates. 
-
-![](updating1.png)
-
-Next, find the "mmms" entry in the list. If there is an "Update" button next to it, click it and begin updating. 
-
-After updating, in your terminal, run:
-
-```sh
-sh ~/3MS/install.sh
-```
-
-This will install the new 3MS configuration. Next, restart Klipper:
-
-!!! info
-    It is important to restart the Klipper **service**, and not just run the `RESTART` command.
-
-Run this command in your terminal:
-
-```sh
-sudo service klipper restart
-```
-
-## 9. Tuning and Optimizations
-
-After your 3MS is installed, it's time to tune and optimize it.
-
-The best starting place for this is in the [Materials Reference](materials.md).

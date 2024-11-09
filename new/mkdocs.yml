@@ -1,7 +1,6 @@
 site_name: 3MS
 site_url: https://3dcoded.github.io/3ms
 repo_url: https://github.com/3dcoded/3ms
-docs_dir: docs-v1
 plugins:
   - search
   - macros
@@ -12,8 +11,8 @@ plugins:
   #     ignore_code: yes
   #     known_words: known_words.txt
   - autolinks
-  - git-revision-date-localized:
-      enable_creation_date: true
+  # - git-revision-date-localized:
+      # enable_creation_date: true
   - glightbox:
       touchNavigation: true
       loop: false
@@ -97,9 +96,9 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 nav:
-  - Home: index-v1.md
+  - Home: index.md
   - compare.md
-  - instructions-v1.md
+  - instructions.md
   - Setup:
     - BOM: setup/bom.md
     - Controllers:
