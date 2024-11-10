@@ -12,11 +12,9 @@ The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial *
 
 <img src="logo.png" alt="drawing" width="200"/>
 
-## Happy Hare Migration
+## Happy Hare
 
-In the next few weeks to months, the 3MS will be migrated to run on [Happy Hare](https://github.com/moggieuk/Happy-Hare) firmware. This will add many new features and make the 3MS more relaible. 
-
-Here are a couple things to keep in mind to make the transition from the current software to Happy Hare as smooth as possible:
+**[Happy Hare v3 Beta is RELEASED!](https://github.com/3DCoded/3MS/issues/29)** 
 
 - New users should use the [BTT MMU Board](https://3dcoded.github.io/3MS/setup/controllers/bttmmb/) setup, as this is natively supported by Happy Hare.
 - Existing 3MS mainboards configurations will be converted to be compatible with Happy Hare, but the MMU board is still recommended.
@@ -87,14 +85,7 @@ With that said, there are a few reasons why you might **not** want to/be able to
 
 ## How it works
 
-Here is a example step by step of what goes on during a single 3MS toolchange from T0 to T1:
-
-1. Tip shaping and filament unload is performed by the slicer
-2. The 3MS unloads T0 200mm at 4500mm/min (75mm/s)
-3. The 3MS desyncs T0 from the extruder
-4. The 3MS syncs T1 with the extruder
-3. The 3MS loads T1 210mm at 4500mm/min
-5. The printer loads the filament to the nozzle
+Think of the 3MS as an extension to your current extruder's length. It allows for switching filaments without compromising any of the benefits of your printer's extruder.
 
 The 3MS's motors work together with your printer's extruder. This way, there won't be any additional resistance from pulling the filament through a disabled extruder. Also, unloads and loads to/from the printer's extruder are fully synchronized with the 3MS. This allows for even faster toolchanges!
 
