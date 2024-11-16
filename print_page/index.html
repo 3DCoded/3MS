@@ -666,11 +666,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup/controllers/mellowflyd7.md" class="md-nav__link">
+      <a href="../setup/controllers/mellowflyd7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    None
+    Mellow Fly D7
   </span>
   
 
@@ -2467,7 +2467,7 @@
 <ul>
 <li><a href="#setup-controllers-skrminie3v2-bom">BTT SKR Mini E3 V2</a></li>
 <li><a href="#setup-controllers-skrpico-bom">BTT SKR Pico</a></li>
-<li><a href="#setup-bom-mellowflyd7.md-bom">Mellow Fly D7</a></li>
+<li><a href="#setup-controllers-mellowflyd7-bom">Mellow Fly D7</a></li>
 <li><a href="#setup-controllers-bttmmb-bom">BTT MMB</a></li>
 <li><a href="#setup-controllers-bttoctopusmain-bom">BTT Octopus (main MCU)</a></li>
 <li><a href="#setup-controllers-zm384main">Zonestar ZM384 (main MCU)</a></li>
@@ -2542,7 +2542,7 @@
 <li class="task-list-item">
 <p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-geetech-a30t">Geetech A30T</a></p>
 </li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-mellowflyd7.md">Mellow Fly D7</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-mellowflyd7">Mellow Fly D7</a></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-skrpico">SKR Pico (4 colors)</a></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-zm384main">Zonestar ZM384 (main MCU) (4 colors)</a></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-minirambo">Mini RAMBo (4 colors)</a></li>
@@ -3177,7 +3177,107 @@
 </li>
 </ol>
 <p>If the RAMBo lights up, you wired it correctly!</p>
-<p>Finally, plug the RAMBo into your Klipper host with the cable that came with it.</p></section><section class="print-page" id="setup-controllers-geetech-a30t"><h1 id="setup-controllers-geetech-a30t-geetech-a30t">Geetech A30T</h1>
+<p>Finally, plug the RAMBo into your Klipper host with the cable that came with it.</p></section><section class="print-page" id="setup-controllers-mellowflyd7"><h1 id="setup-controllers-mellowflyd7-mellow-fly-d7">Mellow Fly D7</h1>
+<p><strong>Max filament units: 6</strong></p>
+<p><strong>MCU Name: <code>3ms</code></strong></p>
+<h2 id="setup-controllers-mellowflyd7-bom">BOM</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mellow Fly D7</td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Duponts</td>
+<td>$9.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
+<td>These wires are only sufficient to run steppers, not heaters</td>
+</tr>
+<tr>
+<td>12V PSU</td>
+<td>$7.39</td>
+<td>1</td>
+<td><a href="https://a.co/d/gLC1eli">Amazon</a></td>
+<td>This PSU is only sufficient to run steppers, not heaters</td>
+</tr>
+</tbody>
+</table>
+<h2 id="setup-controllers-mellowflyd7-wiring">Wiring</h2>
+<p>Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:</p>
+<table>
+<thead>
+<tr>
+<th>Filament Unit #</th>
+<th>Motor Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>X</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Z</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Z1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Z2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>E0</td>
+</tr>
+</tbody>
+</table>
+<p>Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)</p>
+<ol>
+<li>Plug the red wire into the positive terminal of the screw terminals</li>
+<li>
+<p>Plug the black wire into the negative terminal of the screw terminals</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>These dupont cables are too thin to run much more than the stepper motors. If you run a heater or other power-intensive device off of the board board, the duponts and/or PSU can melt/catch fire. To reduce the risk of this, you can double up on the duponts or get thicker wires.</p>
+</div>
+</li>
+<li>
+<p>Using the markings on the board, plug the red wire into the positive terminal on the board</p>
+</li>
+<li>Using the markings on the board, plug the black wire into the negative terminal on the board</li>
+<li>
+<p>Verify all connections</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the wires are plugged into the wrong place, or swapped polarities, your board, Stepper motors, and/or PSU can be badly damaged.</p>
+</div>
+</li>
+<li>
+<p>Plug the PSU screw terminals into the PSU wire</p>
+</li>
+</ol>
+<p>If the board lights up, you wired it correctly!</p>
+<p>Finally, plug the board into your Klipper host with the cable that came with it.</p></section><section class="print-page" id="setup-controllers-geetech-a30t"><h1 id="setup-controllers-geetech-a30t-geetech-a30t">Geetech A30T</h1>
 <p><strong>Contributed by <a href="https://github.com/ImChrono">@ImChrono</a></strong></p>
 <hr />
 <p><strong>Max filament units: 7</strong></p>
@@ -3312,7 +3412,7 @@
 <ul>
 <li><a href="#setup-controllers-skrminie3v2-wiring">SKR Mini E3 V2</a></li>
 <li><a href="#setup-controllers-skrpico-wiring">SKR Pico</a></li>
-<li><a href="#setup-assembly-mellowflyd7.md-wiring">Mellow Fly D7</a></li>
+<li><a href="#setup-controllers-mellowflyd7-wiring">Mellow Fly D7</a></li>
 <li><a href="#setup-controllers-bttmmb-wiring">BTT MMB</a></li>
 <li><a href="#setup-controllers-bttoctopusmain-wiring">BTT Octopus (main MCU)</a></li>
 <li><a href="#setup-controllers-einsyrambo-skrminie3v2">Einsy RAMBo (main MCU) with SKR Mini E3 V2</a></li>
