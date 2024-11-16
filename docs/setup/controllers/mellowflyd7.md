@@ -4,7 +4,7 @@ comments: true
 
 # Mellow Fly D7
 
-**Max filament units: 6**
+**Max filament units: 7**
 
 **MCU Name: `3ms`**
 
