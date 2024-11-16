@@ -27,6 +27,7 @@ Choose one of the following supported controllers (a checked box indicates it is
     !!! warning "Expert modification"
     
 - [X] [Geetech A30T](geetech-a30t.md)
+- [ ] [Mellow Fly D7](mellowflyd7.md)
 - [ ] [SKR Pico (4 colors)](skrpico.md)
 - [ ] [Zonestar ZM384 (main MCU) (4 colors)](zm384main.md)
 - [ ] [Mini RAMBo (4 colors)](minirambo.md)
