@@ -9,6 +9,8 @@ The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial *
 
 <img src="./assets/logo.png" alt="drawing" width="200"/>
 
+[![Discord Shield](https://discord.com/api/guilds/1307104511663411210/widget.png?style=banner2)](https://discord.gg/ekqxDhdGCg)
+
 ## Inspiration
 
 - Prusa MMU1
