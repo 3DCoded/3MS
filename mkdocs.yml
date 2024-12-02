@@ -1,9 +1,9 @@
 site_name: 3MS
-site_url: https://3dcoded.github.io/3ms
-repo_url: https://github.com/3dcoded/3ms
+site_url: https://3dcoded.github.io/3MS
+repo_url: https://github.com/3dcoded/3MS
 plugins:
   - search
-  - termynal
+  - macros
   # - spellcheck:
   #     backends:
   #     - symspellpy
@@ -11,8 +11,8 @@ plugins:
   #     ignore_code: yes
   #     known_words: known_words.txt
   - autolinks
-  - git-revision-date-localized:
-      enable_creation_date: true
+  # - git-revision-date-localized:
+      # enable_creation_date: true
   - glightbox:
       touchNavigation: true
       loop: false
@@ -80,6 +80,7 @@ theme:
       - search.highlight
       - search.share
       - content.code.copy
+      - content.tabs.link
   name: material
   palette: 
     # Palette toggle for light mode
@@ -102,10 +103,10 @@ nav:
   - Setup:
     - BOM: setup/bom.md
     - Controllers:
+      - setup/controllers/bttmmb.md
       - setup/controllers/index.md
       - setup/controllers/skrminie3v2.md
       - setup/controllers/skrpico.md
-      - setup/controllers/bttmmb.md
       - setup/controllers/bttoctopusmain.md
       - setup/controllers/einsyrambo-skrminie3v2.md
       - setup/controllers/zm384main.md
@@ -113,41 +114,15 @@ nav:
       - setup/controllers/mellowflyd7.md
       - setup/controllers/geetech-a30t.md
     - setup/assembly.md
-    - setup/firmware.md
-    - setup/slicer.md
-    - setup/firstprint.md
-    - setup/klipperscreen.md
-    - setup/k1.md
-  - Configuration:
-    - configuration/index.md
-    - configuration/install.md
-    - configuration/steppers.md
-    - configuration/fsensor.md
-    - configuration/macros.md
-  - Guides:
-    - guides/materials.md
-    - guides/tipshaping.md
-    - guides/notip.md
-    - guides/manualcutter.md
-    - guides/bypass.md
-    - guides/endless.md
+    - setup/calibration.md
     - guides/3dchameleon.md
   - Contributing:
     - contributing/index.md
     - contributing/devsetup.md
-    - contributing/supportcontrollers.md
-  - Troubleshooting:
-    - troubleshooting/index.md
-    - troubleshooting/skipping.md
-    - troubleshooting/falsealarm.md
-    - troubleshooting/underextrusion.md
-    - troubleshooting/failedloadunload.md
-  - Experimental:
-    - experimental/index.md
-    - experimental/rapidtip.md
-    - TPU with Dual Drive 3MS Extruder: experimental/dualdrivetpu.md
-    - Speed Limiting for TPU: experimental/speedlimit.md
-  - flowchart.md
 
 extra_css:
   - stylesheets/extra.css
+  - assets/css/calibration.css
+
+extra_javascript:
+  - assets/javascript/calibration.js

@@ -9,31 +9,39 @@ Follow this guide to assemble your 3MS.
 
 ## Printed Parts
 
-An optional board enclosure for the SKR Mini E3 is available [here](https://www.printables.com/model/459809-bigtreetech-skr-mini-e3-v3-enclosure).
+### Mounting
 
-Additionally, an optional universal mount for the MK8 extruder using M3 bolts is available [here](../assets/stls/mk8m3.stl). Note that this requires 2-4 M3 bolts and a place to screw the bolts into.
+- **[Univeral M3 Mount for Extruder](../assets/stls/mk8m3.stl)** Note that this requires 2-4 M3 bolts and a place to screw the bolts into (like an aluminum extrusion with T-nuts).
+- **[3MS Box](https://www.printables.com/model/1067703-wip-3ms-mmu-using-btt-mmb)** This is designed for four filament units and a BTT MMB. Designed by **chadakken**.
 
-~~Finally, you will need to print enough of [these](https://www.printables.com/model/541678-bambu-ams-no-catch-y-splitter-pc4-m10) Y splitters for the filament.~~
+### Other
 
-The Y-splitter available [here](https://www.printables.com/model/122982-mini-splitter-v2-for-mmu21s-mod-pc4-01-fitting-ver) is now recommended.
+- **[4-way Y-splitter](https://www.printables.com/model/1042279-no-catch-4-way-y-splitter-pc4-m10)** designed by **ImChrono**.
 
-## MK8 Assembly
+## Filament Units Assembly
 
-Next, assemble the MK8 extruders onto the NEMA17 motors using the provided instructions that came with them. If you use the mount provided above, make sure it is in between the MK8 and NEMA17. 
+1. If using any mounting parts, place it on the face of your NEMA17 motor.
+2. Assemble the MK8 extruders using the instructions that came with them.
+3. Repeat for all filament units.
 
 ## Wiring
 
 !!! note "Note for Certain Printers"
-    If your printer has Klipper running internally (not on an external computer), the controller (if not a main MCU config) is plugged into a USB port on the printer itself.
+    If your printer has Klipper running internally (not on an external computer like a Raspberry Pi), the controller (if not a main MCU config) is plugged into a USB port on the printer itself.
 
 Follow one of the following guides based on your controller:
+
+**Recommended: [BTT MMB](bttmmb.md#wiring)**
+
+---
+
+**Other Controllers:**
 
 - [SKR Mini E3 V2](skrminie3v2.md#wiring)
 - [SKR Pico](skrpico.md#wiring)
 - [Mellow Fly D7](mellowflyd7.md#wiring)
-- [BTT MMB](bttmmb.md#wiring)
 - [BTT Octopus (main MCU)](bttoctopusmain.md#wiring)
 - [Einsy RAMBo (main MCU) with SKR Mini E3 V2](einsyrambo-skrminie3v2.md)
 - [Zonestar ZM384 (main MCU)](zm384main.md)
-- [Mini RAMBo](minirambo.md)
+- [Mi ni RAMBo](minirambo.md)
 - [Geetech A30T](geetech-a30t.md)

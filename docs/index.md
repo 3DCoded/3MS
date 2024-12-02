@@ -3,13 +3,18 @@ title: 3MS Home
 icon: material/home
 ---
 
-# Welcome to the 3MS Documentation
+# Welcome to the 3MS BETA Documentation
 
 The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial **S**ystem
 
 <img src="./assets/logo.png" alt="drawing" width="200"/>
 
-[![Discord Shield](https://discord.com/api/guilds/1307104511663411210/widget.png?style=banner2)](https://discord.gg/ekqxDhdGCg)
+!!! info "Discord"
+    Join the 3MS channel at the Happy Hare Discord server [here](https://discord.gg/8nTTEZeuvb).
+
+    Join the 3MS Discord:
+
+    [![Discord Shield](https://discord.com/api/guilds/1307104511663411210/widget.png?style=banner2)](https://discord.gg/ekqxDhdGCg)
 
 ## Inspiration
 
@@ -73,7 +78,6 @@ Here are a few reasons:
 - **Scalable**: Easily expand the system to handle any number of filaments.
 - **Auto-Retries**: Automatic retries on failed tool changes to reduce downtime.
 - **No Filament Cutter Needed**: Achieve clean tool changes without the need for filament cutters.
-- **In Development: Rapid Tip Shaping**: Achieve even faster tool changes!
 
 With that said, there are a few reasons why you might **not** want to/be able to use the 3MS:
 
@@ -91,19 +95,6 @@ To use the 3MS, your setup has to meet the following requirements:
 
 ## How it works
 
-Here is a example step by step of what goes on during a single 3MS toolchange from T0 to T1:
-
-1. The slicer performs tip shaping and filament unloading.
-2. 3MS unloads T0 by 200mm at 4500mm/min (75mm/s).
-3. T0 is desynced from the extruder.
-4. Filament unloading is verified.
-5. T1 is synced with the extruder.
-6. 3MS loads T1 by 210mm at 4500mm/min.
-7. Filament loading is verified.
-8. The printer loads the filament to the nozzle.
-
-For more detail about the Tx command, see [Flowchart](flowchart.md).
-
 Think of the 3MS as an extension to your current extruder's length. It allows for switching filaments without compromising any of the benefits of your printer's extruder.
 
 The 3MS's motors work together with your printer's extruder. This way, there won't be any additional resistance from pulling the filament through a disabled extruder. Also, unloads and loads to/from the printer's extruder are fully synchronized with the 3MS. This allows for even faster toolchanges!
@@ -116,6 +107,6 @@ To get started with the 3MS, see the [Master Instructions](instructions.md).
 
 ## What about the 3DChameleon?
 
-I recently created a klipper plugin for the 3DChameleon after purchasing a unit. I'm sure my Chameleon could have worked if I had tuned it further, but after several months with only partial success, I gave up. I am still open to pull requests for **[3dchameleon-klipper](https://github.com/3dcoded/3dchameleon-klipper)** and will do my best to respond to issues there, but I won't be able to test it myself anymore.
+I recently created a klipper plugin for the 3DChameleon after purchasing a unit. I'm sure my Chameleon could have worked if I had tuned it further, but after several months with only partial success, I disassembled my 3DChameleon and created the 3MS. I am still open to pull requests for **[3dchameleon-klipper](https://github.com/3dcoded/3dchameleon-klipper)**, but I won't be able to test it myself anymore.
 
-If you are having reliability issues with the 3DChameleon, see [3DChameleon Conversion](3dchameleon.md)
+If you want to convert a 3DChameleon to a 3MS, see [3DChameleon Conversion](3dchameleon.md).

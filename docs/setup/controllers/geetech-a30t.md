@@ -1,5 +1,4 @@
 ---
-icon: material/check
 comments: true
 ---
 

@@ -7,12 +7,6 @@ comments: true
 
 Follow this guide to setup your system for development with the 3MS. 
 
-## Configuration Changes
-
-1. Fork the 3MS repository
-1. Create a new branch for your pull request (from the `main` branch)
-1. Develop changes in the new branch
-
 ## Documentation Changes
 
 1. Fork the 3MS repository
