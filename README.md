@@ -14,15 +14,6 @@ The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial *
 
 [![Discord Shield](https://discord.com/api/guilds/1307104511663411210/widget.png?style=banner2&)](https://discord.gg/ekqxDhdGCg)
 
-## Happy Hare
-
-**[Happy Hare v3 Beta is RELEASED!](https://github.com/3DCoded/3MS/issues/29)** 
-
-#### Even though Happy Hare v3 is beta, it is strongly recommended to switch to Happy Hare firmware. See [3MS Quickstart](https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS) and [Beta Docs](https://3dcoded.github.io/3MS-docs).
-
-- New users should use the [BTT MMU Board](https://3dcoded.github.io/3MS/setup/controllers/bttmmb/) setup, as this is natively supported by Happy Hare.
-- Existing 3MS mainboards configurations will be converted to be compatible with Happy Hare, but the MMU board is still recommended.
-
 ## Documentation
 
 Documentation is available [here](https://3dcoded.github.io/3MS)
