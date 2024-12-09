@@ -104,15 +104,15 @@
     === "Minimalistic Mount"
         [Download](../../assets/stls/mk8m3.stl)
 
-        <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS-docs%2Fassets%2Fstls%2Fmk8m3.stl&color=blue&noborder=yes&clean=yes&shading=flat&bgcolor=transparent" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+        <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS%2Fassets%2Fstls%2Fmk8m3.stl&color=blue&noborder=yes&clean=yes&shading=flat&bgcolor=transparent" style="border:0;margin:0;width:100%;height:100%;"></iframe>
     === "Full Enclosure"
         Designed by [chadk](https://www.printables.com/@Chad_336665)
         
         [Printables Link](https://www.printables.com/model/1067703-wip-3ms-mmu-using-btt-mmb)
         
-        <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS-docs%2Fassets%2Fstls%2Fenclosure%2Fbottom-v6.stl&color=blue&bgcolor=transparent&noborder=yes&edges=no" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+        <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS%2Fassets%2Fstls%2Fenclosure%2Fbottom-v6.stl&color=blue&bgcolor=transparent&noborder=yes&edges=no" style="border:0;margin:0;width:100%;height:100%;"></iframe>
 
-        <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS-docs%2Fassets%2Fstls%2Fenclosure%2Ftop-v6.stl&color=blue&bgcolor=transparent&noborder=yes&edges=no" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+        <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS%2Fassets%2Fstls%2Fenclosure%2Ftop-v6.stl&color=blue&bgcolor=transparent&noborder=yes&edges=no" style="border:0;margin:0;width:100%;height:100%;"></iframe>
 
 - Choose either of the mounting/enclosure options on the left for your 3MS and print them out.
 </div>
@@ -124,7 +124,7 @@
 
     [Printables Link](https://www.printables.com/model/1042279-no-catch-4-way-y-splitter-pc4-m10)
 
-    <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS-docs%2Fassets%2Fstls%2F4ysplitter.stl&color=blue&bgcolor=transparent&noborder=yes&edges=no" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+    <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS%2Fassets%2Fstls%2F4ysplitter.stl&color=blue&bgcolor=transparent&noborder=yes&edges=no" style="border:0;margin:0;width:100%;height:100%;"></iframe>
 
 - Print this Y-splitter according to the instructions in its Printables page.
 </div>

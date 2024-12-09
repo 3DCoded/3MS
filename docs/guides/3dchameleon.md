@@ -6,9 +6,9 @@ Follow this guide to convert a 3DChameleon to a 3MS.
 
 | Name | Price | Quantity | Link | Notes |
 | - | - | - | - | - |
-| SKR Mini E3 V2 | $34.99 | 1 | [Amazon](https://a.co/d/0hgHU9JX) | |
+| BTT MMB | $34.99 | 1 | [BTT](https://biqu.equipment/products/bigtreetech-mmb?srsltid=AfmBOoponySi7shutNrn8sXQ4NCBiLPUvgYTROIgp_KaDdjZcKoXTYkT) | |
 Duponts | $9.99 | 1 | [Amazon](https://a.co/d/6QwGxhH) | These wires are only sufficient to run steppers, not heaters |
-| 12V PSU | $7.39 | 1 | [Amazon](https://a.co/d/gLC1eli) | This PSU is only sufficient to run steppers, not heaters |
+| 24V PSU | $12.99 | 1 | [Amazon](https://a.co/d/7JEXFkH) | This PSU is only sufficient to run steppers, not heaters |
 | MK8 Metal Extruder | $9.99 | 2 | [Amazon](https://a.co/d/0gJ1ghKj) | Alternatively, you can use [this](https://a.co/d/dbw7Wor) Dual-drive MK8 based extruder |
 
 The final cost of this upgrade is around $70.
