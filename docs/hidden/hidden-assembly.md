@@ -1,28 +1,134 @@
-# Assembly
+<link rel="stylesheet" href="../../assets/css/kits.css">
 
 
-###**Step 1** Connecting the Power Cables
+# 3MS Kit Assembly
 
-Choose **one** of the wiring options below.
+!!! info "This page is under construction"
+    This page is the assembly instructions for future 3MS kits. Instructions on this page will change, so don't follow it until 3MS Kits are officially released. Anything on this page is subject to change.
 
-=== "Option 1 (DCIN)"
-    ![](skrminie3v2assembly1.png)
-=== "Option 2 (POWER)"
-    ![](skrminie3v2assembly2.png)
+!!! tip
+    Even though each step only looks like it has one image, if you click on the image you can view several more images for each step.
 
-:red_circle: Attach the **positive** cable from the PSU to the *positive** port on the mainboard
+## Electronics Assembly
 
-:blue_circle: Attach the **negative** cable from the PSU to the **negative** port on the mainboard
+###**Step 1** Preparing the Power Cables
 
----
+<div class="grid cards" markdown>
+- ![](https://placehold.co/600x400?text=Prepare+Cables){data-gallery="prepPower"}
+    ![](https://placehold.co/600x400?text=Prepare+Cables+2){.hidden data-gallery="prepPower"}
 
-###**Step 2** Connecting the Stepper Motors
-![](skrminie3v2assembly3.png)
+- Strip both ends of the red and black power cables and twist the ends.
 
-:red_circle: Plug in the stepper for the first 3MS extruder (T0)
+    ---
 
-:green_circle: Plug in the stepper for the second 3MS extruder (T1)
+    :orange_circle: Use wire cutters that can strip 14AWG wire.
 
-:purple_circle: If applicable, plug in the stepper for the third 3MS extruder (T2)
+    :green_circle: Strip 5mm of insulation off of both ends of both wires.
 
-:blue_circle: If applicable, plug in the stepper for the fourth 3MS extruder (T3)
+    :blue_circle: Twist the ends of the stripped wires tightly.
+</div>
+
+###**Step 2** Connecting the Power Supply
+
+<div class="grid cards" markdown>
+- ![](https://placehold.co/600x400?text=Connect+PSU){data-gallery="connPSU"}
+    ![](https://placehold.co/600x400?text=Connect+PSU+2){.hidden data-gallery="connPSU"}
+
+- Insert both power cables into the power supply.
+    
+    ---
+
+    :orange_circle: Loosen the terminals with a phillips-head screwdriver.
+
+    :red_circle: Insert the **red** power cable into the **positive** PSU terminal.
+
+    :blue_circle: Insert the **black** power cable into the **negative** PSU terminal.
+
+    :green_circle: Tighten both terminals securely with a phillips-head screwdriver.
+</div>
+
+###**Step 3** Connecting the Control Board
+
+<div class="grid cards" markdown>
+- ![](https://placehold.co/600x400?text=Connect+Board){data-gallery="connBoard"}
+    ![](https://placehold.co/600x400?text=Connect+Board+2){.hidden data-gallery="connBoard"}
+
+- Insert both power cables into the control board.
+    
+    ---
+
+    :orange_circle: Locate the HVIN power input on the control board and loosen both terminals with a flat-head screwdriver.
+
+    :red_circle: Insert the **red** power cable into the **positive** HVIN terminal.
+
+    :blue_circle: Insert the **black** power cable into the **negative** HVIN terminal.
+
+    :green_circle: Tighten both terminals securely with a flat-head screwdriver.
+</div>
+
+###**Step 4** Adding Jumpers
+
+<div class="grid cards" markdown>
+- ![](https://placehold.co/600x400?text=Add+Jumpers){data-gallery="addJumpers"}
+    ![](https://placehold.co/600x400?text=Add+Jumpers+2){.hidden data-gallery="addJumpers"}
+
+- Install the VUSB and HVIN jumpers.
+    
+    ---
+
+    :orange_circle: Install the **VUSB** jumper.
+
+    :green_circle: For each stepper driver, select the **HVIN** input by installing a jumper on each driver.
+</div>
+
+###**Step 5** Install the Stepper Drivers
+
+<div class="grid cards" markdown>
+- ![](https://placehold.co/600x400?text=Add+Drivers){data-gallery="addDrivers"}
+    ![](https://placehold.co/600x400?text=Add+Drivers+2){.hidden data-gallery="addDrivers"}
+
+- Install all four EZ2209 stepper drivers.
+    
+    ---
+
+    :orange_circle: Install an EZ2209 into each stepper driver slot.
+</div>
+
+## Printed Parts
+
+###**Step 1** Extruder Mounts
+
+<div class="grid cards" markdown>
+- 
+
+    === "Minimalistic Mount"
+        [Download](../../assets/stls/mk8m3.stl)
+
+        <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS-docs%2Fassets%2Fstls%2Fmk8m3.stl&color=blue&noborder=yes&clean=yes&shading=flat&bgcolor=transparent" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+    === "Full Enclosure"
+        Designed by [chadk](https://www.printables.com/@Chad_336665)
+        
+        [Printables Link](https://www.printables.com/model/1067703-wip-3ms-mmu-using-btt-mmb)
+        
+        <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS-docs%2Fassets%2Fstls%2Fenclosure%2Fbottom-v6.stl&color=blue&bgcolor=transparent&noborder=yes&edges=no" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+
+        <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS-docs%2Fassets%2Fstls%2Fenclosure%2Ftop-v6.stl&color=blue&bgcolor=transparent&noborder=yes&edges=no" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+
+- Choose either of the mounting/enclosure options on the left for your 3MS and print them out.
+</div>
+
+###**Step 2** Y-Splitter
+
+<div class="grid cards" markdown>
+- Designed by [ImChrono](https://www.printables.com/@ImChrono_909974)
+
+    [Printables Link](https://www.printables.com/model/1042279-no-catch-4-way-y-splitter-pc4-m10)
+
+    <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS-docs%2Fassets%2Fstls%2F4ysplitter.stl&color=blue&bgcolor=transparent&noborder=yes&edges=no" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+
+- Print this Y-splitter according to the instructions in its Printables page.
+</div>
+
+## Hardware Assembly
+
+###**Step 1** Assemble Extruders

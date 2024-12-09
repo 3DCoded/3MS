@@ -3,7 +3,7 @@ title: 3MS Home
 icon: material/home
 ---
 
-# Welcome to the 3MS BETA Documentation
+# Welcome to the 3MS Documentation
 
 The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial **S**ystem
 
@@ -107,6 +107,6 @@ To get started with the 3MS, see the [Master Instructions](instructions.md).
 
 ## What about the 3DChameleon?
 
-I recently created a klipper plugin for the 3DChameleon after purchasing a unit. I'm sure my Chameleon could have worked if I had tuned it further, but after several months with only partial success, I disassembled my 3DChameleon and created the 3MS. I am still open to pull requests for **[3dchameleon-klipper](https://github.com/3dcoded/3dchameleon-klipper)**, but I won't be able to test it myself anymore.
+I recently created a klipper plugin for the 3DChameleon after purchasing a unit. I'm sure my Chameleon could have worked if I had tuned it further, but after several months with only partial success, I gave up. I am still open to pull requests for **[3dchameleon-klipper](https://github.com/3dcoded/3dchameleon-klipper)** and will do my best to respond to issues there, but I won't be able to test it myself anymore.
 
-If you want to convert a 3DChameleon to a 3MS, see [3DChameleon Conversion](3dchameleon.md).
+If you are having reliability issues with the 3DChameleon, see [3DChameleon Conversion](3dchameleon.md).

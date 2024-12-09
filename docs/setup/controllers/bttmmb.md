@@ -37,10 +37,16 @@ Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means tha
         These dupont cables are too thin to run much more than the stepper motors. If you run a heater or other power-intensive device off of the MMB board, the duponts and/or PSU can melt/catch fire. To reduce the risk of this, you can double up on the duponts or get thicker wires.
 
 3. Following this image, locate the HVIN and GND inputs (top left)
-![](bttmmbpins.jpg)
+
+    ![](bttmmbpins.jpg)
+
 4. Route the two wires inside closest to the HVIN and GND inputs
 5. Using the markings on the board, plug the red wire into the HVIN terminal on the MMB
 6. Using the markings on the board, plug the black wire into the GND terminal on the MMB
+7. Plug in the VUSB jumper
+
+    ![](MMB_CAN_USB.png)
+
 7. Verify all connections
 
     !!! warning
@@ -48,6 +54,6 @@ Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means tha
 
 8. Plug the PSU screw terminals into the PSU wire
 
-If the MMB lights up, you wired it correctly!
+Plug the MMB into your Klipper host with the cable that came with it.
 
-Finally, plug the MMB into your Klipper host with the cable that came with it.
+If the MMB lights up, you wired it correctly!
