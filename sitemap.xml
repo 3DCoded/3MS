@@ -1,191 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://3dcoded.github.io/3ms/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/compare/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/compare/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/flowchart/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/instructions/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/instructions/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/contributing/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/configuration/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/contributing/devsetup/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/configuration/fsensor/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/guides/3dchameleon/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/configuration/install/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/hidden/hidden-assembly/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/configuration/macros/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/setup/assembly/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/configuration/steppers/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/setup/bom/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/contributing/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/setup/calibration/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/contributing/devsetup/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/contributing/supportcontrollers/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/bttmmb/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/experimental/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/bttoctopusmain/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/experimental/dualdrivetpu/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/einsyrambo-skrminie3v2/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/experimental/rapidtip/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/geetech-a30t/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/experimental/speedlimit/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/mellowflyd7/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/guides/3dchameleon/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/minirambo/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/guides/bypass/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/skrminie3v2/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/guides/endless/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/skrpico/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3ms/guides/manualcutter/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/guides/materials/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/guides/notip/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/guides/tipshaping/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/happy-hare/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/hidden/hidden-assembly/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/assembly/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/bom/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/firmware/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/firstprint/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/k1/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/klipperscreen/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/slicer/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/controllers/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/controllers/bttmmb/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/controllers/bttoctopusmain/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/controllers/einsyrambo-skrminie3v2/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/controllers/geetech-a30t/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/controllers/mellowflyd7/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/controllers/minirambo/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/controllers/skrminie3v2/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/controllers/skrpico/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/setup/controllers/zm384main/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/troubleshooting/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/troubleshooting/failedloadunload/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/troubleshooting/falsealarm/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/troubleshooting/skipping/</loc>
-         <lastmod>2024-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3ms/troubleshooting/underextrusion/</loc>
-         <lastmod>2024-11-29</lastmod>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/zm384main/</loc>
+         <lastmod>2024-12-09</lastmod>
     </url>
 </urlset>
