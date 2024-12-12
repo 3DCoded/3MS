@@ -132,3 +132,53 @@
 ## Hardware Assembly
 
 ###**Step 1** Assemble Extruders
+
+<div class="grid cards" markdown>
+- ![](https://placehold.co/600x400?text=Assemble+MK8){data-gallery="assembleMK8"}
+    ![](https://placehold.co/600x400?text=Assemble+MK8+2){.hidden data-gallery="assembleMK8"}
+
+- Assemble each of your 3MS extruders
+    
+    ---
+
+    :orange_circle: Place the mounting plate on the face of the motor
+
+    :red_circle: Assemble the MK8 extruders onto the face of the motors (with the mount in between)
+
+    :green_circle: Repeat for all four 3MS extruders
+
+</div>
+
+###**Step 2** Connecting the Stepper Motors
+
+<div class="grid cards" markdown>
+- ![](https://placehold.co/600x400?text=Connect+Motors){data-gallery="connMotors"}
+    ![](https://placehold.co/600x400?text=Connect+Motors+2){.hidden data-gallery="connMotors"}
+
+- Connect each stepper motor to the BTT MMB CAN board
+    
+    ---
+
+    :red_circle: The extruder for T0 connects to the M1 port
+
+    :orange_circle: The extruder for T1 connects to the M2 port
+
+    :green_circle: The extruder for T2 connects to the M3 port
+
+    :blue_circle: The extruder for T3 connects to the M4 port
+
+</div>
+
+###**Step 3** Installing the MMB CAN (optional)
+
+<div class="grid cards" markdown>
+- ![](https://placehold.co/600x400?text=Install+MMB){data-gallery="instMMB"}
+    ![](https://placehold.co/600x400?text=Install+MMB+2){.hidden data-gallery="instMMB"}
+
+- Install the MMB in the 3MS enclosure
+    
+    ---
+
+    :orange_circle: Use 4x M3x10 bolts to secure the MMB CAN to the enclosure
+
+</div>
