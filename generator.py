@@ -69,7 +69,7 @@ def main():
                     'dir_pin': dir_pin,
                     'enable_pin': en_pin,
                     'rotation_distance': 25,
-                    'microsteps': 16
+                    'microsteps': parser.get(section, 'microsteps', fallback='16'),
                 },
             }
     
@@ -96,6 +96,9 @@ def main():
                 tmc_options = {}
                 for option in parser.options(section):
                     tmc_options[option] = parser.get(section, option)
+                
+                tmc_options['interpolate'] = parser.get(section, 'interpolate', fallback='True')
+                tmc_options['sense_resistor'] = parser.get(section, 'sense_resistor', fallback='0.110')
 
                 desired_steppers[section.split()[-1]][section.split()[0]] = tmc_options
     
