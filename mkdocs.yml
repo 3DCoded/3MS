@@ -120,6 +120,8 @@ nav:
       - setup/controllers/geetech-a30t.md
     - setup/assembly.md
     - setup/calibration.md
+  - Guides:
+    - guides/generator.md
     - guides/3dchameleon.md
   - Contributing:
     - contributing/index.md
