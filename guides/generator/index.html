@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://3dcoded.github.io/3MS/hidden/hidden-assembly/">
+        <link rel="canonical" href="https://3dcoded.github.io/3MS/guides/generator/">
       
       
+        <link rel="prev" href="../../setup/calibration/">
+      
+      
+        <link rel="next" href="../3dchameleon/">
       
       
       <link rel="icon" href="../../assets/logo.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Hidden assembly - 3MS</title>
+        <title>Configuration Generator - 3MS</title>
       
     
     
@@ -109,7 +113,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#3ms-kit-assembly" class="md-skip">
+        <a href="#configuration-generator" class="md-skip">
           Skip to content
         </a>
       
@@ -144,7 +148,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hidden assembly
+              Configuration Generator
             
           </span>
         </div>
@@ -756,8 +760,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -773,13 +779,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -793,7 +797,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Guides
@@ -804,10 +808,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../guides/generator/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Configuration Generator
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -816,6 +840,125 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#base-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Base Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Base Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raw-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raw File
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generating-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generating the Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Generating the Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-the-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running the Script
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Running the Script">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration URL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selected-steppers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selected Steppers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tmc-drivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      TMC Drivers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mcu-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      MCU Name
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -828,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guides/3dchameleon/" class="md-nav__link">
+      <a href="../3dchameleon/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -968,55 +1111,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#electronics-assembly" class="md-nav__link">
+  <a href="#base-configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      Electronics Assembly
+      Base Configuration
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Electronics Assembly">
+    <nav class="md-nav" aria-label="Base Configuration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-preparing-the-power-cables" class="md-nav__link">
+  <a href="#raw-file" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1 Preparing the Power Cables
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-connecting-the-power-supply" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2 Connecting the Power Supply
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-connecting-the-control-board" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3 Connecting the Control Board
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4-adding-jumpers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 4 Adding Jumpers
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-5-install-the-stepper-drivers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 5 Install the Stepper Drivers
+      Raw File
     </span>
   </a>
   
@@ -1028,28 +1135,65 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#printed-parts" class="md-nav__link">
+  <a href="#generating-the-configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      Printed Parts
+      Generating the Configuration
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Printed Parts">
+    <nav class="md-nav" aria-label="Generating the Configuration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-extruder-mounts" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1 Extruder Mounts
+      Installation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-y-splitter" class="md-nav__link">
+  <a href="#running-the-script" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2 Y-Splitter
+      Running the Script
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Running the Script">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration URL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selected-steppers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selected Steppers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tmc-drivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      TMC Drivers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mcu-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      MCU Name
     </span>
   </a>
   
@@ -1057,43 +1201,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hardware-assembly" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware Assembly
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Hardware Assembly">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-assemble-extruders" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 1 Assemble Extruders
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-connecting-the-stepper-motors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2 Connecting the Stepper Motors
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-installing-the-mmb-can-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3 Installing the MMB CAN (optional)
-    </span>
-  </a>
   
 </li>
         
@@ -1128,182 +1235,57 @@
   
 
 
-<p><link rel="stylesheet" href="../../assets/css/kits.css"></p>
-<h1 id="3ms-kit-assembly">3MS Kit Assembly</h1>
-<div class="admonition info">
-<p class="admonition-title">This page is under construction</p>
-<p>This page is the assembly instructions for future 3MS kits. Instructions on this page will change, so don't follow it until 3MS Kits are officially released. Anything on this page is subject to change.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Even though each step only looks like it has one image, if you click on the image you can view several more images for each step.</p>
-</div>
-<h2 id="electronics-assembly">Electronics Assembly</h2>
-<h3 id="step-1-preparing-the-power-cables"><strong>Step 1</strong> Preparing the Power Cables</h3>
-<div class="grid cards">
-<ul>
+<h1 id="configuration-generator">Configuration Generator</h1>
+<p>Follow this guide to create a custom configuration for your 3MS.</p>
+<h2 id="base-configuration">Base Configuration</h2>
+<p>First, find the case configuration for your mainboard. The best place to find these is in the <a href="https://github.com/Klipper3d/klipper/tree/master/config">official Klipper sample configurations</a>.</p>
+<p>In this example, a BTT SKR Mini E3 V3 will be used. A base configuration is available in the official configuration <a href="https://github.com/Klipper3d/klipper/blob/master/config/generic-bigtreetech-skr-mini-e3-v3.0.cfg">here</a>.</p>
+<h3 id="raw-file">Raw File</h3>
+<p>Now you have the configuration, but it isn't a raw file. It's a full webpage. To continue, you need the raw configuration. To do this, find the <strong>"Raw"</strong> button in the upper-right corner of the page.</p>
+<p><a class="glightbox" href="../../assets/images/guides/generator/generator01.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/guides/generator/generator01.png" /></a></p>
+<p>Now, you will be redirected to a page with the raw configuration. Copy the URL.</p>
+<p><a class="glightbox" href="../../assets/images/guides/generator/generator02.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/guides/generator/generator02.png" /></a></p>
+<h2 id="generating-the-configuration">Generating the Configuration</h2>
+<p>Now that you have the raw URL, you need to install the generator script.</p>
+<h3 id="installation">Installation</h3>
+<ol>
 <li>
-<p><a class="glightbox" href="https://placehold.co/600x400?text=Prepare+Cables" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="prepPower"><img alt="" data-gallery="prepPower" src="https://placehold.co/600x400?text=Prepare+Cables" /></a>
-    <a class="glightbox" href="https://placehold.co/600x400?text=Prepare+Cables+2" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="prepPower"><img alt="" class="hidden" data-gallery="prepPower" src="https://placehold.co/600x400?text=Prepare+Cables+2" /></a></p>
+<p>Clone the 3MS repository:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>~
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCoded/3MS
+</code></pre></div></td></tr></table></div>
 </li>
 <li>
-<p>Strip both ends of the red and black power cables and twist the ends.</p>
+<p>Ensure Python 3 is installed (not Python 2).</p>
+</li>
+<li>
+<p>Install <code>requests</code></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>pip3<span class="w"> </span>install<span class="w"> </span>requests
+</code></pre></div></td></tr></table></div>
+</li>
+</ol>
+<h3 id="running-the-script">Running the Script</h3>
+<p>First, start the script:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>~/3MS
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>python3<span class="w"> </span>generator.py
+</code></pre></div></td></tr></table></div>
+<p>Now, you will be presented with several options.</p>
+<h4 id="configuration-url">Configuration URL</h4>
+<p>Paste in the URL you found earlier.</p>
+<p><a class="glightbox" href="../../assets/images/guides/generator/generator03.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/guides/generator/generator03.png" /></a></p>
+<h4 id="selected-steppers">Selected Steppers</h4>
+<p>The script will now list all the stepper motor configurations that were found in the configuration, with a number next to each. Enter the desired steppers, seperated by spaces.</p>
+<p><a class="glightbox" href="../../assets/images/guides/generator/generator04.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/guides/generator/generator04.png" /></a></p>
+<h4 id="tmc-drivers">TMC Drivers</h4>
+<p>For each stepper you selected, the script will ask you which TMC driver to use. For the SKR Mini E3 V3, there is only one option: TMC2209.</p>
+<p><a class="glightbox" href="../../assets/images/guides/generator/generator05.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/guides/generator/generator05.png" /></a></p>
+<h4 id="mcu-name">MCU Name</h4>
+<p>Finally, the script will ask you for the name of the MCU controlling your 3MS. Follow the naming convention outlined in the prompt.</p>
+<p><a class="glightbox" href="../../assets/images/guides/generator/generator06.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/guides/generator/generator06.png" /></a></p>
 <hr />
-<p><img alt="🟠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e0.svg" title=":orange_circle:" /> Use wire cutters that can strip 14AWG wire.</p>
-<p><img alt="🟢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e2.svg" title=":green_circle:" /> Strip 5mm of insulation off of both ends of both wires.</p>
-<p><img alt="🔵" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f535.svg" title=":blue_circle:" /> Twist the ends of the stripped wires tightly.</p>
-</li>
-</ul>
-</div>
-<h3 id="step-2-connecting-the-power-supply"><strong>Step 2</strong> Connecting the Power Supply</h3>
-<div class="grid cards">
-<ul>
-<li>
-<p><a class="glightbox" href="https://placehold.co/600x400?text=Connect+PSU" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="connPSU"><img alt="" data-gallery="connPSU" src="https://placehold.co/600x400?text=Connect+PSU" /></a>
-    <a class="glightbox" href="https://placehold.co/600x400?text=Connect+PSU+2" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="connPSU"><img alt="" class="hidden" data-gallery="connPSU" src="https://placehold.co/600x400?text=Connect+PSU+2" /></a></p>
-</li>
-<li>
-<p>Insert both power cables into the power supply.</p>
-<hr />
-<p><img alt="🟠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e0.svg" title=":orange_circle:" /> Loosen the terminals with a phillips-head screwdriver.</p>
-<p><img alt="🔴" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f534.svg" title=":red_circle:" /> Insert the <strong>red</strong> power cable into the <strong>positive</strong> PSU terminal.</p>
-<p><img alt="🔵" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f535.svg" title=":blue_circle:" /> Insert the <strong>black</strong> power cable into the <strong>negative</strong> PSU terminal.</p>
-<p><img alt="🟢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e2.svg" title=":green_circle:" /> Tighten both terminals securely with a phillips-head screwdriver.</p>
-</li>
-</ul>
-</div>
-<h3 id="step-3-connecting-the-control-board"><strong>Step 3</strong> Connecting the Control Board</h3>
-<div class="grid cards">
-<ul>
-<li>
-<p><a class="glightbox" href="https://placehold.co/600x400?text=Connect+Board" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="connBoard"><img alt="" data-gallery="connBoard" src="https://placehold.co/600x400?text=Connect+Board" /></a>
-    <a class="glightbox" href="https://placehold.co/600x400?text=Connect+Board+2" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="connBoard"><img alt="" class="hidden" data-gallery="connBoard" src="https://placehold.co/600x400?text=Connect+Board+2" /></a></p>
-</li>
-<li>
-<p>Insert both power cables into the control board.</p>
-<hr />
-<p><img alt="🟠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e0.svg" title=":orange_circle:" /> Locate the HVIN power input on the control board and loosen both terminals with a flat-head screwdriver.</p>
-<p><img alt="🔴" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f534.svg" title=":red_circle:" /> Insert the <strong>red</strong> power cable into the <strong>positive</strong> HVIN terminal.</p>
-<p><img alt="🔵" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f535.svg" title=":blue_circle:" /> Insert the <strong>black</strong> power cable into the <strong>negative</strong> HVIN terminal.</p>
-<p><img alt="🟢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e2.svg" title=":green_circle:" /> Tighten both terminals securely with a flat-head screwdriver.</p>
-</li>
-</ul>
-</div>
-<h3 id="step-4-adding-jumpers"><strong>Step 4</strong> Adding Jumpers</h3>
-<div class="grid cards">
-<ul>
-<li>
-<p><a class="glightbox" href="https://placehold.co/600x400?text=Add+Jumpers" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="addJumpers"><img alt="" data-gallery="addJumpers" src="https://placehold.co/600x400?text=Add+Jumpers" /></a>
-    <a class="glightbox" href="https://placehold.co/600x400?text=Add+Jumpers+2" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="addJumpers"><img alt="" class="hidden" data-gallery="addJumpers" src="https://placehold.co/600x400?text=Add+Jumpers+2" /></a></p>
-</li>
-<li>
-<p>Install the VUSB and HVIN jumpers.</p>
-<hr />
-<p><img alt="🟠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e0.svg" title=":orange_circle:" /> Install the <strong>VUSB</strong> jumper.</p>
-<p><img alt="🟢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e2.svg" title=":green_circle:" /> For each stepper driver, select the <strong>HVIN</strong> input by installing a jumper on each driver.</p>
-</li>
-</ul>
-</div>
-<h3 id="step-5-install-the-stepper-drivers"><strong>Step 5</strong> Install the Stepper Drivers</h3>
-<div class="grid cards">
-<ul>
-<li>
-<p><a class="glightbox" href="https://placehold.co/600x400?text=Add+Drivers" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="addDrivers"><img alt="" data-gallery="addDrivers" src="https://placehold.co/600x400?text=Add+Drivers" /></a>
-    <a class="glightbox" href="https://placehold.co/600x400?text=Add+Drivers+2" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="addDrivers"><img alt="" class="hidden" data-gallery="addDrivers" src="https://placehold.co/600x400?text=Add+Drivers+2" /></a></p>
-</li>
-<li>
-<p>Install all four EZ2209 stepper drivers.</p>
-<hr />
-<p><img alt="🟠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e0.svg" title=":orange_circle:" /> Install an EZ2209 into each stepper driver slot.</p>
-</li>
-</ul>
-</div>
-<h2 id="printed-parts">Printed Parts</h2>
-<h3 id="step-1-extruder-mounts"><strong>Step 1</strong> Extruder Mounts</h3>
-<div class="grid cards">
-<ul>
-<li>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Minimalistic Mount</label><label for="__tabbed_1_2">Full Enclosure</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><a href="../../assets/stls/mk8m3.stl">Download</a></p>
-<p><iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS%2Fassets%2Fstls%2Fmk8m3.stl&color=blue&noborder=yes&clean=yes&shading=flat&bgcolor=transparent" style="border:0;margin:0;width:100%;height:100%;"></iframe></p>
-</div>
-<div class="tabbed-block">
-<p>Designed by <a href="https://www.printables.com/@Chad_336665">chadk</a></p>
-<p><a href="https://www.printables.com/model/1067703-wip-3ms-mmu-using-btt-mmb">Printables Link</a></p>
-<p><iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS%2Fassets%2Fstls%2Fenclosure%2Fbottom-v6.stl&color=blue&bgcolor=transparent&noborder=yes&edges=no" style="border:0;margin:0;width:100%;height:100%;"></iframe></p>
-<p><iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS%2Fassets%2Fstls%2Fenclosure%2Ftop-v6.stl&color=blue&bgcolor=transparent&noborder=yes&edges=no" style="border:0;margin:0;width:100%;height:100%;"></iframe></p>
-</div>
-</div>
-</div>
-</li>
-<li>
-<p>Choose either of the mounting/enclosure options on the left for your 3MS and print them out.</p>
-</li>
-</ul>
-</div>
-<h3 id="step-2-y-splitter"><strong>Step 2</strong> Y-Splitter</h3>
-<div class="grid cards">
-<ul>
-<li>
-<p>Designed by <a href="https://www.printables.com/@ImChrono_909974">ImChrono</a></p>
-<p><a href="https://www.printables.com/model/1042279-no-catch-4-way-y-splitter-pc4-m10">Printables Link</a></p>
-<p><iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2F3dcoded.github.io%2F3MS%2Fassets%2Fstls%2F4ysplitter.stl&color=blue&bgcolor=transparent&noborder=yes&edges=no" style="border:0;margin:0;width:100%;height:100%;"></iframe></p>
-</li>
-<li>
-<p>Print this Y-splitter according to the instructions in its Printables page.</p>
-</li>
-</ul>
-</div>
-<h2 id="hardware-assembly">Hardware Assembly</h2>
-<h3 id="step-1-assemble-extruders"><strong>Step 1</strong> Assemble Extruders</h3>
-<div class="grid cards">
-<ul>
-<li>
-<p><a class="glightbox" href="https://placehold.co/600x400?text=Assemble+MK8" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="assembleMK8"><img alt="" data-gallery="assembleMK8" src="https://placehold.co/600x400?text=Assemble+MK8" /></a>
-    <a class="glightbox" href="https://placehold.co/600x400?text=Assemble+MK8+2" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="assembleMK8"><img alt="" class="hidden" data-gallery="assembleMK8" src="https://placehold.co/600x400?text=Assemble+MK8+2" /></a></p>
-</li>
-<li>
-<p>Assemble each of your 3MS extruders</p>
-<hr />
-<p><img alt="🟠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e0.svg" title=":orange_circle:" /> Place the mounting plate on the face of the motor</p>
-<p><img alt="🔴" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f534.svg" title=":red_circle:" /> Assemble the MK8 extruders onto the face of the motors (with the mount in between)</p>
-<p><img alt="🟢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e2.svg" title=":green_circle:" /> Repeat for all four 3MS extruders</p>
-</li>
-</ul>
-</div>
-<h3 id="step-2-connecting-the-stepper-motors"><strong>Step 2</strong> Connecting the Stepper Motors</h3>
-<div class="grid cards">
-<ul>
-<li>
-<p><a class="glightbox" href="https://placehold.co/600x400?text=Connect+Motors" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="connMotors"><img alt="" data-gallery="connMotors" src="https://placehold.co/600x400?text=Connect+Motors" /></a>
-    <a class="glightbox" href="https://placehold.co/600x400?text=Connect+Motors+2" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="connMotors"><img alt="" class="hidden" data-gallery="connMotors" src="https://placehold.co/600x400?text=Connect+Motors+2" /></a></p>
-</li>
-<li>
-<p>Connect each stepper motor to the BTT MMB CAN board</p>
-<hr />
-<p><img alt="🔴" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f534.svg" title=":red_circle:" /> The extruder for T0 connects to the M1 port</p>
-<p><img alt="🟠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e0.svg" title=":orange_circle:" /> The extruder for T1 connects to the M2 port</p>
-<p><img alt="🟢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e2.svg" title=":green_circle:" /> The extruder for T2 connects to the M3 port</p>
-<p><img alt="🔵" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f535.svg" title=":blue_circle:" /> The extruder for T3 connects to the M4 port</p>
-</li>
-</ul>
-</div>
-<h3 id="step-3-installing-the-mmb-can-optional"><strong>Step 3</strong> Installing the MMB CAN (optional)</h3>
-<div class="grid cards">
-<ul>
-<li>
-<p><a class="glightbox" href="https://placehold.co/600x400?text=Install+MMB" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="instMMB"><img alt="" data-gallery="instMMB" src="https://placehold.co/600x400?text=Install+MMB" /></a>
-    <a class="glightbox" href="https://placehold.co/600x400?text=Install+MMB+2" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom" data-gallery="instMMB"><img alt="" class="hidden" data-gallery="instMMB" src="https://placehold.co/600x400?text=Install+MMB+2" /></a></p>
-</li>
-<li>
-<p>Install the MMB in the 3MS enclosure</p>
-<hr />
-<p><img alt="🟠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e0.svg" title=":orange_circle:" /> Use 4x M3x10 bolts to secure the MMB CAN to the enclosure</p>
-</li>
-</ul>
-</div>
+<p>Your configuration will now be available in <code>~/3MS/mmu.cfg</code> and <code>~/3MS/mmu_hardware.cfg</code>.</p>
 
 
 
@@ -1339,6 +1321,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../setup/calibration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Calibration">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Calibration
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../3dchameleon/" class="md-footer__link md-footer__link--next" aria-label="Next: 3DChameleon to 3MS Conversion">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                3DChameleon to 3MS Conversion
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
