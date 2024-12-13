@@ -69,6 +69,7 @@ def main():
                     'dir_pin': dir_pin,
                     'enable_pin': en_pin,
                     'rotation_distance': 25,
+                    'microsteps': 16
                 },
             }
     
