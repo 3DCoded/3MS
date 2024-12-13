@@ -28,6 +28,14 @@ body:
     validations:
       required: true
   - type: textarea
+    id: drivers
+    attributes:
+      label: Stepper Driver Type
+      description: Type of stepper drivers used
+      placeholder: TMC2209
+    validations:
+      required: true
+  - type: textarea
     id: what-info
     attributes:
       label: More information
