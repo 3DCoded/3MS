@@ -26,12 +26,16 @@ def format_pin(pin, mcu):
     return f'{prefixes}{mcu}:{pin}'
 
 def main():
-    url = input('URL > ')
-    resp = requests.get(url)
+    if '--file' in sys.argv:
+        file = input('File > ')
+        with open(file) as file:
+            config = file.read()
+    else:
+        url = input('URL > ')
+        resp = requests.get(url)
+        if resp.status_code != 200: return 1
+        config = resp.text
 
-    if resp.status_code != 200: return 1
-
-    config = resp.text
     updated_config = []
     in_section = False
     is_commented = False
