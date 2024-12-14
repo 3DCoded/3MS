@@ -2628,12 +2628,24 @@
 <p>Now, you will be presented with several options.</p>
 <h4 id="guides-generator-configuration-url">Configuration URL</h4>
 <p>Paste in the URL you found earlier.</p>
+<div class="admonition tip">
+<p class="admonition-title">Local file configurations</p>
+<p>You can also use a file configuration by passing the <code>--file</code> parameter:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#guides-generator-__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>python3<span class="w"> </span>generator.py<span class="w"> </span>--file
+</code></pre></div></td></tr></table></div>
+</div>
 <p><a class="glightbox" href="../assets/images/guides/generator/generator03.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/guides/generator/generator03.png" /></a></p>
 <h4 id="guides-generator-selected-steppers">Selected Steppers</h4>
 <p>The script will now list all the stepper motor configurations that were found in the configuration, with a number next to each. Enter the desired steppers, seperated by spaces.</p>
 <p><a class="glightbox" href="../assets/images/guides/generator/generator04.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/guides/generator/generator04.png" /></a></p>
 <h4 id="guides-generator-tmc-drivers">TMC Drivers</h4>
 <p>For each stepper you selected, the script will ask you which TMC driver to use. For the SKR Mini E3 V3, there is only one option: TMC2209.</p>
+<div class="admonition tip">
+<p class="admonition-title">No TMC Drivers?</p>
+<p>If you don't want to use TMC drivers in your configuration, pass the <code>--no-tmc</code> parameter:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#guides-generator-__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>python3<span class="w"> </span>generator.py<span class="w"> </span>--no-tmc
+</code></pre></div></td></tr></table></div>
+</div>
 <p><a class="glightbox" href="../assets/images/guides/generator/generator05.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/guides/generator/generator05.png" /></a></p>
 <h4 id="guides-generator-mcu-name">MCU Name</h4>
 <p>Finally, the script will ask you for the name of the MCU controlling your 3MS. Follow the naming convention outlined in the prompt.</p>
