@@ -53,6 +53,13 @@ Now, you will be presented with several options.
 
 Paste in the URL you found earlier.
 
+!!! tip "Local file configurations"
+    You can also use a file configuration by passing the `--file` parameter:
+
+    ```sh
+    python3 generator.py --file
+    ```
+
 ![](generator03.png)
 
 #### Selected Steppers
@@ -64,6 +71,13 @@ The script will now list all the stepper motor configurations that were found in
 #### TMC Drivers
 
 For each stepper you selected, the script will ask you which TMC driver to use. For the SKR Mini E3 V3, there is only one option: TMC2209.
+
+!!! tip "No TMC Drivers?"
+    If you don't want to use TMC drivers in your configuration, pass the `--no-tmc` parameter:
+
+    ```sh
+    python3 generator.py --no-tmc
+    ```
 
 ![](generator05.png)
 
