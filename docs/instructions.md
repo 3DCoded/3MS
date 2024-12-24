@@ -61,6 +61,8 @@ Set up Happy Hare firmware following [this guide](https://github.com/moggieuk/Ha
 
 If you're looking for a configuration, see [generator guide](generator.md).
 
+Next, configure Happy Hare firmware using [this guide](config.md).
+
 ## 4. Calibrating your 3MS
 
 After installing and configuring Happy Hare, the 3MS requires some calibrations. Follow [Calibration](calibration.md) to calibrate your 3MS.

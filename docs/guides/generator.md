@@ -18,7 +18,11 @@ Now, you will be redirected to a page with the raw configuration. Copy the URL.
 
 ![](generator02.png)
 
-## Generating the Configuration
+## Generating the Configuration - Web
+
+
+
+## Generating the Configuration - Shell
 
 Now that you have the raw URL, you need to install the generator script.
 
