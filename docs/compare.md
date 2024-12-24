@@ -60,9 +60,9 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
 
     **Cons:**
 
-    :material-minus-box:{.minus} Expandability (only four lanes)
-
     :material-minus-box:{.minus} Compatibility (only Klipper)
+    
+    :material-minus-box:{.minus} Complexity
 
     :material-minus-box:{.minus} Price ($300)
 
