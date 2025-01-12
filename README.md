@@ -26,6 +26,9 @@ If you want to support the 3MS project, click the link below. Anything you give 
 
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/3dcoded)
 
+## Announcements
+
+The 3MS now has an automated configuration generator! [Configuration Generator](https://forked-lined-hour.anvil.app/)
 
 ## More Projects
 
