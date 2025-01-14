@@ -32,6 +32,7 @@ plugins:
   - print-site:
       path_to_pdf: export.pdf
 markdown_extensions:
+  - neoteroi.timeline
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
@@ -130,6 +131,7 @@ nav:
 extra_css:
   - stylesheets/extra.css
   - assets/css/calibration.css
+  - assets/css/neoteroi-mkdocs.css
 
 extra_javascript:
   - assets/javascript/calibration.js

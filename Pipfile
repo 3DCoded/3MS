@@ -15,6 +15,7 @@ codespell = "*"
 symspellpy = "*"
 termynal = "*"
 mkdocs-macros-plugin = "*"
+neoteroi-mkdocs = "*"
 
 [dev-packages]
 
