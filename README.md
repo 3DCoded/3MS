@@ -30,6 +30,10 @@ If you want to support the 3MS project, click the link below. Anything you give 
 
 The 3MS now has an automated configuration generator! [Configuration Generator](https://forked-lined-hour.anvil.app/)
 
+![](https://media.printables.com/media/prints/1108644/images/8561411_33c8e695-bbc6-41cd-8166-20ad7de4a411_c4c521b9-7f8a-4b55-89f5-df56d1c30401/thumbs/inside/1600x1200/png/r0.webp)
+
+The 3HOME Enclosure Beta is available on [Printables](https://www.printables.com/model/1108644-beta-3home-3ms-hybrid-official-modular-enclosure/files)
+
 ## More Projects
 
 If you like this project, don't forget to give it a star! Also, check out my other projects:
