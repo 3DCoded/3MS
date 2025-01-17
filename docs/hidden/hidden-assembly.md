@@ -70,6 +70,11 @@
     :green_circle: Strip a short length of insulation off of both ends of both wires.
 
     :blue_circle: Tightly twist the ends of the stripped wires.
+
+- ![](step01a.jpeg){.sm .red-ol}
+    ![](step01b.jpeg){.sm .yellow-ol}
+    ![](step01c.jpeg){.sm .green-ol .blue2-ol}
+    ![](step01d.jpeg){.sm}
 </div>
 
 ###**Step 2** Preparing the Power Supply
