@@ -14,57 +14,116 @@
 ###**Step 1** Preparing the Power Cables
 
 <div class="grid cards" markdown>
-- ![](https://placehold.co/600x400?text=Prepare+Cables){data-gallery="prepPower"}
-    ![](https://placehold.co/600x400?text=Prepare+Cables+2){.hidden data-gallery="prepPower"}
+- ![](step01a.jpeg){data-gallery="prepPower"}
+    ![](step01b.jpeg){.hidden data-gallery="prepPower"}
+    ![](step01c.jpeg){.hidden data-gallery="prepPower"}
+    ![](step01d.jpeg){.hidden data-gallery="prepPower"}
 
 - Strip both ends of the red and black power cables and twist the ends.
 
     ---
 
-    :orange_circle: Use wire strippers that can strip 16AWG wire.
+    Prepare the following for this step:
 
-    :green_circle: Strip 5mm of insulation off of both ends of both wires.
+    - Red and black power cables
+    - Wire strippers
+
+    :red_circle: Use wire strippers that can strip 16AWG wire.
+
+    :yellow_circle: Split the ends of the power cables
+
+    :green_circle: Strip a short length of insulation off of both ends of both wires.
 
     :blue_circle: Tightly twist the ends of the stripped wires.
 </div>
 
-###**Step 2** Connecting the Power Supply
+###**Step 2** Preparing the Power Supply
 
 <div class="grid cards" markdown>
-- ![](https://placehold.co/600x400?text=Connect+PSU){data-gallery="connPSU"}
-    ![](https://placehold.co/600x400?text=Connect+PSU+2){.hidden data-gallery="connPSU"}
+- ![](step02a.jpeg){data-gallery="prepPSU"}
+    ![](step02b.jpeg){.hidden data-gallery="prepPSU"}
 
-- Insert both power cables into the power supply.
+- Loosen the PSU terminals.
     
     ---
 
-    :orange_circle: Loosen the terminals with a phillips-head screwdriver.
+    Prepare the following for this step:
 
-    :red_circle: Insert the **red** power cable into the **positive** PSU terminal.
+    - Phillips-head screwdriver
+    - PSU adapter
 
-    :blue_circle: Insert the **black** power cable into the **negative** PSU terminal.
-
-    :green_circle: Tighten both terminals securely with a phillips-head screwdriver.
+    :red_circle: Loosen both terminals on the PSU.
 </div>
 
-###**Step 3** Connecting the Control Board
+###**Step 3** Preparing the Control Board
 
 <div class="grid cards" markdown>
-- ![](https://placehold.co/600x400?text=Connect+Board){data-gallery="connBoard"}
-    ![](https://placehold.co/600x400?text=Connect+Board+2){.hidden data-gallery="connBoard"}
+- ![](step03a.jpeg){data-gallery="prepBoard"}
+    ![](step03b.jpeg){.hidden data-gallery="prepBoard"}
 
-- Insert both power cables into the control board.
+- Loosen the HVIN terminals on the BTT MMB CAN board.
     
     ---
 
-    :orange_circle: Locate the HVIN power input on the control board and loosen both terminals with a flat-head screwdriver.
+    Prepare the following for this step:
 
-    :red_circle: Insert the **red** power cable into the **positive** HVIN terminal.
+    - Flat-head screwdriver
+    - BTT MMB CAN board
 
-    :blue_circle: Insert the **black** power cable into the **negative** HVIN terminal.
-
-    :green_circle: Tighten both terminals securely with a flat-head screwdriver.
+    :red_circle: Loosen both HVIN terminals on the BTT MMB CAN board.
 </div>
+
+###**Step 4** Connecting the PSU
+
+<div class="grid cards" markdown>
+- ![](step04a.jpeg){data-gallery="connPSU"}
+    ![](step04b.jpeg){.hidden data-gallery="connPSU"}
+    ![](step04c.jpeg){.hidden data-gallery="connPSU"}
+    ![](step04d.jpeg){.hidden data-gallery="connPSU"}
+
+- Connect the power cables to the PSU
+
+    ---
+
+    Prepare the following for this step:
+
+    - Phillips-head screwdriver
+    - Power cables
+    - PSU adapter
+
+    :red_circle: Push the <span style="color:red;background-color:white;padding:3px;font-weight:bold;">red</span> power cable into the **positive** terminal of the PSU.
+
+    :blue_circle: Push the <span style="color:black;background-color:white;padding:3px;font-weight:bold;">black</span> power cable into the **negative** terminal of the PSU.
+
+    :purple_circle: Firmly tighten the PSU screw terminals.
+</div>
+
+###**Step 5** Connecting the Control Board
+
+<div class="grid cards" markdown>
+- ![](step05a.jpeg){data-gallery="MMBconnPWR"}
+    ![](step05b.jpeg){.hidden data-gallery="MMBconnPWR"}
+    ![](step05c.jpeg){.hidden data-gallery="MMBconnPWR"}
+    ![](step05d.jpeg){.hidden data-gallery="MMBconnPWR"}
+
+- Connect the power cables to the MMB CAN
+
+    ---
+
+    Prepare the following for this step:
+    
+    - Flat-head screwdriver
+    - Power cables
+    - BTT MMB CAN board
+
+    :red_circle: Push the <span style="color:red;background-color:white;padding:3px;font-weight:bold;">red</span> power cable into the **HVIN** terminal of the MMB CAN.
+
+    :blue_circle: Push the <span style="color:black;background-color:white;padding:3px;font-weight:bold;">black</span> power cable into the **GND** terminal of the MMB CAN.
+
+    :purple_circle: Firmly tighten the MMB CAN's HVIN screw terminals.
+</div>
+
+# EVERYTHING AFTER THIS POINT IS INCOMPLETE
 
 ###**Step 4** Adding Jumpers
 

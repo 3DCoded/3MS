@@ -7,23 +7,46 @@ icon: material/home
 
 The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial **S**ystem
 
-<img src="./assets/logo.png" alt="drawing" width="200"/>
+[![](https://media.printables.com/media/prints/1108644/images/8694982_810aef1c-c234-4c27-9fc3-0622c43060a5_991d3c58-1fb9-4227-90db-8cb3b15da9e1/thumbs/inside/1600x1200/png/r0.webp)](https://www.printables.com/model/1108644-beta-3home-3ms-hybrid-official-modular-enclosure)
 
-!!! info "Discord"
-    Join the 3MS channel at the Happy Hare Discord server [here](https://discord.gg/8nTTEZeuvb).
+[![Discord Shield](https://discord.com/api/guilds/1307104511663411210/widget.png?style=banner2)](https://discord.gg/ekqxDhdGCg)
 
-    Join the 3MS Discord:
+The 3MS is a simple, compact, modular, reliable, budget-friendly multimaterial system. 
 
-    [![Discord Shield](https://discord.com/api/guilds/1307104511663411210/widget.png?style=banner2)](https://discord.gg/ekqxDhdGCg)
+[Get Started :material-format-list-numbered:](instructions.md){ .md-button }
 
-## Inspiration
+## Why 3MS?
 
-- Prusa MMU1
-- Bambu AMS
+Why use the 3MS when there are many other multi-material systems?
 
-## Sample Prints
+Here are a few reasons:
 
-???+ "Sample Prints"
+- **Simplified Design**: Minimal mechanical complexity for increased reliability.
+- **Low Cost**: A 4-filament-unit 3MS can be built for ~$150 USD
+- **Easily Sourceable**: All the parts for the 3MS are available on Amazon.
+- **Comprehensive Documentation**: Step-by-step guides to ensure smooth setup and operation.
+- **Scalable**: Easily expand the system to handle any number of filaments.
+
+## Requirements
+
+To use the 3MS, your setup has to meet the following requirements:
+
+- Run Klipper firmware
+- Have SSH (PuTTY) access (99.9% of Klipper installations have this, and if you don't you really should setup SSH)
+- Have one spare USB port
+- Have an adapter to install a PTFE tube to the inlet of your printer's extruder.
+
+## Get Started
+
+To get started with the 3MS, see the [Master Instructions](instructions.md).
+
+[Get Started :material-format-list-numbered:](instructions.md){ .md-button }
+
+<iframe width="560" height="315"  src="https://www.youtube.com/embed/p-0RshsVmOk?si=rx554jrZFm6iZ0TR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+??? "Sample Prints"
     === "Sheep" 
         ![](samplesheep.jpeg){: style="height: 300px"}
 
@@ -47,66 +70,9 @@ The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial *
 
         Model: [Striped lizard with pupils by EngMike](https://www.printables.com/model/236193-striped-lizard-multi-material-with-pupils)
 
-## Photos
-
-???+ "Photos"
-    === "Full Printer"
-        ![](IMG_0318.jpeg)
-    === "3MS"
-        ![](IMG_0320.jpeg)
-    === "Y Splitter"
-        ![](IMG_0321.jpeg)
-
-## Videos
-
-???+ "West3D Video Series"
+??? "West3D Video Series"
     Thank you to Allen Rowand from [West3D](https://west3d.com/) for making this ongoing series on the 3MS.
     
     <iframe width="560" height="315" src="https://www.youtube.com/embed/XfjHtymdHao?si=cHG1jreb8FfjpWaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/o4Fvtdl-XjM?si=16Prr2Djn4XP0n6q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-## Why 3MS?
-
-Why use the 3MS when there are many other multi-material systems?
-
-Here are a few reasons:
-
-- **Simplified Design**: Minimal mechanical complexity for increased reliability.
-- **Comprehensive Documentation**: Step-by-step guides to ensure smooth setup and operation.
-- **Slicer-Agnostic**: No need for custom toolchange G-Code in your slicer.
-- **Scalable**: Easily expand the system to handle any number of filaments.
-- **Auto-Retries**: Automatic retries on failed tool changes to reduce downtime.
-- **No Filament Cutter Needed**: Achieve clean tool changes without the need for filament cutters.
-
-With that said, there are a few reasons why you might **not** want to/be able to use the 3MS:
-
-- Klipper firmware is a requirement, so Marlin and RRF setups are a no go
-- A filament sensor is required, so if you don't have one/don't plan to get one, the 3MS won't work with your setup
-
-## Requirements
-
-To use the 3MS, your setup has to meet the following requirements:
-
-- Run Klipper firmware
-- Have SSH (PuTTY) access (99.9% of Klipper installations have this, and if you don't you really should setup SSH)
-- Have one spare USB port
-- Have an adapter to install a PTFE tube to the inlet of your printer's extruder.
-
-## How it works
-
-Think of the 3MS as an extension to your current extruder's length. It allows for switching filaments without compromising any of the benefits of your printer's extruder.
-
-The 3MS's motors work together with your printer's extruder. This way, there won't be any additional resistance from pulling the filament through a disabled extruder. Also, unloads and loads to/from the printer's extruder are fully synchronized with the 3MS. This allows for even faster toolchanges!
-
-## Get Started
-
-To get started with the 3MS, see the [Master Instructions](instructions.md).
-
-[Get Started :material-format-list-numbered:](instructions.md){ .md-button }
-
-## What about the 3DChameleon?
-
-I recently created a klipper plugin for the 3DChameleon after purchasing a unit. I'm sure my Chameleon could have worked if I had tuned it further, but after several months with only partial success, I gave up. I am still open to pull requests for **[3dchameleon-klipper](https://github.com/3dcoded/3dchameleon-klipper)** and will do my best to respond to issues there, but I won't be able to test it myself anymore.
-
-If you are having reliability issues with the 3DChameleon, see [3DChameleon Conversion](3dchameleon.md).
