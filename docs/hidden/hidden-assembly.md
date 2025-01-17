@@ -74,9 +74,9 @@
 </div>
 
 ![](step01a.jpeg){.sm .red-ol}
-    ![](step01b.jpeg){.sm .yellow-ol}
-    ![](step01c.jpeg){.sm .green-ol .blue2-ol}
-    ![](step01d.jpeg){.sm}
+![](step01b.jpeg){.sm .yellow-ol}
+![](step01c.jpeg){.sm .green-ol .blue2-ol}
+![](step01d.jpeg){.sm}
 
 ###**Step 2** Preparing the Power Supply
 
@@ -96,6 +96,9 @@
     :red_circle: Loosen both terminals on the PSU.
 </div>
 
+![](step02a.jpeg){.sm}
+![](step02b.jpeg){.sm .red-ol}
+
 ###**Step 3** Preparing the Control Board
 
 <div class="grid cards" markdown>
@@ -113,6 +116,9 @@
 
     :red_circle: Loosen both HVIN terminals on the BTT MMB CAN board.
 </div>
+
+![](step03a.jpeg){.sm}
+![](step03b.jpeg){.sm .red-ol}
 
 ###**Step 4** Connecting the PSU
 
@@ -139,6 +145,11 @@
     :purple_circle: Firmly tighten the PSU screw terminals.
 </div>
 
+![](step04a.jpeg){.sm}
+![](step04b.jpeg){.sm .red-ol .blue2-ol}
+![](step04c.jpeg){.sm}
+![](step04d.jpeg){.sm .purple-ol}
+
 ###**Step 5** Connecting the Control Board
 
 <div class="grid cards" markdown>
@@ -163,6 +174,11 @@
 
     :purple_circle: Firmly tighten the MMB CAN's HVIN screw terminals.
 </div>
+
+![](step05a.jpeg){.sm}
+![](step05b.jpeg){.sm .red-ol .blue2-ol}
+![](step05c.jpeg){.sm}
+![](step05d.jpeg){.sm .purple-ol}
 
 # EVERYTHING AFTER THIS POINT IS INCOMPLETE
 
@@ -194,7 +210,7 @@
     :orange_circle: Install an EZ2209 into each stepper driver slot.
 </div>
 
-## Printed Parts
+<!-- ## Printed Parts
 
 ###**Step 1** Enclosure
 
@@ -297,4 +313,4 @@
 
     :orange_circle: Use 4x M3x10 bolts to secure the MMB CAN to the 3HOME
 
-</div>
+</div> -->
