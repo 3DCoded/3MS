@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 3MS Discord Server
+    url: https://discord.gg/ekqxDhdGCg
+    about: Please join the 3MS Discord server for the latest updates and the fastest help.
+  - name: 3MS Configuration Generator
+    url: https://forked-lined-hour.anvil.app/
+    about: Tool to automatically generate configurations for your 3MS.
