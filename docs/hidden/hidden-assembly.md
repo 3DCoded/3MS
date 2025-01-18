@@ -6,9 +6,6 @@
 !!! info "This page is under construction"
     This page is the assembly instructions for future 3MS kits. Instructions on this page will change, so don't follow it until 3MS Kits are officially released. Anything on this page is subject to change.
 
-!!! tip
-    Even though each step only looks like it has one image, if you click on the image you can view several more images for each step.
-
 !!! warning
     By using the 3MS, you agree to the terms outlined in the full disclaimer and accept full responsibility for its assembly and use. The creators are not liable for any damage, loss, or harm caused by the product.
 
@@ -44,178 +41,30 @@
 
         By purchasing or using the 3MS, you agree to the terms outlined in this disclaimer and release the creators, contributors, and distributors from any claims or liabilities arising from its use. If you do not agree to these terms, do not proceed with assembly or use of the 3MS.
 
-## Electronics Assembly
+## Chapters
 
-###**Step 1** Preparing the Power Cables
+Click on one of the chapters below to get started.
 
 <div class="grid cards" markdown>
-- ![](step01a.jpeg){data-gallery="prepPower"}
-    ![](step01b.jpeg){.hidden data-gallery="prepPower"}
-    ![](step01c.jpeg){.hidden data-gallery="prepPower"}
-    ![](step01d.jpeg){.hidden data-gallery="prepPower"}
-
-- Strip both ends of the red and black power cables and twist the ends.
+- ![](https://media.printables.com/media/prints/1108644/images/8694982_810aef1c-c234-4c27-9fc3-0622c43060a5_991d3c58-1fb9-4227-90db-8cb3b15da9e1/thumbs/inside/1600x1200/png/r0.webp)
 
     ---
 
-    Prepare the following for this step:
+    **1.** Hardware Assembly
 
-    - Red and black power cables
-    - Wire strippers
+    ## WIP
 
-    :red_circle: Use wire strippers that can strip 16AWG wire.
+- [![](step08a.jpeg)](assembly-ele.md)
 
-    :yellow_circle: Split the ends of the power cables
+    ---
 
-    :green_circle: Strip a short length of insulation off of both ends of both wires.
+    [**2.** Electrical Assembly](assembly-ele.md){ .md-button }
 
-    :blue_circle: Tightly twist the ends of the stripped wires.
+- [![](https://github.com/moggieuk/Happy-Hare/wiki/resources/happy_hare_logo.jpg)](https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS)
 
-</div>
-
-![](step01a.jpeg){.sm .red-ol}
-![](step01b.jpeg){.sm .yellow-ol}
-![](step01c.jpeg){.sm .green-ol .blue2-ol}
-![](step01d.jpeg){.sm}
-
-###**Step 2** Preparing the Power Supply
-
-<div class="grid cards" markdown>
-- ![](step02a.jpeg){data-gallery="prepPSU"}
-    ![](step02b.jpeg){.hidden data-gallery="prepPSU"}
-
-- Loosen the PSU terminals.
+    ---
     
-    ---
-
-    Prepare the following for this step:
-
-    - Phillips-head screwdriver
-    - PSU adapter
-
-    :red_circle: Loosen both terminals on the PSU.
-</div>
-
-![](step02a.jpeg){.sm}
-![](step02b.jpeg){.sm .red-ol}
-
-###**Step 3** Preparing the Control Board
-
-<div class="grid cards" markdown>
-- ![](step03a.jpeg){data-gallery="prepBoard"}
-    ![](step03b.jpeg){.hidden data-gallery="prepBoard"}
-
-- Loosen the HVIN terminals on the BTT MMB CAN board.
-    
-    ---
-
-    Prepare the following for this step:
-
-    - Flat-head screwdriver
-    - BTT MMB CAN board
-
-    :red_circle: Loosen both HVIN terminals on the BTT MMB CAN board.
-</div>
-
-![](step03a.jpeg){.sm}
-![](step03b.jpeg){.sm .red-ol}
-
-###**Step 4** Connecting the PSU
-
-<div class="grid cards" markdown>
-- ![](step04a.jpeg){data-gallery="connPSU"}
-    ![](step04b.jpeg){.hidden data-gallery="connPSU"}
-    ![](step04c.jpeg){.hidden data-gallery="connPSU"}
-    ![](step04d.jpeg){.hidden data-gallery="connPSU"}
-
-- Connect the power cables to the PSU
-
-    ---
-
-    Prepare the following for this step:
-
-    - Phillips-head screwdriver
-    - Power cables
-    - PSU adapter
-
-    :red_circle: Push the <span style="color:red;background-color:white;padding:3px;font-weight:bold;">red</span> power cable into the **positive** terminal of the PSU.
-
-    :blue_circle: Push the <span style="color:black;background-color:white;padding:3px;font-weight:bold;">black</span> power cable into the **negative** terminal of the PSU.
-
-    :purple_circle: Firmly tighten the PSU screw terminals.
-</div>
-
-![](step04a.jpeg){.sm}
-![](step04b.jpeg){.sm .red-ol .blue2-ol}
-![](step04c.jpeg){.sm}
-![](step04d.jpeg){.sm .purple-ol}
-
-###**Step 5** Connecting the Control Board
-
-<div class="grid cards" markdown>
-- ![](step05a.jpeg){data-gallery="MMBconnPWR"}
-    ![](step05b.jpeg){.hidden data-gallery="MMBconnPWR"}
-    ![](step05c.jpeg){.hidden data-gallery="MMBconnPWR"}
-    ![](step05d.jpeg){.hidden data-gallery="MMBconnPWR"}
-
-- Connect the power cables to the MMB CAN
-
-    ---
-
-    Prepare the following for this step:
-    
-    - Flat-head screwdriver
-    - Power cables
-    - BTT MMB CAN board
-
-    :red_circle: Push the <span style="color:red;background-color:white;padding:3px;font-weight:bold;">red</span> power cable into the **HVIN** terminal of the MMB CAN.
-
-    :blue_circle: Push the <span style="color:black;background-color:white;padding:3px;font-weight:bold;">black</span> power cable into the **GND** terminal of the MMB CAN.
-
-    :purple_circle: Firmly tighten the MMB CAN's HVIN screw terminals.
-</div>
-
-![](step05a.jpeg){.sm}
-![](step05b.jpeg){.sm .red-ol .blue2-ol}
-![](step05c.jpeg){.sm}
-![](step05d.jpeg){.sm .purple-ol}
-
-###**Step 6** Adding Jumpers: Part 1
-
-<div class="grid cards" markdown>
-- ![](step06a.jpeg){data-gallery="addJumpers1"}
-    ![](step06b.jpeg){.hidden data-gallery="addJumpers1"}
-
-- Install the VUSB and HVIN jumpers.
-    
-    ---
-
-    :red_circle: Install the **VUSB** jumper.
-
-    :green_circle: For each stepper driver, select the **HVIN** input by installing a jumper on each driver.
-</div>
-
-![](step06a.jpeg){.sm}
-![](step06b.jpeg){.sm .red-ol .green2-ol}
-
-# EVERYTHING AFTER THIS POINT IS INCOMPLETE
-
-###**Step 7** Adding Jumpers: Part 2
-
-<div class="grid cards" markdown>
-- ![](https://placehold.co/600x400?text=Add+Drivers){data-gallery="addJumpers2"}
-    ![](https://placehold.co/600x400?text=Add+Drivers+2){.hidden data-gallery="addJumpers2"}
-
-- Install all four EZ2209 stepper drivers.
-    
-    ---
-
-    :orange_circle: Install an EZ2209 into each stepper driver slot.
-</div>
-
-###**Step 8** Installing Stepper Drivers
-
-<div class="grid cards" markdown>
+    [**3.** Software Setup](https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS){ .md-button }
 </div>
 
 <!-- ## Printed Parts

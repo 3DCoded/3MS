@@ -1,7 +1,7 @@
 import os
 from PIL import Image
 
-def resize_images_in_folder(folder_path, output_folder, resolution):
+def resize_images_in_folder(folder_path, output_folder, width):
     """
     Resizes all images in a folder to a constant resolution.
 
@@ -24,11 +24,12 @@ def resize_images_in_folder(folder_path, output_folder, resolution):
             # Open image
             with Image.open(file_path) as img:
                 # Resize image
-                img_resized = img.resize(resolution)
+                # img_resized = img.resize((width, ))
+                img.thumbnail((2000, 1500))
 
                 # Save resized image to the output folder
                 output_path = os.path.join(output_folder, file_name)
-                img_resized.save(output_path)
+                img.save(output_path)
 
                 print(f"Resized and saved: {output_path}")
 
@@ -38,8 +39,8 @@ def resize_images_in_folder(folder_path, output_folder, resolution):
 # Example usage
 if __name__ == "__main__":
     input_folder = "raw_images"  # Replace with your folder path
-    output_folder = "assets/images/instructions"  # Replace with your output folder path
-    target_resolution = (2000,1500)  # Replace with your desired resolution (width, height)
+    output_folder = "docs/assets/images/instructions"  # Replace with your output folder path
+    # target_resolution = (2000,1500)  # Replace with your desired resolution (width, height)
 
-    resize_images_in_folder(input_folder, output_folder, target_resolution)
+    resize_images_in_folder(input_folder, output_folder, 2000)
 
