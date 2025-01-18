@@ -9,6 +9,8 @@ The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial *
 
 [![](https://media.printables.com/media/prints/1108644/images/8694982_810aef1c-c234-4c27-9fc3-0622c43060a5_991d3c58-1fb9-4227-90db-8cb3b15da9e1/thumbs/inside/1600x1200/png/r0.webp)](https://www.printables.com/model/1108644-beta-3home-3ms-hybrid-official-modular-enclosure)
 
+[Configuration Generator](https://forked-lined-hour.anvil.app/)
+
 [![Discord Shield](https://discord.com/api/guilds/1307104511663411210/widget.png?style=banner2)](https://discord.gg/ekqxDhdGCg)
 
 The 3MS is a simple, compact, modular, reliable, budget-friendly multimaterial system. 

@@ -180,34 +180,42 @@
 ![](step05c.jpeg){.sm}
 ![](step05d.jpeg){.sm .purple-ol}
 
-# EVERYTHING AFTER THIS POINT IS INCOMPLETE
-
-###**Step 4** Adding Jumpers
+###**Step 6** Adding Jumpers: Part 1
 
 <div class="grid cards" markdown>
-- ![](https://placehold.co/600x400?text=Add+Jumpers){data-gallery="addJumpers"}
-    ![](https://placehold.co/600x400?text=Add+Jumpers+2){.hidden data-gallery="addJumpers"}
+- ![](step06a.jpeg){data-gallery="addJumpers1"}
+    ![](step06b.jpeg){.hidden data-gallery="addJumpers1"}
 
 - Install the VUSB and HVIN jumpers.
     
     ---
 
-    :orange_circle: Install the **VUSB** jumper.
+    :red_circle: Install the **VUSB** jumper.
 
     :green_circle: For each stepper driver, select the **HVIN** input by installing a jumper on each driver.
 </div>
 
-###**Step 5** Install the Stepper Drivers
+![](step06a.jpeg){.sm}
+![](step06b.jpeg){.sm .red-ol .green2-ol}
+
+# EVERYTHING AFTER THIS POINT IS INCOMPLETE
+
+###**Step 7** Adding Jumpers: Part 2
 
 <div class="grid cards" markdown>
-- ![](https://placehold.co/600x400?text=Add+Drivers){data-gallery="addDrivers"}
-    ![](https://placehold.co/600x400?text=Add+Drivers+2){.hidden data-gallery="addDrivers"}
+- ![](https://placehold.co/600x400?text=Add+Drivers){data-gallery="addJumpers2"}
+    ![](https://placehold.co/600x400?text=Add+Drivers+2){.hidden data-gallery="addJumpers2"}
 
 - Install all four EZ2209 stepper drivers.
     
     ---
 
     :orange_circle: Install an EZ2209 into each stepper driver slot.
+</div>
+
+###**Step 8** Installing Stepper Drivers
+
+<div class="grid cards" markdown>
 </div>
 
 <!-- ## Printed Parts
