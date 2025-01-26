@@ -120,6 +120,7 @@ nav:
       - setup/controllers/mellowflyd7.md
       - setup/controllers/geetech-a30t.md
     - setup/assembly.md
+    - setup/config.md
     - setup/calibration.md
   - Guides:
     - guides/generator.md

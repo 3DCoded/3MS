@@ -1,11 +1,11 @@
-# Configuring Happy Hare Firmware
+---
+comments: true
+icon: material/code-json
+---
+
+# Configuration
 
 After installing Happy Hare firmware, there are some configurations you need to go through before printing in multimaterial.
-
-<!-- !!! info "Read me first"
-    Please **READ** this guide! If you ask for help regarding configuration, I'll likely redirect you to this guide.  -->
-
-!!! info "This page is under construction"
 
 ## Filament Sensors
 

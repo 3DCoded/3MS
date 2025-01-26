@@ -54,11 +54,11 @@ Click on one of the chapters below to get started.
 
     ## WIP
 
-- [![](step08a.jpeg)](assembly-ele.md)
+- [![](step08a.jpeg)](assembly-ele-beta.md)
 
     ---
 
-    [**2.** Electrical Assembly](assembly-ele.md){ .md-button }
+    [**2.** Electrical Assembly](assembly-ele-beta.md){ .md-button }
 
 - [![](https://github.com/moggieuk/Happy-Hare/wiki/resources/happy_hare_logo.jpg)](https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS)
 
