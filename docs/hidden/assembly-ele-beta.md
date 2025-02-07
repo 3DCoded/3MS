@@ -23,7 +23,7 @@ comments: true
     - Red and black power cables
     - Wire strippers
 
-    :red_circle: Use wire strippers that can strip 16AWG wire.
+    :red_circle: Use wire strippers that can strip 24AWG wire.
 
     :yellow_circle: Split the ends of the power cables
 
@@ -201,3 +201,33 @@ comments: true
 
 ![](step08a.jpeg){.sm}
 ![](step08b.jpeg){.sm .green-ol}
+
+###**Step 9** Plugging in Stepper Motors
+
+<div class="grid cards" markdown>
+- ![](step09a.jpeg){data-gallery="installSteppers"}
+    ![](step09b.jpeg){.hidden data-gallery="installSteppers"}
+
+- Plug in the four stepper motors from each of the filament units.
+
+    ---
+
+    Prepare the following for this step:
+
+    - 4x Filament Units (assembled previously)
+    - BTT MMB CAN
+
+    :red_circle: Plug in the stepper motor for **T0** into the port labeled **M1**
+
+    :yellow_circle: Plug in the stepper motor for **T1** into the port labeled **M2**
+
+    :green_circle: Plug in the stepper motor for **T2** into the port labeled **M3**
+
+    :blue_circle: Plug in the stepper motor for **T3** into the port labeled **M4**
+
+</div>
+
+---
+
+###**Step 10 (Optional)** 3HOME for the BTT MMB CAN
+

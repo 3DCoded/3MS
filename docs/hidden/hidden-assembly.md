@@ -50,9 +50,7 @@ Click on one of the chapters below to get started.
 
     ---
 
-    **1.** Hardware Assembly
-
-    ## WIP
+    [**1.** Hardware Assembly](assembly-hw-beta.md){ .md-button }
 
 - [![](step08a.jpeg)](assembly-ele-beta.md)
 
