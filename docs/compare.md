@@ -12,7 +12,7 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
 
     --- 
 
-    ![](logo.png)
+    ![](https://media.printables.com/media/prints/1108644/images/8783933_d13beec9-e7d8-47ec-942a-5d3f9dd987ab_0b49a030-f2c5-4465-b8cd-9d605b9f3275/thumbs/inside/1600x1200/png/enclosure_2025-jan-26_01-37-57pm-000_customizedview21389847222_png.webp)
 
     ---
 
@@ -28,7 +28,7 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
 
     :material-plus-box:{.plus} Active Community
 
-    :material-plus-box:{.plus} Price (~$140)
+    :material-plus-box:{.plus} Price (~$150)
 
     ---
 
@@ -187,5 +187,29 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
     :material-minus-box:{.minus} Compatibility
 
     :material-minus-box:{.minus} Price ($300)
+
+-   CoPrint KCM __Multi-Color Upgrade Kit for Klipper 3D Printers__
+
+    ---
+
+    ![](coprintkcm.webp)
+
+    ---
+
+    **Pros:**
+
+    :material-plus-box:{.plus} Simple Design
+
+    :material-plus-box:{.plus} Modular Design
+
+    :material-plus-box:{.plus} Documentation
+
+    ---
+
+    **Cons:**
+
+    :material-minus-box:{.minus} Complexity (relies on ChromaHead)
+
+    :material-minus-box:{.minus} Price (~$300)
 
 </div>
