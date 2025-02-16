@@ -2564,7 +2564,7 @@ After installing and configuring Happy Hare, the 3MS requires some calibrations.
 </div>
 <hr />
 <h2 id="setup-config-distances">Distances</h2>
-<p>There are many key distances to set up in Happy Hare firmware.</p>
+<p>There are many key distances to set up in Happy Hare firmware. All the distance parameters are located in <code>mmu_parameters.cfg</code>.</p>
 <h3 id="setup-config-homing-endstop">Homing Endstop</h3>
 <p>Firstly, when homing filament (checking if it is present), you have three options for the sensor to be used:</p>
 <ul>
@@ -2572,7 +2572,7 @@ After installing and configuring Happy Hare, the 3MS requires some calibrations.
 <li><strong>mmu_gear</strong> Use the individual post-gate sensors.</li>
 <li><strong>extruder</strong> Use the extruder entry sensor.</li>
 </ul>
-<p>Select one of the three options in <code>gate_homing_endstop</code>.</p>
+<p>Select one of the three options in <code>gate_homing_endstop</code>, located in <code>mmu_parameters.cfg</code>.</p>
 <h3 id="setup-config-homing-distance">Homing Distance</h3>
 <p>Next, configure the maximum distance Happy Hare should attempt to load filament to the homing sensor, before "giving up" and deciding that the spool is empty. This should usually be ~150% the distance from your filament parking position to the sensor.</p>
 <div class="admonition note">
