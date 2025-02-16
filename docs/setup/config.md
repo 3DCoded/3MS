@@ -78,7 +78,7 @@ post_gate_switch_pin_3: <SOME PIN>
 
 ## Distances
 
-There are many key distances to set up in Happy Hare firmware.
+There are many key distances to set up in Happy Hare firmware. All the distance parameters are located in `mmu_parameters.cfg`.
 
 ### Homing Endstop
 
@@ -88,7 +88,7 @@ Firstly, when homing filament (checking if it is present), you have three option
 - **mmu_gear** Use the individual post-gate sensors.
 - **extruder** Use the extruder entry sensor.
 
-Select one of the three options in `gate_homing_endstop`.
+Select one of the three options in `gate_homing_endstop`, located in `mmu_parameters.cfg`.
 
 ### Homing Distance
 
