@@ -46,7 +46,3 @@ To get started with the 3MS, see the [Master Instructions](https://3dcoded.githu
 [Get Started](https://3dcoded.github.io/3MS/instructions/)
 
 [![](https://img.youtube.com/vi/p-0RshsVmOk/0.jpg)](https://www.youtube.com/watch?v=p-0RshsVmOk)
-
-## Stats
-
-![Alt](https://repobeats.axiom.co/api/embed/d670d6f2eae5970f20cf34f40eb933c446089e6a.svg "Repobeats analytics image")
