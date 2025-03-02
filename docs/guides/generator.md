@@ -18,9 +18,9 @@ Now, you will be redirected to a page with the raw configuration. Copy the URL.
 
 ![](generator02.png)
 
-## Generating the Configuration - Web
+## [Generating the Configuration - Web](https://forked-lined-hour.anvil.app/)
 
-
+## OR
 
 ## Generating the Configuration - Shell
 
