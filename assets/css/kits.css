@@ -13,6 +13,10 @@ ul {
     margin-right: 2px;
 }
 
+.mdimg {
+    width: 50%;
+}
+
 .white-ol {
     outline: 3px solid grey;
 }
