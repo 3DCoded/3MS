@@ -21,6 +21,27 @@ def resize_images_in_folder(folder_path, output_folder, width):
     # Ensure the output folder exists
     os.makedirs(output_folder, exist_ok=True)
 
+    supported_formats = ('.heic', '.HEIC', '.jpg', '.JPG', '.png', '.PNG', '.webp', '.WEBP')
+
+    # Iterate through all files in the input directory
+    for filename in os.listdir(folder_path):
+        if filename.endswith(supported_formats):
+            file_path = os.path.join(folder_path, filename)
+            output_path = os.path.join(folder_path, os.path.splitext(filename)[0] + '.jpeg')
+
+            try:
+                # Open the image and convert it to RGB (to handle transparency in PNGs)
+                with Image.open(file_path) as img:
+                    img = img.convert('RGB')
+                os.remove(file_path)
+                img.save(output_path, 'JPEG', quality=90)
+
+                print(f'Converted {filename} to {output_path}')
+            except Exception as e:
+                print(f'Failed to convert {filename}: {e}')
+
+    print('Conversion complete!')
+
     # Loop through all files in the folder
     for file_name in os.listdir(folder_path):
         file_path = os.path.join(folder_path, file_name)

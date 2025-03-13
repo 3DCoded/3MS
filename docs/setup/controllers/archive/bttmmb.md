@@ -1,13 +1,12 @@
 ---
-icon: material/check
 comments: true
 ---
 
-# BTT MMB
+# BTT MMB V1
 
 **Max filament units: 4**
 
-**MCU Name: `3ms`**
+**MCU Name: `mmu`**
 
 ## BOM
 

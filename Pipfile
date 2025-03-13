@@ -6,7 +6,6 @@ name = "pypi"
 [packages]
 mkdocs = "*"
 mkdocs-material = "*"
-mkdocs-autolinks-plugin = "*"
 mkdocs-glightbox = "*"
 mkdocs-print-site-plugin = "*"
 mkdocs-git-revision-date-localized-plugin = "*"
@@ -16,6 +15,9 @@ symspellpy = "*"
 termynal = "*"
 mkdocs-macros-plugin = "*"
 neoteroi-mkdocs = "*"
+mkdocs-autolinks-plugin = "*"
+gitpython = "*"
+pillow = "*"
 
 [dev-packages]
 

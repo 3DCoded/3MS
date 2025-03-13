@@ -2,102 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://3dcoded.github.io/3MS/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/compare/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/instructions/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/contributing/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/contributing/devsetup/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/guides/3dchameleon/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/guides/generator/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/hidden/assembly-ele-beta/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/hidden/assembly-hw-beta/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/hidden/hidden-assembly/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3MS/hidden/kits-first-look/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <loc>https://3dcoded.github.io/3MS/kits/</loc>
+         <lastmod>2025-03-13</lastmod>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3MS/kits/kits-instructions/</loc>
+         <lastmod>2025-03-13</lastmod>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3MS/kits/tour/</loc>
+         <lastmod>2025-03-13</lastmod>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3MS/kits/instructions/electronic-assembly/</loc>
+         <lastmod>2025-03-13</lastmod>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3MS/kits/instructions/extruder-assembly/</loc>
+         <lastmod>2025-03-13</lastmod>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3MS/kits/instructions/printed-parts-and-tools/</loc>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/setup/assembly/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/setup/bom/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/setup/calibration/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/setup/config/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/setup/controllers/</loc>
-         <lastmod>2025-03-02</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3MS/setup/controllers/bttmmb/</loc>
-         <lastmod>2025-03-02</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3MS/setup/controllers/bttoctopusmain/</loc>
-         <lastmod>2025-03-02</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3MS/setup/controllers/einsyrambo-skrminie3v2/</loc>
-         <lastmod>2025-03-02</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3MS/setup/controllers/geetech-a30t/</loc>
-         <lastmod>2025-03-02</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3MS/setup/controllers/mellowflyd7/</loc>
-         <lastmod>2025-03-02</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3MS/setup/controllers/minirambo/</loc>
-         <lastmod>2025-03-02</lastmod>
-    </url>
-    <url>
-         <loc>https://3dcoded.github.io/3MS/setup/controllers/skrminie3v2/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
          <loc>https://3dcoded.github.io/3MS/setup/controllers/skrpico/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-13</lastmod>
     </url>
     <url>
-         <loc>https://3dcoded.github.io/3MS/setup/controllers/zm384main/</loc>
-         <lastmod>2025-03-02</lastmod>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/archive/bttmmb/</loc>
+         <lastmod>2025-03-13</lastmod>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/archive/bttoctopusmain/</loc>
+         <lastmod>2025-03-13</lastmod>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/archive/einsyrambo-skrminie3v2/</loc>
+         <lastmod>2025-03-13</lastmod>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/archive/geetech-a30t/</loc>
+         <lastmod>2025-03-13</lastmod>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/archive/mellowflyd7/</loc>
+         <lastmod>2025-03-13</lastmod>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/archive/minirambo/</loc>
+         <lastmod>2025-03-13</lastmod>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/archive/skrminie3v2/</loc>
+         <lastmod>2025-03-13</lastmod>
+    </url>
+    <url>
+         <loc>https://3dcoded.github.io/3MS/setup/controllers/archive/zm384main/</loc>
+         <lastmod>2025-03-13</lastmod>
     </url>
 </urlset>

@@ -9,6 +9,9 @@ comments: true
 
 Due to the modularity of the 3MS, there are many ways to set it up. This guide attempts to encompass all supported ways of setting up the 3MS.
 
+!!! info "3MS Kits"
+    If you purchased a 3MS kit, follow [these](kits/index.md) kit-specific detailed instructions.
+
 ## Chapters
 
 <div class="grid cards" markdown>

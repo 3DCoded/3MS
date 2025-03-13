@@ -1,4 +1,5 @@
 ---
+icon: material/check
 comments: true
 ---
 
@@ -6,15 +7,15 @@ comments: true
 
 **Max filament units: 4**
 
-**MCU Name: `3ms`**
+**MCU Name: `mmu`**
 
 ## BOM
 
 | Name | Price | Quantity | Link | Notes |
 | - | - | - | - | - |
-| SKR Pico | $35.99 | 1 | [Amazon](https://a.co/d/eCaz52Z) | |
+| SKR Pico | $26.58 | 1 | [BIQU](https://biqu.equipment/products/btt-skr-pico-v1-0?variant=40565262155874) | |
 Duponts | $9.99 | 1 | [Amazon](https://a.co/d/6QwGxhH) | These wires are only sufficient to run steppers, not heaters |
-| 12V PSU | $7.39 | 1 | [Amazon](https://a.co/d/gLC1eli) | This PSU is only sufficient to run steppers, not heaters |
+| 24V PSU | $12.98 | 1 | [Amazon](https://a.co/d/6BJT2RP) | This PSU is only sufficient to run steppers, not heaters |
 
 ## Wiring
 
@@ -27,7 +28,7 @@ Route the wires from the NEMA17's to the controller board. Follow this table to 
 | 2 | Z1 or Z2 |
 | 3 | E |
 
-Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)
+Now, grab your 24V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)
 
 1. Plug the red wire into the positive terminal of the screw terminals
 2. Plug the black wire into the negative terminal of the screw terminals

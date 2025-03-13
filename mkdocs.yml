@@ -4,6 +4,7 @@ repo_url: https://github.com/3dcoded/3MS
 plugins:
   - search
   - macros
+  - step_helper
   # - spellcheck:
   #     backends:
   #     - symspellpy
@@ -109,16 +110,17 @@ nav:
   - Setup:
     - BOM: setup/bom.md
     - Controllers:
-      - setup/controllers/bttmmb.md
       - setup/controllers/index.md
-      - setup/controllers/skrminie3v2.md
       - setup/controllers/skrpico.md
-      - setup/controllers/bttoctopusmain.md
-      - setup/controllers/einsyrambo-skrminie3v2.md
-      - setup/controllers/zm384main.md
-      - setup/controllers/minirambo.md
-      - setup/controllers/mellowflyd7.md
-      - setup/controllers/geetech-a30t.md
+      - Archive:
+        - setup/controllers/archive/bttmmb.md
+        - setup/controllers/archive/skrminie3v2.md
+        - setup/controllers/archive/bttoctopusmain.md
+        - setup/controllers/archive/einsyrambo-skrminie3v2.md
+        - setup/controllers/archive/zm384main.md
+        - setup/controllers/archive/minirambo.md
+        - setup/controllers/archive/mellowflyd7.md
+        - setup/controllers/archive/geetech-a30t.md
     - setup/assembly.md
     - setup/config.md
     - setup/calibration.md
