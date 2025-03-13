@@ -20,7 +20,7 @@ After several months of planning and preparation, I am super excited to release 
 
     Each board is pre-flashed with the latest Klipper firmware and checked for MCU functionality.
 
-- ![](36921d04.jpeg)
+- ![](03f503e7.jpeg)
 
     ---
 
@@ -52,7 +52,7 @@ After several months of planning and preparation, I am super excited to release 
 
     Each kit includes 10ft of 2mmIDx4mmOD PTFE tubing, five PC4-M10 fittings, and five ECAS04 fittings so you can use any Y-splitter.
 
-- ![](36921d04.jpeg)
+- ![](3486f02b.jpeg)
 
     ---
 

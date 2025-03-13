@@ -71,6 +71,40 @@ gcard
 .stepi-ae32f565 .blue-ol
 .stepi-97215347 .purple-ol
 
+.Stepn Preparing the Power Cables
+
+gcard
+
+- stepi-7870312c
+    stepi-7870312c
+    stepi-7870312c
+    stepi-7870312c
+
+- Strip the power cables and prepare for the next steps.
+
+    Prepare the following for this step:
+
+    &emsp;.rcir. Power cables
+
+    &emsp;.ocir. Wire strippers
+
+    .gcir. Split both ends of the wires as shown.
+
+    .bcir. Strip a short length off of all four ends of the wires.
+
+    .pcir. Twist the ends of the wires.
+
+.gcard
+
+.stepi-7870312c .red-ol .orange2-ol
+.stepi-7870312c .green-ol
+.stepi-7870312c .blue-ol
+.stepi-7870312c .purple-ol
+
+.Stepn Connecting the PSU
+
+TODO...
+
 .Stepn Connecting the Power Cables
 
 gcard
