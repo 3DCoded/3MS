@@ -259,4 +259,8 @@ gcard
     .bcir. Fasten the extruder onto the stepper motor with three bolts using the 2.5mm hex key.
 
     .pcir. Repeat for the remaining three filament units.
-    
+
+.gcard
+
+
+[:material-arrow-right: Electronics Assembly](electronic-assembly.md){.md-button}

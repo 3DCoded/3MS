@@ -226,3 +226,5 @@ Repeat the process for the final stepper, routing the wire as shown with the gre
 Plug this stepper into the leftmost plug on the SKR.
 
 ![](3f66eb08.jpeg){.mdimg}
+
+[:material-arrow-right: Software Setup](software-setup.md){.md-button}

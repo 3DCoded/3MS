@@ -1,3 +1,8 @@
+.md-button-wide {
+    min-width: 40%;
+    text-align: center !important;
+}
+
 ul {
     list-style-type: none;
 }

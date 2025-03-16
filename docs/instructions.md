@@ -28,11 +28,11 @@ Due to the modularity of the 3MS, there are many ways to set it up. This guide a
 
     [**2. Hardware Assembly**](assembly.md){.md-button}
 
-- [![](step08a.jpeg)](../setup/assembly#wiring)
+- [![](step08a.jpeg)](setup/assembly#wiring)
 
     ---
 
-    [**3. Electrical Assembly**](../setup/assembly#wiring){ .md-button }
+    [**3. Electrical Assembly**](setup/assembly#wiring){ .md-button }
 
 - [![](https://github.com/moggieuk/Happy-Hare/wiki/resources/happy_hare_logo.jpg)](https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS)
 

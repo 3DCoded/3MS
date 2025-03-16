@@ -17,13 +17,13 @@ First, choose the number of filament units you want. Each filament unit lets you
 
 Choose the BOM for your chosen controller from the list below:
 
-**Recommended: [BTT MMB](bttmmb.md#bom)** 
+**Recommended: [BTT SKR Pico](skrpico.md#bom)** 
 
 ??? "Other Controllers"
 
     [BTT SKR Mini E3 V2](skrminie3v2.md#bom)
     
-    [BTT SKR Pico](skrpico.md#bom)
+    [BTT MMB](bttmmb.md#bom)
     
     [Mellow Fly D7](mellowflyd7.md#bom)
     

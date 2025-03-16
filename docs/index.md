@@ -37,6 +37,11 @@ To use the 3MS, your setup has to meet the following requirements:
 - Have SSH (PuTTY) access (99.9% of Klipper installations have this, and if you don't you really should setup SSH)
 - Have one spare USB port
 - Have an adapter to install a PTFE tube to the inlet of your printer's extruder.
+- Have one filament sensor right before your printer's extruder.
+
+## Recommendations
+
+It is **highly** recommended to install a filament cutter to your printer to avoid the need to tune tip forming.
 
 ## Get Started
 
