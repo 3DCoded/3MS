@@ -12,7 +12,7 @@ After several months of planning and preparation, I am super excited to release 
 
 <div class="grid cards" markdown>
 
-- ![](36921d04.jpeg)
+- ![](36921d04.png)
 
     ---
 
@@ -20,7 +20,7 @@ After several months of planning and preparation, I am super excited to release 
 
     Each board is pre-flashed with the latest Klipper firmware and checked for MCU functionality.
 
-- ![](03f503e7.jpeg)
+- ![](03f503e7.png)
 
     ---
 
@@ -28,7 +28,7 @@ After several months of planning and preparation, I am super excited to release 
 
     Each kit includes a PSU rated for 24V@2A, ~10in of black and red power cables, and an adapter to a screw terminal.
 
-- ![](3363944e.jpeg)
+- ![](3363944e.png)
 
     ---
 
@@ -36,7 +36,7 @@ After several months of planning and preparation, I am super excited to release 
 
     Each kit includes four BMG-style extruders to drive the filament.
 
-- ![](c32a4c96.jpeg)
+- ![](c32a4c96.png)
 
     ---
 
@@ -44,7 +44,7 @@ After several months of planning and preparation, I am super excited to release 
 
     Each kit includes four NEMA17 stepper motors to drive the extruders.
 
-- ![](127df408.jpeg)
+- ![](127df408.png)
 
     ---
 
@@ -52,7 +52,7 @@ After several months of planning and preparation, I am super excited to release 
 
     Each kit includes 10ft of 2mmIDx4mmOD PTFE tubing, five PC4-M10 fittings, and five ECAS04 fittings so you can use any Y-splitter.
 
-- ![](3486f02b.jpeg)
+- ![](3486f02b.png)
 
     ---
 
