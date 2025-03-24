@@ -66,12 +66,12 @@ if match:
                 self.imgcounter += 1
                 match = sm_img_pattern.match(line)
                 img_path, colors = match.group(1), match.group(2).strip()
-                lines.append('![](%s.jpeg){.sm %s data-gallery="step%d-sm"}' % (img_path, colors, self.counter))
+                lines.append('![](%s.png){.sm %s data-gallery="step%d-sm"}' % (img_path, colors, self.counter))
             elif len(img_pattern.findall(line)) > 0:
                 self.imgcounter += 1
                 hidden = '.hidden ' if self.imgcounter > 1 else ''
                 img_path = img_pattern.findall(line)[0]
-                lines.append('![](%s.jpeg){%sdata-gallery="step%d"}' % (img_path, hidden, self.counter))
+                lines.append('![](%s.png){%sdata-gallery="step%d"}' % (img_path, hidden, self.counter))
             else:
                 lines.append(line)
 

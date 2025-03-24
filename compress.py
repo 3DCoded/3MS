@@ -27,14 +27,14 @@ def resize_images_in_folder(folder_path, output_folder, width):
     for filename in os.listdir(folder_path):
         if filename.endswith(supported_formats):
             file_path = os.path.join(folder_path, filename)
-            output_path = os.path.join(folder_path, os.path.splitext(filename)[0] + '.jpeg')
+            output_path = os.path.join(folder_path, filename.split('.')[0] + '.png')
 
             try:
                 # Open the image and convert it to RGB (to handle transparency in PNGs)
                 with Image.open(file_path) as img:
-                    img = img.convert('RGB')
+                    img = img.convert('RGBA')
                 os.remove(file_path)
-                img.save(output_path, 'JPEG', quality=90)
+                img.save(output_path, 'PNG', quality=90)
 
                 print(f'Converted {filename} to {output_path}')
             except Exception as e:
@@ -58,7 +58,9 @@ def resize_images_in_folder(folder_path, output_folder, width):
                 img.thumbnail((2000, 1500))
 
                 # Save resized image to the output folder
-                new_file_name = file_name if is_hash(file_name) else secrets.token_hex(4)+'.'+file_name.split('.')[1]
+                new_file_name = file_name if is_hash(file_name) else secrets.token_hex(4)+'.png'#+file_name.split('.')[1]
+                if not new_file_name.endswith('.png'):
+                    new_file_name = new_file_name.split('.')[0]+'.png'
                 output_path = os.path.join(output_folder, new_file_name)
                 img.save(output_path)
                 os.rename(file_path, os.path.join(folder_path, new_file_name))

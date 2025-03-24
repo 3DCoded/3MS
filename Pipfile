@@ -18,6 +18,7 @@ neoteroi-mkdocs = "*"
 mkdocs-autolinks-plugin = "*"
 gitpython = "*"
 pillow = "*"
+regex = "*"
 
 [dev-packages]
 
