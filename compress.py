@@ -21,7 +21,7 @@ def resize_images_in_folder(folder_path, output_folder, width):
     # Ensure the output folder exists
     os.makedirs(output_folder, exist_ok=True)
 
-    supported_formats = ('.heic', '.HEIC', '.jpg', '.JPG', '.png', '.PNG', '.webp', '.WEBP')
+    supported_formats = ('.heic', '.HEIC', '.jpg', '.JPG', '.webp', '.WEBP')
 
     # Iterate through all files in the input directory
     for filename in os.listdir(folder_path):

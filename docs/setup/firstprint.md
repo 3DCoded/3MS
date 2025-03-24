@@ -18,5 +18,8 @@ This tutorial will walk you through setting up the 3MS with OrcaSlicer. If you u
 
 Begin by opening your machine settings.
 
-![](b19dc50b.png)
+![](9c52e9c3.png)
 
+Navigate to `Machine G-Code`.
+
+![](2f542723.png)

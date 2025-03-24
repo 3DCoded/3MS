@@ -42,6 +42,8 @@ markdown_extensions:
   - pymdownx.tilde
   - admonition
   - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
   - pymdownx.highlight:
       anchor_linenums: true
       auto_title: false
