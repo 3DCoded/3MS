@@ -40,9 +40,9 @@ gcard
 
 - Ensure you have:
 
-    .rcir. A phillips-head screwdriver (used for the screw terminals for the PSU)
+    - A phillips-head screwdriver (used for the screw terminals for the PSU)
 
-    .gcir. A flat-head screwdriver (used for the screw terminals on the SKR Pico)
+    - A flat-head screwdriver (used for the screw terminals on the SKR Pico)
 
 .gcard
 
@@ -51,7 +51,7 @@ gcard
 gcard
 - stepi-a92eec86
 
-- Ensure you have wire strippers capable of stripping 24AWG wire (0.25mm^2^)
+- .rcir. Ensure you have wire strippers capable of stripping 24AWG wire (0.25mm^2^)
 
 .gcard
 
@@ -61,9 +61,7 @@ gcard
 
 - stepi-803a96e1
 
-- Ensure you have:
-
-    .rcir. Side cutters (used for cutting zip ties)
+- Ensure you have side cutters (used for cutting zip ties)
 
 .gcard
 
