@@ -6,21 +6,21 @@ comments: true
 
 # Printed Parts & Tools
 
-###**Stepn** 3HOME Enclosure
+.Stepn 3HOME Enclosure
 
-<div class="grid cards" markdown>
-- ![](71587e5f.jpeg){data-gallery="stepn"}
+gcard
+- stepi-71587e5f.jpeg
 
 - Print out the 3HOME Official Modular Enclosure for the 3MS.
 
     [:material-printer: Printables](https://www.printables.com/model/1108644-beta-3home-3ms-hybrid-official-modular-enclosure/files){.md-button}
 
-</div>
+.gcard
 
-###**Stepn** Hex Keys
+.Stepn Hex Keys
 
-<div class="grid cards" markdown>
-- ![](0e6e186e.jpeg){data-gallery="stepn"}
+gcard
+- stepi-0e6e186e.png
 
 - Ensure you have the following hex keys:
 
@@ -30,7 +30,7 @@ comments: true
     
     :blue_circle: 2.5mm (included in the kit but recommended to get your own)
 
-</div>
+.gcard
 
 .Stepn Phillips & Flat-head Screwdrivers
 
@@ -46,14 +46,14 @@ gcard
 
 .gcard
 
-###**Stepn** Wire Strippers
+.Stepn Wire Strippers
 
-<div class="grid cards" markdown>
-- ![](a92eec86.jpeg){data-gallery="stepn"}
+gcard
+- stepi-a92eec86.jpeg
 
 - Ensure you have wire strippers capable of stripping 24AWG wire (0.25mm^2^)
 
-</div>
+.gcard
 
 .Stepn Side Cutters
 
