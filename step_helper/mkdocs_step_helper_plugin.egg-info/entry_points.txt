@@ -1,2 +1,0 @@
-[mkdocs.plugins]
-step_helper = step_helper.plugin:StepHelperPlugin
