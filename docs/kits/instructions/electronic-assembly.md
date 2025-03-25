@@ -189,6 +189,7 @@ gcard
 
 Begin by stretching out each stepper motor wire away from the 3HOME as shown.
 
+<<<<<<< Updated upstream
 ![](7b9ae602.png){.mdimg}
 
 Next, take the rightmost wire (T0) and form it into the shape shown.
@@ -226,5 +227,44 @@ Repeat the process for the final stepper, routing the wire as shown with the gre
 Plug this stepper into the leftmost plug on the SKR.
 
 ![](3f66eb08.png){.mdimg}
+=======
+![](7b9ae602.jpeg){.mdimg}
+
+Next, take the rightmost wire (T0) and form it into the shape shown.
+
+![](64eeec85.jpeg){.mdimg}
+
+Fold it back over itself several times until a short length is remaining. Use a zip tie to secure and cut off the excess from the zip tie.
+
+![](eb382317.jpeg){.mdimg}
+
+Push the cable bundle into the SKR case and route the wire as shown with the green line.
+
+![](6714f09d.jpeg){.mdimg}
+
+Plug the stepper cable into the second-to-left port on the SKR (when viewed upside down as shown)
+
+![](7b693bf8.jpeg){.mdimg}
+
+Repeat the same process for the stepper motor to the left of the previous one. Plug it into the port to the right of the first one.
+
+![](7f892d9d.jpeg){.mdimg}
+
+Repeat the process for the next stepper motor in line, routing the wire as shown with the green line.
+
+![](8c228c68.jpeg){.mdimg}
+
+Plug the stepper into the port to the right of the previous one.
+
+![](7aafd269.jpeg){.mdimg}
+
+Repeat the process for the final stepper, routing the wire as shown with the green line.
+
+![](6125f8b5.jpeg){.mdimg}
+
+Plug this stepper into the leftmost plug on the SKR.
+
+![](3f66eb08.jpeg){.mdimg}
+>>>>>>> Stashed changes
 
 [:material-arrow-right: Software Setup](software-setup.md){.md-button}
