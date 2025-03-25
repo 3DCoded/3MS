@@ -1,0 +1,3117 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.3dcoded.xyz/3MS/print_page/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Print Site - 3MS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../assets/css/calibration.css">
+    
+      <link rel="stylesheet" href="../assets/css/neoteroi-mkdocs.css">
+    
+    <script>__md_scope=new URL("/3MS/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-ERRF9DWVTD"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-ERRF9DWVTD",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-ERRF9DWVTD",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+
+
+  
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
+        })
+        </script>
+        </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#index" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="3MS" class="md-header__button md-logo" aria-label="3MS" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            3MS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Print Site
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/3dcoded/3MS" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="3MS" class="md-nav__button md-logo" aria-label="3MS" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    3MS
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/3dcoded/3MS" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compare/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 23h-2V1h2zm-4-4H5V5h4V3H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h4zM19 7v2h2V7zm0-2h2a2 2 0 0 0-2-2zm2 10h-2v2h2zm-2-4v2h2v-2zm-2-8h-2v2h2zm2 18c1.11 0 2-.89 2-2h-2zm-2-2h-2v2h2z"/></svg>
+  
+  <span class="md-ellipsis">
+    Comparison of Multimaterial Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../instructions/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.604 3.089A.75.75 0 0 1 4 3.75V8.5h.75a.75.75 0 0 1 0 1.5h-3a.75.75 0 1 1 0-1.5h.75V5.151l-.334.223a.75.75 0 0 1-.832-1.248l1.5-1a.75.75 0 0 1 .77-.037M8.75 5.5a.75.75 0 0 0 0 1.5h11.5a.75.75 0 0 0 0-1.5zm0 6a.75.75 0 0 0 0 1.5h11.5a.75.75 0 0 0 0-1.5zm0 6a.75.75 0 0 0 0 1.5h11.5a.75.75 0 0 0 0-1.5zM5.5 15.75c0-.704-.271-1.286-.72-1.686a2.3 2.3 0 0 0-1.53-.564c-.535 0-1.094.178-1.53.565-.449.399-.72.982-.72 1.685a.75.75 0 0 0 1.5 0c0-.296.104-.464.217-.564A.8.8 0 0 1 3.25 15c.215 0 .406.072.533.185.113.101.217.268.217.565 0 .332-.069.48-.21.657-.092.113-.216.24-.403.419l-.147.14c-.152.144-.33.313-.52.504l-1.5 1.5a.75.75 0 0 0-.22.53v.25c0 .414.336.75.75.75H5A.75.75 0 0 0 5 19H3.31l.47-.47c.176-.176.333-.324.48-.465l.165-.156a6 6 0 0 0 .536-.566c.358-.447.539-.925.539-1.593"/></svg>
+  
+  <span class="md-ellipsis">
+    Instructions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/bom/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m0 4v4h6V8zm8 0v4h6V8zm-8 6v4h6v-4zm8 0v4h6v-4z"/></svg>
+  
+  <span class="md-ellipsis">
+    BOM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../setup/controllers/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Controllers
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Controllers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/controllers/skrpico/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg>
+  
+  <span class="md-ellipsis">
+    BTT SKR Pico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3" id="__nav_4_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/controllers/archive/bttmmb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BTT MMB V1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/controllers/archive/skrminie3v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BTT SKR Mini E3 V2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/controllers/archive/bttoctopusmain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BTT Octopus (main MCU)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/controllers/archive/einsyrambo-skrminie3v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Einsy RAMBo (main MCU) with SKR Mini E3 V2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/controllers/archive/zm384main/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zonestar ZM384 (main MCU)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/controllers/archive/minirambo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mini RAMBo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/controllers/archive/mellowflyd7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mellow Fly D7
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/controllers/archive/geetech-a30t/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geetech A30T
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/assembly/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.71 20.29-1.42 1.42a1 1 0 0 1-1.41 0L7 9.85A3.8 3.8 0 0 1 6 10a4 4 0 0 1-3.78-5.3l2.54 2.54.53-.53 1.42-1.42.53-.53L4.7 2.22A4 4 0 0 1 10 6a3.8 3.8 0 0 1-.15 1l11.86 11.88a1 1 0 0 1 0 1.41M2.29 18.88a1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41 0l5.47-5.46-2.83-2.83M20 2l-4 2v2l-2.17 2.17 2 2L18 8h2l2-4Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Assembly
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/config/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h2v2H5v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5h2v2H5c-1.07-.27-2-.9-2-2v-4a2 2 0 0 0-2-2H0v-2h1a2 2 0 0 0 2-2V5a2 2 0 0 1 2-2m14 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3zm-7 12a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-4 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m8 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1"/></svg>
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/calibration/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 336c0 26.5 21.5 48 48 48h544c26.5 0 48-21.5 48-48V176c0-26.5-21.5-48-48-48h-64v80c0 8.8-7.2 16-16 16s-16-7.2-16-16v-80h-64v80c0 8.8-7.2 16-16 16s-16-7.2-16-16v-80h-64v80c0 8.8-7.2 16-16 16s-16-7.2-16-16v-80h-64v80c0 8.8-7.2 16-16 16s-16-7.2-16-16v-80h-64v80c0 8.8-7.2 16-16 16s-16-7.2-16-16v-80H48c-26.5 0-48 21.5-48 48z"/></svg>
+  
+  <span class="md-ellipsis">
+    Calibration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/generator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration Generator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/3dchameleon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3DChameleon to 3MS Conversion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../contributing/" class="md-nav__link ">
+              
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 13.25a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0m-12.5 6a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0m0-14.5a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0M5.75 6.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 6.5m0 14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 21m12.5-6a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 18.25 15"/><path d="M6.5 7.25c0 2.9 2.35 5.25 5.25 5.25h4.5V14h-4.5A6.75 6.75 0 0 1 5 7.25Z"/><path d="M5.75 16.75A.75.75 0 0 1 5 16V8a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-.75.75"/></svg>
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Contributing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/devsetup/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.25 12a.75.75 0 0 1-.22.53l-2.75 2.75a.75.75 0 0 1-1.06-1.06L7.44 12 5.22 9.78a.75.75 0 1 1 1.06-1.06l2.75 2.75c.141.14.22.331.22.53m2 2a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5z"/><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Development Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#index" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 Home
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compare" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 Comparison of Multimaterial Systems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 Instructions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-bom" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 BOM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#section-4-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Controllers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 Controllers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-controllers" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.1 Controllers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-controllers-skrpico" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.2 BTT SKR Pico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#section-4-2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3 Archive
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2.3 Archive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-controllers-archive-bttmmb" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3.1 BTT MMB V1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-controllers-archive-skrminie3v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3.2 BTT SKR Mini E3 V2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-controllers-archive-bttoctopusmain" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3.3 BTT Octopus (main MCU)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-controllers-archive-einsyrambo-skrminie3v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3.4 Einsy RAMBo (main MCU) with SKR Mini E3 V2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-controllers-archive-zm384main" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3.5 Zonestar ZM384 (main MCU)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-controllers-archive-minirambo" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3.6 Mini RAMBo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-controllers-archive-mellowflyd7" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3.7 Mellow Fly D7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-controllers-archive-geetech-a30t" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3.8 Geetech A30T
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Assembly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 Calibration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 Guides
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 Guides">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guides-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Configuration Generator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guides-3dchameleon" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 3DChameleon to 3MS Conversion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 Contributing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 Contributing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Contributing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contributing-devsetup" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Development Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+
+
+
+                  
+
+
+
+<div id="print-site-page" class="print-site-enumerate-headings print-site-enumerate-figures">
+        <section class="print-page">
+            <div id="print-page-toc" data-toc-depth="3">
+                <nav role='navigation' class='print-page-toc-nav'>
+                <h1 class='print-page-toc-title'>Table of Contents</h1>
+                </nav>
+            </div>
+        </section>
+        <section class="print-page" id="index" heading-number="1"><h1 id="index-welcome-to-the-3ms-documentation">Welcome to the 3MS Documentation</h1>
+<p>The 3MS is short for MMMS, which stands for <strong>M</strong>odular <strong>M</strong>ulti <strong>M</strong>aterial <strong>S</strong>ystem</p>
+<p><a href="https://www.printables.com/model/1108644-beta-3home-3ms-hybrid-official-modular-enclosure"><img alt="" src="https://media.printables.com/media/prints/1108644/images/9216280_de984a65-3c50-48c9-8b65-210f846f8b18_b5b7545c-3eb9-4bc8-a6c5-dec8cb7aa465/thumbs/inside/1600x1200/png/screenshot-2025-03-14-at-72728-am.webp" /></a></p>
+<p><a href="https://forked-lined-hour.anvil.app/">Configuration Generator</a></p>
+<p><a href="https://discord.gg/ekqxDhdGCg"><img alt="Discord Shield" src="https://discord.com/api/guilds/1307104511663411210/widget.png?style=banner2" /></a></p>
+<p>The 3MS is a simple, compact, modular, reliable, budget-friendly multimaterial system. </p>
+<p><a class="md-button" href="#instructions">Get Started <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 13v-2h14v2zm0 6v-2h14v2zM7 7V5h14v2zM3 8V5H2V4h2v4zm-1 9v-1h3v4H2v-1h2v-.5H3v-1h1V17zm2.25-7a.75.75 0 0 1 .75.75c0 .2-.08.39-.21.52L3.12 13H5v1H2v-.92L4 11H2v-1z"/></svg></span></a></p>
+<h2 id="index-why-3ms">Why 3MS?</h2>
+<p>Why use the 3MS when there are many other multi-material systems?</p>
+<p>Here are a few reasons:</p>
+<ul>
+<li><strong>Simplified Design</strong>: Minimal mechanical complexity for increased reliability.</li>
+<li><strong>Low Cost</strong>: A 4-filament-unit 3MS can be built for ~$150 USD</li>
+<li><strong>Easily Sourceable</strong>: All the parts for the 3MS are available on Amazon.</li>
+<li><strong>Comprehensive Documentation</strong>: Step-by-step guides to ensure smooth setup and operation.</li>
+<li><strong>Scalable</strong>: Easily expand the system to handle any number of filaments.</li>
+</ul>
+<h2 id="index-requirements">Requirements</h2>
+<p>To use the 3MS, your setup has to meet the following requirements:</p>
+<ul>
+<li>Run Klipper firmware</li>
+<li>Have SSH (PuTTY) access (99.9% of Klipper installations have this, and if you don't you really should setup SSH)</li>
+<li>Have one spare USB port</li>
+<li>Have an adapter to install a PTFE tube to the inlet of your printer's extruder.</li>
+<li>Have one filament sensor right before your printer's extruder.</li>
+</ul>
+<h2 id="index-recommendations">Recommendations</h2>
+<p>It is <strong>highly</strong> recommended to install a filament cutter to your printer to avoid the need to tune tip forming.</p>
+<h2 id="index-get-started">Get Started</h2>
+<p>To get started with the 3MS, see the <a href="#instructions">Master Instructions</a>.</p>
+<p><a class="md-button" href="#instructions">Get Started <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 13v-2h14v2zm0 6v-2h14v2zM7 7V5h14v2zM3 8V5H2V4h2v4zm-1 9v-1h3v4H2v-1h2v-.5H3v-1h1V17zm2.25-7a.75.75 0 0 1 .75.75c0 .2-.08.39-.21.52L3.12 13H5v1H2v-.92L4 11H2v-1z"/></svg></span></a></p>
+<iframe width="560" height="315"  src="https://www.youtube.com/embed/p-0RshsVmOk?si=rx554jrZFm6iZ0TR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<hr />
+<details>
+<summary>Sample Prints</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="index-__tabbed_1_1" name="index-__tabbed_1" type="radio" /><input id="index-__tabbed_1_2" name="index-__tabbed_1" type="radio" /><input id="index-__tabbed_1_3" name="index-__tabbed_1" type="radio" /><input id="index-__tabbed_1_4" name="index-__tabbed_1" type="radio" /><input id="index-__tabbed_1_5" name="index-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="index-__tabbed_1_1">Sheep</label><label for="index-__tabbed_1_2">Calendar</label><label for="index-__tabbed_1_3">Voron Cube</label><label for="index-__tabbed_1_4">T-Rex</label><label for="index-__tabbed_1_5">Lizard</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../assets/images/sampleprints/samplesheep.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/sampleprints/samplesheep.jpeg" style="height: 300px" /></a></p>
+<p>Model: <a href="https://www.printables.com/model/838872-sheep-multi-material-remix">Sheep by Cipis</a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../assets/images/sampleprints/samplecalendar.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/sampleprints/samplecalendar.jpeg" style="width: 300px" /></a></p>
+<p>Model: <a href="https://www.printables.com/model/698341-monolith-cryptic-calendar">Monolith Cryptic Calendar by Sevro</a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../assets/images/sampleprints/samplevoron.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/sampleprints/samplevoron.jpeg" style="height: 300px" /></a></p>
+<p>Model: Voron Cube (bundled with OrcaSlicer), painted by me in OrcaSlicer</p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../assets/images/sampleprints/sampletrex.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/sampleprints/sampletrex.jpeg" style="width: 300px" /></a></p>
+<p>Printed at 50% scale</p>
+<p>Model: <a href="https://www.printables.com/model/5481-t-rex-multi-material">T-rex by Cipis</a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../assets/images/sampleprints/samplelizard.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/sampleprints/samplelizard.jpeg" style="width: 300px" /></a></p>
+<p>Model: <a href="https://www.printables.com/model/236193-striped-lizard-multi-material-with-pupils">Striped lizard with pupils by EngMike</a></p>
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary>West3D Video Series</summary>
+<p>Thank you to Allen Rowand from <a href="https://west3d.com/">West3D</a> for making this ongoing series on the 3MS.</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/XfjHtymdHao?si=cHG1jreb8FfjpWaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/o4Fvtdl-XjM?si=16Prr2Djn4XP0n6q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+</details></section><section class="print-page" id="compare" heading-number="2"><h1 id="compare-comparison-of-multimaterial-systems">Comparison of Multimaterial Systems</h1>
+<p>Not sure if you want to use the 3MS? Check this comparison between several common multimaterial systems.</p>
+<div class="grid cards">
+<ul>
+<li>
+<p>3MS <strong>Modular Multimaterial System for Klipper 3D Printers</strong></p>
+<hr />
+<p><a class="glightbox" href="https://media.printables.com/media/prints/1108644/images/8783933_d13beec9-e7d8-47ec-942a-5d3f9dd987ab_0b49a030-f2c5-4465-b8cd-9d605b9f3275/thumbs/inside/1600x1200/png/enclosure_2025-jan-26_01-37-57pm-000_customizedview21389847222_png.webp" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://media.printables.com/media/prints/1108644/images/8783933_d13beec9-e7d8-47ec-942a-5d3f9dd987ab_0b49a030-f2c5-4465-b8cd-9d605b9f3275/thumbs/inside/1600x1200/png/enclosure_2025-jan-26_01-37-57pm-000_customizedview21389847222_png.webp" /></a></p>
+<hr />
+<p><strong>Pros:</strong></p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Simple Design</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Reliability</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Documentation</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Modular Design</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Active Community</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Price (~$150)</p>
+<hr />
+<p><strong>Cons:</strong></p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Compatibility (only Klipper)</p>
+</li>
+</ul>
+</div>
+<div class="grid cards">
+<ul>
+<li>
+<p>Box Turtle MMU <strong>Automated Filament Changer</strong></p>
+<hr />
+<p><a class="glightbox" href="../assets/images/compare/boxturtle.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/compare/boxturtle.png" /></a></p>
+<hr />
+<p><strong>Pros:</strong></p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Reliability</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Active Community</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Documentation</p>
+<hr />
+<p><strong>Cons:</strong></p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Compatibility (only Klipper)</p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Complexity</p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Price ($300)</p>
+</li>
+<li>
+<p>ERCF v2 <strong>An expandable MMU for Klipper-based 3D-printers</strong></p>
+<hr />
+<p><a class="glightbox" href="../assets/images/compare/ercf.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/compare/ercf.jpg" /></a></p>
+<hr />
+<p><strong>Pros:</strong></p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Reliability</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Modular Design</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Active Community</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Documentation</p>
+<hr />
+<p><strong>Cons:</strong></p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Compatibility (only Klipper)</p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Complexity</p>
+</li>
+<li>
+<p>TradRack <strong>by Annex Engineering</strong></p>
+<hr />
+<p><a class="glightbox" href="../assets/images/compare/tradrack.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/compare/tradrack.png" /></a></p>
+<hr />
+<p><strong>Pros:</strong></p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Reliability</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Modular Design</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Active Community</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Documentation</p>
+<hr />
+<p><strong>Cons:</strong></p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Compatibility (only Klipper)</p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Complexity</p>
+</li>
+<li>
+<p>3DChameleon MK4 <strong>Automatic Color Changer</strong></p>
+<hr />
+<p><a class="glightbox" href="../assets/images/compare/3dchameleon.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/compare/3dchameleon.jpeg" /></a></p>
+<hr />
+<p><strong>Pros:</strong></p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Compatibility</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> No custom firmware</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Price ($200)</p>
+<hr />
+<p><strong>Cons:</strong></p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Reliability</p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Documentation</p>
+</li>
+<li>
+<p>SMuFF <strong>Smart Multi Filament Feeder</strong></p>
+<hr />
+<p><a class="glightbox" href="../assets/images/compare/smuff.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/compare/smuff.png" /></a></p>
+<hr />
+<p><strong>Pros:</strong></p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Reliability</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Modular Design</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Documentation</p>
+<hr />
+<p><strong>Cons:</strong></p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Complexity</p>
+</li>
+<li>
+<p>Prusa MMU3 <strong>Multi Material Upgrade</strong></p>
+<hr />
+<p><a class="glightbox" href="../assets/images/compare/mmu3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/compare/mmu3.png" /></a></p>
+<hr />
+<p><strong>Pros:</strong></p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Reliability</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Support</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Documentation</p>
+<hr />
+<p><strong>Cons:</strong></p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Compatibility</p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Price ($300)</p>
+</li>
+<li>
+<p>CoPrint KCM <strong>Multi-Color Upgrade Kit for Klipper 3D Printers</strong></p>
+<hr />
+<p><a class="glightbox" href="../assets/images/compare/coprintkcm.webp" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/compare/coprintkcm.webp" /></a></p>
+<hr />
+<p><strong>Pros:</strong></p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Simple Design</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Modular Design</p>
+<p><span class="twemoji plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Documentation</p>
+<hr />
+<p><strong>Cons:</strong></p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Complexity (relies on ChromaHead)</p>
+<p><span class="twemoji minus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Price (~$300)</p>
+</li>
+</ul>
+</div></section><section class="print-page" id="instructions" heading-number="3"><p><link rel="stylesheet" href="../assets/css/badges.css"></p>
+<h1 id="instructions-master-instructions">Master Instructions</h1>
+<p>Due to the modularity of the 3MS, there are many ways to set it up. This guide attempts to encompass all supported ways of setting up the 3MS.</p>
+<!-- !!! info "3MS Kits"
+    If you purchased a 3MS kit, follow [these](kits/index.md) kit-specific detailed instructions. -->
+
+<h2 id="instructions-chapters">Chapters</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><a href="#setup-bom"><img alt="" src="../assets/images/cart.png" /></a></p>
+<hr />
+<p><a class="md-button" href="#setup-bom"><strong>1. Getting a BOM</strong></a></p>
+</li>
+<li>
+<p><a href="#instructions-assembly.md"><img alt="" src="https://media.printables.com/media/prints/1108644/images/9216280_de984a65-3c50-48c9-8b65-210f846f8b18_b5b7545c-3eb9-4bc8-a6c5-dec8cb7aa465/thumbs/inside/1600x1200/png/screenshot-2025-03-14-at-72728-am.webp" /></a></p>
+<hr />
+<p><a class="md-button" href="#setup-assembly"><strong>2. Hardware Assembly</strong></a></p>
+</li>
+<li>
+<p><a href="#instructions-setup-assembly-wiring"><img alt="" src="../assets/images/instructions/step08a.jpeg" /></a></p>
+<hr />
+<p><a class="md-button" href="#instructions-setup-assembly-wiring"><strong>3. Electrical Assembly</strong></a></p>
+</li>
+<li>
+<p><a href="https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS"><img alt="" src="https://github.com/moggieuk/Happy-Hare/wiki/resources/happy_hare_logo.jpg" /></a></p>
+<hr />
+<p><a class="md-button" href="https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS"><strong>4. Software Setup</strong></a></p>
+</li>
+<li>
+<p><a href="#instructions-"><img alt="" src="https://www.shutterstock.com/image-photo/electronic-vernier-caliper-close-view-600nw-2290639641.jpg" /></a></p>
+<p>Image credit: Shutterstock</p>
+<hr />
+<p><a class="md-button" href="#setup-config"><strong>5. Configuration</strong></a>
+<a class="md-button" href="#setup-calibration"><strong>&amp; Calibration</strong></a></p>
+</li>
+</ul>
+</div></section>
+                    <section class='print-page md-section' id='section-4' heading-number='4'>
+                        <h1>Setup<a class='headerlink' href='#section-4' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="setup-bom" heading-number="4.1"><h1 id="setup-bom-bom">BOM</h1>
+<h2 id="setup-bom-controller-choice">Controller Choice</h2>
+<p>First, choose the control board you want to use in your 3MS. Choose a controller from the available ones <a href="#setup-controllers">here</a>.</p>
+<h2 id="setup-bom-number-of-filament-units">Number of filament units</h2>
+<p>First, choose the number of filament units you want. Each filament unit lets you print with an additional filament. Two filament units are the minimum. You can add or remove filament units after building, but the BOM and configuration will vary based on how many filament units you want.</p>
+<h2 id="setup-bom-controller-boms">Controller BOMs</h2>
+<p>Choose the BOM for your chosen controller from the list below:</p>
+<p><strong>Recommended: <a href="#setup-controllers-skrpico-bom">BTT SKR Pico</a></strong> </p>
+<details>
+<summary>Other Controllers</summary>
+<p><a href="#setup-controllers-archive-skrminie3v2-bom">BTT SKR Mini E3 V2</a></p>
+<p><a href="#setup-controllers-archive-bttmmb-bom">BTT MMB</a></p>
+<p><a href="#setup-controllers-archive-mellowflyd7-bom">Mellow Fly D7</a></p>
+<p><a href="#setup-controllers-archive-bttoctopusmain-bom">BTT Octopus (main MCU)</a></p>
+<p><a href="#setup-controllers-archive-zm384main">Zonestar ZM384 (main MCU)</a></p>
+<p><a href="#setup-controllers-archive-minirambo">Mini RAMBo</a></p>
+<p><a href="#setup-controllers-archive-geetech-a30t-bom">Geetech A30T</a></p>
+</details>
+<h2 id="setup-bom-filament-unit-boms">Filament Unit BOMs</h2>
+<p>For each filament unit, purchase this BOM:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Quantity</th>
+<th>Price</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NEMA17 Stepper Motor</td>
+<td>1</td>
+<td>$9.99</td>
+<td><a href="https://a.co/d/06Lsa1qI">Amazon</a></td>
+<td>You can use a pancake stepper if you want, but it will have less torque</td>
+</tr>
+<tr>
+<td>MK8 Metal Extruder</td>
+<td>1</td>
+<td>$9.99</td>
+<td><a href="https://a.co/d/0gJ1ghKj">Amazon</a></td>
+<td>Alternatively, you can use <a href="https://a.co/d/dbw7Wor">this</a> Dual-drive MK8 based extruder</td>
+</tr>
+<tr>
+<td>PTFE Tubing</td>
+<td>1</td>
+<td>$8.99</td>
+<td><a href="https://a.co/d/7FAhmS5">Amazon</a></td>
+<td>You likely won't need this for every unit, as this is usually too long for only one unit</td>
+</tr>
+</tbody>
+</table></section>
+                    <section class='print-page md-section' id='section-4-2' heading-number='4.2'>
+                        <h1>Controllers<a class='headerlink' href='#section-4-2' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="setup-controllers" heading-number="4.2.1"><h1 id="setup-controllers-controllers">Controllers</h1>
+<p>Follow this guide to determine which controller to use in your 3MS.</p>
+<h2 id="setup-controllers-options">Options</h2>
+<p>The 3MS works on multiple different controllers. </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If your printer's mainboard has spare stepper ports, you can use them to control 3MS steppers. You can open an issue on Github (there's a template) to get a configuration made for your specific setup. Any controllers listed with "(main MCU)" use those spare stepper plugs.</p>
+</div>
+<p>Choose one of the following supported controllers (a checked box indicates it is fully tested, and an empty box indicates testers wanted):</p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-skrpico">SKR Pico (4 colors)</a></p>
+<div class="admonition success">
+<p class="admonition-title">Recommended</p>
+</div>
+</li>
+</ul>
+<hr />
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-archive-bttmmb">BTT MMB V1 (4 colors)</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-archive-skrminie3v2">SKR Mini E3 V2.0 (4 colors)</a></li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-archive-einsyrambo-skrminie3v2">Einsy RAMBo (main MCU) with SKR Mini E3 V2.0 (3ms MCU)</a></p>
+<div class="admonition warning">
+<p class="admonition-title">Expert modification</p>
+</div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-archive-geetech-a30t">Geetech A30T</a></p>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-archive-mellowflyd7">Mellow Fly D7 (6 colors)</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-archive-zm384main">Zonestar ZM384 (main MCU) (4 colors)</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-archive-minirambo">Mini RAMBo (4 colors)</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="#setup-controllers-archive-bttoctopusmain">BTT Octopus (main MCU) (4 colors)</a></li>
+</ul></section><section class="print-page" id="setup-controllers-skrpico" heading-number="4.2.2"><h1 id="setup-controllers-skrpico-btt-skr-pico">BTT SKR Pico</h1>
+<p><strong>Max filament units: 4</strong></p>
+<p><strong>MCU Name: <code>mmu</code></strong></p>
+<h2 id="setup-controllers-skrpico-bom">BOM</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SKR Pico</td>
+<td>$26.58</td>
+<td>1</td>
+<td><a href="https://biqu.equipment/products/btt-skr-pico-v1-0?variant=40565262155874">BIQU</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Duponts</td>
+<td>$9.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
+<td>These wires are only sufficient to run steppers, not heaters</td>
+</tr>
+<tr>
+<td>24V PSU</td>
+<td>$12.98</td>
+<td>1</td>
+<td><a href="https://a.co/d/6BJT2RP">Amazon</a></td>
+<td>This PSU is only sufficient to run steppers, not heaters</td>
+</tr>
+</tbody>
+</table>
+<h2 id="setup-controllers-skrpico-wiring">Wiring</h2>
+<p>Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:</p>
+<table>
+<thead>
+<tr>
+<th>Filament Unit #</th>
+<th>Motor Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>X</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Z1 or Z2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>E</td>
+</tr>
+</tbody>
+</table>
+<p>Now, grab your 24V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)</p>
+<ol>
+<li>Plug the red wire into the positive terminal of the screw terminals</li>
+<li>
+<p>Plug the black wire into the negative terminal of the screw terminals</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>These dupont cables are too thin to run much more than the stepper motors. If you run a heater or other power-intensive device off of the SKR board, the duponts and/or PSU can melt/catch fire. To reduce the risk of this, you can double up on the duponts or get thicker wires.</p>
+</div>
+</li>
+<li>
+<p>Following this image, locate the POWER input
+<a class="glightbox" href="../assets/images/skrpicopins.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/skrpicopins.png" /></a></p>
+</li>
+<li>Route the two wires inside closest to the POWER input</li>
+<li>Using the markings on the board, plug the red wire into the positive terminal on the SKR</li>
+<li>Using the markings on the board, plug the black wire into the negative terminal on the SKR</li>
+<li>
+<p>Verify all connections</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the wires are plugged into the wrong place, or swapped polarities, your SKR, Stepper motors, and/or PSU can be badly damaged.</p>
+</div>
+</li>
+<li>
+<p>Plug the PSU screw terminals into the PSU wire</p>
+</li>
+</ol>
+<p>If the SKR lights up, you wired it correctly!</p>
+<p>Finally, plug the SKR into your Klipper host with the blue cable that came with it.</p></section>
+                    <section class='print-page md-section' id='section-4-2-3' heading-number='4.2.3'>
+                        <h1>Archive<a class='headerlink' href='#section-4-2-3' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="setup-controllers-archive-bttmmb" heading-number="4.2.3.1"><h1 id="setup-controllers-archive-bttmmb-btt-mmb-v1">BTT MMB V1</h1>
+<p><strong>Max filament units: 4</strong></p>
+<p><strong>MCU Name: <code>mmu</code></strong></p>
+<h2 id="setup-controllers-archive-bttmmb-bom">BOM</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BTT MMB</td>
+<td>$34.99</td>
+<td>1</td>
+<td><a href="https://biqu.equipment/products/bigtreetech-mmb?srsltid=AfmBOoponySi7shutNrn8sXQ4NCBiLPUvgYTROIgp_KaDdjZcKoXTYkT">BTT</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Duponts</td>
+<td>$9.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
+<td>These wires are only sufficient to run steppers, not heaters</td>
+</tr>
+<tr>
+<td>12V PSU</td>
+<td>$7.39</td>
+<td>1</td>
+<td><a href="https://a.co/d/gLC1eli">Amazon</a></td>
+<td>This PSU is only sufficient to run steppers, not heaters</td>
+</tr>
+</tbody>
+</table>
+<h2 id="setup-controllers-archive-bttmmb-wiring">Wiring</h2>
+<p>Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:</p>
+<table>
+<thead>
+<tr>
+<th>Filament Unit #</th>
+<th>Motor Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>M4</td>
+</tr>
+</tbody>
+</table>
+<p>Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)</p>
+<ol>
+<li>Plug the red wire into the positive terminal of the screw terminals</li>
+<li>
+<p>Plug the black wire into the negative terminal of the screw terminals</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>These dupont cables are too thin to run much more than the stepper motors. If you run a heater or other power-intensive device off of the MMB board, the duponts and/or PSU can melt/catch fire. To reduce the risk of this, you can double up on the duponts or get thicker wires.</p>
+</div>
+</li>
+<li>
+<p>Following this image, locate the HVIN and GND inputs (top left)</p>
+<p><a class="glightbox" href="../assets/images/bttmmbpins.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/bttmmbpins.jpg" /></a></p>
+</li>
+<li>
+<p>Route the two wires inside closest to the HVIN and GND inputs</p>
+</li>
+<li>Using the markings on the board, plug the red wire into the HVIN terminal on the MMB</li>
+<li>Using the markings on the board, plug the black wire into the GND terminal on the MMB</li>
+<li>
+<p>Plug in the VUSB jumper</p>
+<p><a class="glightbox" href="../assets/images/MMB_CAN_USB.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/MMB_CAN_USB.png" /></a></p>
+</li>
+<li>
+<p>Verify all connections</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the wires are plugged into the wrong place, or swapped polarities, your MMB, Stepper motors, and/or PSU can be badly damaged.</p>
+</div>
+</li>
+<li>
+<p>Plug the PSU screw terminals into the PSU wire</p>
+</li>
+</ol>
+<p>Plug the MMB into your Klipper host with the cable that came with it.</p>
+<p>If the MMB lights up, you wired it correctly!</p></section><section class="print-page" id="setup-controllers-archive-skrminie3v2" heading-number="4.2.3.2"><h1 id="setup-controllers-archive-skrminie3v2-btt-skr-mini-e3-v2">BTT SKR Mini E3 V2</h1>
+<p><strong>Max filament units: 4</strong></p>
+<p><strong>MCU Name: <code>3ms</code></strong></p>
+<h2 id="setup-controllers-archive-skrminie3v2-bom">BOM</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SKR Mini E3 V2</td>
+<td>$34.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/0hgHU9JX">Amazon</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Duponts</td>
+<td>$9.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
+<td>These wires are only sufficient to run steppers, not heaters</td>
+</tr>
+<tr>
+<td>12V PSU</td>
+<td>$7.39</td>
+<td>1</td>
+<td><a href="https://a.co/d/0Zninyc">Amazon</a></td>
+<td>This PSU is only sufficient to run steppers, not heaters</td>
+</tr>
+</tbody>
+</table>
+<h2 id="setup-controllers-archive-skrminie3v2-wiring">Wiring</h2>
+<p>Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:</p>
+<table>
+<thead>
+<tr>
+<th>Filament Unit #</th>
+<th>Motor Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>XM</td>
+</tr>
+<tr>
+<td>1</td>
+<td>YM</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ZAM or ZBM</td>
+</tr>
+<tr>
+<td>3</td>
+<td>E0M</td>
+</tr>
+</tbody>
+</table>
+<p>Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)</p>
+<ol>
+<li>Plug the red wire into the positive terminal of the screw terminals</li>
+<li>
+<p>Plug the black wire into the negative terminal of the screw terminals</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>These dupont cables are too thin to run much more than the stepper motors. If you run a heater or other power-intensive device off of the SKR board, the duponts and/or PSU can melt/catch fire. To reduce the risk of this, you can double up on the duponts or get thicker wires.</p>
+</div>
+</li>
+<li>
+<p>Following this image, choose either the DCIN or POWER input
+<a class="glightbox" href="../assets/images/skrminie3v2pins.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/skrminie3v2pins.jpg" /></a></p>
+</li>
+<li>Route the two wires inside closest to your chosen input</li>
+<li>Using the markings on the board, plug the red wire into the positive terminal on the SKR</li>
+<li>Using the markings on the board, plug the black wire into the negative terminal on the SKR</li>
+<li>
+<p>Verify all connections</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the wires are plugged into the wrong place, or swapped polarities, your SKR, Stepper motors, and/or PSU can be badly damaged.</p>
+</div>
+</li>
+<li>
+<p>Plug the PSU screw terminals into the PSU wire</p>
+</li>
+</ol>
+<p>If the SKR lights up, you wired it correctly!</p>
+<p>Finally, plug the SKR into your Klipper host with the blue cable that came with it.</p></section><section class="print-page" id="setup-controllers-archive-bttoctopusmain" heading-number="4.2.3.3"><h1 id="setup-controllers-archive-bttoctopusmain-btt-octopus-main-mcu">BTT Octopus (main MCU)</h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This configuration may not work with the BTT Octopus Pro.</p>
+</div>
+<p><strong>Max filament units: 4</strong></p>
+<p><strong>MCU Name: <code>main</code></strong></p>
+<h2 id="setup-controllers-archive-bttoctopusmain-main-mcu">main MCU</h2>
+<p>This configuration is a <code>main MCU</code> configuration, meaning that your printer should already be running off a BTT Octopus and you don't need to purchase one.</p>
+<h2 id="setup-controllers-archive-bttoctopusmain-bom">BOM</h2>
+<p>Per filament unit:</p>
+<p><a href="https://a.co/d/01KA3Y1">1x TMC2209</a> ($7 each)</p>
+<h2 id="setup-controllers-archive-bttoctopusmain-wiring">Wiring</h2>
+<p>Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:</p>
+<table>
+<thead>
+<tr>
+<th>Filament Unit #</th>
+<th>Motor Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>MOTOR7</td>
+</tr>
+<tr>
+<td>1</td>
+<td>MOTOR6</td>
+</tr>
+<tr>
+<td>2</td>
+<td>MOTOR5</td>
+</tr>
+<tr>
+<td>3</td>
+<td>MOTOR4</td>
+</tr>
+</tbody>
+</table></section><section class="print-page" id="setup-controllers-archive-einsyrambo-skrminie3v2" heading-number="4.2.3.4"><h1 id="setup-controllers-archive-einsyrambo-skrminie3v2-einsy-rambo-main-mcu-with-skr-mini-e3-v2">Einsy RAMBo (main MCU) with SKR Mini E3 V2</h1>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>This guide is an expert guide only</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This modification is designed for the Prusa MK3/S/S+, and depends on <a href="https://github.com/dz0ny/klipper-prusa-mk3s">this</a> Klipper configuration.</p>
+</div>
+<h2 id="setup-controllers-archive-einsyrambo-skrminie3v2-why">Why?</h2>
+<p>When printing fast, the TMC2130's on the Einsy RAMBo can get quite loud. The TMC2209's on the SKR Mini are much quieter and support denser microstepping.</p>
+<h2 id="setup-controllers-archive-einsyrambo-skrminie3v2-bom">BOM</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PSU -&gt; Einsy Cable</td>
+<td>$7.99</td>
+<td>1</td>
+<td><a href="https://www.partsbuilt.com/cable-psu-to-einsy-for-prusa-mk3-3s-3s-prusa-compatible/">PartsBuilt3D</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Stepperonline NEMA17</td>
+<td>$9.99 each</td>
+<td><a href="https://a.co/d/el99D6X">Amazon</a></td>
+<td>2</td>
+<td>Replaces current XY motors</td>
+</tr>
+</tbody>
+</table>
+<h2 id="setup-controllers-archive-einsyrambo-skrminie3v2-wiring">Wiring</h2>
+<p>First, unplug the 3MS steppers from the SKR Mini, and the XY steppers from the Einsy RAMBo. The motors will need to be switched due to different connector types between boards.</p>
+<p>This table outlines the major wiring of this modification.</p>
+<table>
+<thead>
+<tr>
+<th>Einsy RAMBo</th>
+<th>SKR Mini E3 V2</th>
+<th>Motor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PSU+</td>
+<td>POWER+</td>
+<td></td>
+</tr>
+<tr>
+<td>PSU-</td>
+<td>POWER-</td>
+<td></td>
+</tr>
+<tr>
+<td>XM</td>
+<td></td>
+<td>3ms0</td>
+</tr>
+<tr>
+<td>YM</td>
+<td></td>
+<td>3ms1</td>
+</tr>
+<tr>
+<td></td>
+<td>XM</td>
+<td>X</td>
+</tr>
+<tr>
+<td></td>
+<td>YM</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+<h2 id="setup-controllers-archive-einsyrambo-skrminie3v2-configuration">Configuration</h2>
+<p>In your <code>printer.cfg</code>, comment out these lines:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">printer.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#setup-controllers-archive-einsyrambo-skrminie3v2-__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#setup-controllers-archive-einsyrambo-skrminie3v2-__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1">#[include klipper-prusa-mk3s/mk3s/steppers.cfg]</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="c1">#[include klipper-prusa-mk3s/mk3s/tmc2130.cfg]</span>
+</code></pre></div></td></tr></table></div>
+<p>Next, copy the contents of <code>3ms/controllers/einsy_rambo_with_skr_mini/xy-motors.cfg</code> and <code>ze-motors.cfg</code> to <code>klipper-prusa-mk3s/skr/xy.cfg</code>, and <code>klipper-prusa-mk3s/mk3s/ze.cfg</code>, respectively.</p>
+<p>Add the following new lines:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">printer.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#setup-controllers-archive-einsyrambo-skrminie3v2-__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#setup-controllers-archive-einsyrambo-skrminie3v2-__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">[include klipper-prusa-mk3s/skr/xy.cfg]</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">[include klipper-prusa-mk3s/mk3s/ze.cfg]</span>
+</code></pre></div></td></tr></table></div>
+<p>Restart Klipper.</p></section><section class="print-page" id="setup-controllers-archive-zm384main" heading-number="4.2.3.5"><h1 id="setup-controllers-archive-zm384main-zonestar-zm384-main-mcu">Zonestar ZM384 (main MCU)</h1>
+<p><strong>Max filament units: 3</strong></p>
+<p><strong>MCU Name: <code>main</code></strong></p>
+<h2 id="setup-controllers-archive-zm384main-main-mcu">main MCU</h2>
+<p>This configuration is a <code>main MCU</code> configuration, meaning that your printer should already be running off a ZM384 and you don't need to purchase one.</p>
+<table>
+<thead>
+<tr>
+<th>Filament Unit #</th>
+<th>Motor Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>E0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>E1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>E2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>E3</td>
+</tr>
+</tbody>
+</table></section><section class="print-page" id="setup-controllers-archive-minirambo" heading-number="4.2.3.6"><h1 id="setup-controllers-archive-minirambo-mini-rambo">Mini RAMBo</h1>
+<p><strong>Max filament units: 4</strong></p>
+<p><strong>MCU Name: <code>3ms</code></strong></p>
+<h2 id="setup-controllers-archive-minirambo-bom">BOM</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mini RAMBo</td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Duponts</td>
+<td>$9.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
+<td>These wires are only sufficient to run steppers, not heaters</td>
+</tr>
+<tr>
+<td>12V PSU</td>
+<td>$7.39</td>
+<td>1</td>
+<td><a href="https://a.co/d/gLC1eli">Amazon</a></td>
+<td>This PSU is only sufficient to run steppers, not heaters</td>
+</tr>
+</tbody>
+</table>
+<h2 id="setup-controllers-archive-minirambo-wiring">Wiring</h2>
+<p>Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:</p>
+<table>
+<thead>
+<tr>
+<th>Filament Unit #</th>
+<th>Motor Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>XM</td>
+</tr>
+<tr>
+<td>1</td>
+<td>YM</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ZAM or ZBM</td>
+</tr>
+<tr>
+<td>3</td>
+<td>E0M</td>
+</tr>
+</tbody>
+</table>
+<p>Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)</p>
+<ol>
+<li>Plug the red wire into the positive terminal of the screw terminals</li>
+<li>
+<p>Plug the black wire into the negative terminal of the screw terminals</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>These dupont cables are too thin to run much more than the stepper motors. If you run a heater or other power-intensive device off of the RAMBo board, the duponts and/or PSU can melt/catch fire. To reduce the risk of this, you can double up on the duponts or get thicker wires.</p>
+</div>
+</li>
+<li>
+<p>Route the two wires inside closest to your chosen input</p>
+</li>
+<li>Using the markings on the board, plug the red wire into the positive terminal on the RAMBo</li>
+<li>Using the markings on the board, plug the black wire into the negative terminal on the RAMBo</li>
+<li>
+<p>Verify all connections</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the wires are plugged into the wrong place, or swapped polarities, your RAMBo, Stepper motors, and/or PSU can be badly damaged.</p>
+</div>
+</li>
+<li>
+<p>Plug the PSU screw terminals into the PSU wire</p>
+</li>
+</ol>
+<p>If the RAMBo lights up, you wired it correctly!</p>
+<p>Finally, plug the RAMBo into your Klipper host with the cable that came with it.</p></section><section class="print-page" id="setup-controllers-archive-mellowflyd7" heading-number="4.2.3.7"><h1 id="setup-controllers-archive-mellowflyd7-mellow-fly-d7">Mellow Fly D7</h1>
+<p><strong>Max filament units: 7</strong></p>
+<p><strong>MCU Name: <code>3ms</code></strong></p>
+<h2 id="setup-controllers-archive-mellowflyd7-bom">BOM</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mellow Fly D7</td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Duponts</td>
+<td>$9.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
+<td>These wires are only sufficient to run steppers, not heaters</td>
+</tr>
+<tr>
+<td>12V PSU</td>
+<td>$7.39</td>
+<td>1</td>
+<td><a href="https://a.co/d/gLC1eli">Amazon</a></td>
+<td>This PSU is only sufficient to run steppers, not heaters</td>
+</tr>
+</tbody>
+</table>
+<h2 id="setup-controllers-archive-mellowflyd7-wiring">Wiring</h2>
+<p>Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:</p>
+<table>
+<thead>
+<tr>
+<th>Filament Unit #</th>
+<th>Motor Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>X</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Z</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Z1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Z2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>E0</td>
+</tr>
+</tbody>
+</table>
+<p>Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)</p>
+<ol>
+<li>Plug the red wire into the positive terminal of the screw terminals</li>
+<li>
+<p>Plug the black wire into the negative terminal of the screw terminals</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>These dupont cables are too thin to run much more than the stepper motors. If you run a heater or other power-intensive device off of the board board, the duponts and/or PSU can melt/catch fire. To reduce the risk of this, you can double up on the duponts or get thicker wires.</p>
+</div>
+</li>
+<li>
+<p>Using the markings on the board, plug the red wire into the positive terminal on the board</p>
+</li>
+<li>Using the markings on the board, plug the black wire into the negative terminal on the board</li>
+<li>
+<p>Verify all connections</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the wires are plugged into the wrong place, or swapped polarities, your board, Stepper motors, and/or PSU can be badly damaged.</p>
+</div>
+</li>
+<li>
+<p>Plug the PSU screw terminals into the PSU wire</p>
+</li>
+</ol>
+<p>If the board lights up, you wired it correctly!</p>
+<p>Finally, plug the board into your Klipper host with the cable that came with it.</p></section><section class="print-page" id="setup-controllers-archive-geetech-a30t" heading-number="4.2.3.8"><h1 id="setup-controllers-archive-geetech-a30t-geetech-a30t">Geetech A30T</h1>
+<p><strong>Contributed by <a href="https://github.com/ImChrono">@ImChrono</a></strong></p>
+<hr />
+<p><strong>Max filament units: 7</strong></p>
+<p><strong>MCU Name: <code>3ms</code></strong></p>
+<h2 id="setup-controllers-archive-geetech-a30t-bom">BOM</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Geetech A30T</td>
+<td>$34.99</td>
+<td>1</td>
+<td><a href="https://www.geeetech.com/a30t-printer-gtm32103v1-control-board-p-1190.html">Geetech</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Duponts</td>
+<td>$9.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
+<td>These wires are only sufficient to run steppers, not heaters</td>
+</tr>
+<tr>
+<td>24V PSU</td>
+<td>$7.39</td>
+<td>1</td>
+<td><a href="https://a.co/d/1Ko6QMB">Amazon</a></td>
+<td>This PSU is only sufficient to run steppers, not heaters</td>
+</tr>
+</tbody>
+</table>
+<h2 id="setup-controllers-archive-geetech-a30t-firmware">Firmware</h2>
+<p>To flash Klipper firmware to the A30T, run the following command and see the following screenshot:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#setup-controllers-archive-geetech-a30t-__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#setup-controllers-archive-geetech-a30t-__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>~/klipper
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>make<span class="w"> </span>menuconfig
+</code></pre></div></td></tr></table></div>
+<p><a class="glightbox" href="../assets/images/a30tfirmware.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/a30tfirmware.jpeg" /></a></p>
+<p>Next, connect the <strong>BOOT0</strong> jumper on the A30T and run:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#setup-controllers-archive-geetech-a30t-__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>stm32flash<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;,,,,,&#39;</span><span class="w"> </span>-v<span class="w"> </span>-w<span class="w"> </span>out/klipper.bin<span class="w"> </span>-g<span class="w"> </span><span class="m">0</span><span class="w"> </span>/dev/serial/by-id/&lt;your-mcu-id-here&gt;
+</code></pre></div></td></tr></table></div>
+<h2 id="setup-controllers-archive-geetech-a30t-wiring">Wiring</h2>
+<p>Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:</p>
+<table>
+<thead>
+<tr>
+<th>Filament Unit #</th>
+<th>Motor Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>X</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Z0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Z1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>E1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>E2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>E3</td>
+</tr>
+</tbody>
+</table>
+<p>Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)</p>
+<ol>
+<li>Plug two red wires into the positive terminal of the screw terminals</li>
+<li>
+<p>Plug two black wires into the negative terminal of the screw terminals</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>These dupont cables are too thin to run much more than the stepper motors. If you run a heater or other power-intensive device off of the motherboard, the duponts and/or PSU can melt/catch fire. To reduce the risk of this, you can double up on the duponts or get thicker wires.</p>
+</div>
+</li>
+<li>
+<p>Route the four wires inside closest to your chosen input</p>
+</li>
+<li>Using the markings on the board, plug the two red wires into the positive terminal on the motherboard</li>
+<li>Using the markings on the board, plug the two black wires into the negative terminal on the motherboard</li>
+<li>
+<p>Verify all connections</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the wires are plugged into the wrong place, or swapped polarities, your motherboard, Stepper motors, and/or PSU can be badly damaged.</p>
+</div>
+</li>
+<li>
+<p>Plug the PSU screw terminals into the PSU wire</p>
+</li>
+</ol>
+<p>If the motherboard lights up, you wired it correctly!</p>
+<p>Finally, plug the motherboard into your Klipper host with the cable that came with it.</p>
+<hr />
+<h2 id="setup-controllers-archive-geetech-a30t-uart-conversion">UART Conversion</h2>
+<h3 id="setup-controllers-archive-geetech-a30t-attention-proceed-with-caution">⚠️ Attention: Proceed with Caution! ⚠️</h3>
+<p>This modification involves delicate hardware changes that require precision and attention to detail. Mistakes in wiring or soldering can permanently damage your <strong>GTM32_103_V1 board</strong>. </p>
+<ul>
+<li><strong>Double-check connections</strong> before applying power.</li>
+<li>Use proper tools and follow best practices for soldering.</li>
+<li>If you are not confident in your skills, seek assistance from an experienced individual or professional.</li>
+</ul>
+<p><strong>You proceed at your own risk.</strong></p>
+<h3 id="setup-controllers-archive-geetech-a30t-overview">Overview</h3>
+<p>This guide details the process of modifying the <strong>GTM32_103_V1</strong> 3D printer controller board to enable UART capabilities. The GTM32_103_V1 board features 7 <strong>TMC2208 drivers</strong> operating in standalone mode by default. This modification involves <strong>removing the SD card slot</strong> and repurposing its pinouts for UART communication.</p>
+<hr />
+<h3 id="setup-controllers-archive-geetech-a30t-features-of-the-modification">Features of the Modification</h3>
+<ul>
+<li><strong>UART Capability</strong>: Enables communication with TMC2208 drivers via UART repurposing the SDCard slot</li>
+</ul>
+<hr />
+<h3 id="setup-controllers-archive-geetech-a30t-hardware-changes">Hardware Changes</h3>
+<h4 id="setup-controllers-archive-geetech-a30t-components-modified">Components Modified</h4>
+<ul>
+<li><strong>SD Card Slot</strong>: Removed entirely to free up pinouts for UART.</li>
+<li><strong>Repurposed Pins</strong>: SD card slot pins are reassigned as per the following table:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>TCM2208 Driver</th>
+<th>SD Card Pin</th>
+<th>STM32 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Motor0</td>
+<td>9</td>
+<td>PC7</td>
+</tr>
+<tr>
+<td>Motor1</td>
+<td>8</td>
+<td>PC9</td>
+</tr>
+<tr>
+<td>Motor2</td>
+<td>7</td>
+<td>PC8</td>
+</tr>
+<tr>
+<td>Motor3</td>
+<td>5</td>
+<td>PC12</td>
+</tr>
+<tr>
+<td>Motor4</td>
+<td>3</td>
+<td>PD2</td>
+</tr>
+<tr>
+<td>Motor5</td>
+<td>2</td>
+<td>PC11</td>
+</tr>
+<tr>
+<td>Motor6</td>
+<td>1</td>
+<td>PC10</td>
+</tr>
+</tbody>
+</table>
+<h4 id="setup-controllers-archive-geetech-a30t-procedure">Procedure</h4>
+<ol>
+<li><strong>Remove Pull down resistor from each driver</strong>:</li>
+<li>Desolder the SMD 1kΩ resistor carefully to avoid damaging the surrounding components.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>TMCDriver</th>
+<th>PCB Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Motor0</td>
+<td>R53</td>
+</tr>
+<tr>
+<td>Motor1</td>
+<td>R57</td>
+</tr>
+<tr>
+<td>Motor2</td>
+<td>R62</td>
+</tr>
+<tr>
+<td>Motor3</td>
+<td>R120</td>
+</tr>
+<tr>
+<td>Motor4</td>
+<td>R71</td>
+</tr>
+<tr>
+<td>Motor5</td>
+<td>R95</td>
+</tr>
+<tr>
+<td>Motor6</td>
+<td>R105</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Remove the SD Card Slot</strong>:</li>
+<li>Desolder the SD card slot carefully to avoid damaging the surrounding components.</li>
+<li><strong>Repurpose the Pinouts</strong>:</li>
+<li>Rewire the SD card pins according to the table above.</li>
+<li>Connect each pin to its corresponding UART connection for the TMC2208 drivers.</li>
+</ol>
+<hr />
+<h3 id="setup-controllers-archive-geetech-a30t-testing-and-validation">Testing and Validation</h3>
+<p>After completing the hardware changes:
+1. Connect the board to your 3D printer and power it on.
+2. Use your firmware to verify UART communication with each TMC2208 driver.
+3. Check for successful responses from the drivers using a terminal or debugging tool.</p>
+<hr />
+<h3 id="setup-controllers-archive-geetech-a30t-photos">Photos</h3>
+<p>Add your photos here to demonstrate the modification process and results:
+- Close-up of the TMC driver
+<a class="glightbox" href="https://github.com/user-attachments/assets/4087cb87-09ce-43fb-89e6-a46cbd3ec37b" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="WIN_20241111_22_06_27_Pro" src="https://github.com/user-attachments/assets/4087cb87-09ce-43fb-89e6-a46cbd3ec37b" /></a></p>
+<p>-Close-up of the TMC driver with resistor removed (solder the uart pint to the red signed pin)
+<a class="glightbox" href="https://github.com/user-attachments/assets/93e99aad-5389-4c93-af6b-74d5a9548cf5" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="WIN_20241111_22_15_44_Pro" src="https://github.com/user-attachments/assets/93e99aad-5389-4c93-af6b-74d5a9548cf5" /></a></p>
+<ul>
+<li>
+<p>Close-up of the SD card:
+<a class="glightbox" href="https://github.com/user-attachments/assets/35ce51f2-bd2b-458f-81bd-13cbf3f81ff3" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="WIN_20241111_22_05_02_Pro" src="https://github.com/user-attachments/assets/35ce51f2-bd2b-458f-81bd-13cbf3f81ff3" /></a></p>
+</li>
+<li>
+<p>Rewired pins with labels.
+<a class="glightbox" href="https://github.com/user-attachments/assets/3f5f9d90-09a0-4491-9dab-4a77afd2b4ca" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="WIN_20241116_22_14_33_Pro" src="https://github.com/user-attachments/assets/3f5f9d90-09a0-4491-9dab-4a77afd2b4ca" /></a></p>
+</li>
+</ul>
+<hr />
+<h3 id="setup-controllers-archive-geetech-a30t-uart-configuration">UART Configuration</h3>
+<p>When configuring this board with Happy Hare firmware, be sure to use <code>UART-mmu.cfg</code> and <code>UART-mmu_hardware.cfg</code> (renaming to <code>mmu.cfg</code> and <code>mmu_hardware.cfg</code> respectively).</p></section></section></section><section class="print-page" id="setup-assembly" heading-number="4.3"><h1 id="setup-assembly-assembly">Assembly</h1>
+<p>Follow this guide to assemble your 3MS.</p>
+<h2 id="setup-assembly-printed-parts">Printed Parts</h2>
+<h3 id="setup-assembly-enclosure">Enclosure</h3>
+<div class="grid cards">
+<ul>
+<li><a href="https://www.printables.com/model/1108644-beta-3home-3ms-hybrid-official-modular-enclosure/files"><img alt="" src="https://media.printables.com/media/prints/1108644/images/8783933_d13beec9-e7d8-47ec-942a-5d3f9dd987ab_0b49a030-f2c5-4465-b8cd-9d605b9f3275/thumbs/inside/1600x1200/png/enclosure_2025-jan-26_01-37-57pm-000_customizedview21389847222_png.webp" /></a></li>
+</ul>
+</div>
+<p><a href="https://www.printables.com/search/models?q=3ms">Other Enclosures</a></p>
+<h3 id="setup-assembly-y-splitter">Y-Splitter</h3>
+<div class="grid cards">
+<ul>
+<li>
+<p><a class="glightbox" href="https://media.printables.com/media/prints/1103095/images/8338186_1e66aafd-0187-42a4-bed7-420d532541cb_9d93d093-db12-434a-a4c1-8aa2e3bf8fc3/thumbs/inside/1600x1200/png/img_0424.webp" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://media.printables.com/media/prints/1103095/images/8338186_1e66aafd-0187-42a4-bed7-420d532541cb_9d93d093-db12-434a-a4c1-8aa2e3bf8fc3/thumbs/inside/1600x1200/png/img_0424.webp" height="100" /></a></p>
+<hr />
+<p><strong>OFFICIAL</strong> <strong><a href="https://www.printables.com/model/1103095-4-way-y-splitter-with-ecas04">4-way Y splitter with ECAS04</a></strong> designed by <strong>3DCoded</strong>.</p>
+</li>
+<li>
+<p><a class="glightbox" href="https://media.printables.com/media/prints/1042279/images/7911671_cf864755-81d4-4b1d-a9f2-1c4f1d77bc24_9ce3f0a3-2276-419e-8c8c-faa9a5ec9ef3/thumbs/inside/1600x1200/jpg/photo_2024-10-18_18-33-02.webp" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://media.printables.com/media/prints/1042279/images/7911671_cf864755-81d4-4b1d-a9f2-1c4f1d77bc24_9ce3f0a3-2276-419e-8c8c-faa9a5ec9ef3/thumbs/inside/1600x1200/jpg/photo_2024-10-18_18-33-02.webp" /></a></p>
+<hr />
+<p><strong><a href="https://www.printables.com/model/1042279-no-catch-4-way-y-splitter-pc4-m10">4-way Y-splitter</a></strong> designed by <strong>ImChrono</strong>.</p>
+</li>
+<li>
+<p><a class="glightbox" href="https://media.printables.com/media/prints/1092036/images/8258786_8a2ebad0-2344-4455-8620-5de05c3bdb3c_712845da-7242-48d9-b5d1-c9bc95b64d00/thumbs/inside/1600x1200/png/5.webp" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://media.printables.com/media/prints/1092036/images/8258786_8a2ebad0-2344-4455-8620-5de05c3bdb3c_712845da-7242-48d9-b5d1-c9bc95b64d00/thumbs/inside/1600x1200/png/5.webp" /></a></p>
+<hr />
+<p><strong><a href="https://www.printables.com/model/1092036-4-tube-y-splitter-for-mmu">4-way Y-splitter with ECAS04 and M3 Bolt</a></strong> designed by <strong>Jager-f</strong>.</p>
+</li>
+</ul>
+</div>
+<h2 id="setup-assembly-filament-units-assembly">Filament Units Assembly</h2>
+<ol>
+<li>If using any mounting parts, place it on the face of your NEMA17 motor.</li>
+<li>Assemble the MK8 extruders using the instructions that came with them.</li>
+<li>Repeat for all filament units.</li>
+</ol>
+<h2 id="setup-assembly-wiring">Wiring</h2>
+<div class="admonition note">
+<p class="admonition-title">Note for Certain Printers</p>
+<p>If your printer has Klipper running internally (not on an external computer like a Raspberry Pi), the controller (if not a main MCU config) is plugged into a USB port on the printer itself.</p>
+</div>
+<p>Follow one of the following guides based on your controller:</p>
+<p><strong>Recommended: <a href="#setup-controllers-archive-bttmmb-wiring">BTT MMB</a></strong></p>
+<hr />
+<details>
+<summary>Other Controllers</summary>
+<p><a href="#setup-controllers-archive-skrminie3v2-wiring">SKR Mini E3 V2</a></p>
+<p><a href="#setup-controllers-skrpico-wiring">SKR Pico</a></p>
+<p><a href="#setup-controllers-archive-mellowflyd7-wiring">Mellow Fly D7</a></p>
+<p><a href="#setup-controllers-archive-bttoctopusmain-wiring">BTT Octopus (main MCU)</a></p>
+<p><a href="#setup-controllers-archive-einsyrambo-skrminie3v2">Einsy RAMBo (main MCU) with SKR Mini E3 V2</a></p>
+<p><a href="#setup-controllers-archive-zm384main">Zonestar ZM384 (main MCU)</a></p>
+<p><a href="#setup-controllers-archive-minirambo">Mini RAMBo</a></p>
+<p><a href="#setup-controllers-archive-geetech-a30t">Geetech A30T</a></p>
+</details></section><section class="print-page" id="setup-config" heading-number="4.4"><h1 id="setup-config-configuration">Configuration</h1>
+<p>After installing Happy Hare firmware, there are some configurations you need to go through before printing in multimaterial.</p>
+<h2 id="setup-config-filament-sensors">Filament Sensors</h2>
+<p>To use the 3MS, you'll need a filament sensor. Assuming you already have one installed, you can configure it in <code>mmu_hardware.cfg</code>.</p>
+<p>Locate the <code>[mmu_sensors]</code> section near the bottom of <code>mmu_hardware.cfg</code>.</p>
+<h3 id="setup-config-extrudertoolhead-sensors">Extruder/Toolhead Sensors</h3>
+<p>To configure an extruder entry sensor (a sensor right <strong>before</strong> your extruder), set your <code>extruder_switch_pin</code>:</p>
+<div class="admonition tip">
+<p class="admonition-title">Don't know your sensor pin?</p>
+<p>If you don't know your sensor pin, and it's already configured with Klipper, locate your sensor configuration (usually <code>filament_switch_sensor</code>) and note the <code>sensor_pin</code>.</p>
+</div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">mmu_hardware.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#setup-config-__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#setup-config-__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#setup-config-__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">[mmu_sensors]</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="na">...</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="na">extruder_switch_pin</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;SOME PIN&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>To configure your toolhead sensor (a sensor right <strong>after</strong> your extruder), set your <code>toolhead_switch_pin</code> the same way as you set your <code>extruder_switch_pin</code>.</p>
+<h3 id="setup-config-shared-gate-sensor-optional">Shared Gate Sensor (Optional)</h3>
+<p>Moving backwards from the extruder, the next possible sensor you may have installed is a shared gate sensor. This goes right <strong>after</strong> the Y-splitter.</p>
+<p>If you have a gate sensor installed, set your <code>gate_switch_pin</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">mmu_hardware.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#setup-config-__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#setup-config-__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#setup-config-__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">[mmu_sensors]</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="na">...</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="na">gate_switch_pin</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;SOME PIN&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="setup-config-prepost-gate-sensors-optional">Pre/Post Gate Sensors (Optional)</h3>
+<p>If you have a filament sensor before or after each of your 3MS filament units, configure a <code>pre_</code> or <code>post_gate</code> sensor.</p>
+<h4 id="setup-config-pre-gate">Pre-Gate</h4>
+<p>Pre-gate sensors go <strong>before</strong> each of your filament units. Configure each of these:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">mmu_hardware.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#setup-config-__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#setup-config-__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#setup-config-__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#setup-config-__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#setup-config-__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">[mmu_sensors]</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="na">pre_gate_switch_pin_0</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;SOME PIN&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="na">pre_gate_switch_pin_1</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;SOME PIN&gt;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="na">pre_gate_switch_pin_2</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;SOME PIN&gt;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="na">pre_gate_switch_pin_3</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;SOME PIN&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="setup-config-post-gate">Post-Gate</h4>
+<p>Post-gate sensors go <strong>after</strong> each of your filament units. Configure each of these:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">mmu_hardware.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#setup-config-__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#setup-config-__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#setup-config-__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#setup-config-__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#setup-config-__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#setup-config-__codelineno-3-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">[mmu_sensors]</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="na">...</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="na">post_gate_switch_pin_0</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;SOME PIN&gt;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="na">post_gate_switch_pin_1</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;SOME PIN&gt;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="na">post_gate_switch_pin_2</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;SOME PIN&gt;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="na">post_gate_switch_pin_3</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;SOME PIN&gt;</span>
+</code></pre></div></td></tr></table></div>
+<hr />
+<div class="admonition warning">
+<p class="admonition-title">Existing Sensors</p>
+<p>Before moving on, ensure all your existing <code>filament_switch_sensor</code> and <code>filament_motion_sensor</code> sections are commented out or deleted. Leaving this enabled will lead to unintended issues later on.</p>
+</div>
+<hr />
+<h2 id="setup-config-distances">Distances</h2>
+<p>There are many key distances to set up in Happy Hare firmware. All the distance parameters are located in <code>mmu_parameters.cfg</code>.</p>
+<h3 id="setup-config-homing-endstop">Homing Endstop</h3>
+<p>Firstly, when homing filament (checking if it is present), you have three options for the sensor to be used:</p>
+<ul>
+<li><strong>mmu_gate</strong> Use the shared gate sensor after the Y-splitter</li>
+<li><strong>mmu_gear</strong> Use the individual post-gate sensors.</li>
+<li><strong>extruder</strong> Use the extruder entry sensor.</li>
+</ul>
+<p>Select one of the three options in <code>gate_homing_endstop</code>, located in <code>mmu_parameters.cfg</code>.</p>
+<h3 id="setup-config-homing-distance">Homing Distance</h3>
+<p>Next, configure the maximum distance Happy Hare should attempt to load filament to the homing sensor, before "giving up" and deciding that the spool is empty. This should usually be ~150% the distance from your filament parking position to the sensor.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you use post-gear endstops (<code>mmu_gear</code>), this uses the <code>gate_preload_homing_max</code> parameter.</p>
+</div>
+<p>This parameter is called <code>gate_homing_max</code>.</p>
+<h3 id="setup-config-parking-position">Parking Position</h3>
+<p>This is the location your filament should park when idle, measured from your gate endstop. This should be set to ~1-2cm above your Y-splitter.</p>
+<p>This parameter is called <code>gate_parking_distance</code>.</p>
+<h3 id="setup-config-eject-distance">Eject Distance</h3>
+<p>Finally, if you want to switch out which filament is in a filament unit, edit your <code>gate_final_eject_distance</code>. This should be the distance from your parking position to your filament unit gears, plus a small margin.</p>
+<h2 id="setup-config-speeds">Speeds</h2>
+<p>There are many different speeds you can configure with Happy Hare firmware.</p>
+<p>These are located in the speeds section of <code>mmu_parameters.cfg</code> (near the top).</p>
+<h3 id="setup-config-homing-speed">Homing Speed</h3>
+<p>"Homing" is when the HH moves the filament into your extruder entry sensor to ensure they are present. You can adjust the speed at which this happens by editing the <code>gear_homing_speed</code> parameter.</p>
+<h3 id="setup-config-first-load-speeds">First Load Speeds</h3>
+<p>Happy Hare allows for slowing down the initial load to deal with additional drag from the filament spool. To adjust this speed, adjust <code>gear_from_spool_speed</code>.</p>
+<h3 id="setup-config-loadunload-speeds">Load/Unload Speeds</h3>
+<p>To adjust your load/unload speeds during a toolchange, adjust the <code>gear_from_buffer_speed</code> parameter.</p></section><section class="print-page" id="setup-calibration" heading-number="4.5"><h1 id="setup-calibration-calibration">Calibration</h1>
+<p>Follow this guide to calibrate your 3MS.</p>
+<div class="admonition info">
+<p class="admonition-title">Original Documentation</p>
+<p>This guide is a simplified version of <a href="https://github.com/moggieuk/Happy-Hare/wiki/MMU-Calibration">the official Happy Hare documentation</a>. I highly recommend you read it as it contains useful information and goes more in detail if you are having trouble with the calibrations.</p>
+</div>
+<h2 id="setup-calibration-verify-filament-sensors">Verify Filament Sensors</h2>
+<p>Before calibrating, it is important to ensure that your filament sensors are working properly.</p>
+<p>Run in your Klipper console:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#setup-calibration-__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>QUERY_ENDSTOPS
+</code></pre></div></td></tr></table></div>
+<p>and verify the output. For each endstop, <code>open</code> means no filament detected, and <code>TRIGGERED</code> means filament present. Re-run the command several times, inserting/removing filament to each of the sensors, to verify that each filament sensor properly detects filament.</p>
+<h2 id="setup-calibration-gear-steppers">Gear Steppers</h2>
+<p>First, calibrate your gear steppers (filament units). The goal of this calibration is to ensure the filament actually moves as far as expected.</p>
+<p>First, detach the PTFE tubing from each of the filament units.</p>
+<p>For each filament unit (gate), repeat the following steps:</p>
+<ol>
+<li>Manually load filament until it sticks out slightly from the end of the filament unit</li>
+<li>Cut the tip of the filament to be flush with the PTFE coupler (side cutters are good for this).</li>
+<li>
+<p>Run the following commands in your Klipper console:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#setup-calibration-__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#setup-calibration-__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>MMU_SELECT GATE=n
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>MMU_TEST_MOVE MOVE=100
+</code></pre></div></td></tr></table></div>
+<p>where <code>n</code> is the gate number you are calibrating (starting at zero).</p>
+</li>
+<li>
+<p>The filament should move forwards. If it moves backwards, <a href="#setup-calibration-inverting-a-gear-stepper">invert your gear stepper</a>. Measure the distance the filament moved out of the extruder. Using side cutters the same as before can be helpful for this. Run the following command in your Klipper console:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#setup-calibration-__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>MMU_CALIBRATE_GEAR MEASURED=n
+</code></pre></div></td></tr></table></div>
+<p>where <code>n</code> is the measured distance.</p>
+</li>
+<li>
+<p>Repeat step <strong>c</strong>. The filament should move exactly <code>100mm</code>.</p>
+</li>
+</ol>
+<h2 id="setup-calibration-encoder-if-installed">Encoder (if installed)</h2>
+<p>If you are using an encoder, like a BTT SFS (Smart Filament Sensor), you need to calibrate your encoder.</p>
+<ol>
+<li>Load your filament manually to its parking position at the start of the Y-splitter. </li>
+<li>
+<p>Run in your Klipper console:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#setup-calibration-__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>MMU_CALIBRATE_ENCODER
+</code></pre></div></td></tr></table></div>
+</li>
+</ol>
+<hr />
+<h2 id="setup-calibration-inverting-a-gear-stepper">Inverting a Gear Stepper</h2>
+<p>If you notice any of your gear steppers moving filament in the opposite direction as expected, you need to invert the gear stepper. There are two options to do this:</p>
+<ul>
+<li>Physically flip the stepper cables</li>
+<li>Invert it in software</li>
+</ul>
+<p>To invert a gear stepper in software, open <code>mmu_hardware.cfg</code> and invert the <code>dir_pin</code> for the respective stepper.</p>
+<p>Example, if <code>T1</code> is moving backwards:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="setup-calibration-__tabbed_1_1" name="setup-calibration-__tabbed_1" type="radio" /><input id="setup-calibration-__tabbed_1_2" name="setup-calibration-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="setup-calibration-__tabbed_1_1">Before</label><label for="setup-calibration-__tabbed_1_2">After</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">mmu_hardware.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#setup-calibration-__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#setup-calibration-__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#setup-calibration-__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">[stepper_mmu_gear_1]</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="na">...</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="na">dir_pin</span><span class="o">:</span><span class="w"> </span><span class="s">mmu: PC5</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">mmu_hardware.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#setup-calibration-__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#setup-calibration-__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#setup-calibration-__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">[stepper_mmu_gear_1]</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="na">...</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="na">dir_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!mmu: PC5</span><span class="w"> </span><span class="c1"># &lt;-- Note the ! in front of mmu</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the pin already has a <code>!</code> in front of it, remove it to invert it.</p>
+</div>
+<p>Restart Klipper.</p></section></section>
+                    <section class='print-page md-section' id='section-5' heading-number='5'>
+                        <h1>Guides<a class='headerlink' href='#section-5' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="guides-generator" heading-number="5.1"><h1 id="guides-generator-configuration-generator">Configuration Generator</h1>
+<p>Follow this guide to create a custom configuration for your 3MS.</p>
+<h2 id="guides-generator-base-configuration">Base Configuration</h2>
+<p>First, find the case configuration for your mainboard. The best place to find these is in the <a href="https://github.com/Klipper3d/klipper/tree/master/config">official Klipper sample configurations</a>.</p>
+<p>In this example, a BTT SKR Mini E3 V3 will be used. A base configuration is available in the official configuration <a href="https://github.com/Klipper3d/klipper/blob/master/config/generic-bigtreetech-skr-mini-e3-v3.0.cfg">here</a>.</p>
+<h3 id="guides-generator-raw-file">Raw File</h3>
+<p>Now you have the configuration, but it isn't a raw file. It's a full webpage. To continue, you need the raw configuration. To do this, find the <strong>"Raw"</strong> button in the upper-right corner of the page.</p>
+<p><a class="glightbox" href="../assets/images/guides/generator/generator01.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/guides/generator/generator01.png" /></a></p>
+<p>Now, you will be redirected to a page with the raw configuration. Copy the URL.</p>
+<p><a class="glightbox" href="../assets/images/guides/generator/generator02.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/guides/generator/generator02.png" /></a></p>
+<h2 id="guides-generator-generating-the-configuration-web"><a href="https://forked-lined-hour.anvil.app/">Generating the Configuration - Web</a></h2>
+<h2 id="guides-generator-or">OR</h2>
+<h2 id="guides-generator-generating-the-configuration-shell">Generating the Configuration - Shell</h2>
+<p>Now that you have the raw URL, you need to install the generator script.</p>
+<h3 id="guides-generator-installation">Installation</h3>
+<ol>
+<li>
+<p>Clone the 3MS repository:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#guides-generator-__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#guides-generator-__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>~
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/3DCoded/3MS
+</code></pre></div></td></tr></table></div>
+</li>
+<li>
+<p>Ensure Python 3 is installed (not Python 2).</p>
+</li>
+<li>
+<p>Install <code>requests</code></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#guides-generator-__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>pip3<span class="w"> </span>install<span class="w"> </span>requests
+</code></pre></div></td></tr></table></div>
+</li>
+</ol>
+<h3 id="guides-generator-running-the-script">Running the Script</h3>
+<p>First, start the script:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#guides-generator-__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#guides-generator-__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>~/3MS
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>python3<span class="w"> </span>generator.py
+</code></pre></div></td></tr></table></div>
+<p>Now, you will be presented with several options.</p>
+<h4 id="guides-generator-configuration-url">Configuration URL</h4>
+<p>Paste in the URL you found earlier.</p>
+<div class="admonition tip">
+<p class="admonition-title">Local file configurations</p>
+<p>You can also use a file configuration by passing the <code>--file</code> parameter:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#guides-generator-__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>python3<span class="w"> </span>generator.py<span class="w"> </span>--file
+</code></pre></div></td></tr></table></div>
+</div>
+<p><a class="glightbox" href="../assets/images/guides/generator/generator03.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/guides/generator/generator03.png" /></a></p>
+<h4 id="guides-generator-selected-steppers">Selected Steppers</h4>
+<p>The script will now list all the stepper motor configurations that were found in the configuration, with a number next to each. Enter the desired steppers, seperated by spaces.</p>
+<p><a class="glightbox" href="../assets/images/guides/generator/generator04.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/guides/generator/generator04.png" /></a></p>
+<h4 id="guides-generator-tmc-drivers">TMC Drivers</h4>
+<p>For each stepper you selected, the script will ask you which TMC driver to use. For the SKR Mini E3 V3, there is only one option: TMC2209.</p>
+<div class="admonition tip">
+<p class="admonition-title">No TMC Drivers?</p>
+<p>If you don't want to use TMC drivers in your configuration, pass the <code>--no-tmc</code> parameter:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#guides-generator-__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>python3<span class="w"> </span>generator.py<span class="w"> </span>--no-tmc
+</code></pre></div></td></tr></table></div>
+</div>
+<p><a class="glightbox" href="../assets/images/guides/generator/generator05.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/guides/generator/generator05.png" /></a></p>
+<h4 id="guides-generator-mcu-name">MCU Name</h4>
+<p>Finally, the script will ask you for the name of the MCU controlling your 3MS. Follow the naming convention outlined in the prompt.</p>
+<p><a class="glightbox" href="../assets/images/guides/generator/generator06.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/guides/generator/generator06.png" /></a></p>
+<hr />
+<p>Your configuration will now be available in <code>~/3MS/mmu.cfg</code> and <code>~/3MS/mmu_hardware.cfg</code>.</p></section><section class="print-page" id="guides-3dchameleon" heading-number="5.2"><h1 id="guides-3dchameleon-3dchameleon-to-3ms-conversion">3DChameleon to 3MS Conversion</h1>
+<p>Follow this guide to convert a 3DChameleon to a 3MS.</p>
+<h2 id="guides-3dchameleon-bom">BOM</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BTT MMB</td>
+<td>$34.99</td>
+<td>1</td>
+<td><a href="https://biqu.equipment/products/bigtreetech-mmb?srsltid=AfmBOoponySi7shutNrn8sXQ4NCBiLPUvgYTROIgp_KaDdjZcKoXTYkT">BTT</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Duponts</td>
+<td>$9.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/6QwGxhH">Amazon</a></td>
+<td>These wires are only sufficient to run steppers, not heaters</td>
+</tr>
+<tr>
+<td>24V PSU</td>
+<td>$12.99</td>
+<td>1</td>
+<td><a href="https://a.co/d/7JEXFkH">Amazon</a></td>
+<td>This PSU is only sufficient to run steppers, not heaters</td>
+</tr>
+<tr>
+<td>MK8 Metal Extruder</td>
+<td>$9.99</td>
+<td>2</td>
+<td><a href="https://a.co/d/0gJ1ghKj">Amazon</a></td>
+<td>Alternatively, you can use <a href="https://a.co/d/dbw7Wor">this</a> Dual-drive MK8 based extruder</td>
+</tr>
+</tbody>
+</table>
+<p>The final cost of this upgrade is around $70.</p>
+<h2 id="guides-3dchameleon-instructions">Instructions</h2>
+<ol>
+<li>Release the eight bolts on the 3DChameleon unit to remove the two NEMA17 stepper motors.</li>
+<li>Unplug the NEMA17's from the 3DChameleon electronics board</li>
+<li>Remove the PTFE tubes from the 3DChameleon unit and the Y-splitter</li>
+</ol>
+<p>Next, follow the <a href="#instructions">Master Instructions</a> except for the BOM section.</p></section></section>
+                    <section class='print-page md-section' id='section-6' heading-number='6'>
+                        <h1>Contributing<a class='headerlink' href='#section-6' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="contributing" heading-number="6.1"><h1 id="contributing-contributing">Contributing</h1>
+<p>If you want to contribute to the 3MS project, follow the instructions below.</p>
+<h2 id="contributing-development-setup">Development Setup</h2>
+<p>Follow <a href="#contributing-devsetup">Development Setup</a> to setup your system for development with the 3MS.</p>
+<h2 id="contributing-pull-request">Pull Request</h2>
+<p>Finally, <a href="https://github.com/3DCoded/3MS/pulls">submit a pull request</a>. A developer will get back to you soon with feedback, before merging your pull request into the main project.</p>
+<p>Thank you for your contribution to the 3MS project!</p></section><section class="print-page" id="contributing-devsetup" heading-number="6.2"><h1 id="contributing-devsetup-development-setup">Development Setup</h1>
+<p>Follow this guide to setup your system for development with the 3MS. </p>
+<h2 id="contributing-devsetup-documentation-changes">Documentation Changes</h2>
+<ol>
+<li>Fork the 3MS repository</li>
+<li>Create a new branch for your pull request (from the <code>docs</code> branch)</li>
+<li>Install <a href="https://www.python.org/">Python</a>.</li>
+<li>Install <a href="https://pipenv.pypa.io/en/latest/">Pipenv</a>.</li>
+<li>In your terminal, navigate to the 3MS folder, and run:
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#contributing-devsetup-__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#contributing-devsetup-__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>pipenv<span class="w"> </span>install
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>pipenv<span class="w"> </span>shell
+</code></pre></div></td></tr></table></div></li>
+<li>Develop changes in the new branch, using the following command to run the documentation locally:
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#contributing-devsetup-__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>mkdocs<span class="w"> </span>serve
+</code></pre></div></td></tr></table></div></li>
+</ol></section></section></div><style>.print-site-enumerate-headings #index > h1:before { content: '1 ' }
+
+                .print-site-enumerate-headings #index h2 { counter-reset: counter-index-3 1; counter-increment: counter-index-2 }
+                .print-site-enumerate-headings #index h2:before { content: '1.' counter(counter-index-2) ' ' }
+            
+                .print-site-enumerate-headings #index h3 { counter-reset: ; counter-increment: counter-index-3 }
+                .print-site-enumerate-headings #index h3:before { content: '1.' counter(counter-index-2) '.' counter(counter-index-3) ' ' }
+            
+.print-site-enumerate-headings #compare > h1:before { content: '2 ' }
+
+                .print-site-enumerate-headings #compare h2 { counter-reset: counter-compare-3 1; counter-increment: counter-compare-2 }
+                .print-site-enumerate-headings #compare h2:before { content: '2.' counter(counter-compare-2) ' ' }
+            
+                .print-site-enumerate-headings #compare h3 { counter-reset: ; counter-increment: counter-compare-3 }
+                .print-site-enumerate-headings #compare h3:before { content: '2.' counter(counter-compare-2) '.' counter(counter-compare-3) ' ' }
+            
+.print-site-enumerate-headings #instructions > h1:before { content: '3 ' }
+
+                .print-site-enumerate-headings #instructions h2 { counter-reset: counter-instructions-3 1; counter-increment: counter-instructions-2 }
+                .print-site-enumerate-headings #instructions h2:before { content: '3.' counter(counter-instructions-2) ' ' }
+            
+                .print-site-enumerate-headings #instructions h3 { counter-reset: ; counter-increment: counter-instructions-3 }
+                .print-site-enumerate-headings #instructions h3:before { content: '3.' counter(counter-instructions-2) '.' counter(counter-instructions-3) ' ' }
+            
+.print-site-enumerate-headings #section-4 > h1:before { content: '4 ' }
+.print-site-enumerate-headings #setup-bom > h1:before { content: '4.1 ' }
+
+                .print-site-enumerate-headings #setup-bom h3 { counter-reset: ; counter-increment: counter-setup-bom-3 }
+                .print-site-enumerate-headings #setup-bom h3:before { content: '4.1.' counter(counter-setup-bom-3) ' ' }
+            
+.print-site-enumerate-headings #section-4-2 > h1:before { content: '4.2 ' }
+.print-site-enumerate-headings #setup-controllers > h1:before { content: '4.2.1 ' }
+
+.print-site-enumerate-headings #setup-controllers-skrpico > h1:before { content: '4.2.2 ' }
+
+.print-site-enumerate-headings #section-4-2-3 > h1:before { content: '4.2.3 ' }
+.print-site-enumerate-headings #setup-controllers-archive-bttmmb > h1:before { content: '4.2.3.1 ' }
+
+.print-site-enumerate-headings #setup-controllers-archive-skrminie3v2 > h1:before { content: '4.2.3.2 ' }
+
+.print-site-enumerate-headings #setup-controllers-archive-bttoctopusmain > h1:before { content: '4.2.3.3 ' }
+
+.print-site-enumerate-headings #setup-controllers-archive-einsyrambo-skrminie3v2 > h1:before { content: '4.2.3.4 ' }
+
+.print-site-enumerate-headings #setup-controllers-archive-zm384main > h1:before { content: '4.2.3.5 ' }
+
+.print-site-enumerate-headings #setup-controllers-archive-minirambo > h1:before { content: '4.2.3.6 ' }
+
+.print-site-enumerate-headings #setup-controllers-archive-mellowflyd7 > h1:before { content: '4.2.3.7 ' }
+
+.print-site-enumerate-headings #setup-controllers-archive-geetech-a30t > h1:before { content: '4.2.3.8 ' }
+
+.print-site-enumerate-headings #setup-assembly > h1:before { content: '4.3 ' }
+
+                .print-site-enumerate-headings #setup-assembly h3 { counter-reset: ; counter-increment: counter-setup-assembly-3 }
+                .print-site-enumerate-headings #setup-assembly h3:before { content: '4.3.' counter(counter-setup-assembly-3) ' ' }
+            
+.print-site-enumerate-headings #setup-config > h1:before { content: '4.4 ' }
+
+                .print-site-enumerate-headings #setup-config h3 { counter-reset: ; counter-increment: counter-setup-config-3 }
+                .print-site-enumerate-headings #setup-config h3:before { content: '4.4.' counter(counter-setup-config-3) ' ' }
+            
+.print-site-enumerate-headings #setup-calibration > h1:before { content: '4.5 ' }
+
+                .print-site-enumerate-headings #setup-calibration h3 { counter-reset: ; counter-increment: counter-setup-calibration-3 }
+                .print-site-enumerate-headings #setup-calibration h3:before { content: '4.5.' counter(counter-setup-calibration-3) ' ' }
+            
+.print-site-enumerate-headings #section-5 > h1:before { content: '5 ' }
+.print-site-enumerate-headings #guides-generator > h1:before { content: '5.1 ' }
+
+                .print-site-enumerate-headings #guides-generator h3 { counter-reset: ; counter-increment: counter-guides-generator-3 }
+                .print-site-enumerate-headings #guides-generator h3:before { content: '5.1.' counter(counter-guides-generator-3) ' ' }
+            
+.print-site-enumerate-headings #guides-3dchameleon > h1:before { content: '5.2 ' }
+
+                .print-site-enumerate-headings #guides-3dchameleon h3 { counter-reset: ; counter-increment: counter-guides-3dchameleon-3 }
+                .print-site-enumerate-headings #guides-3dchameleon h3:before { content: '5.2.' counter(counter-guides-3dchameleon-3) ' ' }
+            
+.print-site-enumerate-headings #section-6 > h1:before { content: '6 ' }
+.print-site-enumerate-headings #contributing > h1:before { content: '6.1 ' }
+
+                .print-site-enumerate-headings #contributing h3 { counter-reset: ; counter-increment: counter-contributing-3 }
+                .print-site-enumerate-headings #contributing h3:before { content: '6.1.' counter(counter-contributing-3) ' ' }
+            
+.print-site-enumerate-headings #contributing-devsetup > h1:before { content: '6.2 ' }
+
+                .print-site-enumerate-headings #contributing-devsetup h3 { counter-reset: ; counter-increment: counter-contributing-devsetup-3 }
+                .print-site-enumerate-headings #contributing-devsetup h3:before { content: '6.2.' counter(counter-contributing-devsetup-3) ' ' }
+            </style>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "/3MS/", "features": ["navigation.indexes", "navigation.footer", "navigation.expand", "navigation.instant", "navigation.top", "navigation.sections", "navigation.instant.prefetch", "search.suggest", "search.highlight", "search.share", "content.tooltips", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../assets/javascript/calibration.js"></script>
+      
+    
+  </body>
+</html>
