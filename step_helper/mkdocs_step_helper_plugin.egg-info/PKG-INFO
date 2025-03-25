@@ -1,8 +1,0 @@
-Metadata-Version: 2.2
-Name: mkdocs-step-helper-plugin
-Version: 0.0.1
-Summary: An MkDocs plugin
-Dynamic: description
-Dynamic: summary
-
-An MkDocs plugin that automagically generates step numbers in markdown pages

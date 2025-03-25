@@ -1,8 +1,0 @@
-setup.py
-mkdocs_step_helper_plugin.egg-info/PKG-INFO
-mkdocs_step_helper_plugin.egg-info/SOURCES.txt
-mkdocs_step_helper_plugin.egg-info/dependency_links.txt
-mkdocs_step_helper_plugin.egg-info/entry_points.txt
-mkdocs_step_helper_plugin.egg-info/top_level.txt
-step_helper/__init__.py
-step_helper/plugin.py
