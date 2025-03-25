@@ -1,5 +1,5 @@
 site_name: 3MS
-site_url: https://docs.3dcoded.xyz/3MS
+site_url: https://3ms.3dcoded.xyz/
 repo_url: https://github.com/3dcoded/3MS
 plugins:
   - search

@@ -9,7 +9,7 @@ comments: true
 .Stepn 3HOME Enclosure
 
 gcard
-- stepi-71587e5f.jpeg
+- stepi-71587e5f
 
 - Print out the 3HOME Official Modular Enclosure for the 3MS.
 
@@ -20,7 +20,7 @@ gcard
 .Stepn Hex Keys
 
 gcard
-- stepi-0e6e186e.png
+- stepi-0e6e186e
 
 - Ensure you have the following hex keys:
 
@@ -49,7 +49,7 @@ gcard
 .Stepn Wire Strippers
 
 gcard
-- stepi-a92eec86.jpeg
+- stepi-a92eec86
 
 - Ensure you have wire strippers capable of stripping 24AWG wire (0.25mm^2^)
 

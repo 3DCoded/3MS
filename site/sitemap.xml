@@ -1,131 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/</loc>
+         <loc>https://3ms.3dcoded.xyz/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/compare/</loc>
+         <loc>https://3ms.3dcoded.xyz/compare/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/instructions/</loc>
+         <loc>https://3ms.3dcoded.xyz/instructions/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/contributing/</loc>
+         <loc>https://3ms.3dcoded.xyz/contributing/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/contributing/devsetup/</loc>
+         <loc>https://3ms.3dcoded.xyz/contributing/devsetup/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/guides/3dchameleon/</loc>
+         <loc>https://3ms.3dcoded.xyz/guides/3dchameleon/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/guides/generator/</loc>
+         <loc>https://3ms.3dcoded.xyz/guides/generator/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/hidden/assembly-ele-beta/</loc>
+         <loc>https://3ms.3dcoded.xyz/hidden/assembly-ele-beta/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/hidden/assembly-hw-beta/</loc>
+         <loc>https://3ms.3dcoded.xyz/hidden/assembly-hw-beta/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/hidden/hidden-assembly/</loc>
+         <loc>https://3ms.3dcoded.xyz/hidden/hidden-assembly/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/kits/</loc>
+         <loc>https://3ms.3dcoded.xyz/kits/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/kits/tour/</loc>
+         <loc>https://3ms.3dcoded.xyz/kits/tour/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/kits/instructions/</loc>
+         <loc>https://3ms.3dcoded.xyz/kits/instructions/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/kits/instructions/electronic-assembly/</loc>
+         <loc>https://3ms.3dcoded.xyz/kits/instructions/electronic-assembly/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/kits/instructions/extruder-assembly/</loc>
+         <loc>https://3ms.3dcoded.xyz/kits/instructions/extruder-assembly/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/kits/instructions/printed-parts-and-tools/</loc>
+         <loc>https://3ms.3dcoded.xyz/kits/instructions/printed-parts-and-tools/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/kits/instructions/software-setup/</loc>
+         <loc>https://3ms.3dcoded.xyz/kits/instructions/software-setup/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/assembly/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/assembly/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/bom/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/bom/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/calibration/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/calibration/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/config/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/config/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/firstprint/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/firstprint/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/controllers/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/controllers/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/controllers/skrpico/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/controllers/skrpico/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/controllers/archive/bttmmb/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/controllers/archive/bttmmb/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/controllers/archive/bttoctopusmain/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/controllers/archive/bttoctopusmain/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/controllers/archive/einsyrambo-skrminie3v2/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/controllers/archive/einsyrambo-skrminie3v2/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/controllers/archive/geetech-a30t/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/controllers/archive/geetech-a30t/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/controllers/archive/mellowflyd7/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/controllers/archive/mellowflyd7/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/controllers/archive/minirambo/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/controllers/archive/minirambo/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/controllers/archive/skrminie3v2/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/controllers/archive/skrminie3v2/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.3dcoded.xyz/3MS/setup/controllers/archive/zm384main/</loc>
+         <loc>https://3ms.3dcoded.xyz/setup/controllers/archive/zm384main/</loc>
          <lastmod>2025-03-25</lastmod>
     </url>
 </urlset>
