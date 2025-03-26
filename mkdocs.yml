@@ -14,6 +14,16 @@ plugins:
   - autolinks
   # - git-revision-date-localized:
       # enable_creation_date: true
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: de
+          name: Deustch
+          build: true
   - glightbox:
       touchNavigation: true
       loop: false
@@ -68,11 +78,19 @@ extra:
   analytics:
     provider: google
     property: G-ERRF9DWVTD
+  # alternate:
+  #   - name: English
+  #     link: /
+  #     lang: en
+  #   - name: Deutsch (In Arbeit)
+  #     link: /de/
+  #     lang: de
   status:
     new: Recently added
     updated: Recently updated
     deprecated: Deprecated
 theme:
+  language: en
   logo: assets/logo.png
   favicon: assets/logo.png
   custom_dir: docs/overrides

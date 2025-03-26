@@ -19,6 +19,7 @@ mkdocs-autolinks-plugin = "*"
 gitpython = "*"
 pillow = "*"
 regex = "*"
+mkdocs-static-i18n = "*"
 
 [dev-packages]
 
