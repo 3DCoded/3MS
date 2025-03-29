@@ -23,3 +23,62 @@ Begin by opening your machine settings.
 Navigate to `Machine G-Code`.
 
 ![](2f542723.png)
+
+### Start G-Code
+
+Prepend your `Machine start G-code` with the following:
+
+```yaml
+MMU_START_SETUP INITIAL_TOOL={initial_tool} TOTAL_TOOLCHANGES=!total_toolchanges! REFERENCED_TOOLS=!referenced_tools! TOOL_COLORS=!colors! TOOL_TEMPS=!temperatures! TOOL_MATERIALS=!materials! FILAMENT_NAMES=!filament_names! PURGE_VOLUMES=!purge_volumes!
+MMU_START_CHECK
+```
+
+Then, append the following below your existing G-code:
+
+```yaml
+MMU_START_LOAD_INITIAL_TOOL
+; Optionally add YOUR additional start logic (like purging) here to run just prior to start
+SET_PRINT_STATS_INFO TOTAL_LAYER={total_layer_count} ; For pause at layer functionality and better print stats
+```
+
+=== "Before"
+    ![](ea01e198.png)
+=== "After"
+    ![](4331cc6c.png)
+
+### End G-Code
+
+Prepend your `Machine end G-Code` with the following:
+
+```yaml
+MMU_END
+```
+
+Then, append the following below your existing G-code:
+
+```yaml
+MMU_PRINT_END ; Only required if using Octoprint
+```
+
+=== "Before"
+    ![](1c451151.png)
+=== "After"
+    ![](2155183d.png)
+
+### Layer Change G-Code
+
+Scroll down and edit your layer change G-Code.
+
+Add the following:
+
+```yaml
+_MMU_UPDATE_HEIGHT
+
+; If you want enhanced pausing feature with Happy Hare client macros also add this
+SET_PRINT_STATS_INFO CURRENT_LAYER={layer_num} ; For pause at layer functionality and better print stats
+```
+
+=== "Before"
+    ![](458ac7cd.png)
+=== "After"
+    ![](64a872df.png)

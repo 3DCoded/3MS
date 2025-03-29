@@ -27,7 +27,7 @@ def resize_images_in_folder(folder_path, output_folder, width):
     for filename in os.listdir(folder_path):
         if filename.endswith(supported_formats):
             file_path = os.path.join(folder_path, filename)
-            output_path = os.path.join(folder_path, filename.split('.')[0] + '.png')
+            output_path = os.path.join(folder_path, filename.split('.')[:-1] + '.png')
 
             try:
                 # Open the image and convert it to RGB (to handle transparency in PNGs)
