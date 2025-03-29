@@ -49,7 +49,7 @@ For each filament unit (gate), repeat the following steps:
 
     where `n` is the measured distance.
   
-1. Repeat step **c**. The filament should move exactly `100mm`.
+1. Repeat step **3**. The filament should move exactly `100mm`.
 
 ## Encoder (if installed)
 
