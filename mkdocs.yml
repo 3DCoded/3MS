@@ -3,7 +3,7 @@ site_url: https://3ms.3dcoded.xyz/
 repo_url: https://github.com/3dcoded/3MS
 plugins:
   - search
-  - macros
+  - macros:
   - step_helper
   # - spellcheck:
   #     backends:
@@ -123,6 +123,8 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+hooks:
+  - hooks.py
 nav:
   - Home: index.md
   - compare.md

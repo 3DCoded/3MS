@@ -13,13 +13,13 @@ mkdocs-spellcheck = "*"
 codespell = "*"
 symspellpy = "*"
 termynal = "*"
-mkdocs-macros-plugin = "*"
 neoteroi-mkdocs = "*"
 mkdocs-autolinks-plugin = "*"
 gitpython = "*"
 pillow = "*"
 regex = "*"
 mkdocs-static-i18n = "*"
+mkdocs-macros-plugin = "*"
 
 [dev-packages]
 

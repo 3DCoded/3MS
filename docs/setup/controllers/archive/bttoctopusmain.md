@@ -21,6 +21,8 @@ Per filament unit:
 
 [1x TMC2209](https://a.co/d/01KA3Y1) ($7 each)
 
+{{ filUnitBOM }}
+
 ## Wiring
 
 Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:

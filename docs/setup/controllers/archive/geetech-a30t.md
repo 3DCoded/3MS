@@ -20,6 +20,8 @@ comments: true
 Duponts | $9.99 | 1 | [Amazon](https://a.co/d/6QwGxhH) | These wires are only sufficient to run steppers, not heaters |
 | 24V PSU | $7.39 | 1 | [Amazon](https://a.co/d/1Ko6QMB) | This PSU is only sufficient to run steppers, not heaters |
 
+{{ filUnitBOM }}
+
 ## Firmware
 
 To flash Klipper firmware to the A30T, run the following command and see the following screenshot:

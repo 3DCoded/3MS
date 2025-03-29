@@ -21,6 +21,8 @@ When printing fast, the TMC2130's on the Einsy RAMBo can get quite loud. The TMC
 | PSU -> Einsy Cable | $7.99 | 1 | [PartsBuilt3D](https://www.partsbuilt.com/cable-psu-to-einsy-for-prusa-mk3-3s-3s-prusa-compatible/) | |
 | Stepperonline NEMA17 | $9.99 each | [Amazon](https://a.co/d/el99D6X) | 2 | Replaces current XY motors |
 
+{{ filUnitBOM }}
+
 ## Wiring
 
 First, unplug the 3MS steppers from the SKR Mini, and the XY steppers from the Einsy RAMBo. The motors will need to be switched due to different connector types between boards.

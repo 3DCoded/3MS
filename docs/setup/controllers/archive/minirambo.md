@@ -16,6 +16,8 @@ comments: true
 Duponts | $9.99 | 1 | [Amazon](https://a.co/d/6QwGxhH) | These wires are only sufficient to run steppers, not heaters |
 | 12V PSU | $7.39 | 1 | [Amazon](https://a.co/d/gLC1eli) | This PSU is only sufficient to run steppers, not heaters |
 
+{{ filUnitBOM }}
+
 ## Wiring
 
 Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:

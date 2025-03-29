@@ -12,6 +12,8 @@ comments: true
 
 This configuration is a `main MCU` configuration, meaning that your printer should already be running off a ZM384 and you don't need to purchase one.
 
+{{ filUnitBOM }}
+
 | Filament Unit # | Motor Port |
 | - | - |
 | 0 | E0 |
