@@ -20,7 +20,7 @@ Wegen der Modularität des 3MS gibt es viele mögliche Arten es aufzubauen. Dies
 
     ---
 
-    [**1. Eine Stückliste erhalten**](bom.md){.md-button}
+    [**1. Eine Stückliste erhalten**](bom.de.md){.md-button}
 
 - [![](https://media.printables.com/media/prints/1108644/images/9216280_de984a65-3c50-48c9-8b65-210f846f8b18_b5b7545c-3eb9-4bc8-a6c5-dec8cb7aa465/thumbs/inside/1600x1200/png/screenshot-2025-03-14-at-72728-am.webp)](assembly.md)
 
@@ -32,7 +32,7 @@ Wegen der Modularität des 3MS gibt es viele mögliche Arten es aufzubauen. Dies
 
     ---
 
-    [**3. Elektronischer Zusammenbau**](setup/assembly.de#wiring){ .md-button }
+    [**3. Elektronischer Zusammenbau**](setup/assembly.de.md#wiring){ .md-button }
 
 - [![](https://github.com/moggieuk/Happy-Hare/wiki/resources/happy_hare_logo.jpg)](https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS)
 
