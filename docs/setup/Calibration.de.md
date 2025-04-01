@@ -6,7 +6,7 @@ icon: fontawesome/solid/ruler-horizontal
 # Kalibrierung
 
 Folge diesem Guide um dein 3MS zu kalibrieren.
-
+ 
 !!! Info "Original Documentation"
     Dieser Guide ist eine vereinfachte Version der [offiziellen Happy Hare Dokumentation](https://github.com/moggieuk/Happy-Hare/wiki/MMU-Calibration). Ich empfehle dir sehr sie zu lesen weil sie nützliche Informationen enthält und tiefer ins Detail geht, falls du Probleme mit dem Kalibrieren hast.
 
