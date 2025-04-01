@@ -57,25 +57,25 @@ Um mit dem 3MS loszulegen schau dir die [Master Instructions](instructions.de.md
     === "Schaf" 
         ![](samplesheep.jpeg){: style="height: 300px"}
 
-        Model: [Sheep by Cipis](https://www.printables.com/model/838872-sheep-multi-material-remix)
+        Model: ["Sheep" von Cipis](https://www.printables.com/model/838872-sheep-multi-material-remix)
     === "Kalender"
         ![](samplecalendar.jpeg){: style="width: 300px"}
 
-        Model: [Monolith Cryptic Calendar by Sevro](https://www.printables.com/model/698341-monolith-cryptic-calendar)
+        Model: ["Monolith Cryptic Calendar" von Sevro](https://www.printables.com/model/698341-monolith-cryptic-calendar)
     === "Voron Cube"
         ![](samplevoron.jpeg){: style="height: 300px"}
 
-        Model: Voron Cube (bundled with OrcaSlicer), painted by me in OrcaSlicer
+        Model: Voron Cube (gebundlet mit dem OrcaSlicer), von mir angemalt im OrcaSlicer
     === "T-Rex"
         ![](sampletrex.jpeg){: style="width: 300px"}
 
-        Printed at 50% scale
+        in 50% der Größe gedruckt
 
-        Model: [T-rex by Cipis](https://www.printables.com/model/5481-t-rex-multi-material)
+        Model: ["T-rex" von Cipis](https://www.printables.com/model/5481-t-rex-multi-material)
     === "Echse"
         ![](samplelizard.jpeg){: style="width: 300px"}
 
-        Model: [Striped lizard with pupils by EngMike](https://www.printables.com/model/236193-striped-lizard-multi-material-with-pupils)
+        Model: "[Striped lizard with pupils" von EngMike](https://www.printables.com/model/236193-striped-lizard-multi-material-with-pupils)
 
 ??? "West3D Video Serie"
     Danke an Allen Rowand von [West3D](https://west3d.com/) für diese andauernde Serie über das 3MS.
