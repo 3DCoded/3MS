@@ -38,4 +38,4 @@ Wähle die zu deinem Controller passende Stückliste aus:
 
 ## Filament-Einheiten Stückliste
 
-{{ filUnitBOM.de }}
+{{ filUnitBOMde }}
