@@ -24,6 +24,15 @@ plugins:
         - locale: de
           name: Deustch
           build: true
+          nav_translations:
+            Home: Startseite
+            # Comparison of Multimaterial Systems: Vergleich verschiedener automatisierter Filamentwechsler
+            Setup: Einrichten
+            BOM: Stückliste
+            Controllers: Kontrollboards
+            Archive: Archiv
+            Guides: Guides
+            Contributing: Mitwirken
   - glightbox:
       touchNavigation: true
       loop: false

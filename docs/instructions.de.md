@@ -1,6 +1,7 @@
 ---
 icon: octicons/list-ordered-24
 comments: true
+title: Anleitung
 ---
 
 <link rel="stylesheet" href="../assets/css/badges.css">
