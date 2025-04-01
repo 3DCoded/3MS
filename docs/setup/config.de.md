@@ -28,11 +28,11 @@ extruder_switch_pin: <IRGENDEIN PIN>
 
 Um einen Werkzeugkopfsensor (ein Sensor direkt **nach** deinem Extruder) zu konfigurieren, setze deinen `toolhead_switch_pin` auf die gleiche Weise wie den `extruder_switch_pin`.
 
-### Gemeinsamer Gate Sensor
+### Gemeinsamer Gate Sensor (Optional) #####CHECK
 
-Vom der Düse aufwärts gesehen, ist der nächste mögliche Sensor ein gemeinsamer Gate Sensor. Der sitzt direkt **hinter** dem Y-Sülitter (vom 3MS aus gesehen).
+Moving backwards from the extruder, the next possible sensor you may have installed is a shared gate sensor. This goes right **after** the Y-splitter.
 
-Falls du einen Gate Sensor verwendest setze `gate_switch_pin`:
+If you have a gate sensor installed, set your `gate_switch_pin`:
 
 ```cfg title="mmu_hardware.cfg"
 [mmu_sensors]
@@ -41,7 +41,6 @@ gate_switch_pin: <IRGENDEIN PIN>
 ```
 
 ### Pre/Post Gate Sensors (Optional)
-
 Falls du einen Filament-Sensor vor oder nach jeder deiner 3MS Filament-Einheiten hast, konfiguriere einen `pre_` oder `post_gate` Sensor.
 
 #### Pre-Gate
