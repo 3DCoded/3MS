@@ -89,12 +89,12 @@ Wennn du die Filamentposition homen willst, hast du drei Optionen für den zu ve
 
 Wähle eine dieser Optionen aus und setze sie als `gate_homing_endstop`, in der `mmu_parameters.cfg`.
 
-### Homing Entfernung 
+### Homing Entfernung #####CHECK
 
 Als nächstes konfigurierst du die maximale Strecke die Happy Hare Filament zum Homing Sensor schieben soll, bevor er "aufgibt" und die Spule als "leer" meldet. Diese Länge sollte gewöhnlich ca 150% der Distanz von der Filament-Parkposition zum Filament-Sensor entsprechen.
 
 !!! Anmerkung
-    Falls du Post-Gear Endstops (`mmu_gear`) verwendest, wird der `gate_preload_homing_max` Parameter verwendet. 
+    Falls du Post- you use post-gear endstops (`mmu_gear`), this uses the `gate_preload_homing_max` parameter. 
 
 Dieser Parameter heißt `gate_homing_max`.
 
