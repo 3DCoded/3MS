@@ -17,7 +17,7 @@ Du findest ihn im `[mmu_sensors]`-Abschnitt kurz vor dem Ende der `mmu_hardware.
 
 Um einen Extruder-Eintrittssensor (ein Sensor direkt **vor** deinem Extruder) zu konfigurieren, setze deinen `extruder_switch_pin`:
 
-!!! Tipp "Du kennst weißt deinen Sensor Pin nicht?"
+!!! tip "Du kennst weißt deinen Sensor Pin nicht?"
     Falls du deinen Sensor Pin nicht kennst und er schon in Klipper eingerichtet ist, dann kannst du ihn in deiner Sensor Konfiguration (normalerweise als `filament_switch_sensor`) finden und dir den `sensor_pin` notieren.
 
 ```cfg title="mmu_hardware.cfg"
