@@ -88,7 +88,7 @@ Beispielsweise, falls `T1` sich rückwärts bewegt:
     dir_pin: !mmu: PC5 # <-- Note the ! in front of mmu
     ```
 
-!!! Tipp
+!!! tip
     Falls der Pin schon ein `!` dort stehen hat, entferne es um ihn zu invertieren.
 
 Starte Klipper neu.

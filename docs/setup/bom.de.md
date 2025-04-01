@@ -2,11 +2,6 @@
 icon: material/table
 comments: true
 ---
----
-icon: material/table
-comments: true
----
-
 
 # Stückliste
 
