@@ -1,5 +1,5 @@
 # Config-Generator
-
+ 
 Folge diesem Guide um eine Custom-Config für dein 3MS zu generieren.
 
 ## Grundlagen-Config

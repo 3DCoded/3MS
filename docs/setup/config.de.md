@@ -8,7 +8,7 @@ icon: material/code-json
 Nach dem Installieren der Happy Hare Firmware musst du ein paar Einstellungen vornehmen, bevor du mit mehreren Materialien drucken kannst.
 
 ## Filament Sensoren
-
+ 
 Um das 3MS nutzen zu können brauchst du einen Filament Sensor. Angenommen du hast bereits einen eingebaut, kannst du ihn in `mmu_hardware.cfg` konfigurieren.
 
 Du findest ihn im `[mmu_sensors]`-Abschnitt kurz vor dem Ende der `mmu_hardware.cfg`.
