@@ -32,3 +32,4 @@ Wähle einen der folgenden, unterstützten Controller (eine angekreuzte Box bede
 - [ ] [Zonestar ZM384 (als Haupt-MCU) (4 Farben)](zm384main.md)
 - [ ] [Mini RAMBo (4 Farben)](minirambo.md)
 - [ ] [BTT Octopus (als Haupt-MCU) (4 Farben)](bttoctopusmain.md)
+ 

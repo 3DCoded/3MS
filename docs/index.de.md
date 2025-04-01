@@ -60,7 +60,7 @@ Um mit dem 3MS loszulegen schau dir die [Master Instructions](instructions.de.md
         Model: ["Sheep" von Cipis](https://www.printables.com/model/838872-sheep-multi-material-remix)
     === "Kalender"
         ![](samplecalendar.jpeg){: style="width: 300px"}
-
+ 
         Model: ["Monolith Cryptic Calendar" von Sevro](https://www.printables.com/model/698341-monolith-cryptic-calendar)
     === "Voron Cube"
         ![](samplevoron.jpeg){: style="height: 300px"}
