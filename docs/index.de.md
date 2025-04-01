@@ -2,8 +2,8 @@
 title: 3MS Home
 icon: material/home
 ---
-
-# Willkommen zur 3MS Dokumentations
+ 
+#  Willkommen zur 3MS Dokumentations
 
 "3MS" ist eine Abkürzung für "MMMS", was für **M**odular **M**ulti **M**aterial **S**ystem steht
 
@@ -12,11 +12,11 @@ icon: material/home
 [Konfigurations Generator](https://forked-lined-hour.anvil.app/)
 
 [![Discord Shield](https://discord.com/api/guilds/1307104511663411210/widget.png?style=banner2)](https://discord.gg/ekqxDhdGCg)
-
+ 
 Das 3MS ist ein simpler, kompakter, modularer, verlässlicher und den Geldbeutel schonender, automatisierter Filamentwechsler.
 
 [Loslegen :material-format-list-numbered:](instructions.de.md){ .md-button }
-
+ 
 ## Warum gerade das 3MS?
 
 Warum sollte ich das 3MS verwenden, wo es doch viele andere automatisierte Filamentwechsler gibt?
