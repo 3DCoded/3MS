@@ -8,7 +8,7 @@ comments: true
 Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergleich verschiedener, verbreiteter Multimaterial-Systeme an.
 
 <div class="grid cards" markdown>
--   3MS __Modular Multimaterial System für Klipper 3D Printers__
+-   3MS __Modular Multimaterial System für Klipper 3D-Drucker__
 
     --- 
 
@@ -16,7 +16,7 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Pros:**
+    **Pro:**
 
     :material-plus-box:{.plus} Einfaches Design
 
@@ -32,7 +32,7 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Cons:**
+    **Kontra:**
 
     :material-minus-box:{.minus} Kompatibilität (erfordert Klipper)
 
@@ -40,7 +40,7 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
 <div class="grid cards" markdown>
 
--   Box Turtle MMU __Automated Filament Changer__
+-   Box Turtle MMU __Automatisierter Filamentwechsler__
 
     ---
 
@@ -48,7 +48,7 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Pros:**
+    **Pro:**
 
     :material-plus-box:{.plus} Verlässlichkeit
 
@@ -58,7 +58,7 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Cons:**
+    **Kontra:**
 
     :material-minus-box:{.minus} Kompatibilität (erfordert Klipper)
     
@@ -66,7 +66,7 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     :material-minus-box:{.minus} Preis ($300)
 
--   ERCF v2 __An expandable MMU for Klipper-based 3D-printers__
+-   ERCF v2 __Ein erweiterbares MMU für Klipper-basierte 3D-Drucker__
 
     ---
 
@@ -74,7 +74,7 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Pros:**
+    **Pro:**
 
     :material-plus-box:{.plus} Verlässlichkeit
 
@@ -86,13 +86,13 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Cons:**
+    **Kontra:**
 
     :material-minus-box:{.minus} Kompatibilität (erfordert Klipper)
 
     :material-minus-box:{.minus} Komplexität
 
--   TradRack __by Annex Engineering__
+-   TradRack __von Annex Engineering__
 
     ---
 
@@ -100,9 +100,9 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Pros:**
+    **Pro:**
 
-    :material-plus-box:{.plus}  Verlässlichkeit
+    :material-plus-box:{.plus} Verlässlichkeit
 
     :material-plus-box:{.plus} Modulares Design
 
@@ -112,7 +112,7 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Cons:**
+    **Kontra:**
 
     :material-minus-box:{.minus} Kompatibilität (erfordert Klipper)
 
@@ -126,7 +126,7 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Pros:**
+    **Pro:**
 
     :material-plus-box:{.plus} Kompatibilität
 
@@ -136,13 +136,13 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Cons:**
+    **Kontra:**
 
     :material-minus-box:{.minus} Verlässlichkeit
     
     :material-minus-box:{.minus} Dokumentation
 
-- SMuFF __Smart Multi Filament Feeder__
+- SMuFF __"Smart Multi Filament Feeder"__
 
     ---
 
@@ -150,7 +150,7 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
     
     ---
 
-    **Pros:**
+    **Pro:**
 
     :material-plus-box:{.plus} Verlässlichkeit
 
@@ -160,7 +160,7 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Cons:**
+    **Kontra:**
 
     :material-minus-box:{.minus} Komplexität
 
@@ -172,7 +172,7 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Pros:**
+    **Pro:**
 
     :material-plus-box:{.plus} Verlässlichkeit
 
@@ -182,13 +182,13 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Cons:**
+    **Kontra:**
 
     :material-minus-box:{.minus} Kompatibilität
 
     :material-minus-box:{.minus} Preis ($300)
 
--   CoPrint KCM __Multi-Color Upgrade Kit for Klipper 3D Printers__
+-   CoPrint KCM __Multi-Color Upgrade Kit für Klipper 3D-Drucker__
 
     ---
 
@@ -196,7 +196,7 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Pros:**
+    **Pro:**
 
     :material-plus-box:{.plus} Einfaches Design
 
@@ -206,7 +206,7 @@ Du bist dir unsicher ob du das 3MS verwenden willst? Schau dir doch diesen Vergl
 
     ---
 
-    **Cons:**
+    **Kontra:**
 
     :material-minus-box:{.minus} Komplexität (erfordert ChromaHead)
 
