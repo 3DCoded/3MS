@@ -57,15 +57,14 @@ Follow this guide to assemble your 3MS.
 
 Follow one of the following guides based on your controller:
 
-**Recommended: [BTT MMB](bttmmb.md#wiring)**
+**Recommended: [SKR Pico](skrpico.md#wiring)**
 
 ---
 
 ??? "Other Controllers"
+    [BTT MMB](bttmmb.md#wiring)
 
     [SKR Mini E3 V2](skrminie3v2.md#wiring)
-    
-    [SKR Pico](skrpico.md#wiring)
     
     [Mellow Fly D7](mellowflyd7.md#wiring)
     

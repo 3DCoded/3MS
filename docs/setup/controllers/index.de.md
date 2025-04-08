@@ -23,12 +23,13 @@ Wähle einen der folgenden, unterstützten Controller (eine angekreuzte Box bede
 
 - [X] [BTT MMB V1 (4 Farben)](bttmmb.md)
 - [X] [BTT SKR Mini E3 V2.0 (4 Farben)](skrminie3v2.md)
-- [X] [Einsy RAMBo (main MCU) mit SKR Mini E3 V2.0 (3ms MCU)](einsyrambo-skrminie3v2.md)
+- [X] [Einsy RAMBo (als Haupt-MCU) mit SKR Mini E3 V2.0 (3ms MCU)](einsyrambo-skrminie3v2.md)
 
     !!! Warnung "Experten-Anpassung"
     
 - [X] [Geetech A30T](geetech-a30t.md)
-- [ ] [Mellow Fly D7 (6 colors)](mellowflyd7.md)
-- [ ] [Zonestar ZM384 (main MCU) (4 colors)](zm384main.md)
-- [ ] [Mini RAMBo (4 colors)](minirambo.md)
-- [ ] [BTT Octopus (main MCU) (4 colors)](bttoctopusmain.md)
+- [ ] [Mellow Fly D7 (6 Farben)](mellowflyd7.md)
+- [ ] [Zonestar ZM384 (als Haupt-MCU) (4 Farben)](zm384main.md)
+- [ ] [Mini RAMBo (4 Farben)](minirambo.md)
+- [ ] [BTT Octopus (als Haupt-MCU) (4 Farben)](bttoctopusmain.md)
+ 

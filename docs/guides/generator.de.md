@@ -1,5 +1,5 @@
 # Config-Generator
-
+ 
 Folge diesem Guide um eine Custom-Config für dein 3MS zu generieren.
 
 ## Grundlagen-Config
@@ -57,7 +57,7 @@ Jetzt werden dir verschiedene Optionen angezeigt.
 
 Füge die vorhin erhaltene URL ein.
 
-!!! Tipp "Lokale Datei verwenden"
+!!! tip "Lokale Datei verwenden"
     Du kannst auch eine lokale Config-Datei verwenden, indem du den `--file` Parameter übergibst.
 
     ```sh
@@ -77,7 +77,7 @@ Das Skript wird dir nun alle Stepper Definitionen, die in der Config gefunden wu
 
 Für jeden von dir ausgewählten Stepper wird das Skript dich fragen, welchen TMC Treiber du verwenden möchtest. Für den SKR Mini E3 V3 gibt es nur eine Option: TMC2209.
 
-!!! Tipp "Keine TMC Treiber?"
+!!! tip "Keine TMC Treiber?"
     Wenn du keine TMC-Treiber in deiner Config verwenden willst, übergebe den Parameter `--no-tmc`:
 	
     ```sh

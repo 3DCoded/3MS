@@ -2,10 +2,6 @@
 icon: material/table
 comments: true
 ---
----
-icon: material/table
-comments: true
----
 
 
 # Stückliste
@@ -16,7 +12,7 @@ Such dir zuerst das Kontrollboard aus, das du für dein 3MS verwenden willst. Du
 
 ## Anzahl der Filament-Einheiten
 
-First, choose the number of filament units you want. Each filament unit lets you print with an additional filament. Two filament units are the minimum. You can add or remove filament units after building, but the BOM and configuration will vary based on how many filament units you want.
+Entscheide wie viele Filament-Einheiten du willst. Jede Filament-Einheit erlaubt es dir mit einem weiteren Filament zu drucken. 2 Filament-Einheiten sind das Minimum. Du kannst Filament-Einheiten auch nach dem Aufbau hinzufügen oder entfernen, aber die Stückliste und die Config werden sich abhängig von der Anzahl an Filament-Einheiten verändern.
 
 ## Kontrollboard Stückliste
 
@@ -42,4 +38,4 @@ Wähle die zu deinem Controller passende Stückliste aus:
 
 ## Filament-Einheiten Stückliste
 
-{{ filUnitBOM.de }}
+{{ filUnitBOMde }}

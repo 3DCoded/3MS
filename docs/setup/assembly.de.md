@@ -46,7 +46,7 @@ Folge diesem Guide um dein 3MS zusammenzubauen.
 
 ## Filament-Einheiten zusammenbauen
 
-1. If using any mounting parts, place it on the face of your NEMA17 motor.
+1. Falls du irgendwelche besonderen Befestigungen nutzt, platziere sie jetzt auf deinem NEMA17 Motor.
 2. Baue die MK8 Extruder gemäß der mitgeleiferten Anleitung auf
 3. Für alle anderen Einheiten wiederholen
 

@@ -19,6 +19,5 @@ def on_config(config, **kwargs):
                 raise e
             else:
                 filUnitBOMs[lang] = filUnitBOMs['en']
-
         varName = 'filUnitBOM' if lang == 'en' else f'filUnitBOM{lang}'
         macros_plugin.register_variables({varName: filUnitBOMs[lang]}) 
