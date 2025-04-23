@@ -18,7 +18,7 @@
 </style>
 <button type="button" name="w3d">Buy at <img src="../assets/images/kits/w3d.png" height="30" /></button> -->
 
-!!! warning
+!!! info "Disclaimer"
     By using the 3MS, you agree to the terms outlined in the full disclaimer and accept full responsibility for its assembly and use. The creators are not liable for any damage, loss, or harm caused by the product.
 
     ??? "Full Disclaimer"
