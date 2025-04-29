@@ -6,7 +6,7 @@
     }
 </style>
 
-[![](buy-at-w3d.png){.kits-buy-btn}](#)
+<!-- [![](buy-at-w3d.png){.kits-buy-btn}](#) -->
 
 !!! info "Disclaimer"
     By using the 3MS, you agree to the terms outlined in the full disclaimer and accept full responsibility for its assembly and use. The creators are not liable for any damage, loss, or harm caused by the product.
