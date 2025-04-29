@@ -227,4 +227,8 @@ Plug this stepper into the leftmost plug on the SKR.
 
 ![](3f66eb08.png){.mdimg}
 
+:tada: You're done with electronics assembly!
+
+[:material-arrow-left: Extruders Assembly](extruder-assembly.md){.md-button}
+
 [:material-arrow-right: Software Setup](software-setup.md){.md-button}

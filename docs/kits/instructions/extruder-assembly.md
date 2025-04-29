@@ -147,6 +147,37 @@ gcard
 .stepi-6fabb2dd .purple-ol
 .stepi-40df1ee1
 
+.Stepn Final Extruder Assembly
+
+gcard
+- stepi-4056f579
+    stepi-33da2106
+    stepi-1b45e4ab
+    stepi-28598e23
+
+- Prepare the following for this step:
+    
+    &emsp;.rcir. PC4-M10 fitting
+
+    &emsp;.bcir. Blue Collet clip
+
+    .ocir. Locate the hole on the extruder and screw the PC4-M10 fitting into it.
+
+    .gcir. Insert the short length of PTFE into the ECAS fitting on the opposite end of the extruder.
+
+.gcard
+
+.stepi-4056f579 .red-ol .blue2-ol
+.stepi-33da2106 .orange-ol
+.stepi-1b45e4ab .orange-ol
+.stepi-28598e23 .green-ol
+
+### **Make sure to repeat this chapter a total of four times.**
+
+:tada: You're done with extruders assembly!
+
 ## WIP
+
+[:material-arrow-left: Printed Parts and Tools](printed-parts-and-tools.md){.md-button}
 
 [:material-arrow-right: Electronics Assembly](electronic-assembly.md){.md-button}
