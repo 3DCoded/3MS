@@ -75,6 +75,78 @@ gcard
 .stepi-38297a6a .blue-ol
 .stepi-8f72454e .purple-ol
 
+.Stepn Filament Unit Parts Preparation
+
+gcard
+- stepi-729e7f78
+
+- Prepare the following for the next steps:
+
+    &emsp;.rcir. Extruder
+
+    &emsp;.ocir. 3x M3x30 SHCS (in extruders internals bag)
+
+    &emsp;.gcir. Filament Unit for 3HOME
+
+    &emsp;.bcir. NEMA17 Stepper motor (prepared previously)
+
+    &emsp;.pcir. 2.5mm Hex key
+.gcard
+
+.stepi-729e7f78
+
+.Stepn Assembling the Filament Unit
+
+gcard
+- stepi-29eb3f80
+    stepi-6425cdde
+    stepi-6f81694b
+
+- Assemble the filament unit.
+
+    .rcir. Place the 3x M3x30 SHCS through the extruder into the filament unit. Note the orientation.
+
+    .ocir. Flip the filament unit over and place the NEMA17 stepper motor through the bottom. Note the orientation.
+
+    - Even though the picture doesn't show it, it is recommended to plug the stepper cable before placing the stepper into the 3HOME.
+
+    .gcir. Flip the filament unit over again and tighten the three M3 bolts.
+
+.gcard
+
+.stepi-29eb3f80 .red-ol
+.stepi-6425cdde .orange-ol
+.stepi-6f81694b .green-ol
+
+.Stepn Installing the Tensioner
+
+gcard
+- stepi-1eda706f
+    stepi-3f7d688f
+    stepi-bb84d1ee
+    stepi-6fabb2dd
+    stepi-40df1ee1
+
+- Prepare the following for this step:
+
+    &emsp;.rcir. Tension screw (in extruder internals bag)
+
+    &emsp;.ocir. Tension washer (in extruder internals bag)
+
+    &emsp;.gcir. Tension spring (in extruder internals bag)
+
+    .bcir. Assemble the three as shown.
+
+    .pcir. Install the tensioner into the extruder through the hole on the side.
+
+.gcard
+
+.stepi-1eda706f .red-ol .green2-ol
+.stepi-3f7d688f .blue-ol
+.stepi-bb84d1ee .purple-ol
+.stepi-6fabb2dd .purple-ol
+.stepi-40df1ee1
+
 ## WIP
 
 [:material-arrow-right: Electronics Assembly](electronic-assembly.md){.md-button}
