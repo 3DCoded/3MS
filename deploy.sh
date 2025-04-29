@@ -8,8 +8,8 @@ echo "3ms.3dcoded.xyz" > CNAME
 git add .
 git commit -m "Add CNAME"
 git push origin gh-pages
+git stash
 git checkout docs
-git stash pop
 git add .
 git commit -m "chore: Deploy documentation"
 git push origin docs
