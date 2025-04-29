@@ -1,4 +1,6 @@
 #!/bin/bash
+git add .
+git commit -m "chore: Update documentation"
 mkdocs gh-deploy
 git stash
 git checkout gh-pages
