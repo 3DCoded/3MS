@@ -1,22 +1,12 @@
 # 3MS Kits
 
-<!-- <style>
-    button {
-        color: #ffffff;
-        background-color: #0c1117;
-        font-size: 19px;
-        border: 3px solid #008c1c;
-        border-radius: 10px;
-        padding: 15px 50px;
-        cursor: pointer;
-        transition: all .2s ease-in;
-    }
-    button:hover {
-        color: #008c1c;
-        transition: 
+<style>
+    .kits-buy-btn {
+        width: 30%;
     }
 </style>
-<button type="button" name="w3d">Buy at <img src="../assets/images/kits/w3d.png" height="30" /></button> -->
+
+<!-- [![](buy-at-w3d.png){.kits-buy-btn}](#) -->
 
 !!! info "Disclaimer"
     By using the 3MS, you agree to the terms outlined in the full disclaimer and accept full responsibility for its assembly and use. The creators are not liable for any damage, loss, or harm caused by the product.
