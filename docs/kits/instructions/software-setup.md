@@ -1,5 +1,6 @@
 ---
 title: Software Setup
+icon: material/console
 comments: true
 ---
 
@@ -28,3 +29,5 @@ Follow the instructions [here](config.md) to configure Happy Hare for the 3MS.
 Follow the instructions [here](calibration.md) to calibrate Happy Hare for the 3MS.
 
 :tada:{.lg-tada}
+
+[:material-arrow-right: First Print](firstprint.md){.md-button}

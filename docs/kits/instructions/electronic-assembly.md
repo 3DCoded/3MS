@@ -1,5 +1,6 @@
 ---
 title: Electronics Assembly
+icon: fontawesome/solid/microchip
 comments: true
 ---
 

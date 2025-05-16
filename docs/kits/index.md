@@ -1,3 +1,8 @@
+---
+icon: material/package-variant-closed
+status: new
+---
+
 # 3MS Kits
 
 <style>
@@ -6,7 +11,7 @@
     }
 </style>
 
-<!-- [![](buy-at-w3d.png){.kits-buy-btn}](#) -->
+[![](buy-at-w3d.png){.kits-buy-btn}](https://west3d.com/products/3ms-the-simple-and-reliable-multi-material-system-kit-by-3dcoded)
 
 !!! info "Disclaimer"
     By using the 3MS, you agree to the terms outlined in the full disclaimer and accept full responsibility for its assembly and use. The creators are not liable for any damage, loss, or harm caused by the product.

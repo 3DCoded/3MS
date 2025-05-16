@@ -155,6 +155,15 @@ nav:
     - setup/assembly.md
     - setup/config.md
     - setup/calibration.md
+  - Kits:
+    - kits/index.md
+    - Tour: kits/tour.md
+    - Instructions:
+      - kits/instructions/index.md
+      - kits/instructions/printed-parts-and-tools.md
+      - kits/instructions/extruder-assembly.md
+      - kits/instructions/electronic-assembly.md
+      - kits/instructions/software-setup.md
   - Guides:
     - guides/generator.md
     - guides/3dchameleon.md
