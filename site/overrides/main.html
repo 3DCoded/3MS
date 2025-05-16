@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+
+{% endblock %}
+
+{% block announce %}
+    <b>3MS Kits are Released!</b> <a href="https://west3d.com/products/3ms-the-simple-and-reliable-multi-material-system-kit-by-3dcoded">Buy at West3D</a>
+{% endblock %}
+
+{% block content %}
+
+{% if page.url_to_print_page %}
+    <a href="{{ page.url_to_print_page }}" title="Print Site" class="md-content__button md-icon">
+        {% include ".icons/material/printer.svg" %}
+    </a>
+{% endif %}
+
+{{ super() }}
+{% endblock content %}
