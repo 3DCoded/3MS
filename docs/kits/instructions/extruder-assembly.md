@@ -177,8 +177,6 @@ gcard
 
 :tada: You're done with extruders assembly!
 
-## WIP
-
 [:material-arrow-left: Printed Parts and Tools](printed-parts-and-tools.md){.md-button}
 
 [:material-arrow-right: Electronics Assembly](electronic-assembly.md){.md-button}

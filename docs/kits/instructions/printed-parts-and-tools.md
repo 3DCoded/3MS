@@ -18,6 +18,19 @@ gcard
 
 .gcard
 
+.Stepn Y-splitter
+
+gcard
+- stepi-058aba0c
+
+- Print out one 4-way Y-splitter.
+
+    [:material-printer: Printables](https://www.printables.com/model/1103095-4-way-y-splitter-with-ecas04){.md-button}
+
+    !!! note "Alternate Splitters"
+        The linked Y-splitter uses five ECAS04 fittings, which are included in your 3MS kit. For your convenience, five PC4-M10 fittings are also included if you prefer to use an alternate Y-splitter design.
+.gcard
+
 .Stepn Hex Keys
 
 gcard
@@ -65,7 +78,5 @@ gcard
 - Ensure you have side cutters (used for cutting zip ties)
 
 .gcard
-
-### Extruders Assembly
 
 [:material-arrow-right: Extruders Assembly](extruder-assembly.md){.md-button}

@@ -76,10 +76,10 @@ gcard
 
 gcard
 
-- stepi-7870312c
-    stepi-7870312c
-    stepi-7870312c
-    stepi-7870312c
+- stepi-96a2ea1e
+    stepi-a56a33ef
+    stepi-514c9a29
+    stepi-2b4ba466
 
 - Strip the power cables and prepare for the next steps.
 
@@ -97,10 +97,10 @@ gcard
 
 .gcard
 
-.stepi-7870312c .red-ol .orange2-ol
-.stepi-7870312c .green-ol
-.stepi-7870312c .blue-ol
-.stepi-7870312c .purple-ol
+.stepi-96a2ea1e .red-ol .orange2-ol
+.stepi-a56a33ef .green-ol
+.stepi-514c9a29 .blue-ol .purple2-ol
+.stpei-2b4ba466
 
 .Stepn Connecting the PSU
 
@@ -144,23 +144,21 @@ gcard
 
 gcard
 
-- stepi-7870312c
-    stepi-7870312c
+- stepi-f5a97666
 
-- Add M3nS to the 3HOME.
+- Add M3 square nuts to the 3HOME.
 
     Prepare the following for this step:
 
-    &emsp;.rcir. 3HOME
+    - 3HOME
 
-    &emsp;.gcir. 2x M3nS Square nuts
+    - 2x M3nS Square nuts
 
-    .bcir. Insert the two square nuts into any joiner of the 3HOME
+    .rcir. Insert the two square nuts into any joiner of the 3HOME
 
 .gcard
 
-.stepi-7870312c .red-ol .green2-ol
-.stepi-7870312c .blue-ol
+.stepi-f5a97666 .red-ol
 
 .Stepn Attaching to the 3HOME
 
