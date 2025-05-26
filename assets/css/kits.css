@@ -61,3 +61,7 @@ ul {
 .purple-ol {
     outline: 3px solid #dd00dd;
 }
+
+.purple2-ol {
+    box-shadow: 0 0 0 6px #dd00dd;
+}
