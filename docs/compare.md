@@ -38,6 +38,7 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
 
 </div>
 
+
 <div class="grid cards" markdown>
 
 -   Box Turtle MMU __Automated Filament Changer__
@@ -65,6 +66,52 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
     :material-minus-box:{.minus} Complexity
 
     :material-minus-box:{.minus} Price ($300)
+
+- QuattroBox __Filamentalist-Based MMU__
+
+    ---
+
+    ![](quattrobox.jpg)
+
+    ---
+
+    **Pros:**
+
+    :material-plus-box:{.plus} Reliability
+
+    :material-plus-box:{.plus} Passive Rewinders
+
+    :material-plus-box:{.plus} Aesthetics
+
+    **Cons:**
+
+    :material-minus-box:{.minus} Compatibility (only Klipper)
+
+    :material-minus-box:{.minus} Complexity
+
+    :material-minus-box:{.minus} Price
+
+- NightOwl __Integrated Dual Spool Filament Switching System__
+
+    ---
+
+    ![](nightowl.png)
+
+    ---
+
+    **Pros:**
+
+    :material-plus-box:{.plus} Reliability
+
+    :material-plus-box:{.plus} Simple Design
+
+    :material-plus-box:{.plus} Compact Design
+
+    **Cons:**
+
+    :material-minus-box:{.minus} Expandability (only 2 spools)
+
+    :material-minus-box:{.minus} Compability (only Klipper)
 
 -   ERCF v2 __An expandable MMU for Klipper-based 3D-printers__
 
@@ -117,6 +164,54 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
     :material-minus-box:{.minus} Compatibility (only Klipper)
 
     :material-minus-box:{.minus} Complexity
+
+- Pico MMU __Open-source project designed to enable multi-material 3D printing on FDM printers__
+
+    ---
+
+    ![](lhs_pico_mmu.png)
+
+    ---
+
+    **Pros:**
+
+    :material-plus-box:{.plus} Simple Design
+
+    :material-plus-box:{.plus} Compact Design
+
+    :material-plus-box:{.plus} Speed
+
+    ---
+
+    **Cons:**
+
+    :material-minus-box:{.minus} Compatibility (only Klipper)
+
+    :material-minus-box:{.minus} Reliability
+
+- MMX __Multi-Material Extruder__
+
+    ---
+
+    ![](mmx.webp)
+
+    ---
+
+    **Pros:**
+
+    :material-plus-box:{.plus} Simple Design
+
+    :material-plus-box:{.plus} Compact Design
+
+    :material-plus-box:{.plus} Speed
+
+    ---
+
+    **Cons:**
+
+    :material-minus-box:{.minus} Compatibility (only Klipper)
+
+    :material-minus-box:{.minus} Reliability
 
 -   3DChameleon MK4 __Automatic Color Changer__
 
