@@ -902,9 +902,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#shared-gate-sensor-optional" class="md-nav__link">
+  <a href="#shared-gate-sensor" class="md-nav__link">
     <span class="md-ellipsis">
-      Shared Gate Sensor (Optional)
+      Shared Gate Sensor
     </span>
   </a>
   
@@ -1595,9 +1595,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#shared-gate-sensor-optional" class="md-nav__link">
+  <a href="#shared-gate-sensor" class="md-nav__link">
     <span class="md-ellipsis">
-      Shared Gate Sensor (Optional)
+      Shared Gate Sensor
     </span>
   </a>
   
@@ -1764,10 +1764,27 @@
 <h1 id="configuration">Configuration</h1>
 <p>After installing Happy Hare firmware, there are some configurations you need to go through before printing in multimaterial.</p>
 <h2 id="filament-sensors">Filament Sensors</h2>
-<p>To use the 3MS, you'll need a filament sensor. Assuming you already have one installed, you can configure it in <code>mmu_hardware.cfg</code>.</p>
+<div class="admonition info">
+<p class="admonition-title">Required Sensors</p>
+<p>To use the 3MS, you'll need a filament sensor somewhere between your Y-splitter and printer extruder.</p>
+<p>There are two options for this sensor:</p>
+<ul>
+<li><a href="#shared-gate-sensor"><strong>Shared gate sensor</strong></a> is closer to the Y-splitter</li>
+<li><a href="#extrudertoolhead-sensors"><strong>Extruder entry sensor</strong></a> is closer to the printer's extruder.</li>
+</ul>
+<p>Assuming you already have one installed, you can configure it in <code>mmu_hardware.cfg</code>.</p>
+</div>
 <p>Locate the <code>[mmu_sensors]</code> section near the bottom of <code>mmu_hardware.cfg</code>.</p>
 <h3 id="extrudertoolhead-sensors">Extruder/Toolhead Sensors</h3>
 <p>To configure an extruder entry sensor (a sensor right <strong>before</strong> your extruder), set your <code>extruder_switch_pin</code>:</p>
+<div class="admonition tip">
+<p class="admonition-title">Don't know where to find a sensor?</p>
+<p>If you don't know where to find a good sensor for your printer, here are a few tips:</p>
+<ul>
+<li>Search <a href="https://www.printables.com/">Printables</a> and <a href="https://thangs.com/">Thangs</a> for a sensor.</li>
+<li>Build a <a href="https://github.com/ArmoredTurtle/Filatector">Filatector</a> universal filament sensor.</li>
+</ul>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Don't know your sensor pin?</p>
 <p>If you don't know your sensor pin, and it's already configured with Klipper, locate your sensor configuration (usually <code>filament_switch_sensor</code>) and note the <code>sensor_pin</code>.</p>
@@ -1779,7 +1796,7 @@
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="na">extruder_switch_pin</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;SOME PIN&gt;</span>
 </code></pre></div></td></tr></table></div>
 <p>To configure your toolhead sensor (a sensor right <strong>after</strong> your extruder), set your <code>toolhead_switch_pin</code> the same way as you set your <code>extruder_switch_pin</code>.</p>
-<h3 id="shared-gate-sensor-optional">Shared Gate Sensor (Optional)</h3>
+<h3 id="shared-gate-sensor">Shared Gate Sensor</h3>
 <p>Moving backwards from the extruder, the next possible sensor you may have installed is a shared gate sensor. This goes right <strong>after</strong> the Y-splitter.</p>
 <p>If you have a gate sensor installed, set your <code>gate_switch_pin</code>:</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">mmu_hardware.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
