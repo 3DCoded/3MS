@@ -2000,7 +2000,7 @@
 <p><a class="md-button" href="#de-instructions-assembly.de.md"><strong>2. Mechanischer Zusammenbau</strong></a></p>
 </li>
 <li>
-<p><a href="#de-instructions-setup-assembly-wiring"><img alt="" src="../assets/images/instructions/step08a.jpeg" /></a></p>
+<p><a href="#de-instructions-setup-assembly-wiring"><img alt="" src="../de/instructions/step08a.jpeg" /></a></p>
 <hr />
 <p><a class="md-button" href="#de-setup-assembly-wiring"><strong>3. Elektronischer Zusammenbau</strong></a></p>
 </li>
@@ -4204,11 +4204,7 @@ Under no circumstances will the creators, contributors, or distributors be liabl
 <li>Stecke die Nema17 Stepper von 3DChameleon Board ab</li>
 <li>Entferne die PTFE Schläcuhe vom 3DChameleon und dem Y-Splitter</li>
 </ol>
-<p>Folge als nächstes der <a href="#de-instructions">Master Instructions</a> mit Ausnahme der Stückliste.</p></section><section class="print-page" id="de-guides-steppercurrent" heading-number="6.3"><div class="admonition warning">
-<p class="admonition-title">WIP</p>
-<p>Page under construction!</p>
-</div>
-<h1 id="de-guides-steppercurrent-tuning-stepper-current">Tuning Stepper Current</h1>
+<p>Folge als nächstes der <a href="#de-instructions">Master Instructions</a> mit Ausnahme der Stückliste.</p></section><section class="print-page" id="de-guides-steppercurrent" heading-number="6.3"><h1 id="de-guides-steppercurrent-tuning-stepper-current">Tuning Stepper Current</h1>
 <p>Tuning stepper current is an important part of any 3D printer, including MMU's. Follow this guide to find the optimal <code>run_current</code> setting for your 3MS gear steppers.</p>
 <h2 id="de-guides-steppercurrent-why-tune-stepper-current">Why Tune Stepper Current?</h2>
 <p>Firstly, why tune stepper current in the first place?</p>
@@ -4231,7 +4227,7 @@ Under no circumstances will the creators, contributors, or distributors be liabl
 <li>Stepper rated current. The steppers included in 3MS kits are rated to 1A. Generally, you don't want to exceed 75% of your stepper's rated current, bringing down our safe limit to 0.75A. The stepper current cannot exceed this.</li>
 </ul>
 <p>The lowest of the three values (for this example) is 0.75A. Therefore, your <code>run_current</code> cannot exceed 0.75A of current.</p>
-<h2 id="de-guides-steppercurrent-maximum-current-test">Maximum Current Test</h2>
+<h3 id="de-guides-steppercurrent-maximum-current">Maximum Current</h3>
 <p>Now that the maximum safe current for the steppers is known, we can test the stepper at the max current to see if it can drive filament at its max current.</p>
 <p>First, set your <code>run_current</code> to the maximum calculated previously.</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">mmu_hardware.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#de-guides-steppercurrent-__codelineno-0-1">1</a></span>
@@ -4244,7 +4240,7 @@ Under no circumstances will the creators, contributors, or distributors be liabl
 <li>Free filament test</li>
 <li>Blocked filament test</li>
 </ol>
-<h3 id="de-guides-steppercurrent-free-filament-test">Free Filament Test</h3>
+<h2 id="de-guides-steppercurrent-free-filament-test">Free Filament Test</h2>
 <p>Begin by detaching the PTFE from the exit of the 3MS extruder and manually loading filament into the extruder. Next, run in your Mainsail/Fluidd console:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#de-guides-steppercurrent-__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#de-guides-steppercurrent-__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>MMU_SELECT GATE=0
@@ -4256,7 +4252,21 @@ Under no circumstances will the creators, contributors, or distributors be liabl
 <li>Reducing <code>gear_max_velocity</code> and/or <code>gear_max_accel</code> in <code>mmu_parameters.cfg</code></li>
 <li>Lowering extruder tension by loosening the tension screw</li>
 </ul>
-<h3 id="de-guides-steppercurrent-blocked-filament-test">Blocked Filament Test</h3></section></section>
+<h2 id="de-guides-steppercurrent-blocked-filament-test">Blocked Filament Test</h2>
+<p>Begin by inserting a loose piece of filament into the Y-splitter (blue in the below diagram).</p>
+<p><a class="glightbox" href="../assets/images/guides/steppercurrent/stuck-y.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/images/guides/steppercurrent/stuck-y.png" /></a></p>
+<p>Next, attach PTFE to the end of the 3MS extruder and to another input on the Y-splitter. Load the filament manually through the 3MS extruder until it wedges itself against the loose filament. In the above diagram, the green filament represents the filament in the 3MS extruder.</p>
+<p>In the Mainsail/Fluidd console, run:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#de-guides-steppercurrent-__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#de-guides-steppercurrent-__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>MMU_SELECT GATE=0
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>MMU_TEST_MOVE MOVE=50
+</code></pre></div></td></tr></table></div>
+<p>If the stepper skips steps, your <code>run_current</code> is properly set.</p>
+<p>If the stepper grinds the filament, your <code>run_current</code> is too high. Reduce it by 0.05-0.1, restart Klipper, and repeat this test until the stepper skips steps.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure when reducing stepper current that it also passes the <a href="#de-guides-steppercurrent-free-filament-test">free filament test</a> as well as the <a href="#de-guides-steppercurrent-blocked-filament-test">blocked filament test</a>.</p>
+</div></section></section>
                     <section class='print-page md-section' id='section-7' heading-number='7'>
                         <h1>Mitwirken<a class='headerlink' href='#section-7' title='Permanent link'></a>
                         </h1>

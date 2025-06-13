@@ -1326,31 +1326,13 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maximum-current-test" class="md-nav__link">
-    <span class="md-ellipsis">
-      Maximum Current Test
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Maximum Current Test">
+    <nav class="md-nav" aria-label="Hardware Limits">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#free-filament-test" class="md-nav__link">
+  <a href="#maximum-current" class="md-nav__link">
     <span class="md-ellipsis">
-      Free Filament Test
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#blocked-filament-test" class="md-nav__link">
-    <span class="md-ellipsis">
-      Blocked Filament Test
+      Maximum Current
     </span>
   </a>
   
@@ -1358,6 +1340,24 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#free-filament-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Free Filament Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blocked-filament-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blocked Filament Test
+    </span>
+  </a>
   
 </li>
       
@@ -1513,31 +1513,13 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maximum-current-test" class="md-nav__link">
-    <span class="md-ellipsis">
-      Maximum Current Test
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Maximum Current Test">
+    <nav class="md-nav" aria-label="Hardware Limits">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#free-filament-test" class="md-nav__link">
+  <a href="#maximum-current" class="md-nav__link">
     <span class="md-ellipsis">
-      Free Filament Test
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#blocked-filament-test" class="md-nav__link">
-    <span class="md-ellipsis">
-      Blocked Filament Test
+      Maximum Current
     </span>
   </a>
   
@@ -1545,6 +1527,24 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#free-filament-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Free Filament Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blocked-filament-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blocked Filament Test
+    </span>
+  </a>
   
 </li>
       
@@ -1575,10 +1575,6 @@
   
 
 
-<div class="admonition warning">
-<p class="admonition-title">WIP</p>
-<p>Page under construction!</p>
-</div>
 <h1 id="tuning-stepper-current">Tuning Stepper Current</h1>
 <p>Tuning stepper current is an important part of any 3D printer, including MMU's. Follow this guide to find the optimal <code>run_current</code> setting for your 3MS gear steppers.</p>
 <h2 id="why-tune-stepper-current">Why Tune Stepper Current?</h2>
@@ -1602,7 +1598,7 @@
 <li>Stepper rated current. The steppers included in 3MS kits are rated to 1A. Generally, you don't want to exceed 75% of your stepper's rated current, bringing down our safe limit to 0.75A. The stepper current cannot exceed this.</li>
 </ul>
 <p>The lowest of the three values (for this example) is 0.75A. Therefore, your <code>run_current</code> cannot exceed 0.75A of current.</p>
-<h2 id="maximum-current-test">Maximum Current Test</h2>
+<h3 id="maximum-current">Maximum Current</h3>
 <p>Now that the maximum safe current for the steppers is known, we can test the stepper at the max current to see if it can drive filament at its max current.</p>
 <p>First, set your <code>run_current</code> to the maximum calculated previously.</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">mmu_hardware.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
@@ -1615,7 +1611,7 @@
 <li>Free filament test</li>
 <li>Blocked filament test</li>
 </ol>
-<h3 id="free-filament-test">Free Filament Test</h3>
+<h2 id="free-filament-test">Free Filament Test</h2>
 <p>Begin by detaching the PTFE from the exit of the 3MS extruder and manually loading filament into the extruder. Next, run in your Mainsail/Fluidd console:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>MMU_SELECT GATE=0
@@ -1627,7 +1623,21 @@
 <li>Reducing <code>gear_max_velocity</code> and/or <code>gear_max_accel</code> in <code>mmu_parameters.cfg</code></li>
 <li>Lowering extruder tension by loosening the tension screw</li>
 </ul>
-<h3 id="blocked-filament-test">Blocked Filament Test</h3>
+<h2 id="blocked-filament-test">Blocked Filament Test</h2>
+<p>Begin by inserting a loose piece of filament into the Y-splitter (blue in the below diagram).</p>
+<p><a class="glightbox" href="../../../assets/images/guides/steppercurrent/stuck-y.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../../assets/images/guides/steppercurrent/stuck-y.png" /></a></p>
+<p>Next, attach PTFE to the end of the 3MS extruder and to another input on the Y-splitter. Load the filament manually through the 3MS extruder until it wedges itself against the loose filament. In the above diagram, the green filament represents the filament in the 3MS extruder.</p>
+<p>In the Mainsail/Fluidd console, run:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>MMU_SELECT GATE=0
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>MMU_TEST_MOVE MOVE=50
+</code></pre></div></td></tr></table></div>
+<p>If the stepper skips steps, your <code>run_current</code> is properly set.</p>
+<p>If the stepper grinds the filament, your <code>run_current</code> is too high. Reduce it by 0.05-0.1, restart Klipper, and repeat this test until the stepper skips steps.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure when reducing stepper current that it also passes the <a href="#free-filament-test">free filament test</a> as well as the <a href="#blocked-filament-test">blocked filament test</a>.</p>
+</div>
 
 
 
