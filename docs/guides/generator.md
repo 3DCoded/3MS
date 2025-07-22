@@ -1,3 +1,9 @@
+---
+comments: true
+title: Configuration Generator
+icon: material/auto-fix
+---
+
 # Configuration Generator
 
 Follow this guide to create a custom configuration for your 3MS.

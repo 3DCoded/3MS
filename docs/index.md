@@ -21,11 +21,11 @@ The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial *
 
 [![Discord Shield](https://discord.com/api/guilds/1307104511663411210/widget.png?style=banner2)](https://discord.gg/ekqxDhdGCg)
 
-The 3MS is a simple, compact, modular, reliable, budget-friendly multimaterial system. 
+The 3MS is a simple, compact, modular, reliable, budget-friendly multimaterial system.
 
 [![](buy-at-w3d.png){.kits-buy-btn}](https://west3d.com/products/3ms-the-simple-and-reliable-multi-material-system-kit-by-3dcoded)
 
-[Get Started :material-format-list-numbered:](instructions.md){ .md-button }
+[Get Started :material-format-list-numbered:](instructions/index.md){ .md-button }
 
 ## Why 3MS?
 
@@ -55,16 +55,16 @@ It is **highly** recommended to install a filament cutter to your printer to avo
 
 ## Get Started
 
-To get started with the 3MS, see the [Master Instructions](instructions.md).
+To get started with the 3MS, see the [Master Instructions](instructions/index.md).
 
-[Get Started :material-format-list-numbered:](instructions.md){ .md-button }
+[Get Started :material-format-list-numbered:](instructions/index.md){ .md-button }
 
 <iframe width="560" height="315"  src="https://www.youtube.com/embed/p-0RshsVmOk?si=rx554jrZFm6iZ0TR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
 ??? "Sample Prints"
-    === "Sheep" 
+    === "Sheep"
         ![](samplesheep.jpeg){: style="height: 300px"}
 
         Model: [Sheep by Cipis](https://www.printables.com/model/838872-sheep-multi-material-remix)
@@ -89,7 +89,7 @@ To get started with the 3MS, see the [Master Instructions](instructions.md).
 
 ??? "West3D Video Series"
     Thank you to Allen Rowand from [West3D](https://west3d.com/) for making this ongoing series on the 3MS.
-    
+
     <iframe width="560" height="315" src="https://www.youtube.com/embed/XfjHtymdHao?si=cHG1jreb8FfjpWaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/o4Fvtdl-XjM?si=16Prr2Djn4XP0n6q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -20,6 +20,7 @@ pillow = "*"
 regex = "*"
 mkdocs-static-i18n = "*"
 mkdocs-macros-plugin = "*"
+mkdocs-redirects = "*"
 
 [dev-packages]
 

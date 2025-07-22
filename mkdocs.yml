@@ -5,6 +5,9 @@ plugins:
   - search
   - macros
   - step_helper
+  - redirects:
+      redirect_maps:
+        'instructions/software-setup.md': 'https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS'
   # - spellcheck:
   #     backends:
   #     - symspellpy
@@ -63,6 +66,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.highlight
   - pymdownx.inlinehilite
+  - pymdownx.blocks.caption
   - pymdownx.highlight:
       anchor_linenums: true
       auto_title: false
@@ -87,6 +91,13 @@ extra:
   analytics:
     provider: google
     property: G-ERRF9DWVTD
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/ekqxDhdGCg
+      name: Discord
+    - icon: fontawesome/brands/github
+      link: https://github.com/3DCoded/3MS
+      name: GitHub
   # alternate:
   #   - name: English
   #     link: /
@@ -118,12 +129,12 @@ theme:
       - content.code.copy
       - content.tabs.link
   name: material
-  palette: 
+  palette:
     # Palette toggle for light mode
     - scheme: default
       primary: blue
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
 
     # Palette toggle for dark mode
@@ -137,36 +148,36 @@ hooks:
 nav:
   - Home: index.md
   - compare.md
-  - instructions.md
-  - Setup:
-    - BOM: setup/bom.md
-    - Controllers:
-      - setup/controllers/index.md
-      - setup/controllers/skrpico.md
-      - Archive:
-        - setup/controllers/archive/bttmmb.md
-        - setup/controllers/archive/skrminie3v2.md
-        - setup/controllers/archive/bttoctopusmain.md
-        - setup/controllers/archive/einsyrambo-skrminie3v2.md
-        - setup/controllers/archive/zm384main.md
-        - setup/controllers/archive/minirambo.md
-        - setup/controllers/archive/mellowflyd7.md
-        - setup/controllers/archive/geetech-a30t.md
-    - setup/assembly.md
-    - setup/config.md
-    - setup/calibration.md
+  - Instructions:
+    - instructions/index.md
+    - BOM: instructions/bom.md
+    - Printed Parts & Tools: instructions/printed-parts-and-tools.md
+    - Hardware Assembly: instructions/hardware-assembly.md
+    - Electronic Assembly: instructions/electronic-assembly.md
+    - Software Setup: instructions/software-setup.md
+    - Configuration: instructions/config.md
+    - Calibration: instructions/calibration.md
+    - First Print: instructions/firstprint.md
+  - Other Boards:
+    - controllers/index.md
+    - controllers/skrpico.md
+    - controllers/index.md
+    - controllers/bttmmb.md
+    - controllers/skrminie3v2.md
+    - controllers/bttoctopusmain.md
+    - controllers/einsyrambo-skrminie3v2.md
+    - controllers/zm384main.md
+    - controllers/minirambo.md
+    - controllers/mellowflyd7.md
+    - controllers/geetech-a30t.md
   - Kits:
     - kits/index.md
     - Tour: kits/tour.md
-    - Instructions:
-      - kits/instructions/index.md
-      - kits/instructions/printed-parts-and-tools.md
-      - kits/instructions/extruder-assembly.md
-      - kits/instructions/electronic-assembly.md
-      - kits/instructions/software-setup.md
   - Guides:
+    - Printers:
+      - Creality K1/E3v3 Series: guides/printers/creality.md
     - guides/generator.md
-    - guides/3dchameleon.md
+    - guides/steppercurrent.md
   - Contributing:
     - contributing/index.md
     - contributing/devsetup.md
