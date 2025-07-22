@@ -7,7 +7,7 @@ comments: true
 
 ## Controller Choice
 
-First, choose the control board you want to use in your 3MS. Choose a controller from the available ones [here](controllers/index.md).
+First, choose the control board you want to use in your 3MS. Choose a controller from the available ones [here](../controllers/index.md).
 
 ## Number of filament units
 

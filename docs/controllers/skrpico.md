@@ -14,7 +14,7 @@ comments: true
 | Name | Price | Quantity | Link | Notes |
 | - | - | - | - | - |
 | SKR Pico | $26.58 | 1 | [BIQU](https://biqu.equipment/products/btt-skr-pico-v1-0?variant=40565262155874) | |
-Duponts | $9.99 | 1 | [Amazon](https://a.co/d/6QwGxhH) | These wires are only sufficient to run steppers, not heaters |
+24AWG Power Cables | $9.99 | 1 | [Amazon](https://a.co/d/5iee9KD) | These wires are only sufficient to run steppers, not heaters |
 | 24V PSU | $12.98 | 1 | [Amazon](https://a.co/d/6BJT2RP) | This PSU is only sufficient to run steppers, not heaters |
 
 {{ filUnitBOM }}

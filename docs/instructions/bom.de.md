@@ -8,7 +8,7 @@ comments: true
 
 ## Controller-Auswahl
 
-Such dir zuerst das Kontrollboard aus, das du für dein 3MS verwenden willst. Du kannst aus den [Folgenden](controllers/index.md) wählen.
+Such dir zuerst das Kontrollboard aus, das du für dein 3MS verwenden willst. Du kannst aus den [Folgenden](../controllers/index.md) wählen.
 
 ## Anzahl der Filament-Einheiten
 
