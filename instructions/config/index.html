@@ -1860,6 +1860,31 @@
 <h3 id="parking-position">Parking Position</h3>
 <p>This is the location your filament should park when idle, measured from your gate endstop. This should be set to ~1-2cm above your Y-splitter.</p>
 <p>This parameter is called <code>gate_parking_distance</code>.</p>
+<p>To determine this value, begin by moving the filament in gate 0 to the ideal parking position by hand.</p>
+<p><a class="glightbox" href="../../assets/images/web/6ed86262.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/web/6ed86262.png" /></a></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">With an extruder entry sensor</label><label for="__tabbed_1_2">Without an extruder entry sensor</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>If you have an extruder entry sensor configured, determining your parking distance from here is super easy.</p>
+<p>Run the following commands in Mainsail:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>MMU_SELECT GATE=0
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>MMU_TEST_HOMING_MOVE MOTOR=gear MOVE=999 SPEED=50 ENDSTOP=extruder STOP_ON_ENDSTOP=1
+</code></pre></div></td></tr></table></div>
+<p>Note the distance displayed.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>Homed after 450.00mm
+</code></pre></div></td></tr></table></div>
+<p>Read your <code>toolhead_entry_to_extruder</code> value from <code>mmu_parameters.cfg</code>.</p>
+<p>Set your <code>gate_parking_distance</code> to:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>&lt;displayed distance&gt; + &lt;toolhead_entry_to_extruder&gt; + 50
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p>To tune this value, start by estimating the distance from your extruder to the ideal parking position. You can use a piece of filament outside of the tube and use a ruler to help measure this.</p>
+<p><strong>TODO</strong></p>
+</div>
+</div>
+</div>
 <h3 id="eject-distance">Eject Distance</h3>
 <p>Finally, if you want to switch out which filament is in a filament unit, edit your <code>gate_final_eject_distance</code>. This should be the distance from your parking position to your filament unit gears, plus a small margin.</p>
 <h2 id="speeds">Speeds</h2>
