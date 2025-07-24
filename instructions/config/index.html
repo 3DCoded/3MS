@@ -1880,8 +1880,26 @@
 </code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<p>To tune this value, start by estimating the distance from your extruder to the ideal parking position. You can use a piece of filament outside of the tube and use a ruler to help measure this.</p>
-<p><strong>TODO</strong></p>
+<p>To tune this value, start by estimating the distance from your extruder to the ideal parking position. You can use a piece of filament outside of the tube and use a ruler to help measure this. In the diagram above, it's the distance between the red and blue dots.</p>
+<p>Set this starting value in <code>mmu_parameters.cfg</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nt">gate_parking_distance</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xxx</span>
+</code></pre></div></td></tr></table></div>
+<p>Run the following commands in Mainsail:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>MMU_SELECT GATE=0
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a>MMU_LOAD
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a>MMU_UNLOAD
+</code></pre></div></td></tr></table></div>
+<p>The filament should load to the extruder then unload to the parking position.</p>
+<p>If it unloaded to the correct spot (around the red dot), then your parking distance is good.</p>
+<p>If not, use the below command to move the filament until it's at the correct position (positive is towards the extruder, negative is away from it):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>MMU_TEST_MOVE MOVE=xxx
+</code></pre></div></td></tr></table></div>
+<p>Finally, run <code>MMU_STATUS</code> and note the "UNLOADED" value shown.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a>UNLOADED 450.0mm
+</code></pre></div></td></tr></table></div>
+<p>Save the shown value as your parking distance.</p>
 </div>
 </div>
 </div>
