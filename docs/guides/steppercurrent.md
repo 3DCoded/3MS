@@ -64,6 +64,13 @@ MMU_SELECT GATE=0
 MMU_TEST_MOVE MOVE=100
 ```
 
+!!! failure "Operation not possible. MMU has filament loaded"
+        If Mainsail reports this error after trying to select a gate, run the following command to tell HH that filament is _not_ loaded.
+
+        ```
+        MMU_RECOVER LOADED=0
+        ```
+
 Observe the behavior of the stepper. If your stepper moves the filament without any skipping, move onto the next test.
 
 If the stepper skips when it tries to move the filament, there are a couple things you can try:

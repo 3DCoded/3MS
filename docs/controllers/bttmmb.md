@@ -14,7 +14,7 @@ comments: true
 | - | - | - | - | - |
 | BTT MMB | $34.99 | 1 | [BTT](https://biqu.equipment/products/bigtreetech-mmb?srsltid=AfmBOoponySi7shutNrn8sXQ4NCBiLPUvgYTROIgp_KaDdjZcKoXTYkT) | |
 Duponts | $9.99 | 1 | [Amazon](https://a.co/d/6QwGxhH) | These wires are only sufficient to run steppers, not heaters |
-| 12V PSU | $7.39 | 1 | [Amazon](https://a.co/d/gLC1eli) | This PSU is only sufficient to run steppers, not heaters |
+| 24V PSU | $7.39 | 1 | Amazon | This PSU is only sufficient to run steppers, not heaters |
 
 {{ filUnitBOM }}
 
@@ -29,7 +29,7 @@ Route the wires from the NEMA17's to the controller board. Follow this table to 
 | 2 | M3 |
 | 3 | M4 |
 
-Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)
+Now, grab your 24V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)
 
 1. Plug the red wire into the positive terminal of the screw terminals
 2. Plug the black wire into the negative terminal of the screw terminals
@@ -44,9 +44,13 @@ Now, grab your 12V PSU and two M-M duponts, one red and one black (M-M means tha
 4. Route the two wires inside closest to the HVIN and GND inputs
 5. Using the markings on the board, plug the red wire into the HVIN terminal on the MMB
 6. Using the markings on the board, plug the black wire into the GND terminal on the MMB
-7. Plug in the VUSB jumper
 
     ![](MMB_CAN_USB.png)
+
+7. Install the VUSB jumper.
+
+    !!! tip
+        After you've flashed firmware, remove the VUSB jumper.
 
 7. Verify all connections
 

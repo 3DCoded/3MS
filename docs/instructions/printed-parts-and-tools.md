@@ -78,3 +78,14 @@ gcard
 - Ensure you have side cutters (used for cutting zip ties)
 
 .gcard
+
+.Stepn PTFE Cutters
+
+gcard
+
+- stepi-1481b4a6
+
+- Ensure you have a PTFE cutting tool. Alternatively, you can [print](https://www.printables.com/model/360710) a tool to cut the PTFE.
+
+.gcard
+

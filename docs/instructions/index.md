@@ -30,6 +30,8 @@ Feel free to ask on the 3MS Discord any time if you need help during your build!
 
 [**:fontawesome-solid-microchip: Electronic Assembly**](electronic-assembly.md){.inst-button .md-button}
 
+[**:material-puzzle: Final Assembly**](final-assembly.md){.inst-button .md-button}
+
 [**:material-console: Software Setup**](https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS){.inst-button .md-button}
 
 [**:material-code-json: Configuration**](config.md){.inst-button .md-button}

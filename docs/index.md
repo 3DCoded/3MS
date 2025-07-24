@@ -41,13 +41,14 @@ Here are a few reasons:
 
 ## Requirements
 
-To use the 3MS, your setup has to meet the following requirements:
+To use the 3MS, your setup should meet the following requirements:
 
-- Run Klipper firmware
-- Have SSH (PuTTY) access (99.9% of Klipper installations have this, and if you don't you really should setup SSH)
-- Have one spare USB port
+- Run Klipper firmware.
+- Have SSH (PuTTY) access (99.9% of Klipper installations have this, and if you don't you really should setup SSH).
+- Have one spare USB port.
 - Have an adapter to install a PTFE tube to the inlet of your printer's extruder.
 - Have one filament sensor right before your printer's extruder.
+- Have a filament cutter (ideally between your printer's extruder and hotend).
 
 ## Recommendations
 

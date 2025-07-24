@@ -154,6 +154,7 @@ nav:
     - Printed Parts & Tools: instructions/printed-parts-and-tools.md
     - Hardware Assembly: instructions/hardware-assembly.md
     - Electronic Assembly: instructions/electronic-assembly.md
+    - Final Assembly: instructions/final-assembly.md
     - Software Setup: instructions/software-setup.md
     - Configuration: instructions/config.md
     - Calibration: instructions/calibration.md
