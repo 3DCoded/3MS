@@ -183,6 +183,13 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://3ms.3dcoded.xyz/de/instructions/electronic-assembly/"/>
     </url>
     <url>
+        <loc>https://3ms.3dcoded.xyz/instructions/final-assembly/</loc>
+        <lastmod>2025-07-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://3ms.3dcoded.xyz/instructions/final-assembly/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://3ms.3dcoded.xyz/de/instructions/final-assembly/"/>
+    </url>
+    <url>
         <loc>https://3ms.3dcoded.xyz/instructions/firstprint/</loc>
         <lastmod>2025-07-24</lastmod>
         <changefreq>daily</changefreq>
@@ -411,6 +418,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://3ms.3dcoded.xyz/de/instructions/electronic-assembly/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://3ms.3dcoded.xyz/instructions/electronic-assembly/"/>
+    </url>
+    <url>
+        <loc>https://3ms.3dcoded.xyz/de/instructions/final-assembly/</loc>
+        <lastmod>2025-07-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://3ms.3dcoded.xyz/de/instructions/final-assembly/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://3ms.3dcoded.xyz/instructions/final-assembly/"/>
     </url>
     <url>
         <loc>https://3ms.3dcoded.xyz/de/instructions/firstprint/</loc>
