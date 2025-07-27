@@ -22,6 +22,13 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://3ms.3dcoded.xyz/de/filUnitBOM/"/>
     </url>
     <url>
+        <loc>https://3ms.3dcoded.xyz/tips/</loc>
+        <lastmod>2025-07-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://3ms.3dcoded.xyz/tips/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://3ms.3dcoded.xyz/de/tips/"/>
+    </url>
+    <url>
         <loc>https://3ms.3dcoded.xyz/contributing/</loc>
         <lastmod>2025-07-27</lastmod>
         <changefreq>daily</changefreq>
@@ -257,6 +264,13 @@
         <lastmod>2025-07-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://3ms.3dcoded.xyz/de/instructions/"/>
+    </url>
+    <url>
+        <loc>https://3ms.3dcoded.xyz/de/tips/</loc>
+        <lastmod>2025-07-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://3ms.3dcoded.xyz/de/tips/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://3ms.3dcoded.xyz/tips/"/>
     </url>
     <url>
         <loc>https://3ms.3dcoded.xyz/de/contributing/</loc>
