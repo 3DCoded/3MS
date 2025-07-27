@@ -703,6 +703,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#configuring-the-parking-position" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring the Parking Position
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#encoder-if-installed" class="md-nav__link">
     <span class="md-ellipsis">
       Encoder (if installed)
@@ -1499,6 +1508,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#configuring-the-parking-position" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring the Parking Position
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#encoder-if-installed" class="md-nav__link">
     <span class="md-ellipsis">
       Encoder (if installed)
@@ -1580,13 +1598,71 @@
 <p>Repeat step <strong>3</strong>. The filament should move exactly <code>100mm</code>.</p>
 </li>
 </ol>
+<h2 id="configuring-the-parking-position">Configuring the Parking Position</h2>
+<p>The parking position is the location your filament should park when idle, measured from your gate endstop. This should be set to ~1-2cm above your Y-splitter.</p>
+<p>This parameter is called <code>gate_parking_distance</code> in <code>mmu_parameters.cfg</code>.</p>
+<p>To determine this value, begin by moving the filament in gate 0 to the ideal parking position by hand.</p>
+<p><a class="glightbox" href="../../assets/images/web/6ed86262.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/web/6ed86262.png" /></a></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">With an extruder entry sensor</label><label for="__tabbed_1_2">Without an extruder entry sensor</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>If you have an extruder entry sensor configured, determining your parking distance from here is super easy.</p>
+<p>Run the following commands in Mainsail:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>MMU_SELECT GATE=0
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>MMU_TEST_HOMING_MOVE MOTOR=gear MOVE=999 SPEED=50 ENDSTOP=extruder STOP_ON_ENDSTOP=1
+</code></pre></div></td></tr></table></div>
+<div class="admonition failure">
+<p class="admonition-title">Operation not possible. MMU has filament loaded</p>
+<p>If Mainsail reports this error after trying to select a gate, run the following command to tell HH that filament is <em>not</em> loaded.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>MMU_RECOVER LOADED=0
+</code></pre></div></td></tr></table></div>
+</div>
+<p>Note the distance displayed.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>Homed after 450.00mm
+</code></pre></div></td></tr></table></div>
+<p>Read your <code>toolhead_entry_to_extruder</code> value from <code>mmu_parameters.cfg</code>.</p>
+<p>Set your <code>gate_parking_distance</code> to:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>&lt;displayed distance&gt; + &lt;toolhead_entry_to_extruder&gt; + 50
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p>To tune this value, start by estimating the distance from your extruder to the ideal parking position. You can use a piece of filament outside of the tube and use a ruler to help measure this. In the diagram above, it's the distance between the red and blue dots.</p>
+<p>Set this starting value in <code>mmu_parameters.cfg</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nt">gate_parking_distance</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xxx</span>
+</code></pre></div></td></tr></table></div>
+<p>Run the following commands in Mainsail:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>MMU_SELECT GATE=0
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a>MMU_LOAD
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a>MMU_UNLOAD
+</code></pre></div></td></tr></table></div>
+<div class="admonition failure">
+<p class="admonition-title">Operation not possible. MMU has filament loaded</p>
+<p>If Mainsail reports this error after trying to select a gate, run the following command to tell HH that filament is <em>not</em> loaded.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>MMU_RECOVER LOADED=0
+</code></pre></div></td></tr></table></div>
+</div>
+<p>The filament should load to the extruder then unload to the parking position.</p>
+<p>If it unloaded to the correct spot (around the red dot), then your parking distance is good.</p>
+<p>If not, use the below command to move the filament until it's at the correct position (positive is towards the extruder, negative is away from it):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a>MMU_TEST_MOVE MOVE=xxx
+</code></pre></div></td></tr></table></div>
+<p>Finally, run <code>MMU_STATUS</code> and note the "UNLOADED" value shown.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a>UNLOADED 450.0mm
+</code></pre></div></td></tr></table></div>
+<p>Save the shown value as your parking distance.</p>
+</div>
+</div>
+</div>
 <h2 id="encoder-if-installed">Encoder (if installed)</h2>
 <p>If you are using an encoder, like a BTT SFS (Smart Filament Sensor), you need to calibrate your encoder.</p>
 <ol>
 <li>Load your filament manually to its parking position at the start of the Y-splitter.</li>
 <li>
 <p>Run in your Klipper console:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>MMU_CALIBRATE_ENCODER
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a>MMU_CALIBRATE_ENCODER
 </code></pre></div></td></tr></table></div>
 </li>
 </ol>
@@ -1599,22 +1675,22 @@
 </ul>
 <p>To invert a gear stepper in software, open <code>mmu_hardware.cfg</code> and invert the <code>dir_pin</code> for the respective stepper.</p>
 <p>Example, if <code>T1</code> is moving backwards:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Before</label><label for="__tabbed_2_2">After</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">mmu_hardware.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">[stepper_mmu_gear_1]</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="na">...</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="na">dir_pin</span><span class="o">:</span><span class="w"> </span><span class="s">mmu: PC5</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">mmu_hardware.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="k">[stepper_mmu_gear_1]</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="na">...</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="na">dir_pin</span><span class="o">:</span><span class="w"> </span><span class="s">mmu: PC5</span>
 </code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">mmu_hardware.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">[stepper_mmu_gear_1]</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="na">...</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="na">dir_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!mmu: PC5</span><span class="w"> </span><span class="c1"># &lt;-- Note the ! in front of mmu</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">mmu_hardware.cfg</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span>
+<span class="normal"><a href="#__codelineno-14-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="k">[stepper_mmu_gear_1]</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="na">...</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="na">dir_pin</span><span class="o">:</span><span class="w"> </span><span class="s">!mmu: PC5</span><span class="w"> </span><span class="c1"># &lt;-- Note the ! in front of mmu</span>
 </code></pre></div></td></tr></table></div>
 </div>
 </div>
