@@ -98,17 +98,11 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/3DCoded/3MS
       name: GitHub
-  # alternate:
-  #   - name: English
-  #     link: /
-  #     lang: en
-  #   - name: Deutsch (In Arbeit)
-  #     link: /de/
-  #     lang: de
   status:
     new: Recently added
     updated: Recently updated
     deprecated: Deprecated
+copyright: Copyright &copy; 2024-2025 Christopher Mattar (3DCoded)
 theme:
   language: en
   logo: assets/logo.png
@@ -148,6 +142,7 @@ hooks:
 nav:
   - Home: index.md
   - compare.md
+  - tips.md
   - Instructions:
     - instructions/index.md
     - BOM: instructions/bom.md

@@ -59,3 +59,7 @@ For a detailed look at what's included in 3MS kits, check out this tour below:
 To assemble and set up your 3MS kit, follow the instructions below.
 
 [:octicons-list-ordered-24: Instructions](../instructions/index.md){.md-button}
+
+## Survey
+
+I'd really appreciate it if you could take a couple minutes and fill out this quick [survey](https://forms.gle/bcG71buCrVxnpp767) about your experience with the kit.

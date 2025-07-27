@@ -6,8 +6,6 @@ title: First Print
 
 # First Print
 
-!!! info "Page is under construction"
-
 Congratulations on building your 3MS! Now to get started with a first print.
 
 ## Slicer Setup
@@ -75,3 +73,59 @@ Save this machine preset with a new name.
 
 ### Filament Settings
 
+!!! tip "Filament Cutting vs. Tip Forming"
+    It is _highly_ recommended you install a filament cutter on your printer. This will make your toolchanges much more reliable and negate the tuning tip forming requires.
+
+    If you really want to do tip forming, don't follow this section. You will have to tune the values yourself. In general:
+
+    - Less cooling moves or higher temperature = stringy tips
+    - More cooling moves or lower temperature = blobby tips
+    - Skinnydip string reduction = less strings
+
+Begin by opening your filament settings.
+
+![](2b0730ee.png)
+
+Navigate to `Multimaterial`.
+
+![](3c8e4a50.png)
+
+#### Disable Tip Forming
+
+Set all the indicated fields to `0` and open the ramming settings.
+0f8f127c
+![](eb7458be.png)
+
+Set the ramming time to `0`.
+
+![](6acdfb10.png)
+
+## Your First Print
+
+This section will cover one way to start multicolor 3D prints. Note that typically, multicolor 3D models will come pre-painted or in multiple parts, so the process will be slightly different.
+
+Begin by loading the model into the slicer.
+
+![](0f8f127c.png)
+
+Select the model and click multicolor painting.
+
+![](391028e7.png)
+
+Paint the model as you like.
+
+![](273e81cf.png)
+
+Ensure the prime tower is enabled.
+
+![](7c99d620.png)
+
+Arrange the prime tower on the plater.
+
+![](dd4b1862.png)
+
+Slice and print!
+
+# :tada:
+
+_I would really appreciate a star on [GitHub](https://github.com/3DCoded/3MS) if you enjoyed this project!_

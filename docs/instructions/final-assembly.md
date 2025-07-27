@@ -15,7 +15,7 @@ gcard
 
 - stepi-175bd9bd
 
-- Cut four 300mm length segments of PTFE tubing.
+- Cut four equal-length segments of PTFE tubing. These should each be long enough to almost reach from the 3MS to your printer's extruder.
 
 .gcard
 
