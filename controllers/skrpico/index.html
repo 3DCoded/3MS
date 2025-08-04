@@ -900,6 +900,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#flashing-klipper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flashing Klipper
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1583,6 +1592,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#flashing-klipper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flashing Klipper
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1794,9 +1812,25 @@
 <a id="__codelineno-2-2" name="__codelineno-2-2"></a>make menuconfig
 </code></pre></div></td></tr></table></div>
 <p>Adjust your <code>menuconfig</code> settings to match this exactly:</p>
-<div class="admonition info">
-<p class="admonition-title">TODO</p>
-</div>
+<p><a class="glightbox" href="../../assets/images/web/3b466bdb.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/web/3b466bdb.png" /></a></p>
+<p>Now, run:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>make clean
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>make
+</code></pre></div></td></tr></table></div>
+<h3 id="flashing-klipper">Flashing Klipper</h3>
+<p>Run in SSH:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>ls /dev/serial/by-id/*
+</code></pre></div></td></tr></table></div>
+<p>Plug the Pico into your Pi.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>ls /dev/serial/by-id/*
+</code></pre></div></td></tr></table></div>
+<p>There should be a new USB device shown after plugging the Pico in. Copy the entire path, including <code>/dev/serial/by-id/</code>, and run the final commands:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>cd ~/klipper
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>make flash FLASH_DEVICE=&lt;PASTE HERE&gt;
+</code></pre></div></td></tr></table></div>
+<p>Your SKR Pico is now successfully flashed with Katapult and Klipper.</p>
 
 
 
