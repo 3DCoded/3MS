@@ -863,6 +863,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#firmware-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firmware Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Firmware Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compiling-katapult" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compiling Katapult
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing-katapult" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flashing Katapult
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compiling-klipper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compiling Klipper
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1504,6 +1546,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#firmware-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firmware Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Firmware Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compiling-katapult" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compiling Katapult
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing-katapult" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flashing Katapult
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compiling-klipper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compiling Klipper
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1654,6 +1738,65 @@
 </ol>
 <p>If the SKR lights up, you wired it correctly!</p>
 <p>Finally, plug the SKR into your Klipper host with the blue cable that came with it.</p>
+<h2 id="firmware-installation">Firmware Installation</h2>
+<p>Setting up firmware for the SKR Pico can be divided into four major steps:</p>
+<ol>
+<li>Compile Katapult (bootloader)</li>
+<li>Flash Katapult</li>
+<li>Compile Klipper</li>
+<li>Flash Klipper</li>
+</ol>
+<h3 id="compiling-katapult">Compiling Katapult</h3>
+<p>You have two options for installing Katapult to the SKR Pico:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">1. Compile Katapult yourself</label><label for="__tabbed_1_2">2. Download precompiled Katapult (compiled August 4, 2025)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Run the following commands in SSH:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>cd ~/
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>git clone https://github.com/Arksine/katapult
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>cd katapult
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>make menuconfig
+</code></pre></div></td></tr></table></div>
+<p>Adjust your <code>menuconfig</code> parameters to match the following exactly.</p>
+<p><a class="glightbox" href="../../assets/images/web/445b5e6f.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/web/445b5e6f.png" /></a></p>
+<p>Then, run:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>make clean
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>make
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>cp out/katapult.uf2 ~/printer_data/config/katapult.uf2
+</code></pre></div></td></tr></table></div>
+<p>Now in Mainsail/Fluidd, download <code>katapult.uf2</code> from your printer's config folder onto your computer and proceed to flashing.</p>
+</div>
+<div class="tabbed-block">
+<p>Download <a href="../../assets/klipper/katapult.uf2">katapult.uf2</a> to your computer and proceed to flashing.</p>
+</div>
+</div>
+</div>
+<h3 id="flashing-katapult">Flashing Katapult</h3>
+<p>Now that you have <code>katapult.uf2</code> on your computer, install the BOOT and VUSB jumpers onto the SKR Pico as shown in the below diagram.</p>
+<figure>
+<p><a class="glightbox" href="https://docs.vorondesign.com/build/software/images/SKR_Pico_Pin_Flashing.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://docs.vorondesign.com/build/software/images/SKR_Pico_Pin_Flashing.png" /></a></p>
+<figcaption>
+<p>Credits: Voron Design</p>
+</figcaption>
+</figure>
+<p>Plug the SKR Pico into your computer with the USB-C cable that came with it. It should show up as a USB drive.</p>
+<p>Drag <code>katapult.uf2</code> into the drive. It should quickly disconnect then reconnect itself.</p>
+<p>Now, remove the BOOT jumper and unplug the Pico from your computer.</p>
+<h3 id="compiling-klipper">Compiling Klipper</h3>
+<p>Now, SSH into your Pi again and run the following commands:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>cd ~/klipper
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>make menuconfig
+</code></pre></div></td></tr></table></div>
+<p>Adjust your <code>menuconfig</code> settings to match this exactly:</p>
+<div class="admonition info">
+<p class="admonition-title">TODO</p>
+</div>
 
 
 
