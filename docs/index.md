@@ -43,7 +43,7 @@ Here are a few reasons:
 
 To use the 3MS, your setup should meet the following requirements:
 
-- Run Klipper firmware.
+- Run ^^legit^^ Klipper firmware. Most printers that come with Klipper preinstalled use a ^^modified^^ version of Klipper and/or Linux that will impact your ability to setup Happy Hare firmware. [Read more](https://klipper.discourse.group/t/3d-printers-with-preinstalled-and-modified-klipper-versions/20467?u=3dcoded)
 - Have SSH (PuTTY) access (99.9% of Klipper installations have this, and if you don't you really should setup SSH).
 - Have one spare USB port.
 - Have an adapter to install a PTFE tube to the inlet of your printer's extruder.
@@ -94,3 +94,5 @@ To get started with the 3MS, see the [Master Instructions](instructions/index.md
     <iframe width="560" height="315" src="https://www.youtube.com/embed/XfjHtymdHao?si=cHG1jreb8FfjpWaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/o4Fvtdl-XjM?si=16Prr2Djn4XP0n6q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ndw14nttqQs?si=JtjTmIGCPrT_j4LV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

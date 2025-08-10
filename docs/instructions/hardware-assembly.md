@@ -37,9 +37,9 @@ gcard
 
     &emsp;.ocir. Stepper gear screw
 
-    &emsp;.gcir. 2.5mm Hex key
+    &emsp;.gcir. 1.5mm Hex key
 
-    .bcir. Using the 2.5mm hex key, screw the stepper gear screw into the stepper gear.
+    .bcir. Using the 1.5mm hex key, screw the stepper gear screw into the stepper gear.
 
     .pcir. Ensure the screw is **slightly** sticking into the gear.
 .gcard

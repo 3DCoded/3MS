@@ -90,13 +90,13 @@ post_gear_switch_pin_3: <SOME PIN>
 
 ---
 
-## Distances
+## Endstops
 
-There are many key distances to set up in Happy Hare firmware. All the distance parameters are located in `mmu_parameters.cfg`.
+There are two main endstops you need to setup in Happy Hare firmware for loading and unloading of filament.
 
-### Homing Endstop
+### Gate Homing Endstop
 
-Firstly, when homing filament (checking if it is present), you have three options for the sensor to be used:
+When homing filament (checking if it is present), you have three options for the sensor to be used:
 
 - **mmu_gate** Use the shared gate sensor after the Y-splitter
 - **mmu_gear** Use the individual post-gate sensors.
@@ -104,9 +104,31 @@ Firstly, when homing filament (checking if it is present), you have three option
 
 Select one of the three options in `gate_homing_endstop`, located in `mmu_parameters.cfg`.
 
+### Extruder Homing Endstop
+
+Happy Hare also needs a reference sensor inside the toolhead. You have two main options for this:
+
+- **extruder** Use the extruder entry sensor.
+- **none** Don't home inside the extruder.
+
+Select one of those options in `extruder_homing_endstop` in `mmu_parameters.cfg`.
+
+??? note "Advanced Options"
+    Happy Hare does support three additional advanced options for this endstop:
+
+    - **filament_compression** Use a sync-feedback sensor like TurtleNeck as a homing endstop
+    - **collision** Use StallGuard on the printer's extruder.
+    - **mmu_gear_touch** Use StallGuard on the 3MS's extruder.
+
+    Note that since I don't use these options, I won't be able to help much with these options.
+
+## Distances
+
+There are many key distances to set up in Happy Hare firmware. All the distance parameters are located in `mmu_parameters.cfg`.
+
 ### Homing Distance
 
-Next, configure the maximum distance Happy Hare should attempt to load filament to the homing sensor, before "giving up" and deciding that the spool is empty. This should usually be ~150% the distance from your filament parking position to the sensor.
+Firstly, configure the maximum distance Happy Hare should attempt to load filament to the homing sensor, before "giving up" and deciding that the spool is empty. This should usually be ~150% the distance from your filament parking position to the sensor.
 
 !!! note
     If you use post-gear endstops (`mmu_gear`), this uses the `gate_preload_homing_max` parameter.
@@ -134,3 +156,43 @@ Happy Hare allows for slowing down the initial load to deal with additional drag
 ### Load/Unload Speeds
 
 To adjust your load/unload speeds during a toolchange, adjust the `gear_from_buffer_speed` parameter.
+
+## Toolhead Distances
+
+There are many key distances to setup in Happy Hare firmware, this time for the measurements of your toolhead. Again, all these parameters are located in `mmu_parameters.cfg`.
+
+There are three main ways to get any of the following distances:
+
+- Find configs available online for your toolhead
+- Use CAD models of your toolhead
+- Measure (approximate) yourself with a piece of filament and calipers
+
+### Homing Max
+
+`toolhead_homing_max` is the maximum distance from the gate endstop to your extruder endstop HH will attempt to load filament.
+
+!!! info "This parameter is only relevant if you use **both** an extruder entry sensor and a shared gate sensor"
+
+### Internal Dimensions
+
+There are three main parameters to measure inside your toolhead.
+
+- `toolhead_extruder_to_nozzle`
+
+    This is the distance between your extruder gears and the nozzle. If you don't have access to CAD of your printer's toolhead, you can follow the below procedure to approximate it.
+
+    1. Preheat your nozzle to printing temperatures.
+    1. Press a piece of filament up against the entrance to your extruder gears.
+    1. Using KlipperScreen/Mainsail/Fluidd controls, load the filament in until it barely starts oozing out of the nozzle. Note the total distance traveled. This is your approximate `toolhead_extruder_to_nozzle`
+
+- `toolhead_sensor_to_nozzle`
+
+    !!! info "This parameter is only relevant if you have a toolhead sensor."
+
+    This is the distance between your toolhead sensor and nozzle. An easy way to approximate this is:
+
+    1. Preheat your nozzle to printing temperatures.
+    1. Press a piece of filament up against the entrance to your extruder gears.
+    1. Using KlipperScreen/Mainsail/Fluidd controls, load the filament in until it triggers the toolhead sensor. Note the total distance traveled. Set `toolhead_sensor_to_nozzle` to `toolhead_extruder_to_nozzle - <MEASURED DISTANCE>`
+
+- TODO `toolhead_entry_to_extruder`

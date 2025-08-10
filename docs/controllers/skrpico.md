@@ -53,3 +53,102 @@ Now, grab your 24V PSU and two M-M duponts, one red and one black (M-M means tha
 If the SKR lights up, you wired it correctly!
 
 Finally, plug the SKR into your Klipper host with the blue cable that came with it.
+
+## Firmware Installation
+
+Setting up firmware for the SKR Pico can be divided into four major steps:
+
+1. Compile Katapult (bootloader)
+2. Flash Katapult
+3. Compile Klipper
+4. Flash Klipper
+
+### Compiling Katapult
+
+You have two options for installing Katapult to the SKR Pico:
+
+=== "1. Compile Katapult yourself"
+    Run the following commands in SSH:
+
+    ```
+    cd ~/
+    git clone https://github.com/Arksine/katapult
+    cd katapult
+    make menuconfig
+    ```
+
+    Adjust your `menuconfig` parameters to match the following exactly.
+
+    ![](445b5e6f.png)
+
+    Then, run:
+
+    ```
+    make clean
+    make
+    cp out/katapult.uf2 ~/printer_data/config/katapult.uf2
+    ```
+
+    Now in Mainsail/Fluidd, download `katapult.uf2` from your printer's config folder onto your computer and proceed to flashing.
+
+=== "2. Download precompiled Katapult (compiled August 4, 2025)"
+    Download [katapult.uf2](../assets/klipper/katapult.uf2) to your computer and proceed to flashing.
+
+### Flashing Katapult
+
+Now that you have `katapult.uf2` on your computer, install the BOOT and VUSB jumpers onto the SKR Pico as shown in the below diagram.
+
+![](https://docs.vorondesign.com/build/software/images/SKR_Pico_Pin_Flashing.png)
+
+/// caption
+Credits: Voron Design
+///
+
+Plug the SKR Pico into your computer with the USB-C cable that came with it. It should show up as a USB drive.
+
+Drag `katapult.uf2` into the drive. It should quickly disconnect then reconnect itself.
+
+Now, remove the BOOT jumper and unplug the Pico from your computer.
+
+### Compiling Klipper
+
+Now, SSH into your Pi again and run the following commands:
+
+```
+cd ~/klipper
+make menuconfig
+```
+
+Adjust your `menuconfig` settings to match this exactly:
+
+![](3b466bdb.png)
+
+Now, run:
+
+```
+make clean
+make
+```
+
+### Flashing Klipper
+
+Run in SSH:
+
+```
+ls /dev/serial/by-id/*
+```
+
+Plug the Pico into your Pi.
+
+```
+ls /dev/serial/by-id/*
+```
+
+There should be a new USB device shown after plugging the Pico in. Copy the entire path, including `/dev/serial/by-id/`, and run the final commands:
+
+```
+cd ~/klipper
+make flash FLASH_DEVICE=<PASTE HERE>
+```
+
+Your SKR Pico is now successfully flashed with Katapult and Klipper.
