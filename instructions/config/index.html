@@ -750,6 +750,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#endstops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endstops
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endstops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gate-homing-endstop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gate Homing Endstop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extruder-homing-endstop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extruder Homing Endstop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#distances" class="md-nav__link">
     <span class="md-ellipsis">
       Distances
@@ -758,15 +791,6 @@
   
     <nav class="md-nav" aria-label="Distances">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#homing-endstop" class="md-nav__link">
-    <span class="md-ellipsis">
-      Homing Endstop
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#homing-distance" class="md-nav__link">
@@ -823,6 +847,39 @@
   <a href="#loadunload-speeds" class="md-nav__link">
     <span class="md-ellipsis">
       Load/Unload Speeds
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toolhead-distances" class="md-nav__link">
+    <span class="md-ellipsis">
+      Toolhead Distances
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Toolhead Distances">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homing-max" class="md-nav__link">
+    <span class="md-ellipsis">
+      Homing Max
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Internal Dimensions
     </span>
   </a>
   
@@ -1685,6 +1742,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#endstops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endstops
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endstops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gate-homing-endstop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gate Homing Endstop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extruder-homing-endstop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extruder Homing Endstop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#distances" class="md-nav__link">
     <span class="md-ellipsis">
       Distances
@@ -1693,15 +1783,6 @@
   
     <nav class="md-nav" aria-label="Distances">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#homing-endstop" class="md-nav__link">
-    <span class="md-ellipsis">
-      Homing Endstop
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#homing-distance" class="md-nav__link">
@@ -1758,6 +1839,39 @@
   <a href="#loadunload-speeds" class="md-nav__link">
     <span class="md-ellipsis">
       Load/Unload Speeds
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toolhead-distances" class="md-nav__link">
+    <span class="md-ellipsis">
+      Toolhead Distances
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Toolhead Distances">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homing-max" class="md-nav__link">
+    <span class="md-ellipsis">
+      Homing Max
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Internal Dimensions
     </span>
   </a>
   
@@ -1865,18 +1979,37 @@
 <p>Before moving on, ensure all your existing <code>filament_switch_sensor</code> and <code>filament_motion_sensor</code> sections are commented out or deleted. Leaving this enabled will lead to unintended issues later on.</p>
 </div>
 <hr />
-<h2 id="distances">Distances</h2>
-<p>There are many key distances to set up in Happy Hare firmware. All the distance parameters are located in <code>mmu_parameters.cfg</code>.</p>
-<h3 id="homing-endstop">Homing Endstop</h3>
-<p>Firstly, when homing filament (checking if it is present), you have three options for the sensor to be used:</p>
+<h2 id="endstops">Endstops</h2>
+<p>There are two main endstops you need to setup in Happy Hare firmware for loading and unloading of filament.</p>
+<h3 id="gate-homing-endstop">Gate Homing Endstop</h3>
+<p>When homing filament (checking if it is present), you have three options for the sensor to be used:</p>
 <ul>
 <li><strong>mmu_gate</strong> Use the shared gate sensor after the Y-splitter</li>
 <li><strong>mmu_gear</strong> Use the individual post-gate sensors.</li>
 <li><strong>extruder</strong> Use the extruder entry sensor.</li>
 </ul>
 <p>Select one of the three options in <code>gate_homing_endstop</code>, located in <code>mmu_parameters.cfg</code>.</p>
+<h3 id="extruder-homing-endstop">Extruder Homing Endstop</h3>
+<p>Happy Hare also needs a reference sensor inside the toolhead. You have two main options for this:</p>
+<ul>
+<li><strong>extruder</strong> Use the extruder entry sensor.</li>
+<li><strong>none</strong> Don't home inside the extruder.</li>
+</ul>
+<p>Select one of those options in <code>extruder_homing_endstop</code> in <code>mmu_parameters.cfg</code>.</p>
+<details class="note">
+<summary>Advanced Options</summary>
+<p>Happy Hare does support three additional advanced options for this endstop:</p>
+<ul>
+<li><strong>filament_compression</strong> Use a sync-feedback sensor like TurtleNeck as a homing endstop</li>
+<li><strong>collision</strong> Use StallGuard on the printer's extruder.</li>
+<li><strong>mmu_gear_touch</strong> Use StallGuard on the 3MS's extruder.</li>
+</ul>
+<p>Note that since I don't use these options, I won't be able to help much with these options.</p>
+</details>
+<h2 id="distances">Distances</h2>
+<p>There are many key distances to set up in Happy Hare firmware. All the distance parameters are located in <code>mmu_parameters.cfg</code>.</p>
 <h3 id="homing-distance">Homing Distance</h3>
-<p>Next, configure the maximum distance Happy Hare should attempt to load filament to the homing sensor, before "giving up" and deciding that the spool is empty. This should usually be ~150% the distance from your filament parking position to the sensor.</p>
+<p>Firstly, configure the maximum distance Happy Hare should attempt to load filament to the homing sensor, before "giving up" and deciding that the spool is empty. This should usually be ~150% the distance from your filament parking position to the sensor.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you use post-gear endstops (<code>mmu_gear</code>), this uses the <code>gate_preload_homing_max</code> parameter.</p>
@@ -1893,6 +2026,47 @@
 <p>Happy Hare allows for slowing down the initial load to deal with additional drag from the filament spool. To adjust this speed, adjust <code>gear_from_spool_speed</code>.</p>
 <h3 id="loadunload-speeds">Load/Unload Speeds</h3>
 <p>To adjust your load/unload speeds during a toolchange, adjust the <code>gear_from_buffer_speed</code> parameter.</p>
+<h2 id="toolhead-distances">Toolhead Distances</h2>
+<p>There are many key distances to setup in Happy Hare firmware, this time for the measurements of your toolhead. Again, all these parameters are located in <code>mmu_parameters.cfg</code>.</p>
+<p>There are three main ways to get any of the following distances:</p>
+<ul>
+<li>Find configs available online for your toolhead</li>
+<li>Use CAD models of your toolhead</li>
+<li>Measure (approximate) yourself with a piece of filament and calipers</li>
+</ul>
+<h3 id="homing-max">Homing Max</h3>
+<p><code>toolhead_homing_max</code> is the maximum distance from the gate endstop to your extruder endstop HH will attempt to load filament.</p>
+<div class="admonition info">
+<p class="admonition-title">This parameter is only relevant if you use <strong>both</strong> an extruder entry sensor and a shared gate sensor</p>
+</div>
+<h3 id="internal-dimensions">Internal Dimensions</h3>
+<p>There are three main parameters to measure inside your toolhead.</p>
+<ul>
+<li>
+<p><code>toolhead_extruder_to_nozzle</code></p>
+<p>This is the distance between your extruder gears and the nozzle. If you don't have access to CAD of your printer's toolhead, you can follow the below procedure to approximate it.</p>
+<ol>
+<li>Preheat your nozzle to printing temperatures.</li>
+<li>Press a piece of filament up against the entrance to your extruder gears.</li>
+<li>Using KlipperScreen/Mainsail/Fluidd controls, load the filament in until it barely starts oozing out of the nozzle. Note the total distance traveled. This is your approximate <code>toolhead_extruder_to_nozzle</code></li>
+</ol>
+</li>
+<li>
+<p><code>toolhead_sensor_to_nozzle</code></p>
+<div class="admonition info">
+<p class="admonition-title">This parameter is only relevant if you have a toolhead sensor.</p>
+</div>
+<p>This is the distance between your toolhead sensor and nozzle. An easy way to approximate this is:</p>
+<ol>
+<li>Preheat your nozzle to printing temperatures.</li>
+<li>Press a piece of filament up against the entrance to your extruder gears.</li>
+<li>Using KlipperScreen/Mainsail/Fluidd controls, load the filament in until it triggers the toolhead sensor. Note the total distance traveled. Set <code>toolhead_sensor_to_nozzle</code> to <code>toolhead_extruder_to_nozzle - &lt;MEASURED DISTANCE&gt;</code></li>
+</ol>
+</li>
+<li>
+<p>TODO <code>toolhead_entry_to_extruder</code></p>
+</li>
+</ul>
 
 
 
