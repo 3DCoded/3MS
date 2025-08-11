@@ -14,7 +14,7 @@ The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial *
 
 [Configuration Generator](https://forked-lined-hour.anvil.app/)
 
-[![Discord Shield](https://discord.com/api/guilds/1307104511663411210/widget.png?style=banner2)](https://discord.gg/ekqxDhdGCg)
+[![Discord Shield](https://discord.com/api/guilds/1307104511663411210/widget.png?style=banner2&)](https://discord.gg/ekqxDhdGCg)
 
 The 3MS is a simple, compact, modular, reliable, budget-friendly multimaterial system. 
 
