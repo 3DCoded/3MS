@@ -195,4 +195,14 @@ There are three main parameters to measure inside your toolhead.
     1. Press a piece of filament up against the entrance to your extruder gears.
     1. Using KlipperScreen/Mainsail/Fluidd controls, load the filament in until it triggers the toolhead sensor. Note the total distance traveled. Set `toolhead_sensor_to_nozzle` to `toolhead_extruder_to_nozzle - <MEASURED DISTANCE>`
 
-- TODO `toolhead_entry_to_extruder`
+- `toolhead_entry_to_extruder`
+
+    !!! info "This parameter is only relevant if you have an extruder entry sensor."
+
+    This is the distance between your extruder entry sensor and extruder gears. To approximate this:
+
+    1. Take a scrap of filament and slowly push it into your toolhead until the extruder entry sensor triggers.
+    1. Brace a marker against the top of your toolhead and mark the filament.
+    1. Push filament further in until it hits the extruder gears.
+    1. Put another mark on the filament.
+    1. Remove the filament and measure the distance between the two marks. This is your `toolhead_entry_to_extruder` value.
