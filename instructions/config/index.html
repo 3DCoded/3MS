@@ -2064,7 +2064,18 @@
 </ol>
 </li>
 <li>
-<p>TODO <code>toolhead_entry_to_extruder</code></p>
+<p><code>toolhead_entry_to_extruder</code></p>
+<div class="admonition info">
+<p class="admonition-title">This parameter is only relevant if you have an extruder entry sensor.</p>
+</div>
+<p>This is the distance between your extruder entry sensor and extruder gears. To approximate this:</p>
+<ol>
+<li>Take a scrap of filament and slowly push it into your toolhead until the extruder entry sensor triggers.</li>
+<li>Brace a marker against the top of your toolhead and mark the filament.</li>
+<li>Push filament further in until it hits the extruder gears.</li>
+<li>Put another mark on the filament.</li>
+<li>Remove the filament and measure the distance between the two marks. This is your <code>toolhead_entry_to_extruder</code> value.</li>
+</ol>
 </li>
 </ul>
 
