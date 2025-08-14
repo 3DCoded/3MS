@@ -69,6 +69,10 @@ gcard
     .bcir. Slide the edge of the gear to the edge of the stepper motor shaft.
 
     .pcir. Tighten the stepper gear firmly.
+
+    !!! tip "Loctite"
+        A bit of blue loctite here can help to ensure the grub screw doesn't work its way loose over time.
+
 .gcard
 
 .stepi-1bfe7127 .red-ol .orange2-ol
@@ -92,6 +96,10 @@ gcard
     &emsp;.bcir. NEMA17 Stepper motor (prepared previously)
 
     &emsp;.pcir. 2.5mm Hex key
+
+    !!! tip "Lubricant"
+        It's recommended to apply a small amount of a lubricant like SuperLube to the white extruder gear.
+
 .gcard
 
 .stepi-729e7f78
