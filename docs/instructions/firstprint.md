@@ -93,7 +93,7 @@ Navigate to `Multimaterial`.
 #### Disable Tip Forming
 
 Set all the indicated fields to `0` and open the ramming settings.
-0f8f127c
+
 ![](eb7458be.png)
 
 Set the ramming time to `0`.
