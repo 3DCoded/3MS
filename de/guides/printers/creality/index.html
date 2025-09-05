@@ -1298,75 +1298,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Instructions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rooting
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ssh" class="md-nav__link">
-    <span class="md-ellipsis">
-      SSH
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#moonraker-mainsail-and-entware" class="md-nav__link">
-    <span class="md-ellipsis">
-      Moonraker, Mainsail, and Entware
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compile-and-flash-firmware" class="md-nav__link">
-    <span class="md-ellipsis">
-      Compile and Flash Firmware
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-bash" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Bash
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-happy-hare" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Happy Hare
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#disable-leds" class="md-nav__link">
-    <span class="md-ellipsis">
-      Disable LEDs
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -1579,75 +1510,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Instructions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rooting
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ssh" class="md-nav__link">
-    <span class="md-ellipsis">
-      SSH
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#moonraker-mainsail-and-entware" class="md-nav__link">
-    <span class="md-ellipsis">
-      Moonraker, Mainsail, and Entware
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compile-and-flash-firmware" class="md-nav__link">
-    <span class="md-ellipsis">
-      Compile and Flash Firmware
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-bash" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Bash
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-happy-hare" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Happy Hare
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#disable-leds" class="md-nav__link">
-    <span class="md-ellipsis">
-      Disable LEDs
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -1682,77 +1544,10 @@
 <p>I am not responsible for whatever happens to your machine! You proceed at your own risk and understand that you will likely void your warranty by proceeding.</p>
 </details>
 <h2 id="instructions">Instructions</h2>
-<h3 id="rooting">Rooting</h3>
-<p>Follow <a href="https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-ender3/">this</a> guide to root your printer.</p>
-<h3 id="ssh">SSH</h3>
-<p>Follow <a href="https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/ssh-connection/">this</a> guide to connect to your printer via SSH.</p>
-<h3 id="moonraker-mainsail-and-entware">Moonraker, Mainsail, and Entware</h3>
-<p>Follow the below guides to install:</p>
-<ol>
-<li><a href="https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/moonraker-ender3/">Moonraker</a></li>
-<li><a href="https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/mainsail/">Mainsail</a></li>
-<li><a href="https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/entware/">Entware (opkg)</a></li>
-<li>Restart your printer.</li>
-</ol>
-<h3 id="compile-and-flash-firmware">Compile and Flash Firmware</h3>
-<p>TODO</p>
-<h3 id="install-bash">Install Bash</h3>
-<p>In SSH, run the following commands:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>opkg<span class="w"> </span>update
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>opkg<span class="w"> </span>install<span class="w"> </span>bash
-</code></pre></div></td></tr></table></div>
-<h3 id="install-happy-hare">Install Happy Hare</h3>
-<p>First, clone the repository.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>/usr/data
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/moggieuk/Happy-Hare
-</code></pre></div></td></tr></table></div>
-<p>Then, make the install script executable.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>Happy-Hare
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a>chmod<span class="w"> </span>u+x<span class="w"> </span>install.sh
-</code></pre></div></td></tr></table></div>
-<p>Download a modified <code>mmu_toolhead.py</code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nb">cd</span><span class="w"> </span>extras
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>wget<span class="w"> </span>https://raw.githubusercontent.com/k1-801/Happy-Hare/k1/extras/mmu_toolhead.py
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="nb">cd</span><span class="w"> </span>..
-</code></pre></div></td></tr></table></div>
-<p>Finally, install Happy Hare.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>bash<span class="w"> </span>./install.sh<span class="w"> </span>-i
-</code></pre></div></td></tr></table></div>
-<h3 id="disable-leds">Disable LEDs</h3>
-<p>Currently, this approach doesn't allow for setting up LEDs on your 3MS. Please feel free to reach out to me on the 3MS Discord if you want to test a few methods of setting up LEDs.</p>
-<p>In <code>mmu_hardware.cfg</code>, remove the following sections located at the bottom of the file:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-5-10">10</a></span>
-<span class="normal"><a href="#__codelineno-5-11">11</a></span>
-<span class="normal"><a href="#__codelineno-5-12">12</a></span>
-<span class="normal"><a href="#__codelineno-5-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="p p-Indicator">[</span><span class="nv">neopixel mmu_leds</span><span class="p p-Indicator">]</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="nt">pin</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mmu:MMU_NEOPIXEL</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="nt">chain_count</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">chain_count</span><span class="p p-Indicator">}</span><span class="w">          </span><span class="c1"># Need number gates x1 or x2 + status leds</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="nt">color_order</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">color_order</span><span class="p p-Indicator">}</span><span class="w">      </span><span class="c1"># Set based on your particular neopixel specification (can be comma separated list)</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a>
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="nn">...</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7"></a>
-<a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="p p-Indicator">[</span><span class="nv">mmu_leds</span><span class="p p-Indicator">]</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="nt">exit_leds</span><span class="p">:</span><span class="w">   </span><span class="p p-Indicator">{</span><span class="nv">exit_leds</span><span class="p p-Indicator">}</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="nt">entry_leds</span><span class="p">:</span><span class="w">  </span><span class="p p-Indicator">{</span><span class="nv">entry_leds</span><span class="p p-Indicator">}</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="nt">status_leds</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">status_leds</span><span class="p p-Indicator">}</span>
-<a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="nt">logo_leds</span><span class="p">:</span><span class="w">   </span><span class="p p-Indicator">{</span><span class="nv">logo_leds</span><span class="p p-Indicator">}</span>
-<a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="nt">frame_rate</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">24</span>
-</code></pre></div></td></tr></table></div>
-<hr />
+<div class="admonition info">
+<p class="admonition-title">This guide is outdated</p>
+<p>This guide is outdated and will be updated with up-to-date information soon.</p>
+</div>
 <p>You can follow the rest of the documentation as usual from here.</p>
 <p><a class="md-button" href="../../../instructions/">Start Here</a></p>
 
