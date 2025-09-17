@@ -138,7 +138,7 @@ Run in SSH:
 ls /dev/serial/by-id/*
 ```
 
-Plug the Pico into your Pi.
+Plug the Pico into your Pi and double-click the RESET button.
 
 ```
 ls /dev/serial/by-id/*
