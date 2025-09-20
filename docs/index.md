@@ -48,7 +48,7 @@ To use the 3MS, your setup should meet the following requirements:
 - Have one spare USB port.
 - Have an adapter to install a PTFE tube to the inlet of your printer's extruder.
 - Have one filament sensor right before your printer's extruder.
-- Have a filament cutter (ideally between your printer's extruder and hotend).
+- Have a filament cutter (ideally between your printer's extruder and hotend). Alternatively, you can use [IF-Cut](https://www.printables.com/model/1417085-beta-if-cut-inline-filament-cutter-for-the-3ms).
 
 ## Recommendations
 
