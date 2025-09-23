@@ -846,24 +846,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bom" class="md-nav__link">
-    <span class="md-ellipsis">
-      BOM
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wiring" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wiring
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#firmware-installation" class="md-nav__link">
     <span class="md-ellipsis">
       Firmware Installation
@@ -1538,24 +1520,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bom" class="md-nav__link">
-    <span class="md-ellipsis">
-      BOM
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wiring" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wiring
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#firmware-installation" class="md-nav__link">
     <span class="md-ellipsis">
       Firmware Installation
@@ -1626,136 +1590,61 @@
 
 
 <h1 id="btt-skr-pico">BTT SKR Pico</h1>
-<p><strong>Max filament units: 4</strong></p>
-<p><strong>MCU Name: <code>mmu</code></strong></p>
-<h2 id="bom">BOM</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Price</th>
-<th>Quantity</th>
-<th>Link</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SKR Pico</td>
-<td>$26.58</td>
-<td>1</td>
-<td><a href="https://biqu.equipment/products/btt-skr-pico-v1-0?variant=40565262155874">BIQU</a></td>
-<td></td>
-</tr>
-<tr>
-<td>24AWG Power Cables</td>
-<td>$9.99</td>
-<td>1</td>
-<td><a href="https://a.co/d/5iee9KD">Amazon</a></td>
-<td>These wires are only sufficient to run steppers, not heaters</td>
-</tr>
-<tr>
-<td>24V PSU</td>
-<td>$12.98</td>
-<td>1</td>
-<td><a href="https://a.co/d/6BJT2RP">Amazon</a></td>
-<td>This PSU is only sufficient to run steppers, not heaters</td>
-</tr>
-</tbody>
-</table>
-<p>For each filament unit, purchase the following:</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Quantity</th>
-<th>Price</th>
-<th>Link</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>NEMA17 Stepper Motor</td>
-<td>1</td>
-<td>$9.99</td>
-<td><a href="https://a.co/d/06Lsa1qI">Amazon</a></td>
-<td>You can use a pancake stepper if you want, but it will have less torque</td>
-</tr>
-<tr>
-<td>BMG Clone Extruder</td>
-<td>1</td>
-<td>$9.99</td>
-<td><a href="https://a.co/d/fp2GNRQ">Amazon</a></td>
-<td>Alternatively, you can use <a href="https://a.co/d/dbw7Wor">this</a> Dual-drive MK8 based extruder</td>
-</tr>
-<tr>
-<td>PTFE Tubing</td>
-<td>1</td>
-<td>$8.99</td>
-<td><a href="https://a.co/d/7FAhmS5">Amazon</a></td>
-<td>You likely won't need this for every unit, as this is usually too long for only one unit</td>
-</tr>
-</tbody>
-</table>
-<h2 id="wiring">Wiring</h2>
-<p>Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:</p>
-<table>
-<thead>
-<tr>
-<th>Filament Unit #</th>
-<th>Motor Port</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>X</td>
-</tr>
-<tr>
-<td>1</td>
-<td>Y</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Z1 or Z2</td>
-</tr>
-<tr>
-<td>3</td>
-<td>E</td>
-</tr>
-</tbody>
-</table>
-<p>Now, grab your 24V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)</p>
-<ol>
-<li>Plug the red wire into the positive terminal of the screw terminals</li>
-<li>
-<p>Plug the black wire into the negative terminal of the screw terminals</p>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>These dupont cables are too thin to run much more than the stepper motors. If you run a heater or other power-intensive device off of the SKR board, the duponts and/or PSU can melt/catch fire. To reduce the risk of this, you can double up on the duponts or get thicker wires.</p>
-</div>
-</li>
-<li>
-<p>Following this image, locate the POWER input
-<a class="glightbox" href="../../assets/images/skrpicopins.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/skrpicopins.png" /></a></p>
-</li>
-<li>Route the two wires inside closest to the POWER input</li>
-<li>Using the markings on the board, plug the red wire into the positive terminal on the SKR</li>
-<li>Using the markings on the board, plug the black wire into the negative terminal on the SKR</li>
-<li>
-<p>Verify all connections</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>If the wires are plugged into the wrong place, or swapped polarities, your SKR, Stepper motors, and/or PSU can be badly damaged.</p>
-</div>
-</li>
-<li>
-<p>Plug the PSU screw terminals into the PSU wire</p>
-</li>
-</ol>
-<p>If the SKR lights up, you wired it correctly!</p>
-<p>Finally, plug the SKR into your Klipper host with the blue cable that came with it.</p>
+<!-- **Max filament units: 4**
+
+**MCU Name: `mmu`**
+
+## BOM
+
+| Name | Price | Quantity | Link | Notes |
+| - | - | - | - | - |
+| SKR Pico | $26.58 | 1 | [BIQU](https://biqu.equipment/products/btt-skr-pico-v1-0?variant=40565262155874) | |
+24AWG Power Cables | $9.99 | 1 | [Amazon](https://a.co/d/5iee9KD) | These wires are only sufficient to run steppers, not heaters |
+| 24V PSU | $12.98 | 1 | [Amazon](https://a.co/d/6BJT2RP) | This PSU is only sufficient to run steppers, not heaters |
+
+For each filament unit, purchase the following:
+
+| Name | Quantity | Price | Link | Notes |
+| - | - | - | - | - |
+| NEMA17 Stepper Motor | 1 | $9.99 | [Amazon](https://a.co/d/06Lsa1qI) | You can use a pancake stepper if you want, but it will have less torque
+| BMG Clone Extruder | 1 | $9.99 | [Amazon](https://a.co/d/fp2GNRQ) | Alternatively, you can use [this](https://a.co/d/dbw7Wor) Dual-drive MK8 based extruder |
+| PTFE Tubing | 1 | $8.99 | [Amazon](https://a.co/d/7FAhmS5) | You likely won't need this for every unit, as this is usually too long for only one unit |
+
+## Wiring
+
+Route the wires from the NEMA17's to the controller board. Follow this table to determine which port to plug the motors into:
+
+| Filament Unit # | Motor Port |
+| - | - |
+| 0 | X |
+| 1 | Y |
+| 2 | Z1 or Z2 |
+| 3 | E |
+
+Now, grab your 24V PSU and two M-M duponts, one red and one black (M-M means that there is metal coming out of both ends of the cable). Plug the PSU into the wall, but don't plug the screw terminals into the PSU (the screw terminals have green)
+
+1. Plug the red wire into the positive terminal of the screw terminals
+2. Plug the black wire into the negative terminal of the screw terminals
+
+    !!! danger
+        These dupont cables are too thin to run much more than the stepper motors. If you run a heater or other power-intensive device off of the SKR board, the duponts and/or PSU can melt/catch fire. To reduce the risk of this, you can double up on the duponts or get thicker wires.
+
+3. Following this image, locate the POWER input
+![](../assets/images/skrpicopins.png)
+4. Route the two wires inside closest to the POWER input
+5. Using the markings on the board, plug the red wire into the positive terminal on the SKR
+6. Using the markings on the board, plug the black wire into the negative terminal on the SKR
+7. Verify all connections
+
+    !!! warning
+        If the wires are plugged into the wrong place, or swapped polarities, your SKR, Stepper motors, and/or PSU can be badly damaged.
+
+8. Plug the PSU screw terminals into the PSU wire
+
+If the SKR lights up, you wired it correctly!
+
+Finally, plug the SKR into your Klipper host with the blue cable that came with it. -->
+
 <h2 id="firmware-installation">Firmware Installation</h2>
 <p>Setting up firmware for the SKR Pico can be divided into four major steps:</p>
 <ol>
