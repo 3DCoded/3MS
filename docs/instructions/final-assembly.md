@@ -58,3 +58,5 @@ gcard
 .stepi-c4147bdb
 
 ## :tada: You're done building your 3MS!
+
+Please go to [Controllers](../controllers/index.md) to flash firmware for your control board.

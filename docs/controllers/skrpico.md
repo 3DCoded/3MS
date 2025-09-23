@@ -5,7 +5,7 @@ comments: true
 
 # BTT SKR Pico
 
-**Max filament units: 4**
+<!-- **Max filament units: 4**
 
 **MCU Name: `mmu`**
 
@@ -52,7 +52,7 @@ Now, grab your 24V PSU and two M-M duponts, one red and one black (M-M means tha
 
 If the SKR lights up, you wired it correctly!
 
-Finally, plug the SKR into your Klipper host with the blue cable that came with it.
+Finally, plug the SKR into your Klipper host with the blue cable that came with it. -->
 
 ## Firmware Installation
 
