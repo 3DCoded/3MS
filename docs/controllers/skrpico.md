@@ -121,7 +121,7 @@ make menuconfig
 
 Adjust your `menuconfig` settings to match this exactly:
 
-![](3b466bdb.png)
+![](1ef817c1.png)
 
 Now, run:
 
