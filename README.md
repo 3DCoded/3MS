@@ -24,7 +24,7 @@ The 3MS is a simple, compact, modular, reliable, budget-friendly multimaterial s
 
 ## Why 3MS?
 
-Why use the 3MS when there are many other multi-material systems?
+Why use the 3MS when there are many other multi-material systems (MMU's) ?
 
 Here are a few reasons:
 
