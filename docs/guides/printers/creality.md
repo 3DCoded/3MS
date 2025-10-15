@@ -19,8 +19,13 @@ If you would like to use the 3MS on an E3v3, read on.
 
 ## Instructions
 
-!!! info "This guide is outdated"
-    This guide is outdated and will be updated with up-to-date information soon.
+Thank you **@dr-evil-23** for figuring this out!
+
+1. Compile and flash Katapult to your board.
+
+    If you're using an SKR Pico, select `W25Q080 with CLKDIV 2` as the flash chip.
+
+2. Compile Klipper v0.12.0 and flash to your board.
 
 You can follow the rest of the documentation as usual from here.
 
