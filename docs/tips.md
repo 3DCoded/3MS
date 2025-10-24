@@ -15,7 +15,9 @@ To use the 3MS, you need a sensor between the exit of the Y-splitter and your pr
 
 ## Do I need a filament cutter?
 
-Using a filament cutter is _highly_ recommended as it takes a lot of the guesswork out of tuning tip forming. A quick Google search of "filament cutter for [MY PRINTER]" is usually good to find a filament cutter for your printer.
+Using a filament cutter is recommended as it takes a lot of the guesswork out of tuning tip forming. A quick Google search of "filament cutter for [MY PRINTER]" is usually good to find a filament cutter for your printer.
+
+You can find user-submitted tip cutting/forming configurations [here](https://link.3dcoded.xyz/tipconfigs/).
 
 If there isn't a filament cutter published for your printer, you have two options:
 

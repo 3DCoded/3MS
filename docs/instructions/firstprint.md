@@ -74,13 +74,17 @@ Save this machine preset with a new name.
 ### Filament Settings
 
 !!! tip "Filament Cutting vs. Tip Forming"
-    It is _highly_ recommended you install a filament cutter on your printer. This will make your toolchanges much more reliable and negate the tuning tip forming requires.
+    It is recommended you install a filament cutter on your printer. This will make your toolchanges much more reliable and negate the tuning tip forming requires.
 
-    If you really want to do tip forming, don't follow this section. You will have to tune the values yourself. In general:
+    You can find user-submitted tip cutting/forming configurations [here](https://link.3dcoded.xyz/tipconfigs/).
+
+    If you want to do tip forming and can't find the right configs for your setup at the above link, you will have to tune the values yourself. In general:
 
     - Less cooling moves or higher temperature = stringy tips
     - More cooling moves or lower temperature = blobby tips
     - Skinnydip string reduction = less strings
+
+    Please upload your settings [here](https://link.3dcoded.xyz/tipconfigs/) once you tune yours in so other users can benefit!
 
 Begin by opening your filament settings.
 

@@ -52,7 +52,7 @@ To use the 3MS, your setup should meet the following requirements:
 
 ## Recommendations
 
-It is **highly** recommended to install a filament cutter to your printer to avoid the need to tune tip forming.
+It is recommended to install a filament cutter to your printer to avoid the need to tune tip forming.
 
 ## Get Started
 
