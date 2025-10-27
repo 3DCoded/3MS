@@ -21,6 +21,7 @@ regex = "*"
 mkdocs-static-i18n = "*"
 mkdocs-macros-plugin = "*"
 mkdocs-redirects = "*"
+mkdocs-meta-descriptions-plugin = "*"
 
 [dev-packages]
 

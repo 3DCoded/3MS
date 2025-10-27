@@ -3,6 +3,14 @@ site_url: https://3ms.3dcoded.xyz/
 repo_url: https://github.com/3dcoded/3MS
 plugins:
   - search
+  - meta-descriptions:
+      export_csv: false
+      quiet: false
+      enable_checks: false
+      min_length: 50
+      max_length: 160
+      trim: false
+      fallback_if_short: false
   - macros
   - step_helper
   - redirects:
