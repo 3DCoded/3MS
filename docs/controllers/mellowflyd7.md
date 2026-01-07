@@ -13,7 +13,7 @@ comments: true
 | Name | Price | Quantity | Link | Notes |
 | - | - | - | - | - |
 | Mellow Fly D7 |  | 1 | | |
-Duponts | $9.99 | 1 | [Amazon](https://a.co/d/6QwGxhH) | These wires are only sufficient to run steppers, not heaters |
+22AWG Cables | $9.99 | 1 | [Amazon](https://a.co/d/0oP9cD3) | These wires are only sufficient to run steppers, not heaters |
 | 12V PSU | $7.39 | 1 | [Amazon](https://a.co/d/gLC1eli) | This PSU is only sufficient to run steppers, not heaters |
 
 {{ filUnitBOM }}

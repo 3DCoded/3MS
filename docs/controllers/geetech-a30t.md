@@ -17,7 +17,7 @@ comments: true
 | Name | Price | Quantity | Link | Notes |
 | - | - | - | - | - |
 | Geetech A30T | $34.99 | 1 | [Geetech](https://www.geeetech.com/a30t-printer-gtm32103v1-control-board-p-1190.html) | |
-Duponts | $9.99 | 1 | [Amazon](https://a.co/d/6QwGxhH) | These wires are only sufficient to run steppers, not heaters |
+22AWG Cables | $9.99 | 1 | [Amazon](https://a.co/d/0oP9cD3) | These wires are only sufficient to run steppers, not heaters |
 | 24V PSU | $7.39 | 1 | [Amazon](https://a.co/d/1Ko6QMB) | This PSU is only sufficient to run steppers, not heaters |
 
 {{ filUnitBOM }}

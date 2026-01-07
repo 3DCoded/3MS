@@ -13,7 +13,7 @@ comments: true
 | Name | Price | Quantity | Link | Notes |
 | - | - | - | - | - |
 | BTT MMB | $34.99 | 1 | [BTT](https://biqu.equipment/products/bigtreetech-mmb?srsltid=AfmBOoponySi7shutNrn8sXQ4NCBiLPUvgYTROIgp_KaDdjZcKoXTYkT) | |
-Duponts | $9.99 | 1 | [Amazon](https://a.co/d/6QwGxhH) | These wires are only sufficient to run steppers, not heaters |
+22AWG Cable | $9.99 | 1 | [Amazon](https://a.co/d/0oP9cD3) | These wires are only sufficient to run steppers, not heaters |
 | 24V PSU | $7.39 | 1 | Amazon | This PSU is only sufficient to run steppers, not heaters |
 
 {{ filUnitBOM }}
