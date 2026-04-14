@@ -96,11 +96,11 @@ gcard
     .pcir. Twist the ends of the wires.
 
 .gcard
-
+ -r
 .stepi-96a2ea1e .red-ol .orange2-ol
 .stepi-a56a33ef .green-ol
 .stepi-514c9a29 .blue-ol .purple2-ol
-.stpei-2b4ba466
+.stepi-2b4ba466
 
 .Stepn Connecting the PSU
 

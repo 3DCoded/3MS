@@ -65,28 +65,28 @@ To get started with the 3MS, see the [Master Instructions](instructions/index.md
 ---
 
 ??? "Sample Prints"
-    === "Sheep"
-        ![](samplesheep.jpeg){: style="height: 300px"}
-
-        Model: [Sheep by Cipis](https://www.printables.com/model/838872-sheep-multi-material-remix)
-    === "Calendar"
-        ![](samplecalendar.jpeg){: style="width: 300px"}
-
-        Model: [Monolith Cryptic Calendar by Sevro](https://www.printables.com/model/698341-monolith-cryptic-calendar)
-    === "Voron Cube"
-        ![](samplevoron.jpeg){: style="height: 300px"}
-
-        Model: Voron Cube (bundled with OrcaSlicer), painted by me in OrcaSlicer
     === "T-Rex"
-        ![](sampletrex.jpeg){: style="width: 300px"}
+        ![](/assets/images/sampleprints/sampletrex.jpeg){: style="width: 300px"}
 
         Printed at 50% scale
 
         Model: [T-rex by Cipis](https://www.printables.com/model/5481-t-rex-multi-material)
     === "Lizard"
-        ![](samplelizard.jpeg){: style="width: 300px"}
+        ![](/assets/images/sampleprints/samplelizard.jpeg){: style="width: 300px"}
 
         Model: [Striped lizard with pupils by EngMike](https://www.printables.com/model/236193-striped-lizard-multi-material-with-pupils)
+    === "Sheep"
+        ![](/assets/images/sampleprints/samplesheep.jpeg){: style="height: 300px"}
+
+        Model: [Sheep by Cipis](https://www.printables.com/model/838872-sheep-multi-material-remix)
+    === "Calendar"
+        ![](/assets/images/sampleprints/samplecalendar.jpeg){: style="width: 300px"}
+
+        Model: [Monolith Cryptic Calendar by Sevro](https://www.printables.com/model/698341-monolith-cryptic-calendar)
+    === "Voron Cube"
+        ![](/assets/images/sampleprints/samplevoron.jpeg){: style="height: 300px"}
+
+        Model: Voron Cube (bundled with OrcaSlicer), painted by me in OrcaSlicer
 
 ??? "West3D Video Series"
     Thank you to Allen Rowand from [West3D](https://west3d.com/) for making this ongoing series on the 3MS.

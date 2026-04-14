@@ -1,0 +1,82 @@
+[project]
+site_name = "3MS"
+site_url = "https://3ms.3dcoded.xyz"
+repo_url = "https://github.com/3DCoded/3MS"
+site_description = "3MS Modular Multimaterial System documentation"
+site_author = "Christopher Mattar (3DCoded)"
+copyright = "&copy; 2024-2026 Christopher Mattar (3DCoded)"
+dev_addr = "localhost:8000"
+nav = [
+    {"Home" = "index.md"},
+    "compare.md",
+    "tips.md",
+    {"Instructions" = [
+        "instructions/index.md",
+        {"BOM" = "instructions/bom.md"},
+        {"Printed Parts & Tools" = "instructions/printed-parts-and-tools.md"},
+        {"Hardware Assembly" = "instructions/hardware-assembly.md"},
+        {"Electronic Assembly" = "instructions/electronic-assembly.md"},
+        {"Final Assembly" = "instructions/final-assembly.md"},
+        {"Software Setup" = "instructions/software-setup.md"},
+        {"Configuration" = "instructions/config.md"},
+        {"Calibration" = "instructions/calibration.md"},
+        {"First Print" = "instructions/firstprint.md"},
+    ]},
+    {"Controllers" = [
+        "controllers/index.md",
+        "controllers/skrpico.md",
+        "controllers/bttmmb.md",
+        "controllers/skrminie3v2.md",
+        "controllers/bttoctopusmain.md",
+        "controllers/einsyrambo-skrminie3v2.md",
+        "controllers/zm384main.md",
+        "controllers/minirambo.md",
+        "controllers/mellowflyd7.md",
+        "controllers/geetech-a30t.md",
+    ]}
+]
+
+[project.theme]
+variant = "modern"
+language = "en"
+features = [
+    "navigation.indexes" 
+]
+
+[[project.theme.palette]] 
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "blue"
+accent = "light blue"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "blue"
+accent = "light blue"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[project.extra]
+alternate = [
+    { name = "English", link = "/", lang = "en" },
+    { name = "Deutsch", link = "/de/", lang = "de" },
+]
+
+[project.extra.analytics]
+provider = "google"
+property = "G-ERRF9DWVTD"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/discord"
+link = "https://discord.gg/ekqxDhdGCg"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/3DCoded/3MS"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/youtube"
+link = "https://youtube.com/@3dcoded"

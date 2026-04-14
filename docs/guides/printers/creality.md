@@ -1,6 +1,6 @@
 ---
 comments: true
-icon: printers/creality
+# icon: printers/creality
 ---
 
 # Creality E3v3 series
