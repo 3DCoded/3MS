@@ -1,6 +1,7 @@
 ---
 comments: true
 icon: fontawesome/solid/flag-checkered
+description: Slicer setup for the 3MS and other Klipper MMUs with OrcaSlicer.
 title: First Print
 ---
 

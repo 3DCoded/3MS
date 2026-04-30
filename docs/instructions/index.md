@@ -1,5 +1,6 @@
 ---
 icon: octicons/list-ordered-24
+description: Instructions for building and setting up the 3MS modular multimaterial system for Klipper 3D printers.
 comments: true
 ---
 

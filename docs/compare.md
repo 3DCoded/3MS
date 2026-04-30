@@ -1,5 +1,6 @@
 ---
 icon: material/select-compare
+description: Comparison of various Klipper multimaterial systems, including 3MS, ERCF, BoxTurtle, Tradrack, Pico, QuattroBox, EMU, NightOwl, CoPrint, MMX
 comments: true
 ---
 
