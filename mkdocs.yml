@@ -11,8 +11,8 @@ plugins:
       max_length: 160
       trim: false
       fallback_if_short: false
-  - macros
   - step_helper
+  - macros
   - redirects:
       redirect_maps:
         'instructions/software-setup.md': 'https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS'
