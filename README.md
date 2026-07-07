@@ -1,5 +1,7 @@
 # The 3MS
 
+# Legacy: You're probably looking for the [main](https://github.com/3DCoded/3MS) branch.
+
 The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial **S**ystem
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/3dcoded/3MS)
