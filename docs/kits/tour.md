@@ -3,13 +3,9 @@ icon: material/map-search
 comments: true
 ---
 
-# 3MS Kits: A First Look
-
-After several months of planning and preparation, I am super excited to release this first look for 3MS kits.
+# 3MS Kits
 
 ## What's inside
-
-3MS kits include:
 
 <div class="grid cards" markdown>
 

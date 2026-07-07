@@ -7,14 +7,6 @@ icon: material/home
 
 The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial **S**ystem
 
-<style>
-    .kits-buy-btn {
-        width: 30%;
-    }
-</style>
-
-[![](buy-at-w3d.png){.kits-buy-btn}](https://west3d.com/products/3ms-the-simple-and-reliable-multi-material-system-kit-by-3dcoded)
-
 [![](https://media.printables.com/media/prints/1108644/images/9216280_de984a65-3c50-48c9-8b65-210f846f8b18_b5b7545c-3eb9-4bc8-a6c5-dec8cb7aa465/thumbs/inside/1600x1200/png/screenshot-2025-03-14-at-72728-am.webp)](https://www.printables.com/model/1108644-beta-3home-3ms-hybrid-official-modular-enclosure)
 
 [Configuration Generator](https://forked-lined-hour.anvil.app/)
@@ -22,8 +14,6 @@ The 3MS is short for MMMS, which stands for **M**odular **M**ulti **M**aterial *
 [![Discord Shield](https://discord.com/api/guilds/1307104511663411210/widget.png?style=banner2)](https://discord.gg/ekqxDhdGCg)
 
 The 3MS is a simple, compact, modular, reliable, budget-friendly multimaterial system.
-
-[![](buy-at-w3d.png){.kits-buy-btn}](https://west3d.com/products/3ms-the-simple-and-reliable-multi-material-system-kit-by-3dcoded)
 
 [Get Started :material-format-list-numbered:](instructions/index.md){ .md-button }
 
@@ -35,7 +25,7 @@ Here are a few reasons:
 
 - **Simplified Design**: Minimal mechanical complexity for increased reliability.
 - **Low Cost**: A 4-filament-unit 3MS can be built for ~$150 USD
-- **Easily Sourceable**: All the parts for the 3MS are available on Amazon. Alternatively, you can purchase a 3MS kit from [West3D](https://west3d.com/products/3ms-the-simple-and-reliable-multi-material-system-kit-by-3dcoded).
+- **Easily Sourceable**: All the parts for the 3MS are available on Amazon. Alternatively, you can purchase a 3MS kit from West3D.
 - **Comprehensive Documentation**: Step-by-step guides to ensure smooth setup and operation.
 - **Scalable**: Easily expand the system to handle any number of filaments.
 
@@ -96,3 +86,5 @@ To get started with the 3MS, see the [Master Instructions](instructions/index.md
     <iframe width="560" height="315" src="https://www.youtube.com/embed/o4Fvtdl-XjM?si=16Prr2Djn4XP0n6q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Ndw14nttqQs?si=JtjTmIGCPrT_j4LV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UaJ6kVc53ME?si=NVuBHkkHWb-64-Eb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

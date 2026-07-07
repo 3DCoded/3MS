@@ -12,7 +12,7 @@ The Creality K1 Ender 3 v3 series printers run a heavily modified Klipper and Li
 If you would like to use the 3MS on an E3v3, read on.
 
 !!! tip
-    Please read every step here carefully. If you run into issues, please reach out on the 3MS Discord (link on homepage) and note the step you are having trouble with.
+    Please read every step here carefully. If you run into issues, please reach out on the 3DCoded Discord (link on homepage) and note the step you are having trouble with.
 
 ??? warning "Disclaimer"
     I am not responsible for whatever happens to your machine! You proceed at your own risk and understand that you will likely void your warranty by proceeding.

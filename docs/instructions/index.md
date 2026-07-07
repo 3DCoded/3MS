@@ -17,7 +17,7 @@ comments: true
 
 Follow this guide to assemble your 3MS. A special thank you if you purchased a kit!
 
-Feel free to ask on the 3MS Discord any time if you need help during your build!
+Feel free to ask on the 3DCoded Discord any time if you need help during your build!
 
 [![Discord Shield](https://discord.com/api/guilds/1307104511663411210/widget.png?style=banner2)](https://discord.gg/ekqxDhdGCg)
 
