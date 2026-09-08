@@ -35,11 +35,11 @@ Wegen der Modularität des 3MS gibt es viele mögliche Arten es aufzubauen. Dies
 
     [**3. Elektronischer Zusammenbau**](setup/assembly.de.md#wiring){ .md-button }
 
-- [![](https://github.com/moggieuk/Happy-Hare/wiki/resources/happy_hare_logo.jpg)](https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS)
+- [![](https://github.com/moggieuk/Happy-Hare/wiki/resources/happy_hare_logo.jpg)](https://moggieuk.github.io/Happy-Hare-Doc/GettingStarted-3MS/)
 
     ---
     
-    [**4. Software einrichten**](https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS){ .md-button }
+    [**4. Software einrichten**](https://moggieuk.github.io/Happy-Hare-Doc/GettingStarted-3MS/){ .md-button }
 
 - [![](https://www.shutterstock.com/image-photo/electronic-vernier-caliper-close-view-600nw-2290639641.jpg)](#)
 

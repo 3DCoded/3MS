@@ -33,7 +33,7 @@ Feel free to ask on the 3DCoded Discord any time if you need help during your bu
 
 [**:material-puzzle: Final Assembly**](final-assembly.md){.inst-button .md-button}
 
-[**:material-console: Software Setup**](https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS){.inst-button .md-button}
+[**:material-console: Software Setup**](https://moggieuk.github.io/Happy-Hare-Doc/GettingStarted-3MS/){.inst-button .md-button}
 
 [**:material-code-json: Configuration**](config.md){.inst-button .md-button}
 

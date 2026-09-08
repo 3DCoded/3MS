@@ -2,4 +2,4 @@
 icon: material/console
 ---
 
-https://github.com/moggieuk/Happy-Hare/wiki/Quick-Start-3MS
+https://moggieuk.github.io/Happy-Hare-Doc/GettingStarted-3MS/
