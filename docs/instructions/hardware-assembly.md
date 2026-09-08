@@ -10,176 +10,172 @@ comments: true
 !!! info "Important"
     Please note that you must repeat this page four times to assemble all four extruders for your 3MS.
 
-.Stepn Locating the Extruders Internals
 
-gcard
-- stepi-0c308805
-    stepi-e8e488e8
+###**Step 1** Locating the Extruders Internals
+
+<div class="grid cards" markdown>
+- ![](/assets/images/web/0c308805.png){data-gallery="step1"}
+    ![](/assets/images/web/e8e488e8.png){.hidden data-gallery="step1"}
 
 - Begin by locating the extruders internals set in your 3MS kit.
 
-    .rcir. Remove one extruder internal set from the bag.
-.gcard
+    :red_circle: Remove one extruder internal set from the bag.
 
-.stepi-0c308805
-.stepi-e8e488e8 .red-ol
+</div>
+![](/assets/images/web/0c308805.png){.sm .red-ol data-gallery="step1-sm"}
+![](/assets/images/web/e8e488e8.png){.sm .red-ol data-gallery="step1-sm"}
 
-.Stepn Preparing the Stepper Gear
+###**Step 2** Preparing the Stepper Gear
 
-gcard
-- stepi-d4feff79
-    stepi-1b151bf9
-    stepi-958fec5a
+<div class="grid cards" markdown>
+- ![](/assets/images/web/d4feff79.png){data-gallery="step2"}
+    ![](/assets/images/web/1b151bf9.png){.hidden data-gallery="step2"}
+    ![](/assets/images/web/958fec5a.png){.hidden data-gallery="step2"}
 
 - Prepare the following for this step:
 
-    &emsp;.rcir. Stepper gear
+    :red_circle: Stepper gear
 
-    &emsp;.ocir. Stepper gear screw
+    :orange_circle: Stepper gear screw
 
-    &emsp;.gcir. 1.5mm Hex key
+    :green_circle: 1.5mm Hex key
 
-    .bcir. Using the 1.5mm hex key, screw the stepper gear screw into the stepper gear.
+    :blue_circle: Using the 1.5mm hex key, screw the stepper gear screw into the stepper gear.
 
-    .pcir. Ensure the screw is **slightly** sticking into the gear.
-.gcard
+    :purple_circle: Ensure the screw is **slightly** sticking into the gear.
 
-.stepi-d4feff79 .red-ol .green2-ol
-.stepi-1b151bf9 .blue-ol
-.stepi-958fec5a .purple-ol
+</div>
+![](/assets/images/web/d4feff79.png){.sm .red-ol .green2-ol data-gallery="step2-sm"}
+![](/assets/images/web/1b151bf9.png){.sm .blue-ol data-gallery="step2-sm"}
+![](/assets/images/web/958fec5a.png){.sm .purple-ol data-gallery="step2-sm"}
 
-.Stepn
+###**Step 3** Attach the Stepper Gear to the Stepper Motor
 
-gcard
-- stepi-1bfe7127
-    stepi-c0626dbf
-    stepi-38297a6a
-    stepi-8f72454e
+<div class="grid cards" markdown>
+- ![](/assets/images/web/1bfe7127.png){data-gallery="step3"}
+    ![](/assets/images/web/c0626dbf.png){.hidden data-gallery="step3"}
+    ![](/assets/images/web/38297a6a.png){.hidden data-gallery="step3"}
+    ![](/assets/images/web/8f72454e.png){.hidden data-gallery="step3"}
 
 - Attach the stepper gear to the stepper motor.
 
     Prepare the following for this step:
 
-    &emsp;.rcir. Stepper gear (prepared previously)
+    :red_circle: Stepper gear (prepared previously)
 
-    &emsp;.ocir. Stepper motor
+    :orange_circle: Stepper motor
 
-    .gcir. Slide the stepper gear onto the stepper motor shaft. Note the orientation of the motor. Ensure the stepper gear screw is on the same side as the flat-side of the stepper motor shaft.
+    :green_circle: Slide the stepper gear onto the stepper motor shaft. Note the orientation of the motor. Ensure the stepper gear screw is on the same side as the flat-side of the stepper motor shaft.
 
-    .bcir. Slide the edge of the gear to the edge of the stepper motor shaft.
+    :blue_circle: Slide the edge of the gear to the edge of the stepper motor shaft.
 
-    .pcir. Tighten the stepper gear firmly.
+    :purple_circle: Tighten the stepper gear firmly.
 
     !!! tip "Loctite"
         A bit of blue loctite here can help to ensure the grub screw doesn't work its way loose over time.
 
-.gcard
+</div>
+![](/assets/images/web/1bfe7127.png){.sm .red-ol .orange2-ol data-gallery="step3-sm"}
+![](/assets/images/web/c0626dbf.png){.sm .green-ol data-gallery="step3-sm"}
+![](/assets/images/web/38297a6a.png){.sm .blue-ol data-gallery="step3-sm"}
+![](/assets/images/web/8f72454e.png){.sm .purple-ol data-gallery="step3-sm"}
 
-.stepi-1bfe7127 .red-ol .orange2-ol
-.stepi-c0626dbf .green-ol
-.stepi-38297a6a .blue-ol
-.stepi-8f72454e .purple-ol
+###**Step 4** Filament Unit Parts Preparation
 
-.Stepn Filament Unit Parts Preparation
-
-gcard
-- stepi-729e7f78
+<div class="grid cards" markdown>
+- ![](/assets/images/web/729e7f78.png){data-gallery="step4"}
 
 - Prepare the following for the next steps:
 
-    &emsp;.rcir. Extruder
+    :red_circle: Extruder
 
-    &emsp;.ocir. 3x M3x30 SHCS (in extruders internals bag)
+    :orange_circle: 3x M3x30 SHCS (in extruders internals bag)
 
-    &emsp;.gcir. Filament Unit for 3HOME
+    :green_circle: Filament Unit for 3HOME
 
-    &emsp;.bcir. NEMA17 Stepper motor (prepared previously)
+    :blue_circle: NEMA17 Stepper motor (prepared previously)
 
-    &emsp;.pcir. 2.5mm Hex key
+    :purple_circle: 2.5mm Hex key
 
     !!! tip "Lubricant"
         It's recommended to apply a small amount of a lubricant like SuperLube to the white extruder gear.
 
-.gcard
+</div>
+![](/assets/images/web/729e7f78.png){.sm data-gallery="step4-sm"}
 
-.stepi-729e7f78
+###**Step 5** Assembling the Filament Unit
 
-.Stepn Assembling the Filament Unit
-
-gcard
-- stepi-29eb3f80
-    stepi-6425cdde
-    stepi-6f81694b
+<div class="grid cards" markdown>
+- ![](/assets/images/web/29eb3f80.png){data-gallery="step5"}
+    ![](/assets/images/web/6425cdde.png){.hidden data-gallery="step5"}
+    ![](/assets/images/web/6f81694b.png){.hidden data-gallery="step5"}
 
 - Assemble the filament unit.
 
-    .rcir. Place the 3x M3x30 SHCS through the extruder into the filament unit. Note the orientation.
+    :red_circle: Place the 3x M3x30 SHCS through the extruder into the filament unit. Note the orientation.
 
-    .ocir. Flip the filament unit over and place the NEMA17 stepper motor through the bottom. Note the orientation.
+    :orange_circle: Flip the filament unit over and place the NEMA17 stepper motor through the bottom. Note the orientation.
 
     - Even though the picture doesn't show it, it is recommended to plug the stepper cable before placing the stepper into the 3HOME.
 
-    .gcir. Flip the filament unit over again and tighten the three M3 bolts.
+    :green_circle: Flip the filament unit over again and tighten the three M3 bolts.
 
-.gcard
+</div>
+![](/assets/images/web/29eb3f80.png){.sm .red-ol data-gallery="step5-sm"}
+![](/assets/images/web/6425cdde.png){.sm .orange-ol data-gallery="step5-sm"}
+![](/assets/images/web/6f81694b.png){.sm .green-ol data-gallery="step5-sm"}
 
-.stepi-29eb3f80 .red-ol
-.stepi-6425cdde .orange-ol
-.stepi-6f81694b .green-ol
+###**Step 6** Installing the Tensioner
 
-.Stepn Installing the Tensioner
-
-gcard
-- stepi-1eda706f
-    stepi-3f7d688f
-    stepi-bb84d1ee
-    stepi-6fabb2dd
-    stepi-40df1ee1
-
-- Prepare the following for this step:
-
-    &emsp;.rcir. Tension screw (in extruder internals bag)
-
-    &emsp;.ocir. Tension washer (in extruder internals bag)
-
-    &emsp;.gcir. Tension spring (in extruder internals bag)
-
-    .bcir. Assemble the three as shown.
-
-    .pcir. Install the tensioner into the extruder through the hole on the side.
-
-.gcard
-
-.stepi-1eda706f .red-ol .green2-ol
-.stepi-3f7d688f .blue-ol
-.stepi-bb84d1ee .purple-ol
-.stepi-6fabb2dd .purple-ol
-.stepi-40df1ee1
-
-.Stepn Final Extruder Assembly
-
-gcard
-- stepi-4056f579
-    stepi-33da2106
-    stepi-1b45e4ab
-    stepi-28598e23
+<div class="grid cards" markdown>
+- ![](/assets/images/web/1eda706f.png){data-gallery="step6"}
+    ![](/assets/images/web/3f7d688f.png){.hidden data-gallery="step6"}
+    ![](/assets/images/web/bb84d1ee.png){.hidden data-gallery="step6"}
+    ![](/assets/images/web/6fabb2dd.png){.hidden data-gallery="step6"}
+    ![](/assets/images/web/40df1ee1.png){.hidden data-gallery="step6"}
 
 - Prepare the following for this step:
 
-    &emsp;.rcir. PC4-M10 fitting
+    :red_circle: Tension screw (in extruder internals bag)
 
-    &emsp;.bcir. Blue Collet clip
+    :orange_circle: Tension washer (in extruder internals bag)
 
-    .ocir. Locate the hole on the extruder and screw the PC4-M10 fitting into it.
+    :green_circle: Tension spring (in extruder internals bag)
 
-    .gcir. Insert the short length of PTFE into the ECAS fitting on the opposite end of the extruder.
+    :blue_circle: Assemble the three as shown.
 
-.gcard
+    :purple_circle: Install the tensioner into the extruder through the hole on the side.
 
-.stepi-4056f579 .red-ol .blue2-ol
-.stepi-33da2106 .orange-ol
-.stepi-1b45e4ab .orange-ol
-.stepi-28598e23 .green-ol
+</div>
+![](/assets/images/web/1eda706f.png){.sm .red-ol .green2-ol data-gallery="step6-sm"}
+![](/assets/images/web/3f7d688f.png){.sm .blue-ol data-gallery="step6-sm"}
+![](/assets/images/web/bb84d1ee.png){.sm .purple-ol data-gallery="step6-sm"}
+![](/assets/images/web/6fabb2dd.png){.sm .purple-ol data-gallery="step6-sm"}
+![](/assets/images/web/40df1ee1.png){.sm data-gallery="step6-sm"}
+
+###**Step 7** Final Extruder Assembly
+
+<div class="grid cards" markdown>
+- ![](/assets/images/web/4056f579.png){data-gallery="step7"}
+    ![](/assets/images/web/33da2106.png){.hidden data-gallery="step7"}
+    ![](/assets/images/web/1b45e4ab.png){.hidden data-gallery="step7"}
+    ![](/assets/images/web/28598e23.png){.hidden data-gallery="step7"}
+
+- Prepare the following for this step:
+
+    :red_circle: PC4-M10 fitting
+
+    :blue_circle: Blue Collet clip
+
+    :orange_circle: Locate the hole on the extruder and screw the PC4-M10 fitting into it.
+
+    :green_circle: Insert the short length of PTFE into the ECAS fitting on the opposite end of the extruder.
+
+</div>
+![](/assets/images/web/4056f579.png){.sm .red-ol .blue2-ol data-gallery="step7-sm"}
+![](/assets/images/web/33da2106.png){.sm .orange-ol data-gallery="step7-sm"}
+![](/assets/images/web/1b45e4ab.png){.sm .orange-ol data-gallery="step7-sm"}
+![](/assets/images/web/28598e23.png){.sm .green-ol data-gallery="step7-sm"}
 
 ### **Make sure to repeat this chapter a total of four times.**
 
@@ -188,3 +184,4 @@ gcard
 <!-- [:material-arrow-left: Printed Parts and Tools](printed-parts-and-tools.md){.md-button}
 
 [:material-arrow-right: Electronics Assembly](electronic-assembly.md){.md-button} -->
+

@@ -7,34 +7,34 @@ comments: true
 
 # Printed Parts & Tools
 
-.Stepn 3HOME Enclosure
 
-gcard
-- stepi-71587e5f
+###**Step 1** 3HOME Enclosure
+
+<div class="grid cards" markdown>
+- ![](/assets/images/web/71587e5f.png){data-gallery="step1"}
 
 - Print out the 3HOME Official Modular Enclosure for the 3MS.
 
     [:material-printer: Printables](https://www.printables.com/model/1108644-beta-3home-3ms-hybrid-official-modular-enclosure/files){.md-button}
 
-.gcard
+</div>
 
-.Stepn Y-splitter
+###**Step 2** Y-splitter
 
-gcard
-- stepi-058aba0c
+<div class="grid cards" markdown>
+- ![](/assets/images/web/058aba0c.png){data-gallery="step2"}
 
 - Print out one 4-way Y-splitter.
 
-    [:material-printer: Printables](https://www.printables.com/model/1103095-4-way-y-splitter-with-ecas04){.md-button}
-
     !!! note "Alternate Splitters"
         The linked Y-splitter uses five ECAS04 fittings, which are included in your 3MS kit. For your convenience, five PC4-M10 fittings are also included if you prefer to use an alternate Y-splitter design.
-.gcard
 
-.Stepn Hex Keys
+</div>
 
-gcard
-- stepi-0e6e186e
+###**Step 3** Hex Keys
+
+<div class="grid cards" markdown>
+- ![](/assets/images/web/0e6e186e.png){data-gallery="step3"}
 
 - Ensure you have the following hex keys:
 
@@ -44,13 +44,12 @@ gcard
 
     :blue_circle: 2.5mm (included in the kit but recommended to get your own)
 
-.gcard
+</div>
 
-.Stepn Phillips & Flat-head Screwdrivers
+###**Step 4** Phillips & Flat-head Screwdrivers
 
-gcard
-
-- stepi-e62cc9e2
+<div class="grid cards" markdown>
+- ![](/assets/images/web/e62cc9e2.png){data-gallery="step4"}
 
 - Ensure you have:
 
@@ -58,34 +57,31 @@ gcard
 
     - A flat-head screwdriver (used for the screw terminals on the SKR Pico)
 
-.gcard
+</div>
 
-.Stepn Wire Strippers
+###**Step 5** Wire Strippers
 
-gcard
-- stepi-a92eec86
+<div class="grid cards" markdown>
+- ![](/assets/images/web/a92eec86.png){data-gallery="step5"}
 
-- .rcir. Ensure you have wire strippers capable of stripping 24AWG wire (0.25mm^2^)
+- :red_circle: Ensure you have wire strippers capable of stripping 24AWG wire (0.25mm^2^)
 
-.gcard
+</div>
 
-.Stepn Side Cutters
+###**Step 6** Side Cutters
 
-gcard
-
-- stepi-803a96e1
+<div class="grid cards" markdown>
+- ![](/assets/images/web/803a96e1.png){data-gallery="step6"}
 
 - Ensure you have side cutters (used for cutting zip ties)
 
-.gcard
+</div>
 
-.Stepn PTFE Cutters
+###**Step 7** PTFE Cutters
 
-gcard
-
-- stepi-1481b4a6
+<div class="grid cards" markdown>
+- ![](/assets/images/web/1481b4a6.png){data-gallery="step7"}
 
 - Ensure you have a PTFE cutting tool. Alternatively, you can [print](https://www.printables.com/model/360710) a tool to cut the PTFE.
 
-.gcard
-
+</div>

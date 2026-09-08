@@ -8,143 +8,133 @@ comments: true
 
 # Electronics Assembly
 
-.Stepn Removing Supports: Part 1
 
-gcard
+###**Step 1** Removing Supports: Part 1
 
-- stepi-e30aa8fc
-    stepi-c34ecb1c
-    stepi-e6d78a9a
+<div class="grid cards" markdown>
+- ![](/assets/images/web/e30aa8fc.png){data-gallery="step1"}
+    ![](/assets/images/web/c34ecb1c.png){.hidden data-gallery="step1"}
+    ![](/assets/images/web/e6d78a9a.png){.hidden data-gallery="step1"}
 
 - Remove the built-in supports from the SKR Pico case.
 
-    .rcir. Prepare either `SKR Pico Bottom.stl` or `SKR Pico Bottom (small).stl` (shown)
+    :red_circle: Prepare either `SKR Pico Bottom.stl` or `SKR Pico Bottom (small).stl` (shown)
 
-    .gcir. Remove the indicated built-in support.
+    :green_circle: Remove the indicated built-in support.
 
-.gcard
+</div>
+![](/assets/images/web/e30aa8fc.png){.sm .red-ol data-gallery="step1-sm"}
+![](/assets/images/web/c34ecb1c.png){.sm .green-ol data-gallery="step1-sm"}
+![](/assets/images/web/e6d78a9a.png){.sm data-gallery="step1-sm"}
 
-.stepi-e30aa8fc .red-ol
-.stepi-c34ecb1c .green-ol
-.stepi-e6d78a9a
+###**Step 2** Removing Supports: Part 2
 
-.Stepn Removing Supports: Part 2
-
-gcard
-
-- stepi-1c4e396a
-    stepi-09ef7f74
+<div class="grid cards" markdown>
+- ![](/assets/images/web/1c4e396a.png){data-gallery="step2"}
+    ![](/assets/images/web/09ef7f74.png){.hidden data-gallery="step2"}
 
 - Remove the built-in supports from the case.
 
-    .rcir. Remove the indicated supports from the case.
+    :red_circle: Remove the indicated supports from the case.
 
-.gcard
+</div>
+![](/assets/images/web/1c4e396a.png){.sm .red-ol data-gallery="step2-sm"}
+![](/assets/images/web/09ef7f74.png){.sm data-gallery="step2-sm"}
 
-.stepi-1c4e396a .red-ol
-.stepi-09ef7f74
+###**Step 3** Installing the Board
 
-.Stepn Installing the Board
-
-gcard
-
-- stepi-774c115b
-    stepi-ae32f565
-    stepi-97215347
+<div class="grid cards" markdown>
+- ![](/assets/images/web/774c115b.png){data-gallery="step3"}
+    ![](/assets/images/web/ae32f565.png){.hidden data-gallery="step3"}
+    ![](/assets/images/web/97215347.png){.hidden data-gallery="step3"}
 
 - Install the SKR Pico board into the case.
 
     Prepare the following for this step:
 
-    &emsp;.rcir. 2mm Hex key
+    :red_circle: 2mm Hex key
 
-    &emsp;.ocir. 4x mounting bolts (included with the SKR Pico)
+    :orange_circle: 4x mounting bolts (included with the SKR Pico)
 
-    &emsp;.gcir. SKR Pico board
+    :green_circle: SKR Pico board
 
-    .bcir. Place the SKR Pico board onto the previously prepared case.
+    :blue_circle: Place the SKR Pico board onto the previously prepared case.
 
-    .pcir. Using the four mounting bolts and the hex key, fasten the SKR Pico onto the case.
+    :purple_circle: Using the four mounting bolts and the hex key, fasten the SKR Pico onto the case.
 
-.gcard
+</div>
+![](/assets/images/web/774c115b.png){.sm .red-ol .green2-ol data-gallery="step3-sm"}
+![](/assets/images/web/ae32f565.png){.sm .blue-ol data-gallery="step3-sm"}
+![](/assets/images/web/97215347.png){.sm .purple-ol data-gallery="step3-sm"}
 
-.stepi-774c115b .red-ol .green2-ol
-.stepi-ae32f565 .blue-ol
-.stepi-97215347 .purple-ol
+###**Step 4** Preparing the Power Cables
 
-.Stepn Preparing the Power Cables
-
-gcard
-
-- stepi-96a2ea1e
-    stepi-a56a33ef
-    stepi-514c9a29
-    stepi-2b4ba466
+<div class="grid cards" markdown>
+- ![](/assets/images/web/96a2ea1e.png){data-gallery="step4"}
+    ![](/assets/images/web/a56a33ef.png){.hidden data-gallery="step4"}
+    ![](/assets/images/web/514c9a29.png){.hidden data-gallery="step4"}
+    ![](/assets/images/web/2b4ba466.png){.hidden data-gallery="step4"}
 
 - Strip the power cables and prepare for the next steps.
 
     Prepare the following for this step:
 
-    &emsp;.rcir. Power cables
+    :red_circle: Power cables
 
-    &emsp;.ocir. Wire strippers
+    :orange_circle: Wire strippers
 
-    .gcir. Split both ends of the wires as shown.
+    :green_circle: Split both ends of the wires as shown.
 
-    .bcir. Strip a short length off of all four ends of the wires.
+    :blue_circle: Strip a short length off of all four ends of the wires.
 
-    .pcir. Twist the ends of the wires.
+    :purple_circle: Twist the ends of the wires.
 
-.gcard
- -r
-.stepi-96a2ea1e .red-ol .orange2-ol
-.stepi-a56a33ef .green-ol
-.stepi-514c9a29 .blue-ol .purple2-ol
-.stepi-2b4ba466
+</div>
+![](/assets/images/web/96a2ea1e.png){.sm .red-ol .orange2-ol data-gallery="step4-sm"}
+![](/assets/images/web/a56a33ef.png){.sm .green-ol data-gallery="step4-sm"}
+![](/assets/images/web/514c9a29.png){.sm .blue-ol .purple2-ol data-gallery="step4-sm"}
+![](/assets/images/web/2b4ba466.png){.sm data-gallery="step4-sm"}
 
-.Stepn Connecting the PSU
+###**Step 5** Connecting the PSU
 
 TODO...
 
-.Stepn Connecting the Power Cables
+###**Step 6** Connecting the Power Cables
 
-gcard
-
-- stepi-a54b6b9e
-    stepi-c838d2da
-    stepi-fd33ee24
-    stepi-25994019
+<div class="grid cards" markdown>
+- ![](/assets/images/web/a54b6b9e.png){data-gallery="step6"}
+    ![](/assets/images/web/c838d2da.png){.hidden data-gallery="step6"}
+    ![](/assets/images/web/fd33ee24.png){.hidden data-gallery="step6"}
+    ![](/assets/images/web/25994019.png){.hidden data-gallery="step6"}
 
 - Connect the power cables from the PSU to the SKR Pico.
 
     Prepare the following for this step:
 
-    &emsp;.rcir. Power cables and PSU
+    :red_circle: Power cables and PSU
 
-    &emsp;.ocir. SKR Pico with case
+    :orange_circle: SKR Pico with case
 
-    &emsp; Flat-head screwdriver
+    Flat-head screwdriver
 
-    .gcir. Loosen both power terminals on the SKR.
+    :green_circle: Loosen both power terminals on the SKR.
 
-    .rcir. Plug the **red** wire into the **positive** terminal on the SKR.
+    :red_circle: Plug the **red** wire into the **positive** terminal on the SKR.
 
-    .bcir. Plug the **black** wire into the **negative** terminal on the SKR.
+    :blue_circle: Plug the **black** wire into the **negative** terminal on the SKR.
 
-    .pcir. Firmly tighten both power terminals on the SKR.
+    :purple_circle: Firmly tighten both power terminals on the SKR.
 
-.gcard
+</div>
+![](/assets/images/web/a54b6b9e.png){.sm .red-ol data-gallery="step6-sm"}
+![](/assets/images/web/c838d2da.png){.sm .green-ol data-gallery="step6-sm"}
+![](/assets/images/web/fd33ee24.png){.sm .red-ol .blue2-ol data-gallery="step6-sm"}
+![](/assets/images/web/25994019.png){.sm .purple-ol data-gallery="step6-sm"}
 
-.stepi-a54b6b9e .red-ol
-.stepi-c838d2da .green-ol
-.stepi-fd33ee24 .red-ol .blue2-ol
-.stepi-25994019 .purple-ol
+###**Step 7** Preparing the 3HOME
 
-.Stepn Preparing the 3HOME
-
-gcard
-
-- stepi-f5a97666
+<div class="grid cards" markdown>
+- ![](/assets/images/web/f5a97666.png){data-gallery="step7"}
 
 - Add M3 square nuts to the 3HOME.
 
@@ -154,80 +144,63 @@ gcard
 
     - 2x M3nS Square nuts
 
-    .rcir. Insert the two square nuts into any joiner of the 3HOME
+    :red_circle: Insert the two square nuts into any joiner of the 3HOME
 
-.gcard
+</div>
+![](/assets/images/web/f5a97666.png){.sm .red-ol data-gallery="step7-sm"}
 
-.stepi-f5a97666 .red-ol
+###**Step 8** Attaching to the 3HOME
 
-.Stepn Attaching to the 3HOME
-
-gcard
-
-- stepi-88e17048
-    stepi-6e986e52
+<div class="grid cards" markdown>
+- ![](/assets/images/web/88e17048.png){data-gallery="step8"}
+    ![](/assets/images/web/6e986e52.png){.hidden data-gallery="step8"}
 
 - Attach the SKR Pico case to the 3HOME.
 
     Prepare the following for this step:
 
-    &emsp;.rcir. 2.5mm Hex key
+    :red_circle: 2.5mm Hex key
 
-    &emsp;.ocir. 2x M3x30 SHCS
+    :orange_circle: 2x M3x30 SHCS
 
-    &emsp;.gcir. SKR Pico case (prepared previously)
+    :green_circle: SKR Pico case (prepared previously)
 
-    .bcir. Fasten the SKR Pico to the 3HOME with the two M3x30 SHCS using the 2.5mm hex key.
+    :blue_circle: Fasten the SKR Pico to the 3HOME with the two M3x30 SHCS using the 2.5mm hex key.
 
-.gcard
+</div>
+![](/assets/images/web/88e17048.png){.sm .red-ol .green2-ol data-gallery="step8-sm"}
+![](/assets/images/web/6e986e52.png){.sm .blue-ol data-gallery="step8-sm"}
 
-.stepi-88e17048 .red-ol .green2-ol
-.stepi-6e986e52 .blue-ol
-
-.Stepn Wire Management
+###**Step 9** Wire Management
 
 Begin by stretching out each stepper motor wire away from the 3HOME as shown.
 
-![](7b9ae602.png){.mdimg}
+![](/assets/images/web/7b9ae602.png){.mdimg}
 
 Next, take the rightmost wire (T0) and form it into the shape shown.
 
-![](64eeec85.png){.mdimg}
+![](/assets/images/web/64eeec85.png){.mdimg}
 
 Fold it back over itself several times until a short length is remaining. Use a zip tie to secure and cut off the excess from the zip tie.
 
-![](eb382317.png){.mdimg}
+![](/assets/images/web/eb382317.png){.mdimg}
 
 Push the cable bundle into the SKR case and route the wire as shown with the green line.
 
-![](6714f09d.png){.mdimg}
+![](/assets/images/web/6714f09d.png){.mdimg}
 
 Plug the stepper cable into the second-to-left port on the SKR (when viewed upside down as shown)
 
-![](7b693bf8.png){.mdimg}
+![](/assets/images/web/7b693bf8.png){.mdimg}
 
 Repeat the same process for the stepper motor to the left of the previous one. Plug it into the port to the right of the first one.
 
-![](7f892d9d.png){.mdimg}
+![](/assets/images/web/7f892d9d.png){.mdimg}
 
 Repeat the process for the next stepper motor in line, routing the wire as shown with the green line.
 
-![](8c228c68.png){.mdimg}
+![](/assets/images/web/8c228c68.png){.mdimg}
 
 Plug the stepper into the port to the right of the previous one.
 
-![](7aafd269.png){.mdimg}
-
-Repeat the process for the final stepper, routing the wire as shown with the green line.
-
-![](6125f8b5.png){.mdimg}
-
-Plug this stepper into the leftmost plug on the SKR.
-
-![](3f66eb08.png){.mdimg}
-
-:tada: You're done with electronics assembly!
-
-<!-- [:material-arrow-left: Extruders Assembly](extruder-assembly.md){.md-button}
-
-[:material-arrow-right: Software Setup](software-setup.md){.md-button} -->
+![](/assets/images/web/7aafd269.png){.mdimg}

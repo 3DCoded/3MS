@@ -46,7 +46,7 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
 
     ---
 
-    ![](boxturtle.png)
+    ![](/assets/images/compare/boxturtle.png)
 
     ---
 
@@ -72,7 +72,7 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
 
     ---
 
-    ![](quattrobox.jpg)
+    ![](/assets/images/compare/quattrobox.jpg)
 
     ---
 
@@ -96,7 +96,7 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
 
     ---
 
-    ![](nightowl.png)
+    ![](/assets/images/compare/nightowl.png)
 
     ---
 
@@ -118,7 +118,7 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
 
     ---
 
-    ![](ercf.jpg)
+    ![](/assets/images/compare/ercf.jpg)
 
     ---
 
@@ -144,7 +144,7 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
 
     ---
 
-    ![](tradrack.png)
+    ![](/assets/images/compare/tradrack.png)
 
     ---
 
@@ -194,7 +194,7 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
 
     ---
 
-    ![](mmx.webp)
+    ![](/assets/images/compare/mmx.webp)
 
     ---
 
@@ -218,7 +218,7 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
 
     ---
 
-    ![](3dchameleon.jpeg)
+    ![](/assets/images/compare/3dchameleon.jpeg)
 
     ---
 
@@ -242,7 +242,7 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
 
     ---
 
-    ![](smuff.png)
+    ![](/assets/images/compare/smuff.png)
     
     ---
 
@@ -264,7 +264,7 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
 
     ---
 
-    ![](mmu3.png)
+    ![](/assets/images/compare/mmu3.png)
 
     ---
 
@@ -288,7 +288,7 @@ Not sure if you want to use the 3MS? Check this comparison between several commo
 
     ---
 
-    ![](coprintkcm.webp)
+    ![](/assets/images/compare/coprintkcm.webp)
 
     ---
 

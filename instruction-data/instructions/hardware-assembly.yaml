@@ -1,0 +1,163 @@
+output: instructions/hardware-assembly.md
+metadata:
+  icon: octicons/gear-24
+  comments: true
+before: |
+  <link rel="stylesheet" href="../../../assets/css/kits.css">
+
+  # Hardware Assembly
+
+  !!! info "Important"
+      Please note that you must repeat this page four times to assemble all four extruders for your 3MS.
+steps:
+  - title: Locating the Extruders Internals
+    images: [0c308805, e8e488e8]
+    body: |
+      Begin by locating the extruders internals set in your 3MS kit.
+
+          :red_circle: Remove one extruder internal set from the bag.
+    image_styles:
+      - id: 0c308805
+        classes: red-ol
+      - id: e8e488e8
+        classes: red-ol
+  - title: Preparing the Stepper Gear
+    images: [d4feff79, 1b151bf9, 958fec5a]
+    body: |
+      Prepare the following for this step:
+
+          :red_circle: Stepper gear
+
+          :orange_circle: Stepper gear screw
+
+          :green_circle: 1.5mm Hex key
+
+          :blue_circle: Using the 1.5mm hex key, screw the stepper gear screw into the stepper gear.
+
+          :purple_circle: Ensure the screw is **slightly** sticking into the gear.
+    image_styles:
+      - id: d4feff79
+        classes: red-ol green2-ol
+      - id: 1b151bf9
+        classes: blue-ol
+      - id: 958fec5a
+        classes: purple-ol
+  - title: Attach the Stepper Gear to the Stepper Motor
+    images: [1bfe7127, c0626dbf, 38297a6a, 8f72454e]
+    body: |
+      Attach the stepper gear to the stepper motor.
+
+          Prepare the following for this step:
+
+          :red_circle: Stepper gear (prepared previously)
+
+          :orange_circle: Stepper motor
+
+          :green_circle: Slide the stepper gear onto the stepper motor shaft. Note the orientation of the motor. Ensure the stepper gear screw is on the same side as the flat-side of the stepper motor shaft.
+
+          :blue_circle: Slide the edge of the gear to the edge of the stepper motor shaft.
+
+          :purple_circle: Tighten the stepper gear firmly.
+
+          !!! tip "Loctite"
+              A bit of blue loctite here can help to ensure the grub screw doesn't work its way loose over time.
+    image_styles:
+      - id: 1bfe7127
+        classes: red-ol orange2-ol
+      - id: c0626dbf
+        classes: green-ol
+      - id: 38297a6a
+        classes: blue-ol
+      - id: 8f72454e
+        classes: purple-ol
+  - title: Filament Unit Parts Preparation
+    images: [729e7f78]
+    body: |
+      Prepare the following for the next steps:
+
+          :red_circle: Extruder
+
+          :orange_circle: 3x M3x30 SHCS (in extruders internals bag)
+
+          :green_circle: Filament Unit for 3HOME
+
+          :blue_circle: NEMA17 Stepper motor (prepared previously)
+
+          :purple_circle: 2.5mm Hex key
+
+          !!! tip "Lubricant"
+              It's recommended to apply a small amount of a lubricant like SuperLube to the white extruder gear.
+    image_styles:
+      - id: 729e7f78
+  - title: Assembling the Filament Unit
+    images: [29eb3f80, 6425cdde, 6f81694b]
+    body: |
+      Assemble the filament unit.
+
+          :red_circle: Place the 3x M3x30 SHCS through the extruder into the filament unit. Note the orientation.
+
+          :orange_circle: Flip the filament unit over and place the NEMA17 stepper motor through the bottom. Note the orientation.
+
+          - Even though the picture doesn't show it, it is recommended to plug the stepper cable before placing the stepper into the 3HOME.
+
+          :green_circle: Flip the filament unit over again and tighten the three M3 bolts.
+    image_styles:
+      - id: 29eb3f80
+        classes: red-ol
+      - id: 6425cdde
+        classes: orange-ol
+      - id: 6f81694b
+        classes: green-ol
+  - title: Installing the Tensioner
+    images: [1eda706f, 3f7d688f, bb84d1ee, 6fabb2dd, 40df1ee1]
+    body: |
+      Prepare the following for this step:
+
+          :red_circle: Tension screw (in extruder internals bag)
+
+          :orange_circle: Tension washer (in extruder internals bag)
+
+          :green_circle: Tension spring (in extruder internals bag)
+
+          :blue_circle: Assemble the three as shown.
+
+          :purple_circle: Install the tensioner into the extruder through the hole on the side.
+    image_styles:
+      - id: 1eda706f
+        classes: red-ol green2-ol
+      - id: 3f7d688f
+        classes: blue-ol
+      - id: bb84d1ee
+        classes: purple-ol
+      - id: 6fabb2dd
+        classes: purple-ol
+      - id: 40df1ee1
+  - title: Final Extruder Assembly
+    images: [4056f579, 33da2106, 1b45e4ab, 28598e23]
+    body: |
+      Prepare the following for this step:
+
+          :red_circle: PC4-M10 fitting
+
+          :blue_circle: Blue Collet clip
+
+          :orange_circle: Locate the hole on the extruder and screw the PC4-M10 fitting into it.
+
+          :green_circle: Insert the short length of PTFE into the ECAS fitting on the opposite end of the extruder.
+    image_styles:
+      - id: 4056f579
+        classes: red-ol blue2-ol
+      - id: 33da2106
+        classes: orange-ol
+      - id: 1b45e4ab
+        classes: orange-ol
+      - id: 28598e23
+        classes: green-ol
+after: |
+  ### **Make sure to repeat this chapter a total of four times.**
+
+  :tada: You're done with extruders assembly!
+
+  <!-- [:material-arrow-left: Printed Parts and Tools](printed-parts-and-tools.md){.md-button}
+
+  [:material-arrow-right: Electronics Assembly](electronic-assembly.md){.md-button} -->

@@ -1,0 +1,180 @@
+output: instructions/electronic-assembly.md
+metadata:
+  title: Electronics Assembly
+  icon: fontawesome/solid/microchip
+  comments: true
+before: |
+  <link rel="stylesheet" href="../../../assets/css/kits.css">
+
+  # Electronics Assembly
+steps:
+  - title: 'Removing Supports: Part 1'
+    images: [e30aa8fc, c34ecb1c, e6d78a9a]
+    body: |
+      Remove the built-in supports from the SKR Pico case.
+
+          :red_circle: Prepare either `SKR Pico Bottom.stl` or `SKR Pico Bottom (small).stl` (shown)
+
+          :green_circle: Remove the indicated built-in support.
+    image_styles:
+      - id: e30aa8fc
+        classes: red-ol
+      - id: c34ecb1c
+        classes: green-ol
+      - id: e6d78a9a
+  - title: 'Removing Supports: Part 2'
+    images: [1c4e396a, 09ef7f74]
+    body: |
+      Remove the built-in supports from the case.
+
+          :red_circle: Remove the indicated supports from the case.
+    image_styles:
+      - id: 1c4e396a
+        classes: red-ol
+      - id: 09ef7f74
+  - title: Installing the Board
+    images: [774c115b, ae32f565, 97215347]
+    body: |
+      Install the SKR Pico board into the case.
+
+          Prepare the following for this step:
+
+          :red_circle: 2mm Hex key
+
+          :orange_circle: 4x mounting bolts (included with the SKR Pico)
+
+          :green_circle: SKR Pico board
+
+          :blue_circle: Place the SKR Pico board onto the previously prepared case.
+
+          :purple_circle: Using the four mounting bolts and the hex key, fasten the SKR Pico onto the case.
+    image_styles:
+      - id: 774c115b
+        classes: red-ol green2-ol
+      - id: ae32f565
+        classes: blue-ol
+      - id: 97215347
+        classes: purple-ol
+  - title: Preparing the Power Cables
+    images: [96a2ea1e, a56a33ef, 514c9a29, 2b4ba466]
+    body: |
+      Strip the power cables and prepare for the next steps.
+
+          Prepare the following for this step:
+
+          :red_circle: Power cables
+
+          :orange_circle: Wire strippers
+
+          :green_circle: Split both ends of the wires as shown.
+
+          :blue_circle: Strip a short length off of all four ends of the wires.
+
+          :purple_circle: Twist the ends of the wires.
+    image_styles:
+      - id: 96a2ea1e
+        classes: red-ol orange2-ol
+      - id: a56a33ef
+        classes: green-ol
+      - id: 514c9a29
+        classes: blue-ol purple2-ol
+      - id: 2b4ba466
+  - title: Connecting the PSU
+    body: |
+      TODO...
+  - title: Connecting the Power Cables
+    images: [a54b6b9e, c838d2da, fd33ee24, 25994019]
+    body: |
+      Connect the power cables from the PSU to the SKR Pico.
+
+          Prepare the following for this step:
+
+          :red_circle: Power cables and PSU
+
+          :orange_circle: SKR Pico with case
+
+          Flat-head screwdriver
+
+          :green_circle: Loosen both power terminals on the SKR.
+
+          :red_circle: Plug the **red** wire into the **positive** terminal on the SKR.
+
+          :blue_circle: Plug the **black** wire into the **negative** terminal on the SKR.
+
+          :purple_circle: Firmly tighten both power terminals on the SKR.
+    image_styles:
+      - id: a54b6b9e
+        classes: red-ol
+      - id: c838d2da
+        classes: green-ol
+      - id: fd33ee24
+        classes: red-ol blue2-ol
+      - id: 25994019
+        classes: purple-ol
+  - title: Preparing the 3HOME
+    images: [f5a97666]
+    body: |
+      Add M3 square nuts to the 3HOME.
+
+          Prepare the following for this step:
+
+          - 3HOME
+
+          - 2x M3nS Square nuts
+
+          :red_circle: Insert the two square nuts into any joiner of the 3HOME
+    image_styles:
+      - id: f5a97666
+        classes: red-ol
+  - title: Attaching to the 3HOME
+    images: [88e17048, 6e986e52]
+    body: |
+      Attach the SKR Pico case to the 3HOME.
+
+          Prepare the following for this step:
+
+          :red_circle: 2.5mm Hex key
+
+          :orange_circle: 2x M3x30 SHCS
+
+          :green_circle: SKR Pico case (prepared previously)
+
+          :blue_circle: Fasten the SKR Pico to the 3HOME with the two M3x30 SHCS using the 2.5mm hex key.
+    image_styles:
+      - id: 88e17048
+        classes: red-ol green2-ol
+      - id: 6e986e52
+        classes: blue-ol
+  - title: Wire Management
+    body: |
+      Begin by stretching out each stepper motor wire away from the 3HOME as shown.
+
+      ![](7b9ae602.png){.mdimg}
+
+      Next, take the rightmost wire (T0) and form it into the shape shown.
+
+      ![](64eeec85.png){.mdimg}
+
+      Fold it back over itself several times until a short length is remaining. Use a zip tie to secure and cut off the excess from the zip tie.
+
+      ![](eb382317.png){.mdimg}
+
+      Push the cable bundle into the SKR case and route the wire as shown with the green line.
+
+      ![](6714f09d.png){.mdimg}
+
+      Plug the stepper cable into the second-to-left port on the SKR (when viewed upside down as shown)
+
+      ![](7b693bf8.png){.mdimg}
+
+      Repeat the same process for the stepper motor to the left of the previous one. Plug it into the port to the right of the first one.
+
+      ![](7f892d9d.png){.mdimg}
+
+      Repeat the process for the next stepper motor in line, routing the wire as shown with the green line.
+
+      ![](8c228c68.png){.mdimg}
+
+      Plug the stepper into the port to the right of the previous one.
+
+      ![](7aafd269.png){.mdimg}

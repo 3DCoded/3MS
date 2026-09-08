@@ -1,0 +1,52 @@
+output: instructions/printed-parts-and-tools.md
+metadata:
+  icon: material/tools
+  comments: true
+before: |
+  <link rel="stylesheet" href="../../../assets/css/kits.css">
+
+  # Printed Parts & Tools
+steps:
+  - title: 3HOME Enclosure
+    images: [71587e5f]
+    body: |
+      Print out the 3HOME Official Modular Enclosure for the 3MS.
+
+          [:material-printer: Printables](https://www.printables.com/model/1108644-beta-3home-3ms-hybrid-official-modular-enclosure/files){.md-button}
+  - title: Y-splitter
+    images: [058aba0c]
+    body: |
+      Print out one 4-way Y-splitter.
+
+          !!! note "Alternate Splitters"
+              The linked Y-splitter uses five ECAS04 fittings, which are included in your 3MS kit. For your convenience, five PC4-M10 fittings are also included if you prefer to use an alternate Y-splitter design.
+  - title: Hex Keys
+    images: [0e6e186e]
+    body: |
+      Ensure you have the following hex keys:
+
+          :red_circle: 1.5mm (included in kit but recommended to get your own)
+
+          :green_circle: 2mm
+
+          :blue_circle: 2.5mm (included in the kit but recommended to get your own)
+  - title: Phillips & Flat-head Screwdrivers
+    images: [e62cc9e2]
+    body: |
+      Ensure you have:
+
+          - A phillips-head screwdriver (used for the screw terminals for the PSU)
+
+          - A flat-head screwdriver (used for the screw terminals on the SKR Pico)
+  - title: Wire Strippers
+    images: [a92eec86]
+    body: |
+      :red_circle: Ensure you have wire strippers capable of stripping 24AWG wire (0.25mm^2^)
+  - title: Side Cutters
+    images: [803a96e1]
+    body: |
+      Ensure you have side cutters (used for cutting zip ties)
+  - title: PTFE Cutters
+    images: [1481b4a6]
+    body: |
+      Ensure you have a PTFE cutting tool. Alternatively, you can [print](https://www.printables.com/model/360710) a tool to cut the PTFE.
