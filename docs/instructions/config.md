@@ -57,6 +57,18 @@ To configure your toolhead sensor (a sensor right **after** your extruder), set 
 
 There are many key distances to set up in Happy Hare firmware.
 
+### Parking Position
+
+The parking position is the location your filament should park when idle, measured from your gate endstop. This should be set to ~1-2cm above your Y-splitter.
+
+To determine this value, begin by moving the filament in gate 0 to the ideal parking position by hand.
+
+![](/assets/images/web/6ed86262.png)
+
+Estimate the distance from your extruder to the ideal parking position. You can use a piece of filament outside of the tube and use a ruler to help measure this. In the diagram above, it's the distance between the red and blue dots. 
+
+Save this value for configuration in the next step.
+
 ### Homing Distance
 
 Firstly, configure the maximum distance Happy Hare should attempt to load filament to the homing sensor, before "giving up" and deciding that the spool is empty. This should usually be ~150% the distance from your filament parking position to the sensor.

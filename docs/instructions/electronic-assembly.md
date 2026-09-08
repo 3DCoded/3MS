@@ -97,7 +97,20 @@ comments: true
 
 ###**Step 5** Connecting the PSU
 
-TODO...
+Connect the power cables to the PSU
+
+  Prepare the following for this step:
+
+  - Power cables
+  - PSU
+  - Phillips-head screwdriver
+
+  To connect:
+
+  1. Loosen both power terminals on the PSU.
+  2. Plug the **red** wire into the **positive** terminal on the PSU.
+  3. Plug the **black** wire into the **negative** terminal on the PSU.
+  4. Tighten both power terminals on the PSU.
 
 ###**Step 6** Connecting the Power Cables
 
@@ -204,3 +217,14 @@ Repeat the process for the next stepper motor in line, routing the wire as shown
 Plug the stepper into the port to the right of the previous one.
 
 ![](/assets/images/web/7aafd269.png){.mdimg}
+
+Repeat the process for the final stepper, routing the wire as shown with the green line.
+
+![](/assets/images/web/6125f8b5.png){.mdimg}
+
+Plug this stepper into the leftmost plug on the SKR.
+
+![](/assets/images/web/3f66eb08.png){.mdimg}
+
+:tada: You're done with electronics assembly!
+

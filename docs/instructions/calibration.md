@@ -7,11 +7,8 @@ icon: fontawesome/solid/ruler
 
 Follow this guide to calibrate your 3MS.
 
-!!! warning "Under Construction"
-    This guide is under construction for Happy Hare v4. The current instructions below are for v3.
-
 !!! info "Original Documentation"
-    This guide is a simplified version of [the official Happy Hare documentation](https://github.com/moggieuk/Happy-Hare/wiki/MMU-Calibration). I highly recommend you read it as it contains useful information and goes more in detail if you are having trouble with the calibrations.
+    This guide is a simplified version of [the official Happy Hare documentation](https://moggieuk.github.io/Happy-Hare-Doc/Calibration/). I highly recommend you read it as it contains useful information and goes more in detail if you are having trouble with the calibrations.
 
 ## Verify Filament Sensors
 
@@ -20,7 +17,7 @@ Before calibrating, it is important to ensure that your filament sensors are wor
 Run in your Klipper console:
 
 ```
-QUERY_ENDSTOPS
+MMU_SENSORS
 ```
 
 and verify the output. For each endstop, `open` means no filament detected, and `TRIGGERED` means filament present. Re-run the command several times, inserting/removing filament to each of the sensors, to verify that each filament sensor properly detects filament.
@@ -54,15 +51,14 @@ For each filament unit (gate), repeat the following steps:
 
 1. Repeat step **3**. The filament should move exactly `100mm`.
 
-## Configuring the Parking Position
+
+### Tuning the Parking Position (with an extruder entry sensor)
 
 The parking position is the location your filament should park when idle, measured from your gate endstop. This should be set to ~1-2cm above your Y-splitter.
 
-This parameter is called `gate_parking_distance` in `mmu_parameters.cfg`.
+To tune this value, begin by moving the filament in gate 0 to the ideal parking position by hand.
 
-To determine this value, begin by moving the filament in gate 0 to the ideal parking position by hand.
-
-![](6ed86262.png)
+![](/assets/images/web/6ed86262.png)
 
 === "With an extruder entry sensor"
     If you have an extruder entry sensor configured, determining your parking distance from here is super easy.
@@ -87,65 +83,12 @@ To determine this value, begin by moving the filament in gate 0 to the ideal par
     Homed after 450.00mm
     ```
 
-    Read your `toolhead_entry_to_extruder` value from `mmu_parameters.cfg`.
+    Read your `toolhead_entry_to_extruder` value from `mmu.cfg`
 
-    Set your `gate_parking_distance` to:
+    [Set your parking distance](config.md#parking-position) to:
 
     ```
     <displayed distance> + <toolhead_entry_to_extruder> + 50
-    ```
-
-=== "Without an extruder entry sensor"
-    To tune this value, start by estimating the distance from your extruder to the ideal parking position. You can use a piece of filament outside of the tube and use a ruler to help measure this. In the diagram above, it's the distance between the red and blue dots.
-
-    Set this starting value in `mmu_parameters.cfg`:
-
-    ```yaml
-    gate_parking_distance: xxx
-    ```
-
-    Run the following commands in Mainsail:
-
-    ```
-    MMU_SELECT GATE=0
-    MMU_LOAD
-    MMU_UNLOAD
-    ```
-
-    !!! failure "Operation not possible. MMU has filament loaded"
-        If Mainsail reports this error after trying to select a gate, run the following command to tell HH that filament is _not_ loaded.
-
-        ```
-        MMU_RECOVER LOADED=0
-        ```
-
-    The filament should load to the extruder then unload to the parking position.
-
-    If it unloaded to the correct spot (around the red dot), then your parking distance is good.
-
-    If not, use the below command to move the filament until it's at the correct position (positive is towards the extruder, negative is away from it):
-
-    ```
-    MMU_TEST_MOVE MOVE=xxx
-    ```
-
-    Finally, run `MMU_STATUS` and note the "UNLOADED" value shown.
-
-    ```
-    UNLOADED 450.0mm
-    ```
-
-    Save the shown value as your parking distance.
-
-## Encoder (if installed)
-
-If you are using an encoder, like a BTT SFS (Smart Filament Sensor), you need to calibrate your encoder.
-
-1. Load your filament manually to its parking position at the start of the Y-splitter.
-2. Run in your Klipper console:
-
-    ```
-    MMU_CALIBRATE_ENCODER
     ```
 
 ---
@@ -157,22 +100,11 @@ If you notice any of your gear steppers moving filament in the opposite directio
 - Physically flip the stepper cables
 - Invert it in software
 
-To invert a gear stepper in software, open `mmu_hardware.cfg` and invert the `dir_pin` for the respective stepper.
+To invert a gear stepper in software:
 
 Example, if `T1` is moving backwards:
 
-=== "Before"
-    ```cfg title="mmu_hardware.cfg"
-    [stepper_mmu_gear_1]
-    ...
-    dir_pin: mmu: PC5
-    ```
-=== "After"
-    ```cfg title="mmu_hardware.cfg"
-    [stepper_mmu_gear_1]
-    ...
-    dir_pin: !mmu: PC5 # <-- Note the ! in front of mmu
-    ```
+<video src="/assets/videos/invertstepper.mp4" controls></video>
 
 !!! tip
     If the pin already has a `!` in front of it, remove it to invert it.
