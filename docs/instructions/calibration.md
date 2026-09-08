@@ -7,6 +7,9 @@ icon: fontawesome/solid/ruler
 
 Follow this guide to calibrate your 3MS.
 
+!!! warning "Under Construction"
+    This guide is under construction for Happy Hare v4. The current instructions below are for v3.
+
 !!! info "Original Documentation"
     This guide is a simplified version of [the official Happy Hare documentation](https://github.com/moggieuk/Happy-Hare/wiki/MMU-Calibration). I highly recommend you read it as it contains useful information and goes more in detail if you are having trouble with the calibrations.
 

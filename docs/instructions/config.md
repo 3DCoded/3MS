@@ -9,41 +9,11 @@ After installing Happy Hare firmware, there are some configurations you need to 
 
 ## Kit Users (SKR Pico)
 
-If you built your 3MS from a kit or are using the SKR Pico board, make sure to remove the following lines in `mmu_hardware.cfg` under the `[mmu_sensors]` block:
+If you built your 3MS from a kit or are using the SKR Pico board, set a starting rotation distance as shown:
 
-```ini title="mmu_hardware.cfg"
-pre_gate_switch_pin_0: ^mmu:MMU_PRE_GATE_0
-pre_gate_switch_pin_1: ^mmu:MMU_PRE_GATE_1
-pre_gate_switch_pin_2: ^mmu:MMU_PRE_GATE_2
-pre_gate_switch_pin_3: ^mmu:MMU_PRE_GATE_3
-pre_gate_switch_pin_4: ^mmu:MMU_PRE_GATE_4
-pre_gate_switch_pin_5: ^mmu:MMU_PRE_GATE_5
-pre_gate_switch_pin_6: ^mmu:MMU_PRE_GATE_6
-pre_gate_switch_pin_7: ^mmu:MMU_PRE_GATE_7
-pre_gate_switch_pin_8: ^mmu:MMU_PRE_GATE_8
-pre_gate_switch_pin_9: ^mmu:MMU_PRE_GATE_9
-pre_gate_switch_pin_10: ^mmu:MMU_PRE_GATE_10
-pre_gate_switch_pin_11: ^mmu:MMU_PRE_GATE_11
+<video src="/assets/videos/gearratio.mp4" controls></video>
 
-post_gear_switch_pin_0: ^mmu:MMU_POST_GEAR_0
-post_gear_switch_pin_1: ^mmu:MMU_POST_GEAR_1
-post_gear_switch_pin_2: ^mmu:MMU_POST_GEAR_2
-post_gear_switch_pin_3: ^mmu:MMU_POST_GEAR_3
-post_gear_switch_pin_4: ^mmu:MMU_POST_GEAR_4
-post_gear_switch_pin_5: ^mmu:MMU_POST_GEAR_5
-post_gear_switch_pin_6: ^mmu:MMU_POST_GEAR_6
-post_gear_switch_pin_7: ^mmu:MMU_POST_GEAR_7
-post_gear_switch_pin_8: ^mmu:MMU_POST_GEAR_8
-post_gear_switch_pin_9: ^mmu:MMU_POST_GEAR_9
-post_gear_switch_pin_10: ^mmu:MMU_POST_GEAR_10
-post_gear_switch_pin_11: ^mmu:MMU_POST_GEAR_11
-```
-
-Also, set:
-
-```ini title="mmu_hardware.cfg"
-gate_switch_pin: # Empty
-```
+Set `Other Settings` → `Gear Stepper` → `Gear Ratio` → `50:17`
 
 ## Filament Sensors
 
@@ -55,13 +25,11 @@ gate_switch_pin: # Empty
     - [**Shared gate sensor**](#shared-gate-sensor) is closer to the Y-splitter
     - [**Extruder entry sensor**](#extrudertoolhead-sensors) is closer to the printer's extruder.
 
-    Assuming you already have one installed, you can configure it in `mmu_hardware.cfg`.
-
-Locate the `[mmu_sensors]` section near the bottom of `mmu_hardware.cfg`.
+    Assuming you already have one installed, you can configure it in the installer.
 
 ### Extruder/Toolhead Sensors
 
-To configure an extruder entry sensor (a sensor right **before** your extruder), set your `extruder_switch_pin`:
+To configure an extruder entry sensor (a sensor right **before** your extruder):
 
 !!! tip "Don't know where to find a sensor?"
     If you don't know where to find a good sensor for your printer, here are a few tips:
@@ -72,54 +40,11 @@ To configure an extruder entry sensor (a sensor right **before** your extruder),
 !!! tip "Don't know your sensor pin?"
     If you don't know your sensor pin, and it's already configured with Klipper, locate your sensor configuration (usually `filament_switch_sensor`) and note the `sensor_pin`.
 
-```cfg title="mmu_hardware.cfg"
-[mmu_sensors]
-...
-extruder_switch_pin: <SOME PIN>
-```
+The below video shows where to find the pin settings. Note that your pins will likely be different.
+
+<video src="/assets/videos/extsensor.mp4" controls></video>
 
 To configure your toolhead sensor (a sensor right **after** your extruder), set your `toolhead_switch_pin` the same way as you set your `extruder_switch_pin`.
-
-### Shared Gate Sensor
-
-Moving backwards from the extruder, the next possible sensor you may have installed is a shared gate sensor. This goes right **after** the Y-splitter.
-
-If you have a gate sensor installed, set your `gate_switch_pin`:
-
-```cfg title="mmu_hardware.cfg"
-[mmu_sensors]
-...
-gate_switch_pin: <SOME PIN>
-```
-
-### Pre/Post Gate Sensors (Optional)
-
-If you have a filament sensor before or after each of your 3MS filament units, configure a `pre_` or `post_gate` sensor.
-
-#### Pre-Gate
-
-Pre-gate sensors go **before** each of your filament units. Configure each of these:
-
-```cfg title="mmu_hardware.cfg"
-[mmu_sensors]
-pre_gate_switch_pin_0: <SOME PIN>
-pre_gate_switch_pin_1: <SOME PIN>
-pre_gate_switch_pin_2: <SOME PIN>
-pre_gate_switch_pin_3: <SOME PIN>
-```
-
-#### Post-Gear
-
-Post-gear sensors go **after** each of your filament units. Configure each of these:
-
-```cfg title="mmu_hardware.cfg"
-[mmu_sensors]
-...
-post_gear_switch_pin_0: <SOME PIN>
-post_gear_switch_pin_1: <SOME PIN>
-post_gear_switch_pin_2: <SOME PIN>
-post_gear_switch_pin_3: <SOME PIN>
-```
 
 ---
 
@@ -128,82 +53,46 @@ post_gear_switch_pin_3: <SOME PIN>
 
 ---
 
-## Endstops
-
-There are two main endstops you need to setup in Happy Hare firmware for loading and unloading of filament.
-
-### Gate Homing Endstop
-
-When homing filament (checking if it is present), you have three options for the sensor to be used:
-
-- **mmu_gate** Use the shared gate sensor after the Y-splitter
-- **mmu_gear** Use the individual post-gate sensors.
-- **extruder** Use the extruder entry sensor.
-
-Select one of the three options in `gate_homing_endstop`, located in `mmu_parameters.cfg`.
-
-### Extruder Homing Endstop
-
-Happy Hare also needs a reference sensor inside the toolhead. You have two main options for this:
-
-- **extruder** Use the extruder entry sensor.
-- **none** Don't home inside the extruder.
-
-Select one of those options in `extruder_homing_endstop` in `mmu_parameters.cfg`.
-
-??? note "Advanced Options"
-    Happy Hare does support three additional advanced options for this endstop:
-
-    - **filament_compression** Use a sync-feedback sensor like TurtleNeck as a homing endstop
-    - **collision** Use StallGuard on the printer's extruder.
-    - **mmu_gear_touch** Use StallGuard on the 3MS's extruder.
-
-    Note that since I don't use these options, I won't be able to help much with these options.
-
 ## Distances
 
-There are many key distances to set up in Happy Hare firmware. All the distance parameters are located in `mmu_parameters.cfg`.
+There are many key distances to set up in Happy Hare firmware.
 
 ### Homing Distance
 
 Firstly, configure the maximum distance Happy Hare should attempt to load filament to the homing sensor, before "giving up" and deciding that the spool is empty. This should usually be ~150% the distance from your filament parking position to the sensor.
 
-!!! note
-    If you use post-gear endstops (`mmu_gear`), this uses the `gate_preload_homing_max` parameter.
-
-This parameter is called `gate_homing_max`.
+<video src="/assets/videos/homingdistance.mp4" controls></video>
 
 ### Eject Distance
 
-Finally, if you want to switch out which filament is in a filament unit, edit your `gate_final_eject_distance`. This should be the distance from your parking position to your filament unit gears, plus a small margin.
+Finally, if you want to switch out which filament is in a filament unit, edit your final eject distance. This should be the distance from your parking position to your filament unit gears, plus a small margin.
+
+<video src="/assets/videos/ejectdistance.mp4" controls></video>
 
 ## Speeds
 
-There are many different speeds you can configure with Happy Hare firmware.
+There are a few main speeds you can configure with Happy Hare firmware.
 
-These are located in the speeds section of `mmu_parameters.cfg` (near the top).
+- **Homing Speed**: This is when the HH moves the filament into your extruder entry sensor to ensure they are present.
+- **Load/Unload Speed**: This is the speed at which Happy Hare will load/unload filament during a toolchange.
+- **Extruder Speed**: This is the speed at which your extruder will load/unload filament during a toolchange.
 
-### Homing Speed
-
-"Homing" is when the HH moves the filament into your extruder entry sensor to ensure they are present. You can adjust the speed at which this happens by editing the `gear_homing_speed` parameter.
-
-### First Load Speeds
-
-Happy Hare allows for slowing down the initial load to deal with additional drag from the filament spool. To adjust this speed, adjust `gear_from_spool_speed`.
-
-### Load/Unload Speeds
-
-To adjust your load/unload speeds during a toolchange, adjust the `gear_from_buffer_speed` parameter.
+<video src="/assets/videos/speeds.mp4" controls></video>
 
 ## Toolhead Distances
 
-There are many key distances to setup in Happy Hare firmware, this time for the measurements of your toolhead. Again, all these parameters are located in `mmu_parameters.cfg`.
+There are many key distances to setup in Happy Hare firmware, this time for the measurements of your toolhead.
 
 There are three main ways to get any of the following distances:
 
+- **Recommended:** Find and select your toolhead in the installer
 - Find configs available online for your toolhead
 - Use CAD models of your toolhead
 - Measure (approximate) yourself with a piece of filament and calipers
+
+All the below settings can be found in the `Toolhead Settings` section of the installer.
+
+<video src="/assets/videos/toolheadsettings.mp4" controls></video>
 
 ### Homing Max
 
@@ -211,7 +100,9 @@ There are three main ways to get any of the following distances:
 
 !!! info "This parameter is only relevant if you use **both** an extruder entry sensor and a shared gate sensor"
 
-### Internal Dimensions
+### Manual Configuration
+
+If you cannot find a pre-configured toolhead, you can manually configure the distances.
 
 There are three main parameters to measure inside your toolhead.
 
@@ -244,3 +135,53 @@ There are three main parameters to measure inside your toolhead.
     1. Push filament further in until it hits the extruder gears.
     1. Put another mark on the filament.
     1. Remove the filament and measure the distance between the two marks. This is your `toolhead_entry_to_extruder` value.
+
+## Optional Settings
+
+Most users likely won't have to follow the below steps, as they are automatically set on most systems.
+
+### Shared Gate Sensor
+
+This is not required on most systems (most systems use an extruder entry sensor instead).
+
+Moving backwards from the extruder, the next possible sensor you may have installed is a shared gate sensor. This goes right **after** the Y-splitter.
+
+If you have a gate sensor installed, set your `gate_switch_pin`:
+
+<video src="/assets/videos/sharedgate.mp4" controls></video>
+
+### Pre-Gate or Post-Gear
+
+This is not required on most systems.
+
+Pre-gate sensors go **before** each of your filament units. Post-gear sensors go **after** each of your filament units.
+
+<video src="/assets/videos/prepostgate.mp4" controls></video>
+
+### Gate Homing Endstop
+
+This is an optional step as on most systems this is automatically set.
+
+When homing filament (checking if it is present), you have three options for the sensor to be used:
+
+- **Shared Gate Sensor** Use the shared gate sensor after the Y-splitter
+- **Post Gate Sensors** Use the individual post-gate sensors.
+- **Extruder Sensor** Use the extruder entry sensor.
+
+Select one of the three options. Note that only the available options will be enabled. In the below example only an extruder sensor is configured, so it is the only displayed option.
+
+<video src="/assets/videos/gatehoming.mp4" controls></video>
+
+### Extruder Homing Endstop
+
+This is an optional step as on most systems this is automatically set.
+
+Happy Hare also needs a reference sensor inside the toolhead. You have two main options for this:
+
+- **Toolhead Sensor** Use the extruder entry sensor.
+- **Compression Sensor** Use a sync-feedback sensor as a homing endstop.
+- **None** Don't home inside the extruder.
+
+Select one of the three options. Note that only available options will be shown depending on your setup.
+
+<video src="/assets/videos/extruderhoming.mp4" controls></video>
