@@ -63,7 +63,10 @@ def render_step(step, step_number):
                 for line in body_lines[1:]
             )
         lines.extend(["", "</div>"])
-        for image_style in step.get("image_styles", []):
+        image_styles = step.get("image_styles")
+        if image_styles is None:
+            image_styles = [{"id": image} for image in images]
+        for image_style in image_styles:
             image_id = image_style["id"]
             classes = image_style.get("classes", "")
             classes = ' '.join(map(lambda c: '.'+c if not c.startswith('.') else c, classes.split()))

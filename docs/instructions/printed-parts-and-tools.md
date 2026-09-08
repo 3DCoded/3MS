@@ -18,6 +18,7 @@ comments: true
     [:material-printer: Printables](https://www.printables.com/model/1108644-beta-3home-3ms-hybrid-official-modular-enclosure/files){.md-button}
 
 </div>
+![](/assets/images/web/71587e5f.png){.sm data-gallery="step1-sm"}
 
 ###**Step 2** Y-splitter
 
@@ -30,6 +31,7 @@ comments: true
         The linked Y-splitter uses five ECAS04 fittings, which are included in your 3MS kit. For your convenience, five PC4-M10 fittings are also included if you prefer to use an alternate Y-splitter design.
 
 </div>
+![](/assets/images/web/058aba0c.png){.sm data-gallery="step2-sm"}
 
 ###**Step 3** Hex Keys
 
@@ -45,6 +47,7 @@ comments: true
     :blue_circle: 2.5mm (included in the kit but recommended to get your own)
 
 </div>
+![](/assets/images/web/0e6e186e.png){.sm data-gallery="step3-sm"}
 
 ###**Step 4** Phillips & Flat-head Screwdrivers
 
@@ -58,6 +61,7 @@ comments: true
     - A flat-head screwdriver (used for the screw terminals on the SKR Pico)
 
 </div>
+![](/assets/images/web/e62cc9e2.png){.sm data-gallery="step4-sm"}
 
 ###**Step 5** Wire Strippers
 
@@ -67,6 +71,7 @@ comments: true
 - :red_circle: Ensure you have wire strippers capable of stripping 24AWG wire (0.25mm^2^)
 
 </div>
+![](/assets/images/web/a92eec86.png){.sm data-gallery="step5-sm"}
 
 ###**Step 6** Side Cutters
 
@@ -76,6 +81,7 @@ comments: true
 - Ensure you have side cutters (used for cutting zip ties)
 
 </div>
+![](/assets/images/web/803a96e1.png){.sm data-gallery="step6-sm"}
 
 ###**Step 7** PTFE Cutters
 
@@ -85,3 +91,4 @@ comments: true
 - Ensure you have a PTFE cutting tool. Alternatively, you can [print](https://www.printables.com/model/360710) a tool to cut the PTFE.
 
 </div>
+![](/assets/images/web/1481b4a6.png){.sm data-gallery="step7-sm"}

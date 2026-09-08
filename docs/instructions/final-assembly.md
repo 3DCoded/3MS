@@ -18,6 +18,7 @@ You're almost done with assembling your 3MS! Follow this guide to finish the har
 - Cut four equal-length segments of PTFE tubing. These should each be long enough to almost reach from the 3MS to your printer's extruder.
 
 </div>
+![](/assets/images/web/175bd9bd.png){.sm data-gallery="step1-sm"}
 
 ###**Step 2** Inserting the PTFE Tubing
 
@@ -27,6 +28,7 @@ You're almost done with assembling your 3MS! Follow this guide to finish the har
 - Insert all four segments of PTFE tubing into each of the four filament units.
 
 </div>
+![](/assets/images/web/c2d31929.png){.sm data-gallery="step2-sm"}
 
 ###**Step 3** Installing the Y-splitter
 
@@ -36,6 +38,7 @@ You're almost done with assembling your 3MS! Follow this guide to finish the har
 - Insert the other end of each of the four segments of PTFE into the Y-splitter.
 
 </div>
+![](/assets/images/web/2395862d.png){.sm data-gallery="step3-sm"}
 
 ###**Step 4** Tubing to the Extruder
 
@@ -45,6 +48,7 @@ You're almost done with assembling your 3MS! Follow this guide to finish the har
 - :green_circle: Insert the remaining PTFE tubing into the other end of the Y-splitter. Cut to the proper size to reach your printer's extruder.
 
 </div>
+![](/assets/images/web/c4147bdb.png){.sm data-gallery="step4-sm"}
 
 ## :tada: You're done building your 3MS!
 
