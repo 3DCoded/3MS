@@ -6,4 +6,4 @@ on:
 
 jobs:
   call-deploy-docs:
-    uses: $/.github/workflows/deploy-docs.yml
+    uses: 3DCoded/3MS/.github/workflows/deploy-docs.yml
