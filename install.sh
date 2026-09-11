@@ -35,7 +35,7 @@ cd Happy-Hare
 # Copy base config
 if [ -f ".mmu_config" ]; then
     printf "Config already exists. Overwrite? (y/n) "
-    read -r answer
+    read -r answer < /dev/tty
     if [ "$answer" = "y" ]; then
         cp .mmu_config .mmu_config.bak
         echo "Backup of existing config created as .mmu_config.bak"
@@ -59,10 +59,10 @@ echo "5. Visit ${BLUE}https://3ms.3dcoded.xyz${NC} for further instructions"
 echo "${BLUE}Happy Colorful Printing!${NC}"
 
 printf "Press enter to open the installer or q to quit... "
-read -r input
+read -r input < /dev/tty
 if [[ "$input" == "q" ]]; then
     echo "Exiting installer."
     exit 0
 fi
 
-(echo "2"; cat) | ./install.sh -i
+(echo "2"; cat /dev/tty) | ./install.sh -i
