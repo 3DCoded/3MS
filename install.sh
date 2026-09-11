@@ -27,7 +27,7 @@ fi
 
 if [ $WILL_CLONE -eq 1 ]; then
     echo "Cloning Happy-Hare repository..."
-    git clone $HH_REPO_URL > /dev/null 2>&1
+    git clone $HH_REPO_URL
 fi
 
 cd Happy-Hare
