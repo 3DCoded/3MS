@@ -77,9 +77,6 @@ fallback_if_short = false
 
 [project.plugins.macros]
 
-[project.plugins.redirects]
-redirect_maps = { "instructions/software-setup.md" = "https://moggieuk.github.io/Happy-Hare-Doc/GettingStarted-3MS/" }
-
 [project.plugins.glightbox]
 
 # ---------------------------------------------------------------------------
