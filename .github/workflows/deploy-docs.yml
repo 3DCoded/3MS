@@ -1,8 +1,6 @@
-name: Documentation
+name: Deploy Docs
 on:
-  push:
-    branches:
-      - docs
+  workflow_call:
 permissions:
   contents: read
   pages: write

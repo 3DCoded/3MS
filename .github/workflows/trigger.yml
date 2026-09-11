@@ -1,0 +1,9 @@
+name: Run Docs CD
+on:
+  push:
+    branches:
+      - docs
+
+jobs:
+  call-deploy-docs:
+    uses: $/.github/workflows/deploy-docs.yml
