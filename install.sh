@@ -65,4 +65,4 @@ if [[ "$input" == "q" ]]; then
     exit 0
 fi
 
-./install.sh -i
+(echo "2"; cat) | ./install.sh -i
