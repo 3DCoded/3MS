@@ -24,4 +24,4 @@ curl https://3ms.3dcoded.xyz/install.sh | bash
 
 ## Detailed Instructions
 
-https://moggieuk.github.io/Happy-Hare-Doc/GettingStarted-3MS/
+[https://moggieuk.github.io/Happy-Hare-Doc/GettingStarted-3MS/](https://moggieuk.github.io/Happy-Hare-Doc/GettingStarted-3MS/)
