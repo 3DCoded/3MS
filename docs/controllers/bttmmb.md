@@ -39,13 +39,13 @@ Now, grab your 24V PSU and two M-M duponts, one red and one black (M-M means tha
 
 3. Following this image, locate the HVIN and GND inputs (top left)
 
-    ![](bttmmbpins.jpg)
+    ![](/assets/images/bttmmbpins.jpg)
 
 4. Route the two wires inside closest to the HVIN and GND inputs
 5. Using the markings on the board, plug the red wire into the HVIN terminal on the MMB
 6. Using the markings on the board, plug the black wire into the GND terminal on the MMB
 
-    ![](MMB_CAN_USB.png)
+    ![](/assets/images/MMB_CAN_USB.png)
 
 7. Install the VUSB jumper.
 

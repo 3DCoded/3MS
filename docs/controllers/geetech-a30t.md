@@ -146,18 +146,18 @@ After completing the hardware changes:
 ---
 
 ### Photos
-Add your photos here to demonstrate the modification process and results:
-- Close-up of the TMC driver
-![WIN_20241111_22_06_27_Pro](https://github.com/user-attachments/assets/4087cb87-09ce-43fb-89e6-a46cbd3ec37b)
 
--Close-up of the TMC driver with resistor removed (solder the uart pint to the red signed pin)
-![WIN_20241111_22_15_44_Pro](https://github.com/user-attachments/assets/93e99aad-5389-4c93-af6b-74d5a9548cf5)
+- Close-up of the TMC driver
+![](/assets/images/a30ttmc.jpg)
+
+- Close-up of the TMC driver with resistor removed (solder the uart pint to the red signed pin)
+![](/assets/images/a30ttmc2.jpeg)
 
 - Close-up of the SD card:
-![WIN_20241111_22_05_02_Pro](https://github.com/user-attachments/assets/35ce51f2-bd2b-458f-81bd-13cbf3f81ff3)
+![](/assets/images/a30tsd.jpg)
 
 - Rewired pins with labels.
-![WIN_20241116_22_14_33_Pro](https://github.com/user-attachments/assets/3f5f9d90-09a0-4491-9dab-4a77afd2b4ca)
+![](/assets/images/a30trewired.jpeg)
 
 ---
 

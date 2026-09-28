@@ -79,7 +79,7 @@ You have two options for installing Katapult to the SKR Pico:
 
     Adjust your `menuconfig` parameters to match the following exactly.
 
-    ![](445b5e6f.png)
+    ![](/assets/images/web/445b5e6f.png)
 
     Then, run:
 
@@ -121,7 +121,7 @@ make menuconfig
 
 Adjust your `menuconfig` settings to match this exactly:
 
-![](42b8464a.png)
+![](/assets/images/web/42b8464a.png)
 
 Now, run:
 
