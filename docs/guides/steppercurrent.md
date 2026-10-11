@@ -16,7 +16,7 @@ If your stepper current is too **low**, you might notice your stepper skipping w
 
 If your stepper current is too **high**, you might notice your stepper grinding filament if something is preventing its motion.
 
-![](grinding.jpeg)
+![](/assets/images/guides/steppercurrent/grinding.jpeg)
 /// caption
 Grinding filament
 
@@ -41,14 +41,9 @@ The lowest of the three values (for this example) is 0.75A. Therefore, your `run
 
 Now that the maximum safe current for the steppers is known, we can test the stepper at the max current to see if it can drive filament at its max current.
 
-First, set your `run_current` to the maximum calculated previously.
+First, set your run current to the maximum calculated previously.
 
-```cfg title="mmu_hardware.cfg"
-[tmc2209 stepper_mmu_gear]
-run_current: 0.75
-```
-
-Restart Klipper.
+<video src="/assets/videos/setcurrent.mp4" controls></video>
 
 There are two parts to this test:
 
@@ -65,24 +60,24 @@ MMU_TEST_MOVE MOVE=100
 ```
 
 !!! failure "Operation not possible. MMU has filament loaded"
-        If Mainsail reports this error after trying to select a gate, run the following command to tell HH that filament is _not_ loaded.
+	If Mainsail/Fluidd reports this error after trying to select a gate, run the following command to tell HH that filament is _not_ loaded.
 
-        ```
-        MMU_RECOVER LOADED=0
-        ```
+	```
+	MMU_RECOVER LOADED=0
+	```
 
 Observe the behavior of the stepper. If your stepper moves the filament without any skipping, move onto the next test.
 
 If the stepper skips when it tries to move the filament, there are a couple things you can try:
 
-- Reducing `gear_max_velocity` and/or `gear_max_accel` in `mmu_parameters.cfg`
+- Reducing [speeds](../instructions/config.md#speeds)
 - Lowering extruder tension by loosening the tension screw
 
 ## Blocked Filament Test
 
 Begin by inserting a loose piece of filament into the Y-splitter (blue in the below diagram).
 
-![](stuck-y.png)
+![](/assets/images/guides/steppercurrent/stuck-y.png)
 
 Next, attach PTFE to the end of the 3MS extruder and to another input on the Y-splitter. Load the filament manually through the 3MS extruder until it wedges itself against the loose filament. In the above diagram, the green filament represents the filament in the 3MS extruder.
 
