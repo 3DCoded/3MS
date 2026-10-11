@@ -20,11 +20,11 @@ This tutorial will walk you through setting up the 3MS with OrcaSlicer. If you u
 
 Begin by opening your machine settings.
 
-![](9c52e9c3.png)
+![](/assets/images/web/9c52e9c3.png)
 
 Navigate to `Machine G-Code`.
 
-![](2f542723.png)
+![](/assets/images/web/2f542723.png)
 
 #### Start G-Code
 
@@ -77,7 +77,7 @@ Save this machine preset with a new name.
 !!! tip "Filament Cutting vs. Tip Forming"
     It is recommended you install a filament cutter on your printer. This will make your toolchanges much more reliable and negate the tuning tip forming requires.
 
-    You can find user-submitted tip cutting/forming configurations [here](https://link.3dcoded.xyz/tipconfigs/).
+    You can find user-submitted tip cutting/forming configurations [here](https://3dcoded.xyz/tipconfigs/).
 
     If you want to do tip forming and can't find the right configs for your setup at the above link, you will have to tune the values yourself. In general:
 
@@ -85,25 +85,25 @@ Save this machine preset with a new name.
     - More cooling moves or lower temperature = blobby tips
     - Skinnydip string reduction = less strings
 
-    Please upload your settings [here](https://link.3dcoded.xyz/tipconfigs/) once you tune yours in so other users can benefit!
+    Please upload your settings [here](https://3dcoded.xyz/tipconfigs/) once you tune yours in so other users can benefit!
 
 Begin by opening your filament settings.
 
-![](2b0730ee.png)
+![](/assets/images/web/2b0730ee.png)
 
 Navigate to `Multimaterial`.
 
-![](3c8e4a50.png)
+![](/assets/images/web/3c8e4a50.png)
 
 #### Disable Tip Forming
 
 Set all the indicated fields to `0` and open the ramming settings.
 
-![](eb7458be.png)
+![](/assets/images/web/7458be.png)
 
 Set the ramming time to `0`.
 
-![](6acdfb10.png)
+![](/assets/images/web/6acdfb10.png)
 
 ## Your First Print
 
@@ -111,23 +111,23 @@ This section will cover one way to start multicolor 3D prints. Note that typical
 
 Begin by loading the model into the slicer.
 
-![](0f8f127c.png)
+![](/assets/images/web/0f8f127c.png)
 
 Select the model and click multicolor painting.
 
-![](391028e7.png)
+![](/assets/images/web/391028e7.png)
 
 Paint the model as you like.
 
-![](273e81cf.png)
+![](/assets/images/web/273e81cf.png)
 
 Ensure the prime tower is enabled.
 
-![](7c99d620.png)
+![](/assets/images/web/7c99d620.png)
 
 Arrange the prime tower on the plater.
 
-![](dd4b1862.png)
+![](/assets/images/web/dd4b1862.png)
 
 Slice and print!
 
